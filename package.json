@@ -1,0 +1,10 @@
+{
+  "name": "googoodan-server",
+  "version": "1.0.0",
+  "description": "구구단닷컴 자동 문제지 생성 서버 (외부 패키지 없이 Node.js 기본 모듈만 사용)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

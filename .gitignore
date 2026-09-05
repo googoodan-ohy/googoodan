@@ -1,0 +1,5 @@
+# This file marks that Git initialization is intended
+# Auto-created to support Git tracking
+node_modules/
+.DS_Store
+*.swp

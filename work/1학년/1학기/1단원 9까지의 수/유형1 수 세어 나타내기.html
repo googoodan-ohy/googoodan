@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1단원 9까지의 수 - 유형1 수 세어 나타내기</title>
+<style>
+  :root{
+    --primary:#ff8961;
+    --primary-dark:#ef6f43;
+    --primary-light:#fff1ea;
+    --line:#e4e6ea;
+    --ink:#24262b;
+    --muted:#7b8087;
+    --paper:#ffffff;
+    --bg:#f4f5f7;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--ink); font-size:14px; background:var(--bg); padding:16px;
+  }
+  .container{ max-width:900px; margin:0 auto; }
+
+  .ad-block{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center; color:#9aa0a8;
+    font-size:12px; font-weight:700; text-align:center; height:90px;
+    margin-bottom:16px;
+  }
+
+  .toolbar{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; justify-content:flex-end; }
+  .btn{
+    padding:10px 14px; border:1.5px solid var(--line); border-radius:8px;
+    background:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:.15s;
+  }
+  .btn:hover{ border-color:var(--primary); background:var(--primary-light); }
+  .btn.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+  .btn.primary{ background:var(--ink); border-color:var(--ink); color:#fff; }
+  .btn.primary:hover{ background:#000; border-color:#000; }
+
+  .sheet-wrap{ display:flex; justify-content:center; overflow-x:auto; padding-bottom:8px; }
+
+  :root{
+    --sh-page-w: 210mm;
+    --sh-page-h: 297mm;
+    --sh-margin-y: 14mm;
+    --sh-margin-x: 17mm;
+    --sh-ink:#1f2430;
+    --sh-accent:#20b39c;
+    --sh-accent2:#f2994a;
+    --sh-line:#333;
+    --sh-mint:#20b39c;
+    --sh-mint-dark:#0e8f7d;
+    --sh-coral:#ff7e67;
+    --sh-sun:#ffb100;
+    --sh-blue:#4d96ff;
+    --sh-violet:#8a63d2;
+    --sh-cream:#fff8ec;
+    --sh-red:#e0342a;
+  }
+
+  .sheet{
+    width:var(--sh-page-w);
+    height:var(--sh-page-h);
+    min-width:var(--sh-page-w);
+    min-height:var(--sh-page-h);
+    background:#fff;
+    padding:var(--sh-margin-y) var(--sh-margin-x);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 auto;
+  }
+  body.exporting .preview-shadow{ box-shadow:none; }
+  .sheet .sh-header{ flex:0 0 auto; }
+  .sh-cafe-strip{
+    display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;
+  }
+  .sh-cafe-strip .cafe-badge{
+    display:inline-flex; align-items:center; gap:5px;
+    background:var(--sh-cream); color:var(--sh-mint-dark);
+    border:1.6px dashed var(--sh-mint); border-radius:20px;
+    padding:3px 13px; font-size:9.5pt; font-weight:800;
+  }
+  .sh-cafe-strip .cafe-url{ font-size:9pt; color:var(--sh-coral); font-weight:800; letter-spacing:.01em; }
+  .sheet .sh-titlebar{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:8px; }
+  .sheet .sh-title{ font-size:21pt; font-weight:800; letter-spacing:-.02em; display:flex; align-items:baseline; gap:10px; }
+  .sheet .sh-title .op-badge{
+    display:inline-block; color:#fff; font-size:12.5pt; font-weight:700;
+    padding:2px 12px; border-radius:20px; vertical-align:middle; white-space:nowrap;
+  }
+  .sheet .sh-title small{ font-size:11pt; color:#6b7386; font-weight:600; }
+  .sheet .sh-meta{ display:flex; gap:16px; font-size:10.5pt; color:#374057; }
+  .sheet .sh-meta span{ white-space:nowrap; }
+  .sheet .sh-fields{ display:flex; gap:18px; font-size:10.5pt; color:#374057; margin-top:6px; flex-wrap:wrap; }
+  .sheet .sh-fields .f{ display:flex; align-items:center; gap:5px; }
+  .sheet .sh-fields .f .ln{ display:inline-block; border-bottom:1px solid #999; min-width:70px; height:1.1em; }
+  .sheet .sh-fields .f b{ display:inline-block; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:bottom; }
+  .sheet .sh-rule{ height:3px; margin:9px 0 4px; border-radius:3px; }
+  .sheet main.sh-main{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:space-evenly; gap:10px; min-height:0; }
+  .sh-row{ display:flex; flex-direction:row; justify-content:space-evenly; align-items:stretch; gap:22px; }
+  .sh-row.wide{ justify-content:flex-start; width:100%; }
+  .sh-cell{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; }
+  .sh-cell.wide{ width:100%; align-items:stretch; justify-content:center; }
+  .sheet .sh-footer{
+    flex:0 0 auto; display:flex; justify-content:space-between; align-items:center;
+    padding-top:7px; border-top:1.5px dashed var(--sh-mint); font-size:9pt; color:#8a91a3;
+  }
+  .sheet .sh-footer .tagline{ font-weight:700; color:var(--sh-mint-dark); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+  .sheet .sh-footer .brand{ font-style:normal; font-weight:700; color:var(--sh-coral); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:360px; }
+  .sheet .sh-footer .pageno::before{ content:"p. "; }
+  .qline{ font-size:11.5pt; line-height:1.95; padding:2px 0; }
+  .cnt-row{ font-size:15pt; letter-spacing:.16em; margin-bottom:5px; }
+  .shape-row{ font-size:15pt; letter-spacing:.14em; margin:1px 0; }
+  .ans{ color:var(--sh-red); font-weight:800; }
+  .hcalc{
+    font-family:"Consolas","SF Mono","Roboto Mono",monospace; font-size:13pt;
+    display:inline-flex; align-items:baseline; gap:.4em; white-space:nowrap;
+  }
+  .hcalc .n{ font-weight:700; display:inline-block; }
+  .hcalc .op{ font-weight:800; }
+  .hcalc .eq{ color:#555; }
+
+  @media print{
+    body{ background:#fff; padding:0; }
+    .ad-block, .toolbar{ display:none; }
+    .sheet-wrap{ padding:0; }
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+  }
+  @page{ size: A4; margin: 0; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="ad-block">광고 영역 (728 × 90)</div>
+
+  <div class="toolbar">
+    <button class="btn active" id="btnProblem" onclick="setMode('problem')">문제지</button>
+    <button class="btn" id="btnAnswer" onclick="setMode('answer')">정답지</button>
+    <button class="btn" onclick="regenerate()">숫자변경</button>
+    <button class="btn primary" onclick="window.print()">프린트</button>
+  </div>
+
+  <div class="sheet-wrap">
+    <div class="sheet" id="sheetHost"></div>
+  </div>
+</div>
+
+<script>
+
+function mulberry32(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function randInt(rng, min, max){ return Math.floor(rng() * (max - min + 1)) + min; }
+function pick(rng, arr){ return arr[randInt(rng, 0, arr.length-1)]; }
+function pickDistinct(rng, arr, n){
+  const pool = arr.slice();
+  const out = [];
+  for(let i=0;i<n && pool.length;i++){
+    const idx = randInt(rng, 0, pool.length-1);
+    out.push(pool[idx]);
+    pool.splice(idx,1);
+  }
+  return out;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+const OBJS = [
+  {e:'🍎',n:'사과'}, {e:'🍓',n:'딸기'}, {e:'⭐',n:'별'}, {e:'🎈',n:'풍선'},
+  {e:'🐟',n:'물고기'}, {e:'🐤',n:'병아리'}, {e:'🚗',n:'자동차'}, {e:'🌼',n:'꽃'},
+  {e:'🍊',n:'귤'}, {e:'🧸',n:'인형'}
+];
+const KOR_NATIVE = [null,'하나','둘','셋','넷','다섯','여섯','일곱','여덟','아홉'];
+const KOR_SINO   = [null,'일','이','삼','사','오','육','칠','팔','구'];
+const NAMES_BANK = ['서윤','하람','지우','다인','은서','민준','하은','도윤'];
+const ORD = ['첫째','둘째','셋째','넷째','다섯째'];
+
+const SHAPE_NAMES = { sq:'네모(□)', tri:'세모(△)', cir:'동그라미(○)' };
+const SHAPE_ITEMS = {
+  sq:  ['책','창문','손수건','액자','상장','달력'],
+  tri: ['삼각자','표지판','조각 케이크','옷걸이','삼각김밥'],
+  cir: ['시계','접시','단추','도넛','훌라후프','거울'],
+};
+const SHAPE_DESC = {
+  sq:  ['뾰족한 부분이 4군데 있고, 네 변이 모두 곧은 선으로 되어 있습니다.',
+        '변이 4개이고, 뾰족한 부분도 4군데 있습니다.',
+        '곧은 선 4개로 둘러싸여 있고, 뾰족한 부분이 4군데 있습니다.'],
+  tri: ['뾰족한 부분이 3군데 있고, 세 변이 모두 곧은 선으로 되어 있습니다.',
+        '변이 3개이고, 뾰족한 부분도 3군데 있습니다.',
+        '곧은 선 3개로 둘러싸여 있고, 뾰족한 부분이 3군데 있습니다.'],
+  cir: ['뾰족한 부분이 없고, 굽은 선으로만 되어 있습니다.',
+        '곧은 선이 하나도 없고, 매끄럽게 굽어 있습니다.',
+        '뾰족한 부분이 전혀 없고, 어느 방향에서 보아도 둥급니다.'],
+};
+const SHAPE_THEME = ['자동차','집','로봇','눈사람','기차'];
+
+const STORY_ADD = [
+  (a,b)=>`나뭇가지에 참새가 ${a}마리 앉아 있었는데 ${b}마리가 더 날아왔습니다.`,
+  (a,b)=>`어항에 금붕어가 ${a}마리 있었는데 ${b}마리를 더 넣었습니다.`,
+  (a,b)=>`바구니에 사과가 ${a}개 있었는데 ${b}개를 더 담았습니다.`,
+  (a,b)=>`주차장에 자동차가 ${a}대 있었는데 ${b}대가 더 들어왔습니다.`,
+];
+const STORY_SUB = [
+  (a,b)=>`연필이 ${a}자루 있었는데 ${b}자루를 동생에게 주었습니다.`,
+  (a,b)=>`풍선이 ${a}개 있었는데 ${b}개가 터졌습니다.`,
+  (a,b)=>`나뭇가지에 새 ${a}마리가 있었는데 ${b}마리가 날아갔습니다.`,
+  (a,b)=>`사탕이 ${a}개 있었는데 ${b}개를 먹었습니다.`,
+];
+const STORY_ADD2 = [
+  (a,b)=>`문구점에 있던 스티커 ${a}장에 ${b}장을 더 사왔습니다.`,
+  (a,b)=>`상자에 구슬 ${a}개가 있었는데 ${b}개를 더 넣었습니다.`,
+  (a,b)=>`화단에 나비 ${a}마리가 있었는데 ${b}마리가 더 날아왔습니다.`,
+];
+const STORY_SUB2 = [
+  (a,b)=>`색종이 ${a}장 중에서 ${b}장을 사용했습니다.`,
+  (a,b)=>`책상 위 지우개 ${a}개 중에서 ${b}개를 친구에게 빌려주었습니다.`,
+  (a,b)=>`쿠키 ${a}개 중에서 ${b}개를 먹었습니다.`,
+];
+const COUNT_OBJS = ['구슬','바둑돌','사탕','연결큐브','클립'];
+
+const CAT4 = [
+  { items:['리본','줄넘기줄','연필','빨대','나무막대','신발끈'],
+    biggerStmt:(A,B)=>`${A}는 ${B}보다 더 깁니다.`,
+    smallerQ:'더 짧은 것은 무엇인가요?',
+    orderQ:'긴 것부터 순서대로 써 보세요.' },
+  { items:['가방','사물함','인형','돌멩이','책가방','블록상자'],
+    biggerStmt:(A,B)=>`${A}는 ${B}보다 더 무겁습니다.`,
+    smallerQ:'더 가벼운 것은 무엇인가요?',
+    orderQ:'무거운 것부터 순서대로 써 보세요.' },
+  { items:['손수건','카펫','스케치북','포스터','매트'],
+    biggerStmt:(A,B)=>`${A}는 ${B}보다 더 넓습니다.`,
+    smallerQ:'더 좁은 것은 무엇인가요?',
+    orderQ:'넓은 것부터 순서대로 써 보세요.' },
+  { items:['컵','물병','대야','양동이','주전자'],
+    biggerStmt:(A,B)=>`${A}에 담긴 양이 ${B}보다 더 많습니다.`,
+    smallerQ:'담긴 양이 더 적은 것은 무엇인가요?',
+    orderQ:'담긴 양이 많은 것부터 순서대로 써 보세요.' },
+];
+const CIRCLE_NUMS = ['①','②','③','④','⑤','⑥'];
+
+function ansSpan(mode, text){
+  return mode==='answer' ? ` <span class="ans">${text}</span>` : '';
+}
+function hcalc(aStr, opSym, bStr, ansVal, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, String(ansVal))}`;
+}
+
+function buildU1T1(rng, mode){
+  const obj = pick(rng, OBJS);
+  const n = randInt(rng, 2, 9);
+  const row = new Array(n).fill(obj.e).join(' ');
+  return `<div class="cnt-row">${row}</div>
+    <div class="qline">${obj.n}은(는) 모두 몇 개인가요? 두 가지 방법으로 읽어 보세요.${ansSpan(mode, `${n}개 · ${KOR_NATIVE[n]}(${KOR_SINO[n]})`)}</div>`;
+}
+function buildU1T2(rng, mode){
+  const n = randInt(rng, 3, 9);
+  const circles = mode==='answer' ? new Array(n).fill('○').join(' ') : '';
+  return `<div class="qline">다음 수만큼 ○를 그려 보세요. <b style="font-size:14pt;">${n}</b>${mode==='answer' ? ` <span class="ans">${circles}</span>` : ''}</div>`;
+}
+function buildU1T3(rng, mode){
+  const names = pickDistinct(rng, NAMES_BANK, 5);
+  const asName = rng() < 0.5;
+  if(asName){
+    const i = randInt(rng,0,4);
+    return `<div class="qline">줄을 서 있는 순서가 ${names.join(', ')}입니다. ${names[i]}는 앞에서부터 몇째인가요?${ansSpan(mode, ORD[i])}</div>`;
+  }else{
+    const r = randInt(rng,0,4);
+    return `<div class="qline">줄을 서 있는 순서가 ${names.join(', ')}입니다. 앞에서 ${ORD[r]}에 서 있는 사람은 누구인가요?${ansSpan(mode, names[r])}</div>`;
+  }
+}
+function buildU1T4(rng, mode){
+  const n = randInt(rng,1,8);
+  return `<div class="qline">${n}보다 1만큼 더 큰 수와 1만큼 더 작은 수를 각각 구해 보세요.${ansSpan(mode, `${n+1} , ${n-1}`)}</div>`;
+}
+function buildU1T5(rng, mode){
+  const [x,y] = pickDistinct(rng, [0,1,2,3,4,5,6,7,8,9], 2);
+  const askBig = rng() < 0.5;
+  const word = askBig ? '더 큰' : '더 작은';
+  const ans = askBig ? Math.max(x,y) : Math.min(x,y);
+  return `<div class="qline">${x}과(와) ${y} 중에서 ${word} 수는 무엇인가요?${ansSpan(mode, String(ans))}</div>`;
+}
+
+function buildU2T1(rng, mode){
+  const keys = ['sq','tri','cir'];
+  const target = pick(rng, keys);
+  const others = keys.filter(k=>k!==target);
+  const correct = pickDistinct(rng, SHAPE_ITEMS[target], 2);
+  const distractPool = SHAPE_ITEMS[others[0]].concat(SHAPE_ITEMS[others[1]]);
+  const distract = pickDistinct(rng, distractPool, 3);
+  const all = correct.concat(distract);
+  for(let i=all.length-1;i>0;i--){ const j=randInt(rng,0,i); [all[i],all[j]]=[all[j],all[i]]; }
+  const listHtml = all.map((it,idx)=> `${CIRCLE_NUMS[idx]} ${it}`).join('&nbsp;&nbsp;');
+  return `<div class="qline">다음 물건 중에서 ${SHAPE_NAMES[target]} 모양인 것을 모두 찾아 ○표 하세요.</div>
+    <div class="qline">${listHtml}${ansSpan(mode, correct.join(', '))}</div>`;
+}
+function buildU2T2(rng, mode){
+  const keys = ['sq','tri','cir'];
+  const target = pick(rng, keys);
+  const desc = pick(rng, SHAPE_DESC[target]);
+  return `<div class="qline">다음 설명에 알맞은 모양은 무엇인가요?</div>
+    <div class="qline">"${desc}"${ansSpan(mode, SHAPE_NAMES[target])}</div>`;
+}
+function buildU2T3(rng, mode){
+  let sq,tri,cir;
+  do{ sq=randInt(rng,2,6); tri=randInt(rng,2,6); cir=randInt(rng,2,6); }
+  while(sq===tri || tri===cir || sq===cir);
+  const rows = [
+    {label:'□', name:SHAPE_NAMES.sq, n:sq},
+    {label:'△', name:SHAPE_NAMES.tri, n:tri},
+    {label:'○', name:SHAPE_NAMES.cir, n:cir},
+  ];
+  const shapeRows = rows.map(r=> `<div class="shape-row"><b>${r.label} 모양:</b> ${new Array(r.n).fill(r.label).join(' ')}${mode==='answer'? ` <span class="ans">(${r.n}개)</span>`:''}</div>`).join('');
+  const max = rows.reduce((m,r)=> r.n>m.n? r:m, rows[0]);
+  return `<div class="qline">아래 모양의 개수를 세어 보세요.</div>
+    ${shapeRows}
+    <div class="qline">가장 많이 사용된 모양은 무엇이고 몇 개인가요?${ansSpan(mode, `${max.name} ${max.n}개`)}</div>`;
+}
+function buildU2T4(rng, mode){
+  const theme = pick(rng, SHAPE_THEME);
+  const c1 = randInt(rng,2,6), c2 = randInt(rng,2,6);
+  return `<div class="qline">${theme}을(를) 여러 가지 모양으로 꾸미는 데 ○ 모양 ${c1}개와 □ 모양 ${c2}개를 사용했습니다. 사용한 모양은 모두 몇 개인가요?${ansSpan(mode, `${c1+c2}개`)}</div>`;
+}
+
+function buildU3T1(rng, mode){
+  const x = randInt(rng,1,8);
+  const y = randInt(rng,1,9-x);
+  const T = randInt(rng,3,9);
+  const k = randInt(rng,1,T-1);
+  const other = T-k;
+  return `<div class="qline">① ${x}와(과) ${y}를 모으면 얼마인가요?${ansSpan(mode, String(x+y))}</div>
+    <div class="qline">② ${T}은(는) ${k}와(과) 얼마로 가를 수 있나요?${ansSpan(mode, String(other))}</div>`;
+}
+function buildU3T2(rng, mode){
+  const isAdd = rng() < 0.5;
+  if(isAdd){
+    const a = randInt(rng,1,7), b = randInt(rng,1,9-a);
+    const t = pick(rng, STORY_ADD);
+    return `<div class="qline">${t(a,b)} 이 상황을 덧셈식으로 나타내 보세요.${ansSpan(mode, `${a}+${b}=${a+b}`)}</div>`;
+  }else{
+    const a = randInt(rng,3,9), b = randInt(rng,1,a-1);
+    const t = pick(rng, STORY_SUB);
+    return `<div class="qline">${t(a,b)} 이 상황을 뺄셈식으로 나타내 보세요.${ansSpan(mode, `${a}-${b}=${a-b}`)}</div>`;
+  }
+}
+function buildU3T3(rng, mode){
+  const isAdd = rng() < 0.5;
+  if(isAdd){
+    const a = randInt(rng,0,9), b = randInt(rng,0,9-a);
+    return hcalc(a, '+', b, a+b, mode);
+  }else{
+    const a = randInt(rng,0,9), b = randInt(rng,0,a);
+    return hcalc(a, '-', b, a-b, mode);
+  }
+}
+function buildU3T4(rng, mode){
+  const isAdd = rng() < 0.5;
+  if(isAdd){
+    const a = randInt(rng,1,7), b = randInt(rng,1,9-a);
+    const t = pick(rng, STORY_ADD2);
+    return `<div class="qline">${t(a,b)} 식을 쓰고 답을 구해 보세요.${ansSpan(mode, `${a}+${b}=${a+b}`)}</div>`;
+  }else{
+    const a = randInt(rng,3,9), b = randInt(rng,1,a-1);
+    const t = pick(rng, STORY_SUB2);
+    return `<div class="qline">${t(a,b)} 식을 쓰고 답을 구해 보세요.${ansSpan(mode, `${a}-${b}=${a-b}`)}</div>`;
+  }
+}
+function buildU3T5(rng, mode){
+  const pattern = pick(rng, ['a+0','0+a','a-0','a-a']);
+  const a = randInt(rng,1,9);
+  if(pattern==='a+0') return hcalc(a,'+',0,a,mode);
+  if(pattern==='0+a') return hcalc(0,'+',a,a,mode);
+  if(pattern==='a-0') return hcalc(a,'-',0,a,mode);
+  return hcalc(a,'-',a,0,mode);
+}
+
+function buildCompareType(catIdx){
+  return function(rng, mode){
+    const cat = CAT4[catIdx];
+    const [A,B] = pickDistinct(rng, cat.items, 2);
+    return `<div class="qline">${cat.biggerStmt(A,B)} ${cat.smallerQ}${ansSpan(mode, B)}</div>`;
+  };
+}
+const buildU4T1 = buildCompareType(0);
+const buildU4T2 = buildCompareType(1);
+const buildU4T3 = buildCompareType(2);
+const buildU4T4 = buildCompareType(3);
+function buildU4T5(rng, mode){
+  const cat = pick(rng, CAT4);
+  const [A,B,C] = pickDistinct(rng, cat.items, 3);
+  return `<div class="qline">${cat.biggerStmt(A,B)} ${cat.biggerStmt(B,C)}</div>
+    <div class="qline">${cat.orderQ}${ansSpan(mode, `${A}, ${B}, ${C}`)}</div>`;
+}
+
+function buildU5T1(rng, mode){
+  const a = randInt(rng,1,9); const b = 10-a;
+  return `<div class="qline">${a}와(과) ${b}를 모으면 얼마인가요? 두 가지 방법으로 읽어 보세요.${ansSpan(mode, `10 · 십(열)`)}</div>`;
+}
+function buildU5T2(rng, mode){
+  const n = randInt(rng,1,9);
+  const T = randInt(rng,11,19);
+  const rest = T-10;
+  return `<div class="qline">① 10과 ${n}을(를) 모으면 얼마인가요?${ansSpan(mode, String(10+n))}</div>
+    <div class="qline">② ${T}은(는) 10과 얼마로 가를 수 있나요?${ansSpan(mode, String(rest))}</div>`;
+}
+function buildU5T3(rng, mode){
+  const tens = randInt(rng,1,4), ones = randInt(rng,0,9);
+  const total = tens*10+ones;
+  const obj = pick(rng, COUNT_OBJS);
+  return `<div class="qline">${obj}이(가) 10개씩 묶음 ${tens}개와 낱개 ${ones}개가 있습니다. ${obj}은(는) 모두 몇 개인가요?${ansSpan(mode, `${total}개`)}</div>`;
+}
+function buildU5T4(rng, mode){
+  const step = pick(rng,[1,10]);
+  let start, seq, blanks;
+  if(step===1){
+    start = randInt(rng,1,45);
+    seq = [start, start+1, start+2];
+    blanks = [start+3, start+4];
+  }else{
+    start = randInt(rng,1,10);
+    seq = [start, start+10, start+20];
+    blanks = [start+30, start+40];
+  }
+  return `<div class="qline">규칙에 맞게 다음에 이어질 수 두 개를 써 보세요.</div>
+    <div class="qline">${seq.join(', ')}${ansSpan(mode, `→ ${blanks.join(', ')}`)}</div>`;
+}
+function buildU5T5(rng, mode){
+  let x,y;
+  do{ x=randInt(rng,10,50); y=randInt(rng,10,50); } while(x===y);
+  const askBig = rng() < 0.5;
+  const word = askBig ? '더 큰' : '더 작은';
+  const ans = askBig ? Math.max(x,y) : Math.min(x,y);
+  return `<div class="qline">${x}과(와) ${y} 중에서 ${word} 수는 무엇인가요?${ansSpan(mode, String(ans))}</div>`;
+}
+
+
+const UNIT = { num:'1', title:'9까지의 수', color:'#ff7e67' };
+const TYPE = { name:'수 세어 나타내기', layout:'grid', cols:2, rows:5 };
+const TYPE_BUILD = buildU1T1;
+
+let mode = 'problem';
+let seed = Date.now() % 1000000007;
+
+function buildUniqueProblem(rng, mode, seen){
+  let html, sig, tries = 0;
+  do{
+    html = TYPE_BUILD(rng, mode);
+    sig = html.replace(/<span class="ans">[\s\S]*?<\/span>/g, '');
+    tries++;
+  } while(seen.has(sig) && tries < 25);
+  seen.add(sig);
+  return html;
+}
+function wrapList(inner){ return `<div class="sh-row wide"><div class="sh-cell wide">${inner}</div></div>`; }
+function wrapGrid(inner){ return `<div class="sh-cell">${inner}</div>`; }
+
+function buildSheetInner(mode, seed){
+  const rng = mulberry32(seed);
+  const modeLabel = mode === 'answer' ? '정답지' : '문제지';
+  const seen = new Set();
+  let rowsHtml = '';
+  if(TYPE.layout === 'grid'){
+    for(let r=0; r<TYPE.rows; r++){
+      let cells = '';
+      for(let c=0; c<TYPE.cols; c++){
+        cells += wrapGrid(buildUniqueProblem(rng, mode, seen));
+      }
+      rowsHtml += `<div class="sh-row">${cells}</div>`;
+    }
+  }else{
+    for(let i=0;i<TYPE.rows;i++){
+      rowsHtml += wrapList(buildUniqueProblem(rng, mode, seen));
+    }
+  }
+
+  return `
+    <div class="sh-header">
+      <div class="sh-cafe-strip">
+        <span class="cafe-badge">🔢 구구단닷컴</span>
+        <span class="cafe-url">www.googoodan.com</span>
+      </div>
+      <div class="sh-titlebar">
+        <div class="sh-title">
+          <span class="op-badge" style="background:${UNIT.color};">${UNIT.num}단원</span>
+          ${TYPE.name} <small>· ${UNIT.title}</small>
+        </div>
+      </div>
+      <div class="sh-fields">
+        <span class="f">학습일자 <span class="ln"></span></span>
+        <span class="f">대상 <b>초등 1학년 1학기</b></span>
+        <span class="f">이름 <span class="ln"></span></span>
+        <span class="f">점수 <span class="ln"></span></span>
+      </div>
+      <div class="sh-rule" style="background:linear-gradient(90deg, ${UNIT.color}, var(--sh-mint));"></div>
+    </div>
+    <main class="sh-main">${rowsHtml}</main>
+    <div class="sh-footer">
+      <span class="tagline">매일 10분, 수학 자신감을 키워요 ✏️</span>
+      <span class="brand">🔢 구구단닷컴 · www.googoodan.com</span>
+      <span class="pageno"></span>
+    </div>
+  `;
+}
+
+function render(){
+  document.getElementById('sheetHost').innerHTML = buildSheetInner(mode, seed);
+}
+function setMode(m){
+  mode = m;
+  document.getElementById('btnProblem').classList.toggle('active', m === 'problem');
+  document.getElementById('btnAnswer').classList.toggle('active', m === 'answer');
+  render();
+}
+function regenerate(){
+  seed = Math.floor(Math.random() * 1e9);
+  render();
+}
+render();
+</script>
+</body>
+</html>

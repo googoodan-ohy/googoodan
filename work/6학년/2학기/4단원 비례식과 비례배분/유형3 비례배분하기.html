@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4단원 비례식과 비례배분 - 유형3 비례배분하기</title>
+<style>
+
+  *{ box-sizing:border-box; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:14px; padding:16px;
+  }
+  .ggd-container{ max-width:900px; margin:0 auto; }
+  .ggd-ad{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center; color:#9aa0a8;
+    font-size:12px; font-weight:700; text-align:center; height:90px;
+    margin-bottom:16px;
+  }
+  .ggd-toolbar{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; justify-content:flex-end; }
+  .ggd-btn{
+    padding:10px 14px; border:1.5px solid #e4e6ea; border-radius:8px;
+    background:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:.15s;
+    color:#24262b;
+  }
+  .ggd-btn:hover{ border-color:#ff8961; background:#fff1ea; }
+  .ggd-btn.ggd-active{ background:#ff8961; border-color:#ff8961; color:#fff; }
+  .ggd-btn.ggd-primary{ background:#24262b; border-color:#24262b; color:#fff; }
+  .ggd-btn.ggd-primary:hover{ background:#000; border-color:#000; }
+  .ggd-sheet-wrap{ display:flex; justify-content:center; overflow-x:auto; padding-bottom:8px; }
+  @media print{
+    body{ padding:0; }
+    .ggd-ad, .ggd-toolbar{ display:none; }
+    .ggd-sheet-wrap{ padding:0; }
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+  }
+  @page{ size: A4; margin: 0; }
+
+
+  :root{
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --margin-y: 14mm;
+    --margin-x: 17mm;
+    --ink:#1f2430;
+    --accent:#20b39c;
+    --accent2:#f2994a;
+    --line:#333;
+    --mint:#20b39c;
+    --mint-dark:#0e8f7d;
+    --coral:#ff7e67;
+    --sun:#ffb100;
+    --blue:#4d96ff;
+    --violet:#8a63d2;
+    --teal:#2aa8c9;
+    --cream:#fff8ec;
+    --red:#e0342a;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    background:#eef1f6;
+    color:var(--ink);
+    font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+
+  /* ---------------- Screen-only control panel ---------------- */
+  .app{
+    max-width:1100px;
+    margin:0 auto;
+    padding:24px 16px 60px;
+  }
+  .app-title{
+    font-size:22px;
+    font-weight:800;
+    margin:0 0 4px;
+  }
+  .app-sub{
+    font-size:13px;
+    color:#5b6373;
+    margin:0 0 20px;
+  }
+  .panel{
+    background:#fff;
+    border:1px solid #e1e5ee;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 1px 3px rgba(20,30,60,.05);
+  }
+  .panel h2{
+    font-size:14px;
+    margin:0 0 10px;
+    color:#374057;
+    font-weight:700;
+  }
+  .tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tab-btn{
+    appearance:none;
+    border:1px solid #d7deed;
+    background:#f7f9fd;
+    color:#4a5268;
+    padding:9px 16px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.12s;
+  }
+  .tab-btn:hover{ background:#eef2fb; }
+  .tab-btn.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .tab-btn.mini{ padding:7px 12px; font-size:13px; }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    gap:10px 14px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .field label{
+    font-size:12px;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .field input[type=text],
+  .field input[type=number]{
+    border:1px solid #d7deed;
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:13px;
+    font-family:inherit;
+  }
+
+  .action-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  .btn{
+    appearance:none;
+    border:none;
+    border-radius:10px;
+    padding:11px 18px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    color:#fff;
+    transition:.12s;
+  }
+  .btn:disabled{ opacity:.55; cursor:progress; }
+  .btn.refresh{ background:#4a5268; }
+  .btn.refresh:hover:not(:disabled){ background:#3a4157; }
+  .btn.pdf{ background:#d64545; }
+  .btn.pdf:hover:not(:disabled){ background:#b93636; }
+  .btn.preview{ background:#2f9e6e; }
+  .btn.preview:hover:not(:disabled){ background:#24805a; }
+  .status-msg{
+    font-size:12.5px;
+    color:#8a91a3;
+  }
+  .status-msg.err{ color:#c0392b; font-weight:600; }
+
+  .view-toggle{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    font-size:13px;
+    color:#4a5268;
+  }
+  .view-toggle label{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor:pointer;
+    padding:6px 10px;
+    border:1px solid #d7deed;
+    border-radius:8px;
+  }
+  .view-toggle input{ margin:0; }
+
+  .preview-wrap{
+    display:flex;
+    justify-content:center;
+    padding:10px 0 40px;
+    overflow-x:auto;
+  }
+  .preview-shadow{
+    box-shadow:0 6px 24px rgba(20,30,60,.18);
+  }
+
+  /* ---------------- A4 Sheet ---------------- */
+  .sheet{
+    width:var(--page-w);
+    height:var(--page-h);
+    min-width:var(--page-w);
+    min-height:var(--page-h);
+    background:#fff;
+    padding:var(--margin-y) var(--margin-x);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 auto;
+  }
+  body.exporting .preview-shadow{ box-shadow:none; }
+
+  .sheet .sh-header{ flex:0 0 auto; }
+
+  .sh-cafe-strip{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .sh-cafe-strip .cafe-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--cream);
+    color:var(--mint-dark);
+    border:1.6px dashed var(--mint);
+    border-radius:20px;
+    padding:3px 13px;
+    font-size:9.5pt;
+    font-weight:800;
+  }
+  .sh-cafe-strip .cafe-url{
+    font-size:9pt;
+    color:var(--coral);
+    font-weight:800;
+    letter-spacing:.01em;
+  }
+
+  .sheet .sh-titlebar{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:8px;
+  }
+  .sheet .sh-title{
+    font-size:20pt;
+    font-weight:800;
+    letter-spacing:-.02em;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .sheet .sh-title .op-badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-size:12.5pt;
+    font-weight:700;
+    padding:2px 12px;
+    border-radius:20px;
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  .sheet .sh-title small{
+    font-size:11pt;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .sheet .sh-meta{
+    display:flex;
+    gap:16px;
+    font-size:10.5pt;
+    color:#374057;
+  }
+  .sheet .sh-meta span{ white-space:nowrap; }
+  .sheet .sh-fields{
+    display:flex;
+    gap:18px;
+    font-size:10.5pt;
+    color:#374057;
+    margin-top:6px;
+    flex-wrap:wrap;
+  }
+  .sheet .sh-fields .f{ display:flex; align-items:center; gap:5px; }
+  .sheet .sh-fields .f .ln{
+    display:inline-block;
+    border-bottom:1px solid #999;
+    min-width:70px;
+    height:1.1em;
+  }
+  .sheet .sh-fields .f b{ display:inline-block; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:bottom; }
+  .sheet .sh-rule{
+    height:3px;
+    margin:9px 0 4px;
+    border-radius:3px;
+    background:linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .sheet main.sh-main{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:10px;
+    min-height:0;
+  }
+  .sh-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;
+    gap:18px;
+  }
+  .sh-row.wide{ justify-content:flex-start; width:100%; }
+  .sh-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:2px;
+  }
+  .sh-cell.wide{
+    width:100%;
+    align-items:stretch;
+    justify-content:center;
+  }
+
+  .sheet .sh-footer{
+    flex:0 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:7px;
+    border-top:1.5px dashed var(--mint);
+    font-size:9pt;
+    color:#8a91a3;
+  }
+  .sheet .sh-footer .tagline{ font-weight:700; color:var(--mint-dark); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+  .sheet .sh-footer .brand{
+    font-style:normal;
+    font-weight:700;
+    color:var(--coral);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:360px;
+  }
+  .sheet .sh-footer .pageno::before{ content:"p. "; }
+
+  /* ---------------- Problem content pieces ---------------- */
+  .qline{ font-size:11.3pt; line-height:1.95; padding:2px 0; }
+  .shape-row{ font-size:15pt; letter-spacing:.14em; margin:1px 0; }
+  .fig-wrap{ display:flex; justify-content:center; margin-bottom:2px; }
+
+  .ans{
+    color:var(--red);
+    font-weight:800;
+  }
+
+  .hcalc{
+    font-family:"Consolas","SF Mono","Roboto Mono",monospace;
+    font-size:12.5pt;
+    display:inline-flex;
+    align-items:baseline;
+    gap:.35em;
+    white-space:nowrap;
+  }
+  .hcalc .n{ font-weight:700; display:inline-block; }
+  .hcalc .op{ font-weight:800; }
+  .hcalc .eq{ color:#555; }
+
+  @media print{
+    body{ background:#fff; }
+    .app > .panel, .app-title, .app-sub{ display:none; }
+    .preview-wrap{ padding:0; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ggd-container">
+  <div class="ggd-ad">광고 영역 (728 × 90)</div>
+
+  <div class="ggd-toolbar">
+    <button class="ggd-btn ggd-active" id="btnProblem" onclick="setMode('problem')">문제지</button>
+    <button class="ggd-btn" id="btnAnswer" onclick="setMode('answer')">정답지</button>
+    <button class="ggd-btn" onclick="regenerate()">숫자변경</button>
+    <button class="ggd-btn ggd-primary" onclick="window.print()">프린트</button>
+  </div>
+
+  <div class="ggd-sheet-wrap">
+    <div class="sheet" id="sheetHost"></div>
+  </div>
+</div>
+
+<script>
+
+/* =========================================================================
+   1. Seeded RNG helpers
+   ========================================================================= */
+function mulberry32(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function randInt(rng, min, max){ return Math.floor(rng() * (max - min + 1)) + min; }
+function pick(rng, arr){ return arr[randInt(rng, 0, arr.length-1)]; }
+function pickDistinct(rng, arr, n){
+  const pool = arr.slice();
+  const out = [];
+  for(let i=0;i<n && pool.length;i++){
+    const idx = randInt(rng, 0, pool.length-1);
+    out.push(pool[idx]);
+    pool.splice(idx,1);
+  }
+  return out;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* =========================================================================
+   2. Word banks
+   ========================================================================= */
+const COLOR = { coral:'#ff7e67', sun:'#ffb100', blue:'#4d96ff', violet:'#8a63d2', mint:'#20b39c', teal:'#2aa8c9', ink:'#1f2430' };
+
+const DECIMAL_WORD_ITEMS = [
+  { name:'주스', unit:'L' }, { name:'철사', unit:'m' }, { name:'쌀', unit:'kg' }, { name:'페인트', unit:'L' },
+];
+const RATIO_ITEMS_BANK = ['사탕', '구슬', '색종이', '연필', '초콜릿'];
+const WORD_RATIO_PAIRS = [
+  { thingA:'빵', unitA:'개', thingB:'밀가루', unitB:'컵' },
+  { thingA:'사탕', unitA:'개', thingB:'설탕', unitB:'큰술' },
+  { thingA:'과자', unitA:'봉지', thingB:'우유', unitB:'컵' },
+  { thingA:'리본', unitA:'개', thingB:'끈', unitB:'m' },
+];
+const CIRCLE_ITEMS = ['시계', '접시', '피자', '원탁', '쟁반', '훌라후프'];
+
+/* =========================================================================
+   3. Small render helpers
+   ========================================================================= */
+// No fill-in boxes or underlines: on problem sheets nothing is shown where an
+// answer would go; on answer sheets the answer appears inline in red.
+// IMPORTANT for every visual helper below: the picture itself must be
+// IDENTICAL between problem-mode and answer-mode renders of the same random
+// draw (givens only) — only ansSpan()-wrapped text may differ by mode. A
+// "?" placeholder marking the unknown quantity is a literal, mode-independent
+// glyph, never the real answer digit. All helpers build with flexbox rather
+// than CSS grid, since CSS grid can render unreliably through the
+// html2canvas PDF/preview export path. SVG fills use literal hex values
+// (COLOR.*), never CSS var(), for stable html2canvas rendering.
+function ansSpan(mode, text){
+  return mode==='answer' ? ` <span class="ans">${text}</span>` : '';
+}
+function hcalc(aStr, opSym, bStr, ansVal, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, String(ansVal))}`;
+}
+function gcd(a,b){ a=Math.abs(a); b=Math.abs(b); while(b){ const t=b; b=a%b; a=t; } return a || 1; }
+function fmtNum(x, decimals){
+  const d = decimals==null ? 2 : decimals;
+  const f = Math.pow(10,d);
+  return (Math.round(x*f)/f).toString();
+}
+
+// ---- Vertical fraction (분자/분모, flexbox column with a rule line) ----
+function fracHTML(num, den, opts={}){
+  const fs = opts.fs || '12.5pt';
+  return `<span style="display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;font-weight:800;font-size:${fs};line-height:1.2;margin:0 .12em;">
+    <span>${num}</span>
+    <span style="border-top:2px solid ${COLOR.ink};width:100%;min-width:1.3em;height:0;"></span>
+    <span>${den}</span>
+  </span>`;
+}
+function mixedHTML(whole, num, den, opts={}){
+  return `<span style="display:inline-flex;align-items:center;vertical-align:middle;">
+    <span style="font-weight:800;font-size:${opts.fs||'12.5pt'};margin-right:.15em;">${whole}</span>${fracHTML(num,den,opts)}
+  </span>`;
+}
+// Reduce num/den to lowest terms and render as whole / mixed number / fraction.
+function fracAnswerHTML(num, den){
+  if(den===0) den = 1;
+  if(num===0) return '<b>0</b>';
+  const g = gcd(num,den);
+  const n = num/g, d = den/g;
+  if(d===1) return `<b>${n}</b>`;
+  if(n>d){
+    const whole = Math.floor(n/d), rem = n - whole*d;
+    if(rem===0) return `<b>${whole}</b>`;
+    return mixedHTML(whole, rem, d);
+  }
+  return fracHTML(n,d);
+}
+// Build one horizontal fraction equation line from tokens:
+//   {type:'frac',num,den} | {type:'mixed',whole,num,den} | {type:'num',val} | {type:'op',sym}
+function fracEqHTML(tokens, ansVal, mode){
+  const inner = tokens.map(t=>{
+    if(t.type==='frac')  return `<span class="n">${fracHTML(t.num,t.den)}</span>`;
+    if(t.type==='mixed') return `<span class="n">${mixedHTML(t.whole,t.num,t.den)}</span>`;
+    if(t.type==='num')   return `<span class="n">${t.val}</span>`;
+    return `<span class="op">${t.sym}</span>`;
+  }).join('');
+  return `<span class="hcalc">${inner}<span class="eq">=</span></span>${ansSpan(mode, ansVal)}`;
+}
+
+// ---- Circle diagram: given radius or diameter labeled (literal given value) ----
+function circleSVG(labelValue, opts={}){
+  const size = opts.size || 100;
+  const r = size/2-8, cx=size/2, cy=size/2;
+  const color = opts.color || COLOR.blue;
+  let s = `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">`;
+  s += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="2.4"/>`;
+  if(opts.diameter){
+    s += `<line x1="${cx-r}" y1="${cy}" x2="${cx+r}" y2="${cy}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+    s += `<text x="${cx}" y="${cy-6}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${labelValue}</text>`;
+  }else{
+    s += `<line x1="${cx}" y1="${cy}" x2="${cx+r}" y2="${cy}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+    s += `<text x="${cx+r/2}" y="${cy-6}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${labelValue}</text>`;
+  }
+  s += `<circle cx="${cx}" cy="${cy}" r="2" fill="${COLOR.ink}"/>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Cylinder (원기둥) with radius/height labeled ----
+function cylinderSVG(labelR, labelH, opts={}){
+  // canvasW leaves room to the right of the cylinder body for the height
+  // label (line + text sit past cx+rx) so it isn't clipped by the viewBox.
+  const w = opts.w || 110, rx=w/2-6, ry=14, topY=16, bodyH=70, cx=w/2, botY=topY+bodyH;
+  const canvasW = w + 30;
+  let s = `<svg width="${canvasW}" height="${botY+ry+10}" viewBox="0 0 ${canvasW} ${botY+ry+10}">`;
+  s += `<line x1="${cx-rx}" y1="${topY}" x2="${cx-rx}" y2="${botY}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<line x1="${cx+rx}" y1="${topY}" x2="${cx+rx}" y2="${botY}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<ellipse cx="${cx}" cy="${botY}" rx="${rx}" ry="${ry}" fill="none" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<path d="M ${cx-rx} ${topY} A ${rx} ${ry} 0 0 0 ${cx+rx} ${topY}" fill="none" stroke="${COLOR.ink}" stroke-width="1.8" stroke-dasharray="3,2"/>`;
+  s += `<path d="M ${cx-rx} ${topY} A ${rx} ${ry} 0 0 1 ${cx+rx} ${topY}" fill="none" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<line x1="${cx}" y1="${topY}" x2="${cx}" y2="${topY+ry}" stroke="${COLOR.coral}" stroke-width="1.6"/>`;
+  s += `<text x="${cx+8}" y="${topY+ry-2}" font-size="9" font-weight="800" fill="${COLOR.coral}">${labelR}</text>`;
+  s += `<line x1="${cx+rx+10}" y1="${topY}" x2="${cx+rx+10}" y2="${botY}" stroke="${COLOR.blue}" stroke-width="1.4"/>`;
+  s += `<text x="${cx+rx+13}" y="${(topY+botY)/2+3}" font-size="9" font-weight="800" fill="${COLOR.blue}">${labelH}</text>`;
+  s += `</svg>`;
+  return s;
+}
+// ---- Cylinder with one part (밑면/옆면/높이) highlighted and marked "?" ----
+function cylinderPartSVG(part, opts={}){
+  // canvasW leaves room to the right of the cylinder body for the 높이
+  // (height) marker line + "?" label, which sits past cx+rx — without this
+  // margin that marker is clipped outside the SVG viewBox and invisible.
+  const w = opts.w || 110, rx=w/2-6, ry=14, topY=16, bodyH=opts.bodyH || 70, cx=w/2, botY=topY+bodyH;
+  const canvasW = w + 22;
+  let s = `<svg width="${canvasW}" height="${botY+ry+10}" viewBox="0 0 ${canvasW} ${botY+ry+10}">`;
+  const sideFill = part==='옆면' ? 'rgba(77,150,255,.20)' : 'none';
+  s += `<rect x="${cx-rx}" y="${topY}" width="${rx*2}" height="${bodyH}" fill="${sideFill}"/>`;
+  s += `<line x1="${cx-rx}" y1="${topY}" x2="${cx-rx}" y2="${botY}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<line x1="${cx+rx}" y1="${topY}" x2="${cx+rx}" y2="${botY}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  const botFill = part==='밑면' ? 'rgba(255,126,103,.35)' : 'none';
+  s += `<ellipse cx="${cx}" cy="${botY}" rx="${rx}" ry="${ry}" fill="${botFill}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<path d="M ${cx-rx} ${topY} A ${rx} ${ry} 0 0 0 ${cx+rx} ${topY}" fill="none" stroke="${COLOR.ink}" stroke-width="1.8" stroke-dasharray="3,2"/>`;
+  s += `<path d="M ${cx-rx} ${topY} A ${rx} ${ry} 0 0 1 ${cx+rx} ${topY}" fill="${botFill}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  if(part==='높이'){
+    s += `<line x1="${cx+rx+10}" y1="${topY}" x2="${cx+rx+10}" y2="${botY}" stroke="${COLOR.coral}" stroke-width="2"/>`;
+    s += `<text x="${cx+rx+13}" y="${(topY+botY)/2+3}" font-size="10.5" font-weight="800" fill="${COLOR.coral}">?</text>`;
+  }
+  if(part==='옆면'){
+    s += `<text x="${cx}" y="${(topY+botY)/2+4}" font-size="10.5" font-weight="800" text-anchor="middle" fill="${COLOR.blue}">?</text>`;
+  }
+  if(part==='밑면'){
+    s += `<text x="${cx}" y="${botY+4}" font-size="10.5" font-weight="800" text-anchor="middle" fill="${COLOR.coral}">?</text>`;
+  }
+  s += `</svg>`;
+  return s;
+}
+// ---- Cone (원뿔) with one part (모선/높이/밑면) highlighted and marked "?" ----
+function conePartSVG(part, opts={}){
+  const w = opts.w || 110, rx=w/2-6, ry=12, apexY=10, baseY=opts.baseY || 90, cx=w/2;
+  let s = `<svg width="${w}" height="${baseY+ry+10}" viewBox="0 0 ${w} ${baseY+ry+10}">`;
+  s += `<line x1="${cx}" y1="${apexY}" x2="${cx-rx}" y2="${baseY}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<line x1="${cx}" y1="${apexY}" x2="${cx+rx}" y2="${baseY}" stroke="${part==='모선'?COLOR.blue:COLOR.ink}" stroke-width="${part==='모선'?2.6:1.8}"/>`;
+  const botFill = part==='밑면' ? 'rgba(255,126,103,.35)' : 'none';
+  s += `<ellipse cx="${cx}" cy="${baseY}" rx="${rx}" ry="${ry}" fill="${botFill}" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  if(part==='높이'){
+    s += `<line x1="${cx}" y1="${apexY}" x2="${cx}" y2="${baseY}" stroke="${COLOR.coral}" stroke-width="1.8" stroke-dasharray="3,2"/>`;
+    s += `<text x="${cx+6}" y="${(apexY+baseY)/2}" font-size="10" font-weight="800" fill="${COLOR.coral}">?</text>`;
+  }
+  if(part==='모선'){
+    s += `<text x="${(cx+cx+rx)/2+7}" y="${(apexY+baseY)/2}" font-size="10" font-weight="800" fill="${COLOR.blue}">?</text>`;
+  }
+  if(part==='밑면'){
+    s += `<text x="${cx}" y="${baseY+4}" font-size="10" font-weight="800" text-anchor="middle" fill="${COLOR.coral}">?</text>`;
+  }
+  s += `</svg>`;
+  return s;
+}
+// ---- Sphere (구) with radius or diameter labeled ----
+function sphereSVG(labelValue, opts={}){
+  const size = opts.size || 90, r = size/2-8, cx=size/2, cy=size/2;
+  let s = `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">`;
+  s += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COLOR.ink}" stroke-width="1.8"/>`;
+  s += `<ellipse cx="${cx}" cy="${cy}" rx="${r}" ry="${r*0.35}" fill="none" stroke="${COLOR.ink}" stroke-width="1.2" stroke-dasharray="3,2"/>`;
+  if(opts.diameter){
+    s += `<line x1="${cx-r}" y1="${cy}" x2="${cx+r}" y2="${cy}" stroke="${COLOR.coral}" stroke-width="1.6"/>`;
+    s += `<text x="${cx}" y="${cy-6}" font-size="9.5" font-weight="800" text-anchor="middle" fill="${COLOR.coral}">${labelValue}</text>`;
+  }else{
+    s += `<line x1="${cx}" y1="${cy}" x2="${cx+r}" y2="${cy}" stroke="${COLOR.coral}" stroke-width="1.6"/>`;
+    s += `<text x="${cx+r/2}" y="${cy-6}" font-size="9.5" font-weight="800" text-anchor="middle" fill="${COLOR.coral}">${labelValue}</text>`;
+  }
+  s += `</svg>`;
+  return s;
+}
+
+// ---- 위에서 본 모양 숫자 배치도 (2행×3열, 각 칸 = 그 자리에 쌓은 개수) ----
+function randomCubeGrid(rng){
+  let grid, nonzero, sum;
+  do{
+    grid = [];
+    for(let r=0;r<2;r++){ const row=[]; for(let c=0;c<3;c++){ row.push(randInt(rng,0,4)); } grid.push(row); }
+    nonzero = grid.flat().filter(v=>v>0).length;
+    sum = grid.flat().reduce((a,b)=>a+b,0);
+  } while(nonzero<4 || sum<6);
+  return grid;
+}
+function cubeGridHTML(grid){
+  const cellW=40, cellH=32;
+  const rows = grid.map(row=>{
+    const cells = row.map(v=>`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;font-size:13pt;font-weight:800;border:1.4px solid #d7deed;background:${v>0?'#f3f5fa':'#fff'};color:${v>0?COLOR.ink:'#c7cbd6'};">${v}</div>`).join('');
+    return `<div style="display:flex;">${cells}</div>`;
+  }).join('');
+  return `<div style="display:inline-flex;flex-direction:column;align-items:center;gap:2px;">
+    <div style="display:inline-flex;flex-direction:column;border:2px solid ${COLOR.ink};">${rows}</div>
+    <div style="font-size:6.6pt;color:#8a91a3;font-weight:700;">숫자 = 그 자리에 쌓은 개수</div>
+  </div>`;
+}
+
+// ---- Ratio bar for 비례배분 (segments proportional to a given ratio) ----
+function barRatioSVG(aParts, bParts, opts={}){
+  const totalParts = aParts+bParts;
+  const w = opts.w || 190, h = 24;
+  const segW = w/totalParts;
+  let s = `<svg width="${w}" height="${h+14}" viewBox="0 0 ${w} ${h+14}">`;
+  for(let i=0;i<totalParts;i++){
+    const x = i*segW, isA = i<aParts;
+    s += `<rect x="${x.toFixed(1)}" y="0" width="${segW.toFixed(1)}" height="${h}" fill="${isA?COLOR.blue:COLOR.coral}" stroke="#fff" stroke-width="1"/>`;
+  }
+  s += `<rect x="0" y="0" width="${w}" height="${h}" fill="none" stroke="${COLOR.ink}" stroke-width="1.6"/>`;
+  s += `<text x="${(aParts*segW/2).toFixed(1)}" y="${h+12}" font-size="9.5" text-anchor="middle" font-weight="800" fill="${COLOR.blue}">${aParts}</text>`;
+  s += `<text x="${(aParts*segW + bParts*segW/2).toFixed(1)}" y="${h+12}" font-size="9.5" text-anchor="middle" font-weight="800" fill="${COLOR.coral}">${bParts}</text>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Small comparison fact table (원기둥/원뿔/구) ----
+function factTableHTML(rowLabels, colLabels, data, blankR, blankC){
+  const cellW=64, cellH=28;
+  const header = `<div style="display:flex;">
+    <div style="width:${cellW}px;height:${cellH}px;"></div>
+    ${colLabels.map(c=>`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;background:#f3f5fa;font-weight:800;font-size:8.4pt;text-align:center;padding:0 2px;">${c}</div>`).join('')}
+  </div>`;
+  const rows = rowLabels.map((rl,ri)=>{
+    const cells = colLabels.map((c,ci)=>{
+      const isBlank = ri===blankR && ci===blankC;
+      const val = data[ri][ci];
+      return `<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:800;${isBlank?`background:${COLOR.coral};color:#fff;`:''}">${isBlank?'?':val}</div>`;
+    }).join('');
+    return `<div style="display:flex;margin-top:1px;">
+      <div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;background:#f3f5fa;font-weight:800;font-size:9pt;">${rl}</div>
+      ${cells}
+    </div>`;
+  }).join('');
+  return `<div style="display:inline-block;border:1.5px solid #d7deed;padding:2px;">${header}${rows}</div>`;
+}
+
+/* =========================================================================
+   4. Unit 1 — 분수의 나눗셈
+   ========================================================================= */
+function buildU1T1(rng, mode){
+  const d = randInt(rng,4,9);
+  let a,b; do{ a=randInt(rng,1,d-1); b=randInt(rng,1,d-1); }while(a===b);
+  const ans = fracAnswerHTML(a,b);
+  return `<div class="qline">${fracEqHTML([
+    {type:'frac',num:a,den:d},{type:'op',sym:'÷'},{type:'frac',num:b,den:d}
+  ], ans, mode)}</div>`;
+}
+function buildU1T2(rng, mode){
+  const d1=randInt(rng,3,8), d2=randInt(rng,3,8);
+  const a=randInt(rng,1,d1-1), b=randInt(rng,1,d2-1);
+  const ans = fracAnswerHTML(a*d2, d1*b);
+  return `<div class="qline">${fracEqHTML([
+    {type:'frac',num:a,den:d1},{type:'op',sym:'÷'},{type:'frac',num:b,den:d2}
+  ], ans, mode)}</div>`;
+}
+function buildU1T3(rng, mode){
+  const n = randInt(rng,1,12);
+  const d = randInt(rng,2,6), b = randInt(rng,1,d-1);
+  const ans = fracAnswerHTML(n*d, b);
+  return `<div class="qline">${fracEqHTML([
+    {type:'num',val:n},{type:'op',sym:'÷'},{type:'frac',num:b,den:d}
+  ], ans, mode)}</div>`;
+}
+function buildU1T4(rng, mode){
+  const d = randInt(rng,3,9), a = randInt(rng,1,d-1);
+  const n = randInt(rng,2,9);
+  const ans = fracAnswerHTML(a, d*n);
+  return `<div class="qline">${fracEqHTML([
+    {type:'frac',num:a,den:d},{type:'op',sym:'÷'},{type:'num',val:n}
+  ], ans, mode)}</div>`;
+}
+function buildU1T5(rng, mode){
+  const whole = randInt(rng,1,3), den = randInt(rng,2,5), num = randInt(rng,1,den-1);
+  const den2 = randInt(rng,2,5), num2 = randInt(rng,1,den2-1);
+  const areaNum = whole*den+num;
+  const ans = fracAnswerHTML(areaNum*den2, den*num2);
+  return `<div class="qline">직사각형 모양 화단의 넓이는 ${mixedHTML(whole,num,den)} m², 가로는 ${fracHTML(num2,den2)} m입니다. 세로는 몇 m인가요?${ansSpan(mode, `${ans} m`)}</div>`;
+}
+
+/* =========================================================================
+   5. Unit 2 — 소수의 나눗셈
+   ========================================================================= */
+function buildU2T1(rng, mode){
+  const n = randInt(rng,2,9);
+  const iQ = randInt(rng,1,9), dQ = randInt(rng,1,9);
+  const Q = iQ + dQ/10;
+  const dividend = Q*n;
+  return hcalc(fmtNum(dividend,1), '÷', String(n), fmtNum(Q,1), mode);
+}
+function buildU2T2(rng, mode){
+  const n = randInt(rng,2,9);
+  const iQ = randInt(rng,1,9), dQ = randInt(rng,1,99);
+  const Q = iQ + dQ/100;
+  const dividend = Q*n;
+  return hcalc(fmtNum(dividend,2), '÷', String(n), fmtNum(Q,2), mode);
+}
+function buildU2T3(rng, mode){
+  const n = pick(rng, [2,4,5]);
+  const dividend = randInt(rng,12,96);
+  const Q = dividend/n;
+  return `<div class="qline">${dividend} ÷ ${n} 를 몫이 소수인 나눗셈으로 계산하면?${ansSpan(mode, fmtNum(Q,2))}</div>`;
+}
+function buildU2T4(rng, mode){
+  const q = randInt(rng,2,9);
+  const iD = randInt(rng,1,9), dD = randInt(rng,1,9);
+  const D = iD + dD/10;
+  const dividend = D*q;
+  return hcalc(fmtNum(dividend,1), '÷', fmtNum(D,1), String(q), mode);
+}
+function buildU2T5(rng, mode){
+  const n = randInt(rng,2,9);
+  const Dt = randInt(rng,100,999);
+  const quotient = Math.floor(Dt/(n*10));
+  const remTenths = Dt - quotient*n*10;
+  const Dstr = fmtNum(Dt/10,1);
+  const remStr = fmtNum(remTenths/10,1);
+  const item = pick(rng, DECIMAL_WORD_ITEMS);
+  return `<div class="qline">${item.name} ${Dstr} ${item.unit}를 한 사람에게 ${n} ${item.unit}씩 나누어 주려고 합니다. 몇 명에게 나누어 줄 수 있고, 남는 ${item.name}은 몇 ${item.unit}인가요?${ansSpan(mode, `${quotient}명, ${remStr} ${item.unit}`)}</div>`;
+}
+
+/* =========================================================================
+   6. Unit 3 — 공간과 입체
+   ========================================================================= */
+function buildU3T1(rng, mode){
+  const grid = randomCubeGrid(rng);
+  const sum = grid.flat().reduce((a,b)=>a+b,0);
+  return `<div class="fig-wrap">${cubeGridHTML(grid)}</div>
+    <div class="qline">위에서 본 모양에 쌓은 개수를 쓴 것입니다. 쌓기나무는 모두 몇 개인가요?${ansSpan(mode, `${sum}개`)}</div>`;
+}
+function buildU3T2(rng, mode){
+  const grid = randomCubeGrid(rng);
+  const front = [0,1,2].map(c=> Math.max(grid[0][c], grid[1][c]));
+  return `<div class="fig-wrap">${cubeGridHTML(grid)}</div>
+    <div class="qline">앞에서 본 모양의 왼쪽부터 세 자리 높이는 각각 몇 층인가요?${ansSpan(mode, `${front[0]}층, ${front[1]}층, ${front[2]}층`)}</div>`;
+}
+function buildU3T3(rng, mode){
+  const grid = randomCubeGrid(rng);
+  const side = [0,1].map(r=> Math.max(grid[r][0],grid[r][1],grid[r][2]));
+  return `<div class="fig-wrap">${cubeGridHTML(grid)}</div>
+    <div class="qline">옆에서 본 모양의 앞줄부터 두 자리 높이는 각각 몇 층인가요?${ansSpan(mode, `${side[0]}층, ${side[1]}층`)}</div>`;
+}
+function buildU3T4(rng, mode){
+  const grid = randomCubeGrid(rng);
+  const cnt = grid.flat().filter(v=>v>=1).length;
+  return `<div class="fig-wrap">${cubeGridHTML(grid)}</div>
+    <div class="qline">1층에 쌓인 쌓기나무는 몇 개인가요?${ansSpan(mode, `${cnt}개`)}</div>`;
+}
+function buildU3T5(rng, mode){
+  const grid = randomCubeGrid(rng);
+  const cnt = grid.flat().filter(v=>v>=2).length;
+  return `<div class="fig-wrap">${cubeGridHTML(grid)}</div>
+    <div class="qline">2층에 쌓인 쌓기나무는 몇 개인가요?${ansSpan(mode, `${cnt}개`)}</div>`;
+}
+
+/* =========================================================================
+   7. Unit 4 — 비례식과 비례배분
+   ========================================================================= */
+function buildU4T1(rng, mode){
+  const a = randInt(rng,2,9), b = randInt(rng,2,9), k = randInt(rng,2,6);
+  const c = a*k, d = b*k;
+  return `<div class="qline" style="font-size:14pt;font-weight:800;">${a} : ${b} = ${c} : <span style="display:inline-block;min-width:1.3em;text-align:center;">?</span>${ansSpan(mode, ' '+d)}</div>`;
+}
+function buildU4T2(rng, mode){
+  const a=randInt(rng,2,9), b=randInt(rng,2,9), k=randInt(rng,2,6);
+  const c=a*k, d=b*k;
+  const vals=[a,b,c,d];
+  const idx = randInt(rng,0,3);
+  const ans = vals[idx];
+  const shown = vals.map((v,i)=> i===idx? '?' : v);
+  return `<div class="qline" style="font-size:14pt;font-weight:800;">${shown[0]} : ${shown[1]} = ${shown[2]} : ${shown[3]}${ansSpan(mode, ' '+ans)}</div>`;
+}
+function buildU4T3(rng, mode){
+  const aParts=randInt(rng,2,7); let bParts; do{ bParts=randInt(rng,2,7); }while(bParts===aParts);
+  const unit=randInt(rng,2,8);
+  const total=(aParts+bParts)*unit;
+  const A=aParts*unit, B=bParts*unit;
+  const item = pick(rng, RATIO_ITEMS_BANK);
+  return `<div class="fig-wrap">${barRatioSVG(aParts,bParts)}</div>
+    <div class="qline">${item} ${total}개를 ${aParts} : ${bParts}로 비례배분하면 각각 몇 개인가요?${ansSpan(mode, `${A}개, ${B}개`)}</div>`;
+}
+function buildU4T4(rng, mode){
+  const g = randInt(rng,2,9);
+  let p = randInt(rng,2,9), q; do{ q=randInt(rng,2,9); }while(q===p);
+  const a = p*g, b = q*g;
+  const gg = gcd(p,q);
+  const rp = p/gg, rq = q/gg;
+  return `<div class="qline" style="font-size:13pt;font-weight:800;">${a} : ${b} 을 가장 간단한 자연수의 비로 나타내면?${ansSpan(mode, ` ${rp} : ${rq}`)}</div>`;
+}
+function buildU4T5(rng, mode){
+  const a=randInt(rng,2,6), b=randInt(rng,2,9), k=randInt(rng,2,5);
+  const c=a*k, d=b*k;
+  const pair = pick(rng, WORD_RATIO_PAIRS);
+  return `<div class="qline">${pair.thingA} ${a}${pair.unitA}를 만드는 데 ${pair.thingB} ${b}${pair.unitB}가 필요합니다. ${pair.thingA} ${c}${pair.unitA}를 만들려면 ${pair.thingB}는 몇 ${pair.unitB} 필요한가요?${ansSpan(mode, `${d}${pair.unitB}`)}</div>`;
+}
+
+/* =========================================================================
+   8. Unit 5 — 원의 넓이
+   ========================================================================= */
+function buildU5T1(rng, mode){
+  const d = randInt(rng,2,40);
+  const circ = fmtNum(d*3.14,2);
+  return `<div class="fig-wrap">${circleSVG(`지름 ${d}cm`, {diameter:true, color:COLOR.blue})}</div>
+    <div class="qline">원주율을 3.14로 하여 원주를 구하면?${ansSpan(mode, `${circ} cm`)}</div>`;
+}
+function buildU5T2(rng, mode){
+  const r = randInt(rng,2,15);
+  const circ = fmtNum(r*2*3.14,2);
+  return `<div class="fig-wrap">${circleSVG(`반지름 ${r}cm`, {color:COLOR.violet})}</div>
+    <div class="qline">원주율을 3.14로 하여 원주를 구하면?${ansSpan(mode, `${circ} cm`)}</div>`;
+}
+function buildU5T3(rng, mode){
+  const d = randInt(rng,2,30);
+  const circ = fmtNum(d*3.14,2);
+  const askRadius = rng() < 0.5;
+  if(askRadius){
+    const r = d/2;
+    return `<div class="qline">원주가 ${circ} cm인 원의 반지름은 몇 cm인가요? (원주율: 3.14)${ansSpan(mode, `${fmtNum(r,1)} cm`)}</div>`;
+  }
+  return `<div class="qline">원주가 ${circ} cm인 원의 지름은 몇 cm인가요? (원주율: 3.14)${ansSpan(mode, `${d} cm`)}</div>`;
+}
+function buildU5T4(rng, mode){
+  const r = randInt(rng,2,15);
+  const area = fmtNum(r*r*3.14,2);
+  return `<div class="fig-wrap">${circleSVG(`반지름 ${r}cm`, {color:COLOR.mint})}</div>
+    <div class="qline">원주율을 3.14로 하여 원의 넓이를 구하면?${ansSpan(mode, `${area} cm²`)}</div>`;
+}
+function buildU5T5(rng, mode){
+  const d = randInt(rng,3,20)*2;
+  const r = d/2;
+  const area = fmtNum(r*r*3.14,2);
+  const item = pick(rng, CIRCLE_ITEMS);
+  return `<div class="fig-wrap">${circleSVG(`지름 ${d}cm`, {diameter:true, color:COLOR.coral})}</div>
+    <div class="qline">지름이 ${d} cm인 원 모양 ${item}의 넓이는 몇 cm²인가요? (원주율: 3.14)${ansSpan(mode, `${area} cm²`)}</div>`;
+}
+
+/* =========================================================================
+   9. Unit 6 — 원기둥, 원뿔, 구
+   ========================================================================= */
+function buildU6T1(rng, mode){
+  const r = randInt(rng,2,10), h = randInt(rng,3,15);
+  const circ = fmtNum(r*2*3.14,2);
+  return `<div class="fig-wrap">${cylinderSVG(`반지름 ${r}cm`, `높이 ${h}cm`)}</div>
+    <div class="qline">원기둥 밑면의 둘레(전개도의 옆면의 가로 길이)는 몇 cm인가요? (원주율: 3.14)${ansSpan(mode, `${circ} cm`)}</div>`;
+}
+function buildU6T2(rng, mode){
+  const parts = ['밑면','옆면','높이'];
+  const part = pick(rng, parts);
+  // Part-name value space is only 3 (curriculum-fixed), smaller than the
+  // grid's 12 cells, so exact answer repeats are unavoidable — vary the
+  // drawn cylinder's proportions (cosmetic only, not part of the question)
+  // so cells don't render as pixel-identical duplicates.
+  const w = randInt(rng,96,124), bodyH = randInt(rng,58,82);
+  return `<div class="fig-wrap">${cylinderPartSVG(part, {w, bodyH})}</div>
+    <div class="qline">색칠되었거나 ?로 표시된 부분의 이름은 무엇인가요?${ansSpan(mode, part)}</div>`;
+}
+function buildU6T3(rng, mode){
+  const parts = ['모선','높이','밑면'];
+  const part = pick(rng, parts);
+  // Same rationale as buildU6T2: vary the cone's drawn proportions so the
+  // small (3-value) part-name answer space doesn't produce identical-looking
+  // repeats across the grid's 12 cells.
+  const w = randInt(rng,96,124), baseY = randInt(rng,76,100);
+  return `<div class="fig-wrap">${conePartSVG(part, {w, baseY})}</div>
+    <div class="qline">색칠되었거나 ?로 표시된 부분의 이름은 무엇인가요?${ansSpan(mode, part)}</div>`;
+}
+function buildU6T4(rng, mode){
+  const r = randInt(rng,2,20);
+  const askDiameter = rng() < 0.5;
+  if(askDiameter){
+    return `<div class="fig-wrap">${sphereSVG(`반지름 ${r}cm`)}</div>
+      <div class="qline">구의 지름은 몇 cm인가요?${ansSpan(mode, `${r*2} cm`)}</div>`;
+  }
+  const d = r*2;
+  return `<div class="fig-wrap">${sphereSVG(`지름 ${d}cm`, {diameter:true})}</div>
+    <div class="qline">구의 반지름은 몇 cm인가요?${ansSpan(mode, `${r} cm`)}</div>`;
+}
+function buildU6T5(rng, mode){
+  const rowLabels = ['원기둥','원뿔','구'];
+  const colLabels = ['밑면의 수','꼭짓점의 수'];
+  const data = [[2,0],[1,1],[0,0]];
+  const br = randInt(rng,0,2), bc = randInt(rng,0,1);
+  const ans = data[br][bc];
+  return `<div class="fig-wrap">${factTableHTML(rowLabels,colLabels,data,br,bc)}</div>
+    <div class="qline">표의 빈칸에 알맞은 수는?${ansSpan(mode, String(ans))}</div>`;
+}
+
+/* =========================================================================
+   10. Unit / Type registry
+   ========================================================================= */
+
+const UNITS = [
+  { key:'u1', num:'1', title:'분수의 나눗셈', color:'var(--coral)',
+    types:[
+      { name:'분모가 같은 (진분수)÷(진분수)', layout:'grid', cols:3, rows:5, build:buildU1T1 },
+      { name:'분모가 다른 (진분수)÷(진분수)', layout:'grid', cols:3, rows:5, build:buildU1T2 },
+      { name:'(자연수)÷(진분수)', layout:'grid', cols:3, rows:5, build:buildU1T3 },
+      { name:'(진분수)÷(자연수)', layout:'grid', cols:3, rows:5, build:buildU1T4 },
+      { name:'문장제: 직사각형의 세로 구하기', layout:'list', cols:1, rows:5, build:buildU1T5 },
+    ]},
+  { key:'u2', num:'2', title:'소수의 나눗셈', color:'var(--sun)',
+    types:[
+      { name:'(소수 한 자리 수)÷(자연수)', layout:'grid', cols:3, rows:6, build:buildU2T1 },
+      { name:'(소수 두 자리 수)÷(자연수)', layout:'grid', cols:3, rows:6, build:buildU2T2 },
+      { name:'(자연수)÷(자연수)의 몫을 소수로', layout:'grid', cols:3, rows:6, build:buildU2T3 },
+      { name:'(소수)÷(소수)', layout:'grid', cols:3, rows:6, build:buildU2T4 },
+      { name:'문장제: 몫과 남는 양 구하기', layout:'list', cols:1, rows:6, build:buildU2T5 },
+    ]},
+  { key:'u3', num:'3', title:'공간과 입체', color:'var(--blue)',
+    types:[
+      { name:'위에서 본 모양으로 전체 개수 구하기', layout:'grid', cols:3, rows:4, build:buildU3T1 },
+      { name:'앞에서 본 모양의 높이 구하기', layout:'grid', cols:3, rows:3, build:buildU3T2 },
+      { name:'옆에서 본 모양의 높이 구하기', layout:'grid', cols:3, rows:3, build:buildU3T3 },
+      { name:'1층에 쌓인 쌓기나무 개수', layout:'grid', cols:3, rows:4, build:buildU3T4 },
+      { name:'2층에 쌓인 쌓기나무 개수', layout:'grid', cols:3, rows:4, build:buildU3T5 },
+    ]},
+  { key:'u4', num:'4', title:'비례식과 비례배분', color:'var(--violet)',
+    types:[
+      { name:'비례식에서 항 구하기(기본)', layout:'grid', cols:3, rows:5, build:buildU4T1 },
+      { name:'비례식에서 항 구하기(응용)', layout:'grid', cols:3, rows:5, build:buildU4T2 },
+      { name:'비례배분하기', layout:'list', cols:1, rows:5, build:buildU4T3 },
+      { name:'간단한 자연수의 비로 나타내기', layout:'grid', cols:3, rows:6, build:buildU4T4 },
+      { name:'문장제: 비례식 활용', layout:'list', cols:1, rows:6, build:buildU4T5 },
+    ]},
+  { key:'u5', num:'5', title:'원의 넓이', color:'var(--mint)',
+    types:[
+      { name:'원주 구하기(지름 이용)', layout:'grid', cols:3, rows:4, build:buildU5T1 },
+      { name:'원주 구하기(반지름 이용)', layout:'grid', cols:3, rows:4, build:buildU5T2 },
+      { name:'원주로 지름·반지름 구하기', layout:'grid', cols:3, rows:6, build:buildU5T3 },
+      { name:'원의 넓이 구하기', layout:'grid', cols:3, rows:4, build:buildU5T4 },
+      { name:'문장제: 원 모양 물건의 넓이', layout:'list', cols:1, rows:5, build:buildU5T5 },
+    ]},
+  { key:'u6', num:'6', title:'원기둥, 원뿔, 구', color:'var(--teal)',
+    types:[
+      { name:'원기둥 밑면의 둘레 구하기', layout:'grid', cols:3, rows:3, build:buildU6T1 },
+      { name:'원기둥의 구성 요소 알기', layout:'grid', cols:3, rows:4, build:buildU6T2 },
+      { name:'원뿔의 구성 요소 알기', layout:'grid', cols:3, rows:4, build:buildU6T3 },
+      { name:'구의 반지름·지름 구하기', layout:'grid', cols:3, rows:5, build:buildU6T4 },
+      { name:'원기둥·원뿔·구 비교하기', layout:'grid', cols:3, rows:2, build:buildU6T5 },
+    ]},
+];
+
+
+const UNIT = UNITS[3];
+const TYPE = UNIT.types[2];
+const TYPE_BUILD = TYPE.build;
+
+let mode = 'problem';
+let seed = Date.now() % 1000000007;
+
+function buildUniqueProblem(rng, mode, seen){
+  let html, sig, tries = 0;
+  do{
+    html = TYPE_BUILD(rng, mode);
+    sig = html.replace(/<span class="ans">[\s\S]*?<\/span>/g, '');
+    tries++;
+  } while(seen.has(sig) && tries < 25);
+  seen.add(sig);
+  return html;
+}
+function wrapList(inner){ return `<div class="sh-row wide"><div class="sh-cell wide">${inner}</div></div>`; }
+function wrapGrid(inner){ return `<div class="sh-cell">${inner}</div>`; }
+
+function buildSheetInner(mode, seed){
+  const rng = mulberry32(seed);
+  const modeLabel = mode === 'answer' ? '정답지' : '문제지';
+  const seen = new Set();
+  let rowsHtml = '';
+  if(TYPE.layout === 'grid'){
+    for(let r=0; r<TYPE.rows; r++){
+      let cells = '';
+      for(let c=0; c<TYPE.cols; c++){
+        cells += wrapGrid(buildUniqueProblem(rng, mode, seen));
+      }
+      rowsHtml += `<div class="sh-row">${cells}</div>`;
+    }
+  }else{
+    for(let i=0;i<TYPE.rows;i++){
+      rowsHtml += wrapList(buildUniqueProblem(rng, mode, seen));
+    }
+  }
+
+  return `
+    <div class="sh-header">
+      <div class="sh-cafe-strip">
+        <span class="cafe-badge">🔢 구구단닷컴</span>
+        <span class="cafe-url">www.googoodan.com</span>
+      </div>
+      <div class="sh-titlebar">
+        <div class="sh-title">
+          <span class="op-badge" style="background:${UNIT.color};">${UNIT.num}단원</span>
+          ${TYPE.name} <small>· ${UNIT.title}</small>
+        </div>
+      </div>
+      <div class="sh-fields">
+        <span class="f">학습일자 <span class="ln"></span></span>
+        <span class="f">대상 <b>초등 6학년 2학기</b></span>
+        <span class="f">이름 <span class="ln"></span></span>
+        <span class="f">점수 <span class="ln"></span></span>
+      </div>
+      <div class="sh-rule" style="background:linear-gradient(90deg, ${UNIT.color}, #20b39c);"></div>
+    </div>
+    <main class="sh-main">${rowsHtml}</main>
+    <div class="sh-footer">
+      <span class="tagline">매일 10분, 수학 자신감을 키워요 ✏️</span>
+      <span class="brand">🔢 구구단닷컴 · www.googoodan.com</span>
+      <span class="pageno"></span>
+    </div>
+  `;
+}
+
+function render(){
+  document.getElementById('sheetHost').innerHTML = buildSheetInner(mode, seed);
+}
+function setMode(m){
+  mode = m;
+  document.getElementById('btnProblem').classList.toggle('ggd-active', m === 'problem');
+  document.getElementById('btnAnswer').classList.toggle('ggd-active', m === 'answer');
+  render();
+}
+function regenerate(){
+  seed = Math.floor(Math.random() * 1e9);
+  render();
+}
+render();
+</script>
+</body>
+</html>

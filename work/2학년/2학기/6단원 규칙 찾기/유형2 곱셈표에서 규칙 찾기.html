@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6단원 규칙 찾기 - 유형2 곱셈표에서 규칙 찾기</title>
+<style>
+
+  *{ box-sizing:border-box; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:14px; padding:16px;
+  }
+  .ggd-container{ max-width:900px; margin:0 auto; }
+  .ggd-ad{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center; color:#9aa0a8;
+    font-size:12px; font-weight:700; text-align:center; height:90px;
+    margin-bottom:16px;
+  }
+  .ggd-toolbar{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; justify-content:flex-end; }
+  .ggd-btn{
+    padding:10px 14px; border:1.5px solid #e4e6ea; border-radius:8px;
+    background:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:.15s;
+    color:#24262b;
+  }
+  .ggd-btn:hover{ border-color:#ff8961; background:#fff1ea; }
+  .ggd-btn.ggd-active{ background:#ff8961; border-color:#ff8961; color:#fff; }
+  .ggd-btn.ggd-primary{ background:#24262b; border-color:#24262b; color:#fff; }
+  .ggd-btn.ggd-primary:hover{ background:#000; border-color:#000; }
+  .ggd-sheet-wrap{ display:flex; justify-content:center; overflow-x:auto; padding-bottom:8px; }
+  @media print{
+    body{ padding:0; }
+    .ggd-ad, .ggd-toolbar{ display:none; }
+    .ggd-sheet-wrap{ padding:0; }
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+  }
+  @page{ size: A4; margin: 0; }
+
+
+  :root{
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --margin-y: 14mm;
+    --margin-x: 17mm;
+    --ink:#1f2430;
+    --accent:#20b39c;
+    --accent2:#f2994a;
+    --line:#333;
+    --mint:#20b39c;
+    --mint-dark:#0e8f7d;
+    --coral:#ff7e67;
+    --sun:#ffb100;
+    --blue:#4d96ff;
+    --violet:#8a63d2;
+    --teal:#2aa8c9;
+    --cream:#fff8ec;
+    --red:#e0342a;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    background:#eef1f6;
+    color:var(--ink);
+    font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+
+  /* ---------------- Screen-only control panel ---------------- */
+  .app{
+    max-width:1100px;
+    margin:0 auto;
+    padding:24px 16px 60px;
+  }
+  .app-title{
+    font-size:22px;
+    font-weight:800;
+    margin:0 0 4px;
+  }
+  .app-sub{
+    font-size:13px;
+    color:#5b6373;
+    margin:0 0 20px;
+  }
+  .panel{
+    background:#fff;
+    border:1px solid #e1e5ee;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 1px 3px rgba(20,30,60,.05);
+  }
+  .panel h2{
+    font-size:14px;
+    margin:0 0 10px;
+    color:#374057;
+    font-weight:700;
+  }
+  .tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tab-btn{
+    appearance:none;
+    border:1px solid #d7deed;
+    background:#f7f9fd;
+    color:#4a5268;
+    padding:9px 16px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.12s;
+  }
+  .tab-btn:hover{ background:#eef2fb; }
+  .tab-btn.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .tab-btn.mini{ padding:7px 12px; font-size:13px; }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    gap:10px 14px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .field label{
+    font-size:12px;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .field input[type=text],
+  .field input[type=number]{
+    border:1px solid #d7deed;
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:13px;
+    font-family:inherit;
+  }
+
+  .action-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  .btn{
+    appearance:none;
+    border:none;
+    border-radius:10px;
+    padding:11px 18px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    color:#fff;
+    transition:.12s;
+  }
+  .btn:disabled{ opacity:.55; cursor:progress; }
+  .btn.refresh{ background:#4a5268; }
+  .btn.refresh:hover:not(:disabled){ background:#3a4157; }
+  .btn.pdf{ background:#d64545; }
+  .btn.pdf:hover:not(:disabled){ background:#b93636; }
+  .btn.preview{ background:#2f9e6e; }
+  .btn.preview:hover:not(:disabled){ background:#24805a; }
+  .status-msg{
+    font-size:12.5px;
+    color:#8a91a3;
+  }
+  .status-msg.err{ color:#c0392b; font-weight:600; }
+
+  .view-toggle{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    font-size:13px;
+    color:#4a5268;
+  }
+  .view-toggle label{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor:pointer;
+    padding:6px 10px;
+    border:1px solid #d7deed;
+    border-radius:8px;
+  }
+  .view-toggle input{ margin:0; }
+
+  .preview-wrap{
+    display:flex;
+    justify-content:center;
+    padding:10px 0 40px;
+    overflow-x:auto;
+  }
+  .preview-shadow{
+    box-shadow:0 6px 24px rgba(20,30,60,.18);
+  }
+
+  /* ---------------- A4 Sheet ---------------- */
+  .sheet{
+    width:var(--page-w);
+    height:var(--page-h);
+    min-width:var(--page-w);
+    min-height:var(--page-h);
+    background:#fff;
+    padding:var(--margin-y) var(--margin-x);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 auto;
+  }
+  body.exporting .preview-shadow{ box-shadow:none; }
+
+  .sheet .sh-header{ flex:0 0 auto; }
+
+  .sh-cafe-strip{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .sh-cafe-strip .cafe-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--cream);
+    color:var(--mint-dark);
+    border:1.6px dashed var(--mint);
+    border-radius:20px;
+    padding:3px 13px;
+    font-size:9.5pt;
+    font-weight:800;
+  }
+  .sh-cafe-strip .cafe-url{
+    font-size:9pt;
+    color:var(--coral);
+    font-weight:800;
+    letter-spacing:.01em;
+  }
+
+  .sheet .sh-titlebar{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:8px;
+  }
+  .sheet .sh-title{
+    font-size:20pt;
+    font-weight:800;
+    letter-spacing:-.02em;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .sheet .sh-title .op-badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-size:12.5pt;
+    font-weight:700;
+    padding:2px 12px;
+    border-radius:20px;
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  .sheet .sh-title small{
+    font-size:11pt;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .sheet .sh-meta{
+    display:flex;
+    gap:16px;
+    font-size:10.5pt;
+    color:#374057;
+  }
+  .sheet .sh-meta span{ white-space:nowrap; }
+  .sheet .sh-fields{
+    display:flex;
+    gap:18px;
+    font-size:10.5pt;
+    color:#374057;
+    margin-top:6px;
+    flex-wrap:wrap;
+  }
+  .sheet .sh-fields .f{ display:flex; align-items:center; gap:5px; }
+  .sheet .sh-fields .f .ln{
+    display:inline-block;
+    border-bottom:1px solid #999;
+    min-width:70px;
+    height:1.1em;
+  }
+  .sheet .sh-fields .f b{ display:inline-block; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:bottom; }
+  .sheet .sh-rule{
+    height:3px;
+    margin:9px 0 4px;
+    border-radius:3px;
+    background:linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .sheet main.sh-main{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:10px;
+    min-height:0;
+  }
+  .sh-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;
+    gap:18px;
+  }
+  .sh-row.wide{ justify-content:flex-start; width:100%; }
+  .sh-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:2px;
+  }
+  .sh-cell.wide{
+    width:100%;
+    align-items:stretch;
+    justify-content:center;
+  }
+
+  .sheet .sh-footer{
+    flex:0 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:7px;
+    border-top:1.5px dashed var(--mint);
+    font-size:9pt;
+    color:#8a91a3;
+  }
+  .sheet .sh-footer .tagline{ font-weight:700; color:var(--mint-dark); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+  .sheet .sh-footer .brand{
+    font-style:normal;
+    font-weight:700;
+    color:var(--coral);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:360px;
+  }
+  .sheet .sh-footer .pageno::before{ content:"p. "; }
+
+  /* ---------------- Problem content pieces ---------------- */
+  .qline{ font-size:11.3pt; line-height:1.95; padding:2px 0; }
+  .shape-row{ font-size:15pt; letter-spacing:.14em; margin:1px 0; }
+  .fig-wrap{ display:flex; justify-content:center; margin-bottom:2px; }
+
+  .ans{
+    color:var(--red);
+    font-weight:800;
+  }
+
+  .hcalc{
+    font-family:"Consolas","SF Mono","Roboto Mono",monospace;
+    font-size:12.5pt;
+    display:inline-flex;
+    align-items:baseline;
+    gap:.35em;
+    white-space:nowrap;
+  }
+  .hcalc .n{ font-weight:700; display:inline-block; }
+  .hcalc .op{ font-weight:800; }
+  .hcalc .eq{ color:#555; }
+
+  @media print{
+    body{ background:#fff; }
+    .app > .panel, .app-title, .app-sub{ display:none; }
+    .preview-wrap{ padding:0; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ggd-container">
+  <div class="ggd-ad">광고 영역 (728 × 90)</div>
+
+  <div class="ggd-toolbar">
+    <button class="ggd-btn ggd-active" id="btnProblem" onclick="setMode('problem')">문제지</button>
+    <button class="ggd-btn" id="btnAnswer" onclick="setMode('answer')">정답지</button>
+    <button class="ggd-btn" onclick="regenerate()">숫자변경</button>
+    <button class="ggd-btn ggd-primary" onclick="window.print()">프린트</button>
+  </div>
+
+  <div class="ggd-sheet-wrap">
+    <div class="sheet" id="sheetHost"></div>
+  </div>
+</div>
+
+<script>
+
+/* =========================================================================
+   1. Seeded RNG helpers
+   ========================================================================= */
+function mulberry32(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function randInt(rng, min, max){ return Math.floor(rng() * (max - min + 1)) + min; }
+function pick(rng, arr){ return arr[randInt(rng, 0, arr.length-1)]; }
+function pickDistinct(rng, arr, n){
+  const pool = arr.slice();
+  const out = [];
+  for(let i=0;i<n && pool.length;i++){
+    const idx = randInt(rng, 0, pool.length-1);
+    out.push(pool[idx]);
+    pool.splice(idx,1);
+  }
+  return out;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* =========================================================================
+   2. Word banks & visual glyphs
+   ========================================================================= */
+const COLOR = { coral:'#ff7e67', sun:'#ffb100', blue:'#4d96ff', violet:'#8a63d2', mint:'#20b39c', teal:'#2aa8c9', ink:'#1f2430' };
+const HUN_WORDS = [null,'백','이백','삼백','사백','오백','육백','칠백','팔백','구백'];
+const KOR_THOUSAND = [null,'천','이천','삼천','사천','오천','육천','칠천','팔천','구천'];
+const KOR_TEN   = [null,'십','이십','삼십','사십','오십','육십','칠십','팔십','구십'];
+const KOR_ONE   = [null,'일','이','삼','사','오','육','칠','팔','구'];
+function koreanRead4(th,h,t,o){
+  const s = `${th?KOR_THOUSAND[th]:''}${h?HUN_WORDS[h]:''}${t?KOR_TEN[t]:''}${o?KOR_ONE[o]:''}`;
+  return s || '영';
+}
+
+const LEN_ITEMS = [
+  { name:'색연필', emoji:'✏️' }, { name:'리코더', emoji:'🎼' }, { name:'우산', emoji:'☂️' },
+  { name:'줄넘기', emoji:'🪢' }, { name:'빗자루', emoji:'🧹' }, { name:'책꽂이', emoji:'📚' },
+];
+const DOW = ['일','월','화','수','목','금','토'];
+const GRAPH_SETS = [
+  { itemsLabel:'학생', attrName:'과일', cats:['사과','포도','딸기','바나나'], glyphs:['🍎','🍇','🍓','🍌'] },
+  { itemsLabel:'학생', attrName:'동물', cats:['강아지','고양이','토끼'], glyphs:['🐶','🐱','🐰'] },
+  { itemsLabel:'학생', attrName:'계절', cats:['봄','여름','가을','겨울'], glyphs:['🌸','☀️','🍁','⛄'] },
+];
+const PATTERN_GLYPHS = ['●','★','◆','▲','■'];
+
+/* =========================================================================
+   3. Small render helpers
+   ========================================================================= */
+// No fill-in boxes or underlines: on problem sheets nothing is shown where an
+// answer would go; on answer sheets the answer appears inline in red.
+// IMPORTANT for every visual helper below: the picture itself must be
+// IDENTICAL between problem-mode and answer-mode renders of the same random
+// draw (givens only) — only ansSpan()-wrapped text may differ by mode. This
+// keeps the per-sheet duplicate signature (which strips .ans spans) mode
+// independent, so a problem sheet and its answer sheet stay in lockstep.
+// All helpers below build with flexbox rather than CSS grid, since CSS grid
+// can render unreliably through the html2canvas PDF/preview export path.
+function ansSpan(mode, text){
+  return mode==='answer' ? ` <span class="ans">${text}</span>` : '';
+}
+function hcalc(aStr, opSym, bStr, ansVal, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, String(ansVal))}`;
+}
+
+// ---- "1000" bill-style chip picture (천 모형) ----
+function thousandChipSVG(count, color){
+  const chipW=54, chipH=30, gap=5, perRow=3;
+  const cols = Math.min(perRow, Math.max(count,1));
+  const rows = Math.ceil(count/perRow);
+  const w = cols*chipW+(cols-1)*gap, h = rows*chipH+(rows-1)*gap;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  for(let i=0;i<count;i++){
+    const r=Math.floor(i/perRow), c=i%perRow;
+    const x=c*(chipW+gap), y=r*(chipH+gap);
+    s += `<rect x="${x}" y="${y}" width="${chipW}" height="${chipH}" rx="6" fill="${color}" stroke="${COLOR.ink}" stroke-width="1.5"/>`;
+    s += `<text x="${x+chipW/2}" y="${y+chipH/2+5}" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1000</text>`;
+  }
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Place-value tiles for a 4-digit number (천/백/십/일의 자리 카드) ----
+function placeValueTiles4HTML(th,h,t,o, highlightIdx){
+  const labels = ['천의 자리','백의 자리','십의 자리','일의 자리'];
+  const digits = [th,h,t,o];
+  const colors = [COLOR.teal, COLOR.coral, COLOR.sun, COLOR.blue];
+  const cells = digits.map((d,i)=>{
+    const hl = i===highlightIdx;
+    const style = hl ? `background:${colors[i]};color:#fff;border:2px solid ${colors[i]};` : `background:#f3f5fa;color:#1f2430;border:2px solid #d7deed;`;
+    return `<div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+      <div style="${style}width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15pt;font-weight:800;">${d}</div>
+      <div style="font-size:6.8pt;color:#6b7386;font-weight:${hl?800:600};">${labels[i]}</div>
+    </div>`;
+  }).join('<div style="width:4px;"></div>');
+  return `<div style="display:flex;justify-content:center;align-items:flex-start;gap:2px;">${cells}</div>`;
+}
+
+// ---- Number line for 뛰어세기 (always mode-invariant: blanks stay "?") ----
+function numberLineSVG(seq, step, w){
+  const width = w || 420, height = 66;
+  const padX = 30, n = 5;
+  const stepX = (width - padX*2) / (n-1);
+  let s = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+  s += `<line x1="${padX-10}" y1="38" x2="${width-padX+10}" y2="38" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  for(let i=0;i<n;i++){
+    const x = padX + i*stepX;
+    const known = i < 3;
+    s += `<line x1="${x}" y1="28" x2="${x}" y2="48" stroke="${COLOR.ink}" stroke-width="2"/>`;
+    s += `<circle cx="${x}" cy="38" r="5" fill="${known?COLOR.mint:'#fff'}" stroke="${COLOR.ink}" stroke-width="2"/>`;
+    s += `<text x="${x}" y="20" font-size="12" text-anchor="middle" font-weight="800" fill="${known?COLOR.ink:'#c7cbd6'}">${known? seq[i] : '?'}</text>`;
+    if(i<n-1) s += `<text x="${x+stepX/2}" y="62" font-size="9.5" text-anchor="middle" fill="#8a91a3" font-weight="700">+${step}</text>`;
+  }
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Bar chart for size comparison ----
+function barCompareSVG(values, opts={}){
+  const w = opts.w || 190, barH = 24, gap = 10, maxV = opts.maxV || 999, maxBarW = w - 90;
+  const colors = [COLOR.coral, COLOR.blue, COLOR.violet];
+  const h = values.length*(barH+gap);
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  values.forEach((v,i)=>{
+    const bw = Math.max(18, v/maxV*maxBarW);
+    const y = i*(barH+gap);
+    s += `<rect x="60" y="${y}" width="${bw}" height="${barH}" rx="5" fill="${colors[i%colors.length]}"/>`;
+    s += `<text x="52" y="${y+barH/2+4}" font-size="11.5" text-anchor="end" font-weight="800" fill="${COLOR.ink}">${v}</text>`;
+  });
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Length ruler bar ----
+function lengthBarSVG(cm, opts={}){
+  const maxCm = opts.maxCm || 100;
+  const w = opts.w || 170, barH = 20;
+  const scale = Math.min(1, cm/maxCm);
+  const bw = Math.max(22, scale*(w-24));
+  const color = opts.color || COLOR.blue;
+  let s = `<svg width="${w}" height="${barH+16}" viewBox="0 0 ${w} ${barH+16}">`;
+  s += `<rect x="1" y="1" width="${bw}" height="${barH}" rx="4" fill="${color}"/>`;
+  const ticks = Math.floor(cm/10);
+  for(let i=1;i<=ticks;i++){
+    const x = 1 + (i*10/maxCm)*(w-24);
+    if(x < bw) s += `<line x1="${x}" y1="1" x2="${x}" y2="${1+barH}" stroke="#fff" stroke-width="1" opacity=".6"/>`;
+  }
+  s += `<text x="1" y="${barH+14}" font-size="10" font-weight="800" fill="${COLOR.ink}">${cm} cm</text>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Grouped icons (묶음 상자) for 곱셈구구 ----
+function groupedIconsHTML(groups, per, glyph){
+  const boxes = [];
+  for(let g=0; g<groups; g++){
+    const items = new Array(per).fill(`<span style="font-size:12.5pt;">${glyph}</span>`).join('');
+    boxes.push(`<span style="display:inline-flex;flex-wrap:wrap;max-width:${Math.max(56,per*16)}px;border:2px dashed #c7cbd6;border-radius:8px;padding:3px 4px;gap:1px;vertical-align:middle;">${items}</span>`);
+  }
+  return `<div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;">${boxes.join('')}</div>`;
+}
+
+// ---- Analog clock face (시각과 시간, 5분 단위) ----
+function clockSVG(hour, minute, opts={}){
+  const size = opts.size || 92;
+  const r = size/2-6, cx=size/2, cy=size/2;
+  let s = `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">`;
+  s += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" stroke="${COLOR.ink}" stroke-width="2.5"/>`;
+  for(let i=0;i<12;i++){
+    const a = i*30*Math.PI/180;
+    const x1=cx+(r-5)*Math.sin(a), y1=cy-(r-5)*Math.cos(a);
+    const x2=cx+r*Math.sin(a), y2=cy-r*Math.cos(a);
+    s += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${COLOR.ink}" stroke-width="1.5"/>`;
+  }
+  const hourAngle = ((hour%12) + minute/60) * 30 * Math.PI/180;
+  const minAngle = minute * 6 * Math.PI/180;
+  const hx = cx + r*0.5*Math.sin(hourAngle), hy = cy - r*0.5*Math.cos(hourAngle);
+  const mx = cx + r*0.78*Math.sin(minAngle), my = cy - r*0.78*Math.cos(minAngle);
+  s += `<line x1="${cx}" y1="${cy}" x2="${hx.toFixed(1)}" y2="${hy.toFixed(1)}" stroke="${COLOR.ink}" stroke-width="3.5" stroke-linecap="round"/>`;
+  s += `<line x1="${cx}" y1="${cy}" x2="${mx.toFixed(1)}" y2="${my.toFixed(1)}" stroke="${COLOR.violet}" stroke-width="2.5" stroke-linecap="round"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="3" fill="${COLOR.ink}"/>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Day timeline (오전/오후) ----
+function dayTimelineSVG(hour24, opts={}){
+  const w = opts.w || 240, barY=14, barH=14;
+  let s = `<svg width="${w}" height="${barH+30}" viewBox="0 0 ${w} ${barH+30}">`;
+  s += `<rect x="0" y="${barY}" width="${w/2}" height="${barH}" fill="${COLOR.sun}" opacity=".35"/>`;
+  s += `<rect x="${w/2}" y="${barY}" width="${w/2}" height="${barH}" fill="${COLOR.violet}" opacity=".35"/>`;
+  s += `<text x="${w/4}" y="${barY-4}" font-size="10" text-anchor="middle" font-weight="700" fill="${COLOR.ink}">오전</text>`;
+  s += `<text x="${w*3/4}" y="${barY-4}" font-size="10" text-anchor="middle" font-weight="700" fill="${COLOR.ink}">오후</text>`;
+  const mx = (hour24/24)*w;
+  s += `<circle cx="${mx.toFixed(1)}" cy="${barY+barH/2}" r="6" fill="${COLOR.coral}" stroke="${COLOR.ink}" stroke-width="1.5"/>`;
+  s += `<text x="${mx.toFixed(1)}" y="${barY+barH+16}" font-size="10" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${hour24}시</text>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Mini calendar grid (달력) ----
+function calendarGridHTML(startWeekday, daysInMonth, highlightDay){
+  const cellW = 25;
+  const headerCells = DOW.map(d=>`<div style="width:${cellW}px;text-align:center;font-size:7.6pt;font-weight:800;color:#6b7386;">${d}</div>`).join('');
+  const header = `<div style="display:flex;gap:2px;">${headerCells}</div>`;
+  const weeks = [];
+  let cur = [];
+  for(let i=0;i<startWeekday;i++) cur.push('');
+  for(let d=1; d<=daysInMonth; d++){
+    cur.push(d);
+    if(cur.length===7){ weeks.push(cur); cur=[]; }
+  }
+  if(cur.length){ while(cur.length<7) cur.push(''); weeks.push(cur); }
+  const weekRows = weeks.map(week=>{
+    const cells = week.map(d=>{
+      const hl = d===highlightDay;
+      return `<div style="width:${cellW}px;text-align:center;font-size:8.5pt;padding:2px 0;border-radius:5px;${hl?`background:${COLOR.coral};color:#fff;font-weight:800;`:''}">${d||''}</div>`;
+    }).join('');
+    return `<div style="display:flex;gap:2px;margin-top:2px;">${cells}</div>`;
+  }).join('');
+  return `<div style="display:inline-block;">${header}${weekRows}</div>`;
+}
+
+// ---- Column graph (표와 그래프): stacked glyphs per category ----
+function columnGraphSVG(cats, counts, glyphs, opts={}){
+  const colW = opts.colW || 42, cellH = 14, gap=8;
+  const maxCount = Math.max(...counts);
+  const n = cats.length;
+  const w = n*colW + (n-1)*gap;
+  const h = maxCount*cellH + 26;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  cats.forEach((c,i)=>{
+    const x = i*(colW+gap);
+    for(let k=0;k<counts[i];k++){
+      const y = h-24-(k+1)*cellH;
+      s += `<text x="${x+colW/2}" y="${y+cellH-2}" font-size="12" text-anchor="middle">${glyphs[i]}</text>`;
+    }
+    s += `<line x1="${x}" y1="${h-22}" x2="${x+colW}" y2="${h-22}" stroke="${COLOR.ink}" stroke-width="1.5"/>`;
+    s += `<text x="${x+colW/2}" y="${h-8}" font-size="9" text-anchor="middle" font-weight="700" fill="#4a5268">${c}</text>`;
+  });
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Addition/multiplication table with one blank cell (규칙 찾기) ----
+function opTableHTML(rowVals, colVals, blankR, blankC, op){
+  const cellW = 30, cellH = 26;
+  const headerCells = [`<div style="width:${cellW}px;height:${cellH}px;"></div>`].concat(
+    colVals.map(c=>`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;background:#f3f5fa;font-weight:800;font-size:10pt;">${c}</div>`)
+  ).join('');
+  const header = `<div style="display:flex;gap:1px;">${headerCells}</div>`;
+  const rows = rowVals.map((rv,ri)=>{
+    const rowCells = [`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;background:#f3f5fa;font-weight:800;font-size:10pt;">${rv}</div>`].concat(
+      colVals.map((cv,ci)=>{
+        const val = op==='+' ? rv+cv : rv*cv;
+        const isBlank = ri===blankR && ci===blankC;
+        return `<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;font-size:10pt;${isBlank?`background:${COLOR.coral};color:#fff;font-weight:800;`:''}">${isBlank?'?':val}</div>`;
+      })
+    ).join('');
+    return `<div style="display:flex;gap:1px;margin-top:1px;">${rowCells}</div>`;
+  }).join('');
+  return `<div style="display:inline-block;border:1.5px solid #d7deed;padding:2px;">${header}${rows}</div>`;
+}
+
+// ---- Repeating pattern row with one blank slot (무늬에서 규칙 찾기) ----
+function patternRowHTML(seqGlyphs, blankIdx){
+  const items = seqGlyphs.map((g,i)=> i===blankIdx
+    ? `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:2px dashed #c7cbd6;border-radius:6px;font-size:11pt;color:#c7cbd6;">?</span>`
+    : `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;font-size:16pt;">${g}</span>`
+  ).join('');
+  return `<div style="display:flex;gap:6px;justify-content:center;flex-wrap:wrap;">${items}</div>`;
+}
+
+// ---- Stacking-cube staircase (쌓은 모양에서 규칙 찾기) ----
+function stackStairSVG(steps, opts={}){
+  const cell = opts.cell || 14, gap=2;
+  const n = steps.length;
+  const maxH = Math.max(...steps);
+  const w = n*(cell+gap), h = maxH*(cell+gap)+4;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  steps.forEach((cnt,i)=>{
+    for(let k=0;k<cnt;k++){
+      const x = i*(cell+gap);
+      const y = h-4-(k+1)*(cell+gap)+2;
+      s += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" fill="${COLOR.mint}" stroke="${COLOR.ink}" stroke-width="1.2"/>`;
+    }
+  });
+  s += `</svg>`;
+  return s;
+}
+
+/* =========================================================================
+   4. Unit 1 — 네 자리 수
+   ========================================================================= */
+function buildU1T1(rng, mode){
+  const th = randInt(rng,1,9);
+  const val = th*1000;
+  return `<div class="fig-wrap">${thousandChipSVG(th, COLOR.coral)}</div>
+    <div class="qline">1000이 ${th}개! 모두 얼마인가요?${ansSpan(mode, `${val} (${KOR_THOUSAND[th]})`)}</div>`;
+}
+function buildU1T2(rng, mode){
+  const th=randInt(rng,1,9), h=randInt(rng,0,9), t=randInt(rng,0,9), o=randInt(rng,0,9);
+  const val = th*1000+h*100+t*10+o;
+  return `<div class="fig-wrap">${placeValueTiles4HTML(th,h,t,o,-1)}</div>
+    <div class="qline">숫자 카드가 나타내는 네 자리 수는?${ansSpan(mode, `${val} (${koreanRead4(th,h,t,o)})`)}</div>`;
+}
+function buildU1T3(rng, mode){
+  const th=randInt(rng,1,9), h=randInt(rng,0,9), t=randInt(rng,0,9), o=randInt(rng,0,9);
+  const posIdx = randInt(rng,0,3);
+  const digit = [th,h,t,o][posIdx];
+  const place = [1000,100,10,1][posIdx];
+  const value = digit*place;
+  return `<div class="fig-wrap">${placeValueTiles4HTML(th,h,t,o,posIdx)}</div>
+    <div class="qline">색칠된 자리의 숫자가 나타내는 값은?${ansSpan(mode, String(value))}</div>`;
+}
+function buildU1T4(rng, mode){
+  const step = pick(rng,[1,10,100,1000]);
+  const maxStart = 9999 - step*4;
+  const start = randInt(rng, 1000, Math.max(1000,maxStart));
+  const seq=[start,start+step,start+2*step];
+  const nextTwo=[start+3*step,start+4*step];
+  return `<div class="fig-wrap">${numberLineSVG(seq, step)}</div>
+    <div class="qline">규칙에 맞게 이어질 두 수는?${ansSpan(mode, nextTwo.join(', '))}</div>`;
+}
+function buildU1T5(rng, mode){
+  let x,y; do{ x=randInt(rng,1000,9999); y=randInt(rng,1000,9999); } while(x===y);
+  const askBig = rng() < 0.5;
+  const word = askBig ? '더 큰' : '더 작은';
+  const ans = askBig ? Math.max(x,y) : Math.min(x,y);
+  return `<div class="fig-wrap">${barCompareSVG([x,y],{maxV:9999})}</div>
+    <div class="qline">${word} 수는 무엇인가요?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU1T6(rng, mode){
+  const nums=[]; while(nums.length<3){ const v=randInt(rng,1000,9999); if(!nums.includes(v)) nums.push(v); }
+  const askBig = rng() < 0.5;
+  const word = askBig ? '가장 큰' : '가장 작은';
+  const ans = askBig ? Math.max(...nums) : Math.min(...nums);
+  return `<div class="fig-wrap">${barCompareSVG(nums,{maxV:9999})}</div>
+    <div class="qline">${word} 수는 무엇인가요?${ansSpan(mode, String(ans))}</div>`;
+}
+
+/* =========================================================================
+   5. Unit 2 — 곱셈구구
+   ========================================================================= */
+function buildU2T1(rng, mode){
+  const per = randInt(rng,2,6), groups = randInt(rng,2,5);
+  const glyph = pick(rng, ['🔵','🟢','🟡','🔴']);
+  return `<div class="fig-wrap">${groupedIconsHTML(groups, per, glyph)}</div>
+    ${hcalc(per,'×',groups,per*groups,mode)}`;
+}
+function buildU2T2(rng, mode){
+  const a = randInt(rng,2,9), b = randInt(rng,1,9);
+  return hcalc(a,'×',b,a*b,mode);
+}
+function buildU2T3(rng, mode){
+  const n = randInt(rng,1,9);
+  const variants = [ [1,n], [n,1], [0,n], [n,0] ];
+  const [a,b] = pick(rng, variants);
+  return hcalc(a,'×',b,a*b,mode);
+}
+function buildU2T4(rng, mode){
+  const rowVals = pickDistinct(rng, [2,3,4,5,6,7], 3).sort((a,b)=>a-b);
+  const colVals = pickDistinct(rng, [2,3,4,5,6,7], 3).sort((a,b)=>a-b);
+  const br = randInt(rng,0,2), bc = randInt(rng,0,2);
+  const ans = rowVals[br]*colVals[bc];
+  return `<div class="fig-wrap">${opTableHTML(rowVals, colVals, br, bc, '×')}</div>
+    <div class="qline">빈칸에 알맞은 수는?${ansSpan(mode, String(ans))}</div>`;
+}
+
+/* =========================================================================
+   6. Unit 3 — 길이 재기
+   ========================================================================= */
+function buildU3T1(rng, mode){
+  const m = randInt(rng,1,9), cm = randInt(rng,1,99);
+  const total = m*100+cm;
+  return `<div class="fig-wrap">${lengthBarSVG(total,{maxCm:999,w:190,color:COLOR.blue})}</div>
+    <div class="qline">${total} cm는 몇 m 몇 cm인가요?${ansSpan(mode, `${m} m ${cm} cm`)}</div>`;
+}
+function buildU3T2(rng, mode){
+  const L = randInt(rng,12,188);
+  const rounded = Math.round(L/10)*10;
+  const item = pick(rng, LEN_ITEMS);
+  return `<div class="fig-wrap"><span style="font-size:13pt;">${item.emoji}</span> ${lengthBarSVG(L,{maxCm:200,w:160})}</div>
+    <div class="qline">약 몇 cm로 어림할 수 있나요? (10 cm 단위)${ansSpan(mode, `약 ${rounded} cm`)}</div>`;
+}
+function buildU3T3(rng, mode){
+  const [A,B] = pickDistinct(rng, LEN_ITEMS, 2);
+  let la, lb; do{ la=randInt(rng,50,250); lb=randInt(rng,50,250); } while(la===lb);
+  const bars = `<div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start;margin:0 auto;width:fit-content;">
+    <div style="display:flex;align-items:center;gap:6px;"><span style="font-size:14pt;">${A.emoji}</span>${lengthBarSVG(la,{maxCm:260,w:240})}</div>
+    <div style="display:flex;align-items:center;gap:6px;"><span style="font-size:14pt;">${B.emoji}</span>${lengthBarSVG(lb,{maxCm:260,w:240,color:COLOR.violet})}</div>
+  </div>`;
+  return `<div class="fig-wrap">${bars}</div>
+    <div class="qline">더 긴 것은 무엇인가요?${ansSpan(mode, la>lb?A.name:B.name)}</div>`;
+}
+function buildU3T4(rng, mode){
+  const m1=randInt(rng,1,5), cm1=randInt(rng,0,99);
+  const m2=randInt(rng,1,5), cm2=randInt(rng,0,99);
+  let totalCm = cm1+cm2;
+  const extraM = Math.floor(totalCm/100);
+  totalCm %= 100;
+  const m = m1+m2+extraM;
+  return `<div class="qline">📏 ${m1} m ${cm1} cm + ${m2} m ${cm2} cm =${ansSpan(mode, ` ${m} m ${totalCm} cm`)}</div>`;
+}
+function buildU3T5(rng, mode){
+  const m1=randInt(rng,2,9), cm1=randInt(rng,0,99);
+  const m2=randInt(rng,1,m1), cm2=randInt(rng,0,99);
+  let A=m1*100+cm1, B=m2*100+cm2;
+  if(A<B){ const tmp=A; A=B; B=tmp; }
+  if(A===B) A+=42;
+  const diff=A-B;
+  const dm=Math.floor(diff/100), dcm=diff%100;
+  const am=Math.floor(A/100), acm=A%100, bm=Math.floor(B/100), bcm=B%100;
+  return `<div class="qline">📏 ${am} m ${acm} cm - ${bm} m ${bcm} cm =${ansSpan(mode, ` ${dm} m ${dcm} cm`)}</div>`;
+}
+
+/* =========================================================================
+   7. Unit 4 — 시각과 시간
+   ========================================================================= */
+function buildU4T1(rng, mode){
+  const hour = randInt(rng,1,12);
+  const minute = randInt(rng,0,11)*5;
+  return `<div class="fig-wrap">${clockSVG(hour, minute)}</div>
+    <div class="qline">시계가 나타내는 시각은?${ansSpan(mode, `${hour}시 ${minute===0?'정각':minute+'분'}`)}</div>`;
+}
+function buildU4T2(rng, mode){
+  const hour = randInt(rng,1,12);
+  const minute = pick(rng,[35,40,45,50,55]);
+  const before = 60-minute;
+  const nextHour = hour%12+1;
+  return `<div class="fig-wrap">${clockSVG(hour, minute)}</div>
+    <div class="qline">이 시각을 "몇 시 몇 분 전"으로 나타내면?${ansSpan(mode, `${nextHour}시 ${before}분 전`)}</div>`;
+}
+function buildU4T3(rng, mode){
+  const h = randInt(rng,1,3), m = randInt(rng,1,59);
+  const totalMin = h*60+m;
+  return `<div class="qline">⏰ ${totalMin}분은 몇 시간 몇 분인가요?${ansSpan(mode, `${h}시간 ${m}분`)}</div>`;
+}
+function buildU4T4(rng, mode){
+  const hour24 = randInt(rng,1,23);
+  const period = hour24<12 ? '오전' : '오후';
+  const h12 = hour24<=12 ? hour24 : hour24-12;
+  return `<div class="fig-wrap">${dayTimelineSVG(hour24)}</div>
+    <div class="qline">이 시각은 오전과 오후 중 언제, 몇 시인가요?${ansSpan(mode, `${period} ${h12}시`)}</div>`;
+}
+function buildU4T5(rng, mode){
+  const startWeekday = randInt(rng,0,6);
+  const daysInMonth = pick(rng,[28,30,31]);
+  const highlightDay = randInt(rng,1, Math.max(1,daysInMonth-7));
+  const targetDay = highlightDay+7;
+  const targetDow = DOW[(startWeekday + targetDay - 1) % 7];
+  return `<div class="fig-wrap">${calendarGridHTML(startWeekday, daysInMonth, highlightDay)}</div>
+    <div class="qline">색칠된 날로부터 7일 후는 며칠이고, 무슨 요일인가요?${ansSpan(mode, `${targetDay}일, ${targetDow}요일`)}</div>`;
+}
+
+/* =========================================================================
+   8. Unit 5 — 표와 그래프
+   ========================================================================= */
+function buildU5T1(rng, mode){
+  const set = pick(rng, GRAPH_SETS);
+  let counts;
+  do{ counts = set.cats.map(()=> randInt(rng,2,6)); } while(new Set(counts).size !== counts.length);
+  let pool = [];
+  set.cats.forEach((c,i)=>{ for(let k=0;k<counts[i];k++) pool.push(set.glyphs[i]); });
+  for(let i=pool.length-1;i>0;i--){ const j = randInt(rng,0,i); const tmp=pool[i]; pool[i]=pool[j]; pool[j]=tmp; }
+  const total = counts.reduce((a,b)=>a+b,0);
+  const poolHtml = `<div style="display:flex;flex-wrap:wrap;gap:4px;justify-content:center;max-width:190px;margin:0 auto;">${pool.map(g=>`<span style="font-size:12pt;">${g}</span>`).join('')}</div>`;
+  return `<div class="fig-wrap">${poolHtml}</div>
+    <div class="qline">${set.itemsLabel}들이 좋아하는 ${set.attrName}을(를) 조사했어요. 모두 몇 명인가요?${ansSpan(mode, `${total}명`)}</div>`;
+}
+function buildU5T2(rng, mode){
+  const set = pick(rng, GRAPH_SETS);
+  let counts;
+  do{ counts = set.cats.map(()=> randInt(rng,2,8)); } while(new Set(counts).size !== counts.length);
+  const maxIdx = counts.indexOf(Math.max(...counts));
+  return `<div class="fig-wrap">${columnGraphSVG(set.cats, counts, set.glyphs)}</div>
+    <div class="qline">그래프에서 가장 많은 ${set.attrName}은(는)?${ansSpan(mode, set.cats[maxIdx])}</div>`;
+}
+function buildU5T3(rng, mode){
+  const set = pick(rng, GRAPH_SETS);
+  let counts;
+  do{ counts = set.cats.map(()=> randInt(rng,2,8)); } while(new Set(counts).size !== counts.length);
+  const minIdx = counts.indexOf(Math.min(...counts));
+  return `<div class="fig-wrap">${columnGraphSVG(set.cats, counts, set.glyphs)}</div>
+    <div class="qline">그래프에서 가장 적은 ${set.attrName}은(는)?${ansSpan(mode, set.cats[minIdx])}</div>`;
+}
+function buildU5T4(rng, mode){
+  const set = pick(rng, GRAPH_SETS);
+  let counts;
+  do{ counts = set.cats.map(()=> randInt(rng,2,8)); } while(new Set(counts).size !== counts.length);
+  const total = counts.reduce((a,b)=>a+b,0);
+  return `<div class="fig-wrap">${columnGraphSVG(set.cats, counts, set.glyphs)}</div>
+    <div class="qline">조사에 참여한 ${set.itemsLabel}은(는) 모두 몇 명인가요?${ansSpan(mode, `${total}명`)}</div>`;
+}
+
+/* =========================================================================
+   9. Unit 6 — 규칙 찾기
+   ========================================================================= */
+function buildU6T1(rng, mode){
+  const base = randInt(rng,1,5);
+  const rowVals = [base,base+1,base+2,base+3];
+  const colVals = [base,base+1,base+2,base+3];
+  const br = randInt(rng,0,3), bc = randInt(rng,0,3);
+  const ans = rowVals[br]+colVals[bc];
+  return `<div class="fig-wrap">${opTableHTML(rowVals, colVals, br, bc, '+')}</div>
+    <div class="qline">빈칸에 알맞은 수는?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU6T2(rng, mode){
+  const rowVals = pickDistinct(rng, [2,3,4,5,6,7], 3).sort((a,b)=>a-b);
+  const colVals = pickDistinct(rng, [2,3,4,5,6,7], 3).sort((a,b)=>a-b);
+  const br = randInt(rng,0,2), bc = randInt(rng,0,2);
+  const ans = rowVals[br]*colVals[bc];
+  return `<div class="fig-wrap">${opTableHTML(rowVals, colVals, br, bc, '×')}</div>
+    <div class="qline">빈칸에 알맞은 수는?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU6T3(rng, mode){
+  const cycle = pickDistinct(rng, PATTERN_GLYPHS, 3);
+  const len = 9;
+  const seq = Array.from({length:len}, (_,i)=> cycle[i%3]);
+  const blankIdx = randInt(rng, 3, len-1);
+  const answerGlyph = seq[blankIdx];
+  return `<div class="fig-wrap">${patternRowHTML(seq, blankIdx)}</div>
+    <div class="qline">?에 들어갈 모양은?${ansSpan(mode, answerGlyph)}</div>`;
+}
+function buildU6T4(rng, mode){
+  const startN = randInt(rng,1,5);
+  const diff = pick(rng,[1,2,3]);
+  const steps = [startN, startN+diff, startN+2*diff, startN+3*diff];
+  const next = startN+4*diff;
+  return `<div class="fig-wrap">${stackStairSVG(steps,{cell:10})}</div>
+    <div class="qline">규칙에 따라 다음에 올 모양의 쌓기나무는 몇 개인가요?${ansSpan(mode, `${next}개`)}</div>`;
+}
+function buildU6T5(rng, mode){
+  const start = randInt(rng,1,10);
+  const seq = [start, start+7, start+14];
+  const nextTwo = [start+21, start+28];
+  return `<div class="fig-wrap">${numberLineSVG(seq, 7)}</div>
+    <div class="qline">달력에서 같은 요일은 7씩 커져요. 이어질 두 수는?${ansSpan(mode, nextTwo.join(', '))}</div>`;
+}
+
+/* =========================================================================
+   10. Unit / Type registry
+   ========================================================================= */
+
+const UNITS = [
+  { key:'u1', num:'1', title:'네 자리 수', color:'var(--coral)',
+    types:[
+      { name:'몇천 알아보기', layout:'grid', cols:3, rows:3, build:buildU1T1 },
+      { name:'네 자리 수 읽기·쓰기', layout:'grid', cols:3, rows:5, build:buildU1T2 },
+      { name:'자릿값 알아보기', layout:'grid', cols:3, rows:5, build:buildU1T3 },
+      { name:'뛰어세기(1·10·100·1000씩)', layout:'list', cols:1, rows:6, build:buildU1T4 },
+      { name:'두 수의 크기 비교', layout:'grid', cols:3, rows:5, build:buildU1T5 },
+      { name:'세 수의 크기 비교', layout:'grid', cols:3, rows:4, build:buildU1T6 },
+    ]},
+  { key:'u2', num:'2', title:'곱셈구구', color:'var(--sun)',
+    types:[
+      { name:'그림 보고 곱셈식 만들기', layout:'list', cols:1, rows:8, build:buildU2T1 },
+      { name:'곱셈구구 계산', layout:'grid', cols:3, rows:6, build:buildU2T2 },
+      { name:'1과 0의 곱', layout:'grid', cols:3, rows:5, build:buildU2T3 },
+      { name:'곱셈표에서 빈칸 찾기', layout:'grid', cols:3, rows:3, build:buildU2T4 },
+    ]},
+  { key:'u3', num:'3', title:'길이 재기', color:'var(--blue)',
+    types:[
+      { name:'cm를 m와 cm로 나타내기', layout:'grid', cols:3, rows:5, build:buildU3T1 },
+      { name:'길이 어림하기(10cm 단위)', layout:'grid', cols:3, rows:5, build:buildU3T2 },
+      { name:'두 길이 비교', layout:'list', cols:1, rows:6, build:buildU3T3 },
+      { name:'m 단위 길이의 합', layout:'list', cols:1, rows:6, build:buildU3T4 },
+      { name:'m 단위 길이의 차', layout:'list', cols:1, rows:6, build:buildU3T5 },
+    ]},
+  { key:'u4', num:'4', title:'시각과 시간', color:'var(--violet)',
+    types:[
+      { name:'몇 시 몇 분 읽기(5분 단위)', layout:'grid', cols:3, rows:4, build:buildU4T1 },
+      { name:'몇 시 몇 분 전으로 나타내기', layout:'grid', cols:3, rows:4, build:buildU4T2 },
+      { name:'시간 계산(분↔시간)', layout:'grid', cols:3, rows:5, build:buildU4T3 },
+      { name:'오전과 오후', layout:'list', cols:1, rows:6, build:buildU4T4 },
+      { name:'달력 보기', layout:'list', cols:1, rows:5, build:buildU4T5 },
+    ]},
+  { key:'u5', num:'5', title:'표와 그래프', color:'var(--mint)',
+    types:[
+      { name:'자료를 세어 답하기', layout:'grid', cols:3, rows:4, build:buildU5T1 },
+      { name:'그래프에서 가장 많은 것 찾기', layout:'grid', cols:3, rows:3, build:buildU5T2 },
+      { name:'그래프에서 가장 적은 것 찾기', layout:'grid', cols:3, rows:3, build:buildU5T3 },
+      { name:'그래프로 전체 알아보기', layout:'grid', cols:3, rows:3, build:buildU5T4 },
+    ]},
+  { key:'u6', num:'6', title:'규칙 찾기', color:'var(--teal)',
+    types:[
+      { name:'덧셈표에서 규칙 찾기', layout:'grid', cols:3, rows:3, build:buildU6T1 },
+      { name:'곱셈표에서 규칙 찾기', layout:'grid', cols:3, rows:3, build:buildU6T2 },
+      { name:'무늬에서 규칙 찾기', layout:'list', cols:1, rows:6, build:buildU6T3 },
+      { name:'쌓은 모양에서 규칙 찾기', layout:'grid', cols:3, rows:3, build:buildU6T4 },
+      { name:'생활 속 규칙 찾기(달력)', layout:'list', cols:1, rows:6, build:buildU6T5 },
+    ]},
+];
+
+
+const UNIT = UNITS[5];
+const TYPE = UNIT.types[1];
+const TYPE_BUILD = TYPE.build;
+
+let mode = 'problem';
+let seed = Date.now() % 1000000007;
+
+function buildUniqueProblem(rng, mode, seen){
+  let html, sig, tries = 0;
+  do{
+    html = TYPE_BUILD(rng, mode);
+    sig = html.replace(/<span class="ans">[\s\S]*?<\/span>/g, '');
+    tries++;
+  } while(seen.has(sig) && tries < 25);
+  seen.add(sig);
+  return html;
+}
+function wrapList(inner){ return `<div class="sh-row wide"><div class="sh-cell wide">${inner}</div></div>`; }
+function wrapGrid(inner){ return `<div class="sh-cell">${inner}</div>`; }
+
+function buildSheetInner(mode, seed){
+  const rng = mulberry32(seed);
+  const modeLabel = mode === 'answer' ? '정답지' : '문제지';
+  const seen = new Set();
+  let rowsHtml = '';
+  if(TYPE.layout === 'grid'){
+    for(let r=0; r<TYPE.rows; r++){
+      let cells = '';
+      for(let c=0; c<TYPE.cols; c++){
+        cells += wrapGrid(buildUniqueProblem(rng, mode, seen));
+      }
+      rowsHtml += `<div class="sh-row">${cells}</div>`;
+    }
+  }else{
+    for(let i=0;i<TYPE.rows;i++){
+      rowsHtml += wrapList(buildUniqueProblem(rng, mode, seen));
+    }
+  }
+
+  return `
+    <div class="sh-header">
+      <div class="sh-cafe-strip">
+        <span class="cafe-badge">🔢 구구단닷컴</span>
+        <span class="cafe-url">www.googoodan.com</span>
+      </div>
+      <div class="sh-titlebar">
+        <div class="sh-title">
+          <span class="op-badge" style="background:${UNIT.color};">${UNIT.num}단원</span>
+          ${TYPE.name} <small>· ${UNIT.title}</small>
+        </div>
+      </div>
+      <div class="sh-fields">
+        <span class="f">학습일자 <span class="ln"></span></span>
+        <span class="f">대상 <b>초등 2학년 2학기</b></span>
+        <span class="f">이름 <span class="ln"></span></span>
+        <span class="f">점수 <span class="ln"></span></span>
+      </div>
+      <div class="sh-rule" style="background:linear-gradient(90deg, ${UNIT.color}, #20b39c);"></div>
+    </div>
+    <main class="sh-main">${rowsHtml}</main>
+    <div class="sh-footer">
+      <span class="tagline">매일 10분, 수학 자신감을 키워요 ✏️</span>
+      <span class="brand">🔢 구구단닷컴 · www.googoodan.com</span>
+      <span class="pageno"></span>
+    </div>
+  `;
+}
+
+function render(){
+  document.getElementById('sheetHost').innerHTML = buildSheetInner(mode, seed);
+}
+function setMode(m){
+  mode = m;
+  document.getElementById('btnProblem').classList.toggle('ggd-active', m === 'problem');
+  document.getElementById('btnAnswer').classList.toggle('ggd-active', m === 'answer');
+  render();
+}
+function regenerate(){
+  seed = Math.floor(Math.random() * 1e9);
+  render();
+}
+render();
+</script>
+</body>
+</html>

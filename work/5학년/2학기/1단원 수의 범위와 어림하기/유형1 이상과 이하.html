@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1단원 수의 범위와 어림하기 - 유형1 이상과 이하</title>
+<style>
+
+  *{ box-sizing:border-box; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:14px; padding:16px;
+  }
+  .ggd-container{ max-width:900px; margin:0 auto; }
+  .ggd-ad{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center; color:#9aa0a8;
+    font-size:12px; font-weight:700; text-align:center; height:90px;
+    margin-bottom:16px;
+  }
+  .ggd-toolbar{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; justify-content:flex-end; }
+  .ggd-btn{
+    padding:10px 14px; border:1.5px solid #e4e6ea; border-radius:8px;
+    background:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:.15s;
+    color:#24262b;
+  }
+  .ggd-btn:hover{ border-color:#ff8961; background:#fff1ea; }
+  .ggd-btn.ggd-active{ background:#ff8961; border-color:#ff8961; color:#fff; }
+  .ggd-btn.ggd-primary{ background:#24262b; border-color:#24262b; color:#fff; }
+  .ggd-btn.ggd-primary:hover{ background:#000; border-color:#000; }
+  .ggd-sheet-wrap{ display:flex; justify-content:center; overflow-x:auto; padding-bottom:8px; }
+  @media print{
+    body{ padding:0; }
+    .ggd-ad, .ggd-toolbar{ display:none; }
+    .ggd-sheet-wrap{ padding:0; }
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+  }
+  @page{ size: A4; margin: 0; }
+
+
+  :root{
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --margin-y: 14mm;
+    --margin-x: 17mm;
+    --ink:#1f2430;
+    --accent:#20b39c;
+    --accent2:#f2994a;
+    --line:#333;
+    --mint:#20b39c;
+    --mint-dark:#0e8f7d;
+    --coral:#ff7e67;
+    --sun:#ffb100;
+    --blue:#4d96ff;
+    --violet:#8a63d2;
+    --teal:#2aa8c9;
+    --cream:#fff8ec;
+    --red:#e0342a;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    background:#eef1f6;
+    color:var(--ink);
+    font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+
+  /* ---------------- Screen-only control panel ---------------- */
+  .app{
+    max-width:1100px;
+    margin:0 auto;
+    padding:24px 16px 60px;
+  }
+  .app-title{
+    font-size:22px;
+    font-weight:800;
+    margin:0 0 4px;
+  }
+  .app-sub{
+    font-size:13px;
+    color:#5b6373;
+    margin:0 0 20px;
+  }
+  .panel{
+    background:#fff;
+    border:1px solid #e1e5ee;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 1px 3px rgba(20,30,60,.05);
+  }
+  .panel h2{
+    font-size:14px;
+    margin:0 0 10px;
+    color:#374057;
+    font-weight:700;
+  }
+  .tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tab-btn{
+    appearance:none;
+    border:1px solid #d7deed;
+    background:#f7f9fd;
+    color:#4a5268;
+    padding:9px 16px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.12s;
+  }
+  .tab-btn:hover{ background:#eef2fb; }
+  .tab-btn.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .tab-btn.mini{ padding:7px 12px; font-size:13px; }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    gap:10px 14px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .field label{
+    font-size:12px;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .field input[type=text],
+  .field input[type=number]{
+    border:1px solid #d7deed;
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:13px;
+    font-family:inherit;
+  }
+
+  .action-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  .btn{
+    appearance:none;
+    border:none;
+    border-radius:10px;
+    padding:11px 18px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    color:#fff;
+    transition:.12s;
+  }
+  .btn:disabled{ opacity:.55; cursor:progress; }
+  .btn.refresh{ background:#4a5268; }
+  .btn.refresh:hover:not(:disabled){ background:#3a4157; }
+  .btn.pdf{ background:#d64545; }
+  .btn.pdf:hover:not(:disabled){ background:#b93636; }
+  .btn.preview{ background:#2f9e6e; }
+  .btn.preview:hover:not(:disabled){ background:#24805a; }
+  .status-msg{
+    font-size:12.5px;
+    color:#8a91a3;
+  }
+  .status-msg.err{ color:#c0392b; font-weight:600; }
+
+  .view-toggle{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    font-size:13px;
+    color:#4a5268;
+  }
+  .view-toggle label{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor:pointer;
+    padding:6px 10px;
+    border:1px solid #d7deed;
+    border-radius:8px;
+  }
+  .view-toggle input{ margin:0; }
+
+  .preview-wrap{
+    display:flex;
+    justify-content:center;
+    padding:10px 0 40px;
+    overflow-x:auto;
+  }
+  .preview-shadow{
+    box-shadow:0 6px 24px rgba(20,30,60,.18);
+  }
+
+  /* ---------------- A4 Sheet ---------------- */
+  .sheet{
+    width:var(--page-w);
+    height:var(--page-h);
+    min-width:var(--page-w);
+    min-height:var(--page-h);
+    background:#fff;
+    padding:var(--margin-y) var(--margin-x);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 auto;
+  }
+  body.exporting .preview-shadow{ box-shadow:none; }
+
+  .sheet .sh-header{ flex:0 0 auto; }
+
+  .sh-cafe-strip{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .sh-cafe-strip .cafe-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--cream);
+    color:var(--mint-dark);
+    border:1.6px dashed var(--mint);
+    border-radius:20px;
+    padding:3px 13px;
+    font-size:9.5pt;
+    font-weight:800;
+  }
+  .sh-cafe-strip .cafe-url{
+    font-size:9pt;
+    color:var(--coral);
+    font-weight:800;
+    letter-spacing:.01em;
+  }
+
+  .sheet .sh-titlebar{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:8px;
+  }
+  .sheet .sh-title{
+    font-size:20pt;
+    font-weight:800;
+    letter-spacing:-.02em;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .sheet .sh-title .op-badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-size:12.5pt;
+    font-weight:700;
+    padding:2px 12px;
+    border-radius:20px;
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  .sheet .sh-title small{
+    font-size:11pt;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .sheet .sh-meta{
+    display:flex;
+    gap:16px;
+    font-size:10.5pt;
+    color:#374057;
+  }
+  .sheet .sh-meta span{ white-space:nowrap; }
+  .sheet .sh-fields{
+    display:flex;
+    gap:18px;
+    font-size:10.5pt;
+    color:#374057;
+    margin-top:6px;
+    flex-wrap:wrap;
+  }
+  .sheet .sh-fields .f{ display:flex; align-items:center; gap:5px; }
+  .sheet .sh-fields .f .ln{
+    display:inline-block;
+    border-bottom:1px solid #999;
+    min-width:70px;
+    height:1.1em;
+  }
+  .sheet .sh-fields .f b{ display:inline-block; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:bottom; }
+  .sheet .sh-rule{
+    height:3px;
+    margin:9px 0 4px;
+    border-radius:3px;
+    background:linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .sheet main.sh-main{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:10px;
+    min-height:0;
+  }
+  .sh-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;
+    gap:18px;
+  }
+  .sh-row.wide{ justify-content:flex-start; width:100%; }
+  .sh-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:2px;
+  }
+  .sh-cell.wide{
+    width:100%;
+    align-items:stretch;
+    justify-content:center;
+  }
+
+  .sheet .sh-footer{
+    flex:0 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:7px;
+    border-top:1.5px dashed var(--mint);
+    font-size:9pt;
+    color:#8a91a3;
+  }
+  .sheet .sh-footer .tagline{ font-weight:700; color:var(--mint-dark); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+  .sheet .sh-footer .brand{
+    font-style:normal;
+    font-weight:700;
+    color:var(--coral);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:360px;
+  }
+  .sheet .sh-footer .pageno::before{ content:"p. "; }
+
+  /* ---------------- Problem content pieces ---------------- */
+  .qline{ font-size:11.3pt; line-height:1.95; padding:2px 0; }
+  .shape-row{ font-size:15pt; letter-spacing:.14em; margin:1px 0; }
+  .fig-wrap{ display:flex; justify-content:center; margin-bottom:2px; }
+
+  .ans{
+    color:var(--red);
+    font-weight:800;
+  }
+
+  .hcalc{
+    font-family:"Consolas","SF Mono","Roboto Mono",monospace;
+    font-size:12.5pt;
+    display:inline-flex;
+    align-items:baseline;
+    gap:.35em;
+    white-space:nowrap;
+  }
+  .hcalc .n{ font-weight:700; display:inline-block; }
+  .hcalc .op{ font-weight:800; }
+  .hcalc .eq{ color:#555; }
+
+  @media print{
+    body{ background:#fff; }
+    .app > .panel, .app-title, .app-sub{ display:none; }
+    .preview-wrap{ padding:0; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ggd-container">
+  <div class="ggd-ad">광고 영역 (728 × 90)</div>
+
+  <div class="ggd-toolbar">
+    <button class="ggd-btn ggd-active" id="btnProblem" onclick="setMode('problem')">문제지</button>
+    <button class="ggd-btn" id="btnAnswer" onclick="setMode('answer')">정답지</button>
+    <button class="ggd-btn" onclick="regenerate()">숫자변경</button>
+    <button class="ggd-btn ggd-primary" onclick="window.print()">프린트</button>
+  </div>
+
+  <div class="ggd-sheet-wrap">
+    <div class="sheet" id="sheetHost"></div>
+  </div>
+</div>
+
+<script>
+
+/* =========================================================================
+   1. Seeded RNG helpers
+   ========================================================================= */
+function mulberry32(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function randInt(rng, min, max){ return Math.floor(rng() * (max - min + 1)) + min; }
+function pick(rng, arr){ return arr[randInt(rng, 0, arr.length-1)]; }
+function pickDistinct(rng, arr, n){
+  const pool = arr.slice();
+  const out = [];
+  for(let i=0;i<n && pool.length;i++){
+    const idx = randInt(rng, 0, pool.length-1);
+    out.push(pool[idx]);
+    pool.splice(idx,1);
+  }
+  return out;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* =========================================================================
+   2. Word banks & constants
+   ========================================================================= */
+const COLOR = { coral:'#ff7e67', sun:'#ffb100', blue:'#4d96ff', violet:'#8a63d2', mint:'#20b39c', teal:'#2aa8c9', ink:'#1f2430' };
+
+/* =========================================================================
+   3. Shared render helpers
+   ========================================================================= */
+// No fill-in boxes or underlines: on problem sheets nothing is shown where an
+// answer would go; on answer sheets the answer appears inline in red.
+// IMPORTANT for every visual helper below: the picture itself must be
+// IDENTICAL between problem-mode and answer-mode renders of the same random
+// draw (givens only) — only ansSpan()-wrapped text may differ by mode. This
+// keeps the per-sheet duplicate signature (which strips .ans spans) mode
+// independent, so a problem sheet and its answer sheet stay in lockstep.
+// All helpers below build with flexbox rather than CSS grid, since CSS grid
+// can render unreliably through the html2canvas PDF/preview export path.
+function ansSpan(mode, text){
+  return mode==='answer' ? ` <span class="ans">${text}</span>` : '';
+}
+function hcalc(aStr, opSym, bStr, ansVal, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, String(ansVal))}`;
+}
+
+// ---- Number / fraction arithmetic helpers (exact, no floating point) ----
+function gcd(a,b){ a=Math.abs(a); b=Math.abs(b); while(b){ const t=a%b; a=b; b=t; } return a||1; }
+function reduceFrac(n,d){ const g=gcd(n,d); return [n/g, d/g]; }
+function trimTrailingZeros(s){
+  if(s.indexOf('.')===-1) return s;
+  s = s.replace(/0+$/,'');
+  s = s.replace(/\.$/,'');
+  return s;
+}
+function decStrFromTenths(x){ // x = value*10 (integer)
+  const ip = Math.floor(x/10), fp = x%10;
+  return fp===0 ? `${ip}` : `${ip}.${fp}`;
+}
+function decStrFromHundredths(x){ // x = value*100 (integer)
+  const ip = Math.floor(x/100), fp = x%100;
+  const fpStr = String(fp).padStart(2,'0');
+  return trimTrailingZeros(`${ip}.${fpStr}`);
+}
+
+// ---- Fraction display (stacked num/den; divider follows currentColor so it
+//      renders red automatically when nested inside ansSpan's .ans) ----
+function fracHTML(num, den, opts={}){
+  const fs = opts.fs || '13pt';
+  return `<span style="display:inline-flex;flex-direction:column;align-items:center;line-height:1.15;vertical-align:middle;font-size:${fs};font-weight:800;"><span>${num}</span><span style="border-top:2px solid currentColor;width:100%;min-width:1.4em;margin:1px 0;"></span><span>${den}</span></span>`;
+}
+function mixedHTML(intPart, num, den, opts={}){
+  return `<span style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="font-size:${opts.fs||'13pt'};font-weight:800;">${intPart}</span>${fracHTML(num,den,opts)}</span>`;
+}
+function fracAnswerHTML(rn, rd){
+  if(rd === 1) return String(rn);
+  if(rn < rd) return fracHTML(rn, rd, {fs:'12pt'});
+  const ip = Math.floor(rn/rd), rem = rn % rd;
+  if(rem === 0) return String(ip);
+  return mixedHTML(ip, rem, rd, {fs:'12pt'});
+}
+function fracRowHTML(partsHTML, ansSpanHTML){
+  const row = partsHTML.map(p=>`<span style="display:inline-flex;align-items:center;">${p}</span>`).join(`<span style="font-size:14pt;font-weight:800;margin:0 8px;">×</span>`);
+  return `<div style="display:flex;align-items:center;justify-content:center;gap:2px;margin:2px 0;">${row}<span style="font-size:14pt;font-weight:800;margin:0 8px;">=</span>${ansSpanHTML}</div>`;
+}
+function properFrac(rng, maxDen){
+  const d = randInt(rng, 2, maxDen);
+  const n = randInt(rng, 1, d-1);
+  return [n,d];
+}
+function mixedNum(rng, maxInt, maxDen){
+  const ip = randInt(rng, 1, maxInt);
+  const [n,d] = properFrac(rng, maxDen);
+  return [ip, n, d];
+}
+
+// ---- Number line: single boundary (이상/이하/초과/미만) ----
+function boundaryLineSVG(boundary, closed, dir, w){
+  const width = w || 200, height = 54, cx = width/2, y = 30;
+  let s = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+  s += `<line x1="14" y1="${y}" x2="${width-14}" y2="${y}" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  s += `<polygon points="${width-14},${y} ${width-22},${y-5} ${width-22},${y+5}" fill="${COLOR.ink}"/>`;
+  s += `<polygon points="14,${y} 22,${y-5} 22,${y+5}" fill="${COLOR.ink}"/>`;
+  if(dir==='right'){ s += `<rect x="${cx}" y="${y-9}" width="${width-14-cx}" height="18" fill="${COLOR.coral}" opacity=".28"/>`; }
+  else{ s += `<rect x="14" y="${y-9}" width="${cx-14}" height="18" fill="${COLOR.coral}" opacity=".28"/>`; }
+  s += `<circle cx="${cx}" cy="${y}" r="6" fill="${closed?COLOR.coral:'#fff'}" stroke="${COLOR.coral}" stroke-width="2.5"/>`;
+  s += `<text x="${cx}" y="${y-14}" font-size="13" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${boundary}</text>`;
+  s += `</svg>`;
+  return s;
+}
+// ---- Number line: two boundaries with shaded range between ----
+function rangeLineSVG(low, lowClosed, high, highClosed, w){
+  const width = w||220, height=54, y=30, x1=40, x2=width-40;
+  let s=`<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+  s += `<line x1="14" y1="${y}" x2="${width-14}" y2="${y}" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  s += `<polygon points="${width-14},${y} ${width-22},${y-5} ${width-22},${y+5}" fill="${COLOR.ink}"/>`;
+  s += `<polygon points="14,${y} 22,${y-5} 22,${y+5}" fill="${COLOR.ink}"/>`;
+  s += `<rect x="${x1}" y="${y-9}" width="${x2-x1}" height="18" fill="${COLOR.coral}" opacity=".28"/>`;
+  s += `<circle cx="${x1}" cy="${y}" r="6" fill="${lowClosed?COLOR.coral:'#fff'}" stroke="${COLOR.coral}" stroke-width="2.5"/>`;
+  s += `<circle cx="${x2}" cy="${y}" r="6" fill="${highClosed?COLOR.coral:'#fff'}" stroke="${COLOR.coral}" stroke-width="2.5"/>`;
+  s += `<text x="${x1}" y="${y-14}" font-size="12.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${low}</text>`;
+  s += `<text x="${x2}" y="${y-14}" font-size="12.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">${high}</text>`;
+  s += `</svg>`;
+  return s;
+}
+// ---- Digit place-value tiles (highlights target place; digits below it are
+//      shown dashed/gray to show they get "buried" by 올림/버림/반올림) ----
+function digitTilesHTML(numStr, targetPos, decisionPos){
+  const n = numStr.length;
+  const placeNames = ['일의 자리','십의 자리','백의 자리','천의 자리','만의 자리','십만의 자리'];
+  const cells = [];
+  for(let i=0;i<n;i++){
+    const posFromRight = n-1-i;
+    const digit = numStr[i];
+    const isTarget = posFromRight === targetPos;
+    const isBelow = posFromRight < targetPos;
+    const isDecision = decisionPos!=null && posFromRight === decisionPos;
+    let style = 'background:#f3f5fa;color:#1f2430;border:2px solid #d7deed;';
+    if(isTarget) style = `background:${COLOR.coral};color:#fff;border:2px solid ${COLOR.coral};`;
+    else if(isDecision) style = `background:${COLOR.sun};color:#fff;border:2px solid ${COLOR.sun};`;
+    else if(isBelow) style = 'background:#fff;color:#c7cbd6;border:2px dashed #d7deed;';
+    cells.push(`<div style="${style}width:24px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12.5pt;font-weight:800;">${digit}</div>`);
+  }
+  const label = placeNames[targetPos] || '';
+  return `<div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+    <div style="display:flex;gap:2px;">${cells.join('')}</div>
+    <div style="font-size:8pt;color:${COLOR.coral};font-weight:800;">▲ ${label}까지</div>
+  </div>`;
+}
+function roundUpTo(n,p){ return n % p === 0 ? n : (Math.floor(n/p)+1)*p; }
+function roundDownTo(n,p){ return Math.floor(n/p)*p; }
+function roundNearestTo(n,p){
+  const lower = Math.floor(n/p)*p;
+  const decideDigit = Math.floor((n - lower) / (p/10));
+  return decideDigit >= 5 ? lower + p : lower;
+}
+const ROUND_PLACES = [ {pos:1,label:'십'}, {pos:2,label:'백'}, {pos:3,label:'천'} ];
+
+// ---- Congruent-triangle pair (fixed scalene template; 2nd triangle is a
+//      horizontal mirror of the 1st, still congruent by reflection) ----
+const TRI_A = [[20,92],[130,92],[75,18]];
+function mirrorTri(pts, w){ return pts.map(p=>[w-p[0], p[1]]); }
+function triangleSVG(pts, vertexLabels, angleTexts, edgeTexts, color, w, h){
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  s += `<polygon points="${pts[0]} ${pts[1]} ${pts[2]}" fill="${color}" fill-opacity=".14" stroke="${color}" stroke-width="2.5"/>`;
+  const cx=(pts[0][0]+pts[1][0]+pts[2][0])/3, cy=(pts[0][1]+pts[1][1]+pts[2][1])/3;
+  pts.forEach((p,i)=>{
+    const dx=p[0]-cx, dy=p[1]-cy, len=Math.hypot(dx,dy)||1;
+    const lx=p[0]+dx/len*12, ly=p[1]+dy/len*12+3;
+    s += `<text x="${lx}" y="${ly}" font-size="10.5" font-weight="800" text-anchor="middle" fill="${COLOR.ink}">${vertexLabels[i]}</text>`;
+    if(angleTexts && angleTexts[i]!=null){
+      const ix = p[0]+(cx-p[0])*0.34, iy = p[1]+(cy-p[1])*0.34+3;
+      s += `<text x="${ix}" y="${iy}" font-size="10" font-weight="800" text-anchor="middle" fill="${color}">${angleTexts[i]}</text>`;
+    }
+  });
+  if(edgeTexts){
+    const pairs=[[0,1],[1,2],[2,0]];
+    pairs.forEach((pr,i)=>{
+      if(edgeTexts[i]==null) return;
+      const p1=pts[pr[0]], p2=pts[pr[1]];
+      const mx=(p1[0]+p2[0])/2, my=(p1[1]+p2[1])/2;
+      const dx=mx-cx, dy=my-cy, len=Math.hypot(dx,dy)||1;
+      const lx=mx+dx/len*11, ly=my+dy/len*11+3;
+      s += `<text x="${lx}" y="${ly}" font-size="10" font-weight="800" text-anchor="middle" fill="${color}">${edgeTexts[i]}</text>`;
+    });
+  }
+  s += `</svg>`;
+  return s;
+}
+function pairSVG(svg1, svg2){
+  return `<div style="display:flex;gap:14px;align-items:center;justify-content:center;">${svg1}${svg2}</div>`;
+}
+// ---- Symmetric-figure distance diagrams (선대칭 축 / 점대칭 중심) ----
+function symAxisSegmentSVG(total, w){
+  const width = w||200, height=70, axisX=width/2, y=40;
+  const halfLen = Math.min(72, 18+total*2);
+  let s=`<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+  s += `<line x1="${axisX}" y1="6" x2="${axisX}" y2="${height-6}" stroke="${COLOR.blue}" stroke-width="2" stroke-dasharray="4,3"/>`;
+  s += `<line x1="${axisX-halfLen}" y1="${y}" x2="${axisX+halfLen}" y2="${y}" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  s += `<circle cx="${axisX-halfLen}" cy="${y}" r="5" fill="${COLOR.blue}"/>`;
+  s += `<circle cx="${axisX+halfLen}" cy="${y}" r="5" fill="${COLOR.blue}"/>`;
+  s += `<text x="${axisX-halfLen}" y="${y-10}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">ㄱ</text>`;
+  s += `<text x="${axisX+halfLen}" y="${y-10}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">ㄴ</text>`;
+  s += `<text x="${axisX}" y="${height-2}" font-size="9" text-anchor="middle" font-weight="700" fill="${COLOR.blue}">대칭축</text>`;
+  s += `<text x="${axisX}" y="${y+18}" font-size="10" text-anchor="middle" font-weight="800" fill="#4a5268">전체 ${total} cm</text>`;
+  s += `</svg>`;
+  return s;
+}
+function centerPointSegmentSVG(total, w){
+  const width=w||200, height=60, cx=width/2, y=32;
+  const halfLen = Math.min(72, 18+total*2);
+  let s=`<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
+  s += `<line x1="${cx-halfLen}" y1="${y}" x2="${cx+halfLen}" y2="${y}" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  s += `<circle cx="${cx-halfLen}" cy="${y}" r="5" fill="${COLOR.blue}"/>`;
+  s += `<circle cx="${cx+halfLen}" cy="${y}" r="5" fill="${COLOR.blue}"/>`;
+  s += `<circle cx="${cx}" cy="${y}" r="4" fill="${COLOR.ink}"/>`;
+  s += `<text x="${cx-halfLen}" y="${y-10}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">ㄱ</text>`;
+  s += `<text x="${cx+halfLen}" y="${y-10}" font-size="10.5" text-anchor="middle" font-weight="800" fill="${COLOR.ink}">ㄴ</text>`;
+  s += `<text x="${cx}" y="${y+18}" font-size="9" text-anchor="middle" font-weight="700" fill="${COLOR.blue}">대칭의 중심</text>`;
+  s += `<text x="${cx}" y="${height-2}" font-size="10" text-anchor="middle" font-weight="800" fill="#4a5268">전체 ${total} cm</text>`;
+  s += `</svg>`;
+  return s;
+}
+// ---- Named plane-shape bank for 선대칭/점대칭 판별 (fixed, well-known facts) ----
+function regPolyPts(n, cx, cy, r, rotDeg){
+  const pts=[]; const rot = (rotDeg||0)*Math.PI/180;
+  for(let i=0;i<n;i++){
+    const a = rot + i*2*Math.PI/n - Math.PI/2;
+    pts.push([ (cx+r*Math.cos(a)).toFixed(1), (cy+r*Math.sin(a)).toFixed(1) ]);
+  }
+  return pts;
+}
+function polySVGStr(pts, color, w, h){
+  const ptStr = pts.map(p=>p.join(',')).join(' ');
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polygon points="${ptStr}" fill="${color}" fill-opacity=".22" stroke="${color}" stroke-width="2.5"/></svg>`;
+}
+function circleSVGStr(color, w, h){
+  const r=Math.min(w,h)/2-6;
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><circle cx="${w/2}" cy="${h/2}" r="${r}" fill="${color}" fill-opacity=".22" stroke="${color}" stroke-width="2.5"/></svg>`;
+}
+const SYMMETRY_BANK = [
+  { name:'정삼각형', line:true, point:false, shape:(c,w,h)=>polySVGStr(regPolyPts(3,w/2,h/2+6,42), c, w,h) },
+  { name:'정사각형', line:true, point:true, shape:(c,w,h)=>polySVGStr(regPolyPts(4,w/2,h/2,40,45), c, w,h) },
+  { name:'정오각형', line:true, point:false, shape:(c,w,h)=>polySVGStr(regPolyPts(5,w/2,h/2+2,40), c, w,h) },
+  { name:'정육각형', line:true, point:true, shape:(c,w,h)=>polySVGStr(regPolyPts(6,w/2,h/2,38), c, w,h) },
+  { name:'직사각형', line:true, point:true, shape:(c,w,h)=>polySVGStr([[w/2-46,h/2-26],[w/2+46,h/2-26],[w/2+46,h/2+26],[w/2-46,h/2+26]], c, w,h) },
+  { name:'마름모', line:true, point:true, shape:(c,w,h)=>polySVGStr([[w/2,h/2-40],[w/2+30,h/2],[w/2,h/2+40],[w/2-30,h/2]], c, w,h) },
+  { name:'평행사변형', line:false, point:true, shape:(c,w,h)=>polySVGStr([[w/2-46,h/2-24],[w/2+26,h/2-24],[w/2+46,h/2+24],[w/2-26,h/2+24]], c, w,h) },
+  { name:'사다리꼴', line:false, point:false, shape:(c,w,h)=>polySVGStr([[w/2-22,h/2-26],[w/2+34,h/2-26],[w/2+46,h/2+26],[w/2-46,h/2+26]], c, w,h) },
+  { name:'원', line:true, point:true, shape:(c,w,h)=>circleSVGStr(c,w,h) },
+  { name:'이등변삼각형', line:true, point:false, shape:(c,w,h)=>polySVGStr([[w/2,h/2-40],[w/2-38,h/2+30],[w/2+38,h/2+30]], c, w,h) },
+];
+// ---- Decimal ×1/×10/×100/×1000 pattern list ----
+function decimalPatternHTML(D, blankIdx){
+  const mults=[1,10,100,1000];
+  const lines = mults.map((m,i)=>{
+    const val = decStrFromTenths(D*m);
+    return `<div style="display:flex;justify-content:space-between;width:152px;padding:2px 6px;">
+      <span style="font-weight:700;color:#4a5268;">${decStrFromTenths(D)} × ${m} =</span>
+      <span style="font-weight:800;">${i===blankIdx ? '?' : val}</span>
+    </div>`;
+  }).join('');
+  return `<div style="display:inline-flex;flex-direction:column;border:1.5px solid #d7deed;border-radius:8px;padding:4px 2px;">${lines}</div>`;
+}
+// ---- Cuboid 겨냥도 (fixed pseudo-3D box; 3 hidden edges dashed) ----
+function cuboidSVG(opts={}){
+  const color = opts.color || COLOR.mint;
+  const FBL=[20,95],FBR=[110,95],FTR=[110,25],FTL=[20,25];
+  const BBL=[55,70],BBR=[145,70],BTR=[145,0],BTL=[55,0];
+  const solid = [[FBL,FBR],[FBR,FTR],[FTR,FTL],[FTL,FBL],[BTR,BTL],[BBR,BTR],[FBR,BBR],[FTR,BTR],[FTL,BTL]];
+  const dashed = [[BBL,BBR],[BTL,BBL],[FBL,BBL]];
+  let s=`<svg width="170" height="110" viewBox="0 0 170 110">`;
+  s += `<polygon points="${FBL} ${FBR} ${FTR} ${FTL}" fill="${color}" fill-opacity=".18" stroke="none"/>`;
+  s += `<polygon points="${FTL} ${FTR} ${BTR} ${BTL}" fill="${color}" fill-opacity=".3" stroke="none"/>`;
+  s += `<polygon points="${FBR} ${FTR} ${BTR} ${BBR}" fill="${color}" fill-opacity=".12" stroke="none"/>`;
+  solid.forEach(pr=>{ s += `<line x1="${pr[0][0]}" y1="${pr[0][1]}" x2="${pr[1][0]}" y2="${pr[1][1]}" stroke="${COLOR.ink}" stroke-width="2"/>`; });
+  dashed.forEach(pr=>{ s += `<line x1="${pr[0][0]}" y1="${pr[0][1]}" x2="${pr[1][0]}" y2="${pr[1][1]}" stroke="${COLOR.ink}" stroke-width="1.6" stroke-dasharray="4,3"/>`; });
+  s += `</svg>`;
+  return s;
+}
+// ---- Cube net (전개도), fixed cross layout, fixed opposite-face mapping ----
+function cubeNetSVG(labels){
+  const s0=30, gap=2;
+  const cellPos = { top:[1,0], left:[0,1], front:[1,1], right:[2,1], back:[3,1], bottom:[1,2] };
+  const order=['top','left','front','right','back','bottom'];
+  let s = `<svg width="${4*(s0+gap)}" height="${3*(s0+gap)}" viewBox="0 0 ${4*(s0+gap)} ${3*(s0+gap)}">`;
+  order.forEach((k,i)=>{
+    const [c,r] = cellPos[k];
+    const x=c*(s0+gap), y=r*(s0+gap);
+    s += `<rect x="${x}" y="${y}" width="${s0}" height="${s0}" fill="${COLOR.mint}" fill-opacity=".2" stroke="${COLOR.ink}" stroke-width="1.6"/>`;
+    s += `<text x="${x+s0/2}" y="${y+s0/2+4}" font-size="12" font-weight="800" text-anchor="middle" fill="${COLOR.ink}">${labels[i]}</text>`;
+  });
+  s += `</svg>`;
+  return s;
+}
+// order = [top,left,front,right,back,bottom]; opposite pairs by index: 0-5,1-3,2-4
+const CUBE_NET_OPP = {0:5,5:0,1:3,3:1,2:4,4:2};
+// ---- Simple data table (flexbox, not CSS grid — see rule 6) ----
+function dataTableHTML(headers, values, opts={}){
+  const cellW = opts.cellW || 40;
+  const headRow = headers.map(h=>`<div style="width:${cellW}px;padding:4px 2px;text-align:center;font-size:9pt;font-weight:800;background:#f3f5fa;border:1px solid #d7deed;">${h}</div>`).join('');
+  const valRow = values.map(v=>`<div style="width:${cellW}px;padding:4px 2px;text-align:center;font-size:10pt;font-weight:700;border:1px solid #d7deed;">${v}</div>`).join('');
+  return `<div style="display:inline-flex;flex-direction:column;">
+    <div style="display:flex;">${headRow}</div>
+    <div style="display:flex;">${valRow}</div>
+  </div>`;
+}
+// ---- Probability spinner (원 모양 회전판) ----
+function spinnerSVG(n, k, colorA, colorB){
+  const cx=45, cy=45, r=38;
+  let s=`<svg width="90" height="90" viewBox="0 0 90 90">`;
+  for(let i=0;i<n;i++){
+    const a0 = -90 + i*360/n, a1 = -90 + (i+1)*360/n;
+    const x0 = cx + r*Math.cos(a0*Math.PI/180), y0 = cy + r*Math.sin(a0*Math.PI/180);
+    const x1 = cx + r*Math.cos(a1*Math.PI/180), y1 = cy + r*Math.sin(a1*Math.PI/180);
+    const largeArc = (360/n) > 180 ? 1 : 0;
+    const col = i < k ? colorA : colorB;
+    s += `<path d="M${cx},${cy} L${x0.toFixed(1)},${y0.toFixed(1)} A${r},${r} 0 ${largeArc} 1 ${x1.toFixed(1)},${y1.toFixed(1)} Z" fill="${col}" fill-opacity=".55" stroke="${COLOR.ink}" stroke-width="1.2"/>`;
+  }
+  s += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COLOR.ink}" stroke-width="2"/>`;
+  s += `</svg>`;
+  return s;
+}
+
+/* =========================================================================
+   4. Unit 1 — 수의 범위와 어림하기
+   ========================================================================= */
+function buildU1T1(rng, mode){
+  const boundary = randInt(rng, 100, 9990);
+  const isAbove = rng() < 0.5;
+  const label = isAbove ? '이상' : '이하';
+  const dir = isAbove ? 'right' : 'left';
+  const deltas = pickDistinct(rng, [-12,-7,-3,3,7,12,15,-15,5,-5], 4);
+  let cands = Array.from(new Set([boundary, ...deltas.map(d=>boundary+d)].filter(v=>v>0)));
+  for(let i=cands.length-1;i>0;i--){ const j=randInt(rng,0,i); [cands[i],cands[j]]=[cands[j],cands[i]]; }
+  const qualify = cands.filter(v => isAbove ? v>=boundary : v<=boundary).sort((a,b)=>a-b);
+  return `<div class="fig-wrap">${boundaryLineSVG(boundary, true, dir)}</div>
+    <div class="qline">${boundary} ${label}인 수를 다음에서 모두 고르면? <b>${cands.join(', ')}</b>${ansSpan(mode, qualify.length?qualify.join(', '):'없음')}</div>`;
+}
+function buildU1T2(rng, mode){
+  const boundary = randInt(rng, 100, 9990);
+  const isOver = rng() < 0.5;
+  const label = isOver ? '초과' : '미만';
+  const dir = isOver ? 'right' : 'left';
+  const deltas = pickDistinct(rng, [-12,-7,-3,3,7,12,15,-15,5,-5], 4);
+  let cands = Array.from(new Set([boundary, ...deltas.map(d=>boundary+d)].filter(v=>v>0)));
+  for(let i=cands.length-1;i>0;i--){ const j=randInt(rng,0,i); [cands[i],cands[j]]=[cands[j],cands[i]]; }
+  const qualify = cands.filter(v => isOver ? v>boundary : v<boundary).sort((a,b)=>a-b);
+  return `<div class="fig-wrap">${boundaryLineSVG(boundary, false, dir)}</div>
+    <div class="qline">${boundary} ${label}인 수를 다음에서 모두 고르면? <b>${cands.join(', ')}</b>${ansSpan(mode, qualify.length?qualify.join(', '):'없음')}</div>`;
+}
+function buildU1T3(rng, mode){
+  const low = randInt(rng, 10, 500);
+  const width = randInt(rng, 5, 20);
+  const high = low + width;
+  const lowClosed = rng()<0.5, highClosed = rng()<0.5;
+  const lowLabel = lowClosed ? '이상' : '초과';
+  const highLabel = highClosed ? '이하' : '미만';
+  let count = 0;
+  for(let v=low; v<=high; v++){
+    const okLow = lowClosed ? v>=low : v>low;
+    const okHigh = highClosed ? v<=high : v<high;
+    if(okLow && okHigh) count++;
+  }
+  return `<div class="fig-wrap">${rangeLineSVG(low, lowClosed, high, highClosed)}</div>
+    <div class="qline">${low} ${lowLabel} ${high} ${highLabel}인 자연수는 모두 몇 개인가요?${ansSpan(mode, `${count}개`)}</div>`;
+}
+function buildU1T4(rng, mode){
+  const n = randInt(rng, 1234, 98765);
+  const pl = pick(rng, ROUND_PLACES);
+  const p = Math.pow(10, pl.pos);
+  const ans = roundUpTo(n, p);
+  return `<div class="fig-wrap">${digitTilesHTML(String(n), pl.pos)}</div>
+    <div class="qline">${n}을(를) 올림하여 ${pl.label}의 자리까지 나타내면?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU1T5(rng, mode){
+  const n = randInt(rng, 1234, 98765);
+  const pl = pick(rng, ROUND_PLACES);
+  const p = Math.pow(10, pl.pos);
+  const ans = roundDownTo(n, p);
+  return `<div class="fig-wrap">${digitTilesHTML(String(n), pl.pos)}</div>
+    <div class="qline">${n}을(를) 버림하여 ${pl.label}의 자리까지 나타내면?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU1T6(rng, mode){
+  const n = randInt(rng, 1234, 98765);
+  const pl = pick(rng, ROUND_PLACES);
+  const p = Math.pow(10, pl.pos);
+  const ans = roundNearestTo(n, p);
+  return `<div class="fig-wrap">${digitTilesHTML(String(n), pl.pos, pl.pos-1)}</div>
+    <div class="qline">${n}을(를) 반올림하여 ${pl.label}의 자리까지 나타내면?${ansSpan(mode, String(ans))}</div>`;
+}
+
+/* =========================================================================
+   5. Unit 2 — 분수의 곱셈
+   ========================================================================= */
+function buildU2T1(rng, mode){
+  const [n,d] = properFrac(rng, 12);
+  const k = randInt(rng, 2, 9);
+  const [rn, rd] = reduceFrac(n*k, d);
+  return fracRowHTML([fracHTML(n,d), String(k)], ansSpan(mode, fracAnswerHTML(rn,rd)));
+}
+function buildU2T2(rng, mode){
+  const [n,d] = properFrac(rng, 12);
+  const k = randInt(rng, 2, 9);
+  const [rn, rd] = reduceFrac(n*k, d);
+  return fracRowHTML([String(k), fracHTML(n,d)], ansSpan(mode, fracAnswerHTML(rn,rd)));
+}
+function buildU2T3(rng, mode){
+  const [ip,n,d] = mixedNum(rng, 6, 10);
+  const k = randInt(rng, 2, 6);
+  const improperN = ip*d + n;
+  const [rn, rd] = reduceFrac(improperN*k, d);
+  return fracRowHTML([mixedHTML(ip,n,d), String(k)], ansSpan(mode, fracAnswerHTML(rn,rd)));
+}
+function buildU2T4(rng, mode){
+  const [n1,d1] = properFrac(rng, 9);
+  const [n2,d2] = properFrac(rng, 9);
+  const [rn, rd] = reduceFrac(n1*n2, d1*d2);
+  return fracRowHTML([fracHTML(n1,d1), fracHTML(n2,d2)], ansSpan(mode, fracAnswerHTML(rn,rd)));
+}
+function buildU2T5(rng, mode){
+  const [ip1,n1,d1] = mixedNum(rng, 4, 8);
+  const [ip2,n2,d2] = mixedNum(rng, 4, 8);
+  const num1 = ip1*d1+n1, num2 = ip2*d2+n2;
+  const [rn, rd] = reduceFrac(num1*num2, d1*d2);
+  return fracRowHTML([mixedHTML(ip1,n1,d1), mixedHTML(ip2,n2,d2)], ansSpan(mode, fracAnswerHTML(rn,rd)));
+}
+
+/* =========================================================================
+   6. Unit 3 — 합동과 대칭
+   ========================================================================= */
+function buildU3T1(rng, mode){
+  const w=170,h=110;
+  const sides = [randInt(rng,4,15), randInt(rng,4,15), randInt(rng,4,15)];
+  const blank = randInt(rng,0,2);
+  const VL1=['ㄱ','ㄴ','ㄷ'], VL2=['ㄹ','ㅁ','ㅂ'];
+  const tri1 = triangleSVG(TRI_A, VL1, null, sides.map(v=>`${v}`), COLOR.blue, w, h);
+  const et2 = sides.map((v,i)=> i===blank ? '?' : `${v}`);
+  const tri2 = triangleSVG(mirrorTri(TRI_A,w), VL2, null, et2, COLOR.blue, w, h);
+  const pairs=[[0,1],[1,2],[2,0]];
+  const edgeLabel = `${VL2[pairs[blank][0]]}${VL2[pairs[blank][1]]}`;
+  return `<div class="fig-wrap">${pairSVG(tri1,tri2)}</div>
+    <div class="qline">두 삼각형은 서로 합동입니다. 변 ${edgeLabel}의 길이는 몇 cm인가요?${ansSpan(mode, `${sides[blank]} cm`)}</div>`;
+}
+function buildU3T2(rng, mode){
+  const w=170,h=110;
+  let a1=randInt(rng,40,90), a2=randInt(rng,30,80);
+  while(a1+a2>=170) a2 = randInt(rng,30,80);
+  const a3 = 180-a1-a2;
+  const angles=[a1,a2,a3];
+  const blank = randInt(rng,0,2);
+  const VL1=['ㄱ','ㄴ','ㄷ'], VL2=['ㄹ','ㅁ','ㅂ'];
+  const tri1 = triangleSVG(TRI_A, VL1, angles.map(v=>`${v}°`), null, COLOR.blue, w, h);
+  const at2 = angles.map((v,i)=> i===blank ? '?' : `${v}°`);
+  const tri2 = triangleSVG(mirrorTri(TRI_A,w), VL2, at2, null, COLOR.blue, w, h);
+  return `<div class="fig-wrap">${pairSVG(tri1,tri2)}</div>
+    <div class="qline">두 삼각형은 서로 합동입니다. 각 ${VL2[blank]}의 크기는 몇 도인가요?${ansSpan(mode, `${angles[blank]}°`)}</div>`;
+}
+function buildU3T3(rng, mode){
+  const half = randInt(rng,2,20);
+  const total = half*2;
+  return `<div class="fig-wrap">${symAxisSegmentSVG(total)}</div>
+    <div class="qline">선대칭도형에서 두 대응점 ㄱ, ㄴ을 이은 선분의 길이가 ${total} cm일 때, 대칭축에서 점 ㄱ까지의 거리는?${ansSpan(mode, `${half} cm`)}</div>`;
+}
+function buildU3T4(rng, mode){
+  const half = randInt(rng,2,20);
+  const total = half*2;
+  return `<div class="fig-wrap">${centerPointSegmentSVG(total)}</div>
+    <div class="qline">점대칭도형에서 두 대응점 ㄱ, ㄴ을 이은 선분의 길이가 ${total} cm일 때, 대칭의 중심에서 점 ㄱ까지의 거리는?${ansSpan(mode, `${half} cm`)}</div>`;
+}
+function buildU3T5(rng, mode){
+  const item = pick(rng, SYMMETRY_BANK);
+  const w=140,h=110;
+  const svg = item.shape(COLOR.blue, w, h);
+  return `<div class="fig-wrap">${svg}</div>
+    <div class="qline">이 ${item.name}은(는) 선대칭도형인가요?${ansSpan(mode, item.line?'예':'아니요')} 점대칭도형인가요?${ansSpan(mode, item.point?'예':'아니요')}</div>`;
+}
+
+/* =========================================================================
+   7. Unit 4 — 소수의 곱셈
+   ========================================================================= */
+function buildU4T1(rng, mode){
+  const D = randInt(rng, 11, 99), k = randInt(rng, 2, 9);
+  return hcalc(decStrFromTenths(D), '×', String(k), decStrFromTenths(D*k), mode);
+}
+function buildU4T2(rng, mode){
+  const D = randInt(rng, 11, 99), k = randInt(rng, 2, 9);
+  return hcalc(String(k), '×', decStrFromTenths(D), decStrFromTenths(D*k), mode);
+}
+function buildU4T3(rng, mode){
+  const D1 = randInt(rng, 11, 99), D2 = randInt(rng, 11, 99);
+  return hcalc(decStrFromTenths(D1), '×', decStrFromTenths(D2), decStrFromHundredths(D1*D2), mode);
+}
+function buildU4T4(rng, mode){
+  const D1 = randInt(rng, 11, 99), D2 = randInt(rng, 11, 99);
+  const intProd = D1*D2;
+  return `<div class="qline">${D1} × ${D2} = ${intProd}임을 이용하여 ${decStrFromTenths(D1)} × ${decStrFromTenths(D2)}를 계산하면?${ansSpan(mode, decStrFromHundredths(intProd))}</div>`;
+}
+function buildU4T5(rng, mode){
+  const D = randInt(rng, 11, 99);
+  const blankIdx = randInt(rng, 1, 3);
+  const mults=[1,10,100,1000];
+  const ansVal = decStrFromTenths(D*mults[blankIdx]);
+  return `<div class="fig-wrap">${decimalPatternHTML(D, blankIdx)}</div>
+    <div class="qline">규칙에 따라 빈칸에 알맞은 수를 구하세요.${ansSpan(mode, ansVal)}</div>`;
+}
+
+/* =========================================================================
+   8. Unit 5 — 직육면체
+   ========================================================================= */
+const CUBOID_COUNT_FACTS = [ ['면','6개'], ['모서리','12개'], ['꼭짓점','8개'] ];
+function buildU5T1(rng, mode){
+  const fact = pick(rng, CUBOID_COUNT_FACTS);
+  return `<div class="fig-wrap">${cuboidSVG()}</div>
+    <div class="qline">직육면체에서 ${fact[0]}은(는) 모두 몇 개인가요?${ansSpan(mode, fact[1])}</div>`;
+}
+function buildU5T2(rng, mode){
+  const edge = randInt(rng, 3, 15);
+  const total = edge*12;
+  const askTotal = rng()<0.5;
+  const svg = cuboidSVG();
+  if(askTotal){
+    return `<div class="fig-wrap">${svg}</div>
+      <div class="qline">정육면체는 모든 모서리의 길이가 같습니다. 한 모서리가 ${edge} cm일 때, 모든 모서리 길이의 합은?${ansSpan(mode, `${total} cm`)}</div>`;
+  }
+  return `<div class="fig-wrap">${svg}</div>
+    <div class="qline">정육면체의 모든 모서리 길이의 합이 ${total} cm일 때, 한 모서리의 길이는?${ansSpan(mode, `${edge} cm`)}</div>`;
+}
+const CUBOID_VIEW_FACTS = [
+  ['보이는 모서리','9개'], ['보이지 않는 모서리','3개'],
+  ['보이는 면','3개'], ['보이지 않는 면','3개'],
+  ['보이는 꼭짓점','7개'], ['보이지 않는 꼭짓점','1개'],
+];
+function buildU5T3(rng, mode){
+  const fact = pick(rng, CUBOID_VIEW_FACTS);
+  return `<div class="fig-wrap">${cuboidSVG()}</div>
+    <div class="qline">겨냥도에서 ${fact[0]}은(는) 몇 개인가요? (점선은 보이지 않는 부분입니다)${ansSpan(mode, fact[1])}</div>`;
+}
+function buildU5T4(rng, mode){
+  const nums = pickDistinct(rng, [1,2,3,4,5,6], 6);
+  const askIdx = randInt(rng,0,5);
+  const ansIdx = CUBE_NET_OPP[askIdx];
+  const svg = cubeNetSVG(nums);
+  return `<div class="fig-wrap">${svg}</div>
+    <div class="qline">전개도를 접어 정육면체를 만들 때, ${nums[askIdx]}이 적힌 면과 마주 보는 면에 적힌 수는?${ansSpan(mode, String(nums[ansIdx]))}</div>`;
+}
+function buildU5T5(rng, mode){
+  const kind = pick(rng, [
+    ['한 면과 수직인 면','4개'], ['한 면과 평행한 면','1개'],
+    ['밑면의 수','2개'], ['옆면의 수','4개'],
+  ]);
+  return `<div class="fig-wrap">${cuboidSVG()}</div>
+    <div class="qline">직육면체에서 ${kind[0]}은(는) 모두 몇 개인가요?${ansSpan(mode, kind[1])}</div>`;
+}
+
+/* =========================================================================
+   9. Unit 6 — 평균과 가능성
+   ========================================================================= */
+const AVG_CONTEXTS = [
+  { label:'요일별 최고기온(℃)', cats:['월','화','수','목','금'] },
+  { label:'모둠별 줄넘기 기록(회)', cats:['1모둠','2모둠','3모둠','4모둠'] },
+  { label:'월별 도서 대출 권수(권)', cats:['3월','4월','5월','6월'] },
+  { label:'요일별 방문객 수(명)', cats:['목','금','토','일'] },
+];
+function randValuesWithAvg(rng, n, avg, spread){
+  const vals = []; let remaining = avg*n;
+  for(let i=0;i<n-1;i++){
+    const lo = Math.max(1, avg-spread), hi = avg+spread;
+    const v = randInt(rng, lo, hi);
+    vals.push(v); remaining -= v;
+  }
+  vals.push(remaining);
+  return vals;
+}
+function buildU6T1(rng, mode){
+  const ctx = pick(rng, AVG_CONTEXTS);
+  const n = ctx.cats.length;
+  const avg = randInt(rng, 5, 30);
+  let vals, tries=0;
+  do{ vals = randValuesWithAvg(rng, n, avg, 6); tries++; } while(vals.some(v=>v<1) && tries<20);
+  const table = dataTableHTML(ctx.cats, vals);
+  return `<div class="fig-wrap">${table}</div>
+    <div class="qline">${ctx.label}입니다. 평균을 구하세요.${ansSpan(mode, `${avg}`)}</div>`;
+}
+function buildU6T2(rng, mode){
+  const ctx = pick(rng, AVG_CONTEXTS);
+  const n = ctx.cats.length;
+  const avg = randInt(rng, 5, 30);
+  let vals, tries=0;
+  do{ vals = randValuesWithAvg(rng, n, avg, 6); tries++; } while(vals.some(v=>v<1) && tries<20);
+  const hideIdx = randInt(rng, 0, n-1);
+  const missing = vals[hideIdx];
+  const shown = vals.map((v,i)=> i===hideIdx ? '?' : v);
+  const table = dataTableHTML(ctx.cats, shown);
+  return `<div class="fig-wrap">${table}</div>
+    <div class="qline">${ctx.label}의 평균이 ${avg}일 때, ?에 알맞은 수는?${ansSpan(mode, `${missing}`)}</div>`;
+}
+function buildU6T3(rng, mode){
+  const avgA = randInt(rng, 5, 25), avgB = randInt(rng, 5, 25);
+  let valsA, valsB, tries=0;
+  do{ valsA = randValuesWithAvg(rng, 4, avgA, 5); tries++; } while(valsA.some(v=>v<1) && tries<20);
+  tries=0;
+  do{ valsB = randValuesWithAvg(rng, 4, avgB, 5); tries++; } while(valsB.some(v=>v<1) && tries<20);
+  const tableA = dataTableHTML(['1회','2회','3회','4회'], valsA, {cellW:36});
+  const tableB = dataTableHTML(['1회','2회','3회','4회'], valsB, {cellW:36});
+  const winner = avgA >= avgB ? 'A모둠' : 'B모둠';
+  const wrap = `<div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+    <div style="display:flex;align-items:center;gap:6px;"><b style="font-size:9pt;">A모둠</b>${tableA}</div>
+    <div style="display:flex;align-items:center;gap:6px;"><b style="font-size:9pt;">B모둠</b>${tableB}</div>
+  </div>`;
+  return `<div class="fig-wrap">${wrap}</div>
+    <div class="qline">A모둠과 B모둠의 기록입니다. 평균이 더 높은 모둠은?${ansSpan(mode, winner)}</div>`;
+}
+const POSSIBILITY_SITUATIONS = [
+  { text:'계절은 봄, 여름, 가을, 겨울 네 번이 있습니다. 내년에도 겨울이 있을 가능성은?', ans:'확실하다' },
+  { text:'동전을 던졌을 때 그림 면이 나올 가능성은?', ans:'반반이다' },
+  { text:'주사위 1개를 굴렸을 때 눈의 수가 7이 나올 가능성은?', ans:'불가능하다' },
+  { text:'내일 아침에 해가 동쪽에서 뜰 가능성은?', ans:'확실하다' },
+  { text:'1부터 10까지 수 중 하나를 뽑았을 때 짝수가 나올 가능성은?', ans:'반반이다' },
+  { text:'흰 바둑돌 1개와 검은 바둑돌 9개가 든 주머니에서 흰 바둑돌을 꺼낼 가능성은?', ans:'~아닐 것 같다' },
+  { text:'흰 바둑돌 9개와 검은 바둑돌 1개가 든 주머니에서 흰 바둑돌을 꺼낼 가능성은?', ans:'~일 것 같다' },
+  { text:'1월 다음 달은 2월일 가능성은?', ans:'확실하다' },
+  { text:'주사위 1개를 굴렸을 때 1 이상의 수가 나올 가능성은?', ans:'확실하다' },
+  { text:'화요일의 다음 날이 월요일일 가능성은?', ans:'불가능하다' },
+];
+function buildU6T4(rng, mode){
+  const s = pick(rng, POSSIBILITY_SITUATIONS);
+  return `<div class="qline">${s.text}<br><span style="font-size:9.5pt;color:#8a91a3;">(불가능하다 / ~아닐 것 같다 / 반반이다 / ~일 것 같다 / 확실하다)</span>${ansSpan(mode, s.ans)}</div>`;
+}
+function buildU6T5(rng, mode){
+  const n = pick(rng, [2,4,5,6,8]);
+  const k = randInt(rng, 1, n-1);
+  const [rn, rd] = reduceFrac(k, n);
+  const svg = spinnerSVG(n, k, COLOR.teal, '#e3e7ef');
+  const ansHTML = rd===1 ? '1' : fracHTML(rn, rd, {fs:'11pt'});
+  return `<div class="fig-wrap">${svg}</div>
+    <div class="qline">회전판에서 화살표가 색칠된 부분에 멈출 가능성을 분수로 나타내면?${ansSpan(mode, ansHTML)}</div>`;
+}
+
+/* =========================================================================
+   10. Unit / Type registry
+   ========================================================================= */
+
+const UNITS = [
+  { key:'u1', num:'1', title:'수의 범위와 어림하기', color:'var(--coral)',
+    types:[
+      { name:'이상과 이하', layout:'grid', cols:3, rows:4, build:buildU1T1 },
+      { name:'초과와 미만', layout:'grid', cols:3, rows:5, build:buildU1T2 },
+      { name:'수의 범위에 속하는 수의 개수', layout:'grid', cols:3, rows:5, build:buildU1T3 },
+      { name:'올림하기', layout:'grid', cols:3, rows:6, build:buildU1T4 },
+      { name:'버림하기', layout:'grid', cols:3, rows:6, build:buildU1T5 },
+      { name:'반올림하기', layout:'grid', cols:3, rows:6, build:buildU1T6 },
+    ]},
+  { key:'u2', num:'2', title:'분수의 곱셈', color:'var(--sun)',
+    types:[
+      { name:'(진분수)×(자연수)', layout:'grid', cols:3, rows:6, build:buildU2T1 },
+      { name:'(자연수)×(진분수)', layout:'grid', cols:3, rows:6, build:buildU2T2 },
+      { name:'(대분수)×(자연수)', layout:'grid', cols:3, rows:5, build:buildU2T3 },
+      { name:'(진분수)×(진분수)', layout:'grid', cols:3, rows:6, build:buildU2T4 },
+      { name:'(대분수)×(대분수)', layout:'grid', cols:3, rows:5, build:buildU2T5 },
+    ]},
+  { key:'u3', num:'3', title:'합동과 대칭', color:'var(--blue)',
+    types:[
+      { name:'합동인 도형의 대응변', layout:'list', cols:1, rows:5, build:buildU3T1 },
+      { name:'합동인 도형의 대응각', layout:'list', cols:1, rows:5, build:buildU3T2 },
+      { name:'선대칭도형의 대응점', layout:'list', cols:1, rows:5, build:buildU3T3 },
+      { name:'점대칭도형의 대응점', layout:'list', cols:1, rows:5, build:buildU3T4 },
+      { name:'선대칭·점대칭 판별', layout:'list', cols:1, rows:5, build:buildU3T5 },
+    ]},
+  { key:'u4', num:'4', title:'소수의 곱셈', color:'var(--violet)',
+    types:[
+      { name:'(소수)×(자연수)', layout:'grid', cols:3, rows:6, build:buildU4T1 },
+      { name:'(자연수)×(소수)', layout:'grid', cols:3, rows:6, build:buildU4T2 },
+      { name:'(소수)×(소수)', layout:'grid', cols:3, rows:6, build:buildU4T3 },
+      { name:'자연수의 곱을 이용한 소수의 곱', layout:'list', cols:1, rows:6, build:buildU4T4 },
+      { name:'곱셈의 소수점 이동 규칙', layout:'grid', cols:3, rows:4, build:buildU4T5 },
+    ]},
+  { key:'u5', num:'5', title:'직육면체', color:'var(--mint)',
+    types:[
+      { name:'면·모서리·꼭짓점의 수', layout:'grid', cols:3, rows:3, build:buildU5T1 },
+      { name:'정육면체의 모서리 길이', layout:'grid', cols:3, rows:3, build:buildU5T2 },
+      { name:'겨냥도의 보이는/안 보이는 부분', layout:'grid', cols:3, rows:3, build:buildU5T3 },
+      { name:'전개도에서 마주 보는 면', layout:'grid', cols:3, rows:4, build:buildU5T4 },
+      { name:'면과 면의 수직·평행 관계', layout:'grid', cols:3, rows:3, build:buildU5T5 },
+    ]},
+  { key:'u6', num:'6', title:'평균과 가능성', color:'var(--teal)',
+    types:[
+      { name:'평균 구하기', layout:'grid', cols:3, rows:4, build:buildU6T1 },
+      { name:'평균을 이용해 자료값 구하기', layout:'grid', cols:3, rows:4, build:buildU6T2 },
+      { name:'두 자료의 평균 비교', layout:'list', cols:1, rows:5, build:buildU6T3 },
+      { name:'가능성을 말로 표현하기', layout:'list', cols:1, rows:6, build:buildU6T4 },
+      { name:'가능성을 수로 표현하기', layout:'grid', cols:3, rows:4, build:buildU6T5 },
+    ]},
+];
+
+
+const UNIT = UNITS[0];
+const TYPE = UNIT.types[0];
+const TYPE_BUILD = TYPE.build;
+
+let mode = 'problem';
+let seed = Date.now() % 1000000007;
+
+function buildUniqueProblem(rng, mode, seen){
+  let html, sig, tries = 0;
+  do{
+    html = TYPE_BUILD(rng, mode);
+    sig = html.replace(/<span class="ans">[\s\S]*?<\/span>/g, '');
+    tries++;
+  } while(seen.has(sig) && tries < 25);
+  seen.add(sig);
+  return html;
+}
+function wrapList(inner){ return `<div class="sh-row wide"><div class="sh-cell wide">${inner}</div></div>`; }
+function wrapGrid(inner){ return `<div class="sh-cell">${inner}</div>`; }
+
+function buildSheetInner(mode, seed){
+  const rng = mulberry32(seed);
+  const modeLabel = mode === 'answer' ? '정답지' : '문제지';
+  const seen = new Set();
+  let rowsHtml = '';
+  if(TYPE.layout === 'grid'){
+    for(let r=0; r<TYPE.rows; r++){
+      let cells = '';
+      for(let c=0; c<TYPE.cols; c++){
+        cells += wrapGrid(buildUniqueProblem(rng, mode, seen));
+      }
+      rowsHtml += `<div class="sh-row">${cells}</div>`;
+    }
+  }else{
+    for(let i=0;i<TYPE.rows;i++){
+      rowsHtml += wrapList(buildUniqueProblem(rng, mode, seen));
+    }
+  }
+
+  return `
+    <div class="sh-header">
+      <div class="sh-cafe-strip">
+        <span class="cafe-badge">🔢 구구단닷컴</span>
+        <span class="cafe-url">www.googoodan.com</span>
+      </div>
+      <div class="sh-titlebar">
+        <div class="sh-title">
+          <span class="op-badge" style="background:${UNIT.color};">${UNIT.num}단원</span>
+          ${TYPE.name} <small>· ${UNIT.title}</small>
+        </div>
+      </div>
+      <div class="sh-fields">
+        <span class="f">학습일자 <span class="ln"></span></span>
+        <span class="f">대상 <b>초등 5학년 2학기</b></span>
+        <span class="f">이름 <span class="ln"></span></span>
+        <span class="f">점수 <span class="ln"></span></span>
+      </div>
+      <div class="sh-rule" style="background:linear-gradient(90deg, ${UNIT.color}, #20b39c);"></div>
+    </div>
+    <main class="sh-main">${rowsHtml}</main>
+    <div class="sh-footer">
+      <span class="tagline">매일 10분, 수학 자신감을 키워요 ✏️</span>
+      <span class="brand">🔢 구구단닷컴 · www.googoodan.com</span>
+      <span class="pageno"></span>
+    </div>
+  `;
+}
+
+function render(){
+  document.getElementById('sheetHost').innerHTML = buildSheetInner(mode, seed);
+}
+function setMode(m){
+  mode = m;
+  document.getElementById('btnProblem').classList.toggle('ggd-active', m === 'problem');
+  document.getElementById('btnAnswer').classList.toggle('ggd-active', m === 'answer');
+  render();
+}
+function regenerate(){
+  seed = Math.floor(Math.random() * 1e9);
+  render();
+}
+render();
+</script>
+</body>
+</html>

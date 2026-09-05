@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2단원 각도 - 유형3 각도의 합과 차</title>
+<style>
+
+  *{ box-sizing:border-box; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:14px; padding:16px;
+  }
+  .ggd-container{ max-width:900px; margin:0 auto; }
+  .ggd-ad{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center; color:#9aa0a8;
+    font-size:12px; font-weight:700; text-align:center; height:90px;
+    margin-bottom:16px;
+  }
+  .ggd-toolbar{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; justify-content:flex-end; }
+  .ggd-btn{
+    padding:10px 14px; border:1.5px solid #e4e6ea; border-radius:8px;
+    background:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:.15s;
+    color:#24262b;
+  }
+  .ggd-btn:hover{ border-color:#ff8961; background:#fff1ea; }
+  .ggd-btn.ggd-active{ background:#ff8961; border-color:#ff8961; color:#fff; }
+  .ggd-btn.ggd-primary{ background:#24262b; border-color:#24262b; color:#fff; }
+  .ggd-btn.ggd-primary:hover{ background:#000; border-color:#000; }
+  .ggd-sheet-wrap{ display:flex; justify-content:center; overflow-x:auto; padding-bottom:8px; }
+  @media print{
+    body{ padding:0; }
+    .ggd-ad, .ggd-toolbar{ display:none; }
+    .ggd-sheet-wrap{ padding:0; }
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+  }
+  @page{ size: A4; margin: 0; }
+
+
+  :root{
+    --page-w: 210mm;
+    --page-h: 297mm;
+    --margin-y: 14mm;
+    --margin-x: 17mm;
+    --ink:#1f2430;
+    --accent:#20b39c;
+    --accent2:#f2994a;
+    --line:#333;
+    --mint:#20b39c;
+    --mint-dark:#0e8f7d;
+    --coral:#ff7e67;
+    --sun:#ffb100;
+    --blue:#4d96ff;
+    --violet:#8a63d2;
+    --teal:#2aa8c9;
+    --cream:#fff8ec;
+    --red:#e0342a;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    background:#eef1f6;
+    color:var(--ink);
+    font-family:"Pretendard","Noto Sans KR","Malgun Gothic",-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+
+  /* ---------------- Screen-only control panel ---------------- */
+  .app{
+    max-width:1100px;
+    margin:0 auto;
+    padding:24px 16px 60px;
+  }
+  .app-title{
+    font-size:22px;
+    font-weight:800;
+    margin:0 0 4px;
+  }
+  .app-sub{
+    font-size:13px;
+    color:#5b6373;
+    margin:0 0 20px;
+  }
+  .panel{
+    background:#fff;
+    border:1px solid #e1e5ee;
+    border-radius:14px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 1px 3px rgba(20,30,60,.05);
+  }
+  .panel h2{
+    font-size:14px;
+    margin:0 0 10px;
+    color:#374057;
+    font-weight:700;
+  }
+  .tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tab-btn{
+    appearance:none;
+    border:1px solid #d7deed;
+    background:#f7f9fd;
+    color:#4a5268;
+    padding:9px 16px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.12s;
+  }
+  .tab-btn:hover{ background:#eef2fb; }
+  .tab-btn.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .tab-btn.mini{ padding:7px 12px; font-size:13px; }
+
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    gap:10px 14px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .field label{
+    font-size:12px;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .field input[type=text],
+  .field input[type=number]{
+    border:1px solid #d7deed;
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:13px;
+    font-family:inherit;
+  }
+
+  .action-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+  }
+  .btn{
+    appearance:none;
+    border:none;
+    border-radius:10px;
+    padding:11px 18px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    color:#fff;
+    transition:.12s;
+  }
+  .btn:disabled{ opacity:.55; cursor:progress; }
+  .btn.refresh{ background:#4a5268; }
+  .btn.refresh:hover:not(:disabled){ background:#3a4157; }
+  .btn.pdf{ background:#d64545; }
+  .btn.pdf:hover:not(:disabled){ background:#b93636; }
+  .btn.preview{ background:#2f9e6e; }
+  .btn.preview:hover:not(:disabled){ background:#24805a; }
+  .status-msg{
+    font-size:12.5px;
+    color:#8a91a3;
+  }
+  .status-msg.err{ color:#c0392b; font-weight:600; }
+
+  .view-toggle{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    font-size:13px;
+    color:#4a5268;
+  }
+  .view-toggle label{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor:pointer;
+    padding:6px 10px;
+    border:1px solid #d7deed;
+    border-radius:8px;
+  }
+  .view-toggle input{ margin:0; }
+
+  .preview-wrap{
+    display:flex;
+    justify-content:center;
+    padding:10px 0 40px;
+    overflow-x:auto;
+  }
+  .preview-shadow{
+    box-shadow:0 6px 24px rgba(20,30,60,.18);
+  }
+
+  /* ---------------- A4 Sheet ---------------- */
+  .sheet{
+    width:var(--page-w);
+    height:var(--page-h);
+    min-width:var(--page-w);
+    min-height:var(--page-h);
+    background:#fff;
+    padding:var(--margin-y) var(--margin-x);
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 auto;
+  }
+  body.exporting .preview-shadow{ box-shadow:none; }
+
+  .sheet .sh-header{ flex:0 0 auto; }
+
+  .sh-cafe-strip{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .sh-cafe-strip .cafe-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    background:var(--cream);
+    color:var(--mint-dark);
+    border:1.6px dashed var(--mint);
+    border-radius:20px;
+    padding:3px 13px;
+    font-size:9.5pt;
+    font-weight:800;
+  }
+  .sh-cafe-strip .cafe-url{
+    font-size:9pt;
+    color:var(--coral);
+    font-weight:800;
+    letter-spacing:.01em;
+  }
+
+  .sheet .sh-titlebar{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:8px;
+  }
+  .sheet .sh-title{
+    font-size:20pt;
+    font-weight:800;
+    letter-spacing:-.02em;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .sheet .sh-title .op-badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-size:12.5pt;
+    font-weight:700;
+    padding:2px 12px;
+    border-radius:20px;
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  .sheet .sh-title small{
+    font-size:11pt;
+    color:#6b7386;
+    font-weight:600;
+  }
+  .sheet .sh-meta{
+    display:flex;
+    gap:16px;
+    font-size:10.5pt;
+    color:#374057;
+  }
+  .sheet .sh-meta span{ white-space:nowrap; }
+  .sheet .sh-fields{
+    display:flex;
+    gap:18px;
+    font-size:10.5pt;
+    color:#374057;
+    margin-top:6px;
+    flex-wrap:wrap;
+  }
+  .sheet .sh-fields .f{ display:flex; align-items:center; gap:5px; }
+  .sheet .sh-fields .f .ln{
+    display:inline-block;
+    border-bottom:1px solid #999;
+    min-width:70px;
+    height:1.1em;
+  }
+  .sheet .sh-fields .f b{ display:inline-block; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; vertical-align:bottom; }
+  .sheet .sh-rule{
+    height:3px;
+    margin:9px 0 4px;
+    border-radius:3px;
+    background:linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .sheet main.sh-main{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:10px;
+    min-height:0;
+  }
+  .sh-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;
+    gap:18px;
+  }
+  .sh-row.wide{ justify-content:flex-start; width:100%; }
+  .sh-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:2px;
+  }
+  .sh-cell.wide{
+    width:100%;
+    align-items:stretch;
+    justify-content:center;
+  }
+
+  .sheet .sh-footer{
+    flex:0 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:7px;
+    border-top:1.5px dashed var(--mint);
+    font-size:9pt;
+    color:#8a91a3;
+  }
+  .sheet .sh-footer .tagline{ font-weight:700; color:var(--mint-dark); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+  .sheet .sh-footer .brand{
+    font-style:normal;
+    font-weight:700;
+    color:var(--coral);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:360px;
+  }
+  .sheet .sh-footer .pageno::before{ content:"p. "; }
+
+  /* ---------------- Problem content pieces ---------------- */
+  .qline{ font-size:11.3pt; line-height:1.95; padding:2px 0; }
+  .shape-row{ font-size:15pt; letter-spacing:.14em; margin:1px 0; }
+  .fig-wrap{ display:flex; justify-content:center; margin-bottom:2px; }
+
+  .ans{
+    color:var(--red);
+    font-weight:800;
+  }
+
+  .hcalc{
+    font-family:"Consolas","SF Mono","Roboto Mono",monospace;
+    font-size:12.5pt;
+    display:inline-flex;
+    align-items:baseline;
+    gap:.35em;
+    white-space:nowrap;
+  }
+  .hcalc .n{ font-weight:700; display:inline-block; }
+  .hcalc .op{ font-weight:800; }
+  .hcalc .eq{ color:#555; }
+
+  @media print{
+    body{ background:#fff; }
+    .app > .panel, .app-title, .app-sub{ display:none; }
+    .preview-wrap{ padding:0; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ggd-container">
+  <div class="ggd-ad">광고 영역 (728 × 90)</div>
+
+  <div class="ggd-toolbar">
+    <button class="ggd-btn ggd-active" id="btnProblem" onclick="setMode('problem')">문제지</button>
+    <button class="ggd-btn" id="btnAnswer" onclick="setMode('answer')">정답지</button>
+    <button class="ggd-btn" onclick="regenerate()">숫자변경</button>
+    <button class="ggd-btn ggd-primary" onclick="window.print()">프린트</button>
+  </div>
+
+  <div class="ggd-sheet-wrap">
+    <div class="sheet" id="sheetHost"></div>
+  </div>
+</div>
+
+<script>
+
+/* =========================================================================
+   1. Seeded RNG helpers
+   ========================================================================= */
+function mulberry32(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function randInt(rng, min, max){ return Math.floor(rng() * (max - min + 1)) + min; }
+function pick(rng, arr){ return arr[randInt(rng, 0, arr.length-1)]; }
+function pickDistinct(rng, arr, n){
+  const pool = arr.slice();
+  const out = [];
+  for(let i=0;i<n && pool.length;i++){
+    const idx = randInt(rng, 0, pool.length-1);
+    out.push(pool[idx]);
+    pool.splice(idx,1);
+  }
+  return out;
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* =========================================================================
+   2. Word banks & visual glyphs
+   ========================================================================= */
+const COLOR = { coral:'#ff7e67', sun:'#ffb100', blue:'#4d96ff', violet:'#8a63d2', mint:'#20b39c', teal:'#2aa8c9', ink:'#1f2430' };
+
+const HUN_WORDS = [null,'백','이백','삼백','사백','오백','육백','칠백','팔백','구백'];
+const KOR_THOUSAND = [null,'천','이천','삼천','사천','오천','육천','칠천','팔천','구천'];
+const KOR_TEN   = [null,'십','이십','삼십','사십','오십','육십','칠십','팔십','구십'];
+const KOR_ONE   = [null,'일','이','삼','사','오','육','칠','팔','구'];
+const GROUP_UNIT = ['', '만', '억', '조'];
+function koreanRead4(th,h,t,o){
+  return `${th?KOR_THOUSAND[th]:''}${h?HUN_WORDS[h]:''}${t?KOR_TEN[t]:''}${o?KOR_ONE[o]:''}`;
+}
+// g = [g0,g1,g2,g3] : g[i] is the 4-digit group value for GROUP_UNIT[i] (0=일,1=만,2=억,3=조)
+function koreanReadBig(g){
+  const parts = [];
+  for(let i=3;i>=0;i--){
+    if(g[i]>0){
+      const th=Math.floor(g[i]/1000)%10, h=Math.floor(g[i]/100)%10, t=Math.floor(g[i]/10)%10, o=g[i]%10;
+      parts.push(koreanRead4(th,h,t,o) + GROUP_UNIT[i]);
+    }
+  }
+  return parts.join(' ') || '영';
+}
+function digitsFromGroups(g){ return g[3]*1e12 + g[2]*1e8 + g[1]*1e4 + g[0]; }
+function formatComma(n){ return Number(n).toLocaleString('en-US'); }
+// tier: 'man'(5~6자리) | 'baekman'(7~8자리) | 'eok'(9~10자리) | 'jo'(11~14자리)
+function randBigGroups(rng, tier){
+  let g0=randInt(rng,0,9999), g1=0, g2=0, g3=0;
+  if(tier==='man'){ g1=randInt(rng,1,99); }
+  else if(tier==='baekman'){ g1=randInt(rng,100,9999); }
+  else if(tier==='eok'){ g2=randInt(rng,1,99); g1=randInt(rng,0,9999); }
+  else { g3=randInt(rng,1,9); g2=randInt(rng,0,9999); g1=randInt(rng,0,9999); }
+  return [g0,g1,g2,g3];
+}
+const PLACE_LABELS_BY_LEN = {
+  5:['만','천','백','십','일'],
+  6:['십만','만','천','백','십','일'],
+};
+const JUMP_STEPS = [
+  {tier:'man', step:10000, label:'1만'},
+  {tier:'man', step:100000, label:'10만'},
+  {tier:'baekman', step:100000, label:'10만'},
+  {tier:'baekman', step:1000000, label:'100만'},
+  {tier:'eok', step:10000000, label:'1000만'},
+  {tier:'eok', step:100000000, label:'1억'},
+];
+
+const BAR_GRAPH_SETS = [
+  { itemsLabel:'학생', attrName:'좋아하는 운동', cats:['축구','농구','야구','피구'] },
+  { itemsLabel:'학생', attrName:'장래 희망', cats:['의사','선생님','경찰관','요리사'] },
+  { itemsLabel:'학생', attrName:'가고 싶은 나라', cats:['미국','영국','중국','일본'] },
+  { itemsLabel:'학생', attrName:'좋아하는 계절', cats:['봄','여름','가을','겨울'] },
+];
+
+/* =========================================================================
+   3. Small render helpers
+   ========================================================================= */
+// No fill-in boxes or underlines: on problem sheets nothing is shown where an
+// answer would go; on answer sheets the answer appears inline in red.
+// IMPORTANT for every visual helper below: the picture itself must be
+// IDENTICAL between problem-mode and answer-mode renders of the same random
+// draw (givens only) — only ansSpan()-wrapped text may differ by mode. This
+// keeps the per-sheet duplicate signature (which strips .ans spans) mode
+// independent, so a problem sheet and its answer sheet stay in lockstep.
+// All helpers below build with flexbox rather than CSS grid, since CSS grid
+// can render unreliably through the html2canvas PDF/preview export path.
+function ansSpan(mode, text){
+  return mode==='answer' ? ` <span class="ans">${text}</span>` : '';
+}
+function hcalc(aStr, opSym, bStr, ansVal, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, String(ansVal))}`;
+}
+function angleCalc(aStr, opSym, bStr, ansStr, mode){
+  return `<span class="hcalc"><span class="n">${aStr}</span><span class="op">${opSym}</span><span class="n">${bStr}</span><span class="eq">=</span></span>${ansSpan(mode, ansStr)}`;
+}
+
+// ---- Place-value tiles for a 5~6 digit number (자리 카드) ----
+function placeValueTilesNHTML(numStr, highlightIdx){
+  const len = numStr.length;
+  const labels = PLACE_LABELS_BY_LEN[len] || numStr.split('').map((_,i)=> String(len-i));
+  const tileColors = [COLOR.teal, COLOR.coral, COLOR.sun, COLOR.blue, COLOR.violet, COLOR.mint];
+  const cells = numStr.split('').map((d,i)=>{
+    const hl = i===highlightIdx;
+    const c = tileColors[i%tileColors.length];
+    const style = hl ? `background:${c};color:#fff;border:2px solid ${c};` : `background:#f3f5fa;color:#1f2430;border:2px solid #d7deed;`;
+    return `<div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+      <div style="${style}width:27px;height:27px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12.5pt;font-weight:800;">${d}</div>
+      <div style="font-size:6.3pt;color:#6b7386;font-weight:${hl?800:600};">${labels[i]}</div>
+    </div>`;
+  }).join('<div style="width:3px;"></div>');
+  return `<div style="display:flex;justify-content:center;align-items:flex-start;gap:2px;">${cells}</div>`;
+}
+
+// ---- Number chip row for 뛰어세기 (always mode-invariant: unknown chips stay "?") ----
+function numberChipRowHTML(values, stepLabel){
+  const boxes = values.map(v=>{
+    const known = v!==null;
+    return `<div style="min-width:56px;padding:5px 7px;border-radius:8px;text-align:center;font-weight:800;font-size:9.5pt;white-space:nowrap;${known?`background:#f3f5fa;color:${COLOR.ink};border:2px solid #d7deed;`:`background:#fff;color:#c7cbd6;border:2px dashed #c7cbd6;`}">${known?formatComma(v):'?'}</div>`;
+  });
+  const arrow = `<div style="font-size:8pt;color:#8a91a3;font-weight:700;padding:0 1px;white-space:nowrap;">${stepLabel}</div>`;
+  const parts = [];
+  boxes.forEach((b,i)=>{ parts.push(b); if(i<boxes.length-1) parts.push(arrow); });
+  return `<div style="display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:center;">${parts.join('')}</div>`;
+}
+
+// ---- Angle diagram (각도): rays drawn to scale, no text inside SVG ----
+function angleSVG(deg, opts={}){
+  const w = opts.w || 170, h = opts.h || 130;
+  const cx = opts.cx || 48, cy = opts.cy || (h-16);
+  const rayLen = opts.rayLen || 88;
+  const rad = deg*Math.PI/180;
+  const x1 = cx+rayLen, y1 = cy;
+  const x2 = cx+rayLen*Math.cos(rad), y2 = cy-rayLen*Math.sin(rad);
+  const arcR = 24;
+  const ax1 = cx+arcR, ay1 = cy;
+  const ax2 = cx+arcR*Math.cos(rad), ay2 = cy-arcR*Math.sin(rad);
+  const largeArc = deg>180 ? 1 : 0;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  s += `<path d="M ${ax1.toFixed(1)} ${ay1.toFixed(1)} A ${arcR} ${arcR} 0 ${largeArc} 0 ${ax2.toFixed(1)} ${ay2.toFixed(1)}" fill="none" stroke="${COLOR.coral}" stroke-width="2"/>`;
+  s += `<line x1="${cx}" y1="${cy}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}" stroke="${COLOR.ink}" stroke-width="2.5" stroke-linecap="round"/>`;
+  s += `<line x1="${cx}" y1="${cy}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${COLOR.ink}" stroke-width="2.5" stroke-linecap="round"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="3" fill="${COLOR.ink}"/>`;
+  s += `</svg>`;
+  return s;
+}
+function classifyAngle(deg){ if(deg<90) return '예각'; if(deg===90) return '직각'; return '둔각'; }
+
+// ---- Schematic triangle / quadrilateral with angle labels (각도의 합) ----
+function triangleAngleSVG(labels){
+  const w=150,h=120;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  s += `<polygon points="75,14 18,104 132,104" fill="none" stroke="${COLOR.ink}" stroke-width="2.5" stroke-linejoin="round"/>`;
+  s += `<text x="75" y="32" font-size="12" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[0]}</text>`;
+  s += `<text x="34" y="98" font-size="12" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[1]}</text>`;
+  s += `<text x="116" y="98" font-size="12" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[2]}</text>`;
+  s += `</svg>`;
+  return s;
+}
+function quadAngleSVG(labels){
+  const w=160,h=120;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  s += `<polygon points="30,16 130,16 150,104 10,104" fill="none" stroke="${COLOR.ink}" stroke-width="2.5" stroke-linejoin="round"/>`;
+  s += `<text x="32" y="34" font-size="11.5" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[0]}</text>`;
+  s += `<text x="128" y="34" font-size="11.5" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[1]}</text>`;
+  s += `<text x="146" y="98" font-size="11.5" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[2]}</text>`;
+  s += `<text x="14" y="98" font-size="11.5" font-weight="800" text-anchor="middle" fill="${COLOR.violet}">${labels[3]}</text>`;
+  s += `</svg>`;
+  return s;
+}
+
+// ---- Vertical multiplication layout (세로셈) ----
+function vertMulHTML(a, b, ans, mode){
+  const width = 118;
+  const rowStyle = `display:flex;justify-content:flex-end;gap:6px;width:${width}px;font-family:'Consolas','SF Mono','Roboto Mono',monospace;font-size:12.5pt;font-weight:800;color:${COLOR.ink};`;
+  return `<div style="display:inline-flex;flex-direction:column;align-items:flex-end;">
+    <div style="${rowStyle}"><span>${a}</span></div>
+    <div style="${rowStyle}"><span style="color:${COLOR.blue};">×</span><span>${b}</span></div>
+    <div style="border-top:2.5px solid ${COLOR.ink};width:${width}px;margin:2px 0 3px;"></div>
+    <div style="${rowStyle}">${ansSpan(mode, ans)}</div>
+  </div>`;
+}
+
+// ---- Small polyomino on a grid, and grid-relative transforms (평면도형의 이동) ----
+const SHAPE_BASE = [[0,0],[1,0],[1,1]]; // asymmetric L-tromino
+function cellsSig(cells){ return cells.slice().sort((p,q)=>p[0]-q[0]||p[1]-q[1]).map(c=>c.join(',')).join('|'); }
+function flipCellsGrid(cells, axis, N){ return cells.map(([x,y])=> axis==='h' ? [N-1-x,y] : [x,N-1-y]); }
+function rotateCellsGrid(cells, steps, N){
+  let out = cells;
+  const n = ((steps%4)+4)%4;
+  for(let i=0;i<n;i++) out = out.map(([x,y])=>[N-1-y, x]);
+  return out;
+}
+function translateCellsGrid(cells, dx, dy){ return cells.map(([x,y])=>[x+dx,y+dy]); }
+function shapeGridSVG(cells, N, color, cellPx){
+  const px = cellPx || 16;
+  const w = N*px, h = N*px;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  s += `<rect x="0.5" y="0.5" width="${w-1}" height="${h-1}" fill="#fff" stroke="#c7cbd6" stroke-width="1"/>`;
+  for(let i=1;i<N;i++){
+    s += `<line x1="${i*px}" y1="0" x2="${i*px}" y2="${h}" stroke="#e5e9f2" stroke-width="1"/>`;
+    s += `<line x1="0" y1="${i*px}" x2="${w}" y2="${i*px}" stroke="#e5e9f2" stroke-width="1"/>`;
+  }
+  cells.forEach(([x,y])=>{
+    if(x<0||y<0||x>=N||y>=N) return;
+    s += `<rect x="${x*px+1.5}" y="${y*px+1.5}" width="${px-3}" height="${px-3}" fill="${color}" stroke="${COLOR.ink}" stroke-width="1"/>`;
+  });
+  s += `</svg>`;
+  return s;
+}
+const SLIDE_DIRS = [
+  [1,0,'오른쪽으로 1칸'], [2,0,'오른쪽으로 2칸'],
+  [0,1,'아래로 1칸'], [0,2,'아래로 2칸'],
+  [1,1,'오른쪽으로 1칸, 아래로 1칸'], [2,1,'오른쪽으로 2칸, 아래로 1칸'],
+  [1,2,'오른쪽으로 1칸, 아래로 2칸'], [2,2,'오른쪽으로 2칸, 아래로 2칸'],
+];
+function buildMoveChoiceProblem(kind, rng, mode){
+  const N = 4, cellPx = 16;
+  const origin = SHAPE_BASE;
+  let correctCells, instrText;
+  const candidates = [];
+  function tryAdd(cells){
+    const sig = cellsSig(cells);
+    if(candidates.some(c=>c.sig===sig)) return false;
+    candidates.push({cells, sig});
+    return true;
+  }
+  if(kind==='slide'){
+    const [dx,dy,label] = pick(rng, SLIDE_DIRS);
+    instrText = `이 도형을 ${label} 밀었을 때의 모양은 어느 것일까요?`;
+    correctCells = translateCellsGrid(origin, dx, dy);
+    tryAdd(correctCells);
+    const wrongDirs = SLIDE_DIRS.filter(d=>!(d[0]===dx&&d[1]===dy));
+    for(let i=wrongDirs.length-1;i>0;i--){ const j=randInt(rng,0,i); const t=wrongDirs[i]; wrongDirs[i]=wrongDirs[j]; wrongDirs[j]=t; }
+    let gi=0;
+    while(candidates.length<3 && gi<wrongDirs.length){ tryAdd(translateCellsGrid(origin, wrongDirs[gi][0], wrongDirs[gi][1])); gi++; }
+    if(candidates.length<3) tryAdd(origin);
+  } else if(kind==='flip'){
+    const [axis,label] = pick(rng, [['h','좌우로'],['v','상하로']]);
+    instrText = `이 도형을 ${label} 뒤집었을 때의 모양은 어느 것일까요?`;
+    correctCells = flipCellsGrid(origin, axis, N);
+    tryAdd(correctCells);
+    const pool = [origin, flipCellsGrid(origin, axis==='h'?'v':'h', N), rotateCellsGrid(origin,1,N), rotateCellsGrid(origin,2,N), rotateCellsGrid(origin,3,N)];
+    let gi=0;
+    while(candidates.length<3 && gi<pool.length){ tryAdd(pool[gi]); gi++; }
+  } else {
+    const [steps,label] = pick(rng, [[1,'시계 방향으로 90°'],[2,'180°'],[3,'시계 방향으로 270°']]);
+    instrText = `이 도형을 ${label} 돌렸을 때의 모양은 어느 것일까요?`;
+    correctCells = rotateCellsGrid(origin, steps, N);
+    tryAdd(correctCells);
+    const pool = [origin, rotateCellsGrid(origin, steps%4===1?3:1, N), rotateCellsGrid(origin, steps%4===2?1:2, N), flipCellsGrid(origin,'h',N), flipCellsGrid(origin,'v',N)];
+    let gi=0;
+    while(candidates.length<3 && gi<pool.length){ tryAdd(pool[gi]); gi++; }
+  }
+  for(let i=candidates.length-1;i>0;i--){ const j=randInt(rng,0,i); const t=candidates[i]; candidates[i]=candidates[j]; candidates[j]=t; }
+  const correctSig = cellsSig(correctCells);
+  const correctPos = candidates.findIndex(c=>c.sig===correctSig);
+  const LETTERS = ['①','②','③'];
+  const box = (cells,label)=> `<div style="display:flex;flex-direction:column;align-items:center;gap:2px;">${shapeGridSVG(cells,N,COLOR.blue,cellPx)}<div style="font-size:8pt;font-weight:800;color:#6b7386;">${label}</div></div>`;
+  const row = `<div style="display:flex;align-items:center;gap:8px;justify-content:center;flex-wrap:nowrap;">
+    ${box(origin,'원래 도형')}
+    <div style="font-size:13pt;color:#8a91a3;">→</div>
+    ${candidates.map((c,i)=>box(c.cells,LETTERS[i])).join('')}
+  </div>`;
+  return `<div class="fig-wrap">${row}</div>
+    <div class="qline">${instrText}${ansSpan(mode, LETTERS[correctPos])}</div>`;
+}
+
+// ---- Bar graph with numeric axis & gridlines (막대그래프) ----
+function barGraphAxisSVG(cats, values, opts={}){
+  const unit = opts.unit || 1;
+  const colW = opts.colW || 26, gap = opts.gap || 10, barGapTop = 8;
+  const tickH = opts.tickH || 11;
+  const maxTicks = Math.max(3, Math.ceil(Math.max(...values)/unit) + 1);
+  const n = cats.length;
+  const chartH = maxTicks*tickH;
+  const axisLabelW = 22;
+  const w = axisLabelW + n*colW + (n-1)*gap + 8;
+  const h = chartH + barGapTop + 20;
+  let s = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">`;
+  for(let t=0;t<=maxTicks;t++){
+    const y = barGapTop + chartH - t*tickH;
+    s += `<line x1="${axisLabelW}" y1="${y}" x2="${w-4}" y2="${y}" stroke="#e5e9f2" stroke-width="1"/>`;
+    if(t%2===0 || maxTicks<=6){
+      s += `<text x="${axisLabelW-3}" y="${y+3}" font-size="6.6" text-anchor="end" fill="#8a91a3">${t*unit}</text>`;
+    }
+  }
+  s += `<line x1="${axisLabelW}" y1="${barGapTop}" x2="${axisLabelW}" y2="${barGapTop+chartH}" stroke="${COLOR.ink}" stroke-width="1.4"/>`;
+  s += `<line x1="${axisLabelW}" y1="${barGapTop+chartH}" x2="${w-4}" y2="${barGapTop+chartH}" stroke="${COLOR.ink}" stroke-width="1.4"/>`;
+  cats.forEach((c,i)=>{
+    const x = axisLabelW + i*(colW+gap) + gap/2;
+    const barW = colW - gap/2;
+    const barH = (values[i]/unit)*tickH;
+    const y = barGapTop + chartH - barH;
+    s += `<rect x="${x}" y="${y}" width="${barW}" height="${barH}" fill="${COLOR.mint}" stroke="${COLOR.ink}" stroke-width="1"/>`;
+    s += `<text x="${x+barW/2}" y="${barGapTop+chartH+12}" font-size="7" text-anchor="middle" font-weight="700" fill="#4a5268">${c}</text>`;
+  });
+  s += `</svg>`;
+  return s;
+}
+function pickNiceUnit(maxVal){
+  const opts=[1,2,5,10,20,50,100];
+  for(const u of opts){ if(Math.ceil(maxVal/u) <= 9) return u; }
+  return 100;
+}
+function genBarValues(rng){
+  const set = pick(rng, BAR_GRAPH_SETS);
+  let values;
+  do{ values = set.cats.map(()=> randInt(rng, 3, 32)); } while(new Set(values).size !== values.length);
+  return {set, values};
+}
+function dataTableHTML(headers, rows){
+  const cellW = 46, cellH = 24;
+  function rowHTML(cells, bold){
+    return `<div style="display:flex;">${cells.map(c=>`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;border:1px solid #d7deed;font-size:8.5pt;font-weight:${bold?800:600};background:${bold?'#f3f5fa':'#fff'};">${c}</div>`).join('')}</div>`;
+  }
+  return `<div style="display:inline-flex;flex-direction:column;">${rowHTML(headers,true)}${rowHTML(rows,false)}</div>`;
+}
+
+// ---- Number array table with one blank cell (규칙 찾기) ----
+function numberArrayTableHTML(base, rowStep, colStep, nRows, nCols, blankR, blankC){
+  const cellW = 38, cellH = 25;
+  const rows = [];
+  for(let r=0;r<nRows;r++){
+    const cells = [];
+    for(let c=0;c<nCols;c++){
+      const val = base + r*rowStep + c*colStep;
+      const isBlank = r===blankR && c===blankC;
+      cells.push(`<div style="width:${cellW}px;height:${cellH}px;display:flex;align-items:center;justify-content:center;font-size:9.5pt;font-weight:700;border:1px solid #e5e9f2;${isBlank?`background:${COLOR.teal};color:#fff;font-weight:800;`:'background:#fff;color:'+COLOR.ink+';'}">${isBlank?'?':val}</div>`);
+    }
+    rows.push(`<div style="display:flex;">${cells.join('')}</div>`);
+  }
+  return `<div style="display:inline-flex;flex-direction:column;border:1.5px solid #d7deed;">${rows.join('')}</div>`;
+}
+function stageBlockHTML(n, color){
+  const sq = Array.from({length:n}).map(()=>`<div style="width:10px;height:10px;background:${color};border:1px solid ${COLOR.ink};border-radius:2px;"></div>`).join('');
+  return `<div style="display:flex;flex-wrap:wrap;gap:2px;max-width:${Math.min(n,6)*12}px;">${sq}</div>`;
+}
+
+/* =========================================================================
+   4. Unit 1 — 큰 수
+   ========================================================================= */
+function buildU1T1(rng, mode){
+  const g = randBigGroups(rng, 'man');
+  const val = digitsFromGroups(g);
+  const numStr = String(val);
+  const idx = randInt(rng, 0, numStr.length-1);
+  const digit = Number(numStr[idx]);
+  const placeValue = Math.pow(10, numStr.length-1-idx);
+  const value = digit*placeValue;
+  return `<div class="fig-wrap">${placeValueTilesNHTML(numStr, idx)}</div>
+    <div class="qline">색칠된 자리의 숫자가 나타내는 값은?${ansSpan(mode, formatComma(value))}</div>`;
+}
+function buildU1T2(rng, mode){
+  const tier = pick(rng, ['man','baekman','eok','jo']);
+  const g = randBigGroups(rng, tier);
+  const val = digitsFromGroups(g);
+  const numDisp = formatComma(val);
+  const kor = koreanReadBig(g);
+  const askRead = rng() < 0.5;
+  if(askRead){
+    return `<div class="qline">다음 수를 한글로 읽어 보세요.<br><b style="font-size:13pt;">${numDisp}</b>${ansSpan(mode, kor)}</div>`;
+  }
+  return `<div class="qline">다음과 같이 읽는 수를 숫자로 써 보세요.<br><b style="font-size:12pt;">${kor}</b>${ansSpan(mode, numDisp)}</div>`;
+}
+function buildU1T3(rng, mode){
+  const cfg = pick(rng, JUMP_STEPS);
+  const g = randBigGroups(rng, cfg.tier);
+  const start = digitsFromGroups(g);
+  const nextTwo = [start+cfg.step*3, start+cfg.step*4];
+  return `<div class="fig-wrap">${numberChipRowHTML([start,start+cfg.step,start+cfg.step*2,null,null], '+'+cfg.label)}</div>
+    <div class="qline">규칙에 맞게 이어질 두 수는?${ansSpan(mode, nextTwo.map(formatComma).join(', '))}</div>`;
+}
+function buildU1T4(rng, mode){
+  const tier = pick(rng, ['baekman','eok']);
+  let a,b;
+  do{
+    a = digitsFromGroups(randBigGroups(rng, tier));
+    b = digitsFromGroups(randBigGroups(rng, tier));
+  } while(a===b);
+  const sym = a>b ? '>' : '<';
+  return `<div class="qline"><b style="font-size:12.5pt;">${formatComma(a)}</b> <span style="display:inline-block;width:20px;text-align:center;color:#c7cbd6;font-weight:800;">○</span> <b style="font-size:12.5pt;">${formatComma(b)}</b><br>○ 안에 &gt;, &lt; 중 알맞은 것을 쓰세요.${ansSpan(mode, sym)}</div>`;
+}
+function buildU1T5(rng, mode){
+  const tier = pick(rng, ['man','baekman']);
+  const nums = [];
+  while(nums.length<3){ const v = digitsFromGroups(randBigGroups(rng, tier)); if(!nums.includes(v)) nums.push(v); }
+  const askBig = rng() < 0.5;
+  const word = askBig ? '가장 큰' : '가장 작은';
+  const ans = askBig ? Math.max(...nums) : Math.min(...nums);
+  return `<div class="qline">${nums.map(formatComma).join('  ,  ')}<br>위 세 수 중 ${word} 수는?${ansSpan(mode, formatComma(ans))}</div>`;
+}
+
+/* =========================================================================
+   5. Unit 2 — 각도
+   ========================================================================= */
+function buildU2T1(rng, mode){
+  const deg = randInt(rng,4,32)*5;
+  return `<div class="fig-wrap">${angleSVG(deg)}</div>
+    <div class="qline">각도기로 잰 각의 크기는 몇 도인가요?${ansSpan(mode, deg+'°')}</div>`;
+}
+function buildU2T2(rng, mode){
+  const bucket = pick(rng, ['acute','right','obtuse']);
+  let deg;
+  if(bucket==='acute') deg = randInt(rng,2,17)*5;
+  else if(bucket==='right') deg = 90;
+  else deg = randInt(rng,19,35)*5;
+  const word = classifyAngle(deg);
+  return `<div class="fig-wrap">${angleSVG(deg)}</div>
+    <div class="qline">이 각은 예각, 직각, 둔각 중 무엇인가요?${ansSpan(mode, word)}</div>`;
+}
+function buildU2T3(rng, mode){
+  const isSum = rng() < 0.5;
+  let x = randInt(rng,20,150), y = randInt(rng,10,80);
+  if(!isSum && x<y){ const t=x; x=y; y=t; }
+  const opSym = isSum ? '+' : '-';
+  const ans = isSum ? x+y : x-y;
+  return angleCalc(x+'°', opSym, y+'°', ans+'°', mode);
+}
+function buildU2T4(rng, mode){
+  let a = randInt(rng,30,110), b = randInt(rng,20,90);
+  while(a+b>=170) b = randInt(rng,20,80);
+  const c = 180-a-b;
+  const blankIdx = randInt(rng,0,2);
+  const vals = [a,b,c];
+  const labels = vals.map((v,i)=> i===blankIdx ? '?' : v+'°');
+  return `<div class="fig-wrap">${triangleAngleSVG(labels)}</div>
+    <div class="qline">삼각형 세 각의 크기의 합은 180°예요. ?에 알맞은 각도는?${ansSpan(mode, vals[blankIdx]+'°')}</div>`;
+}
+function buildU2T5(rng, mode){
+  let a=randInt(rng,60,110), b=randInt(rng,60,110), c=randInt(rng,60,110);
+  while(a+b+c>=350) c = randInt(rng,40,90);
+  const d = 360-a-b-c;
+  const blankIdx = randInt(rng,0,3);
+  const vals = [a,b,c,d];
+  const labels = vals.map((v,i)=> i===blankIdx ? '?' : v+'°');
+  return `<div class="fig-wrap">${quadAngleSVG(labels)}</div>
+    <div class="qline">사각형 네 각의 크기의 합은 360°예요. ?에 알맞은 각도는?${ansSpan(mode, vals[blankIdx]+'°')}</div>`;
+}
+
+/* =========================================================================
+   6. Unit 3 — 곱셈과 나눗셈
+   ========================================================================= */
+function buildU3T1(rng, mode){
+  const a = randInt(rng,100,999);
+  const b = randInt(rng,2,9)*10;
+  return hcalc(a,'×',b,a*b,mode);
+}
+function buildU3T2(rng, mode){
+  const a = randInt(rng,100,999);
+  const b = randInt(rng,11,99);
+  return `<div class="fig-wrap">${vertMulHTML(a,b,a*b,mode)}</div>`;
+}
+function buildU3T3(rng, mode){
+  let b,q,a,tries=0;
+  do{ b=randInt(rng,11,49); q=randInt(rng,2,30); a=b*q; tries++; } while((a<100||a>999) && tries<60);
+  return hcalc(a,'÷',b,q,mode);
+}
+function buildU3T4(rng, mode){
+  let b,q,r,a,tries=0;
+  do{ b=randInt(rng,11,49); q=randInt(rng,2,30); r=randInt(rng,1,b-1); a=b*q+r; tries++; } while((a<100||a>999) && tries<60);
+  return `<span class="hcalc"><span class="n">${a}</span><span class="op">÷</span><span class="n">${b}</span><span class="eq">=</span></span>${ansSpan(mode, `몫 ${q}, 나머지 ${r}`)}`;
+}
+function buildU3T5(rng, mode){
+  const b = randInt(rng,11,49), q = randInt(rng,2,30), r = randInt(rng,0,b-1);
+  const a = b*q+r;
+  return `<div class="qline">나눗셈의 검산식이에요. ?에 알맞은 수는?<br>${b} × ${q} + ${r} = ?${ansSpan(mode, ' → '+a)}</div>`;
+}
+
+/* =========================================================================
+   7. Unit 4 — 평면도형의 이동
+   ========================================================================= */
+function buildU4T1(rng, mode){ return buildMoveChoiceProblem('slide', rng, mode); }
+function buildU4T2(rng, mode){ return buildMoveChoiceProblem('flip', rng, mode); }
+function buildU4T3(rng, mode){ return buildMoveChoiceProblem('rotate', rng, mode); }
+function buildU4T4(rng, mode){
+  const N=4, cellPx=18;
+  const origin = SHAPE_BASE;
+  const kind = pick(rng, ['slide','flip','rotate']);
+  let resultCells;
+  if(kind==='slide'){
+    const [dx,dy] = pick(rng, SLIDE_DIRS);
+    resultCells = translateCellsGrid(origin, dx, dy);
+  } else if(kind==='flip'){
+    const axis = pick(rng, ['h','v']);
+    resultCells = flipCellsGrid(origin, axis, N);
+  } else {
+    const steps = pick(rng, [1,2,3]);
+    resultCells = rotateCellsGrid(origin, steps, N);
+  }
+  const labelMap = {slide:'밀기', flip:'뒤집기', rotate:'돌리기'};
+  const row = `<div style="display:flex;align-items:center;gap:10px;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">${shapeGridSVG(origin,N,COLOR.blue,cellPx)}<div style="font-size:8pt;font-weight:700;color:#6b7386;">원래 도형</div></div>
+    <div style="font-size:14pt;color:#8a91a3;">→</div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">${shapeGridSVG(resultCells,N,COLOR.violet,cellPx)}<div style="font-size:8pt;font-weight:700;color:#6b7386;">이동한 도형</div></div>
+  </div>`;
+  return `<div class="fig-wrap">${row}</div>
+    <div class="qline">어떤 방법으로 이동한 것일까요? (밀기 / 뒤집기 / 돌리기)${ansSpan(mode, labelMap[kind])}</div>`;
+}
+function buildU4T5(rng, mode){ return buildMoveChoiceProblem(pick(rng,['slide','flip','rotate']), rng, mode); }
+
+/* =========================================================================
+   8. Unit 5 — 막대그래프
+   ========================================================================= */
+function buildU5T1(rng, mode){
+  const {set, values} = genBarValues(rng);
+  const unit = pickNiceUnit(Math.max(...values));
+  const idx = randInt(rng,0,set.cats.length-1);
+  return `<div class="fig-wrap">${barGraphAxisSVG(set.cats, values, {unit})}</div>
+    <div class="qline">${set.attrName} 그래프예요. '${set.cats[idx]}'은(는) 몇 명인가요?${ansSpan(mode, values[idx]+'명')}</div>`;
+}
+function buildU5T2(rng, mode){
+  const {set, values} = genBarValues(rng);
+  const unit = pickNiceUnit(Math.max(...values));
+  const maxIdx = values.indexOf(Math.max(...values));
+  return `<div class="fig-wrap">${barGraphAxisSVG(set.cats, values, {unit})}</div>
+    <div class="qline">${set.attrName} 그래프에서 가장 많은 것은 무엇인가요?${ansSpan(mode, set.cats[maxIdx])}</div>`;
+}
+function buildU5T3(rng, mode){
+  const {set, values} = genBarValues(rng);
+  const unit = pickNiceUnit(Math.max(...values));
+  const [i,j] = pickDistinct(rng, set.cats.map((_,k)=>k), 2);
+  const diff = Math.abs(values[i]-values[j]);
+  return `<div class="fig-wrap">${barGraphAxisSVG(set.cats, values, {unit})}</div>
+    <div class="qline">'${set.cats[i]}'와(과) '${set.cats[j]}'의 학생 수 차이는 몇 명인가요?${ansSpan(mode, diff+'명')}</div>`;
+}
+function buildU5T4(rng, mode){
+  const {set, values} = genBarValues(rng);
+  const unit = pickNiceUnit(Math.max(...values));
+  const total = values.reduce((a,b)=>a+b,0);
+  return `<div class="fig-wrap">${barGraphAxisSVG(set.cats, values, {unit})}</div>
+    <div class="qline">조사에 참여한 ${set.itemsLabel}은(는) 모두 몇 명인가요?${ansSpan(mode, total+'명')}</div>`;
+}
+function buildU5T5(rng, mode){
+  const set = pick(rng, BAR_GRAPH_SETS);
+  let values;
+  do{ values = set.cats.map(()=> randInt(rng, 12, 78)); } while(new Set(values).size !== values.length);
+  const maxV = Math.max(...values);
+  const gridLines = pick(rng,[5,10]);
+  const niceUnits = [1,2,5,10,20];
+  const unit = niceUnits.find(u=> u*gridLines >= maxV) || 20;
+  return `<div class="fig-wrap">${dataTableHTML(set.cats, values.map(v=>v+'명'))}</div>
+    <div class="qline">위 표를 막대그래프로 나타내려고 해요. 세로 눈금을 ${gridLines}칸으로 그린다면, 눈금 한 칸은 몇 명을 나타내야 할까요?${ansSpan(mode, unit+'명')}</div>`;
+}
+
+/* =========================================================================
+   9. Unit 6 — 규칙 찾기
+   ========================================================================= */
+function buildU6T1(rng, mode){
+  const base = randInt(rng,10,80);
+  const stepPool = [1,2,5,10];
+  const rowStep = pick(rng, stepPool);
+  const colStep = pick(rng, stepPool.filter(v=>v!==rowStep));
+  const nRows=3, nCols=4;
+  const br = randInt(rng,0,nRows-1), bc = randInt(rng,0,nCols-1);
+  const ans = base + br*rowStep + bc*colStep;
+  return `<div class="fig-wrap">${numberArrayTableHTML(base, rowStep, colStep, nRows, nCols, br, bc)}</div>
+    <div class="qline">규칙에 따라 ?에 알맞은 수는?${ansSpan(mode, String(ans))}</div>`;
+}
+function buildU6T2(rng, mode){
+  const start = randInt(rng,2,6);
+  const diff = pick(rng,[2,3,4]);
+  const stages = [start, start+diff, start+2*diff];
+  const next = start+3*diff;
+  const stageRow = `<div style="display:flex;gap:14px;align-items:flex-end;justify-content:center;">
+    ${stages.map((n,i)=>`<div style="display:flex;flex-direction:column;align-items:center;gap:3px;">${stageBlockHTML(n, COLOR.teal)}<div style="font-size:7.5pt;color:#6b7386;font-weight:700;">${i+1}번째</div></div>`).join('')}
+  </div>`;
+  return `<div class="fig-wrap">${stageRow}</div>
+    <div class="qline">사각형 개수가 일정하게 늘어나는 규칙이에요. 4번째에는 사각형이 몇 개일까요?${ansSpan(mode, next+'개')}</div>`;
+}
+function buildU6T3(rng, mode){
+  const k = pick(rng,[9,11,12,15,19,21,25,31,44,99,101]);
+  const lines = [1,2,3].map(n=>`<div class="qline" style="text-align:center;">${n} × ${k} = ${n*k}</div>`).join('');
+  const ansVal = 4*k;
+  return `${lines}<div class="qline" style="text-align:center;">4 × ${k} =${ansSpan(mode, ' '+ansVal)}</div>`;
+}
+function buildU6T4(rng, mode){
+  const a = randInt(rng,10,70), b = randInt(rng,10,70);
+  const left = a+b;
+  const c = randInt(rng,5, Math.max(6,left-1));
+  const d = left-c;
+  return `<div class="qline">등호(=)의 양쪽이 같아지도록 ?에 알맞은 수를 구하세요.</div>
+    <div class="qline" style="text-align:center;font-size:13pt;font-weight:800;">${a} + ${b} = ${c} + ?${ansSpan(mode, ' → '+d)}</div>`;
+}
+function buildU6T5(rng, mode){
+  const kind = pick(rng, ['add','sub','mul']);
+  let seq, next, ruleText;
+  if(kind==='add'){
+    const start = randInt(rng,5,50), step = randInt(rng,3,15);
+    seq = [start, start+step, start+2*step, start+3*step];
+    next = start+4*step;
+    ruleText = `+${step}씩 커지는 규칙`;
+  } else if(kind==='sub'){
+    const start = randInt(rng,200,400), step = randInt(rng,5,20);
+    seq = [start, start-step, start-2*step, start-3*step];
+    next = start-4*step;
+    ruleText = `-${step}씩 작아지는 규칙`;
+  } else {
+    const start = randInt(rng,2,4);
+    seq = [start, start*2, start*4, start*8];
+    next = start*16;
+    ruleText = `×2씩 커지는 규칙`;
+  }
+  const chip = (v,dashed)=>`<span style="display:inline-block;min-width:36px;padding:4px 6px;margin:0 3px;border-radius:6px;${dashed?'background:#fff;border:1.5px dashed #c7cbd6;color:#c7cbd6;':'background:#f3f5fa;border:1.5px solid #d7deed;color:'+COLOR.ink+';'}font-weight:800;">${v}</span>`;
+  const seqHtml = seq.map(v=>chip(v,false)).join('<span style="color:#8a91a3;">→</span>') + '<span style="color:#8a91a3;">→</span>' + chip('?',true);
+  return `<div class="fig-wrap">${seqHtml}</div>
+    <div class="qline">위 수의 배열은 ${ruleText}예요. ?에 알맞은 수는?${ansSpan(mode, String(next))}</div>`;
+}
+
+/* =========================================================================
+   10. Unit / Type registry
+   ========================================================================= */
+
+const UNITS = [
+  { key:'u1', num:'1', title:'큰 수', color:'var(--coral)',
+    types:[
+      { name:'자릿값 알아보기', layout:'grid', cols:3, rows:4, build:buildU1T1 },
+      { name:'큰 수 읽기·쓰기', layout:'list', cols:1, rows:5, build:buildU1T2 },
+      { name:'뛰어세기', layout:'list', cols:1, rows:5, build:buildU1T3 },
+      { name:'두 수의 크기 비교(부등호)', layout:'grid', cols:3, rows:4, build:buildU1T4 },
+      { name:'세 수 중 가장 큰·작은 수', layout:'list', cols:1, rows:5, build:buildU1T5 },
+    ]},
+  { key:'u2', num:'2', title:'각도', color:'var(--sun)',
+    types:[
+      { name:'각도기로 각도 재기', layout:'grid', cols:3, rows:4, build:buildU2T1 },
+      { name:'예각·직각·둔각 분류', layout:'grid', cols:3, rows:4, build:buildU2T2 },
+      { name:'각도의 합과 차', layout:'grid', cols:3, rows:6, build:buildU2T3 },
+      { name:'삼각형 세 각의 합', layout:'grid', cols:3, rows:3, build:buildU2T4 },
+      { name:'사각형 네 각의 합', layout:'grid', cols:3, rows:3, build:buildU2T5 },
+    ]},
+  { key:'u3', num:'3', title:'곱셈과 나눗셈', color:'var(--blue)',
+    types:[
+      { name:'(세 자리 수)×(몇십)', layout:'grid', cols:3, rows:6, build:buildU3T1 },
+      { name:'세로셈으로 곱셈하기', layout:'grid', cols:3, rows:3, build:buildU3T2 },
+      { name:'(세 자리 수)÷(두 자리 수) — 나머지 없음', layout:'grid', cols:3, rows:5, build:buildU3T3 },
+      { name:'(세 자리 수)÷(두 자리 수) — 몫과 나머지', layout:'grid', cols:3, rows:5, build:buildU3T4 },
+      { name:'나눗셈 검산식 완성하기', layout:'list', cols:1, rows:5, build:buildU3T5 },
+    ]},
+  { key:'u4', num:'4', title:'평면도형의 이동', color:'var(--violet)',
+    types:[
+      { name:'도형 밀기', layout:'list', cols:1, rows:5, build:buildU4T1 },
+      { name:'도형 뒤집기', layout:'list', cols:1, rows:4, build:buildU4T2 },
+      { name:'도형 돌리기', layout:'list', cols:1, rows:4, build:buildU4T3 },
+      { name:'이동 방법 알아맞히기', layout:'grid', cols:3, rows:3, build:buildU4T4 },
+      { name:'이동 종합 연습', layout:'list', cols:1, rows:5, build:buildU4T5 },
+    ]},
+  { key:'u5', num:'5', title:'막대그래프', color:'var(--mint)',
+    types:[
+      { name:'막대그래프 읽기 — 값 구하기', layout:'grid', cols:3, rows:4, build:buildU5T1 },
+      { name:'막대그래프 읽기 — 가장 많은 것', layout:'grid', cols:3, rows:4, build:buildU5T2 },
+      { name:'막대그래프 읽기 — 두 항목의 차', layout:'grid', cols:3, rows:4, build:buildU5T3 },
+      { name:'막대그래프 읽기 — 합계', layout:'grid', cols:3, rows:4, build:buildU5T4 },
+      { name:'눈금 단위 정하기', layout:'grid', cols:3, rows:4, build:buildU5T5 },
+    ]},
+  { key:'u6', num:'6', title:'규칙 찾기', color:'var(--teal)',
+    types:[
+      { name:'수 배열표에서 규칙 찾기', layout:'grid', cols:3, rows:3, build:buildU6T1 },
+      { name:'도형의 배열에서 규칙 찾기', layout:'grid', cols:3, rows:3, build:buildU6T2 },
+      { name:'계산식의 배열에서 규칙 찾기', layout:'list', cols:1, rows:4, build:buildU6T3 },
+      { name:'등호를 사용하여 나타내기', layout:'list', cols:1, rows:5, build:buildU6T4 },
+      { name:'수의 배열에서 규칙 찾기', layout:'list', cols:1, rows:5, build:buildU6T5 },
+    ]},
+];
+
+
+const UNIT = UNITS[1];
+const TYPE = UNIT.types[2];
+const TYPE_BUILD = TYPE.build;
+
+let mode = 'problem';
+let seed = Date.now() % 1000000007;
+
+function buildUniqueProblem(rng, mode, seen){
+  let html, sig, tries = 0;
+  do{
+    html = TYPE_BUILD(rng, mode);
+    sig = html.replace(/<span class="ans">[\s\S]*?<\/span>/g, '');
+    tries++;
+  } while(seen.has(sig) && tries < 25);
+  seen.add(sig);
+  return html;
+}
+function wrapList(inner){ return `<div class="sh-row wide"><div class="sh-cell wide">${inner}</div></div>`; }
+function wrapGrid(inner){ return `<div class="sh-cell">${inner}</div>`; }
+
+function buildSheetInner(mode, seed){
+  const rng = mulberry32(seed);
+  const modeLabel = mode === 'answer' ? '정답지' : '문제지';
+  const seen = new Set();
+  let rowsHtml = '';
+  if(TYPE.layout === 'grid'){
+    for(let r=0; r<TYPE.rows; r++){
+      let cells = '';
+      for(let c=0; c<TYPE.cols; c++){
+        cells += wrapGrid(buildUniqueProblem(rng, mode, seen));
+      }
+      rowsHtml += `<div class="sh-row">${cells}</div>`;
+    }
+  }else{
+    for(let i=0;i<TYPE.rows;i++){
+      rowsHtml += wrapList(buildUniqueProblem(rng, mode, seen));
+    }
+  }
+
+  return `
+    <div class="sh-header">
+      <div class="sh-cafe-strip">
+        <span class="cafe-badge">🔢 구구단닷컴</span>
+        <span class="cafe-url">www.googoodan.com</span>
+      </div>
+      <div class="sh-titlebar">
+        <div class="sh-title">
+          <span class="op-badge" style="background:${UNIT.color};">${UNIT.num}단원</span>
+          ${TYPE.name} <small>· ${UNIT.title}</small>
+        </div>
+      </div>
+      <div class="sh-fields">
+        <span class="f">학습일자 <span class="ln"></span></span>
+        <span class="f">대상 <b>초등 4학년 1학기</b></span>
+        <span class="f">이름 <span class="ln"></span></span>
+        <span class="f">점수 <span class="ln"></span></span>
+      </div>
+      <div class="sh-rule" style="background:linear-gradient(90deg, ${UNIT.color}, #20b39c);"></div>
+    </div>
+    <main class="sh-main">${rowsHtml}</main>
+    <div class="sh-footer">
+      <span class="tagline">매일 10분, 수학 자신감을 키워요 ✏️</span>
+      <span class="brand">🔢 구구단닷컴 · www.googoodan.com</span>
+      <span class="pageno"></span>
+    </div>
+  `;
+}
+
+function render(){
+  document.getElementById('sheetHost').innerHTML = buildSheetInner(mode, seed);
+}
+function setMode(m){
+  mode = m;
+  document.getElementById('btnProblem').classList.toggle('ggd-active', m === 'problem');
+  document.getElementById('btnAnswer').classList.toggle('ggd-active', m === 'answer');
+  render();
+}
+function regenerate(){
+  seed = Math.floor(Math.random() * 1e9);
+  render();
+}
+render();
+</script>
+</body>
+</html>
