@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>소통 게시판 - 구구단닷컴</title>
+<style>
+  :root{
+    --primary:#ff8961;
+    --primary-dark:#ef6f43;
+    --primary-light:#fff1ea;
+    --line:#e4e6ea;
+    --ink:#24262b;
+    --muted:#7b8087;
+    --paper:#ffffff;
+    --bg:#f4f5f7;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--ink);
+    font-size:14px;
+    background:var(--bg);
+    min-height:100vh;
+  }
+
+  .page{ max-width:1760px; margin:0 auto; padding:18px; }
+
+  /* ---- 사이트 헤더 ---- */
+  .site-header{
+    display:flex; align-items:center; justify-content:space-between;
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    padding:14px 22px; margin-bottom:14px;
+  }
+  .site-logo{ display:flex; align-items:center; gap:8px; }
+  .site-logo .name{ font-size:18px; font-weight:800; color:var(--ink); text-decoration:none; }
+  .site-nav{ display:flex; gap:4px; flex-wrap:wrap; }
+  .site-nav a{
+    text-decoration:none; font-size:12.5px; font-weight:600; color:var(--muted);
+    padding:8px 13px; border-radius:6px; transition:.15s;
+  }
+  .site-nav a:hover{ background:var(--bg); color:var(--ink); }
+  .site-nav a.on{ background:var(--primary-light); color:var(--primary-dark); font-weight:700; }
+
+  /* ---- 광고 (회색 처리) ---- */
+  .ad-block{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    color:#9aa0a8; font-size:12px; font-weight:700; text-align:center; line-height:1.6;
+  }
+  .layout{ display:flex; gap:14px; align-items:flex-start; }
+  .side-ads{ width:240px; display:flex; flex-direction:column; gap:14px; flex-shrink:0; }
+  .side-ads .ad-block{ flex-direction:column; gap:4px; }
+  .side-ads .ad-block .sub{ font-size:10.5px; color:#b3b8bf; font-weight:600; }
+  .ad-tall{ height:580px; }
+  .ad-mid{ height:250px; }
+
+  /* ---- 왼쪽 사이트 메뉴 ---- */
+  .side-menu{ width:240px; flex-shrink:0; display:flex; flex-direction:column; gap:14px; }
+  .menu-card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px; }
+  .menu-card .menu-label{
+    font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.02em;
+    padding:8px 10px 6px;
+  }
+  .menu-card a.menu-link{
+    display:flex; align-items:center; gap:9px;
+    text-decoration:none; color:var(--ink); font-size:13px; font-weight:600;
+    padding:10px 10px; border-radius:8px; transition:.15s;
+  }
+  .menu-card a.menu-link:hover{ background:var(--primary-light); color:var(--primary-dark); }
+  .menu-card a.menu-link .ic{ font-size:15px; flex-shrink:0; opacity:.9; }
+  .menu-card a.menu-link.active{ background:var(--primary-light); color:var(--primary-dark); font-weight:800; }
+  .menu-card .soon-label{
+    font-size:10px; font-weight:800; color:#b3b8bf; background:#f1f2f4;
+    border-radius:5px; padding:2px 6px; margin-left:auto;
+  }
+  .menu-card a.menu-link.soon{ color:#b3b8bf; cursor:default; }
+  .menu-card a.menu-link.soon:hover{ background:none; }
+
+  /* ---- 핵심 영역 ---- */
+  .core{ flex:1; min-width:0; }
+  .board-box{
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:22px 26px 26px;
+  }
+  .brand-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);
+  }
+  .brand-name{ font-size:18px; font-weight:800; }
+  .brand-sub{ font-size:12px; color:var(--muted); margin-top:3px; font-weight:500; }
+
+  /* ---- 로그인 상태 영역 ---- */
+  .auth-area{ display:flex; align-items:center; gap:8px; }
+  .btn-login{
+    display:flex; align-items:center; gap:7px;
+    background:#fff; border:1.5px solid var(--line); border-radius:8px;
+    padding:8px 13px; font-size:12.5px; font-weight:700; color:var(--ink);
+    cursor:pointer; transition:.15s;
+  }
+  .btn-login:hover{ border-color:var(--primary); background:var(--primary-light); }
+  .user-chip{
+    display:flex; align-items:center; gap:7px;
+    background:var(--bg); border:1px solid var(--line); border-radius:20px;
+    padding:5px 12px 5px 5px; font-size:12.5px; font-weight:700;
+  }
+  .user-chip .av{
+    width:24px; height:24px; border-radius:50%; background:var(--primary);
+    color:#fff; display:flex; align-items:center; justify-content:center; font-size:12px;
+  }
+  .user-chip .logout{
+    background:none; border:none; color:var(--muted); font-size:11px; font-weight:700;
+    cursor:pointer; text-decoration:underline; margin-left:2px;
+  }
+
+  /* ---- 툴바 ---- */
+  .board-toolbar{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom:12px;
+  }
+  .post-count{ font-size:12.5px; color:var(--muted); font-weight:600; }
+  .btn-write{
+    background:var(--primary); color:#fff; border:none; border-radius:8px;
+    padding:10px 16px; font-size:13px; font-weight:700; cursor:pointer;
+    display:flex; align-items:center; gap:6px; transition:.15s;
+  }
+  .btn-write:hover{ background:var(--primary-dark); }
+
+  /* ---- 게시글 목록 ---- */
+  .post-list{ border-top:1.5px solid var(--ink); }
+  .post-item{
+    border-bottom:1px solid var(--line); padding:14px 6px; cursor:pointer;
+  }
+  .post-item:hover{ background:var(--bg); }
+  .post-row{ display:flex; align-items:center; gap:10px; }
+  .badge-cat{
+    font-size:10.5px; font-weight:800; padding:3px 8px; border-radius:5px;
+    background:var(--primary-light); color:var(--primary-dark); flex-shrink:0;
+  }
+  .badge-cat.notice{ background:#e8f0ff; color:#3a63c2; }
+  .post-title{ font-size:13.5px; font-weight:700; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .post-meta{ font-size:11.5px; color:var(--muted); font-weight:600; display:flex; gap:10px; flex-shrink:0; }
+
+  /* ---- 게시글 상세 ---- */
+  .post-detail{
+    background:var(--bg); border-radius:10px; padding:16px 18px; margin:0 0 10px;
+    font-size:13px; line-height:1.7; color:#3a3f47;
+  }
+  .post-detail .detail-meta{ font-size:11.5px; color:var(--muted); font-weight:600; margin-bottom:10px; }
+
+  /* ---- 댓글 ---- */
+  .comment-list{ margin-top:14px; padding-top:12px; border-top:1px dashed var(--line); }
+  .comment-item{ display:flex; gap:8px; padding:8px 0; font-size:12.5px; }
+  .comment-item .c-av{
+    width:22px; height:22px; border-radius:50%; background:var(--primary); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0;
+  }
+  .comment-item .c-body{ flex:1; }
+  .comment-item .c-author{ font-weight:800; margin-right:6px; }
+  .comment-item .c-date{ color:var(--muted); font-size:10.5px; }
+  .comment-gate{
+    margin-top:10px; padding:12px; background:#fff; border:1px dashed var(--line); border-radius:8px;
+    font-size:12px; color:var(--muted); text-align:center;
+  }
+  .comment-gate .btn-login{ margin:8px auto 0; }
+  .comment-write{ display:flex; gap:8px; margin-top:10px; }
+  .comment-write input{
+    flex:1; border:1.5px solid var(--line); border-radius:8px; padding:8px 12px; font-size:12.5px;
+  }
+  .comment-write button{
+    background:var(--primary); color:#fff; border:none; border-radius:8px; padding:0 14px;
+    font-size:12.5px; font-weight:700; cursor:pointer;
+  }
+
+  .pagination{ display:flex; justify-content:center; gap:6px; margin-top:18px; }
+  .pagination button{
+    width:30px; height:30px; border:1.5px solid var(--line); background:#fff; border-radius:7px;
+    font-size:12.5px; font-weight:700; color:var(--ink); cursor:pointer;
+  }
+  .pagination button.on{ background:var(--primary); border-color:var(--primary); color:#fff; }
+
+  /* ---- 모달 (글쓰기) ---- */
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(20,20,20,.4);
+    display:flex; align-items:center; justify-content:center; z-index:100;
+  }
+  .modal-box{
+    background:#fff; border-radius:14px; width:480px; max-width:92vw;
+    padding:22px; box-shadow:0 20px 50px rgba(0,0,0,.2);
+  }
+  .modal-box h3{ font-size:15px; font-weight:800; margin-bottom:14px; }
+  .modal-box select, .modal-box input[type=text], .modal-box textarea{
+    width:100%; border:1.5px solid var(--line); border-radius:8px; padding:10px 12px;
+    font-size:13px; margin-bottom:10px; font-family:inherit;
+  }
+  .modal-box textarea{ min-height:120px; resize:vertical; }
+  .modal-actions{ display:flex; justify-content:flex-end; gap:8px; margin-top:6px; }
+  .modal-actions button{
+    border:none; border-radius:8px; padding:9px 16px; font-size:13px; font-weight:700; cursor:pointer;
+  }
+  .modal-actions .cancel{ background:var(--bg); color:var(--muted); }
+  .modal-actions .submit{ background:var(--primary); color:#fff; }
+
+  .gate-box{
+    text-align:center; padding:30px 20px; color:var(--muted); font-size:13px;
+  }
+  .gate-box .btn-login{ margin:14px auto 0; }
+
+  .site-footer{
+    margin-top:14px; text-align:center; padding:16px;
+    color:var(--muted); font-size:12px;
+  }
+  .visit-stats{ font-size:11.5px; color:var(--muted); font-weight:700; margin-bottom:6px; }
+  .visit-stats b{ color:var(--ink); }
+
+  .hidden{ display:none !important; }
+
+  @media (max-width:1300px){ .side-ads{ display:none; } }
+  @media (max-width:900px){
+    .site-nav{ display:none; }
+    .side-menu{ display:none; }
+    .post-meta{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="site-header">
+    <a href="index_main.html" class="site-logo"><span class="name">구구단닷컴</span></a>
+    <div class="site-nav">
+      <a href="index_main.html">홈</a>
+      <a href="#">랭킹</a>
+      <a href="#">문의하기</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="side-menu">
+      <div class="menu-card">
+        <a class="menu-link" href="#"><span class="ic">📢</span>공지사항</a>
+        <a class="menu-link" href="#"><span class="ic">🗂️</span>학습자료실</a>
+        <a class="menu-link" href="#"><span class="ic">📚</span>학습정보</a>
+        <a class="menu-link" href="#"><span class="ic">❓</span>이 사이트 사용법</a>
+        <a class="menu-link active" href="board.html"><span class="ic">💬</span>소통 (문의·후기)</a>
+      </div>
+      <div class="menu-card">
+        <div class="menu-label">다른 과목 (준비중)</div>
+        <a class="menu-link soon" href="#"><span class="ic">🔤</span>초등영어<span class="soon-label">준비중</span></a>
+        <a class="menu-link soon" href="#"><span class="ic">📐</span>중등수학<span class="soon-label">준비중</span></a>
+        <a class="menu-link soon" href="#"><span class="ic">📏</span>고등수학<span class="soon-label">준비중</span></a>
+      </div>
+    </div>
+
+    <div class="core">
+      <div class="board-box">
+
+        <div class="brand-row">
+          <div>
+            <div class="brand-name">소통 게시판</div>
+            <div class="brand-sub">누구나 자유롭게 읽을 수 있어요. 글쓰기·댓글은 로그인 후 이용해주세요</div>
+          </div>
+          <div class="auth-area" id="authArea"></div>
+        </div>
+
+        <div class="board-toolbar">
+          <div class="post-count" id="postCount">전체 글 0개</div>
+          <button class="btn-write" onclick="openWrite()">✏️ 글쓰기</button>
+        </div>
+
+        <div class="post-list" id="postList"></div>
+
+        <div class="pagination">
+          <button class="on">1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="side-ads">
+      <div class="ad-block ad-tall">광고<span class="sub">300 × 600</span></div>
+      <div class="ad-block ad-mid">광고<span class="sub">250 × 200</span></div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="visit-stats">오늘 방문자 <b id="todayVisit">132</b>명 · 누적 방문자 <b id="totalVisit">45,201</b>명</div>
+    구구단닷컴 · 초등수학 자동 시험지 생성 사이트
+  </div>
+
+</div>
+
+<!-- 글쓰기 모달 -->
+<div class="modal-overlay hidden" id="writeModal">
+  <div class="modal-box">
+    <div id="writeLoggedIn">
+      <h3>새 글 쓰기</h3>
+      <select id="wCategory">
+        <option value="자유">자유</option>
+        <option value="질문">질문</option>
+        <option value="후기">후기</option>
+      </select>
+      <input type="text" id="wTitle" placeholder="제목을 입력하세요">
+      <textarea id="wContent" placeholder="내용을 입력하세요"></textarea>
+      <div class="modal-actions">
+        <button class="cancel" onclick="closeWrite()">취소</button>
+        <button class="submit" onclick="submitPost()">등록</button>
+      </div>
+    </div>
+    <div id="writeLoggedOut" class="hidden">
+      <div class="gate-box">
+        🔒 글쓰기는 로그인 후 이용할 수 있어요<br>(구글 계정으로 1초 만에 시작할 수 있어요)
+        <div class="btn-login" onclick="mockLogin()">🟢 구글로 로그인하고 글쓰기</div>
+      </div>
+      <div class="modal-actions">
+        <button class="cancel" onclick="closeWrite()">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   ⚠️ 지금은 레이아웃 확인용 데모입니다.
+   currentUser / mockLogin() / mockLogout() 은 나중에
+   Firebase Authentication(구글 로그인) 연동으로 교체될 부분입니다.
+   posts 배열도 나중에 Firestore에서 실시간으로 불러오도록 교체됩니다.
+   ============================================================ */
+
+let currentUser = null; // TODO: Firebase Auth 연동 후 실제 로그인 사용자로 교체
+
+let posts = [
+  {
+    id: 5, category: '공지', notice: true,
+    title: '구구단닷컴 게시판을 새로 열었습니다 :)', author: '구구단닷컴', date: '2026-09-05',
+    views: 102, content: '문제지 이용하시면서 궁금한 점, 건의사항, 후기 자유롭게 남겨주세요! 글쓰기는 로그인 후 이용하실 수 있고, 읽는 건 로그인 없이도 누구나 가능합니다.',
+    comments: []
+  },
+  {
+    id: 4, category: '후기',
+    title: '초1 아이가 매일 아침 이걸로 연습해요, 너무 좋네요', author: '햇살맘', date: '2026-09-03',
+    views: 41, content: '학원 다니기 전에 집에서 이걸로 먼저 익히니까 진도 따라가기 훨씬 수월하더라고요. 감사합니다!',
+    comments: [ {author:'구구단닷컴', date:'2026-09-03', text:'좋은 후기 감사합니다 😊 앞으로 더 다양한 단원 준비할게요!'} ]
+  },
+  {
+    id: 3, category: '질문',
+    title: '프린트했을 때 마지막 줄이 살짝 잘려요', author: '초등맘2', date: '2026-09-02',
+    views: 29, content: '크롬에서 인쇄했는데 맨 아래 문제 한 줄이 살짝 잘려서 나와요. 인쇄 설정을 어떻게 해야 할까요?',
+    comments: [ {author:'구구단닷컴', date:'2026-09-02', text:'인쇄 설정에서 배율을 100%(또는 "맞춤")로, 여백은 "기본"으로 해보시면 해결됩니다!'} ]
+  },
+  {
+    id: 2, category: '질문',
+    title: '중2 수학도 추가해주실 수 있나요?', author: 'mathlover', date: '2026-09-01',
+    views: 55, content: '초등수학 너무 잘 쓰고 있는데 중등도 있으면 좋겠어요.', comments: []
+  },
+  {
+    id: 1, category: '자유',
+    title: '숫자 변경 버튼 눌러도 계속 같은 문제가 나와요', author: '별빛', date: '2026-08-30',
+    views: 18, content: '혹시 새로고침을 해야 하나요?', comments: [] }
+];
+
+function render(){
+  renderAuth();
+  renderList();
+}
+
+function renderAuth(){
+  const el = document.getElementById('authArea');
+  if(currentUser){
+    el.innerHTML = `
+      <div class="user-chip">
+        <span class="av">${currentUser.initial}</span>
+        ${currentUser.name}
+        <button class="logout" onclick="mockLogout()">로그아웃</button>
+      </div>`;
+  }else{
+    el.innerHTML = `<div class="btn-login" onclick="mockLogin()">🟢 구글로 로그인</div>`;
+  }
+}
+
+function renderList(){
+  const list = document.getElementById('postList');
+  document.getElementById('postCount').textContent = `전체 글 ${posts.length}개`;
+  list.innerHTML = '';
+  posts.forEach(p => {
+    const item = document.createElement('div');
+    item.className = 'post-item';
+    item.innerHTML = `
+      <div class="post-row">
+        <span class="badge-cat${p.notice ? ' notice' : ''}">${p.category}</span>
+        <span class="post-title">${escapeHtml(p.title)}</span>
+        <span class="post-meta">
+          <span>${p.author}</span><span>${p.date}</span><span>💬 ${p.comments.length}</span><span>조회 ${p.views}</span>
+        </span>
+      </div>
+      <div class="post-detail hidden" id="detail-${p.id}"></div>
+    `;
+    item.querySelector('.post-row').onclick = () => toggleDetail(p.id);
+    list.appendChild(item);
+  });
+}
+
+function toggleDetail(id){
+  const box = document.getElementById(`detail-${id}`);
+  const wasOpen = !box.classList.contains('hidden');
+  document.querySelectorAll('.post-detail').forEach(b => b.classList.add('hidden'));
+  if(wasOpen) return;
+
+  const p = posts.find(x => x.id === id);
+  box.classList.remove('hidden');
+  box.innerHTML = `
+    <div class="detail-meta">${p.author} · ${p.date} · 조회 ${p.views}</div>
+    <div>${escapeHtml(p.content)}</div>
+    <div class="comment-list">
+      ${p.comments.map(c => `
+        <div class="comment-item">
+          <span class="c-av">${c.author[0]}</span>
+          <span class="c-body"><span class="c-author">${c.author}</span><span class="c-date">${c.date}</span><br>${escapeHtml(c.text)}</span>
+        </div>`).join('')}
+      ${currentUser ? `
+        <div class="comment-write">
+          <input type="text" id="cInput-${p.id}" placeholder="댓글을 남겨보세요">
+          <button onclick="submitComment(${p.id})">등록</button>
+        </div>` : `
+        <div class="comment-gate">
+          댓글은 로그인 후 남길 수 있어요
+          <div class="btn-login" onclick="mockLogin()">🟢 구글로 로그인</div>
+        </div>`}
+    </div>
+  `;
+}
+
+function submitComment(postId){
+  const input = document.getElementById(`cInput-${postId}`);
+  const text = input.value.trim();
+  if(!text) return;
+  const p = posts.find(x => x.id === postId);
+  p.comments.push({ author: currentUser.name, date: today(), text });
+  toggleDetail(postId); // close
+  toggleDetail(postId); // reopen refreshed
+}
+
+function openWrite(){
+  document.getElementById('writeModal').classList.remove('hidden');
+  document.getElementById('writeLoggedIn').classList.toggle('hidden', !currentUser);
+  document.getElementById('writeLoggedOut').classList.toggle('hidden', !!currentUser);
+}
+function closeWrite(){
+  document.getElementById('writeModal').classList.add('hidden');
+  document.getElementById('wTitle').value = '';
+  document.getElementById('wContent').value = '';
+}
+function submitPost(){
+  const title = document.getElementById('wTitle').value.trim();
+  const content = document.getElementById('wContent').value.trim();
+  const category = document.getElementById('wCategory').value;
+  if(!title || !content){ alert('제목과 내용을 입력해주세요'); return; }
+  posts.unshift({
+    id: Date.now(), category, author: currentUser.name, date: today(),
+    views: 0, content, comments: []
+  });
+  closeWrite();
+  renderList();
+}
+
+function mockLogin(){
+  // TODO: 실제로는 여기서 Firebase Authentication의 구글 로그인 팝업을 띄웁니다.
+  currentUser = { name: '테스트 사용자', initial: '테' };
+  render();
+  // 글쓰기 모달이 열려있던 중이면 로그인된 화면으로 전환
+  if(!document.getElementById('writeModal').classList.contains('hidden')) openWrite();
+}
+function mockLogout(){
+  currentUser = null;
+  render();
+}
+
+function today(){
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+render();
+</script>
+</body>
+</html>

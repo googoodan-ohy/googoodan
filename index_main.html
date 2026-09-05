@@ -49,15 +49,33 @@
     display:flex; align-items:center; justify-content:center;
     color:#9aa0a8; font-size:12px; font-weight:700; text-align:center; line-height:1.6;
   }
-  .top-ad, .bottom-ad{ padding:16px; margin-bottom:14px; }
-  .bottom-ad{ margin-top:14px; margin-bottom:0; }
-
   .layout{ display:flex; gap:14px; align-items:flex-start; }
   .side-ads{ width:240px; display:flex; flex-direction:column; gap:14px; flex-shrink:0; }
   .side-ads .ad-block{ flex-direction:column; gap:4px; }
   .side-ads .ad-block .sub{ font-size:10.5px; color:#b3b8bf; font-weight:600; }
   .ad-tall{ height:580px; }
   .ad-mid{ height:250px; }
+
+  /* ---- 왼쪽 사이트 메뉴 (광고 대신 실제 메뉴) ---- */
+  .side-menu{ width:240px; flex-shrink:0; display:flex; flex-direction:column; gap:14px; }
+  .menu-card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px; }
+  .menu-card .menu-label{
+    font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.02em;
+    padding:8px 10px 6px;
+  }
+  .menu-card a.menu-link{
+    display:flex; align-items:center; gap:9px;
+    text-decoration:none; color:var(--ink); font-size:13px; font-weight:600;
+    padding:10px 10px; border-radius:8px; transition:.15s;
+  }
+  .menu-card a.menu-link:hover{ background:var(--primary-light); color:var(--primary-dark); }
+  .menu-card a.menu-link .ic{ font-size:15px; flex-shrink:0; opacity:.9; }
+  .menu-card .soon-label{
+    font-size:10px; font-weight:800; color:#b3b8bf; background:#f1f2f4;
+    border-radius:5px; padding:2px 6px; margin-left:auto;
+  }
+  .menu-card a.menu-link.soon{ color:#b3b8bf; cursor:default; }
+  .menu-card a.menu-link.soon:hover{ background:none; }
 
   /* ---- 핵심 영역 ---- */
   .core{ flex:1; min-width:0; }
@@ -149,6 +167,7 @@
     .matrix, .col-caption-row{ grid-template-columns: repeat(3, 1fr); }
     .dd-trigger{ font-size:11px; padding:9px 6px; }
     .site-nav{ display:none; }
+    .side-menu{ display:none; }
   }
 </style>
 </head>
@@ -168,12 +187,20 @@
     </div>
   </div>
 
-  <div class="top-ad ad-block" style="height:90px;">광고 영역 (728 × 90)</div>
-
   <div class="layout">
-    <div class="side-ads">
-      <div class="ad-block ad-tall">광고<span class="sub">300 × 600</span></div>
-      <div class="ad-block ad-mid">광고<span class="sub">300 × 250</span></div>
+    <div class="side-menu">
+      <div class="menu-card">
+        <a class="menu-link" href="#"><span class="ic">📢</span>공지사항</a>
+        <a class="menu-link" href="#"><span class="ic">📚</span>학습정보</a>
+        <a class="menu-link" href="#"><span class="ic">❓</span>이 사이트 사용법</a>
+        <a class="menu-link" href="#"><span class="ic">💬</span>소통 (문의·후기)</a>
+      </div>
+      <div class="menu-card">
+        <div class="menu-label">다른 과목 (준비중)</div>
+        <a class="menu-link soon" href="#"><span class="ic">🔤</span>초등영어<span class="soon-label">준비중</span></a>
+        <a class="menu-link soon" href="#"><span class="ic">📐</span>중등수학<span class="soon-label">준비중</span></a>
+        <a class="menu-link soon" href="#"><span class="ic">📏</span>고등수학<span class="soon-label">준비중</span></a>
+      </div>
     </div>
 
     <div class="core">
@@ -224,8 +251,6 @@
       <div class="ad-block ad-mid">광고<span class="sub">250 × 200</span></div>
     </div>
   </div>
-
-  <div class="bottom-ad ad-block" style="height:90px;">광고 영역 (728 × 90)</div>
 
   <div class="site-footer">
     구구단닷컴 · 초등수학 자동 시험지 생성 사이트
