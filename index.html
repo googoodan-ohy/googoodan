@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구구단닷컴 - 초등수학 자동 시험지 생성 사이트</title>
+<style>
+  :root{
+    --primary:#ff8961;
+    --primary-dark:#ef6f43;
+    --primary-light:#fff1ea;
+    --line:#e4e6ea;
+    --ink:#24262b;
+    --muted:#7b8087;
+    --paper:#ffffff;
+    --bg:#f4f5f7;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--ink);
+    font-size:14px;
+    background:var(--bg);
+    min-height:100vh;
+  }
+
+  .page{ max-width:1760px; margin:0 auto; padding:18px; }
+
+  /* ---- 사이트 헤더 ---- */
+  .site-header{
+    display:flex; align-items:center; justify-content:space-between;
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    padding:14px 22px; margin-bottom:14px;
+  }
+  .site-logo{ display:flex; align-items:center; gap:8px; }
+  .site-logo .name{ font-size:18px; font-weight:800; color:var(--ink); }
+  .site-nav{ display:flex; gap:4px; flex-wrap:wrap; }
+  .site-nav a{
+    text-decoration:none; font-size:12.5px; font-weight:600; color:var(--muted);
+    padding:8px 13px; border-radius:6px; transition:.15s;
+  }
+  .site-nav a:hover{ background:var(--bg); color:var(--ink); }
+  .site-nav a.on{ background:var(--primary-light); color:var(--primary-dark); font-weight:700; }
+
+  /* ---- 광고 (회색 처리) ---- */
+  .ad-block{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    color:#9aa0a8; font-size:12px; font-weight:700; text-align:center; line-height:1.6;
+  }
+  .top-ad, .bottom-ad{ padding:16px; margin-bottom:14px; }
+  .bottom-ad{ margin-top:14px; margin-bottom:0; }
+
+  .layout{ display:flex; gap:14px; align-items:flex-start; }
+  .side-ads{ width:240px; display:flex; flex-direction:column; gap:14px; flex-shrink:0; }
+  .side-ads .ad-block{ flex-direction:column; gap:4px; }
+  .side-ads .ad-block .sub{ font-size:10.5px; color:#b3b8bf; font-weight:600; }
+  .ad-tall{ height:580px; }
+  .ad-mid{ height:250px; }
+
+  /* ---- 핵심 영역 ---- */
+  .core{ flex:1; min-width:0; }
+  .sheet-box{
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:22px 26px 26px;
+  }
+
+  .brand-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);
+  }
+  .brand-name{ font-size:18px; font-weight:800; }
+  .brand-sub{ font-size:12px; color:var(--muted); margin-top:3px; font-weight:500; }
+  .brand-url{ font-size:12.5px; color:var(--primary); text-decoration:none; font-weight:700; }
+
+  .col-caption-row{
+    display:grid; grid-template-columns: 150px 110px 1fr;
+    gap:8px; font-size:11.5px; color:var(--muted); font-weight:700;
+    margin-bottom:5px; padding:0 4px;
+  }
+
+  /* ---- 펼침 메뉴 ---- */
+  .matrix{
+    display:grid; grid-template-columns: 150px 110px 1fr;
+    gap:8px; position:relative; z-index:5; align-items:start;
+  }
+
+  .dd{ position:relative; }
+  .dd-trigger{
+    background:#fff; border:1.5px solid var(--line);
+    color:var(--ink); border-radius:8px; padding:10px 12px;
+    font-size:13px; font-weight:600; display:flex; align-items:center; gap:7px;
+    cursor:pointer; min-height:20px; transition:.15s; user-select:none;
+  }
+  .dd-trigger:hover{ border-color:var(--primary); background:var(--primary-light); }
+  .dd-trigger .ic{ font-size:14px; flex-shrink:0; opacity:.85; }
+  .dd-trigger .txt{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; font-weight:700; }
+  .dd-trigger .arrow{ font-size:9px; transition:transform .18s; flex-shrink:0; }
+  .dd.open .dd-trigger .arrow{ transform:rotate(180deg); }
+  .dd.open .dd-trigger{ border-color:var(--primary); background:var(--primary-light); border-radius:8px 8px 0 0; }
+
+  .dd-panel{
+    position:absolute; top:100%; left:0; right:0;
+    background:#fff; border:1.5px solid var(--primary); border-top:none;
+    border-radius:0 0 8px 8px; box-shadow:0 10px 22px rgba(20,20,20,.10);
+    z-index:40; max-height:0; overflow:hidden; transition:max-height .2s ease;
+  }
+  .dd.open .dd-panel{ max-height:420px; overflow-y:auto; }
+
+  .dd-item{
+    padding:10px 14px; font-size:12.5px; font-weight:600;
+    color:#2a2f3a; cursor:pointer; border-bottom:1px solid #f1f2f4; transition:.12s; line-height:1.35;
+  }
+  .dd-item:last-child{ border-bottom:none; }
+  .dd-item:hover{ background:var(--primary-light); }
+  .dd-item.picked{ background:var(--primary-light); color:var(--primary-dark); font-weight:800; }
+
+  /* ---- 문제지 파일 목록 ---- */
+  .problem-list{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));
+    gap:10px; margin-top:14px; margin-bottom:16px;
+  }
+  .problem-btn{
+    padding:12px 10px; background:#fff; border:1.5px solid var(--line);
+    border-radius:8px; font-size:12px; font-weight:600; cursor:pointer;
+    text-align:center; transition:.15s;
+  }
+  .problem-btn:hover{ border-color:var(--primary); background:var(--primary-light); }
+  .problem-btn.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+
+  /* ---- 미리보기 ---- */
+  .preview-wrap{ margin-top:16px; position:relative; z-index:1; }
+  .sheet-preview{
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    min-height:540px; padding:28px 32px; overflow:auto;
+  }
+
+  .site-footer{
+    margin-top:14px; text-align:center; padding:16px;
+    color:var(--muted); font-size:12px;
+  }
+
+  .loading{ color:var(--muted); text-align:center; padding:20px; }
+  .error{ color:#d64545; text-align:center; padding:20px; }
+
+  @media (max-width:1300px){ .side-ads{ display:none; } }
+  @media (max-width:900px){
+    .matrix, .col-caption-row{ grid-template-columns: repeat(3, 1fr); }
+    .dd-trigger{ font-size:11px; padding:9px 6px; }
+    .site-nav{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="site-header">
+    <div class="site-logo">
+      <span class="name">구구단닷컴</span>
+    </div>
+    <div class="site-nav">
+      <a href="#" class="on">홈</a>
+      <a href="#">학습자료실</a>
+      <a href="#">랭킹</a>
+      <a href="#">문의하기</a>
+    </div>
+  </div>
+
+  <div class="top-ad ad-block" style="height:90px;">광고 영역 (728 × 90)</div>
+
+  <div class="layout">
+    <div class="side-ads">
+      <div class="ad-block ad-tall">광고<span class="sub">300 × 600</span></div>
+      <div class="ad-block ad-mid">광고<span class="sub">300 × 250</span></div>
+    </div>
+
+    <div class="core">
+      <div class="sheet-box">
+
+        <div class="brand-row">
+          <div>
+            <div class="brand-name">시험지 검색</div>
+            <div class="brand-sub">학년·학기·단원을 선택하면 해당 문제지 파일을 찾아드려요</div>
+          </div>
+          <a class="brand-url" href="#">www.googoodan.com</a>
+        </div>
+
+        <div class="col-caption-row">
+          <div>학년</div><div>학기</div><div>단원</div>
+        </div>
+
+        <div class="matrix" id="matrix">
+          <div class="dd" id="dd-grade">
+            <div class="dd-trigger" onclick="toggleDD('grade')"><span class="ic">🎒</span><span class="txt" id="dd-grade-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-grade-panel"></div>
+          </div>
+          <div class="dd" id="dd-semester">
+            <div class="dd-trigger" onclick="toggleDD('semester')"><span class="ic">📅</span><span class="txt" id="dd-semester-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-semester-panel"></div>
+          </div>
+          <div class="dd" id="dd-unit">
+            <div class="dd-trigger" onclick="toggleDD('unit')"><span class="ic">📖</span><span class="txt" id="dd-unit-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-unit-panel"></div>
+          </div>
+        </div>
+
+        <!-- 문제지 파일 목록 -->
+        <div class="problem-list" id="problemList"></div>
+
+        <!-- 미리보기 -->
+        <div class="preview-wrap">
+          <div class="sheet-preview" id="preview">
+            <div class="loading">학년·학기·단원을 선택하면 문제지가 표시됩니다</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="side-ads">
+      <div class="ad-block ad-tall">광고<span class="sub">300 × 600</span></div>
+      <div class="ad-block ad-mid">광고<span class="sub">250 × 200</span></div>
+    </div>
+  </div>
+
+  <div class="bottom-ad ad-block" style="height:90px;">광고 영역 (728 × 90)</div>
+
+  <div class="site-footer">
+    구구단닷컴 · 초등수학 자동 시험지 생성 사이트
+  </div>
+
+</div>
+
+<script>
+const GRADES = ['1학년','2학년','3학년','4학년','5학년','6학년'];
+const SEMESTERS = ['1학기','2학기'];
+
+let sel = { grade: -1, semester: -1, unit: '' };
+let openDD = null;
+let structure = {};
+let problems = [];
+
+// API로부터 폴더 구조 로드
+async function loadStructure() {
+  try {
+    const res = await fetch('structure.json');
+    structure = await res.json();
+    renderGradeMenu();
+  } catch (error) {
+    console.error('API 연결 오류:', error);
+    document.getElementById('preview').innerHTML =
+      '<div class="error">⚠️ 목록 파일(structure.json)을 불러오지 못했습니다.<br>update-site.bat 을 실행해 목록을 갱신해 주세요.</div>';
+  }
+}
+
+function renderGradeMenu() {
+  const panel = document.getElementById('dd-grade-panel');
+  panel.innerHTML = '';
+  Object.keys(structure).forEach((grade, idx) => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (idx === sel.grade ? ' picked' : '');
+    item.textContent = GRADES[idx] || grade;
+    item.onclick = () => {
+      sel.grade = idx;
+      sel.semester = -1;
+      sel.unit = '';
+      openDD = null;
+      renderGradeMenu();
+      renderSemesterMenu();
+      document.getElementById('dd-grade-label').textContent = GRADES[idx];
+      document.getElementById('dd-semester-label').textContent = '선택';
+      document.getElementById('dd-unit-label').textContent = '선택';
+      document.getElementById('problemList').innerHTML = '';
+      document.getElementById('preview').innerHTML = '<div class="loading">학기를 선택하세요</div>';
+    };
+    panel.appendChild(item);
+  });
+}
+
+function renderSemesterMenu() {
+  const panel = document.getElementById('dd-semester-panel');
+  panel.innerHTML = '';
+  if (sel.grade === -1) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesters = Object.keys(structure[gradeKey]);
+
+  semesters.forEach((sem, idx) => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (idx === sel.semester ? ' picked' : '');
+    item.textContent = SEMESTERS[idx] || sem;
+    item.onclick = () => {
+      sel.semester = idx;
+      sel.unit = '';
+      openDD = null;
+      renderSemesterMenu();
+      renderUnitMenu();
+      document.getElementById('dd-semester-label').textContent = SEMESTERS[idx];
+      document.getElementById('dd-unit-label').textContent = '선택';
+      document.getElementById('problemList').innerHTML = '';
+      document.getElementById('preview').innerHTML = '<div class="loading">단원을 선택하세요</div>';
+    };
+    panel.appendChild(item);
+  });
+}
+
+function renderUnitMenu() {
+  const panel = document.getElementById('dd-unit-panel');
+  panel.innerHTML = '';
+  if (sel.grade === -1 || sel.semester === -1) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+  const units = Object.keys(structure[gradeKey][semesterKey]);
+
+  units.forEach(unit => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (unit === sel.unit ? ' picked' : '');
+    item.textContent = unit;
+    item.onclick = () => {
+      sel.unit = unit;
+      openDD = null;
+      renderUnitMenu();
+      document.getElementById('dd-unit-label').textContent = unit;
+      loadProblems();
+    };
+    panel.appendChild(item);
+  });
+}
+
+async function loadProblems() {
+  if (sel.grade === -1 || sel.semester === -1 || !sel.unit) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+
+  const gradeNum = sel.grade + 1;
+  const semesterNum = sel.semester + 1;
+
+  try {
+    problems = (structure[gradeKey] && structure[gradeKey][semesterKey]
+                && structure[gradeKey][semesterKey][sel.unit]) || [];
+
+    const list = document.getElementById('problemList');
+    list.innerHTML = '';
+
+    if (problems.length === 0) {
+      list.innerHTML = '<div class="loading" style="grid-column:1/-1;">이 단원의 문제지가 없습니다</div>';
+      document.getElementById('preview').innerHTML = '<div class="loading">문제지가 없습니다</div>';
+      return;
+    }
+
+    problems.forEach((prob, idx) => {
+      const btn = document.createElement('div');
+      btn.className = 'problem-btn' + (idx === 0 ? ' active' : '');
+      btn.textContent = prob.name;
+      btn.onclick = () => loadProblemFile(idx);
+      list.appendChild(btn);
+    });
+
+    loadProblemFile(0);
+  } catch (error) {
+    console.error('문제지 로드 오류:', error);
+  }
+}
+
+function loadProblemFile(idx) {
+  if (idx < 0 || idx >= problems.length) return;
+
+  const prob = problems[idx];
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+
+  // 버튼 활성화 처리
+  document.querySelectorAll('.problem-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', i === idx);
+  });
+
+  // iframe으로 파일 로드
+  const preview = document.getElementById('preview');
+  const problemUrl = `work/${encodeURIComponent(gradeKey)}/${encodeURIComponent(semesterKey)}/${encodeURIComponent(sel.unit)}/${encodeURIComponent(prob.file)}`;
+  preview.innerHTML = `<iframe src="${problemUrl}" style="width:100%; height:800px; border:none; border-radius:10px;"></iframe>`;
+}
+
+function toggleDD(col) {
+  openDD = (openDD === col) ? null : col;
+  ['grade', 'semester', 'unit'].forEach(c => {
+    document.getElementById(`dd-${c}`).classList.toggle('open', c === openDD);
+  });
+}
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dd')) {
+    openDD = null;
+    ['grade', 'semester', 'unit'].forEach(c => {
+      document.getElementById(`dd-${c}`).classList.remove('open');
+    });
+  }
+});
+
+// 초기 로드
+loadStructure();
+</script>
+</body>
+</html>

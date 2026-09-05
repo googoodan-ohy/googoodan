@@ -1,5 +1,9 @@
-# This file marks that Git initialization is intended
-# Auto-created to support Git tracking
+# 의존성 / 시스템 파일
 node_modules/
 .DS_Store
+Thumbs.db
 *.swp
+
+# Git 초기 설정용 임시 스크립트 (역할 종료)
+init-git.bat
+init-git.ps1
