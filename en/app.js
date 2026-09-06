@@ -91,7 +91,7 @@ function writtenWork(p,show){
  let qi=0,top='';for(let i=0;i<chars.length;i++){if(chars[i]==='.')top+=txt('.',x0+qi*cell+5,20);else{top+=txt(q[qi]||'0',x0+(qi+1)*cell,20);qi++;}}
  let dividend='',di=0;for(const c of (decimal&&!show?[...String(p.a)]:chars)){if(c==='.')dividend+=txt('.',x0+di*cell+5,startY);else dividend+=txt(c,x0+(++di)*cell,startY);}
  const width=x0+Math.max(digits.length,String(p.a).replace('.','').length)*cell+16,height=startY+steps*42+4;
- return note+'<svg class="long-division" viewBox="0 0 '+width+' '+height+'" style="height:'+height+'px" aria-label="Long division: '+p.a+' divided by '+p.b+'"><g text-anchor="end" font-family="monospace" font-size="19" fill="#243e55">'+txt(decimal&&!show?p.b:b,x0-9,startY)+dividend+'<path d="M'+(x0-2)+' '+(startY+5)+'V29H'+(width-3)+'" fill="none" stroke="#243e55"/><g class="working '+(show?'':'concealed')+'" fill="#187b66" stroke-width="1">'+top+'<g stroke="#187b66">'+body.replaceAll('<text ','<text stroke="none" ')+'</g></g></g></svg>';
+ return note+'<svg class="long-division" viewBox="0 0 '+width+' '+height+'" style="height:'+height+'px" aria-label="Long division: '+p.a+' divided by '+p.b+'"><g text-anchor="end" font-family="monospace" font-size="19" fill="#243e55">'+txt(decimal&&!show?p.b:b,x0-9,startY)+dividend+'<path d="M'+(x0-2)+' '+(startY+5)+'V29H'+(width-3)+'" fill="none" stroke="#243e55"/><g class="working '+(show?'':'concealed')+'" fill="#c62828" stroke-width="1">'+top+'<g stroke="#c62828">'+body.replaceAll('<text ','<text stroke="none" ')+'</g></g></g></svg>';
 }
 
 function render(){
