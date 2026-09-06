@@ -71,7 +71,10 @@ function render(){
  document.querySelector('#mode').textContent=answers?'Answer key':'Practice worksheet';
  document.querySelector('.problems').classList.toggle('decimal-sheet',current.family==='Decimals');
  document.querySelector('.problems').classList.toggle('fraction-sheet',current.family==='Fractions');
- const rows=generate(current.id,seed);
+ const sample=generate(current.id,seed,1)[0];
+ const count=current.family==='Fractions'?20:sample.vertical?24:28;
+ const rows=generate(current.id,seed,count);
+ const paper=document.querySelector('.paper');paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/(current.family==='Fractions'?2:4)));
  document.querySelector('.problems').innerHTML=rows.map((p,i)=>{
  const value=answers?`<span class="answer">${mathHTML(p.answer)}</span>`:'<span class="blank"></span>';
  const display=x=>mathHTML(x);
@@ -80,8 +83,8 @@ function render(){
  if(p.op==='compare')html=`<span class="expression">${p.a} <span class="box">${answers?escape(p.answer):''}</span> ${p.b}</span>`;
  return `<div class="problem ${p.op==='missing'||p.op==='compare'?'concept':''}"><span class="number">${i+1}.</span>${html}</div>`;
  }).join('');
- document.querySelector('#set').textContent=`Set ${seed} · ${answers?'Answers':'20 questions'}`;
- document.querySelector('#status').textContent=current.title+(answers?', answer key':', 20 questions ready');
+ document.querySelector('#set').textContent=`Set ${seed} · ${answers?'Answers':count+' questions'}`;
+ document.querySelector('#status').textContent=current.title+(answers?', answer key':', '+count+' questions ready');
 }
 document.querySelector('#questions').onclick=()=>{answers=false;render();};
 document.querySelector('#answers').onclick=()=>{answers=true;trackWorksheet('worksheet_answer_view');render();};

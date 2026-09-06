@@ -45,12 +45,12 @@ for(const [code,group,op] of operations){
  }
  types.push({id:`integer-${code}`,family:'Integers',group,example:`-6 ${op} 3`,title:`${group} with negative numbers`,instruction:'Calculate with positive and negative integers.',config:{kind:'integer',code,op}});
 }
-function generate(id,seed){
+function generate(id,seed,count=20){
  let state=seed>>>0;
  const rand=(lo,hi)=>{state+=0x6D2B79F5;let t=state;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return lo+Math.floor(((t^t>>>14)>>>0)/4294967296*(hi-lo+1));};
  const rows=[],seen=new Set();
  let attempts=0;
- while(rows.length<20){
+ while(rows.length<count){
  if(++attempts>100000)throw Error('Insufficient question pool: '+id);
  const config=types.find(t=>t.id===id)?.config;
  if(config){

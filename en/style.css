@@ -9,3 +9,36 @@
 .choices{grid-template-columns:minmax(0,1fr)}.choice{min-height:72px;padding:12px 15px}.choices .example{font-size:23px;letter-spacing:-.3px}.example-answer{color:#16654c;font-weight:800}.choice small{margin-top:5px}.menu-ad{width:100%;max-width:300px;min-height:250px;margin:25px auto;background:repeating-linear-gradient(135deg,#eceee9,#eceee9 12px,#f1f2ee 12px,#f1f2ee 24px)}.ad-banner{border-color:#b9beb3;color:#73796c}.ad-banner span{font-weight:bold}.ad-banner:not(.menu-ad){min-height:90px}@media(max-width:760px){.choices{grid-template-columns:1fr;max-height:none;overflow:visible}.menu-ad{min-height:100px}.choices .example{font-size:22px}}@media print{.menu-ad{display:none!important}}
 .filter-row:has(.number-category){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.filter-row .number-category{display:flex;flex-direction:column;align-items:center;gap:5px;white-space:normal;padding:8px}.number-category svg{width:90px;height:48px}.number-category>span{font-size:12px}.example .fraction{font-size:17px}.mixed-whole{display:inline-block;margin-right:3px}.fraction-sheet{grid-template-columns:repeat(2,1fr)}.fraction-sheet .problem{min-height:95px}.fraction-sheet .expression{font-size:20px;display:inline-block;margin-right:12px}.fraction-sheet .blank{min-width:40px}.fraction-sheet .answer{display:inline-block}.result{font-size:17px}.fraction-sheet .problem>.answer{font-size:18px}@media print{.fraction-sheet{grid-template-columns:repeat(2,1fr)}.fraction-sheet .problem{height:17mm;min-height:0;padding-top:14px}.fraction-sheet .number{top:2px}.fraction-sheet .expression{margin-top:3px}.fraction-sheet .fraction{font-size:16px}.result{font-size:15px}}
 .print-controls{margin-left:auto;display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:10px}.print-selection{display:flex;gap:10px;border:1px solid #cfd6d1;border-radius:8px;padding:6px 9px;margin:0;font-size:12px;white-space:nowrap}.print-selection legend{font-size:10px;color:#626e69;padding:0 4px}.print-selection label{display:flex;align-items:center;gap:4px;cursor:pointer}.print-selection input{accent-color:#16745a;width:16px;height:16px;margin:0}#print:disabled{opacity:.45;cursor:not-allowed}#print-bundle{display:none}@media(max-width:760px){.toolbar{align-items:flex-end}.print-controls{gap:7px;flex:1}.print-selection{padding:6px}.tabs button{padding:9px}}@media print{body.printing-bundle>.layout{display:none!important}body.printing-bundle>#print-bundle{display:block}#print-bundle>.paper{break-after:page;page-break-after:always}#print-bundle>.paper:last-child{break-after:auto;page-break-after:auto}}
+
+/* Colorful practice with a consistent printable page frame. */
+.paper{--tone:#16867e;--wash:#eaf7f4;display:flex;flex-direction:column;min-height:1040px;padding:28px 32px;border-radius:14px;color:#243e55}
+.paper[data-family="Fractions"]{--tone:#8760b0;--wash:#f4effa}.paper[data-family="Decimals"]{--tone:#287ba8;--wash:#ecf5fb}.paper[data-family="Integers"]{--tone:#ad6630;--wash:#fff5e7}
+.paper-top{color:var(--tone);align-items:center;letter-spacing:.7px}.paper-top b{font-size:14px}
+.sheet-hero{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--wash);border:1px solid var(--tone);border-radius:16px;padding:14px 16px;margin:14px 0}
+.sheet-hero>div{min-width:0;flex:1}.adventure-label{font-size:9px;letter-spacing:1px;font-weight:bold;color:var(--tone)}
+.paper .sheet-hero h2{font-size:22px;line-height:1.2;margin:7px 0}.paper .instructions{margin:0;font-size:12px;line-height:1.35;color:#39516a}
+.math-buddy{width:74px;height:74px;flex-shrink:0}.fields{border-bottom:1px solid #a9c0ce;padding:0 0 12px}
+.problems{gap:8px;margin-top:14px;flex:1;grid-template-rows:repeat(var(--rows),1fr)}
+.problem,.fraction-sheet .problem{border:1px solid #d6e4e9;border-radius:10px;padding:23px 8px 8px;min-height:100px;background:linear-gradient(135deg,var(--wash),white 55%)}
+.number{top:6px;left:7px;border-radius:50%;background:var(--wash);color:var(--tone);font-weight:bold;width:19px;height:19px;text-align:center;line-height:19px}
+.expression{margin-top:8px;font-size:18px}.vertical{font-size:24px;letter-spacing:1px;width:90px}
+.answer{color:#187b66}.box{border-radius:6px;border-color:#8eabbc}
+.finish-line{display:flex;align-items:center;justify-content:space-between;color:var(--tone);font-size:11px;font-weight:bold;margin-top:12px}.finish-line>span:last-child{font-size:23px;color:#b67b27;letter-spacing:6px}
+.paper-footer{border-top:2px solid var(--tone);padding-top:9px;margin-top:9px;color:#45627a}
+@media(max-width:760px){.paper{padding:20px 14px;min-height:0}.problems{grid-template-rows:none}.paper .sheet-hero h2{font-size:18px}.math-buddy{width:54px;height:54px}.sheet-hero{padding:12px}.adventure-label{font-size:8px}}
+@media print{
+.paper{height:250mm;min-height:250mm;max-height:250mm;padding:0;border:0;border-radius:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+.paper-top{font-size:9px}.paper-top b{font-size:12px}.sheet-hero{margin:3mm 0;padding:3mm 4mm;border-radius:4mm;min-height:26mm}
+.paper .sheet-hero h2{font-size:19px;margin:5px 0}.math-buddy{width:19mm;height:19mm}.paper .instructions{font-size:11px}
+.fields{padding-bottom:3mm;flex-shrink:0}
+.problems,.decimal-sheet{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(var(--rows),minmax(0,1fr));gap:2mm;margin-top:3mm;min-height:0}
+.fraction-sheet{grid-template-columns:repeat(2,minmax(0,1fr))}
+.problem,.fraction-sheet .problem{height:auto;min-height:0;padding:6mm 2mm 1mm;break-inside:avoid}
+.number,.fraction-sheet .number{top:1mm;left:1mm;font-size:9px;width:15px;height:15px;line-height:15px}
+.expression{font-size:17px;margin-top:1mm}.decimal-sheet .expression{font-size:15px}
+.vertical{font-size:22px;line-height:1.2;width:85px}.result{font-size:15px}
+.fraction-sheet .expression{font-size:17px;margin-top:0;margin-right:6px}.fraction-sheet .fraction{font-size:14px}
+.fraction-sheet .problem{padding-top:4mm}.fraction-sheet .problem>.answer{font-size:16px}
+.finish-line{margin-top:2mm;flex-shrink:0}.finish-line>span:last-child{font-size:18px}
+.paper-footer{margin-top:2mm;padding-top:2mm;min-height:7mm;flex-shrink:0}
+}
