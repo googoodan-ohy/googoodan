@@ -70,11 +70,11 @@ function writtenWork(p,show){
  if(decimal){
   const places=(String(p.b).split('.')[1]||'').length,scale=10**places;
   a=Math.round(a*scale*100)/100;b=Math.round(b*scale);
-  note='<div class="division-note">'+p.a+' ÷ '+p.b+(places?' = '+a+' ÷ '+b:'')+'</div>';
+  note='<div class="division-note">'+p.a+' ÷ '+p.b+(places?'<span class="'+(show?'':'concealed')+'"> = '+a+' ÷ '+b+'</span>':'')+'</div>';
  }
  const precision=decimal?Math.max((String(a).split('.')[1]||'').length,(String(p.answer).split('.')[1]||'').length):0;
  const input=decimal?a.toFixed(precision):String(a),chars=[...input],digits=chars.filter(c=>c!=='.');
- const x0=Math.max(58,String(b).length*15+12),cell=15,startY=49;
+ const x0=Math.max(58,String(b).length*15+12,String(p.b).length*15+12),cell=15,startY=49;
  const txt=(v,x,y,extra='')=>'<text x="'+x+'" y="'+y+'" '+extra+'>'+v+'</text>';
  let rem=0,started=false,body='',q='',steps=0;
  for(let i=0;i<digits.length;i++){
@@ -89,9 +89,9 @@ function writtenWork(p,show){
   steps++;
  }
  let qi=0,top='';for(let i=0;i<chars.length;i++){if(chars[i]==='.')top+=txt('.',x0+qi*cell+5,20);else{top+=txt(q[qi]||'0',x0+(qi+1)*cell,20);qi++;}}
- let dividend='',di=0;for(const c of chars){if(c==='.')dividend+=txt('.',x0+di*cell+5,startY);else dividend+=txt(c,x0+(++di)*cell,startY);}
- const width=x0+digits.length*cell+16,height=startY+steps*42+4;
- return note+'<svg class="long-division" viewBox="0 0 '+width+' '+height+'" style="height:'+height+'px" aria-label="Long division: '+p.a+' divided by '+p.b+'"><g text-anchor="end" font-family="monospace" font-size="19" fill="#243e55">'+txt(b,x0-9,startY)+dividend+'<path d="M'+(x0-2)+' '+(startY+5)+'V29H'+(width-3)+'" fill="none" stroke="#243e55"/><g class="working '+(show?'':'concealed')+'" fill="#187b66" stroke-width="1">'+top+'<g stroke="#187b66">'+body.replaceAll('<text ','<text stroke="none" ')+'</g></g></g></svg>';
+ let dividend='',di=0;for(const c of (decimal&&!show?[...String(p.a)]:chars)){if(c==='.')dividend+=txt('.',x0+di*cell+5,startY);else dividend+=txt(c,x0+(++di)*cell,startY);}
+ const width=x0+Math.max(digits.length,String(p.a).replace('.','').length)*cell+16,height=startY+steps*42+4;
+ return note+'<svg class="long-division" viewBox="0 0 '+width+' '+height+'" style="height:'+height+'px" aria-label="Long division: '+p.a+' divided by '+p.b+'"><g text-anchor="end" font-family="monospace" font-size="19" fill="#243e55">'+txt(decimal&&!show?p.b:b,x0-9,startY)+dividend+'<path d="M'+(x0-2)+' '+(startY+5)+'V29H'+(width-3)+'" fill="none" stroke="#243e55"/><g class="working '+(show?'':'concealed')+'" fill="#187b66" stroke-width="1">'+top+'<g stroke="#187b66">'+body.replaceAll('<text ','<text stroke="none" ')+'</g></g></g></svg>';
 }
 
 function render(){
