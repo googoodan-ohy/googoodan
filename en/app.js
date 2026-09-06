@@ -86,6 +86,19 @@ function render(){
 document.querySelector('#questions').onclick=()=>{answers=false;render();};
 document.querySelector('#answers').onclick=()=>{answers=true;trackWorksheet('worksheet_answer_view');render();};
 document.querySelector('#new').onclick=()=>{seed=(seed+1)>>>0;trackWorksheet('worksheet_regenerate');render();};
-document.querySelector('#print').onclick=()=>{trackWorksheet('worksheet_print_click');window.print();};
+function clearPrintBundle(){document.querySelector('#print-bundle')?.remove();document.body.classList.remove('printing-bundle');}
+function preparePrintBundle(){
+ clearPrintBundle();
+ const modes=[];if(document.querySelector('#print-worksheet').checked)modes.push(false);if(document.querySelector('#print-answer').checked)modes.push(true);
+ if(!modes.length)return;
+ const original=answers,bundle=document.createElement('div');bundle.id='print-bundle';
+ try{for(const mode of modes){answers=mode;render();const page=document.querySelector('.paper').cloneNode(true);page.removeAttribute('id');page.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));bundle.append(page);}}finally{answers=original;render();}
+ document.body.append(bundle);document.body.classList.add('printing-bundle');
+}
+function updatePrintSelection(){document.querySelector('#print').disabled=!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
+for(const id of ['print-worksheet','print-answer'])document.querySelector('#'+id).onchange=updatePrintSelection;
+window.addEventListener('beforeprint',preparePrintBundle);
+window.addEventListener('afterprint',clearPrintBundle);
+document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};
 window.addEventListener('popstate',()=>{current=types.find(t=>location.pathname.endsWith('/'+t.id+'.html'))||types[0];family=current.family;operation=current.group;browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic';grade=new URLSearchParams(location.search).get('grade')||'1';menu();answers=false;render();});
 render();
