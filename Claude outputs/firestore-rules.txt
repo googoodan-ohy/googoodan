@@ -85,5 +85,13 @@ service cloud.firestore {
                       && (request.auth.uid == resource.data.authorUid || isAdmin());
       }
     }
+
+    // ---- 방문자 카운터 (stats/visits) : 로그인 안 한 방문자도 카운트를 올릴 수 있어야 함 ----
+    match /stats/visits {
+      allow read: if true;
+      allow write: if request.resource.data.total is int
+                   && request.resource.data.today is int
+                   && request.resource.data.todayDate is string;
+    }
   }
 }
