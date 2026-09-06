@@ -1,0 +1,89 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email == 'ohy0973@gmail.com';
+    }
+
+    // ---- 이용후기 (posts) : 로그인한 누구나 글쓰기 ----
+    match /posts/{postId} {
+      allow read: if true;
+      allow create: if request.auth != null
+                    && request.resource.data.authorUid == request.auth.uid
+                    && request.resource.data.title is string
+                    && request.resource.data.title.size() > 0
+                    && request.resource.data.title.size() < 200
+                    && request.resource.data.contentHtml is string
+                    && request.resource.data.contentHtml.size() > 0
+                    && request.resource.data.contentHtml.size() < 20000;
+      allow update: if request.auth != null && request.auth.uid == resource.data.authorUid;
+      allow delete: if request.auth != null && request.auth.uid == resource.data.authorUid;
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if request.auth != null
+                      && request.resource.data.authorUid == request.auth.uid
+                      && request.resource.data.text is string
+                      && request.resource.data.text.size() > 0
+                      && request.resource.data.text.size() < 1000;
+        allow update: if request.auth != null && request.auth.uid == resource.data.authorUid;
+        allow delete: if request.auth != null
+                      && (request.auth.uid == resource.data.authorUid
+                          || request.auth.uid == get(/databases/$(database)/documents/posts/$(postId)).data.authorUid);
+      }
+    }
+
+    // ---- 공지사항 (notices) : 관리자만 글쓰기, 댓글은 로그인한 누구나 ----
+    match /notices/{postId} {
+      allow read: if true;
+      allow create: if isAdmin()
+                    && request.resource.data.title is string
+                    && request.resource.data.title.size() > 0
+                    && request.resource.data.title.size() < 200
+                    && request.resource.data.contentHtml is string
+                    && request.resource.data.contentHtml.size() > 0
+                    && request.resource.data.contentHtml.size() < 20000;
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if request.auth != null
+                      && request.resource.data.authorUid == request.auth.uid
+                      && request.resource.data.text is string
+                      && request.resource.data.text.size() > 0
+                      && request.resource.data.text.size() < 1000;
+        allow update: if request.auth != null && request.auth.uid == resource.data.authorUid;
+        allow delete: if request.auth != null
+                      && (request.auth.uid == resource.data.authorUid || isAdmin());
+      }
+    }
+
+    // ---- 학습정보 (study_info) : 관리자만 글쓰기, 댓글은 로그인한 누구나 ----
+    match /study_info/{postId} {
+      allow read: if true;
+      allow create: if isAdmin()
+                    && request.resource.data.title is string
+                    && request.resource.data.title.size() > 0
+                    && request.resource.data.title.size() < 200
+                    && request.resource.data.contentHtml is string
+                    && request.resource.data.contentHtml.size() > 0
+                    && request.resource.data.contentHtml.size() < 20000;
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if request.auth != null
+                      && request.resource.data.authorUid == request.auth.uid
+                      && request.resource.data.text is string
+                      && request.resource.data.text.size() > 0
+                      && request.resource.data.text.size() < 1000;
+        allow update: if request.auth != null && request.auth.uid == resource.data.authorUid;
+        allow delete: if request.auth != null
+                      && (request.auth.uid == resource.data.authorUid || isAdmin());
+      }
+    }
+  }
+}

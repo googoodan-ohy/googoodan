@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>이용후기 게시판 - 구구단닷컴</title>
+<title>학습정보 - 구구단닷컴</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css">
 <style>
   :root{
@@ -303,10 +303,10 @@
     <div class="side-menu">
       <div class="menu-card">
         <a class="menu-link" href="notice.html"><span class="ic">📢</span>공지사항</a>
-        <a class="menu-link" href="info.html"><span class="ic">📚</span>학습정보</a>
+        <a class="menu-link active" href="info.html"><span class="ic">📚</span>학습정보</a>
         <a class="menu-link" href="#"><span class="ic">❓</span>이 사이트 사용법</a>
         <a class="menu-link" href="index.html"><span class="ic">🔍</span>시험지검색</a>
-        <a class="menu-link active" href="board.html"><span class="ic">💬</span>이용후기</a>
+        <a class="menu-link" href="board.html"><span class="ic">💬</span>이용후기</a>
       </div>
     </div>
 
@@ -315,15 +315,15 @@
 
         <div class="brand-row">
           <div>
-            <div class="brand-name">이용후기 게시판</div>
-            <div class="brand-sub">누구나 자유롭게 읽을 수 있어요. 글쓰기·댓글은 로그인 후 이용해주세요</div>
+            <div class="brand-name">학습정보</div>
+            <div class="brand-sub">초등수학 학습에 도움되는 정보를 정리해드려요. 댓글은 로그인 후 남길 수 있어요</div>
           </div>
           <div class="auth-area" id="authArea"></div>
         </div>
 
         <div class="board-toolbar">
           <div class="post-count" id="postCount">전체 글 0개</div>
-          <button class="btn-write" id="writeBtn" onclick="openWrite()">✏️ 글쓰기</button>
+          <button class="btn-write hidden" id="writeBtn" onclick="openWrite()">📚 정보 작성</button>
         </div>
 
         <div class="post-list" id="postList"></div>
@@ -352,12 +352,7 @@
 <div class="modal-overlay hidden" id="writeModal">
   <div class="modal-box">
     <div id="writeLoggedIn">
-      <h3>새 글 쓰기</h3>
-      <select id="wCategory">
-        <option value="자유">자유</option>
-        <option value="질문">질문</option>
-        <option value="후기">후기</option>
-      </select>
+      <h3>새 학습정보 쓰기</h3>
       <input type="text" id="wTitle" placeholder="제목을 입력하세요">
       <div id="wToolbar">
         <span class="ql-formats">
@@ -412,9 +407,9 @@
 <script src="board-common.js"></script>
 <script>
   initBoard({
-    collection: 'posts',
-    writeMode: 'open',
-    categories: ['자유', '질문', '후기']
+    collection: 'study_info',
+    writeMode: 'admin',
+    categories: null
   });
 </script>
 </body>
