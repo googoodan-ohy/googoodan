@@ -7,3 +7,4 @@
 .grade-sheet .hero h2.long-title{font-size:19px}
 @media(max-width:480px){.grade-sheet .hero h2{font-size:20px}.grade-sheet .hero h2.long-title{font-size:17px}.grade-sheet .sheet-head .edition{max-width:52%;text-align:right}}
 @media print{.grade-sheet .hero h2{font-size:22px}.grade-sheet .hero h2.long-title{font-size:18px}}
+.arithmetic-back{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:18px 0 10px;padding:13px 10px;background:white;border:1.5px solid #087b78;border-radius:10px;color:#086e6b;font:700 13px Arial,sans-serif;text-decoration:none}.arithmetic-back>span:first-child{font-size:17px;white-space:nowrap}.arithmetic-back:hover{background:#e8f6f2}.arithmetic-back:focus-visible{outline:3px solid #cc6735;outline-offset:3px}@media print{.arithmetic-back{display:none!important}}
