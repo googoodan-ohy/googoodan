@@ -59,6 +59,41 @@ menu();
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 let trackedWorksheet=null;
 function trackWorksheet(event){window.GDAnalytics?.track(event,{worksheet_id:current.id,worksheet_name:current.title,edition:'en',number_family:current.family,operation:current.group,sheet_mode:answers?'answer':'worksheet'});}
+function writtenWork(p,show){
+ const natural=current.family==='Natural numbers',decimal=current.family==='Decimals';
+ if(p.op==='×'&&p.vertical&&natural){
+  const a=Number(p.a),b=String(p.b),partials=[...b].reverse().map((d,i)=>a*Number(d)*10**i);
+  return '<div class="worked multiplication"><div>'+a+'</div><div class="work-rule">× '+b+'</div><div class="working '+(show?'':'concealed')+'">'+(b.length>1?partials.map((v,i)=>'<div>'+(i===partials.length-1?'+ ':'')+v+'</div>').join(''):'')+'<div class="'+(b.length>1?'work-total':'')+'">'+p.answer+'</div></div></div>';
+ }
+ if(p.op!=='÷'||!natural&&!decimal)return null;
+ let a=Number(p.a),b=Number(p.b),note='';
+ if(decimal){
+  const places=(String(p.b).split('.')[1]||'').length,scale=10**places;
+  a=Math.round(a*scale*100)/100;b=Math.round(b*scale);
+  note='<div class="division-note">'+p.a+' ÷ '+p.b+(places?' = '+a+' ÷ '+b:'')+'</div>';
+ }
+ const precision=decimal?Math.max((String(a).split('.')[1]||'').length,(String(p.answer).split('.')[1]||'').length):0;
+ const input=decimal?a.toFixed(precision):String(a),chars=[...input],digits=chars.filter(c=>c!=='.');
+ const x0=Math.max(58,String(b).length*15+12),cell=15,startY=49;
+ const txt=(v,x,y,extra='')=>'<text x="'+x+'" y="'+y+'" '+extra+'>'+v+'</text>';
+ let rem=0,started=false,body='',q='',steps=0;
+ for(let i=0;i<digits.length;i++){
+  const n=rem*10+Number(digits[i]),d=Math.floor(n/b);rem=n-d*b;
+  if(!started&&d===0&&i<digits.length-1&&i<(input.includes('.')?input.indexOf('.')-1:digits.length-1)){q+=' ';continue;}
+  started=true;q+=String(d);
+  const x=x0+(i+1)*cell;
+  if(steps>0)body+=txt(n,x,startY+steps*42-2);
+  body+=txt('−'+d*b,x,startY+steps*42+17);
+  body+='<path d="M'+(x-Math.max(String(n).length,String(d*b).length+1)*cell)+' '+(startY+steps*42+22)+'H'+(x+3)+'"/>';
+  if(i===digits.length-1)body+=txt(rem,x,startY+steps*42+39);
+  steps++;
+ }
+ let qi=0,top='';for(let i=0;i<chars.length;i++){if(chars[i]==='.')top+=txt('.',x0+qi*cell+5,20);else{top+=txt(q[qi]||'0',x0+(qi+1)*cell,20);qi++;}}
+ let dividend='',di=0;for(const c of chars){if(c==='.')dividend+=txt('.',x0+di*cell+5,startY);else dividend+=txt(c,x0+(++di)*cell,startY);}
+ const width=x0+digits.length*cell+16,height=startY+steps*42+4;
+ return note+'<svg class="long-division" viewBox="0 0 '+width+' '+height+'" style="height:'+height+'px" aria-label="Long division: '+p.a+' divided by '+p.b+'"><g text-anchor="end" font-family="monospace" font-size="19" fill="#243e55">'+txt(b,x0-9,startY)+dividend+'<path d="M'+(x0-2)+' '+(startY+5)+'V29H'+(width-3)+'" fill="none" stroke="#243e55"/><g class="working '+(show?'':'concealed')+'" fill="#187b66" stroke-width="1">'+top+'<g stroke="#187b66">'+body.replaceAll('<text ','<text stroke="none" ')+'</g></g></g></svg>';
+}
+
 function render(){
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
  document.title=current.title+' Worksheets | Googoodan';
@@ -72,15 +107,20 @@ function render(){
  document.querySelector('.problems').classList.toggle('decimal-sheet',current.family==='Decimals');
  document.querySelector('.problems').classList.toggle('fraction-sheet',current.family==='Fractions');
  const sample=generate(current.id,seed,1)[0];
- const count=current.family==='Fractions'?20:sample.vertical?24:28;
+ const isDivision=sample.op==='÷'&&['Natural numbers','Decimals'].includes(current.family);
+ const isMultiplication=sample.op==='×'&&sample.vertical;
+ const digits=String(sample.b).length;
+ const cols=isDivision?2:isMultiplication?3:current.family==='Fractions'?2:4;
+ const count=isDivision?(current.family==='Decimals'?4:(digits>=4?2:Math.max(String(sample.a).length,digits)>=3?4:6)):isMultiplication?(digits>=4?6:digits>=3?9:12):current.family==='Fractions'?20:sample.vertical?24:28;
  const rows=generate(current.id,seed,count);
- const paper=document.querySelector('.paper');paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/(current.family==='Fractions'?2:4)));
+ const paper=document.querySelector('.paper');paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/cols));paper.style.setProperty('--cols',cols);paper.classList.toggle('written-sheet',isDivision||isMultiplication);
  document.querySelector('.problems').innerHTML=rows.map((p,i)=>{
  const value=answers?`<span class="answer">${mathHTML(p.answer)}</span>`:'<span class="blank"></span>';
  const display=x=>mathHTML(x);
  let html=p.vertical?`<div class="vertical"><div>${p.a}</div><div class="bottom"><span>${p.op}</span><span>${p.b}</span></div><div class="result">${answers?value:'&nbsp;'}</div></div>`:`<span class="expression">${display(p.a)} ${p.op} ${display(p.b)} =</span>${value}`;
  if(p.op==='missing')html=`<span class="expression">${p.a} + <span class="box">${answers?escape(p.answer):''}</span> = ${p.a+p.b}</span>`;
  if(p.op==='compare')html=`<span class="expression">${p.a} <span class="box">${answers?escape(p.answer):''}</span> ${p.b}</span>`;
+ html=writtenWork(p,answers)||html;
  return `<div class="problem ${p.op==='missing'||p.op==='compare'?'concept':''}"><span class="number">${i+1}.</span>${html}</div>`;
  }).join('');
  document.querySelector('#set').textContent=`Set ${seed} · ${answers?'Answers':count+' questions'}`;
