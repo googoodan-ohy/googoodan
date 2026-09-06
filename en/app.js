@@ -45,6 +45,7 @@ function menu(){
  const h=document.createElement('h2');h.className='menu-heading';h.textContent=family+' · '+operation;groups.append(h);
  addChoices(types.filter(t=>t.family===family&&t.group===operation));
  }else{
+ const preview=document.createElement('a');preview.className='choice';preview.href=grade==='K'?'kindergarten.html':'grades.html?grade='+grade;preview.innerHTML='<span class="example">'+(grade==='K'?'Kindergarten adventures':'Grade '+grade+' math journals')+' →</span><small>Colorful pictures · 3 activities per sheet</small>';groups.append(preview);
  const note=document.createElement('p');note.className='curriculum-note';note.textContent='Common Core · K–5 sample skills. State and school curricula vary.';groups.append(note);
  row(['K','1','2','3','4','5'],grade,label=>{grade=label;menu();});
  for(const c of Curriculum.filter(c=>c.grade===grade)){
