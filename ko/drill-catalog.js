@@ -28,6 +28,22 @@ for(const id of ['5-1-2','5-1-4']){const u=unit(id);for(const [k,n]of [['factor'
 for(const [id,op]of [['5-1-5','add'],['5-2-2','mul'],['6-1-1','div'],['6-2-1','div']]){const u=unit(id),ops=op==='add'?['add','sub']:[op];for(const code of ops){source(u,`fraction-${code}-different`,'진분수 '+labels[code]+' 진분수',id==='6-1-1'?'기초 보충':'기본 연산');for(const a of ['whole','proper','improper','mixed'])for(const b of ['whole','proper','improper','mixed']){if(a==='whole'&&b==='whole'||a==='proper'&&b==='proper'||id==='6-1-1'&&b!=='whole')continue;const src=`fraction-${code}-${a}-${b}`;if(W.types.some(t=>t.id===src)){const names={whole:'자연수',proper:'진분수',improper:'가분수',mixed:'대분수'};source(u,src,names[a]+' '+labels[code]+' '+names[b]);}}}if(id==='6-1-1')u.drills=u.drills.filter(p=>p.source!=='fraction-div-different');prereq(u,['5-1-5','6-2-1'].includes(id));if(id==='5-1-5')for(const c of ['add','sub'])source(u,`fraction-${c}-same`,'같은 분모 '+labels[c],'기초 보충');if(op==='div')source(u,'fraction-mul-different','분수 곱셈 복습','기초 보충');extensions(u);}
 {const u=unit('5-2-4');decimals(u,['mul'],2);natural(u,'mul',[[2,1],[2,2]],'기초 보충');extensions(u);}
 for(const id of ['6-1-3','6-2-3']){const u=unit(id);decimals(u,['div'],2,id==='6-1-3');natural(u,'div',[[2,1],[3,1]],'기초 보충');source(u,'decimal-mul-1','소수 곱셈 검산','기초 보충');extensions(u);}
+
+// Remedial lists stop at the immediately preceding grade; same-grade earlier concepts remain useful.
+function review(u,src,label,learned,layout='horizontal',extra={}){const id=u.id+'--review-'+src+'-'+layout,base=W.types.find(t=>t.id===src);if(!base)throw Error('Unknown review source '+src);const p={id,source:src,title:label,group:'기초 보충',mode:'basic',layout,reviewGrade:learned,...extra};u.drills.push(p);profiles.set(id,p);W.types.push({...base,id,config:base.config?{...base.config}:undefined});}
+for(const u of units){if(u.grade<4)continue;
+const keep=p=>{if(p.group!=='기초 보충')return true;
+if(u.grade===4){if(p.tables||p.source==='natural-mul-1-1')return false;if(u.id==='4-2-3')return false;return true;}
+if(u.grade===5){if(p.tables||['improper','mixed'].includes(p.skill))return false;if(p.source.startsWith('natural-')||p.source==='divide')return false;return true;}
+if(u.grade===6){if(['improper','mixed'].includes(p.skill)||p.source.startsWith('natural-div-'))return false;return true;}return true;};
+u.drills=u.drills.filter(keep);
+if(u.id==='4-2-3'){for(const op of ['add','sub'])for(const layout of ['horizontal','vertical'])review(u,'natural-'+op+'-3-3','3학년 복습 · 세 자리 '+labels[op]+' · '+(layout==='vertical'?'세로셈':'가로셈'),3,layout);}
+if(['5-1-1','5-1-2','5-1-4','5-2-4'].includes(u.id)){for(const op of ['mul','div']){if(u.id==='5-2-4'&&op==='div')continue;for(const layout of ['horizontal','vertical'])review(u,'natural-'+op+'-3-2','4학년 복습 · 세 자리와 두 자리 '+labels[op]+' · '+(layout==='vertical'?'세로셈':'가로셈'),4,layout);}}
+if(u.id==='5-2-2')for(const op of ['add','sub'])review(u,'fraction-'+op+'-same','4학년 복습 · 같은 분모 '+labels[op],4);
+if(u.id==='6-1-3'||u.id==='6-2-3'){for(const layout of ['horizontal','vertical'])review(u,'decimal-mul-2','5학년 복습 · 소수 곱셈 · '+(layout==='vertical'?'세로셈':'가로셈'),5,layout);}
+for(const p of u.drills.filter(p=>p.group==='기초 보충')){if(!p.reviewGrade)p.reviewGrade=(p.skill&&['factor','multiple','common-factor','common-multiple','gcd','lcm','reduce','common'].includes(p.skill))?5:u.grade-1;}
+}
+
 const order=['기본 연산','기초 보충','빈칸 응용','문장 연습'];for(const u of units)u.drills.sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group));
 root.DrillCatalog={units:units.sort((a,b)=>a.id.localeCompare(b.id)),profiles};
 })(globalThis);
