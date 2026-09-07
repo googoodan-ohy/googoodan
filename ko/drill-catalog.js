@@ -44,6 +44,8 @@ if(u.id==='6-1-3'||u.id==='6-2-3'){for(const layout of ['horizontal','vertical']
 for(const p of u.drills.filter(p=>p.group==='기초 보충')){if(!p.reviewGrade)p.reviewGrade=(p.skill&&['factor','multiple','common-factor','common-multiple','gcd','lcm','reduce','common'].includes(p.skill))?5:u.grade-1;}
 }
 
+// Read operand-to-operand titles naturally; retain nouns in names such as '분수의 곱셈'.
+for(const u of units)for(const p of u.drills){p.title=p.title.replace(/(덧셈|뺄셈|곱셈|나눗셈)(?= (?:자연수|진분수|가분수|대분수|소수))/g,m=>({덧셈:'더하기',뺄셈:'빼기',곱셈:'곱하기',나눗셈:'나누기'}[m]));const t=W.types.find(t=>t.id===p.id);if(t)t.title=p.title;}
 const order=['기본 연산','기초 보충','빈칸 응용','문장 연습'];for(const u of units)u.drills.sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group));
 root.DrillCatalog={units:units.sort((a,b)=>a.id.localeCompare(b.id)),profiles};
 })(globalThis);
