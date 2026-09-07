@@ -5,3 +5,9 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{font-family:"Malgun Got
 
 /* Keep equivalent fraction forms together, while allowing the chain to wrap. */
 .fraction-form{display:inline-block;white-space:nowrap}.fraction-equals{white-space:pre}.fraction-sheet .problem>.answer{max-width:100%;line-height:1.25}.choice .example{white-space:normal;line-height:1.65}.choice .example-answer{display:inline;overflow-wrap:normal}
+
+.right-ad{grid-column:2;justify-self:center;width:100%;max-width:790px}.right-ad-slot{border:1px dashed #b7c6ca;background:repeating-linear-gradient(135deg,#f0f5f6,#f0f5f6 12px,#e8eff1 12px,#e8eff1 24px);min-height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#637b85;text-align:center}.right-ad-slot>span{font-size:10px;letter-spacing:2px}.right-ad-slot>strong{font-size:14px}.right-ad-slot>small{font-size:11px}
+@media screen and (min-width:1280px){.layout{max-width:1580px;grid-template-columns:300px minmax(0,1fr) 160px;gap:24px}.right-ad{grid-column:3;width:160px;margin-top:72px}.right-ad-slot{height:600px}}
+@media screen and (max-width:1279px){.right-ad-slot>small:first-of-type{display:none}}
+@media screen and (max-width:760px){.right-ad{margin:24px auto}}
+@media print{.right-ad{display:none!important}}
