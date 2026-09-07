@@ -9,8 +9,8 @@ for(const t of types){
 }
 let koBrowse='topic',koGrade=1;
 function koMenu(){
- groups.innerHTML='<div class="browse-tabs"><button id="ko-topic" aria-pressed="'+(koBrowse==='topic')+'">종합연산</button><a class="drill-menu-link" href="/ko/drills.html">학년단원별연산</a><button id="ko-grade" aria-pressed="'+(koBrowse==='grade')+'">학년단원별유형</button></div>';
- document.querySelector('#ko-topic').onclick=()=>{koBrowse='topic';menu()};
+ groups.innerHTML='<nav class="edition-tabs" aria-label="문제지 메뉴"><a id="ko-topic" href="/" aria-current="page">종합연산</a><a class="drill-menu-link" href="/ko/drills.html">학년단원별연산</a><a id="ko-grade" href="/ko/units.html">학년단원별유형</a></nav>';
+ document.querySelector('#ko-topic').onclick=e=>{e.preventDefault();koBrowse='topic';menu()};
  document.querySelector('#ko-grade').onclick=()=>{location.href='/ko/units.html'};
  if(koBrowse==='grade'){
   const nav=document.createElement('div');nav.className='filter-row';
