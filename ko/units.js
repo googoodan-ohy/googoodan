@@ -1,5 +1,5 @@
 (function(){
-const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const params=new URLSearchParams(location.search);
 let grade=Math.min(6,Math.max(1,+params.get('grade')||1)),semester=+params.get('semester')===2?2:1;
 let unit=C.units.find(u=>u.id===params.get('unit'))||C.units.find(u=>u.grade===grade&&u.semester===semester),profile=Math.max(0,+params.get('sheet')||0),seed=+params.get('set')||Math.floor(Math.random()*1e8),answer=false,sections=[],counts=[],compact=false;
@@ -24,7 +24,8 @@ function mascot(kind){
 }
 function theme(){return C.themes[(grade-1)*2+semester-1]}
 function title(){return M.profiles(unit.id)[profile].name}
-function qHTML(q,i){return '<div class="question" data-method="'+E(q.methodId||q.skill)+'" data-art="'+E(q.artId||'')+'"><span class="qnumber">'+i+'</span><div class="prompt">'+E(q.prompt)+'</div><div class="visual">'+q.visual+'</div><div class="task">'+q.task+'</div><div class="solution">'+E(q.answer)+'<span class="explanation">'+E(q.reason)+'</span></div></div>'}
+function mixedMarkup(html){return String(html).split(/(<[^>]*>)/g).map((s,i)=>i%2?s:s.replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2')).join('')}
+function qHTML(q,i){return '<div class="question" data-method="'+E(q.methodId||q.skill)+'" data-art="'+E(q.artId||'')+'"><span class="qnumber">'+i+'</span><div class="prompt">'+E(q.prompt)+'</div><div class="visual">'+mixedMarkup(q.visual)+'</div><div class="task">'+mixedMarkup(q.task)+'</div><div class="solution">'+E(q.answer)+'<span class="explanation">'+E(q.reason)+'</span></div></div>'}
 function sheetHTML(isAnswer){
  let n=0;const t=theme();
  return '<article class="sheet '+(compact?'compact ':'')+(isAnswer?'answer-key':'')+'" data-sections="'+sections.length+'" data-grade="'+grade+'" style="--accent:'+t[2]+';--light:'+t[3]+'"><div class="sheet-top"><span class="worksheet-brand"><small>무료로, 간편하게, 새 문제를 끝없이! · </small><b>구구단닷컴</b></span><span>'+grade+'학년 '+semester+'학기 · '+(isAnswer?'정답과 풀이':'나의 수학 기록')+'</span></div><div class="hero"><div><small>'+E(t[0])+'</small><h2>'+unit.number+'. '+E(unit.name)+'</h2><small>'+title()+' · '+E(t[1])+'</small></div>'+mascot(t[4])+'</div><div class="fields"><span>이름: __________________</span><span>날짜: ______________</span></div><div class="activities">'+sections.map((s,i)=>'<section class="activity"><h3><span>'+(i+1)+'</span>'+E(s.title)+'</h3><div class="question-grid">'+s.questions.slice(0,counts[i]).map(q=>qHTML(q,++n)).join('')+'</div></section>').join('')+'</div><footer class="sheet-footer"><b>무료로, 간편하게, 새 문제를 끝없이! · 구구단닷컴</b><span>'+unit.id+' / '+(profile+1)+' · '+seed+'</span></footer><div class="art-credit">그림: Twemoji © Twitter 및 기여자 · CC BY 4.0 · googoodan.com/ko/art-gallery.html</div></article>';

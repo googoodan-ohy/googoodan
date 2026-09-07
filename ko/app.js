@@ -34,7 +34,23 @@ const icons={'Natural numbers':'123',Fractions:'½',Decimals:'0.5',Addition:'+',
 function mathHTML(x){
  const text=String(x).replace(' R ',' 나머지 ');if(!text.includes('/'))return text.startsWith('-')?'('+text+')':text;
  const parts=text.split(' '),f=parts.pop().split('/');
- return (parts.length?'<span class="mixed-whole">'+parts[0]+'</span>':'')+'<span class="fraction"><span>'+f[0]+'</span><span>'+f[1]+'</span></span>';
+ return (parts.length?'<span class="mixed-whole">'+parts[0]+'과</span>':'')+'<span class="fraction"><span>'+f[0]+'</span><span>'+f[1]+'</span></span>';
+}
+function fractionAnswer(p){
+ const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a);
+ const [a,b]=Worksheets.rational(p.a),[c,d]=Worksheets.rational(p.b);
+ let n,den;
+ if(p.op==='+'||p.op==='−'){den=b/gcd(b,d)*d;n=a*(den/b)+(p.op==='+'?1:-1)*c*(den/d);}
+ else if(p.op==='×'){n=a*c;den=b*d;}else{n=a*d;den=b*c;}
+ if(den<0){n=-n;den=-den;}
+ if(n===0)return '0';
+ const forms=[],add=s=>{if(forms.at(-1)!==s)forms.push(s);};
+ add(den===1?String(n):n+'/'+den);
+ const sign=n<0?'-':'',abs=Math.abs(n),whole=Math.floor(abs/den),rem=abs%den;
+ if(whole&&rem){add(sign+whole+' '+rem+'/'+den);const g=gcd(rem,den);if(g>1)add(sign+whole+' '+rem/g+'/'+den/g);}
+ else if(!rem)add(String(n/den));
+ else {const g=gcd(abs,den);if(g>1)add(n/g+'/'+den/g);}
+ return forms.map(s=>'<span class="fraction-form">'+mathHTML(s)+'</span>').join('<span class="fraction-equals"> = </span>');
 }
 function exampleHTML(t){
  const green=v=>'<span class="example-answer">'+v+'</span>';
@@ -47,7 +63,7 @@ function exampleHTML(t){
  const [n,d]=Worksheets.exact(left,right,op);
  let result=t.family==='Fractions'?Worksheets.fraction(n,d):String(Number((n/d).toFixed(4)));
  if(t.family==='Natural numbers'&&op==='÷'&&n%d)result=Math.floor(n/d)+' 나머지 '+n%d;
- return mathHTML(left)+' '+op+' '+mathHTML(right)+' = '+green(mathHTML(result));
+ return mathHTML(left)+' '+op+' '+mathHTML(right)+' = '+green(t.family==='Fractions'?fractionAnswer({a:left,b:right,op}):mathHTML(result));
 }
 function digitOrder(t){
  if(t.family==='Decimals'){const a=t.config.dp??t.config.da,b=t.config.dp??t.config.db;return Math.max(a,b)*100+a*10+b;}
@@ -60,7 +76,7 @@ const numberArt={
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
 'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
 'Integers':'<svg viewBox="0 0 100 52" aria-hidden="true"><path d="M7 25H93M25 20V30M50 17V32M75 20V30" stroke="#a77648" stroke-width="2"/><circle cx="25" cy="25" r="4" fill="#df8351"/><g text-anchor="middle" font-size="12"><text x="25" y="47">−1</text><text x="50" y="47">0</text><text x="75" y="47">1</text></g></svg>'};
-function choose(t){current=t;answers=false;seed=Math.floor(Math.random()*1e9);render();menu();}
+function choose(t){current=t;seed=Math.floor(Math.random()*1e9);render();menu();}
 function menu(){koMenu();}
 menu();
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
@@ -109,7 +125,7 @@ function render(){
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);
  document.querySelector('#sheet-title').textContent=current.title;
- document.querySelector('#instructions').textContent=answers?'정답과 풀이 · 현재 문제지와 같은 문제입니다.':current.instruction;
+ document.querySelector('#instructions').textContent=answers?(current.family==='Fractions'?'약분 전후의 값은 같습니다. 배운 과정에 맞춰 채점해 주세요.':'정답과 풀이 · 현재 문제지와 같은 문제입니다.'):current.instruction;
  document.querySelector('#mode').textContent=answers?'정답지':'연습 문제지';
  document.querySelector('.problems').classList.toggle('decimal-sheet',current.family==='Decimals');
  document.querySelector('.problems').classList.toggle('fraction-sheet',current.family==='Fractions');
@@ -122,7 +138,7 @@ function render(){
  const rows=generate(current.id,seed,count);
  const paper=document.querySelector('.paper');paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/cols));paper.style.setProperty('--cols',cols);paper.classList.toggle('written-sheet',isDivision||isMultiplication);
  document.querySelector('.problems').innerHTML=rows.map((p,i)=>{
- const value=answers?`<span class="answer">${mathHTML(p.answer)}</span>`:'<span class="blank"></span>';
+ const value=answers?`<span class="answer">${p.fraction?fractionAnswer(p):mathHTML(p.answer)}</span>`:'<span class="blank"></span>';
  const display=x=>mathHTML(x);
  let html=p.vertical?`<div class="vertical"><div>${p.a}</div><div class="bottom"><span>${p.op}</span><span>${p.b}</span></div><div class="result">${answers?value:'&nbsp;'}</div></div>`:`<span class="expression">${display(p.a)} ${p.op} ${display(p.b)} =</span>${value}`;
  if(p.op==='missing')html=`<span class="expression">${p.a} + <span class="box">${answers?escape(p.answer):''}</span> = ${p.a+p.b}</span>`;
@@ -150,5 +166,5 @@ for(const id of ['print-worksheet','print-answer'])document.querySelector('#'+id
 window.addEventListener('beforeprint',preparePrintBundle);
 window.addEventListener('afterprint',clearPrintBundle);
 document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};
-window.addEventListener('popstate',()=>{current=types.find(t=>location.pathname.endsWith('/'+t.id+'.html'))||types[0];family=current.family;operation=current.group;browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic';grade=new URLSearchParams(location.search).get('grade')||'1';menu();answers=false;render();});
+window.addEventListener('popstate',()=>{current=types.find(t=>location.pathname.endsWith('/'+t.id+'.html'))||types[0];family=current.family;operation=current.group;browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic';grade=new URLSearchParams(location.search).get('grade')||'1';menu();render();});
 render();
