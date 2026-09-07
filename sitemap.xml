@@ -1,27 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-    <loc>https://googoodan.com/</loc>
-    <lastmod>2026-09-06</lastmod>
-    <priority>1.0</priority>
-  </url>
-<url>
-    <loc>https://googoodan.com/board.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <priority>0.6</priority>
-  </url>
-<url>
-    <loc>https://googoodan.com/notice.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <priority>0.6</priority>
-  </url>
-<url>
-    <loc>https://googoodan.com/info.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <priority>0.6</priority>
-  </url>
+<url><loc>https://googoodan.com/</loc></url>
+<url><loc>https://googoodan.com/board.html</loc></url>
+<url><loc>https://googoodan.com/notice.html</loc></url>
+<url><loc>https://googoodan.com/info.html</loc></url>
 <url><loc>https://googoodan.com/ko/units.html</loc></url>
 <url><loc>https://googoodan.com/ko/coverage.html</loc></url>
-  <url><loc>https://googoodan.com/ko/drills.html</loc></url>
+<url><loc>https://googoodan.com/ko/drills.html</loc></url>
 <url><loc>https://googoodan.com/en/levels.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/1-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-1-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/2-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-1-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/3-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-1-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/4-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-1-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/5-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-1-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-1.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-2.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-3.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-4.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-5.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/6-2-6.html</loc></url>
+<url><loc>https://googoodan.com/ko/worksheets/</loc></url>
+<url><loc>https://googoodan.com/en/practice/add-10.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/add-20.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/add-2.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/add-3.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/tables.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/mul-1.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/mul-2.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/div-facts.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/div-1.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/div-2.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-forms.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/factors.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/equivalent.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-same.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-unlike.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-mul.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-div-whole.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/fraction-div.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/decimal-add.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/decimal-mul.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/decimal-div-whole.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/decimal-div.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/mixed.html</loc></url>
+<url><loc>https://googoodan.com/en/practice/</loc></url>
+<url><loc>https://googoodan.com/en/</loc></url>
 </urlset>

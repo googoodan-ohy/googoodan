@@ -119,7 +119,7 @@ function writtenWork(p,show){
 
 function render(){
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
- document.title=current.title+' | 구구단닷컴';
+ document.title=/^(?:\/|\/ko\/(?:index\.html)?)$/.test(location.pathname)?'무료 초등 수학 문제지 · 덧셈 뺄셈 곱셈 나눗셈 | 구구단닷컴':current.title+' | 구구단닷컴';
  document.querySelector('meta[name="description"]').content=current.title+' 문제지를 바로 만들고 정답지와 함께 인쇄하세요.';
  
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
