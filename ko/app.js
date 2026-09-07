@@ -11,7 +11,7 @@ let koBrowse='topic',koGrade=1;
 function koMenu(){
  groups.innerHTML='<div class="browse-tabs"><button id="ko-topic" aria-pressed="'+(koBrowse==='topic')+'">연산별</button><button id="ko-grade" aria-pressed="'+(koBrowse==='grade')+'">학년·단원별</button></div>';
  document.querySelector('#ko-topic').onclick=()=>{koBrowse='topic';menu()};
- document.querySelector('#ko-grade').onclick=()=>{location.href='units.html'};
+ document.querySelector('#ko-grade').onclick=()=>{location.href='/ko/units.html'};
  if(koBrowse==='grade'){
   const nav=document.createElement('div');nav.className='filter-row';
   for(let i=1;i<=6;i++){const b=document.createElement('button');b.textContent=i+'학년';b.setAttribute('aria-pressed',koGrade===i);b.onclick=()=>{koGrade=i;menu()};nav.append(b)}groups.append(nav);

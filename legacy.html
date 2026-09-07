@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="google-site-verification" content="s9vwDR1UqtvV3H-g06I09FhNa4ihh_nlLEfO6SyfSzY" />
+<meta name="naver-site-verification" content="bb482b50ec7b8bb635d78a1f21913c00b90a6ce5" />
+<meta name="google-adsense-account" content="ca-pub-7207988463177751">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구구단닷컴 - 초등수학 자동 시험지 생성 사이트</title>
+<style>
+  :root{
+    --primary:#ff8961;
+    --primary-dark:#ef6f43;
+    --primary-light:#fff1ea;
+    --line:#e4e6ea;
+    --ink:#24262b;
+    --muted:#7b8087;
+    --paper:#ffffff;
+    --bg:#f4f5f7;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{
+    font-family:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--ink);
+    font-size:14px;
+    background:var(--bg);
+    min-height:100vh;
+  }
+
+  .page{ max-width:1760px; margin:0 auto; padding:18px; }
+
+  /* ---- 사이트 헤더 ---- */
+  .site-header{
+    display:flex; align-items:center; justify-content:space-between;
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:20px 26px; margin-bottom:14px; min-height:92px;
+  }
+  .site-logo{ display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .site-logo .mark{
+    width:52px; height:52px; border-radius:16px; flex-shrink:0;
+    background:linear-gradient(135deg, #ffc93c, #ff8961 55%, #ff6b81);
+    display:flex; align-items:center; justify-content:center;
+    font-size:26px; box-shadow:0 6px 14px rgba(255,137,97,.35);
+    transform:rotate(-4deg);
+  }
+  .site-logo .brand-text{ display:flex; flex-direction:column; }
+  .site-logo .name{ font-size:23px; font-weight:900; color:var(--ink); letter-spacing:-.02em; line-height:1.2; }
+  .site-logo .name .accent{ color:var(--primary); }
+  .site-logo .tagline{ font-size:11.5px; font-weight:700; color:var(--muted); margin-top:2px; }
+  .site-nav{ display:flex; gap:4px; flex-wrap:wrap; }
+  .site-nav a{
+    text-decoration:none; font-size:12.5px; font-weight:600; color:var(--muted);
+    padding:8px 13px; border-radius:6px; transition:.15s;
+  }
+  .site-nav a:hover{ background:var(--bg); color:var(--ink); }
+  .site-nav a.on{ background:var(--primary-light); color:var(--primary-dark); font-weight:700; }
+
+  /* ---- 광고 (회색 처리) ---- */
+  .ad-block{
+    background:#eceef1; border:1px dashed #cfd3d9; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    color:#9aa0a8; font-size:12px; font-weight:700; text-align:center; line-height:1.6;
+  }
+  .layout{ display:flex; gap:14px; align-items:flex-start; }
+  .side-ads{ width:240px; display:flex; flex-direction:column; gap:14px; flex-shrink:0; }
+  .side-ads .ad-block{ flex-direction:column; gap:4px; }
+  .side-ads .ad-block .sub{ font-size:10.5px; color:#b3b8bf; font-weight:600; }
+  .ad-tall{ height:580px; }
+  .ad-mid{ height:250px; }
+
+  /* ---- 왼쪽 사이트 메뉴 (광고 대신 실제 메뉴) ---- */
+  .side-menu{ width:240px; flex-shrink:0; display:flex; flex-direction:column; gap:14px; }
+  .visit-box{
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    padding:10px 12px; font-size:11.5px; color:var(--muted); font-weight:700;
+    display:flex; justify-content:space-between; gap:6px;
+  }
+  .visit-box b{ color:var(--ink); font-size:12.5px; }
+  .menu-card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px; }
+  .menu-card .menu-label{
+    font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.02em;
+    padding:8px 10px 6px;
+  }
+  .menu-card a.menu-link{
+    display:flex; align-items:center; gap:9px;
+    text-decoration:none; color:var(--ink); font-size:13px; font-weight:600;
+    padding:10px 10px; border-radius:8px; transition:.15s;
+  }
+  .menu-card a.menu-link:hover{ background:var(--primary-light); color:var(--primary-dark); }
+  .menu-card a.menu-link .ic{ font-size:15px; flex-shrink:0; opacity:.9; }
+  .menu-card .soon-label{
+    font-size:10px; font-weight:800; color:#b3b8bf; background:#f1f2f4;
+    border-radius:5px; padding:2px 6px; margin-left:auto;
+  }
+  .menu-card a.menu-link.soon{ color:#b3b8bf; cursor:default; }
+  .menu-card a.menu-link.soon:hover{ background:none; }
+
+  /* ---- 핵심 영역 ---- */
+  .core{ flex:1; min-width:0; }
+  .sheet-box{
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:22px 26px 26px;
+  }
+
+  .brand-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);
+  }
+  .brand-name{ font-size:18px; font-weight:800; }
+  .brand-sub{ font-size:12px; color:var(--muted); margin-top:3px; font-weight:500; }
+  .brand-url{ font-size:12.5px; color:var(--primary); text-decoration:none; font-weight:700; }
+
+  .col-caption-row{
+    display:grid; grid-template-columns: 150px 110px 1fr;
+    gap:8px; font-size:11.5px; color:var(--muted); font-weight:700;
+    margin-bottom:5px; padding:0 4px;
+  }
+
+  /* ---- 펼침 메뉴 ---- */
+  .matrix{
+    display:grid; grid-template-columns: 150px 110px 1fr;
+    gap:8px; position:relative; z-index:5; align-items:start;
+  }
+
+  .dd{ position:relative; }
+  .dd-trigger{
+    background:#fff; border:1.5px solid var(--line);
+    color:var(--ink); border-radius:8px; padding:10px 12px;
+    font-size:13px; font-weight:600; display:flex; align-items:center; gap:7px;
+    cursor:pointer; min-height:20px; transition:.15s; user-select:none;
+  }
+  .dd-trigger:hover{ border-color:var(--primary); background:var(--primary-light); }
+  .dd-trigger .ic{ font-size:14px; flex-shrink:0; opacity:.85; }
+  .dd-trigger .txt{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; font-weight:700; }
+  .dd-trigger .arrow{ font-size:9px; transition:transform .18s; flex-shrink:0; }
+  .dd.open .dd-trigger .arrow{ transform:rotate(180deg); }
+  .dd.open .dd-trigger{ border-color:var(--primary); background:var(--primary-light); border-radius:8px 8px 0 0; }
+
+  .dd-panel{
+    position:absolute; top:100%; left:0; right:0;
+    background:#fff; border:1.5px solid var(--primary); border-top:none;
+    border-radius:0 0 8px 8px; box-shadow:0 10px 22px rgba(20,20,20,.10);
+    z-index:40; max-height:0; overflow:hidden; transition:max-height .2s ease;
+  }
+  .dd.open .dd-panel{ max-height:420px; overflow-y:auto; }
+
+  .dd-item{
+    padding:10px 14px; font-size:12.5px; font-weight:600;
+    color:#2a2f3a; cursor:pointer; border-bottom:1px solid #f1f2f4; transition:.12s; line-height:1.35;
+  }
+  .dd-item:last-child{ border-bottom:none; }
+  .dd-item:hover{ background:var(--primary-light); }
+  .dd-item.picked{ background:var(--primary-light); color:var(--primary-dark); font-weight:800; }
+
+  /* ---- 유형 선택 (화살표) ---- */
+  .type-selector{
+    display:flex; align-items:center; gap:14px;
+    margin-top:14px; margin-bottom:16px;
+    padding:10px 14px; background:var(--bg); border-radius:10px;
+  }
+  .type-picker{ display:flex; align-items:center; gap:8px; flex-shrink:0; }
+  .type-picker-label{ font-size:13px; font-weight:800; color:var(--ink); min-width:56px; text-align:center; }
+  .type-arrow{
+    width:30px; height:30px; border-radius:8px; border:1.5px solid var(--line);
+    background:#fff; color:var(--ink); font-size:13px; font-weight:700; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; transition:.15s;
+  }
+  .type-arrow:hover:not(:disabled){ border-color:var(--primary); background:var(--primary-light); color:var(--primary-dark); }
+  .type-arrow:disabled{ opacity:.35; cursor:default; }
+  .type-info{
+    font-size:12.5px; font-weight:700; color:var(--muted); flex:1; min-width:0;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .type-info b{ color:var(--ink); }
+
+  /* ---- 미리보기 ---- */
+  .preview-wrap{ margin-top:16px; position:relative; z-index:1; }
+  .sheet-preview{
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    min-height:540px; padding:28px 32px; overflow:auto;
+  }
+
+  .site-footer{
+    margin-top:14px; text-align:center; padding:16px;
+    color:var(--muted); font-size:12px;
+  }
+  .loading{ color:var(--muted); text-align:center; padding:20px; }
+  .error{ color:#d64545; text-align:center; padding:20px; }
+
+  .hidden{ display:none !important; }
+
+  @media (max-width:1300px){ .side-ads{ display:none; } }
+  @media (max-width:900px){
+    .matrix, .col-caption-row{ grid-template-columns: repeat(3, 1fr); }
+    .dd-trigger{ font-size:11px; padding:9px 6px; }
+    .site-nav{ display:none; }
+    .side-menu{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="site-header">
+    <div class="site-logo">
+      <span class="mark">🔢</span>
+      <div class="brand-text">
+        <span class="name">구구단<span class="accent">닷컴</span></span>
+        <span class="tagline">초등수학이 쉬워지는 곳 ✨</span>
+      </div>
+    </div>
+    <div class="site-nav">
+      <a href="#" class="on">홈</a>
+      <a href="#">문의하기</a>
+    </div>
+  </div>
+
+  <div class="new-worksheets" style="margin:14px 0;padding:18px;border-radius:12px;background:#edf8ef;border:1px solid #bddbc7;display:flex;flex-wrap:wrap;align-items:center;gap:12px"><strong style="color:#23695c">무료로, 간편하게, 새 문제를 끝없이!</strong><a href="/ko/" style="color:#176c59;font-weight:bold">새 문제지 만들기 →</a><a href="/ko/units.html" style="color:#176c59">1~6학년 단원별 문제지 →</a></div>
+<div class="layout">
+    <div class="side-menu">
+      <div class="visit-box">
+        <span>오늘 <b id="visitToday">-</b></span>
+        <span>누적 <b id="visitTotal">-</b></span>
+      </div>
+      <div class="menu-card">
+        <a class="menu-link" href="notice.html"><span class="ic">📢</span>공지사항</a>
+        <a class="menu-link" href="info.html"><span class="ic">📚</span>학습정보</a>
+        <a class="menu-link" href="#"><span class="ic">❓</span>이 사이트 사용법</a>
+        <a class="menu-link" href="board.html"><span class="ic">💬</span>이용후기</a>
+      </div>
+    </div>
+
+    <div class="core">
+      <div class="sheet-box">
+
+        <div class="brand-row">
+          <div>
+            <div class="brand-name">시험지 검색</div>
+            <div class="brand-sub">학년·학기·단원을 선택하면 해당 문제지 파일을 찾아드려요</div>
+          </div>
+          <a class="brand-url" href="#">www.googoodan.com</a>
+        </div>
+
+        <div class="col-caption-row">
+          <div>학년</div><div>학기</div><div>단원</div>
+        </div>
+
+        <div class="matrix" id="matrix">
+          <div class="dd" id="dd-grade">
+            <div class="dd-trigger" onclick="toggleDD('grade')"><span class="ic">🎒</span><span class="txt" id="dd-grade-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-grade-panel"></div>
+          </div>
+          <div class="dd" id="dd-semester">
+            <div class="dd-trigger" onclick="toggleDD('semester')"><span class="ic">📅</span><span class="txt" id="dd-semester-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-semester-panel"></div>
+          </div>
+          <div class="dd" id="dd-unit">
+            <div class="dd-trigger" onclick="toggleDD('unit')"><span class="ic">📖</span><span class="txt" id="dd-unit-label">선택</span><span class="arrow">▾</span></div>
+            <div class="dd-panel" id="dd-unit-panel"></div>
+          </div>
+        </div>
+
+        <!-- 유형 선택 (화살표) -->
+        <div class="type-selector hidden" id="typeSelector">
+          <div class="type-picker">
+            <button class="type-arrow" id="typePrev" onclick="stepProblem(-1)" aria-label="이전 유형">◀</button>
+            <span class="type-picker-label">유형선택</span>
+            <button class="type-arrow" id="typeNext" onclick="stepProblem(1)" aria-label="다음 유형">▶</button>
+          </div>
+          <div class="type-info" id="typeInfo"></div>
+        </div>
+
+        <!-- 미리보기 -->
+        <div class="preview-wrap">
+          <div class="sheet-preview" id="preview">
+            <div class="loading">학년·학기·단원을 선택하면 문제지가 표시됩니다</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="side-ads">
+      <div class="ad-block ad-tall">광고<span class="sub">300 × 600</span></div>
+      <div class="ad-block ad-mid">광고<span class="sub">250 × 200</span></div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    구구단닷컴 · 초등수학 자동 시험지 생성 사이트
+  </div>
+
+</div>
+
+<script>
+const GRADES = ['1학년','2학년','3학년','4학년','5학년','6학년'];
+const SEMESTERS = ['1학기','2학기'];
+
+let sel = { grade: -1, semester: -1, unit: '' };
+let openDD = null;
+let structure = {};
+let problems = [];
+
+// API로부터 폴더 구조 로드
+async function loadStructure() {
+  try {
+    const res = await fetch('structure.json');
+    structure = await res.json();
+    renderGradeMenu();
+    autoSelectDefault();
+  } catch (error) {
+    console.error('API 연결 오류:', error);
+    document.getElementById('preview').innerHTML =
+      '<div class="error">⚠️ 목록 파일(structure.json)을 불러오지 못했습니다.<br>update-site.bat 을 실행해 목록을 갱신해 주세요.</div>';
+  }
+}
+
+// 사이트에 처음 들어오자마자 1학년/1학기/첫 단원/첫 유형을 자동으로 보여줌
+function autoSelectDefault() {
+  const gradeKeys = Object.keys(structure);
+  if (gradeKeys.length === 0) return;
+
+  sel.grade = 0;
+  renderGradeMenu();
+  document.getElementById('dd-grade-label').textContent = GRADES[0] || gradeKeys[0];
+  renderSemesterMenu();
+
+  const semesterKeys = Object.keys(structure[gradeKeys[0]] || {});
+  if (semesterKeys.length === 0) return;
+
+  sel.semester = 0;
+  renderSemesterMenu();
+  document.getElementById('dd-semester-label').textContent = SEMESTERS[0] || semesterKeys[0];
+  renderUnitMenu();
+
+  const unitKeys = Object.keys((structure[gradeKeys[0]] || {})[semesterKeys[0]] || {});
+  if (unitKeys.length === 0) return;
+
+  sel.unit = unitKeys[0];
+  renderUnitMenu();
+  document.getElementById('dd-unit-label').textContent = unitKeys[0];
+  loadProblems();
+}
+
+function renderGradeMenu() {
+  const panel = document.getElementById('dd-grade-panel');
+  panel.innerHTML = '';
+  Object.keys(structure).forEach((grade, idx) => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (idx === sel.grade ? ' picked' : '');
+    item.textContent = GRADES[idx] || grade;
+    item.onclick = () => {
+      sel.grade = idx;
+      sel.semester = -1;
+      sel.unit = '';
+      openDD = null;
+      renderGradeMenu();
+      renderSemesterMenu();
+      document.getElementById('dd-grade-label').textContent = GRADES[idx];
+      document.getElementById('dd-semester-label').textContent = '선택';
+      document.getElementById('dd-unit-label').textContent = '선택';
+      document.getElementById('typeSelector').classList.add('hidden');
+      document.getElementById('preview').innerHTML = '<div class="loading">학기를 선택하세요</div>';
+    };
+    panel.appendChild(item);
+  });
+}
+
+function renderSemesterMenu() {
+  const panel = document.getElementById('dd-semester-panel');
+  panel.innerHTML = '';
+  if (sel.grade === -1) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesters = Object.keys(structure[gradeKey]);
+
+  semesters.forEach((sem, idx) => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (idx === sel.semester ? ' picked' : '');
+    item.textContent = SEMESTERS[idx] || sem;
+    item.onclick = () => {
+      sel.semester = idx;
+      sel.unit = '';
+      openDD = null;
+      renderSemesterMenu();
+      renderUnitMenu();
+      document.getElementById('dd-semester-label').textContent = SEMESTERS[idx];
+      document.getElementById('dd-unit-label').textContent = '선택';
+      document.getElementById('typeSelector').classList.add('hidden');
+      document.getElementById('preview').innerHTML = '<div class="loading">단원을 선택하세요</div>';
+    };
+    panel.appendChild(item);
+  });
+}
+
+function renderUnitMenu() {
+  const panel = document.getElementById('dd-unit-panel');
+  panel.innerHTML = '';
+  if (sel.grade === -1 || sel.semester === -1) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+  const units = Object.keys(structure[gradeKey][semesterKey]);
+
+  units.forEach(unit => {
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (unit === sel.unit ? ' picked' : '');
+    item.textContent = unit;
+    item.onclick = () => {
+      sel.unit = unit;
+      openDD = null;
+      renderUnitMenu();
+      document.getElementById('dd-unit-label').textContent = unit;
+      loadProblems();
+    };
+    panel.appendChild(item);
+  });
+}
+
+let currentProblemIdx = 0;
+
+async function loadProblems() {
+  if (sel.grade === -1 || sel.semester === -1 || !sel.unit) return;
+
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+
+  try {
+    problems = (structure[gradeKey] && structure[gradeKey][semesterKey]
+                && structure[gradeKey][semesterKey][sel.unit]) || [];
+
+    const selector = document.getElementById('typeSelector');
+
+    if (problems.length === 0) {
+      selector.classList.add('hidden');
+      document.getElementById('preview').innerHTML = '<div class="loading">이 단원의 문제지가 없습니다</div>';
+      return;
+    }
+
+    selector.classList.remove('hidden');
+    loadProblemFile(0);
+  } catch (error) {
+    console.error('문제지 로드 오류:', error);
+  }
+}
+
+function stepProblem(delta) {
+  const next = currentProblemIdx + delta;
+  if (next < 0 || next >= problems.length) return;
+  loadProblemFile(next);
+}
+
+function loadProblemFile(idx) {
+  if (idx < 0 || idx >= problems.length) return;
+  currentProblemIdx = idx;
+
+  const prob = problems[idx];
+  const gradeKey = Object.keys(structure)[sel.grade];
+  const semesterKey = Object.keys(structure[gradeKey])[sel.semester];
+
+  // 유형 선택 표시 갱신
+  document.getElementById('typeInfo').innerHTML =
+    `<b>${escapeHtml(prob.name)}</b> · ${idx + 1} / ${problems.length}`;
+  document.getElementById('typePrev').disabled = (idx === 0);
+  document.getElementById('typeNext').disabled = (idx === problems.length - 1);
+
+  // iframe으로 파일 로드
+  const preview = document.getElementById('preview');
+  const problemUrl = `work/${encodeURIComponent(gradeKey)}/${encodeURIComponent(semesterKey)}/${encodeURIComponent(sel.unit)}/${encodeURIComponent(prob.file)}`;
+  preview.innerHTML = `<iframe src="${problemUrl}" style="width:100%; height:800px; border:none; border-radius:10px;"></iframe>`;
+}
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function toggleDD(col) {
+  openDD = (openDD === col) ? null : col;
+  ['grade', 'semester', 'unit'].forEach(c => {
+    document.getElementById(`dd-${c}`).classList.toggle('open', c === openDD);
+  });
+}
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dd')) {
+    openDD = null;
+    ['grade', 'semester', 'unit'].forEach(c => {
+      document.getElementById(`dd-${c}`).classList.remove('open');
+    });
+  }
+});
+
+// 초기 로드
+loadStructure();
+</script>
+
+<!-- 방문자 카운터 (Firestore) -->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script src="visit-counter.js"></script>
+</body>
+</html>
