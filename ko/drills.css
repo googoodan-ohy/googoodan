@@ -6,3 +6,5 @@
 .drill-sheet .sheet-hero>.drill-theme{flex:0 0 95px;width:95px}.drill-sheet .sheet-hero{height:26mm;max-height:26mm}.drill-sheet .sheet-hero h2{font-size:16px!important;line-height:1.3}.drill-sheet .sheet-hero .instructions{font-size:10px}.drill-sheet .worked{font-size:20px;line-height:1.3}.drill-sheet .paper-top{min-height:5mm}
 
 @media print{.paper.drill-sheet{zoom:1!important}}
+
+.drill-sheet .division-answer-line{display:block;white-space:nowrap;margin-top:3px;line-height:1.3}
