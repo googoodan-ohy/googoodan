@@ -11,3 +11,5 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{font-family:"Malgun Got
 @media screen and (max-width:1279px){.right-ad-slot>small:first-of-type{display:none}}
 @media screen and (max-width:760px){.right-ad{margin:24px auto}}
 @media print{.right-ad{display:none!important}}
+
+.toolbar{justify-content:flex-end}.regenerate-button{background:#1765c1;color:#fff;border:1px solid #1255a4;border-radius:8px;padding:11px 15px;font-weight:700;font-size:13px;white-space:nowrap;box-shadow:0 2px 5px #1765c126}.regenerate-button:hover{background:#104c96}.regenerate-button:active{transform:translateY(1px)}
