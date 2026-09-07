@@ -20,7 +20,7 @@ const out=(prompt,answer,work='')=>({prompt,answer:String(answer),work});
 switch(key){
 case 'bond9':return out(`${a%9} + □ = 9`,9-a%9);
 case 'bond':return out(`${a%10} + □ = 10`,10-a%10);
-case 'repeat':return out(Array(a).fill(b).join(' + ')+' = □',a*b);
+case 'repeat':return out(Array(a).fill(b).join(' + ')+' = ',a*b);
 case 'groups':return {...out('그림을 보고 곱셈식과 전체 개수를 쓰세요.',`${a} × ${b} = ${a*b}`),groups:[a,b]};
 case 'factor':return out(`${x}의 약수를 모두 쓰세요.`,factors(x).join(', '));
 case 'multiple':return out(`${a}의 배수를 작은 것부터 5개 쓰세요.`,Array.from({length:5},(_,i)=>a*(i+1)).join(', '));
@@ -34,11 +34,11 @@ case 'compare-fraction':{const z=lcm(a,b);return out(`1/${a} □ 1/${b}  (>, <, 
 case 'improper':{const nn=a*d+n;return out(`${nn}/${d}을 대분수로 나타내세요.`,`${a}과 ${n}/${d}`);}
 case 'mixed':return out(`${a}과 ${n}/${d}을 가분수로 나타내세요.`,`${a*d+n}/${d}`);
 case 'one-fraction':return out(`1 = □/${d}`,d);
-case 'decimal-scale':{const z=(a/10).toFixed(1),scale=[10,100,1000][r(0,2)];return out(`${z} × ${scale} = □`,a*scale/10);}
-case 'mixed-add':return out(`${x} + ${y} − ${g} = □`,x+y-g);
-case 'mixed-mul':return out(`${a*b} ÷ ${a} × ${g} = □`,b*g);
-case 'mixed-four':return out(`${x} + ${a} × ${b} − ${g} = □`,x+a*b-g);
-case 'mixed-bracket':return out(`(${a} + ${b}) × ${g} = □`,(a+b)*g);
+case 'decimal-scale':{const z=(a/10).toFixed(1),scale=[10,100,1000][r(0,2)];return out(`${z} × ${scale} = `,a*scale/10);}
+case 'mixed-add':return out(`${x} + ${y} − ${g} = `,x+y-g);
+case 'mixed-mul':return out(`${a*b} ÷ ${a} × ${g} = `,b*g);
+case 'mixed-four':return out(`${x} + ${a} × ${b} − ${g} = `,x+a*b-g);
+case 'mixed-bracket':return out(`(${a} + ${b}) × ${g} = `,(a+b)*g);
 default:throw Error('Unknown skill '+key);
 }}
 function story(q,index,r,grade){let a=q.a,b=q.b,c=q.answer;const [nn,dd]=W.exact(a,b,q.op);c=f(nn,dd);let prompt,answer,work;
