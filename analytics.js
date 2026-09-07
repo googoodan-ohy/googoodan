@@ -4,7 +4,8 @@
  'use strict';
  if(window.GDAnalytics)return;
  const cfg=window.GD_ANALYTICS_CONFIG||{},id=cfg.measurementId||'';
- const enabled=/^G-[A-Z0-9]+$/.test(id)&&(cfg.allowedHosts||[]).includes(location.hostname);
+ let operatorExcluded=false;try{operatorExcluded=localStorage.getItem('gd_operator_excluded')==='1';}catch{}
+ const enabled=!operatorExcluded&&!navigator.webdriver&&/^G-[A-Z0-9]+$/.test(id)&&(cfg.allowedHosts||[]).includes(location.hostname);
  const key='gd_analytics_consent';let consent='unknown',started=false,lastView=null;
  try{consent=localStorage.getItem(key)||'unknown';}catch{}
  const events=[];

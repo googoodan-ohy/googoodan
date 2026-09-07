@@ -7,6 +7,9 @@
    (board-common.js가 이미 firebase를 초기화한 페이지에서는 그 앱을 그대로 재사용합니다)
    ============================================================ */
 (function(){
+  if (!['googoodan.com','www.googoodan.com'].includes(location.hostname) || navigator.webdriver) return;
+  let operatorExcluded = false;
+  try { operatorExcluded = localStorage.getItem('gd_operator_excluded') === '1'; } catch {}
   if (typeof firebase === 'undefined') return;
 
   const firebaseConfig = {
@@ -40,7 +43,7 @@
     alreadyCounted = localStorage.getItem('gd_lastVisit') === dateNow;
   } catch(e){ /* 시크릿 모드 등에서 localStorage 접근 불가 - 매번 카운트됨 */ }
 
-  if(!alreadyCounted){
+  if(!alreadyCounted && !operatorExcluded){
     fsdb.runTransaction(tx => {
       return tx.get(ref).then(snap => {
         let total = 1, today = 1;
