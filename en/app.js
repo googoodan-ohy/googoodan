@@ -94,9 +94,18 @@ function writtenWork(p,show){
 }
 
 function render(){
+ if(document.getElementById('resource-heading')){
+ document.getElementById('resource-heading').textContent=current.title+' practice guide';
+ document.getElementById('resource-description').textContent='Practice '+current.title.toLowerCase()+' with printable questions and a matching answer key.';
+ document.getElementById('resource-example').textContent=current.example||current.title;
+ document.getElementById('resource-instruction').textContent=current.instruction+' Select Questions or Answer key to preview each sheet. Change the numbers to create a new set, then select the pages you want to print.';
+ const related=document.getElementById('resource-related');related.replaceChildren();
+ Worksheets.types.filter(t=>t.group===current.group&&t.id!==current.id).slice(0,8).forEach(t=>{const li=document.createElement('li'),a=document.createElement('a');a.href='/en/'+t.id+'.html';a.textContent=t.title;li.append(a);related.append(li);});
+ }
+
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
  document.title=/^\/en\/(?:index\.html)?$/.test(location.pathname)?'Free Printable Math Worksheets with Answer Keys | Googoodan':current.title+' Worksheets | Googoodan';
- document.querySelector('meta[name="description"]').content=`Free ${current.title.toLowerCase()} worksheets. Choose a type, get new problems, and print instantly with answer keys.`;
+ document.querySelector('meta[name="description"]').content=/^\/en\/(?:index\.html)?$/.test(location.pathname)?"Create free printable arithmetic worksheets with matching answer keys. Choose addition, subtraction, multiplication, division, fractions or decimals.":`Free ${current.title.toLowerCase()} worksheets. Choose a type, get new problems, and print instantly with answer keys.`;
  document.querySelector('link[rel="canonical"]').href=/^\/en\/(?:index\.html)?$/.test(location.pathname)?'https://googoodan.com/en/':'https://googoodan.com/en/'+current.id+'.html';
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);
