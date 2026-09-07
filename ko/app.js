@@ -34,7 +34,7 @@ const icons={'Natural numbers':'123',Fractions:'½',Decimals:'0.5',Addition:'+',
 function mathHTML(x){
  const text=String(x).replace(' R ',' 나머지 ');if(!text.includes('/'))return text.startsWith('-')?'('+text+')':text;
  const parts=text.split(' '),f=parts.pop().split('/');
- return (parts.length?'<span class="mixed-whole">'+parts[0]+'과</span>':'')+'<span class="fraction"><span>'+f[0]+'</span><span>'+f[1]+'</span></span>';
+ return (parts.length?'<span class="mixed-whole">'+parts[0]+'</span>':'')+'<span class="fraction"><span>'+f[0]+'</span><span>'+f[1]+'</span></span>';
 }
 function fractionAnswer(p){
  const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a);
