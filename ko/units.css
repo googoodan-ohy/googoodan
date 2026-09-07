@@ -24,3 +24,5 @@
 .sheet-top .worksheet-brand{display:inline-flex;align-items:baseline;gap:3px;white-space:nowrap;letter-spacing:0}.sheet-top .worksheet-brand small{font-size:9px;font-weight:400;color:#527079}.sheet-top .worksheet-brand b{font-size:14px}.sheet-footer>b{font-size:8px;white-space:nowrap}
 
 .toolbar{justify-content:flex-end}.toolbar .regenerate-button{background:#1765c1;color:white;border:1px solid #1255a4;font-weight:700;white-space:nowrap}.toolbar .regenerate-button:hover{background:#104c96}
+
+.unit-edition-tabs{display:grid;gap:5px;margin-bottom:16px}.unit-edition-tabs a{display:block;text-align:center;padding:11px 6px;border:1px solid #c4d9d2;background:white;border-radius:7px;color:#176e5c;font-size:12px;font-weight:bold;text-decoration:none}.unit-edition-tabs [aria-current]{background:#176e5c;color:white}

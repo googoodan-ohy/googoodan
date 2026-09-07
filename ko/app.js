@@ -9,7 +9,7 @@ for(const t of types){
 }
 let koBrowse='topic',koGrade=1;
 function koMenu(){
- groups.innerHTML='<div class="browse-tabs"><button id="ko-topic" aria-pressed="'+(koBrowse==='topic')+'">연산별</button><button id="ko-grade" aria-pressed="'+(koBrowse==='grade')+'">학년·단원별</button></div>';
+ groups.innerHTML='<div class="browse-tabs"><button id="ko-topic" aria-pressed="'+(koBrowse==='topic')+'">종합연산</button><a class="drill-menu-link" href="/ko/drills.html">학년단원별연산</a><button id="ko-grade" aria-pressed="'+(koBrowse==='grade')+'">학년단원별유형</button></div>';
  document.querySelector('#ko-topic').onclick=()=>{koBrowse='topic';menu()};
  document.querySelector('#ko-grade').onclick=()=>{location.href='/ko/units.html'};
  if(koBrowse==='grade'){
