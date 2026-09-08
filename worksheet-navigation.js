@@ -8,6 +8,21 @@ document.addEventListener('click',e=>{
  if(unit&&/\/(drills|units)\.html$/.test(target.pathname)){target.searchParams.set('unit',unit);const [grade,semester]=unit.split('-');target.searchParams.set('grade',grade);target.searchParams.set('semester',semester);}
  e.preventDefault();window.WorksheetNavigation.go(target.href);
 });
+addEventListener('DOMContentLoaded',()=>{
+ const print=document.querySelector('#print');if(!print||document.querySelector('#save-pdf'))return;
+ const pdf=document.createElement('button');pdf.type='button';pdf.id='save-pdf';pdf.textContent='PDF 저장';pdf.title='인쇄창에서 대상을 PDF로 저장으로 선택하세요';
+ pdf.style.cssText='border:1px solid #176e5c;background:white;color:#176e5c;border-radius:7px;padding:10px 13px;font:inherit;font-weight:700;white-space:nowrap';
+ print.after(pdf);
+ const quantity=document.createElement('label');quantity.style.cssText='display:inline-flex;align-items:center;gap:6px;font-size:12px;white-space:nowrap';quantity.append('매수');
+ const count=document.createElement('input');count.id='worksheet-copies';count.type='number';count.min='1';count.max='20';count.step='1';count.value='1';count.setAttribute('aria-label','서로 다른 문제지 매수');count.title='1~20매. 정답지 선택 시 같은 수의 정답지가 추가됩니다.';count.style.cssText='width:50px;padding:8px 4px;border:1px solid #bfd8d7;border-radius:5px;font:inherit';
+ const arrows=document.createElement('span');arrows.style.cssText='display:flex;flex-direction:column';for(const [label,delta]of [['▲',1],['▼',-1]]){const b=document.createElement('button');b.type='button';b.textContent=label;b.setAttribute('aria-label',delta>0?'매수 늘리기':'매수 줄이기');b.style.cssText='padding:0 6px;font-size:10px;line-height:16px;border:1px solid #bfd8d7;background:white;color:#176e5c';b.onclick=()=>{count.value=String(Math.min(20,Math.max(1,(Number(count.value)||1)+delta)));};arrows.append(b);}
+ count.onchange=()=>{count.value=String(Math.min(20,Math.max(1,Math.floor(Number(count.value)||1))));};quantity.append(count,arrows);pdf.after(quantity);
+ const hint=document.createElement('p');hint.hidden=true;hint.setAttribute('role','status');hint.style.cssText='font-size:12px;color:#42665d;margin:8px 0';hint.textContent='인쇄창의 대상(프린터)에서 “PDF로 저장”을 선택하세요. 선택한 문제지·정답지가 파일로 저장됩니다.';
+ (print.closest('.toolbar')||print.parentElement).after(hint);
+ pdf.onclick=()=>{if(print.disabled)return;hint.hidden=false;print.click();};
+ const sync=()=>{pdf.disabled=print.disabled;};sync();new MutationObserver(sync).observe(print,{attributes:true,attributeFilter:['disabled']});
+ window.addEventListener('beforeprint',()=>{hint.hidden=true;});
+});
 addEventListener('DOMContentLoaded',async()=>{
  let counter=document.querySelector('.visit-counter');
  if(!counter){const aside=document.querySelector('.layout>aside');if(aside){counter=document.createElement('div');counter.className='visit-counter';aside.prepend(counter);}}

@@ -157,8 +157,8 @@ function preparePrintBundle(){
  clearPrintBundle();
  const modes=[];if(document.querySelector('#print-worksheet').checked)modes.push(false);if(document.querySelector('#print-answer').checked)modes.push(true);
  if(!modes.length)return;
- const original=answers,bundle=document.createElement('div');bundle.id='print-bundle';
- try{for(const mode of modes){answers=mode;render();const page=document.querySelector('.paper').cloneNode(true);page.removeAttribute('id');page.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));bundle.append(page);}}finally{answers=original;render();}
+ const originalSeed=seed,copies=Math.min(20,Math.max(1,Math.floor(Number(document.querySelector('#worksheet-copies')?.value)||1)));const original=answers,bundle=document.createElement('div');bundle.id='print-bundle';
+ try{for(let copy=0;copy<copies;copy++){seed=(originalSeed+copy)>>>0;for(const mode of modes){answers=mode;render();const page=document.querySelector('.paper').cloneNode(true);page.removeAttribute('id');page.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));const footer=page.querySelector('.paper-footer');if(footer&&copies>1){const label=document.createElement('span');label.textContent=(copy+1)+' / '+copies;footer.append(label);}bundle.append(page);}}}finally{seed=originalSeed;answers=original;render();}
  document.body.append(bundle);document.body.classList.add('printing-bundle');
 }
 function updatePrintSelection(){document.querySelector('#print').disabled=!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
