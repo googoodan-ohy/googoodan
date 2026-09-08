@@ -27,7 +27,7 @@ function koMenu(){
  for(const t of types.filter(t=>t.family===family&&t.group===operation).sort((a,b)=>digitOrder(a)-digitOrder(b))){const b=document.createElement('button');b.className='choice';b.dataset.id=t.id;b.innerHTML='<span class="example">'+exampleHTML(t)+'</span><small>'+t.title+'</small>';if(t===current)b.setAttribute('aria-current','page');b.onclick=()=>choose(t);list.append(b)}groups.append(list);
 }
 
-let current=types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Math.floor(Math.random()*1e9),answers=false;
+let current=types.find(t=>t.id===new URLSearchParams(location.search).get('type'))||types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Math.floor(Math.random()*1e9),answers=false;
 const groups=document.querySelector('.groups');
 let family=current.family,operation=current.group,browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic',grade=['K','1','2','3','4','5'].includes(new URLSearchParams(location.search).get('grade'))?new URLSearchParams(location.search).get('grade'):'1';
 const icons={'Natural numbers':'123',Fractions:'½',Decimals:'0.5',Addition:'+',Subtraction:'−',Multiplication:'×',Division:'÷','Number sense':'□'};
@@ -76,7 +76,7 @@ const numberArt={
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
 'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
 'Integers':'<svg viewBox="0 0 100 52" aria-hidden="true"><path d="M7 25H93M25 20V30M50 17V32M75 20V30" stroke="#a77648" stroke-width="2"/><circle cx="25" cy="25" r="4" fill="#df8351"/><g text-anchor="middle" font-size="12"><text x="25" y="47">−1</text><text x="50" y="47">0</text><text x="75" y="47">1</text></g></svg>'};
-function choose(t){current=t;seed=Math.floor(Math.random()*1e9);render();menu();}
+function choose(t){if(t.id===current.id)return;WorksheetNavigation.go(location.pathname+'?type='+encodeURIComponent(t.id));}
 function menu(){koMenu();}
 menu();
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');

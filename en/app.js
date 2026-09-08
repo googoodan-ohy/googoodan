@@ -32,7 +32,7 @@ const numberArt={
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
 'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
 'Integers':'<svg viewBox="0 0 100 52" aria-hidden="true"><path d="M7 25H93M25 20V30M50 17V32M75 20V30" stroke="#a77648" stroke-width="2"/><circle cx="25" cy="25" r="4" fill="#df8351"/><g text-anchor="middle" font-size="12"><text x="25" y="47">−1</text><text x="50" y="47">0</text><text x="75" y="47">1</text></g></svg>'};
-function choose(t){current=t;answers=false;seed=Math.floor(Math.random()*1e9);history.pushState({id:t.id},'',t.id+'.html'+(browse==='curriculum'?'?browse=curriculum&grade='+grade:''));render();menu();}
+function choose(t){if(t.id===current.id)return;WorksheetNavigation.go('/en/'+t.id+'.html'+(browse==='curriculum'?'?browse=curriculum&grade='+grade:''));}
 function menu(){
  if(browse==='curriculum'){location.replace(grade==='K'?'kindergarten.html':'grades.html?grade='+grade);return;}
  groups.innerHTML='';

@@ -58,24 +58,26 @@ function render(){
  $('#coverage').textContent=sections.map(s=>s.title).join(' · ');
  document.title=grade+'학년 '+semester+'학기 '+unit.name+' | 구구단닷컴';
  history.replaceState(null,'','?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed);
- let picker=document.querySelector('#profile-select');if(!picker){picker=document.createElement('select');picker.id='profile-select';picker.className='profile-select';picker.setAttribute('aria-label','학습 목표로 문제지 선택');document.querySelector('#profile-dots').before(picker);picker.onchange=()=>{profile=+picker.value;render()}}picker.innerHTML=M.profiles(unit.id).map((x,i)=>'<option value="'+i+'">'+(i+1)+'. '+E(x.name)+'</option>').join('');picker.value=profile;
- $('#profile-dots').innerHTML=M.profiles(unit.id).map((item,i)=>'<button data-p="'+i+'" title="'+E(item.name)+'" aria-pressed="'+(i===profile)+'">'+(i+1)+'</button>').join('');
- $('#profile-dots').querySelectorAll('button').forEach(b=>b.onclick=()=>{profile=+b.dataset.p;render()});
+ renderProfileMenu();
 }
+
+let browseUnit=unit,browseGrade=grade,browseSemester=semester;
+function goProfile(p){if(browseUnit.id===unit.id&&p===profile)return;WorksheetNavigation.go(location.pathname+'?grade='+browseGrade+'&semester='+browseSemester+'&unit='+browseUnit.id+'&sheet='+p);}
+function renderProfileMenu(){let picker=document.querySelector('#profile-select');if(!picker){picker=document.createElement('select');picker.id='profile-select';picker.className='profile-select';picker.setAttribute('aria-label','학습 목표로 문제지 선택');document.querySelector('#profile-dots').before(picker);picker.onchange=()=>goProfile(+picker.value)}const active=browseUnit.id===unit.id;picker.innerHTML=(!active?'<option value="" selected disabled>문제지 유형을 선택하세요</option>':'')+M.profiles(browseUnit.id).map((x,i)=>'<option value="'+i+'">'+(i+1)+'. '+E(x.name)+'</option>').join('');picker.value=active?profile:'';$('#profile-dots').innerHTML=M.profiles(browseUnit.id).map((item,i)=>'<button data-p="'+i+'" title="'+E(item.name)+'" aria-pressed="'+(active&&i===profile)+'">'+(i+1)+'</button>').join('');$('#profile-dots').querySelectorAll('button').forEach(b=>b.onclick=()=>goProfile(+b.dataset.p));}
 function menus(){
- $('#grades').innerHTML=[1,2,3,4,5,6].map(g=>'<button data-g="'+g+'" aria-pressed="'+(g===grade)+'">'+g+'학년</button>').join('');
- $('#grades').querySelectorAll('button').forEach(b=>b.onclick=()=>{grade=+b.dataset.g;unit=C.units.find(u=>u.grade===grade&&u.semester===semester);profile=0;menus();render()});
- $('#terms').innerHTML=[1,2].map(s=>'<button data-t="'+s+'" aria-pressed="'+(s===semester)+'">'+s+'학기</button>').join('');
- $('#terms').querySelectorAll('button').forEach(b=>b.onclick=()=>{semester=+b.dataset.t;unit=C.units.find(u=>u.grade===grade&&u.semester===semester);profile=0;menus();render()});
- $('#unit').innerHTML=C.units.filter(u=>u.grade===grade&&u.semester===semester).map(u=>'<option value="'+u.id+'">'+u.number+'. '+E(u.name)+'</option>').join('');$('#unit').value=unit.id;
+ $('#grades').innerHTML=[1,2,3,4,5,6].map(g=>'<button data-g="'+g+'" aria-pressed="'+(g===browseGrade)+'">'+g+'학년</button>').join('');
+ $('#grades').querySelectorAll('button').forEach(b=>b.onclick=()=>{browseGrade=+b.dataset.g;browseUnit=C.units.find(u=>u.grade===browseGrade&&u.semester===browseSemester);menus();});
+ $('#terms').innerHTML=[1,2].map(t=>'<button data-t="'+t+'" aria-pressed="'+(t===browseSemester)+'">'+t+'학기</button>').join('');
+ $('#terms').querySelectorAll('button').forEach(b=>b.onclick=()=>{browseSemester=+b.dataset.t;browseUnit=C.units.find(u=>u.grade===browseGrade&&u.semester===browseSemester);menus();});
+ $('#unit').innerHTML=C.units.filter(u=>u.grade===browseGrade&&u.semester===browseSemester).map(u=>'<option value="'+u.id+'">'+u.number+'. '+E(u.name)+'</option>').join('');$('#unit').value=browseUnit.id;renderProfileMenu();
 }
-$('#unit').onchange=()=>{unit=C.units.find(u=>u.id===$('#unit').value);profile=0;render()};
-$('#prev').onclick=()=>{profile=(profile+M.profiles(unit.id).length-1)%M.profiles(unit.id).length;render()};$('#next').onclick=()=>{profile=(profile+1)%M.profiles(unit.id).length;render()};
+$('#unit').onchange=()=>{browseUnit=C.units.find(u=>u.id===$('#unit').value);renderProfileMenu()};
+$('#prev').onclick=()=>goProfile((profile+M.profiles(browseUnit.id).length-1)%M.profiles(browseUnit.id).length);$('#next').onclick=()=>goProfile((profile+1)%M.profiles(browseUnit.id).length);
 $('#new').onclick=()=>{M.excludeArt([...document.querySelectorAll('#sheet-view [data-art-id]')].map(x=>x.dataset.artId));seed=(seed+1+Math.floor(Math.random()*99999999))%100000000;render()};
 $('#worksheet').onclick=()=>{answer=false;draw()};$('#answer').onclick=()=>{answer=true;draw()};
 function prepare(){if(!$('#print-q').checked&&!$('#print-a').checked){$('#print-bundle').innerHTML='';$('#status').textContent='인쇄할 문제지 또는 정답지를 선택해 주세요.';return false}$('#print-bundle').innerHTML=($('#print-q').checked?sheetHTML(false):'')+($('#print-a').checked?sheetHTML(true):'');return true}
 for(const id of ['#print-q','#print-a'])$(id).onchange=()=>{$('#print').disabled=!$('#print-q').checked&&!$('#print-a').checked};
 $('#print').onclick=async()=>{if(prepare()){await Promise.all([...document.querySelectorAll('#print-bundle img')].map(img=>img.decode().catch(()=>{})));window.print()}};window.addEventListener('beforeprint',prepare);window.addEventListener('resize',scale);
-window.KoPreview={set:(id,p,s)=>{unit=C.units.find(u=>u.id===id);grade=unit.grade;semester=unit.semester;profile=p;seed=s;menus();render()},prepare,inspect:()=>({unit:unit.id,profile,counts,sections}),sheetHTML};
+window.KoPreview={set:(id,p,s)=>{unit=C.units.find(u=>u.id===id);grade=unit.grade;semester=unit.semester;profile=p;seed=s;browseUnit=unit;browseGrade=grade;browseSemester=semester;menus();render()},prepare,inspect:()=>({unit:unit.id,profile,counts,sections}),sheetHTML};
 menus();document.fonts.ready.then(render);
 })();
