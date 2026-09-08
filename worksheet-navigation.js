@@ -19,6 +19,8 @@ addEventListener('DOMContentLoaded',()=>{
  count.onchange=()=>{count.value=String(Math.min(20,Math.max(1,Math.floor(Number(count.value)||1))));};quantity.append(count,arrows);pdf.after(quantity);
  const hint=document.createElement('p');hint.hidden=true;hint.setAttribute('role','status');hint.style.cssText='font-size:12px;color:#42665d;margin:8px 0';hint.textContent='인쇄창의 대상(프린터)에서 “PDF로 저장”을 선택하세요. 선택한 문제지·정답지가 파일로 저장됩니다.';
  (print.closest('.toolbar')||print.parentElement).after(hint);
+ const description=document.createElement('p');description.className='pdf-save-note';description.style.cssText='font-size:12px;line-height:1.7;color:#42665d;margin:8px 0';description.textContent='선택한 매수만큼 숫자가 서로 다른 문제지를 만들어 하나의 PDF 파일로 저장합니다. 예: 3매 선택 → 다른 문제지 3장. 정답지 선택 시 정답 3장이 추가됩니다.';hint.after(description);
+ const printStyle=document.createElement('style');printStyle.textContent='@media print{.pdf-save-note{display:none!important}body.printing-bundle>:not(#print-bundle){display:none!important}body.printing-bundle>#print-bundle{display:block!important}}';document.head.append(printStyle);
  pdf.onclick=()=>{if(print.disabled)return;hint.hidden=false;print.click();};
  const sync=()=>{pdf.disabled=print.disabled;};sync();new MutationObserver(sync).observe(print,{attributes:true,attributeFilter:['disabled']});
  window.addEventListener('beforeprint',()=>{hint.hidden=true;});
