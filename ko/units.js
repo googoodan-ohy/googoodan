@@ -54,7 +54,7 @@ function draw(){
 function render(){
  profile=Math.min(profile,M.profiles(unit.id).length-1);sections=M.generate(unit.id,profile,seed,8);fit();draw();
  const t=theme();document.body.style.setProperty('--accent',t[2]);document.body.style.setProperty('--light',t[3]);
- $('#theme-scene').innerHTML=KoThemeScene(t[4],mascot);$('#theme-scene').setAttribute('aria-label',t[0]+' 테마 그림');$('#theme-name').textContent=t[0];$('#theme-motto').textContent=t[1];$('#profile-name').textContent=title();$('#profile-number').textContent=(profile+1)+' / '+M.profiles(unit.id).length;
+ $('#theme-scene').innerHTML=KoThemeScene(t[4],mascot);$('#theme-scene').setAttribute('aria-label',t[0]+' 테마 그림');$('#theme-name').textContent=t[0];$('#theme-motto').textContent=t[1];
  $('#coverage').textContent=sections.map(s=>s.title).join(' · ');
  document.title=window.WORKSHEET_ENTRY?.title||(grade+'학년 '+semester+'학기 '+unit.name+' '+title()+' | 구구단닷컴');
 const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/unit-'+unit.id+'-'+profile+'.html'; history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed));
@@ -63,7 +63,7 @@ const canonical=document.querySelector('link[rel=canonical]');if(canonical)canon
 
 let browseUnit=unit,browseGrade=grade,browseSemester=semester;
 function goProfile(p){if(browseUnit.id===unit.id&&p===profile)return;WorksheetNavigation.go('/ko/print/unit-'+browseUnit.id+'-'+p+'.html');}
-function renderProfileMenu(){let picker=document.querySelector('#profile-select');if(!picker){picker=document.createElement('select');picker.id='profile-select';picker.className='profile-select';picker.setAttribute('aria-label','학습 목표로 문제지 선택');document.querySelector('#profile-dots').before(picker);picker.onchange=()=>goProfile(+picker.value)}const active=browseUnit.id===unit.id;picker.innerHTML=(!active?'<option value="" selected disabled>문제지 유형을 선택하세요</option>':'')+M.profiles(browseUnit.id).map((x,i)=>'<option value="'+i+'">'+(i+1)+'. '+E(x.name)+'</option>').join('');picker.value=active?profile:'';$('#profile-dots').innerHTML=M.profiles(browseUnit.id).map((item,i)=>'<button data-p="'+i+'" title="'+E(item.name)+'" aria-pressed="'+(active&&i===profile)+'">'+(i+1)+'</button>').join('');$('#profile-dots').querySelectorAll('button').forEach(b=>b.onclick=()=>goProfile(+b.dataset.p));}
+function renderProfileMenu(){const active=browseUnit.id===unit.id;$('#profile-dots').innerHTML=M.profiles(browseUnit.id).map((item,i)=>'<button class="unit-type-choice" data-p="'+i+'" aria-pressed="'+(active&&i===profile)+'"><strong>'+E(item.name)+'</strong>'+(item.goal?'<small>'+E(item.goal)+'</small>':'')+'</button>').join('');$('#profile-dots').querySelectorAll('button').forEach(b=>b.onclick=()=>goProfile(+b.dataset.p));}
 function menus(){
  $('#grades').innerHTML=[1,2,3,4,5,6].map(g=>'<button data-g="'+g+'" aria-pressed="'+(g===browseGrade)+'">'+g+'학년</button>').join('');
  $('#grades').querySelectorAll('button').forEach(b=>b.onclick=()=>{browseGrade=+b.dataset.g;browseUnit=C.units.find(u=>u.grade===browseGrade&&u.semester===browseSemester);menus();});
@@ -72,7 +72,6 @@ function menus(){
  $('#unit').innerHTML=C.units.filter(u=>u.grade===browseGrade&&u.semester===browseSemester).map(u=>'<option value="'+u.id+'">'+u.number+'. '+E(u.name)+'</option>').join('');$('#unit').value=browseUnit.id;renderProfileMenu();
 }
 $('#unit').onchange=()=>{browseUnit=C.units.find(u=>u.id===$('#unit').value);renderProfileMenu()};
-$('#prev').onclick=()=>goProfile((profile+M.profiles(browseUnit.id).length-1)%M.profiles(browseUnit.id).length);$('#next').onclick=()=>goProfile((profile+1)%M.profiles(browseUnit.id).length);
 $('#new').onclick=()=>{M.excludeArt([...document.querySelectorAll('#sheet-view [data-art-id]')].map(x=>x.dataset.artId));seed=(seed+1+Math.floor(Math.random()*99999999))%100000000;render()};
 $('#worksheet').onclick=()=>{answer=false;draw()};$('#answer').onclick=()=>{answer=true;draw()};
 function prepare(){if(!$('#print-q').checked&&!$('#print-a').checked){$('#print-bundle').innerHTML='';$('#status').textContent='인쇄할 문제지 또는 정답지를 선택해 주세요.';return false}$('#print-bundle').innerHTML=($('#print-q').checked?sheetHTML(false):'')+($('#print-a').checked?sheetHTML(true):'');return true}
