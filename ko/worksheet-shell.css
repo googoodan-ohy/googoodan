@@ -24,3 +24,4 @@
 @media screen and (max-width:900px){header .top-nav{order:3;width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}header .top-nav a{padding:7px 8px;font-size:13px}}
 @media screen and (max-width:520px){header .top-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media screen{#profile-dots{display:flex;flex-direction:column;gap:8px;margin:14px 0}.unit-type-choice{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;padding:15px;border:1px solid #c8dbd5;border-radius:8px;background:#fff;color:#294552;line-height:1.6;font-family:inherit}.unit-type-choice strong{font-size:15px}.unit-type-choice small{font-size:12px;font-weight:400;color:#637b85}.unit-type-choice[aria-pressed=true]{background:#e7f3ed;color:#176e5c;border:2px solid #278477}.unit-type-choice:hover{border-color:#278477;background:#f1f8f4}}
+@media screen{html{scroll-behavior:auto}.layout>.menu,.layout>.groups{overflow-anchor:none}}

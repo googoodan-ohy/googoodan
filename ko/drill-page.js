@@ -19,7 +19,7 @@ function mascot(kind){
 }
 
 const DC=DrillCatalog,params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
-let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>u.id==='3-1-1');let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
+const requested=(params.get('unit')||'').split('-');let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>u.grade===+requested[0]&&u.semester===+requested[1])||DC.units.find(u=>u.id==='3-1-1');let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
 seed=Number(params.get('set'))||seed;let browseUnit=selectedUnit;
 function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go('/ko/print/drill-'+encodeURIComponent(id)+'.html');}
 const groupNames=['기본 연산','기초 보충','빈칸 응용','문장 연습'];

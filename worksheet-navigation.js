@@ -1,5 +1,13 @@
 (function(){
 const key='gd-worksheet-navigation';window.WorksheetNavigation={go(href){const target=new URL(href,location.href);try{sessionStorage.setItem(key,JSON.stringify({path:target.pathname,at:Date.now(),y:scrollY,x:scrollX,menu:document.querySelector('.groups')?.scrollTop||0}));}catch{}location.assign(target.href);}};
+document.addEventListener('click',e=>{
+ const link=e.target.closest?.('.edition-tabs a,.unit-edition-tabs a');
+ if(!link||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
+ const target=new URL(link.href,location.href);if(target.origin!==location.origin)return;
+ const unit=document.querySelector('#drill-unit,#unit')?.value;
+ if(unit&&/\/(drills|units)\.html$/.test(target.pathname)){target.searchParams.set('unit',unit);const [grade,semester]=unit.split('-');target.searchParams.set('grade',grade);target.searchParams.set('semester',semester);}
+ e.preventDefault();window.WorksheetNavigation.go(target.href);
+});
 addEventListener('DOMContentLoaded',async()=>{
  let counter=document.querySelector('.visit-counter');
  if(!counter){const aside=document.querySelector('.layout>aside');if(aside){counter=document.createElement('div');counter.className='visit-counter';aside.prepend(counter);}}
@@ -18,5 +26,5 @@ addEventListener('DOMContentLoaded',async()=>{
   number.textContent=data.total.toLocaleString('ko-KR')+'회';
  }catch(e){number.textContent='집계 확인 필요';console.warn('유형 로딩 집계 실패',e.message);}
 });
-addEventListener('load',()=>{let saved;try{saved=JSON.parse(sessionStorage.getItem(key));sessionStorage.removeItem(key);}catch{}if(!saved||saved.path!==location.pathname||Date.now()-saved.at>30000)return;requestAnimationFrame(()=>requestAnimationFrame(()=>{scrollTo(saved.x,saved.y);const g=document.querySelector('.groups');if(g)g.scrollTop=saved.menu;}));});
+addEventListener('load',()=>{let saved;try{saved=JSON.parse(sessionStorage.getItem(key));sessionStorage.removeItem(key);}catch{}if(!saved||saved.path!==location.pathname||Date.now()-saved.at>30000)return;requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo({left:saved.x,top:saved.y,behavior:'instant'});const g=document.querySelector('.groups');if(g)g.scrollTop=saved.menu;}));});
 })();
