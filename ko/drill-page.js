@@ -18,10 +18,10 @@ function mascot(kind){
  return '<svg class="mascot" viewBox="0 0 105 82" aria-hidden="true" style="color:var(--accent)">'+forms[kind]+'</svg>';
 }
 
-const DC=DrillCatalog,params=new URLSearchParams(location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const DC=DrillCatalog,params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>u.id==='3-1-1');let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
 seed=Number(params.get('set'))||seed;let browseUnit=selectedUnit;
-function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go(location.pathname+'?unit='+encodeURIComponent(browseUnit.id)+'&drill='+encodeURIComponent(id));}
+function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go('/ko/print/drill-'+encodeURIComponent(id)+'.html');}
 const groupNames=['기본 연산','기초 보충','빈칸 응용','문장 연습'];
 function nav(){return '<nav class="edition-tabs"><a href="/">종합연산</a><a href="drills.html" aria-current="page">학년단원별연산</a><a href="units.html">학년단원별유형</a></nav>';}
 function setProfile(id){selected=DC.profiles.get(id);current=types.find(t=>t.id===id);menu();render();}
@@ -57,7 +57,7 @@ const grid=paper.querySelector('.problems'),plan=layout();grid.classList.toggle(
 // Fit using the answer layout; hidden answers reserve identical space on worksheets.
 do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan.cols));grid.innerHTML=rows.map((q,i)=>qhtml(q,i,true)).join('');const bad=[...grid.children].some(el=>el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1);if(!bad)break;count-=plan.cols;}while(count>=plan.cols);
 if(count<plan.cols)throw Error('문제지 공간 부족: '+selected.id);
-grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=selectedUnit.grade+'학년 '+selectedUnit.name+' 연산 | googoodan.';scalePage();history.replaceState(null,'','?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed);};
+grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=window.WORKSHEET_ENTRY?.title||(selectedUnit.grade+'학년 '+selectedUnit.name+' '+selected.title+' | 구구단닷컴');const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/drill-'+selected.id+'.html';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
 function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
 rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent='학년·단원별 연산';document.querySelector('aside>p').textContent='기본 연산부터 기초 보충까지 한곳에서';setProfile(selected.id);}
 window.DrillPage={set(unit,id,number=713){selectedUnit=DC.units.find(u=>u.id===unit);seed=number;setProfile(id||selectedUnit.drills[0].id)},inspect(){return {unit:selectedUnit.id,profile:selected.id,count:document.querySelectorAll('.paper>.problems>.problem').length}},render};

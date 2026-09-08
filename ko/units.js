@@ -1,6 +1,6 @@
 (function(){
 const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
-const params=new URLSearchParams(location.search);
+const params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search);
 let grade=Math.min(6,Math.max(1,+params.get('grade')||1)),semester=+params.get('semester')===2?2:1;
 let unit=C.units.find(u=>u.id===params.get('unit'))||C.units.find(u=>u.grade===grade&&u.semester===semester),profile=Math.max(0,+params.get('sheet')||0),seed=+params.get('set')||Math.floor(Math.random()*1e8),answer=false,sections=[],counts=[],compact=false;
 grade=unit.grade;semester=unit.semester;
@@ -56,13 +56,13 @@ function render(){
  const t=theme();document.body.style.setProperty('--accent',t[2]);document.body.style.setProperty('--light',t[3]);
  $('#theme-scene').innerHTML=KoThemeScene(t[4],mascot);$('#theme-scene').setAttribute('aria-label',t[0]+' 테마 그림');$('#theme-name').textContent=t[0];$('#theme-motto').textContent=t[1];$('#profile-name').textContent=title();$('#profile-number').textContent=(profile+1)+' / '+M.profiles(unit.id).length;
  $('#coverage').textContent=sections.map(s=>s.title).join(' · ');
- document.title=grade+'학년 '+semester+'학기 '+unit.name+' | 구구단닷컴';
- history.replaceState(null,'','?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed);
+ document.title=window.WORKSHEET_ENTRY?.title||(grade+'학년 '+semester+'학기 '+unit.name+' '+title()+' | 구구단닷컴');
+const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/unit-'+unit.id+'-'+profile+'.html'; history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed));
  renderProfileMenu();
 }
 
 let browseUnit=unit,browseGrade=grade,browseSemester=semester;
-function goProfile(p){if(browseUnit.id===unit.id&&p===profile)return;WorksheetNavigation.go(location.pathname+'?grade='+browseGrade+'&semester='+browseSemester+'&unit='+browseUnit.id+'&sheet='+p);}
+function goProfile(p){if(browseUnit.id===unit.id&&p===profile)return;WorksheetNavigation.go('/ko/print/unit-'+browseUnit.id+'-'+p+'.html');}
 function renderProfileMenu(){let picker=document.querySelector('#profile-select');if(!picker){picker=document.createElement('select');picker.id='profile-select';picker.className='profile-select';picker.setAttribute('aria-label','학습 목표로 문제지 선택');document.querySelector('#profile-dots').before(picker);picker.onchange=()=>goProfile(+picker.value)}const active=browseUnit.id===unit.id;picker.innerHTML=(!active?'<option value="" selected disabled>문제지 유형을 선택하세요</option>':'')+M.profiles(browseUnit.id).map((x,i)=>'<option value="'+i+'">'+(i+1)+'. '+E(x.name)+'</option>').join('');picker.value=active?profile:'';$('#profile-dots').innerHTML=M.profiles(browseUnit.id).map((item,i)=>'<button data-p="'+i+'" title="'+E(item.name)+'" aria-pressed="'+(active&&i===profile)+'">'+(i+1)+'</button>').join('');$('#profile-dots').querySelectorAll('button').forEach(b=>b.onclick=()=>goProfile(+b.dataset.p));}
 function menus(){
  $('#grades').innerHTML=[1,2,3,4,5,6].map(g=>'<button data-g="'+g+'" aria-pressed="'+(g===browseGrade)+'">'+g+'학년</button>').join('');
