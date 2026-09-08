@@ -148,6 +148,7 @@ function preparePrintBundle(){
 }
 function updatePrintSelection(){document.querySelector('#print').disabled=!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
 for(const id of ['print-worksheet','print-answer'])document.querySelector('#'+id).onchange=updatePrintSelection;
+window.GDPreparePDF=preparePrintBundle;
 window.addEventListener('beforeprint',preparePrintBundle);
 window.addEventListener('afterprint',clearPrintBundle);
 document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};

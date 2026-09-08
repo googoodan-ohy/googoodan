@@ -10,7 +10,7 @@ document.addEventListener('click',e=>{
 });
 addEventListener('DOMContentLoaded',()=>{
  const print=document.querySelector('#print');if(!print||document.querySelector('#save-pdf'))return;
- const pdf=document.createElement('button');pdf.type='button';pdf.id='save-pdf';pdf.textContent='PDF 저장';pdf.title='인쇄창에서 대상을 PDF로 저장으로 선택하세요';
+ const pdf=document.createElement('button');pdf.type='button';pdf.id='save-pdf';pdf.textContent='PDF 저장';pdf.title='PDF 파일을 만들어 저장합니다';
  pdf.style.cssText='border:1px solid #176e5c;background:white;color:#176e5c;border-radius:7px;padding:10px 13px;font:inherit;font-weight:700;white-space:nowrap';
  print.after(pdf);
  const quantity=document.createElement('label');quantity.style.cssText='display:inline-flex;align-items:center;gap:6px;font-size:12px;white-space:nowrap';quantity.append('매수');
@@ -21,8 +21,8 @@ addEventListener('DOMContentLoaded',()=>{
  (print.closest('.toolbar')||print.parentElement).after(hint);
  const description=document.createElement('p');description.className='pdf-save-note';description.style.cssText='font-size:12px;line-height:1.7;color:#42665d;margin:8px 0';description.textContent='선택한 매수만큼 숫자가 서로 다른 문제지를 만들어 하나의 PDF 파일로 저장합니다. 예: 3매 선택 → 다른 문제지 3장. 정답지 선택 시 정답 3장이 추가됩니다.';hint.after(description);
  const printStyle=document.createElement('style');printStyle.textContent='@media print{.pdf-save-note{display:none!important}body.printing-bundle>:not(#print-bundle){display:none!important}body.printing-bundle>#print-bundle{display:block!important}}';document.head.append(printStyle);
- pdf.onclick=()=>{if(print.disabled)return;hint.hidden=false;print.click();};
- const sync=()=>{pdf.disabled=print.disabled;};sync();new MutationObserver(sync).observe(print,{attributes:true,attributeFilter:['disabled']});
+ pdf.onclick=()=>{if(print.disabled)return;window.saveWorksheetPDF(pdf);};
+ const sync=()=>{pdf.disabled=print.disabled||!!window.GDPDFBusy;};sync();new MutationObserver(sync).observe(print,{attributes:true,attributeFilter:['disabled']});
  window.addEventListener('beforeprint',()=>{hint.hidden=true;});
 });
 addEventListener('DOMContentLoaded',async()=>{

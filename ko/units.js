@@ -76,7 +76,7 @@ $('#new').onclick=()=>{M.excludeArt([...document.querySelectorAll('#sheet-view [
 $('#worksheet').onclick=()=>{answer=false;draw()};$('#answer').onclick=()=>{answer=true;draw()};
 function prepare(){if(!$('#print-q').checked&&!$('#print-a').checked){$('#print-bundle').innerHTML='';$('#status').textContent='인쇄할 문제지 또는 정답지를 선택해 주세요.';return false}const originalSeed=seed,copies=Math.min(20,Math.max(1,Math.floor(Number(document.querySelector('#worksheet-copies')?.value)||1)));let pages='';try{for(let copy=0;copy<copies;copy++){seed=(originalSeed+copy)>>>0;render();pages+=($('#print-q').checked?sheetHTML(false):'')+($('#print-a').checked?sheetHTML(true):'');}}finally{seed=originalSeed;render();}$('#print-bundle').innerHTML=pages;return true}
 for(const id of ['#print-q','#print-a'])$(id).onchange=()=>{$('#print').disabled=!$('#print-q').checked&&!$('#print-a').checked};
-$('#print').onclick=async()=>{if(prepare()){await Promise.all([...document.querySelectorAll('#print-bundle img')].map(img=>img.decode().catch(()=>{})));window.print()}};window.addEventListener('beforeprint',prepare);window.addEventListener('resize',scale);
+$('#print').onclick=async()=>{if(prepare()){await Promise.all([...document.querySelectorAll('#print-bundle img')].map(img=>img.decode().catch(()=>{})));window.print()}};window.GDPreparePDF=prepare;window.addEventListener('beforeprint',prepare);window.addEventListener('resize',scale);
 window.KoPreview={set:(id,p,s)=>{unit=C.units.find(u=>u.id===id);grade=unit.grade;semester=unit.semester;profile=p;seed=s;browseUnit=unit;browseGrade=grade;browseSemester=semester;menus();render()},prepare,inspect:()=>({unit:unit.id,profile,counts,sections}),sheetHTML};
 menus();document.fonts.ready.then(render);
 })();

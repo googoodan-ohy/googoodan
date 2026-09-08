@@ -1,5 +1,7 @@
-const {types,generate}=Worksheets;
-const familyNames={'Natural numbers':'자연수',Fractions:'분수',Decimals:'소수',Integers:'정수'};
+const {types}=Worksheets;
+const generate=(id,s,n)=>id==='times-tables'?GDTimes.rows(s,n):Worksheets.generate(id,s,n);
+if(!types.some(t=>t.id==='times-tables'))types.push(GDTimes.type);
+const familyNames={'Natural numbers':'자연수',Fractions:'분수',Decimals:'소수','Times tables':'구구단'};
 const operationNames={Addition:'더하기',Subtraction:'빼기',Multiplication:'곱하기',Division:'나누기','Number sense':'수 감각'};
 for(const t of types){
  const c=t.config;
@@ -19,7 +21,8 @@ function koMenu(){
   for(const title of ['1학기 · 단원 선택','2학기 · 단원 선택']){const b=document.createElement('button');b.className='menu-tile';b.textContent=title+' →';b.onclick=()=>showDetail(koGrade+'학년 '+title,'단원별 문제지를 이 자리에 연결할 예정입니다. 현재는 연산별 메뉴에서 실제 문제 생성과 인쇄를 테스트할 수 있습니다.');groups.append(b)}return;
  }
  const nav=document.createElement('div');nav.className='filter-row';
- for(const f of Object.keys(familyNames)){const b=document.createElement('button');b.className='number-category';b.innerHTML=numberArt[f]+'<span>'+familyNames[f]+'</span>';b.setAttribute('aria-pressed',family===f);b.onclick=()=>{family=f;operation='Addition';menu()};nav.append(b)}groups.append(nav);
+ for(const f of Object.keys(familyNames)){const b=document.createElement('button');b.className='number-category';b.innerHTML=numberArt[f]+'<span>'+familyNames[f]+'</span>';b.setAttribute('aria-pressed',family===f);b.onclick=()=>{family=f;operation=f==='Times tables'?'Multiplication':'Addition';if(f==='Times tables'){current=GDTimes.type;seed++;}menu();if(f==='Times tables')render();};nav.append(b)}groups.append(nav);
+ if(family==='Times tables'){GDTimes.menu(groups,()=>{current=GDTimes.type;seed++;history.replaceState(null,'',location.pathname+'?type=times-tables&tables='+GDTimes.selected.join(','));render();});return;}
  const ops=document.createElement('div');ops.className='operation-row';
  for(const op of ['Addition','Subtraction','Multiplication','Division']){const b=document.createElement('button');b.textContent=icons[op];b.setAttribute('aria-label',operationNames[op]);b.setAttribute('aria-pressed',operation===op);b.onclick=()=>{operation=op;menu()};ops.append(b)}groups.append(ops);
  const heading=document.createElement('h2');heading.className='menu-heading';heading.textContent=familyNames[family]+' · '+operationNames[operation];groups.append(heading);
@@ -75,7 +78,7 @@ const numberArt={
 'Natural numbers':'<svg viewBox="0 0 100 52" aria-hidden="true"><g fill="#df8351"><circle cx="18" cy="35" r="6"/><circle cx="43" cy="35" r="6"/><circle cx="43" cy="19" r="6"/><circle cx="73" cy="35" r="6"/><circle cx="73" cy="19" r="6"/><circle cx="87" cy="35" r="6"/></g></svg>',
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
 'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
-'Integers':'<svg viewBox="0 0 100 52" aria-hidden="true"><path d="M7 25H93M25 20V30M50 17V32M75 20V30" stroke="#a77648" stroke-width="2"/><circle cx="25" cy="25" r="4" fill="#df8351"/><g text-anchor="middle" font-size="12"><text x="25" y="47">−1</text><text x="50" y="47">0</text><text x="75" y="47">1</text></g></svg>'};
+'Times tables':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="18" y="4" width="64" height="44" rx="8" fill="#e9f5e9" stroke="#278477"/><text x="50" y="32" text-anchor="middle" font-size="21" fill="#176e5c">2×3</text></svg>'};
 function choose(t){if(t.id===current.id)return;WorksheetNavigation.go(location.pathname+'?type='+encodeURIComponent(t.id));}
 function menu(){koMenu();}
 menu();
@@ -118,6 +121,12 @@ function writtenWork(p,show){
 }
 
 function render(){
+ if(current.id==='times-tables'){
+  current.title='구구단 · '+GDTimes.selected.join('·')+'단 연습';GDTimes.decorate(seed);
+  document.querySelector('#new').disabled=!GDTimes.selected.length;
+  if(!GDTimes.selected.length){document.querySelector('#sheet-title').textContent='연습할 단을 선택해 주세요';document.querySelector('.problems').innerHTML='';document.querySelector('#print').disabled=true;return;}
+ }else{GDTimes.reset();document.querySelector('#new').disabled=false;}
+ updatePrintSelection();
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
  document.title=/^(?:\/|\/ko\/(?:index\.html)?)$/.test(location.pathname)?'무료 초등 수학 문제지 · 덧셈 뺄셈 곱셈 나눗셈 | 구구단닷컴':current.title+' | 구구단닷컴';
  document.querySelector('meta[name="description"]').content=current.title+' 문제지를 바로 만들고 정답지와 함께 인쇄하세요.';
@@ -154,6 +163,7 @@ document.querySelector('#answers').onclick=()=>{answers=true;trackWorksheet('wor
 document.querySelector('#new').onclick=()=>{seed=(seed+1)>>>0;trackWorksheet('worksheet_regenerate');render();};
 function clearPrintBundle(){document.querySelector('#print-bundle')?.remove();document.body.classList.remove('printing-bundle');}
 function preparePrintBundle(){
+ if(window.GDTimes?.chartActive)return;
  clearPrintBundle();
  const modes=[];if(document.querySelector('#print-worksheet').checked)modes.push(false);if(document.querySelector('#print-answer').checked)modes.push(true);
  if(!modes.length)return;
@@ -161,8 +171,9 @@ function preparePrintBundle(){
  try{for(let copy=0;copy<copies;copy++){seed=(originalSeed+copy)>>>0;for(const mode of modes){answers=mode;render();const page=document.querySelector('.paper').cloneNode(true);page.removeAttribute('id');page.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));const footer=page.querySelector('.paper-footer');if(footer&&copies>1){const label=document.createElement('span');label.textContent=(copy+1)+' / '+copies;footer.append(label);}bundle.append(page);}}}finally{seed=originalSeed;answers=original;render();}
  document.body.append(bundle);document.body.classList.add('printing-bundle');
 }
-function updatePrintSelection(){document.querySelector('#print').disabled=!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
+function updatePrintSelection(){document.querySelector('#print').disabled=(current.id==='times-tables'&&!GDTimes.selected.length)||(!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked);}
 for(const id of ['print-worksheet','print-answer'])document.querySelector('#'+id).onchange=updatePrintSelection;
+window.GDPreparePDF=preparePrintBundle;
 window.addEventListener('beforeprint',preparePrintBundle);
 window.addEventListener('afterprint',clearPrintBundle);
 document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};
