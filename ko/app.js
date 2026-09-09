@@ -30,7 +30,7 @@ function koMenu(){
  for(const t of types.filter(t=>t.family===family&&t.group===operation).sort((a,b)=>digitOrder(a)-digitOrder(b))){const b=document.createElement('button');b.className='choice';b.dataset.id=t.id;b.innerHTML='<span class="example">'+exampleHTML(t)+'</span><small>'+t.title+'</small>';if(t===current)b.setAttribute('aria-current','page');b.onclick=()=>choose(t);list.append(b)}groups.append(list);
 }
 
-let current=types.find(t=>t.id===new URLSearchParams(location.search).get('type'))||types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Math.floor(Math.random()*1e9),answers=false;
+let current=types.find(t=>t.id===new URLSearchParams(location.search).get('type'))||types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Number(new URLSearchParams(location.search).get("set"))||Math.floor(Math.random()*1e9),answers=false;
 const groups=document.querySelector('.groups');
 let family=current.family,operation=current.group,browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic',grade=['K','1','2','3','4','5'].includes(new URLSearchParams(location.search).get('grade'))?new URLSearchParams(location.search).get('grade'):'1';
 const icons={'Natural numbers':'123',Fractions:'½',Decimals:'0.5',Addition:'+',Subtraction:'−',Multiplication:'×',Division:'÷','Number sense':'□'};
@@ -130,7 +130,7 @@ function render(){
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
  document.title=/^(?:\/|\/ko\/(?:index\.html)?)$/.test(location.pathname)?'무료 초등 수학 문제지 · 덧셈 뺄셈 곱셈 나눗셈 | 구구단닷컴':current.title+' | 구구단닷컴';
  document.querySelector('meta[name="description"]').content=current.title+' 문제지를 바로 만들고 정답지와 함께 인쇄하세요.';
- 
+
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);
  document.querySelector('#sheet-title').textContent=current.title;
@@ -179,3 +179,5 @@ window.addEventListener('afterprint',clearPrintBundle);
 document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};
 window.addEventListener('popstate',()=>{current=types.find(t=>location.pathname.endsWith('/'+t.id+'.html'))||types[0];family=current.family;operation=current.group;browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic';grade=new URLSearchParams(location.search).get('grade')||'1';menu();render();});
 render();
+
+window.GDWorksheetContext=()=>({type:current.id,set:seed,...(current.id==='times-tables'?{tables:GDTimes.selected.join(',')}:{})});

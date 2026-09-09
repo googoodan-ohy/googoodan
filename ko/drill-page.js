@@ -20,7 +20,7 @@ function mascot(kind){
 
 const DC=DrillCatalog,params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const requested=(params.get('unit')||'').split('-');let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>u.grade===+requested[0]&&u.semester===+requested[1])||DC.units.find(u=>u.id==='3-1-1');let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
-seed=Number(params.get('set'))||seed;let browseUnit=selectedUnit;
+seed=Number(new URLSearchParams(location.search).get('set'))||Number(params.get('set'))||seed;let browseUnit=selectedUnit;
 function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go('/ko/print/drill-'+encodeURIComponent(id)+'.html');}
 const groupNames=['기본 연산','기초 보충','빈칸 응용','문장 연습'];
 function nav(){return '<nav class="edition-tabs"><a href="/"><span class="arithmetic-menu-icons" aria-hidden="true"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>사칙연산</span></a><a href="drills.html" aria-current="page">단원별연산</a><a href="units.html">단원별유형</a></nav>';}
@@ -60,5 +60,6 @@ if(count<plan.cols)throw Error('문제지 공간 부족: '+selected.id);
 grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=window.WORKSHEET_ENTRY?.title||(selectedUnit.grade+'학년 '+selectedUnit.name+' '+selected.title+' | 구구단닷컴');const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/drill-'+selected.id+'.html';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
 function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
 rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent='학년·단원별 연산';document.querySelector('aside>p').textContent='기본 연산부터 기초 보충까지 한곳에서';setProfile(selected.id);}
+window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
 window.DrillPage={set(unit,id,number=713){selectedUnit=DC.units.find(u=>u.id===unit);seed=number;setProfile(id||selectedUnit.drills[0].id)},inspect(){return {unit:selectedUnit.id,profile:selected.id,count:document.querySelectorAll('.paper>.problems>.problem').length}},render};
 })();

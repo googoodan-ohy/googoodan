@@ -1,5 +1,5 @@
 const {types,generate}=Worksheets;
-let current=types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Math.floor(Math.random()*1e9),answers=false;
+let current=types.find(t=>t.id===new URLSearchParams(location.search).get('type'))||types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Number(new URLSearchParams(location.search).get('set'))||Math.floor(Math.random()*1e9),answers=false;
 const groups=document.querySelector('.groups');
 let family=current.family,operation=current.group,browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic',grade=['K','1','2','3','4','5'].includes(new URLSearchParams(location.search).get('grade'))?new URLSearchParams(location.search).get('grade'):'1';
 const icons={'Natural numbers':'123',Fractions:'½',Decimals:'0.5',Addition:'+',Subtraction:'−',Multiplication:'×',Division:'÷','Number sense':'□'};
@@ -154,3 +154,5 @@ window.addEventListener('afterprint',clearPrintBundle);
 document.querySelector('#print').onclick=()=>{if(document.querySelector('#print').disabled)return;trackWorksheet('worksheet_print_click');preparePrintBundle();window.print();};
 window.addEventListener('popstate',()=>{current=types.find(t=>location.pathname.endsWith('/'+t.id+'.html'))||types[0];family=current.family;operation=current.group;browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic';grade=new URLSearchParams(location.search).get('grade')||'1';menu();answers=false;render();});
 render();
+
+window.GDWorksheetContext=()=>({type:current.id,set:seed});
