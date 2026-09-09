@@ -3,3 +3,5 @@
 #questions .vertical-problem{display:flex;flex-direction:column;align-items:stretch;text-align:right;max-width:140px;min-width:100px;font-family:monospace;letter-spacing:.15em;line-height:1.35}.vertical-answer{border-top:2px solid currentColor;min-height:1.5em}@media print{#questions:has(.vertical-problem){gap:10px 32px;font-size:17px}}
 
 .common-denominators #questions{grid-template-columns:repeat(2,minmax(0,1fr));font-size:18px}@media(max-width:650px){.common-denominators #questions{grid-template-columns:1fr}}@media print{.common-denominators #questions{grid-template-columns:repeat(2,minmax(0,1fr));font-size:14px}}
+
+.story-problems #questions{grid-template-columns:1fr;font-size:18px}.story-problems #questions li{padding-bottom:32px}@media print{.story-problems #questions{font-size:14px;gap:12px}.story-problems #questions li{padding-bottom:24px}}

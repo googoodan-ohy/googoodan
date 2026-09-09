@@ -110,6 +110,15 @@
     "heading": "3けた×1けたのかけ算プリント"
   },
   {
+    "id": "kakezan-bunshodai",
+    "grade": 2,
+    "title": "かけ算の文章題",
+    "op": "storyMul",
+    "max": 9,
+    "file": "kakezan-bunshodai.html",
+    "heading": "かけ算の文章題プリント"
+  },
+  {
     "id": "kuku",
     "grade": 2,
     "title": "かけ算・九九",
