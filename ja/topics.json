@@ -90,6 +90,16 @@
     "heading": "2けた×1けたのかけ算プリント"
   },
   {
+    "id": "kakezan-2-by-2",
+    "grade": 3,
+    "title": "2けた×2けたのかけ算",
+    "op": "longMul",
+    "max": 99,
+    "multiplierDigits": 2,
+    "file": "kakezan-2-by-2.html",
+    "heading": "2けた×2けたのかけ算プリント"
+  },
+  {
     "id": "kuku",
     "grade": 2,
     "title": "かけ算・九九",
