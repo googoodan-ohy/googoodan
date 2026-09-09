@@ -234,6 +234,24 @@
     "heading": "小数のかけ算プリント"
   },
   {
+    "id": "shosu-seisu-kakezan",
+    "grade": 4,
+    "title": "小数×整数",
+    "op": "decimalIntMul",
+    "max": 999,
+    "file": "shosu-seisu-kakezan.html",
+    "heading": "小数×整数の計算プリント"
+  },
+  {
+    "id": "shosu-seisu-warizan",
+    "grade": 4,
+    "title": "小数÷整数",
+    "op": "decimalIntDiv",
+    "max": 999,
+    "file": "shosu-seisu-warizan.html",
+    "heading": "小数÷整数の計算プリント"
+  },
+  {
     "id": "shosu-tashizan",
     "grade": 4,
     "title": "小数の足し算",
