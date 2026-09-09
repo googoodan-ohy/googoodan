@@ -11,7 +11,7 @@
  const events=[];
  const cleanURL=()=>location.origin+location.pathname;
  function record(name,params={}){
-  if(!['page_view','worksheet_view','worksheet_print_click','worksheet_regenerate','worksheet_answer_view'].includes(name))return;
+  if(!['page_view','worksheet_view','worksheet_print_click','worksheet_regenerate','worksheet_answer_view','worksheet_pdf_click','worksheet_pdf_ready','worksheet_pdf_error','worksheet_pdf_cancel'].includes(name))return;
   const safe={};for(const k of ['worksheet_id','worksheet_name','edition','number_family','operation','sheet_mode'])if(params[k]!==undefined)safe[k]=String(params[k]).slice(0,100);
   safe.page_location=cleanURL();
   events.push({name,...safe,status:started&&consent==='granted'?'queued':'not_sent'});if(events.length>100)events.shift();

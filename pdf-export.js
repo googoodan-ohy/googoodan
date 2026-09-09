@@ -3,9 +3,10 @@
  const loads=new Map();function load(src){if(!loads.has(src))loads.set(src,new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>reject(Error((en?"Could not load the PDF tools.":"PDF 도구를 불러오지 못했습니다.")));document.head.append(s);}));return loads.get(src);}
  window.saveWorksheetPDF=async function(button){
   if(button.disabled||window.GDPDFBusy)return;window.GDPDFBusy=true;let handle,frame;const original=button.textContent;
+  const track=name=>{let c={};try{c=window.GDWorksheetContext?.()||{};}catch{}window.GDAnalytics?.track(name,{edition:en?'en':'ko',worksheet_id:c.drill||c.unit||c.type||location.pathname});};track('worksheet_pdf_click');
   const filename=(document.querySelector('#sheet-title,#profile-name')?.textContent||document.title).replace(/[\\/:*?"<>|]/g,' ').slice(0,90)+'.pdf';
   try{
-   if('showSaveFilePicker' in window){try{handle=await window.showSaveFilePicker({suggestedName:filename,types:[{description:(en?"PDF document":"PDF 문서"),accept:{'application/pdf':['.pdf']}}]});}catch(e){if(e.name==='AbortError')return;if(e.name!=='SecurityError'&&e.name!=='NotAllowedError')throw e;}}
+   if('showSaveFilePicker' in window){try{handle=await window.showSaveFilePicker({suggestedName:filename,types:[{description:(en?"PDF document":"PDF 문서"),accept:{'application/pdf':['.pdf']}}]});}catch(e){if(e.name==='AbortError'){track('worksheet_pdf_cancel');return;}if(e.name!=='SecurityError'&&e.name!=='NotAllowedError')throw e;}}
    button.disabled=true;button.textContent=(en?"Preparing PDF…":"PDF 준비 중…");
    if(typeof window.GDPreparePDF!=='function')throw Error((en?"PDF saving is not available on this page yet.":"이 화면은 아직 PDF 저장 준비 중입니다."));
    window.GDPreparePDF();const bundle=document.querySelector('#print-bundle');if(!bundle?.children.length)throw Error((en?"Select worksheets or answer sheets to save.":"저장할 문제지 또는 정답지를 선택해 주세요."));
@@ -25,8 +26,9 @@
     pdf.addImage(canvas.toDataURL('image/jpeg',0.94),'JPEG',12,12,w,h);canvas.width=canvas.height=0;
    }
    const blob=pdf.output('blob');if(handle){const stream=await handle.createWritable();await stream.write(blob);await stream.close();}else{const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);}
-   const msg=document.querySelector('.pdf-save-note');if(msg)msg.textContent=pages.length+(en?" pages saved as a PDF. Each copy contains different problems.":"페이지 PDF 파일을 저장했습니다. 선택한 매수마다 숫자가 다른 문제가 들어 있습니다.");
-  }catch(e){if(e.name!=='AbortError'){const msg=document.querySelector('.pdf-save-note');if(msg)msg.textContent=(en?"PDF save failed: ":"PDF 저장 실패: ")+e.message;}}
+   track('worksheet_pdf_ready');
+   const msg=document.querySelector('.pdf-save-note');if(msg)msg.textContent=pages.length+(en?" pages prepared as a PDF. Check your downloads or selected location. Each copy contains different problems.":"페이지 PDF 파일을 만들었습니다. 기기의 다운로드·저장 위치를 확인해 주세요. 선택한 매수마다 숫자가 다른 문제가 들어 있습니다.");
+  }catch(e){if(e.name!=='AbortError'){track('worksheet_pdf_error');const msg=document.querySelector('.pdf-save-note');if(msg)msg.textContent=(en?"PDF save failed: ":"PDF 저장 실패: ")+e.message;}}
   finally{window.GDPDFBusy=false;frame?.remove();button.disabled=document.querySelector('#print')?.disabled||false;button.textContent=original;}
  };
 })();
