@@ -343,5 +343,14 @@
     "max": 9,
     "file": "warizan.html",
     "heading": "あまりのないわり算（割り算）プリント"
+  },
+  {
+    "id": "yakubun",
+    "grade": 5,
+    "title": "約分",
+    "op": "simplify",
+    "max": 12,
+    "file": "yakubun.html",
+    "heading": "約分の練習プリント"
   }
 ]
