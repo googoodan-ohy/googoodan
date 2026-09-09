@@ -3,7 +3,7 @@ function gdRegionGo(url){return WorksheetNavigation.go(gdRegionURL(url));}
 (() => {
 const locale=window.GDGradeLocale||{},yearLabel=locale.yearLabel||'Grade';
 const $=id=>document.getElementById(id),params=new URLSearchParams(location.search);
-let grade=GradeMath.grades[params.get('grade')]?Number(params.get('grade')):1,index=0,answer=false,seed=Number(params.get('set'))||Math.floor(Math.random()*1000000);
+let grade=GradeMath.grades[params.get('grade')]?Number(params.get('grade')):Number(Object.keys(GradeMath.grades)[0]),index=0,answer=false,seed=Number(params.get('set'))||Math.floor(Math.random()*1000000);
 index=Math.max(0,GradeMath.grades[grade].units.findIndex(u=>u[0]===params.get('unit')));
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 function character(name){
