@@ -1,6 +1,7 @@
 (function(root){
 'use strict';
-const specs=[
+const locale=root.GDCurriculumConfig||{};
+const specs=locale.specs||[
 ['K','within5','Add and subtract within 5','K.OA.A.5','early',5],['K','within10','Add and subtract within 10','K.OA.A.2','early',10],['K','make10','Make ten','K.OA.A.4','bond',10],
 [1,'within20','Add and subtract within 20','1.OA.C.6','early',20],[1,'add100','Add within 100','1.NBT.C.4','add100'],[1,'tens','Add and subtract multiples of ten','1.NBT.C.4;1.NBT.C.6','tens'],
 [2,'facts20','Fluent facts within 20','2.OA.B.2','early',20],[2,'within100','Add and subtract within 100','2.NBT.B.5','early',100],[2,'within1000','Add and subtract within 1000','2.NBT.B.7','early',1000],[2,'fouradd','Add four two-digit numbers','2.NBT.B.6','fouradd'],
@@ -10,7 +11,7 @@ const specs=[
 [6,'fractiondiv','Divide fractions by fractions','6.NS.A.1','fractiondiv'],[6,'longdiv','Multi-digit division','6.NS.B.2','div',5,2],[6,'decimals','Multi-digit decimal operations','6.NS.B.3','decimal',3],[6,'gcf','Greatest common factor','6.NS.B.4','gcf'],[6,'lcm','Least common multiple','6.NS.B.4','lcm']
 ];
 const units=[],profiles=new Map(),W=root.Worksheets;let numbering={};
-for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade;const u={id:'us-'+grade+'-'+id,grade:g,gradeLabel:grade==='K'?'Kindergarten':'Grade '+grade,number:(numbering[grade]=(numbering[grade]||0)+1),semester:1,name,standard,kind,a,b,drills:[]};units.push(u);
+for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade;const u={id:(locale.prefix||'us')+'-'+grade+'-'+id,grade:g,gradeLabel:grade==='K'?'Kindergarten':(locale.yearLabel||'Grade')+' '+grade,number:(numbering[grade]=(numbering[grade]||0)+1),semester:1,name,standard,kind,a,b,drills:[]};units.push(u);
  const family=['like','unlike','fractionwhole','fractionmul','unitdivide','fractiondiv'].includes(kind)?'Fractions':kind==='decimal'?'Decimals':'Natural numbers';
  const variants=['fouradd','bond','factors','gcf','lcm','expressions'].includes(kind)?[['skill','horizontal','Practice']]:[['basic','horizontal','Horizontal practice'],['basic','vertical','Vertical practice'],['blank','horizontal','Missing numbers']];
  // Fractions use a horizontal layout so numerator and denominator stay aligned.
@@ -19,6 +20,7 @@ for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade
 root.USArithmetic={units,profiles};root.DrillCatalog={units,profiles};
 function rows(p,seed,count){const u=units.find(x=>x.id===p.unit);let state=seed>>>0;const r=(min,max)=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return min+Math.floor(state/4294967296*(max-min+1))};const fraction=(n,d)=>W.fraction(n,d);const out=[];
 for(let i=0;i<count;i++){let a,b,op,answer,prompt;const minus=i%2===1;
+ const custom=locale.row?.(u,p,r,i);if(custom){const q={...custom};if(q.answer===undefined){const [n,d]=W.exact(q.a,q.b,q.op);q.answer=fraction(n,d);}if(p.mode==='blank')q.mask=q.op==='÷'&&String(q.answer).includes(' R ')||q.op==='×'&&(!Number(q.a)||!Number(q.b))?2:i%3;out.push(q);continue;}
  switch(u.kind){
  case 'early':a=r(0,u.a);b=r(0,u.a-a);op=minus?'−':'+';if(minus)[a,b]=[a+b,b];break;
  case 'add100':a=r(10,90);b=r(0,Math.min(9,100-a));op='+';break;
@@ -49,7 +51,7 @@ for(let i=0;i<count;i++){let a,b,op,answer,prompt;const minus=i%2===1;
 // Keep the Korean four-group workflow, with prerequisite generators reused.
 const reviewIds={'within10':'us-K-within5','make10':'us-K-within5','within20':'us-K-within10','add100':'us-1-within20','tens':'us-1-within20','facts20':'us-1-within20','within100':'us-1-add100','within1000':'us-2-within100','fouradd':'us-2-within100','facts':'us-2-facts20','tensmul':'us-3-facts','largeadd':'us-3-within1000','mul4':'us-3-facts','mul2':'us-4-mul4','div1':'us-3-facts','likefractions':'us-3-facts','fractionwhole':'us-4-likefractions','factors':'us-3-facts','mul':'us-4-mul2','div':'us-4-div1','decimals':'us-4-largeadd','unlike':'us-4-likefractions','fractionmul':'us-4-fractionwhole','unitdivide':'us-3-facts','expressions':'us-3-facts','fractiondiv':'us-5-unitdivide','longdiv':'us-5-div','gcf':'us-4-factors','lcm':'us-4-factors'};
 function register(u,p){u.drills.push(p);profiles.set(p.id,p);const base=W.types.find(t=>t.id===p.typeSource)||W.types.find(t=>t.id===u.drills[0].id);W.types.push({...base,id:p.id,title:p.title});}
-for(const u of units){const key=u.id.split('-').slice(2).join('-'),previous=units.find(x=>x.id===reviewIds[key])||u;const source=previous.drills[0];register(u,{...source,id:u.id+'-review',unit:u.id,generatorUnit:previous.id,typeSource:source.id,group:'기초 보충',title:'Review: '+previous.name});
+for(const u of units){const key=u.id.split('-').slice(2).join('-'),previous=(locale.prefix?units.filter(x=>x.grade<u.grade&&x.kind===u.kind).at(-1):units.find(x=>x.id===reviewIds[key]))||u;const source=previous.drills[0];register(u,{...source,id:u.id+'-review',unit:u.id,generatorUnit:previous.id,typeSource:source.id,group:'기초 보충',title:'Review: '+previous.name});
  if(!u.drills.some(p=>p.group==='빈칸 응용'))register(u,{...u.drills[0],id:u.id+'-challenge',group:'빈칸 응용',challenge:true,title:u.name+' · complete the missing part'});
  register(u,{...u.drills[0],id:u.id+'-story',mode:'story',layout:'horizontal',group:'문장 연습',story:true,title:u.name+' · word problems'});
  u.drills.sort((a,b)=>['기본 연산','기초 보충','빈칸 응용','문장 연습'].indexOf(a.group)-['기본 연산','기초 보충','빈칸 응용','문장 연습'].indexOf(b.group));}
