@@ -318,6 +318,15 @@
     "heading": "3けたのたし算（足し算）プリント"
   },
   {
+    "id": "tsubun",
+    "grade": 5,
+    "title": "通分",
+    "op": "commonDenominator",
+    "max": 12,
+    "file": "tsubun.html",
+    "heading": "通分の練習プリント"
+  },
+  {
     "id": "warizan-2-digit",
     "grade": 4,
     "title": "2けたで割るわり算",
