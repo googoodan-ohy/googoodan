@@ -1,3 +1,5 @@
+function gdRegionURL(url){const u=new URL(url,location.href),initial=new URLSearchParams(location.search);for(const key of ['country','region'])if(initial.has(key))u.searchParams.set(key,initial.get(key));return u.href;}
+function gdRegionGo(url){return WorksheetNavigation.go(gdRegionURL(url));}
 (function(){
 function mascot(kind){
  const face='<circle cx="45" cy="37" r="2" fill="#294552"/><circle cx="59" cy="37" r="2" fill="#294552"/><path d="M48 44Q52 48 56 44" stroke="#294552" fill="none" stroke-width="1.5"/>';
@@ -38,7 +40,7 @@ function fractionAnswer(p){
 const locale=window.GDCurriculumConfig||{},DC=DrillCatalog,params=new URLSearchParams(location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>String(u.grade)===(params.get('grade')==='K'?'0':params.get('grade')))||DC.units[0];let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
 seed=Number(params.get('set'))||seed;let browseUnit=selectedUnit;
-function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go(location.pathname+'?unit='+encodeURIComponent(browseUnit.id)+'&drill='+encodeURIComponent(id));}
+function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;gdRegionGo(location.pathname+'?unit='+encodeURIComponent(browseUnit.id)+'&drill='+encodeURIComponent(id));}
 const groupNames=['기본 연산','기초 보충','빈칸 응용','문장 연습'],groupLabels={'기본 연산':'Core practice','기초 보충':'Review','빈칸 응용':'Missing numbers','문장 연습':'Word problems'};
 function nav(){return '';}
 function setProfile(id){selected=DC.profiles.get(id);current=types.find(t=>t.id===id);menu();render();}
@@ -74,7 +76,7 @@ const grid=paper.querySelector('.problems'),plan=layout();grid.classList.toggle(
 // Fit using the answer layout; hidden answers reserve identical space on worksheets.
 do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan.cols));grid.innerHTML=rows.map((q,i)=>qhtml(q,i,true)).join('');const bad=[...grid.children].some(el=>el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1);if(!bad)break;count-=plan.cols;}while(count>=plan.cols);
 if(count<plan.cols)throw Error('Worksheet does not fit: '+selected.id);
-grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'Answer key':'Worksheet';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+' problems · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+' problems';document.title=selectedUnit.name+' | googoodan.';scalePage();history.replaceState(null,'','?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed);};
+grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'Answer key':'Worksheet';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+' problems · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+' problems';document.title=selectedUnit.name+' | googoodan.';scalePage();history.replaceState(null,'',gdRegionURL('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
 function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
 rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent=locale.title||'US curriculum arithmetic';document.querySelector('aside>p').textContent='Choose a grade, topic, and practice format.';setProfile(selected.id);}
 window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
