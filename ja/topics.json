@@ -81,6 +81,15 @@
     "heading": "3けたのひき算（引き算）プリント"
   },
   {
+    "id": "hikizan-bunshodai",
+    "grade": 1,
+    "title": "ひき算の文章題",
+    "op": "storySub",
+    "max": 10,
+    "file": "hikizan-bunshodai.html",
+    "heading": "ひき算の文章題プリント"
+  },
+  {
     "id": "kakezan-2-by-1",
     "grade": 3,
     "title": "2けた×1けたのかけ算",
@@ -325,6 +334,15 @@
     "max": 999,
     "file": "tashizan-1000.html",
     "heading": "3けたのたし算（足し算）プリント"
+  },
+  {
+    "id": "tashizan-bunshodai",
+    "grade": 1,
+    "title": "たし算の文章題",
+    "op": "storyAdd",
+    "max": 10,
+    "file": "tashizan-bunshodai.html",
+    "heading": "たし算の文章題プリント"
   },
   {
     "id": "tsubun",
