@@ -28,8 +28,8 @@ const CLOUDINARY_UPLOAD_PRESET = 'googoodan_board';
 const ADMIN_EMAIL = 'ohy0973@gmail.com';
 
 const PAGE_SIZE = 15;
-const SANITIZE_TAGS = ['p','br','strong','em','u','s','span','ol','ul','li','a','img','h1','h2','h3','blockquote','code','pre'];
-const SANITIZE_ATTR = ['style','href','src','class','alt'];
+const SANITIZE_TAGS = ['p','br','strong','em','u','s','span','ol','ul','li','a','img','h1','h2','h3','blockquote','code','pre','table','tbody','tr','td','th'];
+const SANITIZE_ATTR = ['style','href','src','class','alt','width','height','data-row','data-list','colspan','rowspan'];
 
 let BOARD = null;
 let currentUser = null;
@@ -43,7 +43,7 @@ let quillEditor = null;
 
 /* ---------------- 유틸 ---------------- */
 function escapeHtml(s){
-  return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 function sanitizeHtml(html){
   return DOMPurify.sanitize(html || '', { ALLOWED_TAGS: SANITIZE_TAGS, ALLOWED_ATTR: SANITIZE_ATTR });
@@ -389,12 +389,14 @@ function editPost(id){
   document.querySelector('.modal-actions .submit').textContent = '수정 완료';
 }
 function submitPost(){
+  if(window.boardUploading){alert('사진 업로드가 끝난 뒤 등록해 주세요.');return;}
   if(!canWrite()) return;
   const title = document.getElementById('wTitle').value.trim();
   const rawHtml = quillEditor.root.innerHTML;
   const isEmpty = quillEditor.getText().trim().length === 0 && !/<img/.test(rawHtml);
   if(!title || isEmpty){ alert('제목과 내용을 입력해주세요'); return; }
   const contentHtml = sanitizeHtml(rawHtml);
+  if(title.length>199 || contentHtml.length>=20000){alert('제목은 199자, 본문은 서식 포함 20,000자 미만으로 작성해 주세요.');return;}
 
   const btn = document.querySelector('.modal-actions .submit');
   const isEdit = !!editingPostId;
