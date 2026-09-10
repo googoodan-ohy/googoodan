@@ -1,17 +1,17 @@
 (function(root){
 const single=[
  ['그림 묶음을 곱셈식으로','묶음 수를 바꿔 구구단 완성','생활 속 구구단'],
- ['덧셈을 곱셈으로 바꾸기','건너뛰어 세는 수직선','같은 답끼리 짝짓기'],
+ ['Passer de l’addition à la multiplication','Avancer sur une droite graduée','Relier les produits'],
  ['Écrire la multiplication d’un tableau','Trouver le nombre de groupes','Corriger une multiplication'],
  ['구구단 표의 빈칸 채우기','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
  ['그림 묶음을 곱셈식으로','구구단 표의 빈칸 채우기','생활 속 구구단'],
- ['덧셈을 곱셈으로 바꾸기','Trouver le nombre de groupes','같은 답끼리 짝짓기'],
+ ['Passer de l’addition à la multiplication','Trouver le nombre de groupes','Relier les produits'],
  ['Écrire la multiplication d’un tableau','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
- ['건너뛰어 세는 수직선','묶음 수를 바꿔 구구단 완성','Corriger une multiplication']
+ ['Avancer sur une droite graduée','묶음 수를 바꿔 구구단 완성','Corriger une multiplication']
 ];
 const modes={
 '그림 묶음을 곱셈식으로':'groups','묶음 수를 바꿔 구구단 완성':'facts','생활 속 구구단':'story',
-'덧셈을 곱셈으로 바꾸기':'repeated','건너뛰어 세는 수직선':'jump','같은 답끼리 짝짓기':'match',
+'Passer de l’addition à la multiplication':'repeated','Avancer sur une droite graduée':'jump','Relier les produits':'match',
 'Écrire la multiplication d’un tableau':'array','Trouver le nombre de groupes':'missing','Corriger une multiplication':'error',
 '구구단 표의 빈칸 채우기':'table','이웃한 구구단으로 계산하기':'neighbor','이야기에 맞는 식 고르기':'choose'
 };
@@ -57,14 +57,14 @@ let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'t
   if(method==='facts'){prompt='구구단을 완성하세요.';visual=badge;task=eq(a+' × '+b+' = □');answer=String(product);reason=a+'씩 '+b+'묶음은 '+product+'입니다.'}
   if(method==='facts'&&spec.tables.length===1){prompt=a+'단을 1부터 9까지 완성하세요.';task='<div class="facts-nine">'+Array.from({length:9},(_,j)=>'<span>'+a+' × '+(j+1)+' = □</span>').join('')+'</div>';answer=Array.from({length:9},(_,j)=>a*(j+1)).join(', ');reason='곱하는 수가 1씩 커지면 답은 '+a+'씩 커집니다.'}
   if(method==='groups'){const g=Math.min(b,4);prompt='그림을 보고 한 묶음의 수와 묶음 수를 식으로 쓰세요.';visual=groups(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason=a+'개씩 '+g+'묶음입니다.';check.product=a*g;check.b=g}
-  if(method==='repeated'){const g=2+b%4;prompt='같은 수를 여러 번 더한 식을 곱셈식으로 바꾸세요.';visual=badge+eq(Array(g).fill(a).join(' + '));task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason=a+'를 '+g+'번 더합니다.';check.product=a*g;check.b=g}
+  if(method==='repeated'){const g=2+b%4;prompt='Écris cette addition répétée sous forme de multiplication.';visual=badge+eq(Array(g).fill(a).join(' + '));task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='On additionne '+g+' fois le nombre '+a+'.';check.product=a*g;check.b=g}
   if(method==='array'){const g=Math.min(b,5);prompt='Écris : objets par ligne × nombre de lignes.';visual=array(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='Il y a '+g+(g===1?' ligne de ':' lignes de ')+a+' objets.';check.product=a*g;check.b=g}
-  if(method==='jump'){const g=2+b%4;prompt=a+'씩 뛰었습니다. 도착한 수와 곱셈식을 쓰세요.';visual=badge+'<svg class="concept-art" viewBox="0 0 250 48"><path d="M10 32H240" stroke="#597889"/>'+Array.from({length:g+1},(_,j)=>'<path d="M'+(15+j*220/g)+' 28v8" stroke="#597889"/><text x="'+(15+j*220/g)+'" y="47" font-size="11" text-anchor="middle">'+(j===g?'□':j*a)+'</text>'+(j<g?'<path d="M'+(15+j*220/g)+' 28q'+110/g+' -32 '+220/g+' 0" fill="none" stroke="#278477"/>':'')).join('')+'</svg>';task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='0에서 '+a+'씩 '+g+'번 뛰면 '+a*g+'입니다.';check.product=a*g;check.b=g}
+  if(method==='jump'){const g=2+b%4;prompt='On avance par bonds de '+a+'. Écris le nombre atteint et la multiplication.';visual=badge+'<svg class="concept-art" viewBox="0 0 250 48"><path d="M10 32H240" stroke="#597889"/>'+Array.from({length:g+1},(_,j)=>'<path d="M'+(15+j*220/g)+' 28v8" stroke="#597889"/><text x="'+(15+j*220/g)+'" y="47" font-size="11" text-anchor="middle">'+(j===g?'□':j*a)+'</text>'+(j<g?'<path d="M'+(15+j*220/g)+' 28q'+110/g+' -32 '+220/g+' 0" fill="none" stroke="#278477"/>':'')).join('')+'</svg>';task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='Depuis 0, '+g+' bonds de '+a+' donnent '+a*g+'.';check.product=a*g;check.b=g}
   if(method==='missing'){prompt='Trouve le nombre de groupes manquant.';visual=badge;task=eq(a+' × □ = '+product);answer=String(b);reason='Cherche dans la table de '+a+' le produit égal à '+product+'.'}
   if(method==='error'){const wrong=product+(r(2)?a:1);prompt='Repère l’erreur et corrige le calcul.';visual=badge+eq(a+' × '+b+' = '+wrong);task='Calcul corrigé : __________________';answer=a+' × '+b+' = '+product;reason=b+' groupes de '+a+' font '+product+'.'}
   if(method==='table'){const start=1+b%6;prompt=a+'단 표의 빈칸을 모두 채우세요.';visual=badge+'<table class="ktable"><tr><th>곱하는 수</th>'+[start,start+1,start+2].map(x=>'<td>'+x+'</td>').join('')+'</tr><tr><th>'+a+'단</th><td>□</td><td>'+a*(start+1)+'</td><td>□</td></tr></table>';task='';answer=a*start+', '+a*(start+2);reason='곱하는 수가 1 늘면 곱은 '+a+'만큼 커집니다.'}
   if(method==='neighbor'){const k=2+b%7;prompt='알고 있는 곱셈을 이용해 다음 곱셈을 완성하세요.';visual=badge+eq(a+' × '+k+' = '+a*k);task=eq(a+' × '+(k+1)+' = '+a*k+' + □ = □');answer=a+', '+a*(k+1);reason='한 묶음 '+a+'개를 더합니다.'}
-  if(method==='match'){const k=1+b%7, vals=[a*k,a*(k+1),a*(k+2)],offset=r(3),choices=vals.slice(offset).concat(vals.slice(0,offset));prompt='곱셈식과 같은 값끼리 선으로 이으세요.';visual=badge+'<div class="match-columns"><div>'+[k,k+1,k+2].map(x=>'<p>'+a+' × '+x+' ●</p>').join('')+'</div><div>'+choices.map(x=>'<p>● '+x+'</p>').join('')+'</div></div>';task='';answer=[k,k+1,k+2].map(x=>a+' × '+x+' → '+a*x).join(' / ');reason='각 식의 곱을 먼저 구합니다.'}
+  if(method==='match'){const k=1+b%7, vals=[a*k,a*(k+1),a*(k+2)],offset=r(3),choices=vals.slice(offset).concat(vals.slice(0,offset));prompt='Relie chaque multiplication à son résultat.';visual=badge+'<div class="match-columns"><div>'+[k,k+1,k+2].map(x=>'<p>'+a+' × '+x+' ●</p>').join('')+'</div><div>'+choices.map(x=>'<p>● '+x+'</p>').join('')+'</div></div>';task='';answer=[k,k+1,k+2].map(x=>a+' × '+x+' → '+a*x).join(' / ');reason='Calcule d’abord chaque produit.'}
   if(['story','family','team','pack','ticket','reverse','choose'].includes(method)){
    const contexts=[
     {stem:'한 가족에 새가 '+a+'마리씩 있습니다. '+b+'가족이 소풍을 갔습니다.',unit:'마리',ask:'새는 모두 몇 마리인가요?',back:'새가 모두 '+product+'마리입니다. 한 가족에 '+a+'마리씩이라면 몇 가족인가요?'},
@@ -104,5 +104,5 @@ if(!prompt||!answer)throw Error('미구현 구구단 활동 '+method);
  }
  return spec.activities.map((s,i)=>({title:s.title,skill:'times',method:s.method,questions:Array.from({length:s.method==='facts'&&spec.tables.length===1?1:n},(_,j)=>question(s.method,j,i))}));
 }
-root.FrTimes={profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
+root.FrTimes={threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
 })(globalThis);
