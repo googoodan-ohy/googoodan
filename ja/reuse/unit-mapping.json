@@ -1273,6 +1273,30 @@
       "bank": "core-numeric",
       "scope": "平面の形と積み木を数える。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-2",
+      "grade": 4,
+      "name": "積み木の数と見る方向",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-2-2-4",
+      "bank": "core-numeric",
+      "scope": "積み木の数と見る方向。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-2-6",
+      "grade": 5,
+      "name": "多角形の辺と対角線",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-2-6-5",
+      "bank": "core-numeric",
+      "scope": "多角形の辺と対角線。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
