@@ -53,6 +53,20 @@
         2,
         3
       ]
+    },
+    {
+      "source": "1-1-1",
+      "target": "ja-number-bank",
+      "grade": 1,
+      "name": "9までの数・順序と比較",
+      "scope": "0〜9の個数、順序、大小、数直線。日本語の数字と物の数え方。",
+      "bank": "early-numbers",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ]
     }
   ]
 }
