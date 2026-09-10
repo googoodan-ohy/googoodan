@@ -202,6 +202,126 @@
         3
       ],
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-3",
+      "target": "ja-measure-2-2-3-0",
+      "grade": 2,
+      "name": "mとcm・長さの単位",
+      "scope": "mとcm・長さの単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-5",
+      "target": "ja-measure-3-1-5-0",
+      "grade": 2,
+      "name": "cmとmm・長さの単位",
+      "scope": "cmとmm・長さの単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-5",
+      "target": "ja-measure-3-1-5-1",
+      "grade": 3,
+      "name": "kmとm・長い道のり",
+      "scope": "kmとm・長い道のりの表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        1
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-4",
+      "target": "ja-measure-3-2-4-0",
+      "grade": 2,
+      "name": "LとmL・かさの単位",
+      "scope": "LとmL・かさの単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-4",
+      "target": "ja-measure-3-2-4-1",
+      "grade": 3,
+      "name": "kgとg・重さの単位",
+      "scope": "kgとg・重さの単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        1
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-6",
+      "target": "ja-measure-5-1-6-0",
+      "grade": 4,
+      "name": "m²とcm²・面積の単位",
+      "scope": "m²とcm²・面積の単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-6",
+      "target": "ja-measure-6-1-6-0",
+      "grade": 5,
+      "name": "m³とcm³・体積の単位",
+      "scope": "m³とcm³・体積の単位の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-3",
+      "target": "ja-measure-1-2-3-0",
+      "grade": 2,
+      "name": "時計と30分後の時こく",
+      "scope": "時計と30分後の時こくを図と計算で練習します。時計の問題には30分後の時こくも含まれます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-4",
+      "target": "ja-measure-2-2-4-0",
+      "grade": 2,
+      "name": "5分ごとの時計と時こく",
+      "scope": "5分ごとの時計と時こくを図と計算で練習します。時計の問題には30分後の時こくも含まれます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        0
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-5",
+      "target": "ja-measure-3-1-5-2",
+      "grade": 3,
+      "name": "時こくと時間",
+      "scope": "時こくと時間の表し方、換算、関係を確かめます。",
+      "bank": "measurement-targets",
+      "profiles": [
+        2
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
