@@ -70,5 +70,25 @@
     "max": 99,
     "ex": "5,20 − 1,87 = 3,33",
     "tip": "Écris 5,2 sous la forme 5,20 pour aligner les chiffres. Échange un dixième contre dix centièmes si nécessaire, puis calcule de droite à gauche."
+  },
+  {
+    "id": "multiplication-decimale-cm2",
+    "grade": "CM2",
+    "title": "Multiplier un décimal par un entier",
+    "op": "decimalIntMul",
+    "max": 999,
+    "ex": "2,4 × 3 = 7,2",
+    "tip": "Calcule 24 × 3 = 72, puis replace la virgule : 2,4 correspond à 24 dixièmes, donc le résultat est 72 dixièmes, soit 7,2.",
+    "scope": "Le nombre décimal va de 0,1 à 99,9 et le multiplicateur de 2 à 9. En révision, le décimal ne dépasse pas 9,9."
+  },
+  {
+    "id": "division-decimale-cm2",
+    "grade": "CM2",
+    "title": "Diviser un décimal par un entier",
+    "op": "decimalIntDiv",
+    "max": 999,
+    "ex": "7,2 ÷ 3 = 2,4",
+    "tip": "Partage 72 dixièmes en 3 groupes : chaque groupe contient 24 dixièmes, soit 2,4. Vérifie avec 2,4 × 3 = 7,2.",
+    "scope": "Le diviseur va de 2 à 9. Le quotient est exact, avec un chiffre après la virgule, et ne dépasse pas 99,9 (9,9 en révision). Ces fiches ne demandent ni arrondi ni reste."
   }
 ]
