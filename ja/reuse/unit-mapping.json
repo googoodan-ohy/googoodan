@@ -515,6 +515,91 @@
       "bank": "reasoning-targets",
       "scope": "円の面積と円周の応用。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-1-3",
+      "grade": 1,
+      "name": "9までのたし算・ひき算の文章題",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": "ja-reading-story-1-1-3-1",
+      "bank": "reading-stories",
+      "scope": "9までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-2",
+      "grade": 1,
+      "name": "19までのたし算・ひき算の文章題",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": "ja-reading-story-1-2-2-1",
+      "bank": "reading-stories",
+      "scope": "19までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-6",
+      "grade": 2,
+      "name": "99までのたし算・ひき算の文章題",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": "ja-reading-story-1-2-6-2",
+      "bank": "reading-stories",
+      "scope": "99までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-3",
+      "grade": 3,
+      "name": "199までのたし算・ひき算の文章題",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": "ja-reading-story-2-1-3-3",
+      "bank": "reading-stories",
+      "scope": "199までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-1",
+      "grade": 3,
+      "name": "999までのたし算・ひき算の文章題",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target": "ja-reading-story-3-1-1-3",
+      "bank": "reading-stories",
+      "scope": "999までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
