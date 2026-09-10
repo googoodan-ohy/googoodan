@@ -1,16 +1,16 @@
 (function(root){
 const single=[
- ['그림 묶음을 곱셈식으로','묶음 수를 바꿔 구구단 완성','생활 속 구구단'],
+ ['그림 묶음을 곱셈식으로','Compléter la table de multiplication','생활 속 구구단'],
  ['Passer de l’addition à la multiplication','Avancer sur une droite graduée','Relier les produits'],
  ['Écrire la multiplication d’un tableau','Trouver le nombre de groupes','Corriger une multiplication'],
  ['구구단 표의 빈칸 채우기','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
  ['그림 묶음을 곱셈식으로','구구단 표의 빈칸 채우기','생활 속 구구단'],
  ['Passer de l’addition à la multiplication','Trouver le nombre de groupes','Relier les produits'],
  ['Écrire la multiplication d’un tableau','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
- ['Avancer sur une droite graduée','묶음 수를 바꿔 구구단 완성','Corriger une multiplication']
+ ['Avancer sur une droite graduée','Compléter la table de multiplication','Corriger une multiplication']
 ];
 const modes={
-'그림 묶음을 곱셈식으로':'groups','묶음 수를 바꿔 구구단 완성':'facts','생활 속 구구단':'story',
+'그림 묶음을 곱셈식으로':'groups','Compléter la table de multiplication':'facts','생활 속 구구단':'story',
 'Passer de l’addition à la multiplication':'repeated','Avancer sur une droite graduée':'jump','Relier les produits':'match',
 'Écrire la multiplication d’un tableau':'array','Trouver le nombre de groupes':'missing','Corriger une multiplication':'error',
 '구구단 표의 빈칸 채우기':'table','이웃한 구구단으로 계산하기':'neighbor','이야기에 맞는 식 고르기':'choose'
@@ -54,8 +54,8 @@ function generate(id,p,seed,n=8){
   const asset=art.take(isStory?(x=>storyKind===0?animals.includes(x.name):storyKind===1?x.category==='생활 물건'&&!['활과 화살','칼','도끼','면도칼','쥐덫','쌍검'].includes(x.name):storyKind===2?x.category==='놀이와 운동':storyKind===3?['자동차','택시','버스','트롤리버스','미니버스','경주용 자동차','트랙터','오토바이','자전거','기차','기관차','고속 열차','고속철','전철','지하철','모노레일','트램','케이블카','곤돌라','배','여객선','쾌속정','보트','비행기','경비행기'].includes(x.name):storyKind===4?x.category==='음식':x.category==='동물과 자연'):undefined);
 let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'times',a,b,product,method};
   const badge='<span class="picture-badge">'+A.icon(asset)+'</span>';
-  if(method==='facts'){prompt='구구단을 완성하세요.';visual=badge;task=eq(a+' × '+b+' = □');answer=String(product);reason=a+'씩 '+b+'묶음은 '+product+'입니다.'}
-  if(method==='facts'&&spec.tables.length===1){prompt=a+'단을 1부터 9까지 완성하세요.';task='<div class="facts-nine">'+Array.from({length:9},(_,j)=>'<span>'+a+' × '+(j+1)+' = □</span>').join('')+'</div>';answer=Array.from({length:9},(_,j)=>a*(j+1)).join(', ');reason='곱하는 수가 1씩 커지면 답은 '+a+'씩 커집니다.'}
+  if(method==='facts'){prompt='Complète la multiplication.';visual=badge;task=eq(a+' × '+b+' = □');answer=String(product);reason=b+' groupes de '+a+' donnent '+product+'.'}
+  if(method==='facts'&&spec.tables.length===1){prompt='Complète la table de '+a+' de 1 à 9.';task='<div class="facts-nine">'+Array.from({length:9},(_,j)=>'<span>'+a+' × '+(j+1)+' = □</span>').join('')+'</div>';answer=Array.from({length:9},(_,j)=>a*(j+1)).join(', ');reason='Quand le facteur augmente de 1, le produit augmente de '+a+'.'}
   if(method==='groups'){const g=Math.min(b,4);prompt='그림을 보고 한 묶음의 수와 묶음 수를 식으로 쓰세요.';visual=groups(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason=a+'개씩 '+g+'묶음입니다.';check.product=a*g;check.b=g}
   if(method==='repeated'){const g=2+b%4;prompt='Écris cette addition répétée sous forme de multiplication.';visual=badge+eq(Array(g).fill(a).join(' + '));task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='On additionne '+g+' fois le nombre '+a+'.';check.product=a*g;check.b=g}
   if(method==='array'){const g=Math.min(b,5);prompt='Écris : objets par ligne × nombre de lignes.';visual=array(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='Il y a '+g+(g===1?' ligne de ':' lignes de ')+a+' objets.';check.product=a*g;check.b=g}
@@ -104,5 +104,5 @@ if(!prompt||!answer)throw Error('미구현 구구단 활동 '+method);
  }
  return spec.activities.map((s,i)=>({title:s.title,skill:'times',method:s.method,questions:Array.from({length:s.method==='facts'&&spec.tables.length===1?1:n},(_,j)=>question(s.method,j,i))}));
 }
-root.FrTimes={sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
+root.FrTimes={nineProfiles:[{...bank.profiles[7],name:'La table de 9 : avancer, compléter et vérifier'}],generateNine(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',7,seed,n)},sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
 })(globalThis);
