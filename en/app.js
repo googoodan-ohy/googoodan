@@ -122,7 +122,7 @@ function render(){
  document.querySelector('.problems').classList.toggle('fraction-sheet',current.family==='Fractions');
  if(current.id==='times-tables'&&!GDTimes.selected.length){document.querySelector('.problems').innerHTML='';document.querySelector('#status').textContent='Choose at least one table.';return;}
  if(current.bankId){
- const sections=KoMath.generate(current.bankId,0,seed,1),paper=document.querySelector('.paper');paper.classList.add('bank-sheet');paper.classList.toggle('bank-answers',answers);paper.style.setProperty('--cols',1);paper.style.setProperty('--rows',3);
+ const sections=KoMath.generate(current.bankId,current.bankProfile||0,seed,1),paper=document.querySelector('.paper');paper.classList.add('bank-sheet');paper.classList.toggle('bank-answers',answers);paper.style.setProperty('--cols',1);paper.style.setProperty('--rows',3);
  document.querySelector('.problems').innerHTML=sections.map((s,i)=>{const q=s.questions[0];return '<div class="bank-question"><b>'+(i+1)+'. '+s.title+'</b><p>'+q.prompt+'</p>'+q.visual+'<div>'+q.task+'</div>'+(answers?'<p class="bank-answer">'+q.answer+'<br>'+q.reason+'</p>':'')+'</div>';}).join('');document.querySelector('#set').textContent='Set '+seed;document.querySelector('#status').textContent=current.title;return;
  }
  document.querySelector('.paper').classList.remove('bank-sheet','bank-answers');

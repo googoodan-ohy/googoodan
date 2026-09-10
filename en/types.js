@@ -108,6 +108,7 @@ function generate(id,seed,count=20){
  }return rows;
 }
 for(const [id,title,bankId] of [['bar-graph','Bar Graph','2-2-5'],['picture-graph','Picture Graph','3-2-6'],['line-graph','Line Graph','4-2-5']])types.push({id,title:title+' Worksheets',family:'Data',group:'Data',example:'2 + 3',instruction:'Read the data, complete the graph and explain your answer.',bankId});
+types.push({id:'word-problems',title:'Math Word Problems Worksheets',family:'Stories',group:'Stories',example:'2 + 3',instruction:'Read carefully. Write an equation and explain your answer.',bankId:'1-2-6'});
 root.Worksheets={types,generate,rational,exact,fraction};
 if(typeof module!=='undefined')module.exports=root.Worksheets;
 })(globalThis);
