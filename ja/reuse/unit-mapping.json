@@ -1374,6 +1374,25 @@
       "excludedSkills": [
         "lines"
       ]
+    },
+    {
+      "source": "6-1-2",
+      "grade": 5,
+      "name": "角柱のつくりと展開図",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-1-2-5",
+      "bank": "core-numeric",
+      "scope": "角柱の面・辺・頂点と三角柱の展開図を扱います。角すいの活動は除外し、展開図の誤答選択肢を円柱に変更しています。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf",
+      "selectedSkills": [
+        "prism",
+        "prism-net"
+      ],
+      "excludedSkills": [
+        "pyramid"
+      ]
     }
   ]
 }
