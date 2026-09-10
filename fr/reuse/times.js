@@ -3,17 +3,17 @@ const single=[
  ['Écrire la multiplication de groupes','Compléter la table de multiplication','Résoudre un problème de multiplication'],
  ['Passer de l’addition à la multiplication','Avancer sur une droite graduée','Relier les produits'],
  ['Écrire la multiplication d’un tableau','Trouver le nombre de groupes','Corriger une multiplication'],
- ['Compléter un tableau de produits','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
+ ['Compléter un tableau de produits','Utiliser un produit voisin','Choisir la bonne opération'],
  ['Écrire la multiplication de groupes','Compléter un tableau de produits','Résoudre un problème de multiplication'],
  ['Passer de l’addition à la multiplication','Trouver le nombre de groupes','Relier les produits'],
- ['Écrire la multiplication d’un tableau','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
+ ['Écrire la multiplication d’un tableau','Utiliser un produit voisin','Choisir la bonne opération'],
  ['Avancer sur une droite graduée','Compléter la table de multiplication','Corriger une multiplication']
 ];
 const modes={
 'Écrire la multiplication de groupes':'groups','Compléter la table de multiplication':'facts','Résoudre un problème de multiplication':'story',
 'Passer de l’addition à la multiplication':'repeated','Avancer sur une droite graduée':'jump','Relier les produits':'match',
 'Écrire la multiplication d’un tableau':'array','Trouver le nombre de groupes':'missing','Corriger une multiplication':'error',
-'Compléter un tableau de produits':'table','이웃한 구구단으로 계산하기':'neighbor','이야기에 맞는 식 고르기':'choose'
+'Compléter un tableau de produits':'table','Utiliser un produit voisin':'neighbor','Choisir la bonne opération':'choose'
 };
 const profiles=Array.from({length:8},(_,i)=>({name:(i+2)+'단 익히기',tables:[i+2],activities:single[i].map(title=>({title,method:modes[title]}))}));
 const add=(name,tables,methods)=>profiles.push({name,tables,activities:methods.map(method=>({method,title:Object.keys(modes).find(k=>modes[k]===method)||({
@@ -63,7 +63,7 @@ let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'t
   if(method==='missing'){prompt='Trouve le nombre de groupes manquant.';visual=badge;task=eq(a+' × □ = '+product);answer=String(b);reason='Cherche dans la table de '+a+' le produit égal à '+product+'.'}
   if(method==='error'){const wrong=product+(r(2)?a:1);prompt='Repère l’erreur et corrige le calcul.';visual=badge+eq(a+' × '+b+' = '+wrong);task='Calcul corrigé : __________________';answer=a+' × '+b+' = '+product;reason=b+' groupes de '+a+' font '+product+'.'}
   if(method==='table'){const start=1+b%6;prompt='Complète les cases vides de la table de '+a+'.';visual=badge+'<table class="ktable"><tr><th>Facteur</th>'+[start,start+1,start+2].map(x=>'<td>'+x+'</td>').join('')+'</tr><tr><th>'+a+'</th><td>□</td><td>'+a*(start+1)+'</td><td>□</td></tr></table>';task='';answer=a*start+', '+a*(start+2);reason='Quand le facteur augmente de 1, le produit augmente de '+a+'.'}
-  if(method==='neighbor'){const k=2+b%7;prompt='알고 있는 곱셈을 이용해 다음 곱셈을 완성하세요.';visual=badge+eq(a+' × '+k+' = '+a*k);task=eq(a+' × '+(k+1)+' = '+a*k+' + □ = □');answer=a+', '+a*(k+1);reason='한 묶음 '+a+'개를 더합니다.'}
+  if(method==='neighbor'){const k=2+b%7;prompt='Utilise le produit connu pour compléter la multiplication suivante.';visual=badge+eq(a+' × '+k+' = '+a*k);task=eq(a+' × '+(k+1)+' = '+a*k+' + □ = □');answer=a+', '+a*(k+1);reason='On ajoute un groupe de '+a+'.'}
   if(method==='match'){const k=1+b%7, vals=[a*k,a*(k+1),a*(k+2)],offset=r(3),choices=vals.slice(offset).concat(vals.slice(0,offset));prompt='Relie chaque multiplication à son résultat.';visual=badge+'<div class="match-columns"><div>'+[k,k+1,k+2].map(x=>'<p>'+a+' × '+x+' ●</p>').join('')+'</div><div>'+choices.map(x=>'<p>● '+x+'</p>').join('')+'</div></div>';task='';answer=[k,k+1,k+2].map(x=>a+' × '+x+' → '+a*x).join(' / ');reason='Calcule d’abord chaque produit.'}
   if(['story','family','team','pack','ticket','reverse','choose'].includes(method)){
    const contexts=[
@@ -89,7 +89,7 @@ let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'t
 task='Multiplication : □ × □ = □<br>Réponse : __________';answer=a+' × '+b+' = '+product+' ('+product+c.unit+')';reason='Multiplie le nombre par groupe par le nombre de groupes.';
    if(method==='pack'||method==='reverse'){prompt=c.back;task=eq(a+' × □ = '+product);answer=String(b);reason=a+' × '+b+' = '+product+'입니다.'}
    if(method==='team'){prompt=c.stem+' 준비물을 '+(product+a)+'개라고 계산했습니다. 맞는지 확인하고 고치세요.';task='맞으면 ○, 틀리면 ×: ____<br>Calcul corrigé : __________________';answer='×, '+a+' × '+b+' = '+product;reason='모둠 수보다 한 묶음 더 계산했습니다.'}
-   if(method==='choose'){task='<div class="story-options">① '+a+' + '+b+'　② '+a+' × '+b+'</div>맞는 식: ____　계산한 답: ____';answer='②, '+product+c.unit;reason='같은 수 '+a+'가 '+b+'묶음이므로 곱셈입니다.'}
+   if(method==='choose'){task='<div class="story-options">① '+a+' + '+b+'　② '+a+' × '+b+'</div>Opération : ____　Résultat : ____';answer='②, '+product+c.unit;reason='Il y a '+b+' groupes de '+a+' : on multiplie.'}
   }
   if(method==='compare'){const c=Math.min(9,b+1),first=a*b,second=a*c;prompt='두 사람이 모은 수를 비교해 기호를 쓰세요.';visual=badge+'<div>가: '+a+'개씩 '+b+'묶음<br>나: '+a+'개씩 '+c+'묶음</div>';task=eq('가 □ 나');answer=first===second?'=':'<';reason=first+'와 '+second+'를 비교합니다.'}
   if(method==='target'){const k=2+b%7;prompt='두 수 카드로 목표 수를 만드는 곱셈식을 쓰세요. 카드는 한 번씩 사용합니다.';visual=badge+'<div class="number-cards">'+[a,k,10].sort((x,y)=>x-y).map(x=>'<b>'+x+'</b>').join('')+'</div><div>목표 수: '+a*k+'</div>';task=eq('□ × □ = '+a*k);answer=a+' × '+k+' (또는 '+k+' × '+a+')';reason='두 수를 골라 곱한 값이 목표 수가 되는지 확인합니다.'}
@@ -104,5 +104,5 @@ if(!prompt||!answer)throw Error('미구현 구구단 활동 '+method);
  }
  return spec.activities.map((s,i)=>({title:s.title,skill:'times',method:s.method,questions:Array.from({length:s.method==='facts'&&spec.tables.length===1?1:n},(_,j)=>question(s.method,j,i))}));
 }
-root.FrTimes={sixProfiles:[{...bank.profiles[4],name:'La table de 6 : groupes, tableau et problèmes'}],generateSix(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',4,seed,n)},twoProfiles:[{...bank.profiles[0],name:'La table de 2 : groupes, calculs et problèmes'}],generateTwo(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',0,seed,n)},nineProfiles:[{...bank.profiles[7],name:'La table de 9 : avancer, compléter et vérifier'}],generateNine(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',7,seed,n)},sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
+root.FrTimes={fiveProfiles:[{...bank.profiles[3],name:'La table de 5 : tableau, produit voisin et problèmes'}],generateFive(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',3,seed,n)},sixProfiles:[{...bank.profiles[4],name:'La table de 6 : groupes, tableau et problèmes'}],generateSix(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',4,seed,n)},twoProfiles:[{...bank.profiles[0],name:'La table de 2 : groupes, calculs et problèmes'}],generateTwo(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',0,seed,n)},nineProfiles:[{...bank.profiles[7],name:'La table de 9 : avancer, compléter et vérifier'}],generateNine(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',7,seed,n)},sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
 })(globalThis);
