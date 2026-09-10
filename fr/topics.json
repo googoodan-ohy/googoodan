@@ -1,0 +1,56 @@
+[
+  {
+    "id": "addition-cp",
+    "grade": "CP",
+    "title": "Additions jusqu’à 10",
+    "op": "add",
+    "max": 10,
+    "ex": "4 + 3 = 7",
+    "tip": "Pars de 4 et avance de 3 pour trouver 7. Tu peux dessiner des points pour vérifier."
+  },
+  {
+    "id": "soustraction-cp",
+    "grade": "CP",
+    "title": "Soustractions jusqu’à 10",
+    "op": "sub",
+    "max": 10,
+    "ex": "8 − 3 = 5",
+    "tip": "Dessine 8 points, barre-en 3, puis compte les 5 points qui restent."
+  },
+  {
+    "id": "addition-ce1",
+    "grade": "CE1",
+    "title": "Additions à deux chiffres",
+    "op": "add",
+    "max": 99,
+    "ex": "27 + 35 = 62",
+    "tip": "Additionne les unités : 7 + 5 = 12. Garde 2 unités et ajoute une dizaine aux dizaines."
+  },
+  {
+    "id": "soustraction-ce1",
+    "grade": "CE1",
+    "title": "Soustractions à deux chiffres",
+    "op": "sub",
+    "max": 99,
+    "ex": "73 − 28 = 45",
+    "tip": "Décompose 73 en 6 dizaines et 13 unités. Puis calcule 13 − 8 et 6 − 2."
+  },
+  {
+    "id": "multiplication-ce2",
+    "grade": "CE2",
+    "title": "Multiplications par un chiffre",
+    "op": "longMul",
+    "max": 99,
+    "ex": "24 × 3 = 72",
+    "tip": "Décompose 24 en 20 et 4 : 20 × 3 = 60 et 4 × 3 = 12. Additionne 60 et 12."
+  },
+  {
+    "id": "tables-ce2",
+    "grade": "CE2",
+    "title": "Tables de multiplication",
+    "op": "mul",
+    "max": 9,
+    "ex": "6 × 7 = 42",
+    "tip": "Six groupes de sept objets contiennent 42 objets. Vérifie en additionnant 7 six fois."
+  }
+]
