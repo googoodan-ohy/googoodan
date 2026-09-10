@@ -2,3 +2,5 @@
 .gd-brand-bar{padding:16px 24px;background:white;border-bottom:1px solid #d2e3df}.gd-brand-name>span{display:inline!important}.gd-brand{letter-spacing:normal!important}@media print{.gd-brand-bar{display:none!important}}
 
 .gd-brand-name{font-family:"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif;font-size:29px;font-weight:900;letter-spacing:-1.5px}.gd-brand-name>span{font-size:32px;color:#ed764b;margin-left:1px}.gd-brand-name i{display:none}@media(max-width:520px){.gd-brand-name{font-size:26px}.gd-brand-name>span{font-size:29px}}
+
+.gd-brand-korean{display:block;font-size:13px;font-weight:700;line-height:1.2;letter-spacing:0;color:#176e5c}
