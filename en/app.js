@@ -1,4 +1,6 @@
-const {types,generate}=Worksheets;
+const {types}=Worksheets;
+if(!types.some(t=>t.id==='times-tables'))types.push(GDTimes.type);
+const generate=(id,seed,count)=>id==='times-tables'?GDTimes.rows(seed,count):Worksheets.generate(id,seed,count);
 let current=types.find(t=>t.id===new URLSearchParams(location.search).get('type'))||types.find(t=>t.id===document.body.dataset.type)||types[0],seed=Number(new URLSearchParams(location.search).get('set'))||Math.floor(Math.random()*1e9),answers=false;
 const groups=document.querySelector('.groups');
 let family=current.family,operation=current.group,browse=new URLSearchParams(location.search).get('browse')==='curriculum'?'curriculum':'topic',grade=['K','1','2','3','4','5'].includes(new URLSearchParams(location.search).get('grade'))?new URLSearchParams(location.search).get('grade'):'1';
@@ -31,7 +33,7 @@ const numberArt={
 'Natural numbers':'<svg viewBox="0 0 100 52" aria-hidden="true"><g fill="#df8351"><circle cx="18" cy="35" r="6"/><circle cx="43" cy="35" r="6"/><circle cx="43" cy="19" r="6"/><circle cx="73" cy="35" r="6"/><circle cx="73" cy="19" r="6"/><circle cx="87" cy="35" r="6"/></g></svg>',
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
 'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
-'Integers':'<svg viewBox="0 0 100 52" aria-hidden="true"><path d="M7 25H93M25 20V30M50 17V32M75 20V30" stroke="#a77648" stroke-width="2"/><circle cx="25" cy="25" r="4" fill="#df8351"/><g text-anchor="middle" font-size="12"><text x="25" y="47">−1</text><text x="50" y="47">0</text><text x="75" y="47">1</text></g></svg>'};
+'Times tables':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="18" y="4" width="64" height="44" rx="8" fill="#eaf5ee" stroke="#187564"/><text x="50" y="33" text-anchor="middle" font-size="24" fill="#187564">2×3</text></svg>'};
 function choose(t){if(t.id===current.id)return;WorksheetNavigation.go('/en/'+t.id+'.html'+(browse==='curriculum'?'?browse=curriculum&grade='+grade:''));}
 function menu(){
  if(browse==='curriculum'){location.replace(grade==='K'?'kindergarten.html':'grades.html?grade='+grade);return;}
@@ -40,7 +42,8 @@ function menu(){
  const addChoices=list=>{const grid=document.createElement('div');grid.className='choices';if(browse==='topic')list=[...list].sort((a,b)=>digitOrder(a)-digitOrder(b));for(const t of list){const a=document.createElement('a');a.className='choice';a.href=t.id+'.html';a.dataset.id=t.id;a.innerHTML='<span class="example">'+exampleHTML(t)+'</span><small>'+t.title+'</small>';if(t.id===current.id)a.setAttribute('aria-current','page');a.onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();choose(t);};grid.append(a);}groups.append(grid);};
  const row=(labels,selected,action,symbols=false)=>{const r=document.createElement('div');r.className=symbols?'operation-row':'filter-row';for(const label of labels){const b=document.createElement('button');if(!symbols&&numberArt[label]){b.classList.add('number-category');b.innerHTML=numberArt[label]+'<span>'+label+'</span>';}else b.textContent=symbols?icons[label]:label;b.setAttribute('aria-label',label);b.setAttribute('aria-pressed',selected===label);b.onclick=()=>action(label);r.append(b);}groups.append(r);};
  if(browse==='topic'){
- row(['Natural numbers','Fractions','Decimals','Integers'],family,label=>{family=label;if(operation==='Number sense'&&family!=='Natural numbers')operation='Addition';menu();});
+ row(['Natural numbers','Fractions','Decimals','Times tables'],family,label=>{family=label;if(label==='Times tables'){location.href='/en/?type=times-tables';return;}if(operation==='Number sense'&&family!=='Natural numbers')operation='Addition';menu();});
+ if(family==='Times tables'){GDTimes.menu(groups,()=>{seed++;answers=false;history.replaceState(null,'','?type=times-tables&tables='+GDTimes.selected.join(','));render();});return;}
  row(['Addition','Subtraction','Multiplication','Division',...(family==='Natural numbers'?['Number sense']:[])],operation,label=>{operation=label;menu();},true);
  const h=document.createElement('h2');h.className='menu-heading';h.textContent=family+' · '+operation;groups.append(h);
  addChoices(types.filter(t=>t.family===family&&t.group===operation));
@@ -94,6 +97,9 @@ function writtenWork(p,show){
 }
 
 function render(){
+ if(current.id==='times-tables'){GDTimes.decorate(seed);current.title='Times tables: '+GDTimes.selected.join(', ');}else GDTimes.reset();
+ document.querySelector('#new').disabled=current.id==='times-tables'&&!GDTimes.selected.length;
+ updatePrintSelection();
  if(document.getElementById('resource-heading')){
  document.getElementById('resource-heading').textContent=current.title+' practice guide';
  document.getElementById('resource-description').textContent='Practice '+current.title.toLowerCase()+' with printable questions and a matching answer key.';
@@ -114,6 +120,7 @@ function render(){
  document.querySelector('#mode').textContent=answers?'Answer key':'Practice worksheet';
  document.querySelector('.problems').classList.toggle('decimal-sheet',current.family==='Decimals');
  document.querySelector('.problems').classList.toggle('fraction-sheet',current.family==='Fractions');
+ if(current.id==='times-tables'&&!GDTimes.selected.length){document.querySelector('.problems').innerHTML='';document.querySelector('#status').textContent='Choose at least one table.';return;}
  const sample=generate(current.id,seed,1)[0];
  const isDivision=sample.op==='÷'&&['Natural numbers','Decimals'].includes(current.family);
  const isMultiplication=sample.op==='×'&&sample.vertical;
@@ -139,6 +146,7 @@ document.querySelector('#answers').onclick=()=>{answers=true;trackWorksheet('wor
 document.querySelector('#new').onclick=()=>{seed=(seed+1)>>>0;trackWorksheet('worksheet_regenerate');render();};
 function clearPrintBundle(){document.querySelector('#print-bundle')?.remove();document.body.classList.remove('printing-bundle');}
 function preparePrintBundle(){
+ if(GDTimes.chartActive||current.id==='times-tables'&&!GDTimes.selected.length)return;
  clearPrintBundle();
  const modes=[];if(document.querySelector('#print-worksheet').checked)modes.push(false);if(document.querySelector('#print-answer').checked)modes.push(true);
  if(!modes.length)return;
@@ -146,7 +154,7 @@ function preparePrintBundle(){
  try{for(let copy=0;copy<copies;copy++){seed=(originalSeed+copy)>>>0;for(const mode of modes){answers=mode;render();const page=document.querySelector('.paper').cloneNode(true);page.removeAttribute('id');page.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));const footer=page.querySelector('.paper-footer');if(footer&&copies>1){const label=document.createElement('span');label.textContent=(copy+1)+' / '+copies;footer.append(label);}bundle.append(page);}}}finally{seed=originalSeed;answers=original;render();}
  document.body.append(bundle);document.body.classList.add('printing-bundle');
 }
-function updatePrintSelection(){document.querySelector('#print').disabled=!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
+function updatePrintSelection(){document.querySelector('#print').disabled=(current.id==='times-tables'&&!GDTimes.selected.length)||!document.querySelector('#print-worksheet').checked&&!document.querySelector('#print-answer').checked;}
 for(const id of ['print-worksheet','print-answer'])document.querySelector('#'+id).onchange=updatePrintSelection;
 window.GDPreparePDF=preparePrintBundle;
 window.addEventListener('beforeprint',preparePrintBundle);
