@@ -1355,6 +1355,25 @@
         "cone",
         "sphere"
       ]
+    },
+    {
+      "source": "3-1-2",
+      "grade": 2,
+      "name": "直角と図形の辺",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-1-2-2",
+      "bank": "core-numeric",
+      "scope": "直角と図形の辺を調べる活動を再利用します。半直線を含む分類問題は含めません。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf",
+      "selectedSkills": [
+        "angle-right",
+        "flat-count"
+      ],
+      "excludedSkills": [
+        "lines"
+      ]
     }
   ]
 }
