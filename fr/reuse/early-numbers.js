@@ -2,7 +2,7 @@
 const profiles=[
  {name:'Compter, entourer et lire les nombres',activities:[['count','Compter les images'],['mark','Entourer le nombre demandé'],['words','Relier les nombres aux mots']]},
  {name:'Comparer les nombres et les positions',activities:[['ordinal','Repérer une position'],['neighbors','Trouver le nombre précédent et suivant'],['compare','Comparer deux quantités']]},
- {name:'수가 나타내는 뜻',activities:[['zero','아무것도 없는 수 0'],['two-read','수를 두 가지로 읽기'],['order','수 카드를 순서대로 놓기']]},
+ {name:'Zéro et ordre des nombres',activities:[['zero','Comprendre le nombre zéro'],['two-read','수를 두 가지로 읽기'],['order','Ranger les nombres']]},
  {name:'Trouver les nombres avec des indices',activities:[['clue','Trouver tous les nombres possibles'],['line','Compléter une droite graduée'],['repair','Remettre les nombres dans l’ordre']]}
 ].map(x=>({...x,activities:x.activities.map(([method,title])=>({method,title}))}));
 function generate(p,seed,n,excluded){
@@ -13,7 +13,7 @@ function generate(p,seed,n,excluded){
  return profiles[p].activities.map(s=>({title:s.title,skill:s.method,questions:Array.from({length:s.method==='zero'?1:n},()=>{
  const asset=session.take(),a=between(1,9),b=between(1,9);let prompt='',visual='',task=blank,answer='',reason='',open=false;
  const count=x=>KoArt.count(asset,x),cards=xs=>'<div class="number-cards">'+xs.map(x=>'<b>'+x+'</b>').join('')+'</div>';
- if(s.method==='zero'){prompt='아무것도 없는 바구니의 개수를 수로 쓰세요.';visual='<div class="empty-count-basket">비어 있어요</div>';answer='0';reason='하나도 없는 것은 0으로 나타냅니다.'}
+ if(s.method==='zero'){prompt='Écris le nombre d’objets dans le panier vide.';visual='<div class="empty-count-basket">Le panier est vide</div>';answer='0';reason='Quand il n’y a aucun objet, on écrit 0.'}
  if(s.method==='two-read'){prompt='그림의 수를 세고 두 가지 방법으로 읽어 쓰세요.';visual=count(a);task='수: ____　읽기: ______, ______';answer=a+' / '+sino[a]+', '+names[a];reason='같은 수를 두 가지 말로 읽을 수 있습니다.'}
  if(s.method==='count'){prompt='Combien y a-t-il d’images ? Écris le nombre.';visual=count(a);answer=a;reason='En comptant les images une par une, on en trouve '+a+'.'}
  if(s.method==='mark'){const total=between(4,9),k=between(1,total-1);prompt='Entoure exactement '+k+' images.';visual=count(total);task='';answer='Entourer '+k+' images';reason='Il suffit de choisir et d’entourer '+k+' images.';open=true}
@@ -23,7 +23,7 @@ function generate(p,seed,n,excluded){
  if(s.method==='compare'){const k=between(1,4),j=between(5,9);prompt='Entoure le groupe qui contient le plus d’images.';const reverse=r(2);visual='<div class="two-baskets"><div>A'+count(reverse?j:k)+'</div><div>B'+count(reverse?k:j)+'</div></div>';task='A / B';answer=reverse?'A':'B';reason=j+' est plus grand que '+k+'.'}
  if(s.method==='bond'){const total=between(3,9),left=between(1,total-1);prompt='전체를 두 묶음으로 가릅니다. 빈칸을 채우세요.';visual=count(total)+'<div class="number-bond"><b>'+total+'</b><span>↙　↘</span><span>'+left+'　　□</span></div>';answer=total-left;reason=left+'개를 한쪽에 놓으면 '+(total-left)+'개가 남습니다.'}
  if(s.method==='complete'){const total=between(3,9),given=between(1,total-1);prompt='모두 '+total+'개가 되도록 부족한 만큼 간단한 그림을 더 그리세요.';visual=count(given);task='<div class="kdraw"></div>';answer=(total-given)+'개 더 그리기';reason=given+'개와 '+(total-given)+'개를 모으면 '+total+'개입니다.';open=true}
- if(s.method==='order'){let vals=[...new Set([a,b,between(1,9),between(1,9)])];while(vals.length<3){const v=between(1,9);if(!vals.includes(v))vals.push(v)}vals=vals.slice(0,3);prompt='작은 수부터 차례대로 쓰세요.';visual=cards(vals);task='____ → ____ → ____';answer=[...vals].sort((x,y)=>x-y).join(' → ');reason='가장 작은 수부터 놓습니다.'}
+ if(s.method==='order'){let vals=[...new Set([a,b,between(1,9),between(1,9)])];while(vals.length<3){const v=between(1,9);if(!vals.includes(v))vals.push(v)}vals=vals.slice(0,3);prompt='Écris les nombres du plus petit au plus grand.';visual=cards(vals);task='____ → ____ → ____';answer=[...vals].sort((x,y)=>x-y).join(' → ');reason='Commence par le plus petit nombre.'}
  if(s.method==='clue'){const lo=between(1,5),hi=lo+3;prompt='Trouve tous les nombres plus grands que '+lo+' et plus petits que '+hi+'.';visual=cards([lo,lo+1,lo+2,hi]);answer=(lo+1)+', '+(lo+2);reason=lo+' et '+hi+' ne respectent pas les conditions.'}
  if(s.method==='line'){const start=between(1,5),missing=between(1,3);prompt='Écris le nombre manquant dans □ sur la droite graduée.';visual='<svg class="concept-art" viewBox="0 0 240 55"><path d="M15 20H225" stroke="#456c78"/>'+Array.from({length:5},(_,i)=>'<path d="M'+(20+i*50)+' 16v9" stroke="#456c78"/><text x="'+(20+i*50)+'" y="44" font-size="17" text-anchor="middle">'+(i===missing?'□':start+i)+'</text>').join('')+'</svg>';answer=start+missing;reason='Chaque graduation vers la droite ajoute 1.'}
  if(s.method==='repair'){const start=between(1,6);prompt='Deux cartes ont été échangées dans la suite croissante. Écris les deux nombres échangés.';visual=cards([start,start+2,start+1,start+3]);task='____ et ____';answer=(start+2)+', '+(start+1);reason='L’ordre correct est '+[start,start+1,start+2,start+3].join(', ')+'.'}
@@ -31,5 +31,5 @@ function generate(p,seed,n,excluded){
  return {methodId:s.method,skill:s.method,prompt,visual,task,answer:String(answer),reason,open,artId:asset.id};
  })}));
 }
-const selected=[0,1,3];root.KoEarlyNumbers={profiles:selected.map(i=>profiles[i]),generate(p,...args){if(!Number.isInteger(p)||p<0||p>=selected.length)throw Error("French profile not yet available");return generate(selected[p],...args)}};
+const selected=[0,1,3,2];root.KoEarlyNumbers={profiles:selected.map(i=>i===2?{...profiles[i],activities:profiles[i].activities.filter(a=>a.method!=='two-read')}:profiles[i]),generate(p,...args){if(!Number.isInteger(p)||p<0||p>=selected.length)throw Error("French profile not yet available");return generate(selected[p],...args).filter(a=>a.skill!=='two-read')}};
 })(globalThis);
