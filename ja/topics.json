@@ -483,5 +483,45 @@
     "op": "circleArea",
     "file": "en-menseki.html",
     "heading": "円の面積の練習プリント"
+  },
+  {
+    "id": "nagasa-tani",
+    "grade": 2,
+    "title": "長さの単位（cm・mm・m）",
+    "op": "lengthUnits",
+    "file": "nagasa-tani.html",
+    "heading": "長さの単位（cm・mm・m）の無料プリント"
+  },
+  {
+    "id": "kasa-tani",
+    "grade": 2,
+    "title": "かさの単位（L・dL・mL）",
+    "op": "capacityUnits",
+    "file": "kasa-tani.html",
+    "heading": "かさの単位（L・dL・mL）の無料プリント"
+  },
+  {
+    "id": "jikan-tani",
+    "grade": 2,
+    "title": "時間の単位（時・分）",
+    "op": "timeUnits",
+    "file": "jikan-tani.html",
+    "heading": "時間の単位（時・分）の無料プリント"
+  },
+  {
+    "id": "omosa-tani",
+    "grade": 3,
+    "title": "重さの単位（kg・g）",
+    "op": "massUnits",
+    "file": "omosa-tani.html",
+    "heading": "重さの単位（kg・g）の無料プリント"
+  },
+  {
+    "id": "jikoku-jikan",
+    "grade": 3,
+    "title": "時刻と時間",
+    "op": "elapsedTime",
+    "file": "jikoku-jikan.html",
+    "heading": "時刻と時間の無料プリント"
   }
 ]
