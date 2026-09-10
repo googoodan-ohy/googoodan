@@ -90,6 +90,15 @@
     "heading": "ひき算の文章題プリント"
   },
   {
+    "id": "hyakubunritsu",
+    "grade": 5,
+    "title": "百分率で量を求める",
+    "op": "percentAmount",
+    "max": 500,
+    "file": "hyakubunritsu.html",
+    "heading": "百分率の計算プリント：全体の何％にあたる量を求める"
+  },
+  {
     "id": "kakezan-2-by-1",
     "grade": 3,
     "title": "2けた×1けたのかけ算",
