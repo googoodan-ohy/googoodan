@@ -1164,6 +1164,30 @@
       "bank": "core-numeric",
       "scope": "円の面積と円周の復習。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-4",
+      "grade": 6,
+      "name": "比と割合・百分率の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-1-4-6",
+      "bank": "core-numeric",
+      "scope": "比と割合・百分率の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-4",
+      "grade": 6,
+      "name": "等しい比・比で分ける",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-2-4-6",
+      "bank": "core-numeric",
+      "scope": "等しい比・比で分ける。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
