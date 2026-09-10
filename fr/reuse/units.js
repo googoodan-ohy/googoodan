@@ -74,7 +74,7 @@ function menus(){
  $('#unit').innerHTML=C.units.filter(u=>u.grade===browseGrade&&u.semester===browseSemester).map(u=>'<option value="'+u.id+'">'+u.number+'. '+E(u.name)+'</option>').join('');$('#unit').value=browseUnit.id;renderProfileMenu();
 }
 $('#unit').onchange=()=>{browseUnit=C.units.find(u=>u.id===$('#unit').value);renderProfileMenu()};
-$('#new').onclick=()=>{window.GDAnalytics?.track('worksheet_regenerate',{worksheet_id:unit.id+'-'+profile,edition:'ko'});M.excludeArt([...document.querySelectorAll('#sheet-view [data-art-id]')].map(x=>x.dataset.artId));seed=(seed+1+Math.floor(Math.random()*99999999))%100000000;render()};
+$('#new').onclick=()=>{window.GDAnalytics?.track('worksheet_regenerate',{worksheet_id:unit.id+'-'+profile,edition:'fr'});M.excludeArt([...document.querySelectorAll('#sheet-view [data-art-id]')].map(x=>x.dataset.artId));seed=(seed+1+Math.floor(Math.random()*99999999))%100000000;render()};
 $('#worksheet').onclick=()=>{answer=false;draw()};$('#answer').onclick=()=>{answer=true;draw()};
 function prepare(){if(!$('#print-q').checked&&!$('#print-a').checked){$('#print-bundle').innerHTML='';$('#status').textContent='Choisissez la fiche ou le corrigé à imprimer.';return false}const originalSeed=seed,copies=Math.min(20,Math.max(1,Math.floor(Number(document.querySelector('#worksheet-copies')?.value)||1)));let pages='';try{for(let copy=0;copy<copies;copy++){seed=(originalSeed+copy)>>>0;render();pages+=($('#print-q').checked?sheetHTML(false):'')+($('#print-a').checked?sheetHTML(true):'');}}finally{seed=originalSeed;render();}$('#print-bundle').innerHTML=pages;return true}
 for(const id of ['#print-q','#print-a'])$(id).onchange=()=>{$('#print').disabled=!$('#print-q').checked&&!$('#print-a').checked};
