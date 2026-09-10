@@ -7,3 +7,5 @@
 .story-problems #questions{grid-template-columns:1fr;font-size:18px}.story-problems #questions li{padding-bottom:32px}@media print{.story-problems #questions{font-size:14px;gap:12px}.story-problems #questions li{padding-bottom:24px}}
 
 @media screen and (max-width:420px){.long-expressions #questions{grid-template-columns:1fr;font-size:20px}}
+
+#questions{counter-reset:vertical-question}#questions .vertical-problem{position:relative;counter-increment:vertical-question}#questions .vertical-problem::before{content:counter(vertical-question) ".";position:absolute;left:-24px;top:0;font:12px system-ui;letter-spacing:normal}@media print{html,body,main{background:#fff!important}#questions:has(.vertical-problem){font-size:14px;gap:6px 32px}#questions .vertical-problem{line-height:1.25;padding:2px 0}}
