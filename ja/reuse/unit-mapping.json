@@ -109,6 +109,99 @@
         19
       ],
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-3",
+      "target": "ja-written-2-1-3",
+      "grade": 2,
+      "name": "二けたのたし算・ひき算の筆算",
+      "scope": "二けたのたし算・ひき算の筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-1",
+      "target": "ja-written-3-1-1",
+      "grade": 3,
+      "name": "三けたのたし算・ひき算の筆算",
+      "scope": "三けたのたし算・ひき算の筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-4",
+      "target": "ja-written-3-1-4",
+      "grade": 3,
+      "name": "二けた×一けたの筆算",
+      "scope": "二けた×一けたの筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-1",
+      "target": "ja-written-3-2-1",
+      "grade": 3,
+      "name": "三けた×一けたの筆算",
+      "scope": "三けた×一けたの筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-3",
+      "target": "ja-written-3-2-3",
+      "grade": 4,
+      "name": "一けたでわるわり算の筆算",
+      "scope": "一けたでわるわり算の筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-3",
+      "target": "ja-written-4-1-3",
+      "grade": 4,
+      "name": "二けたでわるわり算の筆算",
+      "scope": "二けたでわるわり算の筆算。計算、□の数、まちがい直しを組み合わせて練習します。",
+      "bank": "arithmetic-targets",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
