@@ -1080,6 +1080,66 @@
       "bank": "core-numeric",
       "scope": "数の範囲と概数。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-5",
+      "grade": 2,
+      "name": "表と絵グラフ・一つずつ数える",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-2-5-2",
+      "bank": "core-numeric",
+      "scope": "表と絵グラフ・一つずつ数える。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-6",
+      "grade": 3,
+      "name": "絵グラフと一つ分の数",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-2-6-3",
+      "bank": "core-numeric",
+      "scope": "絵グラフと一つ分の数。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-5",
+      "grade": 3,
+      "name": "棒グラフと表の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-1-5-3",
+      "bank": "core-numeric",
+      "scope": "棒グラフと表の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-2-5",
+      "grade": 4,
+      "name": "気温の折れ線グラフ",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-2-5-4",
+      "bank": "core-numeric",
+      "scope": "気温の折れ線グラフ。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-5",
+      "grade": 5,
+      "name": "帯グラフとグラフの選び方",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-1-5-5",
+      "bank": "core-numeric",
+      "scope": "帯グラフとグラフの選び方。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
