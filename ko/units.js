@@ -24,7 +24,7 @@ function mascot(kind){
  return '<svg class="mascot" viewBox="0 0 105 82" aria-hidden="true" style="color:var(--accent)">'+forms[kind]+'</svg>';
 }
 function theme(){return C.themes[(grade-1)*2+semester-1]}
-function title(){return M.profiles(unit.id)[profile].name}
+function title(){if(window.WORKSHEET_ENTRY?.assessment)return "단원평가";return M.profiles(unit.id)[profile].name}
 function mixedMarkup(html){return String(html).split(/(<[^>]*>)/g).map((s,i)=>i%2?s:s.replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2')).join('')}
 function qHTML(q,i){return '<div class="question" data-method="'+E(q.methodId||q.skill)+'" data-art="'+E(q.artId||'')+'"><span class="qnumber">'+i+'</span><div class="prompt">'+E(q.prompt)+'</div><div class="visual">'+mixedMarkup(q.visual)+'</div><div class="task">'+mixedMarkup(q.task)+'</div><div class="solution">'+E(q.answer)+'<span class="explanation">'+E(q.reason)+'</span></div></div>'}
 function sheetHTML(isAnswer){
@@ -36,7 +36,7 @@ function fit(){
  function fits(){holder.innerHTML=sheetHTML(true);const a=holder.querySelector('.activities'),f=holder.querySelector('.sheet-footer');return a.scrollHeight<=a.clientHeight+0.5&&Math.max(...[...a.children].map(e=>e.getBoundingClientRect().bottom))<=f.getBoundingClientRect().top-8}
  let best=null;
  for(const small of [false,true]){
-  compact=small;counts=sections.map(()=>1);if(!fits())continue;
+  compact=small;counts=sections.map(s=>window.WORKSHEET_ENTRY?.assessment?Math.min(2,s.questions.length):1);if(!fits())continue;
   let changed=true;
   while(changed){changed=false;for(let i=0;i<counts.length;i++){if(counts[i]>=sections[i].questions.length)continue;counts[i]++;if(fits())changed=true;else counts[i]--;}}
   const total=counts.reduce((a,b)=>a+b,0);
@@ -53,12 +53,12 @@ function draw(){
  $('#status').textContent=counts.reduce((a,b)=>a+b,0)+'문제 · '+sections.length+'가지 활동 · 문제지 1장 / 정답지 1장';
 }
 function render(){
- profile=Math.min(profile,M.profiles(unit.id).length-1);sections=M.generate(unit.id,profile,seed,8);fit();draw();
+ profile=Math.min(profile,M.profiles(unit.id).length-1);sections=window.WORKSHEET_ENTRY?.assessment?KoAssessmentBase.generate(unit.id,0,seed,4,unit.skills.map((skill,i)=>({skill,mode:i%2}))):M.generate(unit.id,profile,seed,8);if(window.WORKSHEET_ENTRY?.assessment){const all=sections;sections=[];for(let i=0;i<all.length;i+=2){sections.push({title:'종합 점검 '+(i/2+1),questions:Array.from({length:4},(_,j)=>all.slice(i,i+2).map(x=>x.questions[j])).flat()});}}fit();draw();
  const t=theme();document.body.style.setProperty('--accent',t[2]);document.body.style.setProperty('--light',t[3]);
  $('#theme-scene').innerHTML=KoThemeScene(t[4],mascot);$('#theme-scene').setAttribute('aria-label',t[0]+' 테마 그림');$('#theme-name').textContent=t[0];$('#theme-motto').textContent=t[1];
  $('#coverage').textContent=sections.map(s=>s.title).join(' · ');
  document.title=window.WORKSHEET_ENTRY?.title||(grade+'학년 '+semester+'학기 '+unit.name+' '+title()+' | 구구단닷컴');
-const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/unit-'+unit.id+'-'+profile+'.html'; history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed));
+const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href=window.WORKSHEET_ENTRY?.assessment?'https://googoodan.com'+location.pathname:'https://googoodan.com'+'/ko/print/unit-'+unit.id+'-'+profile+'.html'; history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?grade='+grade+'&semester='+semester+'&unit='+unit.id+'&sheet='+profile+'&set='+seed));
  renderProfileMenu();
 
 }

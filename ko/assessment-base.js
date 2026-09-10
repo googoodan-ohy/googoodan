@@ -1,0 +1,1 @@
+window.KoAssessmentBase=window.KoMath;
