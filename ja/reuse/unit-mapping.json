@@ -1212,6 +1212,30 @@
       "bank": "core-numeric",
       "scope": "直方体と立方体・展開図。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-2",
+      "grade": 5,
+      "name": "三角形・四角形の角と分度器の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-1-2-5",
+      "bank": "core-numeric",
+      "scope": "三角形・四角形の角と分度器の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-2-4",
+      "grade": 5,
+      "name": "四角形の角と性質の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-2-4-5",
+      "bank": "core-numeric",
+      "scope": "四角形の角と性質の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
