@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'cm2-decimal-place',grade:4,skills:['decimal-compare:3','decimal-place']},{id:'3-1-6',grade:3,skills:['decimal-model','decimal-compare:1']},{id:'6-1-3',grade:6,skills:['decimal-fraction']},{id:'4-2-3',grade:4,skills:['decimal-add','decimal-sub']}],modeNames:['Pratiquer']};
+const C={units:[{id:'cm2-decimal-operations',grade:5,skills:['decimal-mul-whole','decimal-scale','decimal-div-whole']},{id:'cm2-decimal-place',grade:4,skills:['decimal-compare:3','decimal-place']},{id:'3-1-6',grade:3,skills:['decimal-model','decimal-compare:1']},{id:'6-1-3',grade:6,skills:['decimal-fraction']},{id:'4-2-3',grade:4,skills:['decimal-add','decimal-sub']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))).replace('.',','),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
