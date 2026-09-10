@@ -1140,6 +1140,30 @@
       "bank": "core-numeric",
       "scope": "帯グラフとグラフの選び方。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-2",
+      "grade": 3,
+      "name": "円の中心・半径・直径",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-2-2-3",
+      "bank": "core-numeric",
+      "scope": "円の中心・半径・直径。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-5",
+      "grade": 6,
+      "name": "円の面積と円周の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-2-5-6",
+      "bank": "core-numeric",
+      "scope": "円の面積と円周の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
