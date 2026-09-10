@@ -1,5 +1,5 @@
 (function(){
-const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replace(/(-?\d+) +(\d+\/\d+)/g,'$1と $2').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search);
 const replay=new URLSearchParams(location.search).get('set');if(replay&&/^\d{1,10}$/.test(replay))params.set('set',replay);
 let grade=Math.min(6,Math.max(1,+params.get('grade')||1)),semester=+params.get('semester')===2?2:1;
@@ -25,7 +25,7 @@ function mascot(kind){
 }
 function theme(){return C.themes[(grade-1)*2+semester-1]}
 function title(){return M.profiles(unit.id)[profile].name}
-function mixedMarkup(html){return String(html).split(/(<[^>]*>)/g).map((s,i)=>i%2?s:s.replace(/(-?\d+) +(\d+\/\d+)/g,'$1과 $2')).join('')}
+function mixedMarkup(html){return String(html).split(/(<[^>]*>)/g).map((s,i)=>i%2?s:s.replace(/(-?\d+) +(\d+\/\d+)/g,'$1と $2')).join('')}
 function qHTML(q,i){return '<div class="question" data-method="'+E(q.methodId||q.skill)+'" data-art="'+E(q.artId||'')+'"><span class="qnumber">'+i+'</span><div class="prompt">'+E(q.prompt)+'</div><div class="visual">'+mixedMarkup(q.visual)+'</div><div class="task">'+mixedMarkup(q.task)+'</div><div class="solution">'+E(q.answer)+'<span class="explanation">'+E(q.reason)+'</span></div></div>'}
 function sheetHTML(isAnswer){
  let n=0;const t=theme();

@@ -619,5 +619,69 @@
     "op": "circumference",
     "file": "enshu.html",
     "heading": "円周の無料プリント"
+  },
+  {
+    "id": "kazu-bunkai",
+    "grade": 1,
+    "title": "数の合成と分解",
+    "op": "numberParts",
+    "file": "kazu-bunkai.html",
+    "heading": "数の合成と分解の無料プリント"
+  },
+  {
+    "id": "sankaku-shikaku",
+    "grade": 2,
+    "title": "三角形と四角形",
+    "op": "shapeSides",
+    "file": "sankaku-shikaku.html",
+    "heading": "三角形と四角形の無料プリント"
+  },
+  {
+    "id": "bou-graph",
+    "grade": 3,
+    "title": "棒グラフの読み取り",
+    "op": "barGraph",
+    "file": "bou-graph.html",
+    "heading": "棒グラフの読み取りの無料プリント"
+  },
+  {
+    "id": "oresen-graph",
+    "grade": 4,
+    "title": "折れ線グラフの読み取り",
+    "op": "lineGraph",
+    "file": "oresen-graph.html",
+    "heading": "折れ線グラフの読み取りの無料プリント"
+  },
+  {
+    "id": "obi-graph",
+    "grade": 5,
+    "title": "帯グラフの読み取り",
+    "op": "bandGraph",
+    "file": "obi-graph.html",
+    "heading": "帯グラフの読み取りの無料プリント"
+  },
+  {
+    "id": "baai-kazu",
+    "grade": 6,
+    "title": "場合の数",
+    "op": "combinations",
+    "file": "baai-kazu.html",
+    "heading": "場合の数の無料プリント"
+  },
+  {
+    "id": "kakudo",
+    "grade": 4,
+    "title": "角の大きさ",
+    "op": "angleSum",
+    "file": "kakudo.html",
+    "heading": "角の大きさの無料プリント"
+  },
+  {
+    "id": "km-m",
+    "grade": 3,
+    "title": "長さの単位（km・m）",
+    "op": "lengthKm",
+    "file": "km-m.html",
+    "heading": "長さの単位（km・m）の無料プリント"
   }
 ]
