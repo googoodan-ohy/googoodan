@@ -984,6 +984,54 @@
       "bank": "core-numeric",
       "scope": "小数でわる計算の基本。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-3",
+      "grade": 2,
+      "name": "長さの換算と計算",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-2-3-2",
+      "bank": "core-numeric",
+      "scope": "長さの換算と計算。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-4",
+      "grade": 2,
+      "name": "時計・時間・曜日",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-2-4-2",
+      "bank": "core-numeric",
+      "scope": "時計・時間・曜日。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-5",
+      "grade": 3,
+      "name": "長さの単位と時こく・秒",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-1-5-3",
+      "bank": "core-numeric",
+      "scope": "長さの単位と時こく・秒。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-4",
+      "grade": 3,
+      "name": "かさの換算と計算の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-2-4-3",
+      "bank": "core-numeric",
+      "scope": "かさの換算と計算の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
