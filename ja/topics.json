@@ -54,6 +54,15 @@
     "heading": "分数のわり算プリント"
   },
   {
+    "id": "hi-kantan",
+    "grade": 6,
+    "title": "比を簡単にする",
+    "op": "ratioSimplify",
+    "max": 12,
+    "file": "hi-kantan.html",
+    "heading": "比を簡単にする練習プリント"
+  },
+  {
     "id": "hikizan-10",
     "grade": 1,
     "title": "10までのひき算",
