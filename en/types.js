@@ -112,6 +112,7 @@ types.push({id:'word-problems',title:'Math Word Problems Worksheets',family:'Sto
 types.push({id:'transformations',title:'Geometry Transformations Worksheets - Slides, Flips and Turns',family:'Geometry',group:'Geometry',example:'2 + 3',instruction:'Use the grid to slide, flip or turn each shape.',bankId:'4-1-4'});
 types.push({"id":"average","title":"Mean and Average Worksheets","family":"Reasoning","group":"Reasoning","example":"2 + 3","instruction":"Show your work and explain your answer.","bankId":"5-2-6"});
 types.push({"id":"ratio","title":"Ratio and Proportion Worksheets","family":"Reasoning","group":"Reasoning","example":"2 + 3","instruction":"Show your work and explain your answer.","bankId":"6-1-4"});
+types.push({id:'percent-graph',title:'Percent and Strip Graph Worksheets',family:'Data',group:'Data',example:'2 + 3',instruction:'Read percentages and complete the strip graph.',bankId:'6-1-5'});
 root.Worksheets={types,generate,rational,exact,fraction};
 
 const existingGenerate=root.Worksheets.generate;
