@@ -110,7 +110,9 @@ function render(){
  }
 
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
- document.title=/^\/en\/(?:index\.html)?$/.test(location.pathname)?'Free Printable Math Worksheets with Answer Keys | Googoodan':current.title+' Worksheets | Googoodan';
+ // Keep the page's own static <title> for SEO; only rename when the visitor switches type in-page.
+ {const pageId=(location.pathname.match(/^\/en\/([^\/]+)\.html$/)||[])[1]||'';
+  if(current.id!==pageId&&!/^\/en\/(?:index\.html)?$/.test(location.pathname))document.title=current.title+' Worksheets | Googoodan';}
  // Keep the page-specific static description; shared renderers must not overwrite SEO metadata.
  document.querySelector('link[rel="canonical"]').href=/^\/en\/(?:index\.html)?$/.test(location.pathname)?'https://googoodan.com/en/':'https://googoodan.com/en/'+current.id+'.html';
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
