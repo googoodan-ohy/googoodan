@@ -52,5 +52,23 @@
     "max": 9,
     "ex": "6 × 7 = 42",
     "tip": "Six groupes de sept objets contiennent 42 objets. Vérifie en additionnant 7 six fois."
+  },
+  {
+    "id": "addition-decimaux-cm1",
+    "grade": "CM1",
+    "title": "Additions de nombres décimaux",
+    "op": "decimalAdd",
+    "max": 99,
+    "ex": "3,45 + 2,78 = 6,23",
+    "tip": "Aligne les virgules pour calculer les centièmes avec les centièmes et les dixièmes avec les dixièmes. 5 + 8 = 13 centièmes : conserve 3 centièmes et reporte 1 dixième."
+  },
+  {
+    "id": "soustraction-decimaux-cm1",
+    "grade": "CM1",
+    "title": "Soustractions de nombres décimaux",
+    "op": "decimalSub",
+    "max": 99,
+    "ex": "5,20 − 1,87 = 3,33",
+    "tip": "Écris 5,2 sous la forme 5,20 pour aligner les chiffres. Échange un dixième contre dix centièmes si nécessaire, puis calcule de droite à gauche."
   }
 ]
