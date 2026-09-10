@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'1-1-5',grade:1,skills:['place:2','compare:50','sequence:50']},{id:'1-2-1',grade:1,skills:['place:2','compare:100','sequence:100']}],modeNames:['Pratiquer']};
+const C={units:[{id:'2-1-1',grade:2,skills:['place:3','compare:999','sequence:999']},{id:'1-1-5',grade:1,skills:['place:2','compare:50','sequence:50']},{id:'1-2-1',grade:1,skills:['place:2','compare:100','sequence:100']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
@@ -49,7 +49,7 @@ else if(['mul','mul-two','unknown-mul','groups','array','groups-div','div','div-
 else if(['number','count','place','compare','bond','large-number','sequence'].includes(kind)){
  if(kind==='count'){a=between(1,max);finish('그림은 모두 몇 개인가요?',dots(a),a,'하나씩 세면 '+a+'개입니다.')}
  else if(kind==='bond'){a=between(2,max);b=between(1,a-1);finish(a+'을 '+b+'과 □로 가르세요.',max<=10?dots(a):'',a-b,b+' + '+(a-b)+' = '+a)}
- else if(kind==='compare'){a=between(1,max);b=between(1,max);const ans=a>b?'>':a<b?'<':'=';finish('Écris le signe qui convient dans □.','<div class="kequation">'+a+' □ '+b+'</div>',ans,'Compare les chiffres en commençant par les dizaines.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
+ else if(kind==='compare'){a=between(1,max);b=between(1,max);const ans=a>b?'>':a<b?'<':'=';finish('Écris le signe qui convient dans □.','<div class="kequation">'+a+' □ '+b+'</div>',ans,'Compare les chiffres en commençant par la position la plus à gauche.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
  else if(kind==='sequence'){const step=max>99999?10000:max>999?100:max>100?10:1,start=between(1,Math.max(1,max-4*step));finish('Écris le nombre manquant.','<div class="kequation">'+[start,start+step,'□',start+3*step].join(' → ')+'</div>',start+2*step,'On ajoute '+step+' à chaque étape.')}
  else if(kind==='large-number'){const un=pick(['만','억','조']),n=between(11,99);finish(un+'이 '+n+'개인 수를 쓰세요.','',n+un,n+' × 1'+un+' = '+n+un,{wrong:(n+1)+un})}
  else if(kind==='number'&&max===9){a=between(1,8);finish(a+'보다 1 큰 수를 쓰세요.',dots(a),a+1,a+' 다음 수는 '+(a+1)+'입니다.')}
