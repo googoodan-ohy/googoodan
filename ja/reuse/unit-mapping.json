@@ -1032,6 +1032,54 @@
       "bank": "core-numeric",
       "scope": "かさの換算と計算の復習。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-1",
+      "grade": 4,
+      "name": "計算の順序とかっこ",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-1-1-4",
+      "bank": "core-numeric",
+      "scope": "計算の順序とかっこ。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-2",
+      "grade": 5,
+      "name": "約数・倍数・公約数と公倍数",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-1-2-5",
+      "bank": "core-numeric",
+      "scope": "約数・倍数・公約数と公倍数。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-3",
+      "grade": 5,
+      "name": "二つの量の関係と式",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-1-3-5",
+      "bank": "core-numeric",
+      "scope": "二つの量の関係と式。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-1",
+      "grade": 4,
+      "name": "数の範囲と概数",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-2-1-4",
+      "bank": "core-numeric",
+      "scope": "数の範囲と概数。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
