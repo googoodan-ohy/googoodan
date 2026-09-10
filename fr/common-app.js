@@ -10,7 +10,7 @@ for(const t of types){
  t.instruction=t.group==='Division'?'Calcule les divisions. Indique le reste si nécessaire.':t.group==='Number sense'?'Complète avec le nombre ou le signe qui convient.':'Calcule et écris la réponse.';
 }
 let koBrowse='topic';
-function koMenu(){groups.innerHTML='<nav class="edition-tabs"><a href="/fr/" aria-current="page"><span class="arithmetic-menu-icons"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>Calcul</span></a><a href="/fr/#classes">Calcul par chapitre</a><a href="/fr/exercices-maths-a-imprimer.html">Exercices par chapitre</a></nav>';
+function koMenu(){groups.innerHTML='<nav class="edition-tabs"><a href="/fr/" aria-current="page"><span class="arithmetic-menu-icons"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>Calcul</span></a><a href="/fr/drills.html">Calcul par chapitre</a><a href="/fr/units.html">Exercices par chapitre</a></nav>';
  const nav=document.createElement('div');nav.className='filter-row';
  for(const f of Object.keys(familyNames)){const b=document.createElement('button');b.className='number-category';b.innerHTML=numberArt[f]+'<span>'+familyNames[f]+'</span>';b.setAttribute('aria-pressed',family===f);b.onclick=()=>{family=f;operation=f==='Times tables'?'Multiplication':'Addition';if(f==='Times tables'){current=GDTimes.type;seed++;}menu();if(f==='Times tables')render();};nav.append(b)}groups.append(nav);
  if(family==='Times tables'){GDTimes.menu(groups,()=>{current=GDTimes.type;seed++;history.replaceState(null,'',location.pathname+'?type=times-tables&tables='+GDTimes.selected.join(','));render();});return;}
