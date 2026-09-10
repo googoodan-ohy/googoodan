@@ -1,4 +1,4 @@
-globalThis.JaCoreCatalog={"units":[{"id":"1-1-2","grade":1,"skills":["solid-basic","solid-sort","solid-basic"]},{"id":"1-1-3","grade":1,"skills":["add:9","sub:9","bond:9"]},{"id":"1-1-4","grade":1,"skills":["length-compare","area-compare","capacity-compare","weight-compare"]},{"id":"1-1-5","grade":1,"skills":["number:50","place:2","compare:50","sequence:50"]},{"id":"1-2-1","grade":1,"skills":["number:100","place:2","compare:100","sequence:100"]},{"id":"1-2-3","grade":1,"skills":["flat-basic","flat-count","flat-build","clock:30"]},{"id":"1-2-5","grade":1,"skills":["pattern","sequence:100","array-pattern"]},{"id":"2-1-1","grade":2,"skills":["place:3","number:999","compare:999","sequence:999"]},{"id":"2-1-3","grade":2,"skills":["add:99","sub:99","three:20","unknown:99"]},{"id":"2-1-4","grade":2,"skills":["ruler:cm","measure:cm","length-compare"]},{"id":"2-1-5","grade":2,"skills":["sort","table","sort"]},{"id":"2-1-6","grade":2,"skills":["groups","mul:9","array"]},{"id":"2-2-1","grade":2,"skills":["place:4","number:9999","compare:9999","sequence:9999"]},{"id":"2-2-6","grade":2,"skills":["pattern","sequence:100","array-pattern"]},{"id":"3-1-1","grade":3,"skills":["add:999","sub:999","unknown:999"]},{"id":"3-1-3","grade":3,"skills":["div:9","groups-div","inverse"]},{"id":"3-1-4","grade":3,"skills":["mul:99","array","unknown-mul"]},{"id":"3-2-1","grade":3,"skills":["mul:999","mul-two","unknown-mul"]},{"id":"3-2-3","grade":3,"skills":["div:99","div-remainder","inverse"]},{"id":"4-1-1","grade":4,"skills":["place:8","large-number","compare:99999999","sequence:99999999"]},{"id":"4-1-3","grade":4,"skills":["mul-two","div-two","inverse"]}],"modeNames":["計算","選択","確かめ","文章題","説明"]};
+globalThis.JaCoreCatalog={"units":[{"id":"1-1-2","grade":1,"skills":["solid-basic","solid-sort","solid-basic"]},{"id":"1-1-3","grade":1,"skills":["add:9","sub:9","bond:9"]},{"id":"1-1-4","grade":1,"skills":["length-compare","area-compare","capacity-compare","weight-compare"]},{"id":"1-1-5","grade":1,"skills":["number:50","place:2","compare:50","sequence:50"]},{"id":"1-2-1","grade":1,"skills":["number:100","place:2","compare:100","sequence:100"]},{"id":"1-2-3","grade":1,"skills":["flat-basic","flat-count","flat-build","clock:30"]},{"id":"1-2-5","grade":1,"skills":["pattern","sequence:100","array-pattern"]},{"id":"2-1-1","grade":2,"skills":["place:3","number:999","compare:999","sequence:999"]},{"id":"2-1-3","grade":2,"skills":["add:99","sub:99","three:20","unknown:99"]},{"id":"2-1-4","grade":2,"skills":["ruler:cm","measure:cm","length-compare"]},{"id":"2-1-5","grade":2,"skills":["sort","table","sort"]},{"id":"2-1-6","grade":2,"skills":["groups","mul:9","array"]},{"id":"2-2-1","grade":2,"skills":["place:4","number:9999","compare:9999","sequence:9999"]},{"id":"2-2-6","grade":2,"skills":["pattern","sequence:100","array-pattern"]},{"id":"3-1-1","grade":3,"skills":["add:999","sub:999","unknown:999"]},{"id":"3-1-3","grade":3,"skills":["div:9","groups-div","inverse"]},{"id":"3-1-4","grade":3,"skills":["mul:99","array","unknown-mul"]},{"id":"3-1-6","grade":3,"skills":["fraction-model","fraction-compare","decimal-model","decimal-compare:1"]},{"id":"3-2-1","grade":3,"skills":["mul:999","mul-two","unknown-mul"]},{"id":"3-2-3","grade":3,"skills":["div:99","div-remainder","inverse"]},{"id":"3-2-5","grade":3,"skills":["fraction-model","fraction-form","fraction-compare"]},{"id":"4-1-1","grade":4,"skills":["place:8","large-number","compare:99999999","sequence:99999999"]},{"id":"4-1-3","grade":4,"skills":["mul-two","div-two","inverse"]},{"id":"4-2-1","grade":4,"skills":["fraction-add-same","fraction-sub-same","fraction-mixed-same"]},{"id":"4-2-3","grade":4,"skills":["decimal-add","decimal-sub","decimal-compare:3","decimal-place"]},{"id":"5-1-5","grade":5,"skills":["fraction-add","fraction-sub","fraction-mixed"]},{"id":"5-2-2","grade":5,"skills":["fraction-mul-whole","fraction-mul","fraction-mul-mixed"]},{"id":"5-2-4","grade":5,"skills":["decimal-mul-whole","decimal-mul","decimal-scale"]},{"id":"6-1-1","grade":6,"skills":["fraction-div-whole","whole-div-fraction-result","fraction-div-whole"]},{"id":"6-1-3","grade":6,"skills":["decimal-div-whole","decimal-fraction","decimal-div-whole"]},{"id":"6-2-1","grade":6,"skills":["fraction-div","whole-div-fraction","fraction-div-mixed"]},{"id":"6-2-3","grade":6,"skills":["decimal-div","decimal-div","decimal-fraction"]}],"modeNames":["計算","選択","確かめ","文章題","説明"]};
 (function(root){
 const C=root.JaCoreCatalog;
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
@@ -28,7 +28,7 @@ function finish(stem,art,result,explanation,options={}){
 }
 function calc(x,y,op,opts={}){
  const result=op==='+'?x+y:op==='−'?x-y:op==='×'?x*y:x/y,value=fmt(result),expr=fmt(x)+' '+op+' '+fmt(y);
- finish('計算しましょう。',opts.art||'',value,expr+' = '+value,{wrong:fmt(result+1),story:op==='+'?'구슬 '+fmt(x)+'개에 '+fmt(y)+'개를 더 넣었습니다. 모두 몇 개인가요?':op==='−'?'색종が'+fmt(x)+'장 중 '+fmt(y)+'장を썼습니다. 몇 장が남았나요?':op==='×'?'한 묶음에 '+fmt(x)+'개씩 '+fmt(y)+'묶음です。 모두 몇 개인가요?':fmt(x)+'개를 '+fmt(y)+'명에게 똑같が나누면 한 명が몇 개를 받나요?'});
+ finish('計算しましょう。',opts.art||'',value,expr+' = '+value,{wrong:fmt(result+1),story:op==='+'?'구슬 '+fmt(x)+'개에 '+fmt(y)+'개를 더 넣었습니다. 모두 몇 개인가요?':op==='−'?'색종が'+fmt(x)+'장 중 '+fmt(y)+'장を썼습니다. 몇 장が남았나요?':op==='×'?'한 묶음에 '+fmt(x)+'こずつ'+fmt(y)+'묶음です。 모두 몇 개인가요?':fmt(x)+'개를 '+fmt(y)+'명에게 똑같が나누면 한 명が몇 개를 받나요?'});
  if(mode===0||mode===4)task='<div class="kequation">'+expr+' = □</div>'+(mode===4?'<div class="kreason">計算：__________________</div>':'');
  if(mode===1){prompt='□に入る数を書きましょう.';task='<div class="kequation">'+fmt(x)+' '+op+' □ = '+value+'</div>';answer=fmt(y);reason=expr+' = '+value+'なので □ = '+fmt(y)}
  if(mode===2)prompt=expr+'の計算を確かめましょう。';
@@ -43,14 +43,14 @@ else if(['mul','mul-two','unknown-mul','groups','array','groups-div','div','div-
  a=kind==='mul'?between(Math.max(2,Math.floor(max/10)),max):between(2,9);b=between(2,9);
  if(kind==='mul-two'){a=between(12,u.grade>=4?999:99);b=between(12,39)}
  if(kind==='div-two'){b=between(11,29);a=between(2,Math.floor(999/b))}
- if(kind==='div-remainder'){const rem=between(1,b-1),total=a*b+rem;finish(total+' ÷ '+b+'の商とあまりを求めましょう。','',a+' あまり '+rem,b+' × '+a+' + '+rem+' = '+total,{wrong:(a+1)+' あまり '+rem,story:'공 '+total+'개를 '+b+'개씩 상자에 담습니다. 가득 찬 상자는 몇 개이고 몇 개가 남나요?'});check={kind:'remainder',total,divisor:b,quotient:a,remainder:rem}}
+ if(kind==='div-remainder'){const rem=between(1,b-1),total=a*b+rem;finish(total+' ÷ '+b+'の商とあまりを求めましょう。','',a+' あまり '+rem,b+' × '+a+' + '+rem+' = '+total,{wrong:(a+1)+' あまり '+rem,story:'공 '+total+'개를 '+b+'こずつ상자에 담습니다. 가득 찬 상자는 몇 개이고 몇 개가 남나요?'});check={kind:'remainder',total,divisor:b,quotient:a,remainder:rem}}
  else if(['div','groups-div','div-two','inverse'].includes(kind)){if(kind==='div'&&max>9)a=between(10,Math.min(99,Math.floor(999/b)));calc(a*b,b,'÷')}
  else {if(kind==='groups'||kind==='array')a=between(2,6);calc(a,b,'×',{art:['groups','array'].includes(kind)?grid(a,b):''})}
 }
 else if(['number','count','place','compare','bond','large-number','sequence'].includes(kind)){
  if(kind==='count'){a=between(1,max);finish('図は全部で何個ですか。',dots(a),a,'一つずつ数えると'+a+'個です。')}
  else if(kind==='bond'){a=between(2,max);b=between(1,a-1);finish(a+'を'+b+'と□に分けましょう。',max<=10?dots(a):'',a-b,b+' + '+(a-b)+' = '+a)}
- else if(kind==='compare'){a=between(1,max);b=between(1,max);const ans=a>b?'>':a<b?'<':'=';finish('□に合う記号を書きましょう.','<div class="kequation">'+a+' □ '+b+'</div>',ans,'大きい位から比べます。',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
+ else if(kind==='compare'){a=between(1,max);b=between(1,max);const ans=a>b?'>':a<b?'<':'=';finish('□に合う記号を書きましょう。','<div class="kequation">'+a+' □ '+b+'</div>',ans,'大きい位から比べます。',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
  else if(kind==='sequence'){const step=max>99999?10000:max>999?100:max>100?10:1,start=between(1,Math.max(1,max-4*step));finish('□に入る数を書きましょう.','<div class="kequation">'+[start,start+step,'□',start+3*step].join(' → ')+'</div>',start+2*step,step+'ずつ増えます。')}
  else if(kind==='large-number'){const un=pick(['万','億','兆']),n=between(11,99);finish(un+'が'+n+'個ある数を書きましょう.','',n+un,n+' × 1'+un+' = '+n+un,{wrong:(n+1)+un})}
  else if(kind==='number'&&max===9){a=between(1,8);finish(a+'より1大きい数を書きましょう.',dots(a),a+1,a+'の次の数は'+(a+1)+'です。')}
@@ -85,13 +85,13 @@ else if(['ruler','measure','convert','measure-add'].includes(kind)){
 }
 else if(['fraction-model','fraction-form','fraction-compare','decimal-model','decimal-compare','decimal-place','decimal-fraction','reduce','common-denominator','fraction-compare-unlike'].includes(kind)){
  const d=between(2,9),n=between(1,d-1),m=between(1,d-1);
- if(kind==='fraction-model')finish('색칠한 부分を分수로 書きましょう.',bar(n,d),n+'/'+d,'전체 '+d+'칸 중 '+n+'칸です。',{wrong:d+'/'+n});
- if(kind==='fraction-form'){const w=between(1,4);finish('가分수를 대分수로 表しましょう.','<div class="kequation">'+F(w*d+n,d)+'</div>',w+' '+n+'/'+d,d+'개씩 '+w+'묶음과 '+n+'개가 남습니다.',{wrong:(w+1)+' '+n+'/'+d})}
- if(kind==='fraction-compare'||kind==='fraction-compare-unlike'){const e=kind==='fraction-compare'?d:d+1,ans=n*e>m*d?'>':n*e<m*d?'<':'=';finish('두 分수를 비교하세요.','<div class="kequation">'+F(n,d)+' □ '+F(m,e)+'</div>',ans,kind==='fraction-compare'?'分모가 같으면 分자를 비교합니다.':'공통分모로 바꾸어 分자를 비교합니다.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
- if(kind==='decimal-model'){a=between(1,9);finish('색칠한 부分を소수로 書きましょう.',bar(a,10),a/10,a+'/10 = '+a/10)}
- if(kind==='decimal-compare'){const scale=10**max;a=between(1,scale*3)/scale;b=between(1,scale*3)/scale;const ans=a>b?'>':a<b?'<':'=';finish('알맞은 기호를 書きましょう.','<div class="kequation">'+a+' □ '+b+'</div>',ans,'소수점を맞추고 높은 자리부터 비교합니다.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
- if(kind==='decimal-place'){a=between(101,999);const pos=r(3),names=['첫째','둘째','셋째'],v=Number(String(a)[pos]);finish((a/1000).toFixed(3)+'の소수 '+names[pos]+' 자리 숫자는 무엇인가요?','',v,'소수점 오른쪽부터 자리를 확인합니다.')}
- if(kind==='decimal-fraction'){a=between(1,99);finish(a+'/100を소수로 表しましょう.','',a/100,'100分의 1が'+a+'個です。')}
+ if(kind==='fraction-model')finish('色のついた部分を分数で表しましょう。',bar(n,d),n+'/'+d,'全部で'+d+'こに分けたうちの'+n+'こです。',{wrong:d+'/'+n});
+ if(kind==='fraction-form'){const w=between(1,4);finish('仮分数を帯分数で表しましょう。','<div class="kequation">'+F(w*d+n,d)+'</div>',w+' '+n+'/'+d,d+'こずつ'+w+'まとまりと'+n+'こ残ります。',{wrong:(w+1)+' '+n+'/'+d})}
+ if(kind==='fraction-compare'||kind==='fraction-compare-unlike'){const e=kind==='fraction-compare'?d:d+1,ans=n*e>m*d?'>':n*e<m*d?'<':'=';finish('二つの分数を比べましょう。','<div class="kequation">'+F(n,d)+' □ '+F(m,e)+'</div>',ans,kind==='fraction-compare'?'分母が同じときは分子を比べます。':'分母をそろえて分子を比べます。',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
+ if(kind==='decimal-model'){a=between(1,9);finish('色のついた部分を小数で表しましょう。',bar(a,10),a/10,a+'/10 = '+a/10)}
+ if(kind==='decimal-compare'){const scale=10**max;a=between(1,scale*3)/scale;b=between(1,scale*3)/scale;const ans=a>b?'>':a<b?'<':'=';finish('合う記号を書きましょう。','<div class="kequation">'+a+' □ '+b+'</div>',ans,'小数点をそろえて、大きい位から比べます。',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
+ if(kind==='decimal-place'){a=between(101,999);const pos=r(3),names=['第1','第2','第3'],v=Number(String(a)[pos]);finish((a/1000).toFixed(3)+'の小数'+names[pos]+'位の数字は何ですか。','',v,'小数点の右から位を確かめます。')}
+ if(kind==='decimal-fraction'){a=between(1,99);finish(a+'/100を小数で表しましょう。','',a/100,'100分の1が'+a+'個です。')}
  if(kind==='reduce'){a=between(2,5);finish('기약分수로 약分하세요.','<div class="kequation">'+F(n*a,d*a)+'</div>',frac(n,d),'分자와 分모를 최대공약수 '+gcd(n*a,d*a)+'로 나눕니다.',{wrong:(n*a)+'/'+(d*a+1)})}
  if(kind==='common-denominator'){const e=d+1,l=d*e/gcd(d,e);finish('가장 작은 공통分모로 통分하세요.','<div class="kequation">'+F(n,d)+' , '+F(1,e)+'</div>',(n*l/d)+'/'+l+', '+(l/e)+'/'+l,'分모의 최소공なし수는 '+l+'です。',{wrong:n+'/'+l+', 1/'+l})}
 }
@@ -104,8 +104,8 @@ else if(kind.startsWith('fraction-')||kind==='whole-div-fraction'||kind==='whole
  if(kind==='whole-div-fraction-result'){n=between(1,9);d=1;m=between(2,9);e=1}
  if(op==='−'&&n*e<m*d){[n,m]=[m,n];[d,e]=[e,d]}
  let num=op==='+'?n*e+m*d:op==='−'?n*e-m*d:op==='×'?n*m:n*e,den=op==='÷'?d*m:d*e;if(u.grade===4&&(op==='+'||op==='−')){num=op==='+'?n+m:n-m;den=d}const ans=u.grade===4?(num%den===0?String(num/den):num+'/'+den):frac(num,den),expr=n+'/'+d+' '+op+' '+m+'/'+e;
- finish(u.grade===4?'計算しましょう。':'계산하고 기약分수 또는 자연수로 書きましょう.','<div class="kequation">'+F(n,d)+' '+op+' '+F(m,e)+'</div>',ans,expr+' = '+num+'/'+den+' = '+ans,{wrong:frac(num+1,den),story:op==='+'?'리본 '+n+'/'+d+' m와 '+m+'/'+e+' m를 이으면 몇 m인가요?':op==='−'?n+'/'+d+' m 중 '+m+'/'+e+' m를 쓰면 몇 m가 남나요?':op==='×'?n+'/'+d+'의 '+m+'/'+e+'なし는 얼마인가요?':n+'/'+d+' m를 '+m+'/'+e+' m씩 나누면 몇 조각 分량인가요?'});
- if(mode===1){prompt='결과의 빈칸を채우세요.';task='<div class="kequation">= '+F('□',den)+'</div>';answer=String(num);reason=expr+' = '+num+'/'+den}
+ finish(u.grade===4?'計算しましょう。':'計算して、約分した分数か整数で答えましょう。','<div class="kequation">'+F(n,d)+' '+op+' '+F(m,e)+'</div>',ans,expr+' = '+num+'/'+den+' = '+ans,{wrong:frac(num+1,den),story:op==='+'?'리본 '+n+'/'+d+' m와 '+m+'/'+e+' m를 이으면 몇 m인가요?':op==='−'?n+'/'+d+' m 중 '+m+'/'+e+' m를 쓰면 몇 m가 남나요?':op==='×'?n+'/'+d+'의 '+m+'/'+e+'なし는 얼마인가요?':n+'/'+d+' m를 '+m+'/'+e+' m씩 나누면 몇 조각 分량인가요?'});
+ if(mode===1){prompt='答えの□を埋めましょう。';task='<div class="kequation">= '+F('□',den)+'</div>';answer=String(num);reason=expr+' = '+num+'/'+den}
  check={kind:'fraction',n,d,m,e,op,num,den};
 }
 else if(kind.startsWith('decimal-')){
@@ -113,7 +113,7 @@ else if(kind.startsWith('decimal-')){
  if(kind.includes('whole'))y=between(2,9);if(kind==='decimal-scale')y=pick([10,100]);if(op==='−'&&x<y)[x,y]=[y,x];
  if(op==='÷'){y=kind.includes('whole')?between(2,9):between(1,99)/10;x=Number((y*between(1,99)/10).toFixed(2))}
  calc(x,y,op);
- if(mode===3)prompt='長さ가 '+x+' m인 리본を'+(op==='+'?y+' m 더 이으면 전체 長さ는 몇 m인가요?':op==='−'?y+' m 자르면 몇 m가 남나요?':op==='×'?y+'なし로 늘리면 몇 m인가요?':y+' m씩 나누면 몇 조각 分량인가요?');
+ if(mode===3)prompt='長さ가 '+x+' m인 리본を'+(op==='+'?y+' m 더 이으면 全部で長さ는 몇 m인가요?':op==='−'?y+' m 자르면 몇 m가 남나요?':op==='×'?y+'なし로 늘리면 몇 m인가요?':y+' m씩 나누면 몇 조각 分량인가요?');
 }
 else if(['mixed','mixed-bracket','mixed-story','factor','multiple','gcd','lcm','range','round-up','round-down','round-nearest'].includes(kind)){
  if(kind.startsWith('mixed')){const bracket=kind==='mixed-bracket'||mode===4,value=bracket?(a+b)*c:a+b*c,expr=bracket?'('+a+' + '+b+') × '+c:a+' + '+b+' × '+c;finish('순서에 따라 計算しましょう。','<div class="kequation">'+expr+'</div>',value,bracket?'괄호 안を먼저 계산한 뒤 곱합니다.':'곱셈を먼저 계산한 뒤 더합니다.',{story:bracket?'연필 '+a+'자루와 '+b+'자루를 한 상자에 담아 '+c+'상자를 준비했습니다. 모두 몇 자루인가요?':'연필 '+a+'자루에 '+b+'자루씩 든 묶음 '+c+'개를 더했습니다. 모두 몇 자루인가요?'})}
@@ -125,7 +125,7 @@ else if(['mixed','mixed-bracket','mixed-story','factor','multiple','gcd','lcm','
 }
 else if(['ratio','percent','ratio-compare','proportion','share-ratio','ratio-simplify','average','average-missing','chance'].includes(kind)){
  if(kind==='ratio')finish('빨간 구슬 '+a+'개의 파란 구슬 '+b+'개에 대한 비를 書きましょう.','',a+' : '+b,'비교하는 양を앞에, 기준량を뒤에 씁니다.',{wrong:b+' : '+(a+1)});
- else if(kind==='percent'){const total=pick([20,25,50,100]),part=between(1,total);finish('전체 '+total+'개 중 '+part+'개는 몇 %인가요?','',Number((part/total*100).toFixed(6)),'비교하는 양 ÷ 기준량 × 100です。')}
+ else if(kind==='percent'){const total=pick([20,25,50,100]),part=between(1,total);finish('全部で'+total+'개 중 '+part+'개는 몇 %인가요?','',Number((part/total*100).toFixed(6)),'비교하는 양 ÷ 기준량 × 100です。')}
  else if(kind==='ratio-compare'){const x=a/b,y=c/b;finish('비율が더 큰 것を選びましょう.','<div class="kequation">가: '+a+' : '+b+'　나: '+c+' : '+b+'</div>',x>y?'가':x<y?'나':'같다','기준량が같으므로 비교하는 양を비교합니다.',{choices:['가','나','같다'],wrong:x>y?'나':'가'})}
  else if(kind==='proportion')finish('비례식의 □를 求めましょう.','<div class="kequation">'+a+' : '+b+' = □ : '+b*c+'</div>',a*c,'두 수에 같은 수 '+c+'를 곱합니다.');
  else if(kind==='share-ratio'){const total=(a+b)*c;finish(total+'개를 '+a+' : '+b+'로 나눌 때 앞쪽 몫은 몇 개인가요?','',a*c,total+' × '+a+'/('+a+' + '+b+') = '+a*c)}
@@ -171,7 +171,7 @@ else if(['circle-parts','circle-size','circle-draw','circle-circumference','circ
  else {const result=kind==='circle-circumference'?2*a*3.14:kind==='circle-half'?a*a*3.14/2:a*a*3.14;finish((kind==='circle-circumference'?'원의 둘레(cm)':kind==='circle-half'?'が원의 절반인 반원의 広さ(cm²)':'원의 広さ(cm²)')+'를 求めましょう. (원주율: 3.14)',visual,Number(result.toFixed(2)),kind==='circle-circumference'?'지름 × 3.14 = '+a*2+' × 3.14':'반지름 × 반지름 × 3.14'+(kind==='circle-half'?' ÷ 2':''))}
 }
 else if(['move','flip','turn','congruent','symmetry-line','symmetry-point'].includes(kind)){
- if(kind==='move'){a=between(1,4);b=between(1,4);finish('오른쪽 '+a+'칸, 다時오른쪽 '+b+'칸 움직이면 처음の오른쪽 몇 칸인가요?',grid(2,8),a+b,a+' + '+b+'칸です。')}
+ if(kind==='move'){a=between(1,4);b=between(1,4);finish('오른쪽 '+a+'칸, 다時오른쪽 '+b+'칸 움직이면 처음の오른쪽 몇 칸인가요?',grid(2,8),a+b,a+' + '+b+'こです。')}
  else if(kind==='flip')finish('화살표를 좌우로 뒤집으면 어느 쪽を향하나요?','<div class="kequation">→</div>','왼쪽','좌우가 바뀝니다.',{choices:['왼쪽','오른쪽','위쪽'],wrong:'오른쪽'});
  else if(kind==='turn'){const turns=between(1,3),names=['오른쪽','아래쪽','왼쪽'];finish('시계 방향으로 직각만큼 '+turns+'번 돌리면 어느 쪽を향하나요?','<div class="kequation">↑</div>',names[turns-1],'위→오른쪽→아래→왼쪽으로 바뀝니다.',{choices:names,wrong:'위쪽'})}
  else if(kind==='congruent'){a=between(3,9);finish('합동인 두 三角形の한 변が'+a+' cmです。 대응하는 변은 몇 cm인가요?',poly(3),a,'대응변의 長さ는 같습니다.')}
@@ -214,15 +214,15 @@ number:'数の位と順序',count:'図の数を数える',place:'位の数字を
 'length-compare':'長さを比べる','area-compare':'広さを比べる','capacity-compare':'かさを比べる','weight-compare':'重さを比べる',ruler:'目もりから長さを読む',measure:'単位を選ぶ',convert:'단위 바꾸기','measure-add':'측정값 계산',
 sort:'種類に分ける',table:'表を読む',graph:'그래프 해석',groups:'まとまりとかけ算',mul:'かけ算',array:'並び方とかけ算','unknown-mul':'かけ算の□',clock:'時計を読む',elapsed:'걸린 시간 구하기',calendar:'주일과 날짜',pattern:'繰り返すきまり','array-pattern':'表のきまり',
 lines:'선분·직선·반직선','angle-right':'직각 찾기',div:'わり算','groups-div':'まとまりの数',inverse:'かけ算とわり算の関係','time-seconds':'분과 초 바꾸기',
-'fraction-model':'그림을 분수로 나타내기','fraction-compare':'분수 크기 비교','decimal-model':'그림을 소수로 나타내기','decimal-compare':'소수 크기 비교','mul-two':'二けたをかける','circle-parts':'원의 구성 요소','circle-size':'반지름과 지름','circle-draw':'컴퍼스의 벌어진 길이','div-remainder':'商とあまり','fraction-form':'가분수를 대분수로',
+'fraction-model':'図を分数で表す','fraction-compare':'分数を比べる','decimal-model':'図を小数で表す','decimal-compare':'小数を比べる','mul-two':'二けたをかける','circle-parts':'원의 구성 요소','circle-size':'반지름과 지름','circle-draw':'컴퍼스의 벌어진 길이','div-remainder':'商とあまり','fraction-form':'仮分数から帯分数へ',
 'large-number':'万・億・兆','angle-measure':'각도기 읽기','angle-sum':'각도의 합','triangle-angle':'삼각형의 각','quad-angle':'사각형의 각','div-two':'二けたでわる',move:'밀어서 옮기기',flip:'뒤집기',turn:'돌리기',equal:'같은 값을 만드는 식',
-'fraction-add-same':'동분모 분수 덧셈','fraction-sub-same':'동분모 분수 뺄셈','fraction-mixed-same':'대분수 계산','triangle-side':'변으로 삼각형 분류','triangle-type':'각으로 삼각형 분류','decimal-add':'소수 덧셈','decimal-sub':'소수 뺄셈','decimal-place':'소수의 자리','quad-type':'사각형의 성질',parallel:'평행한 변',polygon:'다각형 알아보기',diagonal:'대각선 찾기',tile:'빈틈없이 채우기',
+'fraction-add-same':'同分母のたし算','fraction-sub-same':'同分母のひき算','fraction-mixed-same':'帯分数の計算','triangle-side':'변으로 삼각형 분류','triangle-type':'각으로 삼각형 분류','decimal-add':'小数のたし算','decimal-sub':'小数のひき算','decimal-place':'小数の位','quad-type':'사각형의 성질',parallel:'평행한 변',polygon:'다각형 알아보기',diagonal:'대각선 찾기',tile:'빈틈없이 채우기',
 mixed:'혼합 계산 순서','mixed-bracket':'괄호가 있는 식','mixed-story':'이야기와 혼합 계산',factor:'약수 찾기',multiple:'배수 찾기',gcd:'최대공약수',lcm:'최소공배수',correspond:'두 양의 대응 관계',reduce:'기약분수 만들기','common-denominator':'공통분모 만들기','fraction-compare-unlike':'이분모 분수 비교',
-'fraction-add':'분수의 덧셈','fraction-sub':'분수의 뺄셈','fraction-mixed':'대분수의 계산',perimeter:'둘레 구하기','area-rectangle':'직사각형의 넓이','area-triangle':'삼각형의 넓이','area-parallelogram':'평행사변형의 넓이','area-trapezoid':'사다리꼴의 넓이','area-rhombus':'마름모의 넓이',range:'조건에 맞는 수의 범위','round-up':'올림','round-down':'버림','round-nearest':'반올림',
-'fraction-mul-whole':'분수와 자연수의 곱','fraction-mul':'분수끼리의 곱','fraction-mul-mixed':'대분수의 곱',congruent:'합동과 대응변','symmetry-line':'선대칭도형','symmetry-point':'점대칭도형','decimal-mul-whole':'소수와 자연수의 곱','decimal-mul':'소수끼리의 곱','decimal-scale':'10배·100배와 소수점',
+'fraction-add':'分数のたし算','fraction-sub':'分数のひき算','fraction-mixed':'帯分数の計算',perimeter:'둘레 구하기','area-rectangle':'직사각형의 넓이','area-triangle':'삼각형의 넓이','area-parallelogram':'평행사변형의 넓이','area-trapezoid':'사다리꼴의 넓이','area-rhombus':'마름모의 넓이',range:'조건에 맞는 수의 범위','round-up':'올림','round-down':'버림','round-nearest':'반올림',
+'fraction-mul-whole':'分数と整数のかけ算','fraction-mul':'分数同士のかけ算','fraction-mul-mixed':'帯分数のかけ算',congruent:'합동과 대응변','symmetry-line':'선대칭도형','symmetry-point':'점대칭도형','decimal-mul-whole':'小数と整数のかけ算','decimal-mul':'小数同士のかけ算','decimal-scale':'10倍・100倍と小数点',
 cuboid:'직육면체의 구성','cube-net':'정육면체의 전개도','cuboid-edges':'모서리 세기',average:'평균 구하기','average-missing':'평균으로 빠진 값 찾기',chance:'가능성 판단',
-'fraction-div-whole':'분수를 자연수로 나누기','whole-div-fraction-result':'몫을 분수로 나타내기',prism:'각기둥의 구성',pyramid:'각뿔의 구성','prism-net':'전개도로 입체 찾기','decimal-div-whole':'소수를 자연수로 나누기','decimal-fraction':'분수와 소수 연결',ratio:'비로 나타내기',percent:'백분율 구하기','ratio-compare':'비율 비교','graph-choice':'알맞은 그래프 선택',surface:'직육면체의 겉넓이',volume:'직육면체의 부피','volume-convert':'부피 단위 바꾸기',
-'fraction-div':'분수끼리 나누기','whole-div-fraction':'자연수를 분수로 나누기','fraction-div-mixed':'대분수 나눗셈','cube-view':'보는 방향과 모양','cube-missing':'가려진 쌓기나무','decimal-div':'소수끼리 나누기',proportion:'비례식의 빈칸','share-ratio':'비례배분','ratio-simplify':'간단한 자연수의 비','circle-circumference':'원의 둘레','circle-area':'원의 넓이','circle-half':'반원의 넓이',cylinder:'원기둥의 구성',cone:'원뿔의 구성',sphere:'구의 성질','cylinder-net':'원기둥 전개도'
+'fraction-div-whole':'分数を整数でわる','whole-div-fraction-result':'商を分数で表す',prism:'각기둥의 구성',pyramid:'각뿔의 구성','prism-net':'전개도로 입체 찾기','decimal-div-whole':'小数を整数でわる','decimal-fraction':'分数と小数',ratio:'비로 나타내기',percent:'백분율 구하기','ratio-compare':'비율 비교','graph-choice':'알맞은 그래프 선택',surface:'직육면체의 겉넓이',volume:'직육면체의 부피','volume-convert':'부피 단위 바꾸기',
+'fraction-div':'分数同士のわり算','whole-div-fraction':'整数を分数でわる','fraction-div-mixed':'帯分数のわり算','cube-view':'보는 방향과 모양','cube-missing':'가려진 쌓기나무','decimal-div':'小数同士のわり算',proportion:'비례식의 빈칸','share-ratio':'비례배분','ratio-simplify':'간단한 자연수의 비','circle-circumference':'원의 둘레','circle-area':'원의 넓이','circle-half':'반원의 넓이',cylinder:'원기둥의 구성',cone:'원뿔의 구성',sphere:'구의 성질','cylinder-net':'원기둥 전개도'
 };
 const banks={};
 for(const u of JaCoreCatalog.units){
