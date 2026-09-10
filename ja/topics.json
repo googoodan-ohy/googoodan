@@ -683,5 +683,37 @@
     "op": "lengthKm",
     "file": "km-m.html",
     "heading": "長さの単位（km・m）の無料プリント"
+  },
+  {
+    "id": "ju-no-matamari",
+    "grade": 1,
+    "title": "10のまとまりと数",
+    "op": "tensPlace",
+    "file": "ju-no-matamari.html",
+    "heading": "10のまとまりと数の無料プリント"
+  },
+  {
+    "id": "shosu-1keta-tashizan",
+    "grade": 3,
+    "title": "小数第一位のたし算",
+    "op": "tenthsAdd",
+    "file": "shosu-1keta-tashizan.html",
+    "heading": "小数第一位のたし算の無料プリント"
+  },
+  {
+    "id": "shosu-1keta-hikizan",
+    "grade": 3,
+    "title": "小数第一位のひき算",
+    "op": "tenthsSub",
+    "file": "shosu-1keta-hikizan.html",
+    "heading": "小数第一位のひき算の無料プリント"
+  },
+  {
+    "id": "bunsu-hajimete-tashizan",
+    "grade": 3,
+    "title": "はじめての分数のたし算",
+    "op": "unitFractionAdd",
+    "file": "bunsu-hajimete-tashizan.html",
+    "heading": "はじめての分数のたし算の無料プリント"
   }
 ]
