@@ -2,11 +2,11 @@
 const specs={
  '1-2-2':[
  ['Trois nombres et les compléments à 10',[['three-add','Additionner trois nombres'],['three-sub','Soustraire deux nombres successivement'],['ten-missing','Compléter pour faire 10']]],
- ['10을 먼저 만드는 전략',[['pair-ten','10이 되는 두 수 먼저 찾기'],['ten-frame','10칸 그림 완성하기'],['bridge-add','10을 만들어 더하기']]],
+ ['Faire 10 pour additionner',[['pair-ten','Trouver deux nombres qui font 10'],['ten-frame','Compléter un cadre de dix cases'],['bridge-add','Additionner en faisant 10']]],
  ['10에서 빼는 전략',[['bridge-sub','10에서 빼고 더하기'],['zero-ten','10에서 빼기'],['error','풀이의 실수 찾기']]]
  ],
  '1-2-4':[
- ['받아올림과 받아내림',[['bridge-add','10을 만들어 더하기'],['bridge-sub','10에서 빼고 더하기'],['picture-add','그림을 식으로 바꾸기']]],
+ ['받아올림과 받아내림',[['bridge-add','Additionner en faisant 10'],['bridge-sub','10에서 빼고 더하기'],['picture-add','그림을 식으로 바꾸기']]],
  ['서로 연결되는 식',[['inverse','덧셈과 뺄셈 연결'],['compensate','같은 합 만드는 수 찾기'],['compare','계산한 값 비교하기']]],
  ['이야기 속 가려진 수',[['story','모아서 구하기'],['missing-add','처음 수 거꾸로 찾기'],['error','계산의 실수 고치기']]]
  ],
@@ -28,9 +28,9 @@ function generate(id,p,seed,n,excluded){
  if(s.method==='three-add'){const x=between(1,3),y=between(1,3),z=between(1,3);prompt='Additionne les trois nombres.';visual=eq(x+' + '+y+' + '+z+' = □');answer=String(x+y+z);reason=x+' + '+y+' = '+(x+y)+', puis ajoute '+z+'.'}
  if(s.method==='three-sub'){const x=between(6,9),y=between(1,3),z=between(1,2);prompt='Effectue les soustractions de gauche à droite.';visual=eq(x+' − '+y+' − '+z+' = □');answer=String(x-y-z);reason='Calcule d’abord '+x+' − '+y+'.'}
  if(s.method==='ten-missing'){prompt='Complète pour obtenir une somme de 10.';visual=eq(a+' + □ = 10');answer=String(10-a);reason=a+' + '+(10-a)+' = 10.'}
- if(s.method==='pair-ten'){const x=between(1,4),y=10-x,z=between(5,9),vals=r(2)?[x,z,y]:[z,y,x];prompt='합이 10인 두 수에 동그라미 하고, 세 수의 합을 구하세요.';visual=eq(vals.join(' + ')+' = □');answer=x+'와 '+y+'에 표시, 합은 '+(10+z);reason=x+' + '+y+' = 10을 먼저 계산합니다.'}
- if(s.method==='ten-frame'){prompt='10칸이 모두 차려면 몇 개가 더 필요한가요?';visual='<div class="ten-frame">'+Array.from({length:10},(_,i)=>'<span>'+(i<a?KoArt.icon(asset):'')+'</span>').join('')+'</div>';task='더 필요한 수: ____';answer=String(10-a);reason='비어 있는 칸이 '+(10-a)+'칸입니다.'}
- if(s.method==='bridge-add'){const need=10-a,rest=b-need;prompt='뒤의 수를 나누어 10을 먼저 만드세요.';visual=eq(a+' + '+b+' = □');task=b+' = '+need+' + □<br>'+a+' + '+need+' = 10<br>10 + □ = □';answer=rest+', '+rest+', '+(a+b);reason=b+'를 '+need+'와 '+rest+'로 나눕니다.'}
+ if(s.method==='pair-ten'){const x=between(1,4),y=10-x,z=between(5,9),vals=r(2)?[x,z,y]:[z,y,x];prompt='Entoure deux nombres dont la somme vaut 10, puis calcule la somme des trois nombres.';visual=eq(vals.join(' + ')+' = □');answer='Entoure '+x+' et '+y+' ; somme : '+(10+z);reason=x+' + '+y+' = 10 en premier.'}
+ if(s.method==='ten-frame'){prompt='Combien manque-t-il pour remplir les dix cases ?';visual='<div class="ten-frame">'+Array.from({length:10},(_,i)=>'<span>'+(i<a?KoArt.icon(asset):'')+'</span>').join('')+'</div>';task='Nombre manquant : ____';answer=String(10-a);reason='Il reste '+(10-a)+' cases vides.'}
+ if(s.method==='bridge-add'){const need=10-a,rest=b-need;prompt='Décompose le second nombre pour faire 10 en premier.';visual=eq(a+' + '+b+' = □');task=b+' = '+need+' + □<br>'+a+' + '+need+' = 10<br>10 + □ = □';answer=rest+', '+rest+', '+(a+b);reason='Décompose '+b+' en '+need+' et '+rest+'.'}
  if(s.method==='bridge-sub'){const total=10+between(1,7),sub=between(total-9,9),ones=total-10;prompt='십몇을 10과 낱개로 나누어 계산하세요.';visual=eq(total+' − '+sub+' = □');task='10 − '+sub+' = □<br>□ + '+ones+' = □';answer=(10-sub)+', '+(10-sub)+', '+(total-sub);reason='10에서 먼저 뺀 뒤 낱개 '+ones+'를 더합니다.'}
  if(s.method==='zero-ten'){prompt='10에서 빼세요.';visual=eq('10 − '+a+' = □');answer=String(10-a);reason=a+' + '+(10-a)+' = 10입니다.'}
  if(s.method==='picture-add'){const x=between(3,6),y=between(3,6);prompt='두 묶음을 모으는 덧셈식을 쓰세요.';visual='<div class="two-baskets"><div>'+KoArt.count(asset,x)+'</div><div>'+KoArt.count(asset,y)+'</div></div>';task='□ + □ = □';answer=x+' + '+y+' = '+(x+y);reason='각 묶음의 개수를 더합니다.'}
@@ -47,5 +47,5 @@ function generate(id,p,seed,n,excluded){
  return {methodId:s.method,skill:s.method,prompt,visual,task,answer,reason,artId:asset.id,check};
  })}));
 }
-root.KoEarlyArithmetic={banks:{'1-2-2':[banks['1-2-2'][0]]},generate(id,p,...args){if(id!=='1-2-2'||p!==0)throw Error('Untranslated profile');return generate(id,p,...args)}};
+root.KoEarlyArithmetic={banks:{'1-2-2':banks['1-2-2'].slice(0,2)},generate(id,p,...args){if(id!=='1-2-2'||(p!==0&&p!==1))throw Error('Untranslated profile');return generate(id,p,...args)}};
 })(globalThis);
