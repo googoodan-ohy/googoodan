@@ -7,7 +7,7 @@ const specs={
  ],
  '1-2-4':[
  ['받아올림과 받아내림',[['bridge-add','Additionner en faisant 10'],['bridge-sub','Soustraire en passant par 10'],['picture-add','그림을 식으로 바꾸기']]],
- ['서로 연결되는 식',[['inverse','덧셈과 뺄셈 연결'],['compensate','같은 합 만드는 수 찾기'],['compare','계산한 값 비교하기']]],
+ ['Relier les additions et les soustractions',[['inverse','Relier les deux opérations'],['compensate','Compléter des sommes égales'],['compare','Comparer les résultats']]],
  ['이야기 속 가려진 수',[['story','모아서 구하기'],['missing-add','처음 수 거꾸로 찾기'],['error','계산의 실수 고치기']]]
  ],
  '1-2-6':[
@@ -34,9 +34,9 @@ function generate(id,p,seed,n,excluded){
  if(s.method==='bridge-sub'){const total=10+between(1,7),sub=between(total-9,9),ones=total-10;prompt='Décompose le nombre en 10 et des unités pour calculer.';visual=eq(total+' − '+sub+' = □');task='10 − '+sub+' = □<br>□ + '+ones+' = □';answer=(10-sub)+', '+(10-sub)+', '+(total-sub);reason='Soustrais de 10, puis ajoute les '+ones+' unités.'}
  if(s.method==='zero-ten'){prompt='Soustrais de 10.';visual=eq('10 − '+a+' = □');answer=String(10-a);reason=a+' + '+(10-a)+' = 10.'}
  if(s.method==='picture-add'){const x=between(3,6),y=between(3,6);prompt='두 묶음을 모으는 덧셈식을 쓰세요.';visual='<div class="two-baskets"><div>'+KoArt.count(asset,x)+'</div><div>'+KoArt.count(asset,y)+'</div></div>';task='□ + □ = □';answer=x+' + '+y+' = '+(x+y);reason='각 묶음의 개수를 더합니다.'}
- if(s.method==='inverse'){prompt='세 수를 모두 사용해 덧셈식 하나와 뺄셈식 하나를 쓰세요.';visual=eq(a+'　'+b+'　'+(a+b));task='____ + ____ = ____<br>____ − ____ = ____';answer='예: '+a+' + '+b+' = '+(a+b)+', '+(a+b)+' − '+a+' = '+b;reason='더하는 두 수의 순서를 바꾸거나 다른 수를 빼도 됩니다.'}
- if(s.method==='compensate'){prompt='양쪽의 합이 같도록 빈칸을 채우세요.';visual=eq(a+' + '+b+' = '+(a-1)+' + □');answer=String(b+1);reason='한쪽 수가 1 작아지면 다른 수는 1 커져야 합이 같습니다.'}
- if(s.method==='compare'){const c=between(1,3),d=between(1,3),x=a+b,y=(a+c)+(b-d);prompt='두 식을 계산하고 >, =, < 중 알맞은 기호를 쓰세요.';visual=eq(a+' + '+b+' □ '+(a+c)+' + '+(b-d));answer=x>y?'>':x<y?'<':'=';reason='왼쪽은 '+x+', 오른쪽은 '+y+'입니다.'}
+ if(s.method==='inverse'){prompt='Utilise les trois nombres pour écrire une addition et une soustraction.';visual=eq(a+'　'+b+'　'+(a+b));task='____ + ____ = ____<br>____ − ____ = ____';answer='Exemple : '+a+' + '+b+' = '+(a+b)+', '+(a+b)+' − '+a+' = '+b;reason='Tu peux changer l’ordre des termes ou écrire l’autre soustraction.'}
+ if(s.method==='compensate'){prompt='Complète pour obtenir la même somme des deux côtés.';visual=eq(a+' + '+b+' = '+(a-1)+' + □');answer=String(b+1);reason='Si un terme diminue de 1, l’autre augmente de 1 pour garder la même somme.'}
+ if(s.method==='compare'){const c=between(1,3),d=between(1,3),x=a+b,y=(a+c)+(b-d);prompt='Calcule les deux expressions et complète avec >, = ou <.';visual=eq(a+' + '+b+' □ '+(a+c)+' + '+(b-d));answer=x>y?'>':x<y?'<':'=';reason='À gauche : '+x+' ; à droite : '+y+'.'}
  if(s.method==='story'){prompt='그림 속 물건을 오전에 '+a+'개, 오후에 '+b+'개 모았습니다. 모두 몇 개인가요?';task='식: ____ + ____ = ____<br>답: ____개';answer=a+' + '+b+' = '+(a+b);reason='오전과 오후의 개수를 모읍니다.'}
  if(s.method==='missing-add'){prompt='처음에 몇 개가 있었을까요? '+b+'개를 더 모았더니 '+(a+b)+'개가 되었습니다.';task='□ + '+b+' = '+(a+b);answer=String(a);reason=(a+b)+'에서 더 모은 '+b+'를 빼면 '+a+'입니다.'}
  if(s.method==='error'){prompt='Vérifie le calcul et corrige le résultat.';visual=eq(a+' + '+b+' = '+(a+b+1));answer=String(a+b);reason='La somme correcte est '+(a+b)+'.'}
@@ -47,5 +47,5 @@ function generate(id,p,seed,n,excluded){
  return {methodId:s.method,skill:s.method,prompt,visual,task,answer,reason,artId:asset.id,check};
  })}));
 }
-root.KoEarlyArithmetic={banks:{'1-2-2':banks['1-2-2'].slice(0,3)},generate(id,p,...args){if(id!=='1-2-2'||(!Number.isInteger(p)||p<0||p>2))throw Error('Untranslated profile');return generate(id,p,...args)}};
+root.KoEarlyArithmetic={banks:{'1-2-2':banks['1-2-2'].slice(0,3),'1-2-4':[banks['1-2-4'][1]]},generate(id,p,...args){if(id==='1-2-4'&&p===0)return generate(id,1,...args);if(id!=='1-2-2'||(!Number.isInteger(p)||p<0||p>2))throw Error('Untranslated profile');return generate(id,p,...args)}};
 })(globalThis);
