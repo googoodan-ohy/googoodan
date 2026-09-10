@@ -1335,6 +1335,26 @@
       "excludedSkills": [
         "surface"
       ]
+    },
+    {
+      "source": "6-2-6",
+      "grade": 5,
+      "name": "円柱のつくりと展開図",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-2-6-5",
+      "bank": "core-numeric",
+      "scope": "円柱の底面と側面・展開図を扱う活動だけを再利用します。円すいや球はこの単元に含めません。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf",
+      "selectedSkills": [
+        "cylinder",
+        "cylinder-net"
+      ],
+      "excludedSkills": [
+        "cone",
+        "sphere"
+      ]
     }
   ]
 }
