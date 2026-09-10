@@ -1,16 +1,16 @@
 (function(root){
 const single=[
- ['그림 묶음을 곱셈식으로','Compléter la table de multiplication','생활 속 구구단'],
+ ['Écrire la multiplication de groupes','Compléter la table de multiplication','Résoudre un problème de multiplication'],
  ['Passer de l’addition à la multiplication','Avancer sur une droite graduée','Relier les produits'],
  ['Écrire la multiplication d’un tableau','Trouver le nombre de groupes','Corriger une multiplication'],
  ['구구단 표의 빈칸 채우기','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
- ['그림 묶음을 곱셈식으로','구구단 표의 빈칸 채우기','생활 속 구구단'],
+ ['Écrire la multiplication de groupes','구구단 표의 빈칸 채우기','Résoudre un problème de multiplication'],
  ['Passer de l’addition à la multiplication','Trouver le nombre de groupes','Relier les produits'],
  ['Écrire la multiplication d’un tableau','이웃한 구구단으로 계산하기','이야기에 맞는 식 고르기'],
  ['Avancer sur une droite graduée','Compléter la table de multiplication','Corriger une multiplication']
 ];
 const modes={
-'그림 묶음을 곱셈식으로':'groups','Compléter la table de multiplication':'facts','생활 속 구구단':'story',
+'Écrire la multiplication de groupes':'groups','Compléter la table de multiplication':'facts','Résoudre un problème de multiplication':'story',
 'Passer de l’addition à la multiplication':'repeated','Avancer sur une droite graduée':'jump','Relier les produits':'match',
 'Écrire la multiplication d’un tableau':'array','Trouver le nombre de groupes':'missing','Corriger une multiplication':'error',
 '구구단 표의 빈칸 채우기':'table','이웃한 구구단으로 계산하기':'neighbor','이야기에 맞는 식 고르기':'choose'
@@ -28,7 +28,7 @@ add('그림을 구구단으로 바꾸기',[2,3,4,5,6,7,8,9],['groups','array','c
 add('가족과 모둠의 구구단',[2,3,4,5,6,7,8,9],['family','team','pack']);
 add('구구단 탐정',[2,3,4,5,6,7,8,9],['error','reverse','target']);
 add('구구단의 연결과 규칙',[2,3,4,5,6,7,8,9],['commute','neighbor','chain']);
-add('생활 속 구구단 해결하기',[2,3,4,5,6,7,8,9],['ticket','compare','choose']);
+add('Résoudre un problème de multiplication 해결하기',[2,3,4,5,6,7,8,9],['ticket','compare','choose']);
 add('1단 · 한 개씩 묶기',[1],['groups','facts','create']);
 add('0의 곱셈 · 아무것도 없는 묶음',[0],['zero-groups','zero-order','zero-story']);
 root.FrTimesBank={profiles};
@@ -56,7 +56,7 @@ let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'t
   const badge='<span class="picture-badge">'+A.icon(asset)+'</span>';
   if(method==='facts'){prompt='Complète la multiplication.';visual=badge;task=eq(a+' × '+b+' = □');answer=String(product);reason=b+' groupes de '+a+' donnent '+product+'.'}
   if(method==='facts'&&spec.tables.length===1){prompt='Complète la table de '+a+' de 1 à 9.';task='<div class="facts-nine">'+Array.from({length:9},(_,j)=>'<span>'+a+' × '+(j+1)+' = □</span>').join('')+'</div>';answer=Array.from({length:9},(_,j)=>a*(j+1)).join(', ');reason='Quand le facteur augmente de 1, le produit augmente de '+a+'.'}
-  if(method==='groups'){const g=Math.min(b,4);prompt='그림을 보고 한 묶음의 수와 묶음 수를 식으로 쓰세요.';visual=groups(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason=a+'개씩 '+g+'묶음입니다.';check.product=a*g;check.b=g}
+  if(method==='groups'){const g=Math.min(b,4);prompt='Écris : objets par groupe × nombre de groupes.';visual=groups(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason=g+' groupes contiennent chacun '+a+' objets.';check.product=a*g;check.b=g}
   if(method==='repeated'){const g=2+b%4;prompt='Écris cette addition répétée sous forme de multiplication.';visual=badge+eq(Array(g).fill(a).join(' + '));task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='On additionne '+g+' fois le nombre '+a+'.';check.product=a*g;check.b=g}
   if(method==='array'){const g=Math.min(b,5);prompt='Écris : objets par ligne × nombre de lignes.';visual=array(a,g,asset);task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='Il y a '+g+(g===1?' ligne de ':' lignes de ')+a+' objets.';check.product=a*g;check.b=g}
   if(method==='jump'){const g=2+b%4;prompt='On avance par bonds de '+a+'. Écris le nombre atteint et la multiplication.';visual=badge+'<svg class="concept-art" viewBox="0 0 250 48"><path d="M10 32H240" stroke="#597889"/>'+Array.from({length:g+1},(_,j)=>'<path d="M'+(15+j*220/g)+' 28v8" stroke="#597889"/><text x="'+(15+j*220/g)+'" y="47" font-size="11" text-anchor="middle">'+(j===g?'□':j*a)+'</text>'+(j<g?'<path d="M'+(15+j*220/g)+' 28q'+110/g+' -32 '+220/g+' 0" fill="none" stroke="#278477"/>':'')).join('')+'</svg>';task=eq('□ × □ = □');answer=a+' × '+g+' = '+a*g;reason='Depuis 0, '+g+' bonds de '+a+' donnent '+a*g+'.';check.product=a*g;check.b=g}
@@ -77,16 +77,16 @@ let prompt='',visual='',task=blank,answer='',reason='',open=false,check={kind:'t
    const c=contexts[method==='family'?0:method==='team'?1:method==='pack'?2:method==='ticket'?3:index%contexts.length];
    const name=asset.name.replace(' 얼굴','');
    const contextsByArt=[
-    ['한 가족에 '+name+' '+a+'마리씩 있습니다. '+b+'가족이 소풍을 갔습니다.','모두 몇 마리인가요?',name+' '+product+'마리가 한 가족에 '+a+'마리씩 모였습니다. 몇 가족인가요?','마리'],
-    ['한 모둠에 그림 속 물건을 '+a+'개씩 나누어 줍니다. '+b+'모둠에 나누어 주려 합니다.','물건은 모두 몇 개 필요한가요?','그림 속 물건 '+product+'개를 한 모둠에 '+a+'개씩 나누어 주었습니다. 몇 모둠인가요?','개'],
-    ['그림 속 놀이 도구를 한 상자에 '+a+'개씩 담았습니다. 상자가 '+b+'개 있습니다.','도구는 모두 몇 개인가요?','그림 속 놀이 도구 '+product+'개를 상자마다 '+a+'개씩 담았습니다. 몇 상자인가요?','개'],
-    ['장난감 탈것을 한 줄에 '+a+'대씩 놓았습니다. '+b+'줄로 놓았습니다.','장난감은 모두 몇 대인가요?','장난감 탈것 '+product+'대를 한 줄에 '+a+'대씩 놓았습니다. 몇 줄인가요?','대'],
-    ['그림 속 음식을 한 쟁반에 '+a+'개씩 담았습니다. 쟁반이 '+b+'개 있습니다.','음식은 모두 몇 개인가요?','그림 속 음식 '+product+'개를 한 쟁반에 '+a+'개씩 담았습니다. 몇 쟁반인가요?','개'],
-    ['그림 속 모습을 스티커로 만들었습니다. 한 장에 '+a+'개씩 붙인 스티커 종이가 '+b+'장 있습니다.','스티커는 모두 몇 개인가요?','스티커 '+product+'개를 한 장에 '+a+'개씩 붙였습니다. 종이는 몇 장인가요?','개']
-   ];
+ ['Chaque famille compte '+a+' animaux comme celui du dessin. Il y a '+b+' familles.','Combien y a-t-il d’animaux en tout?',product+' animaux forment des familles de '+a+'. Combien de familles?',' animaux'],
+ ['Chaque groupe reçoit '+a+' objets comme celui du dessin. Il y a '+b+' groupes.','Combien faut-il d’objets en tout?',product+' objets sont partagés en groupes de '+a+'. Combien de groupes?',' objets'],
+ ['Chaque boîte contient '+a+' jouets comme celui du dessin. Il y a '+b+' boîtes.','Combien y a-t-il de jouets en tout?',product+' jouets sont rangés par '+a+' dans chaque boîte. Combien de boîtes?',' jouets'],
+ ['On place '+a+' véhicules miniatures par rangée. Il y a '+b+' rangées.','Combien y a-t-il de véhicules en tout?',product+' véhicules sont placés par rangées de '+a+'. Combien de rangées?',' véhicules'],
+ ['Chaque plateau contient '+a+' aliments comme celui du dessin. Il y a '+b+' plateaux.','Combien y a-t-il d’aliments en tout?',product+' aliments sont répartis par '+a+' sur chaque plateau. Combien de plateaux?',' aliments'],
+ ['Chaque feuille porte '+a+' autocollants comme celui du dessin. Il y a '+b+' feuilles.','Combien y a-t-il d’autocollants en tout?',product+' autocollants sont répartis par '+a+' sur chaque feuille. Combien de feuilles?',' autocollants']
+ ];
    const context=contextsByArt[storyKind];c.stem=context[0];c.ask=context[1];c.back=context[2];c.unit=context[3];
    prompt=c.stem+' '+c.ask;visual=badge;
-task='곱셈식: □ × □ = □<br>답: __________';answer=a+' × '+b+' = '+product+' ('+product+c.unit+')';reason='한 묶음의 수에 묶음 수를 곱합니다.';
+task='Multiplication : □ × □ = □<br>Réponse : __________';answer=a+' × '+b+' = '+product+' ('+product+c.unit+')';reason='Multiplie le nombre par groupe par le nombre de groupes.';
    if(method==='pack'||method==='reverse'){prompt=c.back;task=eq(a+' × □ = '+product);answer=String(b);reason=a+' × '+b+' = '+product+'입니다.'}
    if(method==='team'){prompt=c.stem+' 준비물을 '+(product+a)+'개라고 계산했습니다. 맞는지 확인하고 고치세요.';task='맞으면 ○, 틀리면 ×: ____<br>Calcul corrigé : __________________';answer='×, '+a+' × '+b+' = '+product;reason='모둠 수보다 한 묶음 더 계산했습니다.'}
    if(method==='choose'){task='<div class="story-options">① '+a+' + '+b+'　② '+a+' × '+b+'</div>맞는 식: ____　계산한 답: ____';answer='②, '+product+c.unit;reason='같은 수 '+a+'가 '+b+'묶음이므로 곱셈입니다.'}
@@ -104,5 +104,5 @@ if(!prompt||!answer)throw Error('미구현 구구단 활동 '+method);
  }
  return spec.activities.map((s,i)=>({title:s.title,skill:'times',method:s.method,questions:Array.from({length:s.method==='facts'&&spec.tables.length===1?1:n},(_,j)=>question(s.method,j,i))}));
 }
-root.FrTimes={nineProfiles:[{...bank.profiles[7],name:'La table de 9 : avancer, compléter et vérifier'}],generateNine(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',7,seed,n)},sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
+root.FrTimes={twoProfiles:[{...bank.profiles[0],name:'La table de 2 : groupes, calculs et problèmes'}],generateTwo(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',0,seed,n)},nineProfiles:[{...bank.profiles[7],name:'La table de 9 : avancer, compléter et vérifier'}],generateNine(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',7,seed,n)},sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
 })(globalThis);
