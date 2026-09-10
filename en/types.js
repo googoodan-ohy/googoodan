@@ -113,6 +113,11 @@ types.push({id:'transformations',title:'Geometry Transformations Worksheets - Sl
 types.push({"id":"average","title":"Mean and Average Worksheets","family":"Reasoning","group":"Reasoning","example":"2 + 3","instruction":"Show your work and explain your answer.","bankId":"5-2-6"});
 types.push({"id":"ratio","title":"Ratio and Proportion Worksheets","family":"Reasoning","group":"Reasoning","example":"2 + 3","instruction":"Show your work and explain your answer.","bankId":"6-1-4"});
 root.Worksheets={types,generate,rational,exact,fraction};
+
+const existingGenerate=root.Worksheets.generate;
+for(const [id,title]of [['place-value','Place Value Worksheets'],['rounding','Rounding Worksheets']])types.push({id,title,family:'Number sense',group:'Number sense',example:'2 + 3',instruction:'Read each question and show your work.',customWorksheet:true});
+root.Worksheets.generate=function(id,seed,n=6){if(!['place-value','rounding'].includes(id))return existingGenerate(id,seed,n);let state=seed>>>0;const rand=max=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return Math.floor(state/4294967296*max)},fmt=x=>x.toLocaleString('en-US');return Array.from({length:n},(_,i)=>{const value=1000+rand(99000),power=rand(id==='rounding'?3:5)+(id==='rounding'?1:0),unit=10**power,label=['ones','tens','hundreds','thousands','ten-thousands'][power],digit=Math.floor(value/unit)%10;let prompt,answer;if(id==='rounding'){prompt='Round '+fmt(value)+' to the nearest '+label+'.';answer=fmt(Math.round(value/unit)*unit);}else if(i%3===0){prompt='What digit is in the '+label+' place in '+fmt(value)+'?';answer=String(digit);}else if(i%3===1){prompt='What is the value of the digit in the '+label+' place in '+fmt(value)+'?';answer=fmt(digit*unit);}else{prompt='Write '+fmt(value)+' in expanded form.';answer=String(value).split('').map((d,j)=>+d*10**(String(value).length-j-1)).filter(Boolean).map(fmt).join(' + ');}return {prompt,answer,reason:'Check the position of each digit.',a:value,b:unit,op:'custom'};});};
+
 if(typeof module!=='undefined')module.exports=root.Worksheets;
 })(globalThis);
 
