@@ -119,8 +119,6 @@ function render(){
  }else{GDTimes.reset();document.querySelector('#new').disabled=false;}
  updatePrintSelection();
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
- document.title=/^(?:\/|\/ko\/(?:index\.html)?)$/.test(location.pathname)?'小学生の無料算数プリント · たし算 ひき算 かけ算 わり算 | googoodan':current.title+' | googoodan';
- document.querySelector('meta[name="description"]').content=current.title+' プリントを作り、解答と一緒に印刷できます。';
 
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);
