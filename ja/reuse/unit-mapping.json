@@ -67,6 +67,48 @@
         2,
         3
       ]
+    },
+    {
+      "source": "2-2-2",
+      "target": "ja-times-bank",
+      "grade": 2,
+      "name": "かけ算・九九の図と文章題",
+      "scope": "1〜9の段、同じ数のまとまり、九九の表、交換法則、□を使った九九の問題。",
+      "bank": "multiplication",
+      "profiles": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-2",
+      "target": "ja-zero-times-bank",
+      "grade": 3,
+      "name": "0のかけ算",
+      "scope": "0をかける計算と空のまとまり。九九の定着後に学ぶ内容。",
+      "bank": "multiplication",
+      "profiles": [
+        19
+      ],
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
