@@ -90,6 +90,24 @@
     "heading": "ひき算の文章題プリント"
   },
   {
+    "id": "hyakubunritsu-moto",
+    "grade": 5,
+    "title": "百分率からもとの量を求める",
+    "op": "percentBase",
+    "max": 500,
+    "file": "hyakubunritsu-moto.html",
+    "heading": "百分率からもとの量を求めるプリント"
+  },
+  {
+    "id": "hyakubunritsu-wariai",
+    "grade": 5,
+    "title": "割合を百分率で求める",
+    "op": "percentRate",
+    "max": 500,
+    "file": "hyakubunritsu-wariai.html",
+    "heading": "割合を百分率で求めるプリント"
+  },
+  {
     "id": "hyakubunritsu",
     "grade": 5,
     "title": "百分率で量を求める",
