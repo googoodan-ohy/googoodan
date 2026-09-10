@@ -600,6 +600,174 @@
       "bank": "reading-stories",
       "scope": "999までのたし算・ひき算の文章題。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-1-3",
+      "grade": 1,
+      "name": "9までのたし算・ひき算の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-1-3-1",
+      "bank": "core-numeric",
+      "scope": "9までのたし算・ひき算の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-1-5",
+      "grade": 1,
+      "name": "50までの数の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-1-5-1",
+      "bank": "core-numeric",
+      "scope": "50までの数の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-1",
+      "grade": 1,
+      "name": "100までの数の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-2-1-1",
+      "bank": "core-numeric",
+      "scope": "100までの数の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-1",
+      "grade": 2,
+      "name": "三けたの数の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-1-2",
+      "bank": "core-numeric",
+      "scope": "三けたの数の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-3",
+      "grade": 2,
+      "name": "二けたのたし算・ひき算の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-3-2",
+      "bank": "core-numeric",
+      "scope": "二けたのたし算・ひき算の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-6",
+      "grade": 2,
+      "name": "かけ算の意味と図",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-6-2",
+      "bank": "core-numeric",
+      "scope": "かけ算の意味と図。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-1",
+      "grade": 3,
+      "name": "四けたの数の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-2-1-3",
+      "bank": "core-numeric",
+      "scope": "四けたの数の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-1",
+      "grade": 3,
+      "name": "三けたのたし算・ひき算の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-1-1-3",
+      "bank": "core-numeric",
+      "scope": "三けたのたし算・ひき算の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-3",
+      "grade": 3,
+      "name": "わり算の意味と九九",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-1-3-3",
+      "bank": "core-numeric",
+      "scope": "わり算の意味と九九。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-1-4",
+      "grade": 3,
+      "name": "二けた×一けたの基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-1-4-3",
+      "bank": "core-numeric",
+      "scope": "二けた×一けたの基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-1",
+      "grade": 4,
+      "name": "二けたをかける計算と復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-2-1-4",
+      "bank": "core-numeric",
+      "scope": "二けたをかける計算と復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-3",
+      "grade": 4,
+      "name": "わり算とあまりの基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-3-2-3-4",
+      "bank": "core-numeric",
+      "scope": "わり算とあまりの基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-1",
+      "grade": 4,
+      "name": "大きな数の位・万・億・兆",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-1-1-4",
+      "bank": "core-numeric",
+      "scope": "大きな数の位・万・億・兆。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-3",
+      "grade": 4,
+      "name": "二けたのかけ算・わり算の基本",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-1-3-4",
+      "bank": "core-numeric",
+      "scope": "二けたのかけ算・わり算の基本。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
