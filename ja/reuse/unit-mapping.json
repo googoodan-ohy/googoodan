@@ -768,6 +768,90 @@
       "bank": "core-numeric",
       "scope": "二けたのかけ算・わり算の基本。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-1-2",
+      "grade": 1,
+      "name": "立体の形のなかま",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-1-2-1",
+      "bank": "core-numeric",
+      "scope": "立体の形のなかま。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-1-4",
+      "grade": 1,
+      "name": "長さ・広さ・かさ・重さの比較",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-1-4-1",
+      "bank": "core-numeric",
+      "scope": "長さ・広さ・かさ・重さの比較。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-3",
+      "grade": 1,
+      "name": "形づくりと時計",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-2-3-1",
+      "bank": "core-numeric",
+      "scope": "形づくりと時計。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "1-2-5",
+      "grade": 1,
+      "name": "数と形のきまり",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-1-2-5-1",
+      "bank": "core-numeric",
+      "scope": "数と形のきまり。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-4",
+      "grade": 2,
+      "name": "ものさしとcm",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-4-2",
+      "bank": "core-numeric",
+      "scope": "ものさしとcm。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-5",
+      "grade": 2,
+      "name": "種類に分けて表にする",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-5-2",
+      "bank": "core-numeric",
+      "scope": "種類に分けて表にする。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-2-6",
+      "grade": 2,
+      "name": "かけ算につながる表のきまり",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-2-6-2",
+      "bank": "core-numeric",
+      "scope": "かけ算につながる表のきまり。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
