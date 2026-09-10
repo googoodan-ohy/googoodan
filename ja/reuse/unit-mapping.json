@@ -1188,6 +1188,30 @@
       "bank": "core-numeric",
       "scope": "等しい比・比で分ける。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-6",
+      "grade": 4,
+      "name": "数のきまり・表と等しい式",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-4-1-6-4",
+      "bank": "core-numeric",
+      "scope": "数のきまり・表と等しい式。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-5",
+      "grade": 4,
+      "name": "直方体と立方体・展開図",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-2-5-4",
+      "bank": "core-numeric",
+      "scope": "直方体と立方体・展開図。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
