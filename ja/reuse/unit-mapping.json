@@ -1297,6 +1297,44 @@
       "bank": "core-numeric",
       "scope": "多角形の辺と対角線。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-6",
+      "grade": 5,
+      "name": "平均とデータの合計",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-2-6-5",
+      "bank": "core-numeric",
+      "scope": "平均・合計・欠けた値を求める活動だけを再利用。確率の活動は含めません。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf",
+      "selectedSkills": [
+        "average",
+        "average-missing"
+      ],
+      "excludedSkills": [
+        "chance"
+      ]
+    },
+    {
+      "source": "6-1-6",
+      "grade": 5,
+      "name": "直方体の体積と単位",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-6-1-6-5",
+      "bank": "core-numeric",
+      "scope": "直方体の体積と体積単位の換算だけを再利用。表面積は含めません。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf",
+      "selectedSkills": [
+        "volume",
+        "volume-convert"
+      ],
+      "excludedSkills": [
+        "surface"
+      ]
     }
   ]
 }
