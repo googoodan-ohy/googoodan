@@ -322,6 +322,90 @@
         2
       ],
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-2-1",
+      "grade": 5,
+      "name": "同分母の分数の復習と約分",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target": "ja-fraction-target-4-2-1-5",
+      "bank": "fraction-targets",
+      "scope": "同分母の分数の復習と約分。計算・□の数・文章題を練習します。同分母の計算も約分を含むため5年生の復習に分類しています。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-5",
+      "grade": 5,
+      "name": "異分母の分数のたし算・ひき算",
+      "profiles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target": "ja-fraction-target-5-1-5-5",
+      "bank": "fraction-targets",
+      "scope": "異分母の分数のたし算・ひき算。計算・□の数・文章題を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-2",
+      "grade": 5,
+      "name": "分数と整数のかけ算",
+      "profiles": [
+        2,
+        3
+      ],
+      "target": "ja-fraction-target-5-2-2-5",
+      "bank": "fraction-targets",
+      "scope": "分数と整数のかけ算。計算・□の数・文章題を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-2",
+      "grade": 6,
+      "name": "分数同士のかけ算",
+      "profiles": [
+        0,
+        1
+      ],
+      "target": "ja-fraction-target-5-2-2-6",
+      "bank": "fraction-targets",
+      "scope": "分数同士のかけ算。計算・□の数・文章題を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-1",
+      "grade": 5,
+      "name": "分数と整数のわり算",
+      "profiles": [
+        0,
+        1,
+        2
+      ],
+      "target": "ja-fraction-target-6-1-1-5",
+      "bank": "fraction-targets",
+      "scope": "分数と整数のわり算。計算・□の数・文章題を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-1",
+      "grade": 6,
+      "name": "分数でわる計算",
+      "profiles": [
+        0,
+        1,
+        2
+      ],
+      "target": "ja-fraction-target-6-2-1-6",
+      "bank": "fraction-targets",
+      "scope": "分数でわる計算。計算・□の数・文章題を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
