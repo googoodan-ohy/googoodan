@@ -454,6 +454,67 @@
       "bank": "data-targets",
       "scope": "割合と帯グラフ。資料の読み取り・グラフの作図・比較を練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-6",
+      "grade": 5,
+      "name": "平均と資料の比較",
+      "profiles": [
+        0,
+        1
+      ],
+      "target": "ja-reasoning-target-5-2-6-5",
+      "bank": "reasoning-targets",
+      "scope": "平均と資料の比較。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-4",
+      "grade": 6,
+      "name": "比・割合と基準量",
+      "profiles": [
+        0
+      ],
+      "target": "ja-reasoning-target-6-1-4-6",
+      "bank": "reasoning-targets",
+      "scope": "比・割合と基準量。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-4",
+      "grade": 6,
+      "name": "比を使った分け方",
+      "profiles": [
+        0
+      ],
+      "target": "ja-reasoning-target-6-2-4-6",
+      "bank": "reasoning-targets",
+      "scope": "比を使った分け方。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-6",
+      "grade": 5,
+      "name": "面積から長さを求める",
+      "profiles": [
+        0
+      ],
+      "target": "ja-reasoning-target-5-1-6-5",
+      "bank": "reasoning-targets",
+      "scope": "面積から長さを求める。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-2-5",
+      "grade": 6,
+      "name": "円の面積と円周の応用",
+      "profiles": [
+        0
+      ],
+      "target": "ja-reasoning-target-6-2-5-6",
+      "bank": "reasoning-targets",
+      "scope": "円の面積と円周の応用。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
