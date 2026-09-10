@@ -523,5 +523,101 @@
     "op": "elapsedTime",
     "file": "jikoku-jikan.html",
     "heading": "時刻と時間の無料プリント"
+  },
+  {
+    "id": "tokei",
+    "grade": 1,
+    "title": "時計の読み方",
+    "op": "clockRead",
+    "file": "tokei.html",
+    "heading": "時計の読み方の無料プリント"
+  },
+  {
+    "id": "gaisu",
+    "grade": 4,
+    "title": "概数と四捨五入",
+    "op": "roundNumber",
+    "file": "gaisu.html",
+    "heading": "概数と四捨五入の無料プリント"
+  },
+  {
+    "id": "heikin",
+    "grade": 5,
+    "title": "平均",
+    "op": "mean",
+    "file": "heikin.html",
+    "heading": "平均の無料プリント"
+  },
+  {
+    "id": "chuouchi",
+    "grade": 6,
+    "title": "中央値",
+    "op": "median",
+    "file": "chuouchi.html",
+    "heading": "中央値の無料プリント"
+  },
+  {
+    "id": "hayasa",
+    "grade": 5,
+    "title": "速さ",
+    "op": "speed",
+    "file": "hayasa.html",
+    "heading": "速さの無料プリント"
+  },
+  {
+    "id": "hirei",
+    "grade": 6,
+    "title": "比例",
+    "op": "proportion",
+    "file": "hirei.html",
+    "heading": "比例の無料プリント"
+  },
+  {
+    "id": "hanpirei",
+    "grade": 6,
+    "title": "反比例",
+    "op": "inverseProportion",
+    "file": "hanpirei.html",
+    "heading": "反比例の無料プリント"
+  },
+  {
+    "id": "moji-shiki",
+    "grade": 6,
+    "title": "文字を使った式",
+    "op": "letterExpression",
+    "file": "moji-shiki.html",
+    "heading": "文字を使った式の無料プリント"
+  },
+  {
+    "id": "daikei-menseki",
+    "grade": 5,
+    "title": "台形の面積",
+    "op": "trapezoidArea",
+    "file": "daikei-menseki.html",
+    "heading": "台形の面積の無料プリント"
+  },
+  {
+    "id": "heikoushihenkei-menseki",
+    "grade": 5,
+    "title": "平行四辺形の面積",
+    "op": "parallelogramArea",
+    "file": "heikoushihenkei-menseki.html",
+    "heading": "平行四辺形の面積の無料プリント"
+  },
+  {
+    "id": "enchu-taiseki",
+    "grade": 6,
+    "title": "円柱の体積",
+    "op": "cylinderVolume",
+    "file": "enchu-taiseki.html",
+    "heading": "円柱の体積の無料プリント"
+  },
+  {
+    "id": "enshu",
+    "grade": 5,
+    "title": "円周",
+    "op": "circumference",
+    "file": "enshu.html",
+    "heading": "円周の無料プリント"
   }
 ]

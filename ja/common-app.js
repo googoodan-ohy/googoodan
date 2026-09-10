@@ -131,8 +131,8 @@ function render(){
  const isDivision=sample.op==='÷'&&['Natural numbers','Decimals'].includes(current.family);
  const isMultiplication=sample.op==='×'&&sample.vertical;
  const digits=String(sample.b).length;
- const cols=isDivision?2:isMultiplication?3:current.family==='Fractions'?2:4;
- const count=current.ja?12:isDivision?(current.family==='Decimals'?4:(digits>=4?2:Math.max(String(sample.a).length,digits)>=3?4:6)):isMultiplication?(digits>=4?6:digits>=3?9:12):current.family==='Fractions'?20:sample.vertical?24:28;
+ const cols=current.ja&&sample.prompt?1:isDivision?2:isMultiplication?3:current.family==='Fractions'?2:4;
+ const count=current.ja?(sample.visual?4:sample.prompt?6:12):isDivision?(current.family==='Decimals'?4:(digits>=4?2:Math.max(String(sample.a).length,digits)>=3?4:6)):isMultiplication?(digits>=4?6:digits>=3?9:12):current.family==='Fractions'?20:sample.vertical?24:28;
  const rows=generate(current.id,seed,count);
  const paper=document.querySelector('.paper');paper.classList.toggle('story-sheet',!!current.ja&&!!sample.prompt);paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/cols));paper.style.setProperty('--cols',cols);paper.classList.toggle('written-sheet',isDivision||isMultiplication);
  document.querySelector('.problems').innerHTML=rows.map((p,i)=>{
@@ -141,7 +141,7 @@ function render(){
  let html=p.vertical?`<div class="vertical"><div>${p.a}</div><div class="bottom"><span>${p.op}</span><span>${p.b}</span></div><div class="result">${answers?value:'&nbsp;'}</div></div>`:`<span class="expression">${display(p.a)} ${p.op} ${display(p.b)} =</span>${value}`;
  if(p.op==='missing')html=`<span class="expression">${p.a} + <span class="box">${answers?escape(p.answer):''}</span> = ${p.a+p.b}</span>`;
  if(p.op==='compare')html=`<span class="expression">${p.a} <span class="box">${answers?escape(p.answer):''}</span> ${p.b}</span>`;
- if(p.blank){html='<span class="expression">'+(p.blank===1&&!answers?'□':escape(p.a))+' '+p.op+' '+(p.blank===2&&!answers?'□':escape(p.b))+' = '+escape(p.answer)+'</span>';}if(p.prompt)html='<span class="expression">'+escape(p.prompt)+'</span>'+value;else if(!p.blank)html=writtenWork(p,answers)||html;
+ if(p.blank){html='<span class="expression">'+(p.blank===1&&!answers?'□':escape(p.a))+' '+p.op+' '+(p.blank===2&&!answers?'□':escape(p.b))+' = '+escape(p.answer)+'</span>';}if(p.prompt)html=(p.visual||'')+'<span class="expression">'+escape(p.prompt)+'</span>'+value;else if(!p.blank)html=writtenWork(p,answers)||html;
  return `<div class="problem ${p.op==='missing'||p.op==='compare'?'concept':''}"><span class="number">${i+1}.</span>${html}</div>`;
  }).join('');
  document.querySelector('#set').textContent=`Set ${seed} · ${answers?'答え':count+'問'}`;
