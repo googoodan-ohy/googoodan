@@ -129,7 +129,7 @@ function render(){
  updatePrintSelection();
  if(trackedWorksheet!==current.id){trackWorksheet('worksheet_view');trackedWorksheet=current.id;}
  document.title=/^(?:\/|\/ko\/(?:index\.html)?)$/.test(location.pathname)?'무료 초등 수학 문제지 · 덧셈 뺄셈 곱셈 나눗셈 | 구구단닷컴':current.title+' | 구구단닷컴';
- if(window.WORKSHEET_ENTRY) document.querySelector('meta[name="description"]').content=current.title+' 문제지를 바로 만들고 정답지와 함께 인쇄하세요.';
+ // Keep the page-specific static description; shared renderers must not overwrite SEO metadata.
 
  document.querySelectorAll('.choice').forEach(a=>{if(a.dataset.id===current.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);
