@@ -1,7 +1,7 @@
 (function(root){
 const profiles=[
  {name:'Compter, entourer et lire les nombres',activities:[['count','Compter les images'],['mark','Entourer le nombre demandé'],['words','Relier les nombres aux mots']]},
- {name:'순서와 크기 살펴보기',activities:[['ordinal','차례에 맞게 표시하기'],['neighbors','앞뒤에 오는 수 찾기'],['compare','두 묶음의 개수 비교하기']]},
+ {name:'Comparer les nombres et les positions',activities:[['ordinal','Repérer une position'],['neighbors','Trouver le nombre précédent et suivant'],['compare','Comparer deux quantités']]},
  {name:'수가 나타내는 뜻',activities:[['zero','아무것도 없는 수 0'],['two-read','수를 두 가지로 읽기'],['order','수 카드를 순서대로 놓기']]},
  {name:'조건을 읽고 수 찾기',activities:[['clue','조건에 맞는 수 모두 찾기'],['line','수직선의 자리 찾기'],['repair','잘못 놓인 수 카드 고치기']]}
 ].map(x=>({...x,activities:x.activities.map(([method,title])=>({method,title}))}));
@@ -18,9 +18,9 @@ function generate(p,seed,n,excluded){
  if(s.method==='count'){prompt='Combien y a-t-il d’images ? Écris le nombre.';visual=count(a);answer=a;reason='En comptant les images une par une, on en trouve '+a+'.'}
  if(s.method==='mark'){const total=between(4,9),k=between(1,total-1);prompt='Entoure exactement '+k+' images.';visual=count(total);task='';answer='Entourer '+k+' images';reason='Il suffit de choisir et d’entourer '+k+' images.';open=true}
  if(s.method==='words'){const vals=[a,a%9+1,(a+1)%9+1],rot=r(3),right=vals.slice(rot).concat(vals.slice(0,rot));prompt='Relie chaque nombre au mot correspondant.';visual='<span class="picture-badge">'+KoArt.icon(asset)+'</span><div class="match-columns"><div>'+vals.map(x=>'<p>'+x+' ●</p>').join('')+'</div><div>'+right.map(x=>'<p>● '+names[x]+'</p>').join('')+'</div></div>';task='';answer=vals.map(x=>x+' → '+names[x]).join(', ');reason='Chaque mot indique le nombre correspondant.'}
- if(s.method==='ordinal'){const total=between(4,8),k=between(1,total);prompt='왼쪽부터 '+k+'번째 그림에만 동그라미 하세요.';visual='<div class="ordinal-row">'+Array.from({length:total},()=>KoArt.icon(asset)).join('')+'</div>';task='';answer='왼쪽에서 '+k+'번째';reason='왼쪽부터 하나씩 차례를 세어 한 곳에 표시합니다.';open=true}
- if(s.method==='neighbors'){const k=between(2,8);prompt='바로 앞의 수와 바로 뒤의 수를 쓰세요.';visual=cards(['□',k,'□']);answer=(k-1)+', '+(k+1);reason=(k-1)+' → '+k+' → '+(k+1)+' 순서입니다.'}
- if(s.method==='compare'){const k=between(1,4),j=between(5,9);prompt='그림이 더 많은 쪽에 동그라미 하세요.';const reverse=r(2);visual='<div class="two-baskets"><div>가'+count(reverse?j:k)+'</div><div>나'+count(reverse?k:j)+'</div></div>';task='가 / 나';answer=reverse?'가':'나';reason=j+'개가 '+k+'개보다 많습니다.'}
+ if(s.method==='ordinal'){const total=between(4,8),k=between(1,total);prompt='En partant de la gauche, entoure l’image en position '+k+'.';visual='<div class="ordinal-row">'+Array.from({length:total},()=>KoArt.icon(asset)).join('')+'</div>';task='';answer='Position '+k+' depuis la gauche';reason='Compte les positions depuis la gauche et marque une seule image.';open=true}
+ if(s.method==='neighbors'){const k=between(2,8);prompt='Écris le nombre juste avant et le nombre juste après.';visual=cards(['□',k,'□']);answer=(k-1)+', '+(k+1);reason=(k-1)+' → '+k+' → '+(k+1)+' est l’ordre des nombres.'}
+ if(s.method==='compare'){const k=between(1,4),j=between(5,9);prompt='Entoure le groupe qui contient le plus d’images.';const reverse=r(2);visual='<div class="two-baskets"><div>A'+count(reverse?j:k)+'</div><div>B'+count(reverse?k:j)+'</div></div>';task='A / B';answer=reverse?'A':'B';reason=j+' est plus grand que '+k+'.'}
  if(s.method==='bond'){const total=between(3,9),left=between(1,total-1);prompt='전체를 두 묶음으로 가릅니다. 빈칸을 채우세요.';visual=count(total)+'<div class="number-bond"><b>'+total+'</b><span>↙　↘</span><span>'+left+'　　□</span></div>';answer=total-left;reason=left+'개를 한쪽에 놓으면 '+(total-left)+'개가 남습니다.'}
  if(s.method==='complete'){const total=between(3,9),given=between(1,total-1);prompt='모두 '+total+'개가 되도록 부족한 만큼 간단한 그림을 더 그리세요.';visual=count(given);task='<div class="kdraw"></div>';answer=(total-given)+'개 더 그리기';reason=given+'개와 '+(total-given)+'개를 모으면 '+total+'개입니다.';open=true}
  if(s.method==='order'){let vals=[...new Set([a,b,between(1,9),between(1,9)])];while(vals.length<3){const v=between(1,9);if(!vals.includes(v))vals.push(v)}vals=vals.slice(0,3);prompt='작은 수부터 차례대로 쓰세요.';visual=cards(vals);task='____ → ____ → ____';answer=[...vals].sort((x,y)=>x-y).join(' → ');reason='가장 작은 수부터 놓습니다.'}
@@ -31,5 +31,5 @@ function generate(p,seed,n,excluded){
  return {methodId:s.method,skill:s.method,prompt,visual,task,answer:String(answer),reason,open,artId:asset.id};
  })}));
 }
-root.KoEarlyNumbers={profiles:profiles.slice(0,1),generate(p,...args){if(p!==0)throw Error("French profile not yet available");return generate(p,...args)}};
+root.KoEarlyNumbers={profiles:profiles.slice(0,2),generate(p,...args){if(p<0||p>1)throw Error("French profile not yet available");return generate(p,...args)}};
 })(globalThis);
