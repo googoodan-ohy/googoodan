@@ -1236,6 +1236,19 @@
       "bank": "core-numeric",
       "scope": "四角形の角と性質の復習。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-1-6",
+      "grade": 5,
+      "name": "三角形・四角形の面積と周りの長さ",
+      "profiles": [
+        0,
+        1
+      ],
+      "target": "ja-core-numeric-5-1-6-5",
+      "bank": "core-numeric",
+      "scope": "三角形・四角形の面積と周りの長さ。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
