@@ -1249,6 +1249,30 @@
       "bank": "core-numeric",
       "scope": "三角形・四角形の面積と周りの長さ。条件の整理・逆算・確かめを練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "5-2-3",
+      "grade": 6,
+      "name": "対称な図形と合同の復習",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-5-2-3-6",
+      "bank": "core-numeric",
+      "scope": "対称な図形と合同の復習。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "2-1-2",
+      "grade": 2,
+      "name": "平面の形と積み木を数える",
+      "profiles": [
+        0
+      ],
+      "target": "ja-core-numeric-2-1-2-2",
+      "bank": "core-numeric",
+      "scope": "平面の形と積み木を数える。条件の整理・逆算・確かめを練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
