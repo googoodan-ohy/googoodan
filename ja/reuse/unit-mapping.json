@@ -406,6 +406,54 @@
       "bank": "fraction-targets",
       "scope": "分数でわる計算。計算・□の数・文章題を練習します。",
       "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "3-2-6",
+      "grade": 3,
+      "name": "絵グラフと表",
+      "profiles": [
+        0
+      ],
+      "target": "ja-data-target-3-2-6-3",
+      "bank": "data-targets",
+      "scope": "絵グラフと表。資料の読み取り・グラフの作図・比較を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-1-5",
+      "grade": 3,
+      "name": "表と棒グラフ",
+      "profiles": [
+        0
+      ],
+      "target": "ja-data-target-4-1-5-3",
+      "bank": "data-targets",
+      "scope": "表と棒グラフ。資料の読み取り・グラフの作図・比較を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "4-2-5",
+      "grade": 4,
+      "name": "折れ線グラフ",
+      "profiles": [
+        0
+      ],
+      "target": "ja-data-target-4-2-5-4",
+      "bank": "data-targets",
+      "scope": "折れ線グラフ。資料の読み取り・グラフの作図・比較を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
+    },
+    {
+      "source": "6-1-5",
+      "grade": 5,
+      "name": "割合と帯グラフ",
+      "profiles": [
+        0
+      ],
+      "target": "ja-data-target-6-1-5-5",
+      "bank": "data-targets",
+      "scope": "割合と帯グラフ。資料の読み取り・グラフの作図・比較を練習します。",
+      "curriculumSource": "https://www.mext.go.jp/content/20211102-mxt_kyoiku02-100002607_04.pdf"
     }
   ]
 }
