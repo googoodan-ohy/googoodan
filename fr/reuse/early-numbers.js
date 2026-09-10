@@ -3,7 +3,7 @@ const profiles=[
  {name:'Compter, entourer et lire les nombres',activities:[['count','Compter les images'],['mark','Entourer le nombre demandé'],['words','Relier les nombres aux mots']]},
  {name:'Comparer les nombres et les positions',activities:[['ordinal','Repérer une position'],['neighbors','Trouver le nombre précédent et suivant'],['compare','Comparer deux quantités']]},
  {name:'수가 나타내는 뜻',activities:[['zero','아무것도 없는 수 0'],['two-read','수를 두 가지로 읽기'],['order','수 카드를 순서대로 놓기']]},
- {name:'조건을 읽고 수 찾기',activities:[['clue','조건에 맞는 수 모두 찾기'],['line','수직선의 자리 찾기'],['repair','잘못 놓인 수 카드 고치기']]}
+ {name:'Trouver les nombres avec des indices',activities:[['clue','Trouver tous les nombres possibles'],['line','Compléter une droite graduée'],['repair','Remettre les nombres dans l’ordre']]}
 ].map(x=>({...x,activities:x.activities.map(([method,title])=>({method,title}))}));
 function generate(p,seed,n,excluded){
  const session=KoArt.session(seed,excluded);let state=seed>>>0;const r=k=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return Math.floor(state/4294967296*k)},between=(a,b)=>a+r(b-a+1);
@@ -24,12 +24,12 @@ function generate(p,seed,n,excluded){
  if(s.method==='bond'){const total=between(3,9),left=between(1,total-1);prompt='전체를 두 묶음으로 가릅니다. 빈칸을 채우세요.';visual=count(total)+'<div class="number-bond"><b>'+total+'</b><span>↙　↘</span><span>'+left+'　　□</span></div>';answer=total-left;reason=left+'개를 한쪽에 놓으면 '+(total-left)+'개가 남습니다.'}
  if(s.method==='complete'){const total=between(3,9),given=between(1,total-1);prompt='모두 '+total+'개가 되도록 부족한 만큼 간단한 그림을 더 그리세요.';visual=count(given);task='<div class="kdraw"></div>';answer=(total-given)+'개 더 그리기';reason=given+'개와 '+(total-given)+'개를 모으면 '+total+'개입니다.';open=true}
  if(s.method==='order'){let vals=[...new Set([a,b,between(1,9),between(1,9)])];while(vals.length<3){const v=between(1,9);if(!vals.includes(v))vals.push(v)}vals=vals.slice(0,3);prompt='작은 수부터 차례대로 쓰세요.';visual=cards(vals);task='____ → ____ → ____';answer=[...vals].sort((x,y)=>x-y).join(' → ');reason='가장 작은 수부터 놓습니다.'}
- if(s.method==='clue'){const lo=between(1,5),hi=lo+3;prompt=lo+'보다 크고 '+hi+'보다 작은 수를 모두 찾으세요.';visual=cards([lo,lo+1,lo+2,hi]);answer=(lo+1)+', '+(lo+2);reason=lo+'와 '+hi+'는 조건에 맞지 않습니다.'}
- if(s.method==='line'){const start=between(1,5),missing=between(1,3);prompt='수직선의 □에 들어갈 수를 쓰세요.';visual='<svg class="concept-art" viewBox="0 0 240 55"><path d="M15 20H225" stroke="#456c78"/>'+Array.from({length:5},(_,i)=>'<path d="M'+(20+i*50)+' 16v9" stroke="#456c78"/><text x="'+(20+i*50)+'" y="44" font-size="17" text-anchor="middle">'+(i===missing?'□':start+i)+'</text>').join('')+'</svg>';answer=start+missing;reason='오른쪽으로 한 칸 갈 때마다 1씩 커집니다.'}
- if(s.method==='repair'){const start=between(1,6);prompt='작은 수부터 놓으려다 카드 두 장이 바뀌었습니다. 바뀐 두 수를 쓰세요.';visual=cards([start,start+2,start+1,start+3]);task='____와 ____';answer=(start+2)+', '+(start+1);reason='바른 순서는 '+[start,start+1,start+2,start+3].join(', ')+'입니다.'}
+ if(s.method==='clue'){const lo=between(1,5),hi=lo+3;prompt='Trouve tous les nombres plus grands que '+lo+' et plus petits que '+hi+'.';visual=cards([lo,lo+1,lo+2,hi]);answer=(lo+1)+', '+(lo+2);reason=lo+' et '+hi+' ne respectent pas les conditions.'}
+ if(s.method==='line'){const start=between(1,5),missing=between(1,3);prompt='Écris le nombre manquant dans □ sur la droite graduée.';visual='<svg class="concept-art" viewBox="0 0 240 55"><path d="M15 20H225" stroke="#456c78"/>'+Array.from({length:5},(_,i)=>'<path d="M'+(20+i*50)+' 16v9" stroke="#456c78"/><text x="'+(20+i*50)+'" y="44" font-size="17" text-anchor="middle">'+(i===missing?'□':start+i)+'</text>').join('')+'</svg>';answer=start+missing;reason='Chaque graduation vers la droite ajoute 1.'}
+ if(s.method==='repair'){const start=between(1,6);prompt='Deux cartes ont été échangées dans la suite croissante. Écris les deux nombres échangés.';visual=cards([start,start+2,start+1,start+3]);task='____ et ____';answer=(start+2)+', '+(start+1);reason='L’ordre correct est '+[start,start+1,start+2,start+3].join(', ')+'.'}
  if(!visual.includes('data-art-id'))visual='<span class="picture-badge">'+KoArt.icon(asset)+'</span>'+visual;
  return {methodId:s.method,skill:s.method,prompt,visual,task,answer:String(answer),reason,open,artId:asset.id};
  })}));
 }
-root.KoEarlyNumbers={profiles:profiles.slice(0,2),generate(p,...args){if(p<0||p>1)throw Error("French profile not yet available");return generate(p,...args)}};
+const selected=[0,1,3];root.KoEarlyNumbers={profiles:selected.map(i=>profiles[i]),generate(p,...args){if(!Number.isInteger(p)||p<0||p>=selected.length)throw Error("French profile not yet available");return generate(selected[p],...args)}};
 })(globalThis);
