@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'3-1-6',grade:3,skills:['decimal-model','decimal-compare:1']},{id:'6-1-3',grade:6,skills:['decimal-fraction']},{id:'4-2-3',grade:4,skills:['decimal-add','decimal-sub']}],modeNames:['Pratiquer']};
+const C={units:[{id:'cm2-decimal-place',grade:4,skills:['decimal-compare:3','decimal-place']},{id:'3-1-6',grade:3,skills:['decimal-model','decimal-compare:1']},{id:'6-1-3',grade:6,skills:['decimal-fraction']},{id:'4-2-3',grade:4,skills:['decimal-add','decimal-sub']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))).replace('.',','),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
@@ -89,7 +89,7 @@ else if(['fraction-model','fraction-form','fraction-compare','decimal-model','de
  if(kind==='fraction-compare'||kind==='fraction-compare-unlike'){const e=kind==='fraction-compare'?d:d+1,ans=n*e>m*d?'>':n*e<m*d?'<':'=';finish('Compare les deux fractions.','<div class="kequation">'+F(n,d)+' □ '+F(m,e)+'</div>',ans,kind==='fraction-compare'?'Quand les dénominateurs sont égaux, compare les numérateurs.':'공통분모로 바꾸어 분자를 비교합니다.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
  if(kind==='decimal-model'){a=between(1,9);finish('Écris la partie colorée sous forme décimale.',bar(a,10),fmt(a/10),a+'/10 = '+fmt(a/10))}
  if(kind==='decimal-compare'){const scale=10**max;a=between(1,scale*3)/scale;b=between(1,scale*3)/scale;const ans=a>b?'>':a<b?'<':'=';finish('Écris le signe qui convient.','<div class="kequation">'+fmt(a)+' □ '+fmt(b)+'</div>',ans,'Aligne les virgules et compare les chiffres de gauche à droite.',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
- if(kind==='decimal-place'){a=between(101,999);const pos=r(3),names=['첫째','둘째','셋째'],v=Number(String(a)[pos]);finish((a/1000).toFixed(3)+'에서 소수 '+names[pos]+' 자리 숫자는 무엇인가요?','',v,'소수점 오른쪽부터 자리를 확인합니다.')}
+ if(kind==='decimal-place'){a=between(101,999);const pos=r(3),names=['dixièmes','centièmes','millièmes'],v=Number(String(a)[pos]);finish('Dans '+(a/1000).toFixed(3).replace('.',',')+', quel est le chiffre des '+names[pos]+' ?','',v,'Repère la position à droite de la virgule.')}
  if(kind==='decimal-fraction'){a=between(1,99);finish('Écris '+a+'/100 sous forme décimale.','',fmt(a/100),'Cela représente '+a+' centièmes.')}
  if(kind==='reduce'){a=between(2,5);finish('기약분수로 약분하세요.','<div class="kequation">'+F(n*a,d*a)+'</div>',frac(n,d),'분자와 분모를 최대공약수 '+gcd(n*a,d*a)+'로 나눕니다.',{wrong:(n*a)+'/'+(d*a+1)})}
  if(kind==='common-denominator'){const e=d+1,l=d*e/gcd(d,e);finish('가장 작은 공통분모로 통분하세요.','<div class="kequation">'+F(n,d)+' , '+F(1,e)+'</div>',(n*l/d)+'/'+l+', '+(l/e)+'/'+l,'분모의 최소공배수는 '+l+'입니다.',{wrong:n+'/'+l+', 1/'+l})}
