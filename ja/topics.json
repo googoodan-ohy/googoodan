@@ -451,5 +451,37 @@
     "max": 12,
     "file": "yakubun.html",
     "heading": "約分の練習プリント"
+  },
+  {
+    "id": "chouhoukei-menseki",
+    "grade": 4,
+    "title": "長方形の面積",
+    "op": "rectangleArea",
+    "file": "chouhoukei-menseki.html",
+    "heading": "長方形の面積の練習プリント"
+  },
+  {
+    "id": "sankaku-menseki",
+    "grade": 5,
+    "title": "三角形の面積",
+    "op": "triangleArea",
+    "file": "sankaku-menseki.html",
+    "heading": "三角形の面積の練習プリント"
+  },
+  {
+    "id": "chokuhoutai-taiseki",
+    "grade": 5,
+    "title": "直方体の体積",
+    "op": "boxVolume",
+    "file": "chokuhoutai-taiseki.html",
+    "heading": "直方体の体積の練習プリント"
+  },
+  {
+    "id": "en-menseki",
+    "grade": 6,
+    "title": "円の面積",
+    "op": "circleArea",
+    "file": "en-menseki.html",
+    "heading": "円の面積の練習プリント"
   }
 ]
