@@ -104,5 +104,5 @@ if(!prompt||!answer)throw Error('미구현 구구단 활동 '+method);
  }
  return spec.activities.map((s,i)=>({title:s.title,skill:'times',method:s.method,questions:Array.from({length:s.method==='facts'&&spec.tables.length===1?1:n},(_,j)=>question(s.method,j,i))}));
 }
-root.FrTimes={threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
+root.FrTimes={sevenProfiles:[{...bank.profiles[5],name:'La table de 7 : additionner, compléter et relier'}],generateSeven(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',5,seed,n)},threeProfiles:[{...bank.profiles[1],name:'La table de 3 : additionner, avancer et relier'}],generateThree(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',1,seed,n)},profiles:[{...bank.profiles[2],name:'La table de 4 : comprendre et vérifier'}],generate(p,seed,n,ids=[]){if(p!==0)throw Error('Unsupported profile');exclusions=ids;return generate('2-2-2',2,seed,n)}};
 })(globalThis);
