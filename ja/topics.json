@@ -253,6 +253,24 @@
     "heading": "繰り下がりなしの引き算プリント"
   },
   {
+    "id": "saidai-koyakusu",
+    "grade": 5,
+    "title": "最大公約数",
+    "op": "gcd",
+    "max": 30,
+    "file": "saidai-koyakusu.html",
+    "heading": "最大公約数の練習プリント"
+  },
+  {
+    "id": "saisho-kobaisu",
+    "grade": 5,
+    "title": "最小公倍数",
+    "op": "lcm",
+    "max": 30,
+    "file": "saisho-kobaisu.html",
+    "heading": "最小公倍数の練習プリント"
+  },
+  {
     "id": "shosu-hikizan",
     "grade": 4,
     "title": "小数の引き算",
