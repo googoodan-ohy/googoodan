@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'1-2-3',grade:1,skills:['flat-basic','flat-count','flat-build']}],modeNames:['Pratiquer']};
+const C={units:[{id:'3-1-2',grade:3,skills:['angle-right','flat-count']},{id:'1-2-3',grade:1,skills:['flat-basic','flat-count','flat-build']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
@@ -145,7 +145,7 @@ else if(kind==='graph'||kind==='graph-choice'){
  else {finish('그래프의 자료를 표로 정리하세요.',art,vals.map((v,i)=>(param==='line'?(i+1)+'일':labels[i])+': '+v).join(', '),'항목별 값을 표에 옮깁니다.',{wrong:'모두 0'});task='<table class="ktable"><tr>'+labels.map(x=>'<th>'+x+'</th>').join('')+'</tr><tr><td>　</td><td>　</td><td>　</td></tr></table>';open=true}
 }
 else if(['angle-right','lines','angle-type','angle-measure','angle-sum','triangle-angle','quad-angle','parallel','triangle-side','triangle-type','quad-type','polygon','diagonal','tile'].includes(kind)){
- if(kind==='angle-right'){const yes=r(2)===0;finish('직각인 그림인가요?',svg('<path d="M65 15V67H165" fill="none" stroke="#547b92" stroke-width="3" transform="'+(yes?'':'translate(25 0) skewX(-25)')+'"/>'),yes?'예':'아니요','종이의 반듯한 모서리와 겹쳐 확인합니다.',{choices:['예','아니요'],wrong:yes?'아니요':'예'})}
+ if(kind==='angle-right'){const yes=r(2)===0;finish('Cet angle est-il un angle droit ?',svg('<path d="M65 15V67H165" fill="none" stroke="#547b92" stroke-width="3" transform="'+(yes?'':'translate(25 0) skewX(-25)')+'"/>'),yes?'Oui':'Non','Vérifie avec le coin droit d’une feuille ou une équerre.',{choices:['Oui','Non'],wrong:yes?'Non':'Oui'})}
  else if(kind==='lines'){const idx=r(3),names=['선분','반직선','직선'];visual=svg('<path d="M35 42H190" stroke="#537e8d" stroke-width="3"/>'+(idx===0?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><circle cx="190" cy="42" r="4" fill="#537e8d"/>':idx===1?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><path d="M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>':'<path d="M44 35L35 42L44 49M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>'));finish('그림의 이름을 쓰세요.',visual,names[idx],'끝점과 뻗는 방향을 확인합니다.',{choices:names,wrong:names[(idx+1)%3]})}
  else if(kind==='angle-type'||kind==='angle-measure'){
  const angle=pick([30,40,60,90,120,130,150]),rad=angle*Math.PI/180,cx=110,cy=82,R=67;
