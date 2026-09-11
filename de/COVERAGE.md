@@ -23,6 +23,7 @@ Total: 45 profiles.
 | Zahlen bis 999 999 | Klasse 3/4 | 1 |
 | Rechte Winkel und Symmetrie | Klasse 3/4 | 2 |
 | Quader und Würfelnetze | Klasse 3/4 | 2 |
+| Längen und Flächen vergleichen | Klasse 1/2 | 2 |
 | Einfache Tabellen lesen | Klasse 1/2 | 1 |
 | Körper erkennen | Klasse 1/2 | 1 |
 | Deckungsgleiche Figuren | Klasse 3/4 | 1 |
@@ -57,7 +58,7 @@ Total: 45 profiles.
 | Rechnen mit der 10 | Klasse 1/2 | 4 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 
-Total: 87 profiles.
+Total: 89 profiles.
 
 ## Next priorities
 

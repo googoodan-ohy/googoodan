@@ -95,3 +95,6 @@ Reuse ko/engine.js solid-basic with original unit 2-1-2 in de-by-bodies12 (Bayer
 
 ## 2026-09-12: Early table reading
 Reuse ko/engine.js table unchanged in de-by-readtable12. Bayern 1/2 section 4.1 explicitly includes reading information from simple tables. Fruit labels are localized, source values 1–6 and answers are unchanged. This exercises reading one category, not collecting data or drawing graphs. 900 source-answer/table-value checks, ten browser seeds and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## 2026-09-12: Comparing lengths and areas
+Reuse ko/engine.js length-compare and area-compare unchanged in de-by-compare12. Bayern 1/2 sections 3.2 and 2.5 support length/area comparison. Both diagrams have equal-height rectangles and a common left edge; instructions explicitly restrict the length-based area comparison to this case. This is supplementary visual comparison, not measuring or covering with unit squares. Weight/capacity comparison not mapped to early grades. 1,800 source/graph-answer checks and four single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
