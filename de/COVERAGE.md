@@ -58,8 +58,9 @@ Total: 45 profiles.
 | Bilder und Malaufgaben | Klasse 1/2 | 20 |
 | Rechnen mit der 10 | Klasse 1/2 | 6 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
+| Schriftlich rechnen bis 100 | Klasse 3/4 | 1 |
 
-Total: 102 profiles.
+Total: 103 profiles.
 
 ## Next priorities
 
