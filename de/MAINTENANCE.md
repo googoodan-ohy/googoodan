@@ -18,10 +18,10 @@ The unit-type catalog currently has 73 profiles: place value/comparison/sequence
 
 ## Print regression
 
-Run `node scripts/check-german-print.cjs`, then `python scripts/check-german-print-pages.py` (Playwright and pypdf required). This exports questions and answers separately for every unit-type profile and checks one A4 page per PDF. On 2026-09-12 all 57 profiles / 114 PDFs passed with seed 932718. Each question and answer PDF was exactly one A4 page. This checks the current catalog at one fixed seed; new or modified profiles also need multiple-seed layout checks. Generated PDFs remain in `.work-english/de-print-audit` and are not published.
+Run `node scripts/check-german-print.cjs`, then `python scripts/check-german-print-pages.py` (Playwright and pypdf required). This exports questions and answers separately for every unit-type profile and checks one A4 page per PDF. On 2026-09-12 all 73 profiles / 146 PDFs passed with seed 932718. Each question and answer PDF was exactly one A4 page. This checks the current catalog at one fixed seed; new or modified profiles also need multiple-seed layout checks. Generated PDFs remain in `.work-english/de-print-audit` and are not published.
 
 - Before adding a reused topic, consult CURRICULUM_DECISIONS.md. In particular, do not map formal rounding to Bayern primary grades merely because the Korean generator supports it.
 
 - After adding unit profiles, run build-de-grade-directories.cjs against the local server and scripts/check-german-grade-directories.cjs so the static grade-band indexes include every current type.
 
-- picture-multiplication-source.js contains the unchanged Korean question-engine.js inside an isolated multiplication-only adapter. Do not edit its generator. check-de-picture-multiplication.cjs verifies source equality; any upstream change requires rebuilding the wrapper and updating script versions.
+- picture-multiplication-source.js contains the unchanged Korean question-engine.js inside an isolated multiplication-only adapter. Do not edit its generator. check-de-picture-multiplication.cjs verifies source equality; run `node scripts/build-german-multiplication-source.cjs --check` to detect upstream drift. To rebuild after reviewing a source change, use `node scripts/build-german-multiplication-source.cjs --version=YYYYMMDD-label`; this also updates all HTML references and the page builder. Then run calculation, browser and print checks.
