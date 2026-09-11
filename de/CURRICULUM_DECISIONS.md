@@ -14,3 +14,15 @@ Official sources checked:
 - https://www.isb.bayern.de/schularten/gymnasium/leistungserhebungen/probeunterricht/mathematik/
 - https://www.lehrplanplus.bayern.de/serviceinformation/l76993
 - https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik
+
+## 2026-09-12: Fraction reuse needs quantity context
+
+- Bayern M3/4 3.2 explicitly uses familiar simple fractions (one half, one quarter, three quarters) in connection with quantities, for example half a litre = 500 ml and a quarter-hour = 15 minutes.
+- The generic Korean fraction-model generator creates a wider range of denominators and has no quantity context. It must not be copied wholesale into a Bayern primary unit as though it covers this objective.
+- Reusing existing clock activities does not by itself complete the fraction-to-quantity objective. This remains a coverage gap until a compatible existing activity is found or a separate generator change is authorized.
+- No fraction page was generated during this review; calculation logic remains unchanged.
+- Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik (M3/4 3.2).
+
+## Pending placement review: rectangle perimeter
+
+The Korean perimeter generator uses a labelled rectangle and the formula 2 × (length + width). A direct assignment to Bayern Klasse 3/4 was not substantiated in the current review. Do not infer that a formula worksheet matches the practical perimeter comparisons described for Klasse 1/2. Keep this candidate pending until an appropriate official placement and activity match are established.
