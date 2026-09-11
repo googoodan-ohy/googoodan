@@ -53,3 +53,5 @@ Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik
 
 Reuse Korean multiplication profile 13 (groups, array, create) for Bayern M1/2 multiplication as repeated groups and rectangular arrangements. Group size is written first, preserving Korean source order; the static page explains the convention and commutativity. No combinatorics generator was found in the inspected Korean banks, so no new combinatorics generator is introduced.
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+The second picture-multiplication profile reuses Korean profile 16: commute, neighbor and chain. It practices reversing factors in the same array and deriving successive products from a known product. Source expressions, numbers and answers are unchanged.
