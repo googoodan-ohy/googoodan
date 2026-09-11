@@ -104,3 +104,6 @@ Reuse ko/engine.js flat-build unchanged in de-by-buildshape12 (Bayern 1/2 sectio
 
 ## 2026-09-12: Einmaleins detective
 Map original KoMultiplicationBank profile 15 (error/reverse/target) to German picturemul profile 10. Preserve source numbers, asset selection and six story contexts; localize text only. This extends Bayern 1/2 multiplication/inverse reasoning within small multiplication facts. 9,700 total picture-multiplication source checks passed, including 900 for the new profile; question/answer PDFs fit one A4 page.
+
+## 2026-09-12: 7/8/9 table relationships
+Map original KoMultiplicationBank profile 11 (array/chain/reverse) to German picturemul profile 11. Keep source diagrams, sequences, factors and six story contexts unchanged. Display text only is localized. The full picture suite now checks 12,400 questions; detective and this profile use six questions per section to cover all story contexts. Browser and one-page question/answer PDF checks passed.
