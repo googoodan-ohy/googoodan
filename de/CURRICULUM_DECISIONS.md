@@ -59,3 +59,5 @@ The second picture-multiplication profile reuses Korean profile 16: commute, nei
 The third picture-multiplication profile reuses Korean profile 10 unchanged (6, 7 and 8 tables): repeated addition, neighboring products and matching expressions to values. The limited table selection is explicit in the menu and title.
 
 The fourth picture-multiplication profile reuses Korean profile 19 for multiplying by zero: empty groups, reversing factors, and zero filled groups. Singular/plural German text is localized without changing source calculations.
+
+Picture-multiplication profiles 4 and 5 reuse Korean profiles 1 and 2 unchanged. They cover the 3-times table via repeated addition, number-line jumps and matching; and the 4-times table via arrays, missing group counts and correcting products. Menu titles state the source table restriction.
