@@ -89,3 +89,6 @@ Reuse ko/engine.js tile unchanged in de-by-tiles (Bayern 3/4). This is supplemen
 
 ## 2026-09-12: Congruent side lengths
 Reuse ko/engine.js congruent unchanged in de-by-congruent, Bayern 3/4. Supplement the deckungsgleich concept in 2.2/2.3 with equal corresponding side lengths; do not claim net construction or congruence proofs. Source triangles are symbolic, not measurement diagrams; static instructions make this explicit. 900 source-answer checks, ten browser seeds and two single-page A4 PDFs passed. No reusable scale-drawing generator was found in the inspected Korean geometry bank; enlargement/reduction remains unsupported rather than creating new generator logic. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik
+
+## 2026-09-12: Early solid names
+Reuse ko/engine.js solid-basic with original unit 2-1-2 in de-by-bodies12 (Bayern Klasse 1/2, 2.2). Translate Quader/Zylinder/Kugel, keeping original drawing paths and answer selection. Source sphere is a simple circular schematic, not a realistic perspective drawing. Only these three bodies are provided; other curricular bodies remain unimplemented. 900 source-answer/drawing checks, ten browser seeds and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
