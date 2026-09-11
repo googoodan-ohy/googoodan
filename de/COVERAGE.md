@@ -34,8 +34,9 @@ Total: 45 profiles.
 | Einmaleins und Umkehraufgaben | Klasse 3/4 | 2 |
 | Division mit Rest | Klasse 3/4 | 1 |
 | Größere Mal- und Geteiltaufgaben | Klasse 3/4 | 2 |
+| Rechnen bis 1 Million | Klasse 3/4 | 2 |
 
-Total: 29 profiles.
+Total: 31 profiles.
 
 ## Next priorities
 
