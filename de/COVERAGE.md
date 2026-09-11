@@ -38,8 +38,9 @@ Total: 45 profiles.
 | Längen am Lineal | Klasse 1/2 | 1 |
 | Spiegelbilder im Gitternetz | Klasse 3/4 | 1 |
 | Muster mit Formen | Klasse 1/2 | 1 |
+| Gleiche Summen | Klasse 1/2 | 1 |
 
-Total: 36 profiles.
+Total: 37 profiles.
 
 ## Next priorities
 
