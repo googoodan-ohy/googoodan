@@ -55,3 +55,5 @@ Reuse Korean multiplication profile 13 (groups, array, create) for Bayern M1/2 m
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 
 The second picture-multiplication profile reuses Korean profile 16: commute, neighbor and chain. It practices reversing factors in the same array and deriving successive products from a known product. Source expressions, numbers and answers are unchanged.
+
+The third picture-multiplication profile reuses Korean profile 10 unchanged (6, 7 and 8 tables): repeated addition, neighboring products and matching expressions to values. The limited table selection is explicit in the menu and title.
