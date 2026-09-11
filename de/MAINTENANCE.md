@@ -19,3 +19,5 @@ The unit-type catalog currently has 41 profiles: place value/comparison/sequence
 ## Print regression
 
 Run `node scripts/check-german-print.cjs`, then `python scripts/check-german-print-pages.py` (Playwright and pypdf required). This exports questions and answers separately for every unit-type profile and checks one A4 page per PDF. On 2026-09-12 all 35 profiles / 70 PDFs passed. Generated PDFs remain in `.work-english/de-print-audit` and are not published.
+
+- Before adding a reused topic, consult CURRICULUM_DECISIONS.md. In particular, do not map formal rounding to Bayern primary grades merely because the Korean generator supports it.
