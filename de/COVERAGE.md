@@ -45,8 +45,9 @@ Total: 45 profiles.
 | Drei Zahlen addieren | Klasse 1/2 | 1 |
 | Formen zählen | Klasse 1/2 | 1 |
 | Teiler und Vielfache | Klasse 3/4 | 2 |
+| Größen umwandeln und vergleichen | Klasse 3/4 | 5 |
 
-Total: 46 profiles.
+Total: 51 profiles.
 
 ## Next priorities
 
