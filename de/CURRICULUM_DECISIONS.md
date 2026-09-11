@@ -78,3 +78,8 @@ Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 ## Linked addition/subtraction (2026-09-12)
 
 Reuse only inverse and compensate from KoEarlyArithmetic 1-2-4 profile 1. Its compare activity can generate negative terms (seed 35 includes 9 + 2 versus 12 + -1), outside the intended primary positive-number practice. Exclude that section rather than change its generator. The published profile has two sections and retains original values and answers.
+
+## Calculation strategies within 100 (2026-09-12)
+
+Reuse KoEarlyArithmetic 1-2-6 profiles 1 and 2: tables, additive stories, missing initial values, inverse relations, compensation and error correction. The column-calculation profile is not imported into Klasse 1/2; formal written algorithms belong to the later Bayern band. Source calculations, graphics and answer relationships remain unchanged.
+Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
