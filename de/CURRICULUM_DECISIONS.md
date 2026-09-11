@@ -74,3 +74,7 @@ Picture-multiplication profile 9 reuses Korean profile 18: groups of one, the co
 
 Three profiles reuse KoEarlyArithmetic 1-2-2 unchanged: three-number operations/complements, making ten with pairs and ten-frames, and subtracting via ten with an addition-error check. They support Bayern M1/2 calculation strategies within 20. The original numeric work steps and graphics are preserved; only visible language is localized.
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## Linked addition/subtraction (2026-09-12)
+
+Reuse only inverse and compensate from KoEarlyArithmetic 1-2-4 profile 1. Its compare activity can generate negative terms (seed 35 includes 9 + 2 versus 12 + -1), outside the intended primary positive-number practice. Exclude that section rather than change its generator. The published profile has two sections and retains original values and answers.
