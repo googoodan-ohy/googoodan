@@ -33,3 +33,5 @@ Bayern M1/2 1.3 links everyday stories with operations and mathematical question
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 
 The third story profile reuses the Korean whole-part diagram activities (bar-total, bar-part, bar-difference). The boxes show the numerical relationship; their widths are schematic, not proportional measurements. Original generation and answers remain unchanged.
+
+The fourth story profile reuses paired, compare-more and compare-less without changing the source arithmetic. German wording preserves the two distinct situations in paired questions and the direction of each comparison.
