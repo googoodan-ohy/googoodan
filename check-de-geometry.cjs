@@ -1,0 +1,3 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');const c={};vm.createContext(c);for(const p of ['ko/catalog.js','ko/engine.js','de/reuse/geometry-source.js','ko/art/catalog.js','ko/art.js','de/reuse/core-numbers.js','de/reuse/unit-catalog.js','de/reuse/geometry-units.js'])vm.runInContext(fs.readFileSync(p,'utf8'),c);let n=0;for(const[id,,,profiles]of c.DeGeometryDefinitions)for(let p=0;p<profiles.length;p++)for(let seed=0;seed<100;seed++)for(const s of c.KoMath.generate(id,p,seed,3))for(const q of s.questions){assert(!/[가-힣]|undefined|NaN/.test(q.prompt+q.task+q.reason+q.answer+q.visual),JSON.stringify(q));n++;}console.log('PASS '+n+' localized questions');
+
+
