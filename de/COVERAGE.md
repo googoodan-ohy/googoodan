@@ -46,8 +46,9 @@ Total: 45 profiles.
 | Formen zählen | Klasse 1/2 | 1 |
 | Teiler und Vielfache | Klasse 3/4 | 2 |
 | Größen umwandeln und vergleichen | Klasse 3/4 | 5 |
+| Uhrzeiger zeichnen | Klasse 1/2 | 2 |
 
-Total: 51 profiles.
+Total: 53 profiles.
 
 ## Next priorities
 
