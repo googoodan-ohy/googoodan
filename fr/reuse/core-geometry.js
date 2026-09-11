@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'3-1-2',grade:3,skills:['angle-right','flat-count']},{id:'1-2-3',grade:1,skills:['flat-basic','flat-count','flat-build']}],modeNames:['Pratiquer']};
+const C={units:[{id:'4-1-2',grade:4,skills:['angle-type']},{id:'3-1-2',grade:3,skills:['angle-right','flat-count']},{id:'1-2-3',grade:1,skills:['flat-basic','flat-count','flat-build']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
@@ -151,13 +151,13 @@ else if(['angle-right','lines','angle-type','angle-measure','angle-sum','triangl
  const angle=pick([30,40,60,90,120,130,150]),rad=angle*Math.PI/180,cx=110,cy=82,R=67;
  const ticks=Array.from({length:19},(_,i)=>{const t=i*Math.PI/18;return '<path d="M'+(cx+(R-6)*Math.cos(t))+' '+(cy-(R-6)*Math.sin(t))+'L'+(cx+R*Math.cos(t))+' '+(cy-R*Math.sin(t))+'" stroke="#7c929e"/>'+(i%3===0?text(cx+(R-17)*Math.cos(t),cy-(R-17)*Math.sin(t)+3,i*10):'')}).join('');
  visual=svg((kind==='angle-measure'?'<path d="M43 82A67 67 0 0 1 177 82" fill="#f7fafb" stroke="#a6bdc8"/>'+ticks:'')+'<path d="M110 82H181M110 82L'+(cx+R*Math.cos(rad))+' '+(cy-R*Math.sin(rad))+'" stroke="#486b98" stroke-width="2" fill="none"/>',230,98);
- finish(kind==='angle-type'?'각의 종류를 고르세요.':'각도기의 눈금을 읽어 각도를 구하세요.',visual,kind==='angle-type'?(angle<90?'예각':angle===90?'직각':'둔각'):angle,kind==='angle-measure'?'오른쪽 0°부터 시작해 다른 변이 가리키는 눈금 '+angle+'°를 읽습니다.':'90°보다 작으면 예각, 같으면 직각, 크고 180°보다 작으면 둔각입니다.',{choices:kind==='angle-type'?['예각','직각','둔각']:undefined,wrong:kind==='angle-type'?(angle===90?'예각':'직각'):angle+10})
+ finish(kind==='angle-type'?'Nomme cet angle.':'각도기의 눈금을 읽어 각도를 구하세요.',visual,kind==='angle-type'?(angle<90?'angle aigu':angle===90?'angle droit':'angle obtus'):angle,kind==='angle-measure'?'오른쪽 0°부터 시작해 다른 변이 가리키는 눈금 '+angle+'°를 읽습니다.':'Un angle aigu est plus petit qu’un angle droit ; un angle obtus est plus grand et reste inférieur à un angle plat.',{choices:kind==='angle-type'?['angle aigu','angle droit','angle obtus']:undefined,wrong:kind==='angle-type'?(angle===90?'angle aigu':'angle droit'):angle+10})
 }
  else if(kind==='angle-sum'){a=between(2,8)*10;b=between(1,8)*10;finish('이웃한 두 각 '+a+'°와 '+b+'°를 합치면 몇 도인가요?','',a+b,a+' + '+b+' = '+(a+b)+'°')}
  else if(kind==='triangle-angle'||kind==='quad-angle'){const tri=kind==='triangle-angle',sum=tri?180:360,vals=tri?[between(3,7)*10,between(3,7)*10]:[90,90,between(6,12)*10];finish((tri?'삼각형':'사각형')+'의 각 중 '+vals.map(v=>v+'°').join(', ')+'를 알고 있습니다. 나머지 각은 몇 도인가요?','',sum-vals.reduce((x,y)=>x+y),'각의 합 '+sum+'°에서 알려진 각을 뺍니다.')}
- else if(kind==='triangle-side'){a=between(3,9);finish('세 변이 모두 '+a+' cm인 삼각형의 이름은 무엇인가요?',poly(3),'정삼각형','세 변의 길이가 모두 같습니다.',{choices:['정삼각형','직각삼각형','둔각삼각형'],wrong:'둔각삼각형'})}
- else if(kind==='triangle-type'){const idx=r(3),angles=[[60,60,60],[30,60,90],[30,30,120]][idx];finish('세 각이 '+angles.join('°, ')+'°인 삼각형을 각에 따라 분류하세요.','',['예각삼각형','직각삼각형','둔각삼각형'][idx],'직각 또는 둔각이 있는지 확인합니다.',{choices:['예각삼각형','직각삼각형','둔각삼각형'],wrong:['둔각삼각형','예각삼각형','직각삼각형'][idx]})}
- else if(kind==='quad-type'){const idx=r(4),names=['직사각형','정사각형','마름모','평행사변형'],facts=['네 각이 직각이고 가로 6 cm, 세로 3 cm','네 각이 직각이고 네 변이 모두 4 cm','네 변이 같고 한 각이 60°','마주 보는 두 쌍의 변이 평행하고 이웃한 변이 4 cm와 6 cm, 한 각이 60°'];finish(facts[idx]+'인 사각형의 이름은 무엇인가요?','',names[idx],'변의 길이와 각의 조건을 확인합니다.',{choices:names,wrong:names[(idx+1)%4]})}
+ else if(kind==='triangle-side'){a=between(3,9);finish('세 변이 모두 '+a+' cm인 삼각형의 이름은 무엇인가요?',poly(3),'정삼각형','세 변의 길이가 모두 같습니다.',{choices:['정삼각형','angle droit삼각형','angle obtus삼각형'],wrong:'angle obtus삼각형'})}
+ else if(kind==='triangle-type'){const idx=r(3),angles=[[60,60,60],[30,60,90],[30,30,120]][idx];finish('세 각이 '+angles.join('°, ')+'°인 삼각형을 각에 따라 분류하세요.','',['angle aigu삼각형','angle droit삼각형','angle obtus삼각형'][idx],'angle droit 또는 angle obtus이 있는지 확인합니다.',{choices:['angle aigu삼각형','angle droit삼각형','angle obtus삼각형'],wrong:['angle obtus삼각형','angle aigu삼각형','angle droit삼각형'][idx]})}
+ else if(kind==='quad-type'){const idx=r(4),names=['직사각형','정사각형','마름모','평행사변형'],facts=['네 각이 angle droit이고 가로 6 cm, 세로 3 cm','네 각이 angle droit이고 네 변이 모두 4 cm','네 변이 같고 한 각이 60°','마주 보는 두 쌍의 변이 평행하고 이웃한 변이 4 cm와 6 cm, 한 각이 60°'];finish(facts[idx]+'인 사각형의 이름은 무엇인가요?','',names[idx],'변의 길이와 각의 조건을 확인합니다.',{choices:names,wrong:names[(idx+1)%4]})}
  else if(kind==='parallel')finish('직사각형에서 마주 보는 두 변의 관계를 쓰세요.',rect('6 cm','3 cm'),'평행','아무리 늘여도 만나지 않는 두 직선입니다.',{choices:['평행','수직'],wrong:'수직'});
  else if(kind==='tile'){a=between(2,5);b=between(2,6);finish('한 칸에 조각 하나를 놓습니다. 몇 개가 필요한가요?',grid(a,b),a*b,a+' × '+b+' = '+a*b)}
  else {const n=between(3,8);if(kind==='diagonal')finish('한 꼭짓점에서 그을 수 있는 대각선은 몇 개인가요?',poly(n),n-3,'자기 자신과 이웃한 두 꼭짓점을 제외합니다.');else finish('다각형의 변은 몇 개인가요?',poly(n),n,'둘레를 따라 변을 하나씩 셉니다.')}
@@ -172,7 +172,7 @@ else if(['circle-parts','circle-size','circle-draw','circle-circumference','circ
 else if(['move','flip','turn','congruent','symmetry-line','symmetry-point'].includes(kind)){
  if(kind==='move'){a=between(1,4);b=between(1,4);finish('오른쪽 '+a+'칸, 다시 오른쪽 '+b+'칸 움직이면 처음에서 오른쪽 몇 칸인가요?',grid(2,8),a+b,a+' + '+b+'칸입니다.')}
  else if(kind==='flip')finish('화살표를 좌우로 뒤집으면 어느 쪽을 향하나요?','<div class="kequation">→</div>','왼쪽','좌우가 바뀝니다.',{choices:['왼쪽','오른쪽','위쪽'],wrong:'오른쪽'});
- else if(kind==='turn'){const turns=between(1,3),names=['오른쪽','아래쪽','왼쪽'];finish('시계 방향으로 직각만큼 '+turns+'번 돌리면 어느 쪽을 향하나요?','<div class="kequation">↑</div>',names[turns-1],'위→오른쪽→아래→왼쪽으로 바뀝니다.',{choices:names,wrong:'위쪽'})}
+ else if(kind==='turn'){const turns=between(1,3),names=['오른쪽','아래쪽','왼쪽'];finish('시계 방향으로 angle droit만큼 '+turns+'번 돌리면 어느 쪽을 향하나요?','<div class="kequation">↑</div>',names[turns-1],'위→오른쪽→아래→왼쪽으로 바뀝니다.',{choices:names,wrong:'위쪽'})}
  else if(kind==='congruent'){a=between(3,9);finish('합동인 두 삼각형에서 한 변이 '+a+' cm입니다. 대응하는 변은 몇 cm인가요?',poly(3),a,'대응변의 길이는 같습니다.')}
  else if(kind==='symmetry-line')finish('정사각형의 대칭축은 몇 개인가요?',poly(4),4,'마주 보는 변의 중점을 잇는 2개와 대각선 2개입니다.');
  else finish('점대칭인 도형을 대칭의 중심 둘레로 몇 도 돌리면 처음과 겹치나요?','',180,'반 바퀴는 180°입니다.');
