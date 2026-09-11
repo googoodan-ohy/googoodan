@@ -35,8 +35,9 @@ Total: 45 profiles.
 | Division mit Rest | Klasse 3/4 | 1 |
 | Größere Mal- und Geteiltaufgaben | Klasse 3/4 | 2 |
 | Rechnen bis 1 Million | Klasse 3/4 | 2 |
+| Längen am Lineal | Klasse 1/2 | 1 |
 
-Total: 33 profiles.
+Total: 34 profiles.
 
 ## Next priorities
 
