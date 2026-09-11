@@ -1,0 +1,43 @@
+// Add static English entry pages around the unchanged Korean question engine.
+const fs=require('fs'),vm=require('vm');
+const ctx={URLSearchParams};vm.createContext(ctx);
+for(const p of ['ko/catalog.js','ko/engine.js','en/types.js','en/banks/coverage.js'])vm.runInContext(fs.readFileSync(p,'utf8'),ctx);
+const definitions=JSON.parse(JSON.stringify(ctx.CoveragePractice.definitions));
+const names=JSON.parse(JSON.stringify(ctx.CoveragePractice.names));
+definitions.push(['color-by-number','Color by Number Math Worksheets','',['Addition within 20','Multiplication facts'],'Grades 1–3 · arithmetic fluency']);
+const version='20260911-coverage';
+const details={
+ 'order-of-operations':['Evaluate expressions with multiplication and addition, with and without parentheses.','This introductory set practices multiplication before addition and parentheses first. It does not include exponents or the full range of multi-step PEMDAS expressions.'],
+ 'simplifying-fractions':['Reduce fractions to simplest form with printable questions and answer keys.','Find a common factor of the numerator and denominator. Divide both by the same factor, and continue until no common factor greater than one remains.'],
+ 'area-and-perimeter':['Practice rectangle perimeter and the areas of rectangles, triangles, parallelograms, trapezoids and rhombuses.','Choose rectangles for Grades 3–4. Use the other polygon areas for Grade 6 practice after learning how shapes can be composed or decomposed. Diagrams are schematic; use the measurements in each question.'],
+ 'surface-area':['Find the surface area of rectangular prisms using their length, width and height.','Add the areas of all six faces, pairing equal faces. This set practices rectangular-prism calculations; it does not yet include cutting and folding nets or other solid shapes.'],
+ 'probability':['Classify simple events as impossible, certain or an even chance.','This is a short introduction to chance, preparing for Grade 7 probability. It covers three ball-box situations and does not include compound events, experimental probability or a complete probability course.'],
+ 'color-by-number':['Solve addition or multiplication facts and color a printable 16-cell mosaic using the answer key.','Choose addition within 20 or multiplication facts. Match each result to a color range. The worksheet is a calculation mosaic, rather than a hidden-picture illustration. The answer view shows both the result and its color.']
+};
+const template=fs.readFileSync('en/average.html','utf8');
+const paths=[];
+const sectionLinks=definitions.map(([id,title])=>`<li><a href="/en/${id}.html">${title}</a></li>`).join('');
+const insert=(text,addition,marker)=>text.includes(marker)?text:text.replace('</main>',addition+'</main>');
+for(const [id,title,unit,skills,level]of definitions){
+ const [intro,note]=details[id]||[`Free printable ${title.toLowerCase()} with diagrams where appropriate, fresh numbers and matching answer keys.`,`Choose a focused skill before printing. ${level}. Each worksheet contains six questions, using the same selected quantities in the question and answer views.`];
+ const description=intro+' Change the numbers and print a matching answer key.';
+ let html=template.replaceAll('Mean and Average Worksheets',title).replaceAll('/en/average.html','/en/'+id+'.html').replace('data-type="average"',`data-type="${id}"`).replace('href="/">Korean','href="/ko/">Korean');
+ html=html.replace(/<meta name="description"[^>]*>/,`<meta name="description" content="${description}">`);
+ html=html.replace(/<script[^>]+src="\/en\/banks\/(?:bank-bootstrap|reasoning|reasoning-english|reasoning-controls)\.js[^>]*><\/script>/g,'');
+ html=html.replace(/<script[^>]+src="\/ko\/(?:art\/catalog|art)\.js[^>]*><\/script>/g,'');
+ const scripts=id==='color-by-number'?['/en/banks/color-by-number.js']:['/ko/catalog.js','/ko/engine.js','/en/banks/coverage.js'];
+ html=html.replace(/(<script defer src="app\.js)/,scripts.map(src=>`<script defer src="${src}?v=${version}"></script>`).join('')+'$1');
+ html=html.replace('</head>',`<link rel="stylesheet" href="/en/banks/coverage.css?v=${version}"><script defer src="/en/banks/${id==='color-by-number'?'color-controls':'coverage-controls'}.js?v=${version}"></script><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="https://googoodan.com/en/${id}.html"><link rel="alternate" hreflang="en" href="https://googoodan.com/en/${id}.html"></head>`);
+ html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(all,json)=>{const d=JSON.parse(json);if(d['@type']==='LearningResource'){d.description=description;d.educationalLevel=level;return '<script type="application/ld+json">'+JSON.stringify(d)+'</script>';}return all;});
+ html=html.replace(/<section class="hundred-intro">[\s\S]*?<\/section>/,'');
+ const staticBody=`<section class="seo-resource" aria-labelledby="resource-heading"><h2 id="resource-heading">${title}: printable practice</h2><p id="resource-description">${intro}</p><p>${note}</p><h3>Choose a skill</h3><ul>${skills.map(s=>'<li>'+(names[s]||s)+'</li>').join('')}</ul><h3>How to use the worksheet</h3><p>Select a practice type, solve the questions on paper, and show your work. Use New problems to create a fresh set. The answer key uses the same numbers as the worksheet, so you can check each calculation. Print the worksheet and answer key separately or together. Your browser can save the printout as a PDF.</p><p>Begin with a skill that the student has already met in class. Ask the student to explain one answer, check units and labels, and correct a mistake before moving on. A short accurate practice session is more useful than rushing through unfamiliar questions. All sheets are free to print for home or classroom lessons.</p><p>${level}. This resource provides selected practice rather than complete curriculum coverage. For diagrams, read the labels and quantities instead of measuring the drawing on the page.</p><p id="resource-example">Choose a skill and preview your questions above.</p><p id="resource-instruction">Use Worksheet and Answer key to switch views. Choose your print options before printing.</p><h3>Related practice</h3><ul id="resource-related">${sectionLinks}</ul></section>`;
+ html=html.replace(/<section class="seo-resource"[\s\S]*?<\/section>/,staticBody);
+ fs.writeFileSync('en/'+id+'.html',html);paths.push('en/'+id+'.html');
+}
+const directory=`<section id="coverage-practice"><h2>More printable math practice</h2><p>Choose a focused skill, view the diagrams and print matching answer keys.</p><ul>${sectionLinks}</ul></section>`;
+for(const p of ['en/index.html','en/worksheets.html']){fs.writeFileSync(p,insert(fs.readFileSync(p,'utf8'),directory,'id="coverage-practice"'));paths.push(p);}
+const grades={1:['telling-time','color-by-number'],2:['telling-time','color-by-number'],3:['fraction-models','area-and-perimeter','telling-time','color-by-number'],4:['factors-and-multiples','comparing-fractions','angles','decimal-models'],5:['order-of-operations','simplifying-fractions','common-denominators'],6:['area-and-perimeter','surface-area','gcf-and-lcm']};
+for(const [g,ids]of Object.entries(grades)){const p='en/grade-'+g+'.html';if(!fs.existsSync(p))continue;const section=`<section id="coverage-practice"><h2>More practice for Grade ${g}</h2><ul>${ids.map(id=>`<li><a href="/en/${id}.html?grade=${g}">${definitions.find(d=>d[0]===id)[1]}</a></li>`).join('')}</ul></section>`;let html=fs.readFileSync(p,'utf8');html=html.includes('id="coverage-practice"')?html.replace(/<section id="coverage-practice">[\s\S]*?<\/section>/,section):insert(html,section,'id="coverage-practice"');fs.writeFileSync(p,html);paths.push(p);}
+const gp='en/grades.html';let g=fs.readFileSync(gp,'utf8');if(!g.includes('coverage-navigation.js'))g=g.replace('</body>',`<script defer src="/en/banks/coverage-navigation.js?v=${version}"></script></body>`);fs.writeFileSync(gp,g);paths.push(gp);
+let sitemap=fs.readFileSync('sitemap.xml','utf8');for(const [id]of definitions){const url='https://googoodan.com/en/'+id+'.html';if(!sitemap.includes('<loc>'+url+'</loc>'))sitemap=sitemap.replace('</urlset>',`<url><loc>${url}</loc></url>\n</urlset>`);}fs.writeFileSync('sitemap.xml',sitemap);paths.push('sitemap.xml');
+fs.mkdirSync('.work-english/coverage',{recursive:true});fs.writeFileSync('.work-english/coverage/manifest.json',JSON.stringify({definitions,paths,source:'ko/engine.js',version},null,2));console.log(JSON.stringify({pages:definitions.length,skills:definitions.reduce((s,d)=>s+d[3].length,0),paths},null,2));
