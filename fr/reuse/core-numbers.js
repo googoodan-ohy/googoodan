@@ -1,5 +1,5 @@
 (function(root){
-const C={units:[{id:'4-1-1',grade:4,skills:['place:8','compare:99999999','sequence:99999999']},{id:'2-2-1',grade:2,skills:['place:4','compare:9999','sequence:9999']},{id:'2-1-1',grade:2,skills:['place:3','compare:999','sequence:999']},{id:'1-1-5',grade:1,skills:['place:2','compare:50','sequence:50']},{id:'1-2-1',grade:1,skills:['place:2','compare:100','sequence:100']}],modeNames:['Pratiquer']};
+const C={units:[{id:'cm1-numbers',grade:4,skills:['place:6','compare:999999','sequence:999999']},{id:'4-1-1',grade:4,skills:['place:8','compare:99999999','sequence:99999999']},{id:'2-2-1',grade:2,skills:['place:4','compare:9999','sequence:9999']},{id:'2-1-1',grade:2,skills:['place:3','compare:999','sequence:999']},{id:'1-1-5',grade:1,skills:['place:2','compare:50','sequence:50']},{id:'1-2-1',grade:1,skills:['place:2','compare:100','sequence:100']}],modeNames:['Pratiquer']};
 const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a),fmt=n=>String(Number(n.toFixed(6))),frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):n/g+'/'+(d/g)};
 const E=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),F=(n,d)=>'<span class="kf"><span>'+n+'</span><span>'+d+'</span></span>';
 const svg=(s,w=230,h=80)=>'<svg class="concept-art" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Illustration">'+s+'</svg>';
