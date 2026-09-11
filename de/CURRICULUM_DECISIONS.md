@@ -61,3 +61,5 @@ The third picture-multiplication profile reuses Korean profile 10 unchanged (6, 
 The fourth picture-multiplication profile reuses Korean profile 19 for multiplying by zero: empty groups, reversing factors, and zero filled groups. Singular/plural German text is localized without changing source calculations.
 
 Picture-multiplication profiles 4 and 5 reuse Korean profiles 1 and 2 unchanged. They cover the 3-times table via repeated addition, number-line jumps and matching; and the 4-times table via arrays, missing group counts and correcting products. Menu titles state the source table restriction.
+
+Picture-multiplication profile 6 reuses Korean profile 14: family, team and pack. It retains the original animal/object pictures, group sizes, intentionally incorrect proposal and inverse group-count question. German wording identifies the pictured category without changing mathematical conditions.
