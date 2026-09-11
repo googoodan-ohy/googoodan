@@ -54,8 +54,8 @@ else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=Strin
 const fractional=String(a).includes('/')||String(b).includes('/');const allowInverse=grade>=6||!fractional&&grade>=3;const forms=allowInverse?4:2;const k=index%forms;
 if(k===0){prompt=`Chaque groupe contient ${a} objets. Combien y en a-t-il dans ${b} groupes ?`;answer=c;work=`${a} × ${b} = ${c}`;}
 else if(k===1){prompt=`Calcule ${b} fois ${a}.`;answer=c;work=`${a} × ${b} = ${c}`;}
-else if(k===2){prompt=`全部の量 ${c}を ${a}ずつ分けると、何まとまりですか。`;answer=b;work=`${c} ÷ ${a} = ${b}`;}
-else {prompt=`全部の量 ${c}を ${b}まとまりに等しく分けると、一つ分はいくつですか。`;answer=a;work=`${c} ÷ ${b} = ${a}`;}}
+else if(k===2){prompt=`On répartit ${c} objets en groupes de ${a}. Combien de groupes obtient-on ?`;answer=b;work=`${c} ÷ ${a} = ${b}`;}
+else {prompt=`On partage ${c} objets en ${b} groupes égaux. Combien y a-t-il d’objets par groupe ?`;answer=a;work=`${c} ÷ ${b} = ${a}`;}}
 return {prompt,answer:String(answer),work};}
 function rows(p,seed,count=20){const r=random(seed),out=[],grade=p.grade||+p.id[0],seen=new Set();let tries=0;
 const slots=Array.from({length:count},(_,i)=>i);for(let i=slots.length-1;i>0;i--){const j=r(0,i);[slots[i],slots[j]]=[slots[j],slots[i]];}
