@@ -48,3 +48,8 @@ The same six story activities are offered at a second number range via the uncha
 
 Reuse the Korean cube-view activity in Bayern M3/4 2.1, relating two- and three-dimensional building representations. The original four-stack height map, front/right direction, hidden-stack rule and answers are preserved. The worksheet asks for the visible square count, not a perspective drawing or a complete treatment of spatial reasoning.
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik
+
+## Picture multiplication (2026-09-12)
+
+Reuse Korean multiplication profile 13 (groups, array, create) for Bayern M1/2 multiplication as repeated groups and rectangular arrangements. Group size is written first, preserving Korean source order; the static page explains the convention and commutativity. No combinatorics generator was found in the inspected Korean banks, so no new combinatorics generator is introduced.
+Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
