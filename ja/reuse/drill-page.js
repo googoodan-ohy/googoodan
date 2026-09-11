@@ -59,7 +59,7 @@ do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan
 if(count<plan.cols)throw Error('問題紙のスペースが足りません: '+selected.id);
 grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'解答':'プリント';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'問 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'問';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname:('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
 function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
-rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent='学年・単元別計算';document.querySelector('aside>p').textContent='基本計算から復習まで選べます';setProfile(selected.id);}
+rootInit();scalePage();function rootInit(){document.querySelector('aside>p').textContent='基本計算から復習まで選べます';setProfile(selected.id);}
 window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
 window.DrillPage={set(unit,id,number=713){selectedUnit=DC.units.find(u=>u.id===unit);seed=number;setProfile(id||selectedUnit.drills[0].id)},inspect(){return {unit:selectedUnit.id,profile:selected.id,count:document.querySelectorAll('.paper>.problems>.problem').length}},render};
 })();

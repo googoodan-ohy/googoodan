@@ -28,7 +28,7 @@ function finish(stem,art,result,explanation,options={}){
 }
 function calc(x,y,op,opts={}){
  const result=op==='+'?x+y:op==='−'?x-y:op==='×'?x*y:x/y,value=fmt(result),expr=fmt(x)+' '+op+' '+fmt(y);
- finish('計算しましょう。',opts.art||'',value,expr+' = '+value,{wrong:fmt(result+1),story:op==='+'?'구슬 '+fmt(x)+'개に'+fmt(y)+'個を더 넣었습니다. 모두何개ですか。':op==='−'?'색종が'+fmt(x)+'장 중 '+fmt(y)+'장を썼습니다.何장が남았나요?':op==='×'?'한 묶음に'+fmt(x)+'こずつ'+fmt(y)+'묶음です。 모두何개ですか。':fmt(x)+'個を'+fmt(y)+'人에게 똑같が나누면 한 人이何個を받나요?'});
+ finish('計算しましょう。',opts.art||'',value,expr+' = '+value,{wrong:fmt(result+1),story:op==='+'?'ビー玉が'+fmt(x)+'個あります。'+fmt(y)+'個増えると、全部で何個になりますか。':op==='−'?'色紙が'+fmt(x)+'枚あります。そのうち'+fmt(y)+'枚使うと、何枚残りますか。':op==='×'?'一つのまとまりに'+fmt(x)+'個ずつ入っています。'+fmt(y)+'まとまりでは、全部で何個ですか。':fmt(x)+'個を'+fmt(y)+'人で同じ数ずつ分けます。一人分は何個ですか。'});
  if(mode===0||mode===4)task='<div class="kequation">'+expr+' = □</div>'+(mode===4?'<div class="kreason">計算：__________________</div>':'');
  if(mode===1){prompt='□に入る数を書きましょう.';task='<div class="kequation">'+fmt(x)+' '+op+' □ = '+value+'</div>';answer=fmt(y);reason=expr+' = '+value+'なので □ = '+fmt(y)}
  if(mode===2)prompt=expr+'の計算を確かめましょう。';
@@ -36,14 +36,14 @@ function calc(x,y,op,opts={}){
 }
 if(['add','sub','unknown','three'].includes(kind)){
  a=between(1,max-1);b=between(1,max-a);
- if(kind==='three'){c=between(1,Math.max(1,Math.floor(max/3)));a=between(1,c);b=between(1,c);finish('三つの数の和を求めましょう.','<div class="kequation">'+a+' + '+b+' + '+c+'</div>',a+b+c,a+' + '+b+' + '+c+' = '+(a+b+c),{story:'세 바구니にりんご가 '+a+'개, '+b+'개, '+c+'개 있습니다. 모두何개ですか。'})}
+ if(kind==='three'){c=between(1,Math.max(1,Math.floor(max/3)));a=between(1,c);b=between(1,c);finish('三つの数の和を求めましょう.','<div class="kequation">'+a+' + '+b+' + '+c+'</div>',a+b+c,a+' + '+b+' + '+c+' = '+(a+b+c),{story:'三つのかごにりんごがそれぞれ'+a+'個、'+b+'個、'+c+'個入っています。全部で何個ですか。'})}
  else calc(kind==='sub'?a+b:a,b,kind==='sub'?'−':'+',{art:u.grade===1&&mode===0?dots(kind==='sub'?a+b:a):''});
 }
 else if(['mul','mul-two','unknown-mul','groups','array','groups-div','div','div-remainder','div-two','inverse'].includes(kind)){
  a=kind==='mul'?between(Math.max(2,Math.floor(max/10)),max):between(2,9);b=between(2,9);
  if(kind==='mul-two'){a=between(12,u.grade>=4?999:99);b=between(12,39)}
  if(kind==='div-two'){b=between(11,29);a=between(2,Math.floor(999/b))}
- if(kind==='div-remainder'){const rem=between(1,b-1),total=a*b+rem;finish(total+' ÷ '+b+'の商とあまりを求めましょう。','',a+' あまり '+rem,b+' × '+a+' + '+rem+' = '+total,{wrong:(a+1)+' あまり '+rem,story:'공 '+total+'個を'+b+'こずつ상자に담습니다. 가득 찬 상자は何개이고何개가 남나요?'});check={kind:'remainder',total,divisor:b,quotient:a,remainder:rem}}
+ if(kind==='div-remainder'){const rem=between(1,b-1),total=a*b+rem;finish(total+' ÷ '+b+'の商とあまりを求めましょう。','',a+' あまり '+rem,b+' × '+a+' + '+rem+' = '+total,{wrong:(a+1)+' あまり '+rem,story:'ボール'+total+'個を、一つの箱に'+b+'個ずつ入れます。いっぱいになる箱は何箱で、ボールは何個余りますか。'});check={kind:'remainder',total,divisor:b,quotient:a,remainder:rem}}
  else if(['div','groups-div','div-two','inverse'].includes(kind)){if(kind==='div'&&max>9)a=between(10,Math.min(99,Math.floor(999/b)));calc(a*b,b,'÷')}
  else {if(kind==='groups'||kind==='array')a=between(2,6);calc(a,b,'×',{art:['groups','array'].includes(kind)?grid(a,b):''})}
 }
@@ -104,7 +104,7 @@ else if(kind.startsWith('fraction-')||kind==='whole-div-fraction'||kind==='whole
  if(kind==='whole-div-fraction-result'){n=between(1,9);d=1;m=between(2,9);e=1}
  if(op==='−'&&n*e<m*d){[n,m]=[m,n];[d,e]=[e,d]}
  let num=op==='+'?n*e+m*d:op==='−'?n*e-m*d:op==='×'?n*m:n*e,den=op==='÷'?d*m:d*e;if(u.grade===4&&(op==='+'||op==='−')){num=op==='+'?n+m:n-m;den=d}const ans=u.grade===4?(num%den===0?String(num/den):num+'/'+den):frac(num,den),expr=n+'/'+d+' '+op+' '+m+'/'+e;
- finish(u.grade===4?'計算しましょう。':'計算して、約分した分数か整数で答えましょう。','<div class="kequation">'+F(n,d)+' '+op+' '+F(m,e)+'</div>',ans,expr+' = '+num+'/'+den+' = '+ans,{wrong:frac(num+1,den),story:op==='+'?'리본 '+n+'/'+d+' m와 '+m+'/'+e+' m를 이으면何mですか。':op==='−'?n+'/'+d+' m 중 '+m+'/'+e+' m를 쓰면何m가 남나요?':op==='×'?n+'/'+d+'の'+m+'/'+e+'なしは 얼마ですか。':n+'/'+d+' m를 '+m+'/'+e+' m씩 나누면何조각 分량ですか。'});
+ finish(u.grade===4?'計算しましょう。':'計算して、約分した分数か整数で答えましょう。','<div class="kequation">'+F(n,d)+' '+op+' '+F(m,e)+'</div>',ans,expr+' = '+num+'/'+den+' = '+ans,{wrong:frac(num+1,den),story:op==='+'?'リボン'+n+'/'+d+' mと'+m+'/'+e+' mをつなぐと、長さは何mになりますか。':op==='−'?n+'/'+d+' mのリボンから'+m+'/'+e+' m使うと、何m残りますか。':op==='×'?n+'/'+d+'の'+m+'/'+e+'倍はいくつですか。':n+'/'+d+' mのリボンは、'+m+'/'+e+' mを1本分とすると何本分ですか。'});
  if(mode===1){prompt='答えの□を埋めましょう。';task='<div class="kequation">= '+F('□',den)+'</div>';answer=String(num);reason=expr+' = '+num+'/'+den}
  check={kind:'fraction',n,d,m,e,op,num,den};
 }
@@ -113,7 +113,7 @@ else if(kind.startsWith('decimal-')){
  if(kind.includes('whole'))y=between(2,9);if(kind==='decimal-scale')y=pick([10,100]);if(op==='−'&&x<y)[x,y]=[y,x];
  if(op==='÷'){y=kind.includes('whole')?between(2,9):between(1,99)/10;x=Number((y*between(1,99)/10).toFixed(2))}
  calc(x,y,op);
- if(mode===3)prompt='長さ가 '+x+' m인 리본を'+(op==='+'?y+' m 더 이으면 全部で長さは何mですか。':op==='−'?y+' m 자르면何m가 남나요?':op==='×'?y+'なし로 늘리면何mですか。':y+' m씩 나누면何조각 分량ですか。');
+ if(mode===3)prompt='長さ'+x+' mのリボンを'+(op==='+'?y+' mつぎ足すと、全部で何mになりますか。':op==='−'?y+' m切り取ると、何m残りますか。':op==='×'?y+'倍の長さにすると、何mになりますか。':y+' mを1本分として分けると、何本分になりますか。');
 }
 else if(['mixed','mixed-bracket','mixed-story','factor','multiple','gcd','lcm','range','round-up','round-down','round-nearest'].includes(kind)){
  if(kind.startsWith('mixed')){const bracket=kind==='mixed-bracket'||mode===4,value=bracket?(a+b)*c:a+b*c,expr=bracket?'('+a+' + '+b+') × '+c:a+' + '+b+' × '+c;finish('順序を考えて計算しましょう。','<div class="kequation">'+expr+'</div>',value,bracket?'かっこの中を先に計算してからかけます。':'かけ算を先に計算してからたします。',{story:bracket?'えんぴつ'+a+'本と'+b+'本を一つの箱に入れて、'+c+'箱用意しました。全部で何本ですか。':'えんぴつ'+a+'本に、'+b+'本ずつのまとまりを'+c+'つ加えました。全部で何本ですか。'})}
