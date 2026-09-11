@@ -42,8 +42,9 @@ Total: 45 profiles.
 | Zahlen zerlegen | Klasse 1/2 | 2 |
 | Rechentabellen | Klasse 3/4 | 1 |
 | Malaufgaben mit Bildern | Klasse 1/2 | 1 |
+| Drei Zahlen addieren | Klasse 1/2 | 1 |
 
-Total: 41 profiles.
+Total: 42 profiles.
 
 ## Next priorities
 
