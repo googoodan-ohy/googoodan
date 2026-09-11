@@ -110,3 +110,6 @@ Map original KoMultiplicationBank profile 11 (array/chain/reverse) to German pic
 
 ## 2026-09-12: Complete original picture multiplication bank mapping
 German picturemul profiles 12–19 reuse remaining Korean profiles 0,3,4,5,6,7,8,12 without generator changes. All 20 original bank profiles now have one German mapping, including individual 2/5/6/7/8/9 tables and mixed 2–4/2–9 practice. This completes this bank mapping only, not Bayern curriculum coverage. 25,800 source-answer checks passed; all 20 browser routes passed and the 16 newly added question/answer PDFs each have one page.
+
+## 2026-09-12: Picture addition and missing story numbers
+Map KoEarlyArithmetic 1-2-4 profiles 0 and 2 to German tenstrategies profiles 4 and 5. Preserve bridging steps, picture counts, story values and error proposals. The existing negative-expression compare activity remains excluded. 5,100 combined source checks passed; four new question/answer PDFs are single-page.

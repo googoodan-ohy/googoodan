@@ -56,10 +56,10 @@ Total: 45 profiles.
 | Sachaufgaben bis 9 | Klasse 1/2 | 6 |
 | Sachaufgaben bis 100 | Klasse 1/2 | 6 |
 | Bilder und Malaufgaben | Klasse 1/2 | 20 |
-| Rechnen mit der 10 | Klasse 1/2 | 4 |
+| Rechnen mit der 10 | Klasse 1/2 | 6 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 
-Total: 100 profiles.
+Total: 102 profiles.
 
 ## Next priorities
 
