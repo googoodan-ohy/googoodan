@@ -41,8 +41,9 @@ Total: 45 profiles.
 | Gleiche Summen | Klasse 1/2 | 1 |
 | Zahlen zerlegen | Klasse 1/2 | 2 |
 | Rechentabellen | Klasse 3/4 | 1 |
+| Malaufgaben mit Bildern | Klasse 1/2 | 1 |
 
-Total: 40 profiles.
+Total: 41 profiles.
 
 ## Next priorities
 
