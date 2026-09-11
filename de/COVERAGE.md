@@ -43,8 +43,9 @@ Total: 45 profiles.
 | Rechentabellen | Klasse 3/4 | 1 |
 | Malaufgaben mit Bildern | Klasse 1/2 | 1 |
 | Drei Zahlen addieren | Klasse 1/2 | 1 |
+| Formen zählen | Klasse 1/2 | 1 |
 
-Total: 43 profiles.
+Total: 44 profiles.
 
 ## Next priorities
 
