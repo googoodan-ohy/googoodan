@@ -24,7 +24,7 @@ Total: 45 profiles.
 | Rechte Winkel und Symmetrie | Klasse 3/4 | 2 |
 | Quader und Würfelnetze | Klasse 3/4 | 2 |
 | Uhrzeit und Kalender | Klasse 1/2 | 3 |
-| Uhrzeit und Zeitspannen | Klasse 3/4 | 3 |
+| Uhrzeit und Zeitspannen | Klasse 3/4 | 4 |
 | Längen, Massen und Hohlmaße | Klasse 3/4 | 5 |
 | Tabellen und Diagramme | Klasse 3/4 | 2 |
 | Ebene Formen | Klasse 1/2 | 2 |
@@ -48,7 +48,7 @@ Total: 45 profiles.
 | Größen umwandeln und vergleichen | Klasse 3/4 | 5 |
 | Uhrzeiger zeichnen | Klasse 1/2 | 2 |
 
-Total: 53 profiles.
+Total: 54 profiles.
 
 ## Next priorities
 
