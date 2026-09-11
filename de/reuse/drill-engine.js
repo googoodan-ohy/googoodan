@@ -50,12 +50,12 @@ if(q.op==='+'||q.op==='−'){if(q.op==='−'){[a,b,c]=[q.b,c,q.a];}const form=in
 [`Zwei Mengen ergeben zusammen ${c}. Eine Menge ist ${a}. Wie groß ist die andere?`,b,`${c} − ${a} = ${b}`],
 [`Zu ${a} wird eine Zahl addiert. Das Ergebnis ist ${c}. Welche Zahl ist es?`,b,`${c} − ${a} = ${b}`],
 [`Eine Menge von ${a} wird um ${b} größer. Wie groß ist sie danach?`,c,`${a} + ${b} = ${c}`]];[prompt,answer,work]=items[form];}
-else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=String(q.answer).split(' R ');return {prompt:`On répartit ${a} objets en groupes de ${b}. Combien de groupes complets et combien d’objets restants ?`,answer:`${quot} groupes, ${rem} objets restants`,work:`${a} ÷ ${b} = ${q.answer.replace(' R ',' reste ')}`};}[a,b,c]=[q.b,c,q.a];}
+else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=String(q.answer).split(' R ');return {prompt:`${a} Gegenstände werden in Gruppen zu je ${b} verteilt. Wie viele volle Gruppen entstehen und wie viele Gegenstände bleiben übrig?`,answer:`${quot} Gruppen, ${rem} Gegenstände übrig`,work:`${a} ÷ ${b} = ${q.answer.replace(' R ',' Rest ')}`};}[a,b,c]=[q.b,c,q.a];}
 const fractional=String(a).includes('/')||String(b).includes('/');const allowInverse=grade>=6||!fractional&&grade>=3;const forms=allowInverse?4:2;const k=index%forms;
-if(k===0){prompt=`Une quantité de ${a} est multipliée par ${b}. Quelle quantité obtient-on ?`;answer=c;work=`${a} × ${b} = ${c}`;}
-else if(k===1){prompt=`Calcule ${b} fois ${a}.`;answer=c;work=`${a} × ${b} = ${c}`;}
-else if(k===2){prompt=`Trouve le nombre qui, multiplié par ${a}, donne ${c}.`;answer=b;work=`${c} ÷ ${a} = ${b}`;}
-else {prompt=`Quel nombre multiplié par ${b} donne ${c} ?`;answer=a;work=`${c} ÷ ${b} = ${a}`;}}
+if(k===0){prompt=`Eine Menge von ${a} wird mit ${b} multipliziert. Wie groß ist das Ergebnis?`;answer=c;work=`${a} × ${b} = ${c}`;}
+else if(k===1){prompt=`Berechne das ${b}-Fache von ${a}.`;answer=c;work=`${a} × ${b} = ${c}`;}
+else if(k===2){prompt=`Welche Zahl ergibt mit ${a} multipliziert das Ergebnis ${c}?`;answer=b;work=`${c} ÷ ${a} = ${b}`;}
+else {prompt=`Welche Zahl ergibt mit ${b} multipliziert das Ergebnis ${c}?`;answer=a;work=`${c} ÷ ${b} = ${a}`;}}
 return {prompt,answer:String(answer),work};}
 function rows(p,seed,count=20){const r=random(seed),out=[],grade=p.grade||+p.id[0],seen=new Set();let tries=0;
 const slots=Array.from({length:count},(_,i)=>i);for(let i=slots.length-1;i>0;i--){const j=r(0,i);[slots[i],slots[j]]=[slots[j],slots[i]];}
