@@ -37,3 +37,5 @@ The third story profile reuses the Korean whole-part diagram activities (bar-tot
 The fourth story profile reuses paired, compare-more and compare-less without changing the source arithmetic. German wording preserves the two distinct situations in paired questions and the direction of each comparison.
 
 The fifth story profile reuses extra-label, extra-other and extra-age. It preserves the source distractor value and the required two quantities, and practices finding relevant information in everyday texts (M1/2 1.3).
+
+The sixth story profile reuses question, claim and justify. Open-answer flags are preserved, and German example answers explicitly allow other valid questions and solutions. No source generator logic is changed.
