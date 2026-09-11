@@ -31,3 +31,5 @@ The Korean perimeter generator uses a labelled rectangle and the formula 2 × (l
 
 Bayern M1/2 1.3 links everyday stories with operations and mathematical questions. Reuse the original Korean reading-stories bank for total, initial amount and removed amount, plus choosing the matching equation. Keep the original seed, numbers (at most 9), pictures and answer relationships. Translate the displayed text only; pictures identify objects rather than represent their count. This is initial practice, not coverage of the whole number range to 100.
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+The third story profile reuses the Korean whole-part diagram activities (bar-total, bar-part, bar-difference). The boxes show the numerical relationship; their widths are schematic, not proportional measurements. Original generation and answers remain unchanged.
