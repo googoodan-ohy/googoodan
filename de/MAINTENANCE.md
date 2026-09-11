@@ -15,3 +15,7 @@ Run `node scripts/check-german-unit-browser.cjs` with Playwright installed. The 
 ## Published scope (2026-09-11)
 
 The unit-type catalog currently has 35 profiles: place value/comparison/sequences (2), right angles/symmetry (2), cuboids/cube nets (2), time/calendar (6), metric measures (5), table/graph activities (2), plane shapes (2), cube-building plans (2), introductory chance comparisons (1, three fixed situations), addition/subtraction to 1 000 (2), multiplication/division facts with 2 through 9 (2), division with remainders (1), larger multiplication/exact division (2), addition/subtraction to one million (2), ruler reading (1), and mirror-grid activities (1). These are selected Bayern Klasse 1/2 and 3/4 exercises, not complete curriculum coverage. The separate arithmetic menu and drill pages are not included in that profile count. Other Bundeslaender remain unsupported and must not be described as complete.
+
+## Print regression
+
+Run `node scripts/check-german-print.cjs`, then `python scripts/check-german-print-pages.py` (Playwright and pypdf required). This exports questions and answers separately for every unit-type profile and checks one A4 page per PDF. On 2026-09-12 all 35 profiles / 70 PDFs passed. Generated PDFs remain in `.work-english/de-print-audit` and are not published.
