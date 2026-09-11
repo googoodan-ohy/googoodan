@@ -21,7 +21,7 @@ function mascot(kind){
 const DC=DrillCatalog,params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const requested=(params.get('unit')||'').split('-');let selectedUnit=DC.units.find(u=>u.id===params.get('unit'))||DC.units.find(u=>u.grade===+requested[0]&&u.semester===+requested[1])||DC.units[0];let selected=selectedUnit.drills.find(p=>p.id===params.get('drill'))||selectedUnit.drills[0];
 seed=Number(new URLSearchParams(location.search).get('set'))||Number(params.get('set'))||seed;let browseUnit=selectedUnit;
-function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;location.href='/fr/print/drill-'+encodeURIComponent(id)+'.html';}
+function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;location.href=DC.urls[id];}
 const groupNames=['Calcul de base','Révisions','Calculs à trous','Problèmes'];
 function nav(){return '<nav class="edition-tabs"><a href="/fr/"><span class="arithmetic-menu-icons" aria-hidden="true"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>Calcul</span></a><a href="/fr/drills.html" aria-current="page">Calcul par chapitre</a><a href="/fr/units.html">Exercices par chapitre</a></nav>';}
 function setProfile(id){selected=DC.profiles.get(id);current=types.find(t=>t.id===id);menu();render();}
