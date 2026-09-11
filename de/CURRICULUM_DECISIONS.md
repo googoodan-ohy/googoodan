@@ -92,3 +92,6 @@ Reuse ko/engine.js congruent unchanged in de-by-congruent, Bayern 3/4. Supplemen
 
 ## 2026-09-12: Early solid names
 Reuse ko/engine.js solid-basic with original unit 2-1-2 in de-by-bodies12 (Bayern Klasse 1/2, 2.2). Translate Quader/Zylinder/Kugel, keeping original drawing paths and answer selection. Source sphere is a simple circular schematic, not a realistic perspective drawing. Only these three bodies are provided; other curricular bodies remain unimplemented. 900 source-answer/drawing checks, ten browser seeds and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## 2026-09-12: Early table reading
+Reuse ko/engine.js table unchanged in de-by-readtable12. Bayern 1/2 section 4.1 explicitly includes reading information from simple tables. Fruit labels are localized, source values 1–6 and answers are unchanged. This exercises reading one category, not collecting data or drawing graphs. 900 source-answer/table-value checks, ten browser seeds and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
