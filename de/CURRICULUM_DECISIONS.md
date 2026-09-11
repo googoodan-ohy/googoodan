@@ -35,3 +35,5 @@ Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 The third story profile reuses the Korean whole-part diagram activities (bar-total, bar-part, bar-difference). The boxes show the numerical relationship; their widths are schematic, not proportional measurements. Original generation and answers remain unchanged.
 
 The fourth story profile reuses paired, compare-more and compare-less without changing the source arithmetic. German wording preserves the two distinct situations in paired questions and the direction of each comparison.
+
+The fifth story profile reuses extra-label, extra-other and extra-age. It preserves the source distractor value and the required two quantities, and practices finding relevant information in everyday texts (M1/2 1.3).

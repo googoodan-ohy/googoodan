@@ -47,9 +47,9 @@ Total: 45 profiles.
 | Teiler und Vielfache | Klasse 3/4 | 2 |
 | Größen umwandeln und vergleichen | Klasse 3/4 | 5 |
 | Uhrzeiger zeichnen | Klasse 1/2 | 2 |
-| Sachaufgaben bis 9 | Klasse 1/2 | 4 |
+| Sachaufgaben bis 9 | Klasse 1/2 | 5 |
 
-Total: 58 profiles.
+Total: 59 profiles.
 
 ## Next priorities
 
