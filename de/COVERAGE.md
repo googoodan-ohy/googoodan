@@ -40,8 +40,9 @@ Total: 45 profiles.
 | Muster mit Formen | Klasse 1/2 | 1 |
 | Gleiche Summen | Klasse 1/2 | 1 |
 | Zahlen zerlegen | Klasse 1/2 | 2 |
+| Rechentabellen | Klasse 3/4 | 1 |
 
-Total: 39 profiles.
+Total: 40 profiles.
 
 ## Next priorities
 
