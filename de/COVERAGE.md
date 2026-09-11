@@ -44,8 +44,9 @@ Total: 45 profiles.
 | Malaufgaben mit Bildern | Klasse 1/2 | 1 |
 | Drei Zahlen addieren | Klasse 1/2 | 1 |
 | Formen zählen | Klasse 1/2 | 1 |
+| Teiler und Vielfache | Klasse 3/4 | 2 |
 
-Total: 44 profiles.
+Total: 46 profiles.
 
 ## Next priorities
 
