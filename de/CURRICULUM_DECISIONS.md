@@ -86,3 +86,6 @@ Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 
 ## 2026-09-12: Tile counting
 Reuse ko/engine.js tile unchanged in de-by-tiles (Bayern 3/4). This is supplementary structured counting for laying out surfaces, not a complete parkettierung activity. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik (2.4). Exclude parallel-line and degree-based quadrilateral classification pending appropriate curriculum evidence. 900 source-answer checks, ten browser seeds and two one-page PDFs passed.
+
+## 2026-09-12: Congruent side lengths
+Reuse ko/engine.js congruent unchanged in de-by-congruent, Bayern 3/4. Supplement the deckungsgleich concept in 2.2/2.3 with equal corresponding side lengths; do not claim net construction or congruence proofs. Source triangles are symbolic, not measurement diagrams; static instructions make this explicit. 900 source-answer checks, ten browser seeds and two single-page A4 PDFs passed. No reusable scale-drawing generator was found in the inspected Korean geometry bank; enlargement/reduction remains unsupported rather than creating new generator logic. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik

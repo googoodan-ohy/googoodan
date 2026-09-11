@@ -23,6 +23,7 @@ Total: 45 profiles.
 | Zahlen bis 999 999 | Klasse 3/4 | 1 |
 | Rechte Winkel und Symmetrie | Klasse 3/4 | 2 |
 | Quader und Würfelnetze | Klasse 3/4 | 2 |
+| Deckungsgleiche Figuren | Klasse 3/4 | 1 |
 | Fliesen im Raster zählen | Klasse 3/4 | 1 |
 | Uhrzeit und Kalender | Klasse 1/2 | 3 |
 | Uhrzeit und Zeitspannen | Klasse 3/4 | 4 |
@@ -54,7 +55,7 @@ Total: 45 profiles.
 | Rechnen mit der 10 | Klasse 1/2 | 4 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 
-Total: 84 profiles.
+Total: 85 profiles.
 
 ## Next priorities
 
