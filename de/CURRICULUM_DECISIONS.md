@@ -57,3 +57,5 @@ Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
 The second picture-multiplication profile reuses Korean profile 16: commute, neighbor and chain. It practices reversing factors in the same array and deriving successive products from a known product. Source expressions, numbers and answers are unchanged.
 
 The third picture-multiplication profile reuses Korean profile 10 unchanged (6, 7 and 8 tables): repeated addition, neighboring products and matching expressions to values. The limited table selection is explicit in the menu and title.
+
+The fourth picture-multiplication profile reuses Korean profile 19 for multiplying by zero: empty groups, reversing factors, and zero filled groups. Singular/plural German text is localized without changing source calculations.
