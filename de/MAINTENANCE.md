@@ -7,3 +7,11 @@
 - Every German page uses its canonical as the German hreflang target and includes ko/en/ja/fr/x-default without duplicates.
 - Version changed JS/CSS references. Run scripts/check-german-seo.cjs and verify menu navigation in a browser before publishing.
 - scripts/german-seo.cjs is a one-time migration. The URL mapping is retained in scripts/german-url-map.json. Do not rerun it to generate future pages.
+
+## Browser regression
+
+Run `node scripts/check-german-unit-browser.cjs` with Playwright installed. The default base URL is http://127.0.0.1:4181; set DE_TEST_URL=https://googoodan.com for the published site. This checks every catalog profile through the actual grade/unit/type menu, answer toggling, number regeneration and preservation of static descriptions.
+
+## Published scope (2026-09-11)
+
+The unit-type catalog currently has 17 profiles: place value/comparison/sequences (2), right angles/symmetry (2), cuboids/cube nets (2), time/calendar (6), metric measures (3), and table/graph activities (2). These are selected Bayern Klasse 1/2 and 3/4 exercises, not complete curriculum coverage. The separate arithmetic menu and drill pages are not included in that profile count. Other Bundeslaender remain unsupported and must not be described as complete.
