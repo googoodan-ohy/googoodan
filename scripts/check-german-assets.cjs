@@ -1,0 +1,6 @@
+const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
+const pages=fs.readdirSync('de',{recursive:true}).filter(f=>f.endsWith('.html'));const failures=[];let refs=0;
+for(const file of pages){const html=fs.readFileSync(path.join('de',file),'utf8'),seen=new Set();const tags=[...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"[^>]*>/gi)].map(m=>({kind:'script',src:m[1]})).concat([...html.matchAll(/<link\b[^>]*>/gi)].filter(m=>/\brel="stylesheet"/i.test(m[0])).map(m=>({kind:'style',src:m[0].match(/\bhref="([^"]+)"/i)?.[1]})));
+for(const {kind,src} of tags){if(!src)continue;const url=new URL(src,'https://googoodan.com/de/'+file.replaceAll('\\','/'));if(url.origin!=='https://googoodan.com')continue;refs++;const key=kind+url.pathname;if(seen.has(key))failures.push({file,error:'Duplicate local asset',src});seen.add(key);if(!url.searchParams.get('v'))failures.push({file,error:'Missing cache version',src});const local=decodeURIComponent(url.pathname.slice(1));if(!fs.existsSync(local))failures.push({file,error:'Missing asset',src});}
+}
+console.log(JSON.stringify({pages:pages.length,localAssetReferences:refs,failures},null,2));assert.equal(failures.length,0,'German asset connections failed');
