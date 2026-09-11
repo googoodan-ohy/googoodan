@@ -83,3 +83,6 @@ Reuse only inverse and compensate from KoEarlyArithmetic 1-2-4 profile 1. Its co
 
 Reuse KoEarlyArithmetic 1-2-6 profiles 1 and 2: tables, additive stories, missing initial values, inverse relations, compensation and error correction. The column-calculation profile is not imported into Klasse 1/2; formal written algorithms belong to the later Bayern band. Source calculations, graphics and answer relationships remain unchanged.
 Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## 2026-09-12: Tile counting
+Reuse ko/engine.js tile unchanged in de-by-tiles (Bayern 3/4). This is supplementary structured counting for laying out surfaces, not a complete parkettierung activity. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik (2.4). Exclude parallel-line and degree-based quadrilateral classification pending appropriate curriculum evidence. 900 source-answer checks, ten browser seeds and two one-page PDFs passed.
