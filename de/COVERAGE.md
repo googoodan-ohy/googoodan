@@ -39,8 +39,9 @@ Total: 45 profiles.
 | Spiegelbilder im Gitternetz | Klasse 3/4 | 1 |
 | Muster mit Formen | Klasse 1/2 | 1 |
 | Gleiche Summen | Klasse 1/2 | 1 |
+| Zahlen zerlegen | Klasse 1/2 | 2 |
 
-Total: 37 profiles.
+Total: 39 profiles.
 
 ## Next priorities
 
