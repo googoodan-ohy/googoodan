@@ -39,3 +39,7 @@ The fourth story profile reuses paired, compare-more and compare-less without ch
 The fifth story profile reuses extra-label, extra-other and extra-age. It preserves the source distractor value and the required two quantities, and practices finding relevant information in everyday texts (M1/2 1.3).
 
 The sixth story profile reuses question, claim and justify. Open-answer flags are preserved, and German example answers explicitly allow other valid questions and solutions. No source generator logic is changed.
+
+## Stories within 100 (2026-09-12)
+
+The same six story activities are offered at a second number range via the unchanged Korean 1-2-6 source. Its largest possible sum is 99, stated on the static pages. This belongs to Bayern M1/2 work within 100; it is not a new mathematical skill or a claim of six unique additional concepts. Both number ranges retain source values, distractors, images and answer relationships.

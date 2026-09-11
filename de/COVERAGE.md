@@ -48,8 +48,9 @@ Total: 45 profiles.
 | Größen umwandeln und vergleichen | Klasse 3/4 | 5 |
 | Uhrzeiger zeichnen | Klasse 1/2 | 2 |
 | Sachaufgaben bis 9 | Klasse 1/2 | 6 |
+| Sachaufgaben bis 100 | Klasse 1/2 | 6 |
 
-Total: 60 profiles.
+Total: 66 profiles.
 
 ## Next priorities
 
