@@ -31,8 +31,8 @@ case 'lcm':return out(`${a}と ${b}の最小公倍数を求めましょう.`,lcm
 case 'reduce':return out(`${n*g}/${d*g}を約分しましょう.`,f(n,d));
 case 'common':{const z=lcm(a,b);return out(`1/${a}と 1/${b}を最小の共通分母で通分しましょう.`,`${z/a}/${z}, ${z/b}/${z}`);}
 case 'compare-fraction':{const z=lcm(a,b);return out(`1/${a} □ 1/${b}  (>, <, =)`,a<b?'>':a>b?'<':'=',`${z/a}/${z}, ${z/b}/${z}`);}
-case 'improper':{const nn=a*d+n;return out(`${nn}/${d}を帯分数で表しましょう.`,`${a}と ${n}/${d}`);}
-case 'mixed':return out(`${a}と ${n}/${d}を仮分数で表しましょう.`,`${a*d+n}/${d}`);
+case 'improper':{const nn=a*d+n;return out(`Décompose ${nn}/${d} en un entier et une fraction inférieure à 1.`,`${a}と ${n}/${d}`);}
+case 'mixed':return out(`Écris ${a} + ${n}/${d} sous forme d’une seule fraction.`,`${a*d+n}/${d}`);
 case 'one-fraction':return out(`1 = □/${d}`,d);
 case 'decimal-scale':{const z=(a/10).toFixed(1),scale=[10,100,1000][r(0,2)];return out(`${z} × ${scale} = `,a*scale/10);}
 case 'mixed-add':return out(`${x} + ${y} − ${g} = `,x+y-g);
