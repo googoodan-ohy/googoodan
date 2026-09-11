@@ -37,8 +37,9 @@ Total: 45 profiles.
 | Rechnen bis 1 Million | Klasse 3/4 | 2 |
 | Längen am Lineal | Klasse 1/2 | 1 |
 | Spiegelbilder im Gitternetz | Klasse 3/4 | 1 |
+| Muster mit Formen | Klasse 1/2 | 1 |
 
-Total: 35 profiles.
+Total: 36 profiles.
 
 ## Next priorities
 
