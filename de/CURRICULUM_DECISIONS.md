@@ -101,3 +101,6 @@ Reuse ko/engine.js length-compare and area-compare unchanged in de-by-compare12.
 
 ## 2026-09-12: Build a quadrilateral
 Reuse ko/engine.js flat-build unchanged in de-by-buildshape12 (Bayern 1/2 section 2.2: create plane figures). Request one question per source mode to avoid repeating the fixed drawing task. Preserve the open-answer flag and source drawing space. Answers are descriptive; no unique sample drawing is claimed. Static instructions explicitly state the drawing task remains fixed when regenerated. 300 source-answer checks and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## 2026-09-12: Einmaleins detective
+Map original KoMultiplicationBank profile 15 (error/reverse/target) to German picturemul profile 10. Preserve source numbers, asset selection and six story contexts; localize text only. This extends Bayern 1/2 multiplication/inverse reasoning within small multiplication facts. 9,700 total picture-multiplication source checks passed, including 900 for the new profile; question/answer PDFs fit one A4 page.

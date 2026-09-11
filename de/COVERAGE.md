@@ -55,11 +55,11 @@ Total: 45 profiles.
 | Uhrzeiger zeichnen | Klasse 1/2 | 2 |
 | Sachaufgaben bis 9 | Klasse 1/2 | 6 |
 | Sachaufgaben bis 100 | Klasse 1/2 | 6 |
-| Bilder und Malaufgaben | Klasse 1/2 | 10 |
+| Bilder und Malaufgaben | Klasse 1/2 | 11 |
 | Rechnen mit der 10 | Klasse 1/2 | 4 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 
-Total: 90 profiles.
+Total: 91 profiles.
 
 ## Next priorities
 
