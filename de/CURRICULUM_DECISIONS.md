@@ -98,3 +98,6 @@ Reuse ko/engine.js table unchanged in de-by-readtable12. Bayern 1/2 section 4.1 
 
 ## 2026-09-12: Comparing lengths and areas
 Reuse ko/engine.js length-compare and area-compare unchanged in de-by-compare12. Bayern 1/2 sections 3.2 and 2.5 support length/area comparison. Both diagrams have equal-height rectangles and a common left edge; instructions explicitly restrict the length-based area comparison to this case. This is supplementary visual comparison, not measuring or covering with unit squares. Weight/capacity comparison not mapped to early grades. 1,800 source/graph-answer checks and four single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
+
+## 2026-09-12: Build a quadrilateral
+Reuse ko/engine.js flat-build unchanged in de-by-buildshape12 (Bayern 1/2 section 2.2: create plane figures). Request one question per source mode to avoid repeating the fixed drawing task. Preserve the open-answer flag and source drawing space. Answers are descriptive; no unique sample drawing is claimed. Static instructions explicitly state the drawing task remains fixed when regenerated. 300 source-answer checks and two single-page PDFs passed. Reference: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
