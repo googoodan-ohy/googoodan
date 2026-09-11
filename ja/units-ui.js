@@ -1,5 +1,9 @@
 (function(){
 const C=KoCatalog,M=KoMath,$=s=>document.querySelector(s),E=s=>String(s).replace(/(-?\d+) +(\d+\/\d+)/g,'$1と $2').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+// Use existing Korean-bank activities first; preserve every published unit ID.
+const preferred={1:'ja-number-bank',2:'ja-two-digit-bank',3:'ja-written-3-1-1',4:'ja-written-4-1-3',5:'ja-fraction-reuse',6:'ja-fraction-target-5-2-2-6'};
+C.units.sort((a,b)=>a.grade-b.grade||((a.id===preferred[a.grade]?-2:a.sourceUnit?-1:0)-(b.id===preferred[b.grade]?-2:b.sourceUnit?-1:0)));
+for(const g of [1,2,3,4,5,6])C.units.filter(u=>u.grade===g).forEach((u,i)=>u.number=i+1);
 const params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search);
 const replay=new URLSearchParams(location.search).get('set');if(replay&&/^\d{1,10}$/.test(replay))params.set('set',replay);
 let grade=Math.min(6,Math.max(1,+params.get('grade')||1)),semester=+params.get('semester')===2?2:1;
