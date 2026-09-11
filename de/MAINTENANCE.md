@@ -25,3 +25,7 @@ Run `node scripts/check-german-print.cjs`, then `python scripts/check-german-pri
 - After adding unit profiles, run build-de-grade-directories.cjs against the local server and scripts/check-german-grade-directories.cjs so the static grade-band indexes include every current type.
 
 - picture-multiplication-source.js contains the unchanged Korean question-engine.js inside an isolated multiplication-only adapter. Do not edit its generator. check-de-picture-multiplication.cjs verifies source equality; run `node scripts/build-german-multiplication-source.cjs --check` to detect upstream drift. To rebuild after reviewing a source change, use `node scripts/build-german-multiplication-source.cjs --version=YYYYMMDD-label`; this also updates all HTML references and the page builder. Then run calculation, browser and print checks.
+
+## Seeded language and sign audit
+
+Run `node scripts/check-german-language-ranges.cjs` with the local preview running. On 2026-09-12, 83 profiles across seeds 0–39 produced 19,800 questions with no Hangul, undefined/NaN output, early-grade negative operands after arithmetic operators, or negative answer values detected. This is a sampled display/sign check, not a proof of all mathematical answers or curriculum coverage; keep the source-specific arithmetic checks.
