@@ -43,3 +43,8 @@ The sixth story profile reuses question, claim and justify. Open-answer flags ar
 ## Stories within 100 (2026-09-12)
 
 The same six story activities are offered at a second number range via the unchanged Korean 1-2-6 source. Its largest possible sum is 99, stated on the static pages. This belongs to Bayern M1/2 work within 100; it is not a new mathematical skill or a claim of six unique additional concepts. Both number ranges retain source values, distractors, images and answer relationships.
+
+## Cube-building views (2026-09-12)
+
+Reuse the Korean cube-view activity in Bayern M3/4 2.1, relating two- and three-dimensional building representations. The original four-stack height map, front/right direction, hidden-stack rule and answers are preserved. The worksheet asks for the visible square count, not a perspective drawing or a complete treatment of spatial reasoning.
+Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik

@@ -28,7 +28,7 @@ Total: 45 profiles.
 | Längen, Massen und Hohlmaße | Klasse 3/4 | 5 |
 | Tabellen und Diagramme | Klasse 3/4 | 2 |
 | Ebene Formen | Klasse 1/2 | 2 |
-| Würfelgebäude und Baupläne | Klasse 3/4 | 2 |
+| Würfelgebäude und Baupläne | Klasse 3/4 | 3 |
 | Zufall und Chancen | Klasse 3/4 | 1 |
 | Rechnen bis 1 000 | Klasse 3/4 | 2 |
 | Einmaleins und Umkehraufgaben | Klasse 3/4 | 2 |
@@ -50,7 +50,7 @@ Total: 45 profiles.
 | Sachaufgaben bis 9 | Klasse 1/2 | 6 |
 | Sachaufgaben bis 100 | Klasse 1/2 | 6 |
 
-Total: 66 profiles.
+Total: 67 profiles.
 
 ## Next priorities
 
