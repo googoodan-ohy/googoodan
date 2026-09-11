@@ -50,7 +50,7 @@ if(q.op==='+'||q.op==='−'){if(q.op==='−'){[a,b,c]=[q.b,c,q.a];}const form=in
 [`Deux quantités donnent ${c}. Une quantité vaut ${a}. Combien vaut l’autre ?`,b,`${c} − ${a} = ${b}`],
 [`On ajoute un nombre à ${a} et on obtient ${c}. Quel est ce nombre ?`,b,`${c} − ${a} = ${b}`],
 [`On avait ${a} objets et on en ajoute ${b}. Combien y en a-t-il maintenant ?`,c,`${a} + ${b} = ${c}`]];[prompt,answer,work]=items[form];}
-else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=String(q.answer).split(' R ');return {prompt:`${a}個を一つのまとまりに ${b}個ずつ分けます。何まとまりできて、何個あまりますか。`,answer:`${quot}まとまり, ${rem}個`,work:`${a} ÷ ${b} = ${q.answer.replace(' R ',' あまり ')}`};}[a,b,c]=[q.b,c,q.a];}
+else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=String(q.answer).split(' R ');return {prompt:`On répartit ${a} objets en groupes de ${b}. Combien de groupes complets et combien d’objets restants ?`,answer:`${quot} groupes, ${rem} objets restants`,work:`${a} ÷ ${b} = ${q.answer.replace(' R ',' reste ')}`};}[a,b,c]=[q.b,c,q.a];}
 const fractional=String(a).includes('/')||String(b).includes('/');const allowInverse=grade>=6||!fractional&&grade>=3;const forms=allowInverse?4:2;const k=index%forms;
 if(k===0){prompt=`Chaque groupe contient ${a} objets. Combien y en a-t-il dans ${b} groupes ?`;answer=c;work=`${a} × ${b} = ${c}`;}
 else if(k===1){prompt=`Calcule ${b} fois ${a}.`;answer=c;work=`${a} × ${b} = ${c}`;}
