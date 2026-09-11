@@ -21,7 +21,7 @@ switch(key){
 case 'bond9':return out(`${a%9} + □ = 9`,9-a%9);
 case 'bond':return out(`${a%10} + □ = 10`,10-a%10);
 case 'repeat':return out(Array(a).fill(b).join(' + ')+' = ',a*b);
-case 'groups':return {...out('図を見て、かけ算の式と全部の数を書きましょう.',`${a} × ${b} = ${a*b}`),groups:[a,b]};
+case 'groups':return {...out('Observe les groupes. Écris la multiplication et le total.',`${a} × ${b} = ${a*b}`),groups:[a,b]};
 case 'factor':return out(`${x}の約数を全て書きましょう.`,factors(x).join(', '));
 case 'multiple':return out(`${a}の倍数を小さい順に 5個書きましょう.`,Array.from({length:5},(_,i)=>a*(i+1)).join(', '));
 case 'common-factor':return out(`${x}と ${y}の公約数を全て書きましょう.`,factors(gcd(x,y)).join(', '));
@@ -52,8 +52,8 @@ if(q.op==='+'||q.op==='−'){if(q.op==='−'){[a,b,c]=[q.b,c,q.a];}const form=in
 [`On avait ${a} objets et on en ajoute ${b}. Combien y en a-t-il maintenant ?`,c,`${a} + ${b} = ${c}`]];[prompt,answer,work]=items[form];}
 else{if(q.op==='÷'){if(String(q.answer).includes(' R ')){const [quot,rem]=String(q.answer).split(' R ');return {prompt:`${a}個を一つのまとまりに ${b}個ずつ分けます。何まとまりできて、何個あまりますか。`,answer:`${quot}まとまり, ${rem}個`,work:`${a} ÷ ${b} = ${q.answer.replace(' R ',' あまり ')}`};}[a,b,c]=[q.b,c,q.a];}
 const fractional=String(a).includes('/')||String(b).includes('/');const allowInverse=grade>=6||!fractional&&grade>=3;const forms=allowInverse?4:2;const k=index%forms;
-if(k===0){prompt=`一つのまとまりの量は ${a}です. ${b}まとまり分の量はいくつですか。`;answer=c;work=`${a} × ${b} = ${c}`;}
-else if(k===1){prompt=`${a}の ${b}倍の数を求めましょう.`;answer=c;work=`${a} × ${b} = ${c}`;}
+if(k===0){prompt=`Chaque groupe contient ${a} objets. Combien y en a-t-il dans ${b} groupes ?`;answer=c;work=`${a} × ${b} = ${c}`;}
+else if(k===1){prompt=`Calcule ${b} fois ${a}.`;answer=c;work=`${a} × ${b} = ${c}`;}
 else if(k===2){prompt=`全部の量 ${c}を ${a}ずつ分けると、何まとまりですか。`;answer=b;work=`${c} ÷ ${a} = ${b}`;}
 else {prompt=`全部の量 ${c}を ${b}まとまりに等しく分けると、一つ分はいくつですか。`;answer=a;work=`${c} ÷ ${b} = ${a}`;}}
 return {prompt,answer:String(answer),work};}
