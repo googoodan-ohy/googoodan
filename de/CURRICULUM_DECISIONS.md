@@ -26,3 +26,8 @@ Official sources checked:
 ## Pending placement review: rectangle perimeter
 
 The Korean perimeter generator uses a labelled rectangle and the formula 2 × (length + width). A direct assignment to Bayern Klasse 3/4 was not substantiated in the current review. Do not infer that a formula worksheet matches the practical perimeter comparisons described for Klasse 1/2. Keep this candidate pending until an appropriate official placement and activity match are established.
+
+## Sachaufgaben bis 9 (2026-09-12)
+
+Bayern M1/2 1.3 links everyday stories with operations and mathematical questions. Reuse the original Korean reading-stories bank for total, initial amount and removed amount, plus choosing the matching equation. Keep the original seed, numbers (at most 9), pictures and answer relationships. Translate the displayed text only; pictures identify objects rather than represent their count. This is initial practice, not coverage of the whole number range to 100.
+Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/1/mathematik
