@@ -53,7 +53,7 @@ function draw(){
  $('#status').textContent=counts.reduce((a,b)=>a+b,0)+'問 · '+sections.length+'種類の練習 · 問題1枚 / 解答1枚';
 }
 function render(){
- profile=Math.min(profile,M.profiles(unit.id).length-1);sections=M.generate(unit.id,profile,seed,8);fit();draw();
+ profile=Math.min(profile,M.profiles(unit.id).length-1);sections=M.generate(unit.id,profile,seed,unit.sourceUnit?8:24);fit();draw();
  const t=theme();document.body.style.setProperty('--accent',t[2]);document.body.style.setProperty('--light',t[3]);
  $('#theme-scene').innerHTML=KoThemeScene(t[4],mascot);$('#theme-scene').setAttribute('aria-label',t[0]+' テーマの絵');$('#theme-name').textContent=t[0];$('#theme-motto').textContent=t[1];
  $('#coverage').textContent=sections.map(s=>s.title).join(' · ');
