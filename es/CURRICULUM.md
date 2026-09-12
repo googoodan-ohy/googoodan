@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 189 HTML pages; 75 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 191 HTML pages; 77 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -136,3 +136,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added actual grid translation, reflection and clockwise 90-degree rotation from the unchanged geometry-targets bank. A scoped wrapper captures that bank separately so numeric customSpecs are preserved. Questions draw the destination, reconstruct the original, and check a proposed transformation. Decorative art URLs are localized to /ko/art/; category keys and generation are unchanged. Placement: translation/reflection in year four; rotation in Italy five / Spain six. Validation: 20,250 activity answers plus 14,240 drill questions agree with originals; all six routes, twelve A4 PDFs and hidden/visible solution polygons pass.
+
+
+2026-09-12: Reused data-targets line and percent banks in a scoped wrapper. Line tasks find tied maxima, draw from a table and compare consecutive increases; percent tasks use a total of 200, cumulative strip boundaries and paired category comparison. Original values and graphics preserved. Weekday/category labels and full prompts localized; section headings now describe actual drawing/data tasks. Validation: 20,790 activity answers and 14,240 drills match original; browser regeneration and A4 PDFs pass.
