@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 206 HTML pages; 88 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 207 HTML pages; 88 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -160,3 +160,6 @@ Three activities reuse the unchanged Korean measurement bank: hours/half-hours i
 
 ## Area units — 2026-09-12
 Added square-metre/square-centimetre conversion, reconstruction and comparison, placed in Italian grade 5 and Spanish grade 6. Reuses the Korean measurement bank without changing generation or answers. The static explanation distinguishes the area factor 10,000 from the length factor 100. Browser checks covered ten seeds and separate one-page question/answer PDFs.
+
+## Fraction times a natural number — 2026-09-12
+Added the unchanged Korean fraction-mul-whole activity from 5-2-2, as upper-primary supplementary fraction practice (Italian grade 5; Spanish grade 6). Requires equivalent fractions and repeated addition; includes improper results and explicit denominator-one notation. Placement is editorial, not a claim of a mandated year-specific objective. Original answers/checks and ten browser seeds passed; separate question/answer PDFs each fit A4.
