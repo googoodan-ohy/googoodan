@@ -131,3 +131,6 @@ Validation: 15,930 activity answers and 14,240 drill questions agree with source
 2026-09-12: Four profiles reuse cube-count (class-two adjacent cubes; class-five height map), cube-view and cube-missing. Class-five placement is editorial spatial visualization practice supported by DM254/2012 geometry objectives, https://www.mim.gov.it/documents/20182/51310/DM%2B254_2012.pdf. A height map is explicitly labelled as a top view, with the front at its lower edge. No cube-generation logic changed.
 
 Validation: 17,010 activity answers and 14,240 drill questions match original engines; 174 static pages pass. Four browser routes, ten seeds each, and eight single-page A4 question/answer PDFs pass.
+
+
+2026-09-12: Added introductory solid identification in year two (original solid-basic, 2-2-6). Cuboid, cylinder and sphere display names localized, including answer choices; source generation and pictures preserved. This is selected introductory geometry practice, not full curriculum coverage. Validation: 17,280 activity answers and 14,240 drill questions match original; browser, static metadata and both one-page A4 PDFs pass.
