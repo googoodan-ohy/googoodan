@@ -12,7 +12,7 @@ function localize(q){if(!q.prompt)return q;q={...q,prompt:q.prompt.replace(/(?<!
  [/^(.+)을 대분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como número mixto.'],
  [/^(.+)을 가분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como fracción impropia.'],
  [/^(.+)개를 한 묶음에 (.+)개씩 묶습니다\. 몇 묶음이고 몇 개가 남나요\?$/,(_,a,b)=>'Forma grupos de '+b+' elementos usando '+a+' elementos. ¿Cuántos grupos completos obtienes y cuántos elementos sobran?'],
- [/^한 묶음의 양이 (.+)입니다\. (.+)묶음에 해당하는 양은 얼마인가요\?$/,(_,a,b)=>'Cada grupo tiene '+a+' elementos. ¿Cuántos elementos hay en '+b+(Number(b)===1?' grupo?':' grupos?')],
+ [/^한 묶음의 양이 (.+)입니다\. (.+)묶음에 해당하는 양은 얼마인가요\?$/,(_,a,b)=>a.includes('/')||b.includes('/')?'Cada unidad equivale a '+a+'. ¿Qué cantidad corresponde a '+b+(Number(b)===1?' unidad?':' unidades?'):'Cada grupo tiene '+a+' elementos. ¿Cuántos elementos hay en '+b+(Number(b)===1?' grupo?':' grupos?')],
  [/^(.+)의 (.+)배에 해당하는 수를 구하세요\.$/,(_,a,b)=>'Calcula '+b+(Number(b)===1?' vez ':' veces ')+a+'.'],
  [/^전체 양 (.+)을 (.+)씩 나누면 몇 묶음인가요\?$/,(_,c,a)=>'Reparte '+c+' elementos en grupos de '+a+'. ¿Cuántos grupos obtienes?'],
  [/^전체 양 (.+)을 (.+)묶음으로 똑같이 나누면 한 묶음의 양은 얼마인가요\?$/,(_,c,b)=>'Reparte '+c+' elementos en '+b+(Number(b)===1?' grupo.':' grupos iguales.')+' ¿Cuántos elementos hay en cada grupo?'],
