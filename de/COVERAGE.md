@@ -55,6 +55,7 @@ Total: 45 profiles.
 | Uhrzeiger zeichnen | Klasse 1/2 | 2 |
 | Sachaufgaben bis 9 | Klasse 1/2 | 6 |
 | Sachaufgaben bis 100 | Klasse 1/2 | 6 |
+| Sachaufgaben bis 1 000 | Klasse 3/4 | 6 |
 | Bilder und Malaufgaben | Klasse 1/2 | 20 |
 | Rechnen mit der 10 | Klasse 1/2 | 6 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
@@ -64,7 +65,7 @@ Total: 45 profiles.
 | Schriftlich multiplizieren | Klasse 3/4 | 7 |
 | Schriftlich dividieren | Klasse 3/4 | 4 |
 
-Total: 124 profiles.
+Total: 130 profiles.
 
 ## Next priorities
 
