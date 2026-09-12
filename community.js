@@ -11,7 +11,37 @@ async function askCredential(id){const saved=remembered(id);if(saved)return save
 const configured=()=>/^https:\/\//.test(cfg.apiBase||'')&&!!cfg.turnstileSiteKey;
 function status(msg){$('connectionStatus').textContent=msg;}
 async function api(path,method='GET',body){if(!configured())throw Error('무료 서버 계정 연결을 준비 중입니다. 아직 글은 전송되지 않습니다.');const r=await fetch(cfg.apiBase.replace(/\/$/,'')+path,{method,headers:body instanceof FormData?{}:{'Content-Type':'application/json'},body:body?(body instanceof FormData?body:JSON.stringify(body)):undefined,signal:AbortSignal.timeout(30000)});const data=await r.json();if(!r.ok)throw Error(data.error||'처리하지 못했습니다.');return data;}
-function human(){return new Promise((resolve,reject)=>{if(!configured()||!window.turnstile){reject(Error('스팸 방지 기능이 아직 연결되지 않았습니다.'));return;}$('challenge').showModal();let done=false;const finish=(error,value)=>{if(done)return;done=true;if(widget!==null){turnstile.remove(widget);widget=null;}$('challenge').close();error?reject(Error(error)):resolve(value);};$('cancelChallenge').onclick=()=>finish('전송을 취소했습니다.');$('challenge').oncancel=e=>{e.preventDefault();finish('전송을 취소했습니다.');};widget=turnstile.render('#turnstileBox',{sitekey:cfg.turnstileSiteKey,action:'board-write',callback:token=>finish(null,token),'error-callback':()=>finish('스팸 방지 연결을 다시 시도해 주세요.'),'expired-callback':()=>finish('검사 시간이 지났습니다. 다시 시도해 주세요.')});});}
+function human(){return new Promise((resolve,reject)=>{
+ if(!configured()){reject(Error('스팸 방지 기능이 아직 연결되지 않았습니다.'));return;}
+ const dialog=$('challenge');let done=false,deadline,readyPoll,rendered=false;
+ const finish=(error,value)=>{
+  if(done)return;done=true;clearTimeout(deadline);clearInterval(readyPoll);
+  if(widget!==null){try{window.turnstile?.remove(widget);}catch{}widget=null;}
+  $('turnstileBox').replaceChildren();dialog.close();
+  error?reject(Error(error)):resolve(value);
+ };
+ $('cancelChallenge').onclick=()=>finish('전송을 취소했습니다. 작성한 내용은 그대로 남아 있습니다.');
+ dialog.oncancel=e=>{e.preventDefault();finish('전송을 취소했습니다. 작성한 내용은 그대로 남아 있습니다.');};
+ dialog.showModal();
+ deadline=setTimeout(()=>finish('사람 확인이 지연되어 전송을 중단했습니다. 작성한 내용은 그대로 남아 있습니다. 등록을 다시 눌러 주세요. 계속되면 광고 차단 확장 기능이나 네트워크의 인증 사이트 차단 여부를 확인해 주세요.'),45000);
+ function renderChallenge(){
+  if(done||rendered||!window.turnstile?.render)return;
+  rendered=true;clearInterval(readyPoll);
+  try{
+   const id=turnstile.render('#turnstileBox',{
+    sitekey:cfg.turnstileSiteKey,action:'board-write',language:'ko',retry:'never','refresh-timeout':'never',
+    callback:token=>token?finish(null,token):finish('인증 응답이 비어 있습니다. 등록을 다시 눌러 주세요.'),
+    'error-callback':code=>{finish('사람 확인에 연결하지 못했습니다'+(code?' (오류 '+String(code)+')':'')+'. 작성한 내용은 그대로 남아 있습니다. 등록을 다시 눌러 주세요.');return true;},
+    'timeout-callback':()=>finish('사람 확인 시간이 지났습니다. 작성한 내용은 그대로 남아 있습니다. 등록을 다시 눌러 주세요.'),
+    'expired-callback':()=>finish('인증 유효 시간이 지났습니다. 등록을 다시 눌러 주세요.'),
+    'unsupported-callback':()=>finish('현재 브라우저에서 사람 확인을 실행하지 못했습니다. 최신 Chrome 또는 Edge에서 다시 시도해 주세요.')
+   });
+   if(done){try{turnstile.remove(id);}catch{}}else widget=id;
+  }catch{finish('사람 확인을 시작하지 못했습니다. 작성한 내용은 그대로 남아 있습니다. 등록을 다시 눌러 주세요.');}
+ }
+ readyPoll=setInterval(renderChallenge,200);renderChallenge();
+ });}
+
 async function write(path,method,body){return api(path,method,{...body,token:await human(),website:$('website').value});}
 function renderRich(delta){const mount=document.createElement('div');const q=new Quill(mount,{readOnly:true,modules:{toolbar:false}});q.setContents(delta);const html=DOMPurify.sanitize(q.root.innerHTML,{ALLOWED_TAGS:['p','br','strong','em','u','s','span','ol','ul','li','a','img','h1','h2','h3','blockquote','table','tbody','tr','td','th'],ALLOWED_ATTR:['style','class','href','src','width','height','data-row','data-list']});const div=document.createElement('div');div.innerHTML=html;div.querySelectorAll('a').forEach(a=>{a.target='_blank';a.rel='noopener noreferrer nofollow ugc';});return div.innerHTML;}
 function draftKey(){return 'gd-guest-draft:'+(editing||'new');}
@@ -34,7 +64,7 @@ $('photo').onclick=()=>{const input=document.createElement('input');input.type='
 editor.root.addEventListener('paste',e=>{if(e.clipboardData.files.length){e.preventDefault();e.stopImmediatePropagation();uploadPhotos([...e.clipboardData.files]);}},true);editor.root.addEventListener('drop',e=>{if(e.dataTransfer.files.length){e.preventDefault();e.stopImmediatePropagation();uploadPhotos([...e.dataTransfer.files]);}},true);
 $('table').onclick=()=>{editor.focus();editor.getModule('table').insertTable(3,3);};document.querySelectorAll('[data-table]').forEach(b=>b.onclick=()=>{editor.focus();editor.getModule('table')[b.dataset.table]();});$('undo').onclick=()=>editor.history.undo();$('redo').onclick=()=>editor.history.redo();$('link').onclick=()=>{const value=prompt('https:// 주소를 입력해 주세요.');if(!value)return;try{const u=new URL(value);if(!['http:','https:'].includes(u.protocol))throw Error();const r=editor.getSelection(true);r.length?editor.format('link',u.href):editor.insertText(r.index,u.href,{link:u.href},'user');}catch{alert('올바른 웹 주소를 입력해 주세요.');}};
 editor.root.addEventListener('click',e=>{selectedImage=e.target.tagName==='IMG'?e.target:null;$('imageWidth').disabled=!selectedImage;});$('imageWidth').onchange=()=>{const blot=selectedImage&&Quill.find(selectedImage);if(blot)editor.formatText(editor.getIndex(blot),1,'width',$('imageWidth').value,'user');};
-$('postForm').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;$('submitPost').disabled=true;try{const authKey=editing?editingCredential:await credential($('editCode').value);const saved=await write('/posts'+(editing?'/'+editing:''),editing?'PATCH':'POST',{title:$('title').value,nickname:$('nickname').value,category:$('category').value,content:editor.getContents(),editCode:authKey});remember(editing||saved.id,authKey);$('editCode').value='';clearTimeout(timer);try{localStorage.removeItem(draftKey());}catch{}$('composer').close();if($('reader').open)$('reader').close();loadPosts();}catch(err){$('draftStatus').textContent=err.message;}finally{busy=false;$('submitPost').disabled=false;}};
+$('postForm').onsubmit=async e=>{e.preventDefault();if(busy)return;saveDraft();busy=true;$('submitPost').disabled=true;try{const authKey=editing?editingCredential:await credential($('editCode').value);const saved=await write('/posts'+(editing?'/'+editing:''),editing?'PATCH':'POST',{title:$('title').value,nickname:$('nickname').value,category:$('category').value,content:editor.getContents(),editCode:authKey});remember(editing||saved.id,authKey);$('editCode').value='';clearTimeout(timer);try{localStorage.removeItem(draftKey());}catch{}$('composer').close();if($('reader').open)$('reader').close();loadPosts();}catch(err){$('draftStatus').textContent=err.message;}finally{busy=false;$('submitPost').disabled=false;}};
 $('commentForm').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;try{const key=await credential($('commentPassword').value);const saved=await write('/posts/'+activePost.id+'/comments','POST',{nickname:$('commentNick').value,text:$('commentText').value,editCode:key});remember(saved.id,key);$('commentText').value='';$('commentPassword').value='';$('commentStatus').textContent='댓글이 등록되었습니다.';openPost(activePost.id);}catch(err){$('commentStatus').textContent=err.message;}finally{busy=false;}};
 $('searchForm').onsubmit=e=>{e.preventDefault();loadPosts();};$('more').onclick=()=>loadPosts(true);window.addEventListener('beforeunload',()=>{if($('composer').open)saveDraft();});
 if(configured()){const s=document.createElement('script');s.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';s.async=true;document.head.append(s);loadPosts();}else{status('무료 서버 연결 준비 중입니다. 글쓰기와 임시저장을 미리 살펴볼 수 있습니다. 실제 등록은 연결 후 가능합니다.');$('posts').innerHTML='<div class="empty"><b>✎</b><h2>새로운 커뮤니티를 준비하고 있어요</h2><p>구글 로그인 없이 별명으로 이야기를 남길 수 있게 바뀝니다.</p></div>';}
