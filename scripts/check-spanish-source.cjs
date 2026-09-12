@@ -6,6 +6,6 @@ for(const[id,g,n,name,src,skill]of c.EsDefinitions)for(let seed=0;seed<30;seed++
 const a=c.KoMath.generate(id,0,seed,3),b=c.EsSourceMath.generate(src,0,seed,3,[0,1,2].map(mode=>({skill,mode})));
 a.forEach((s,i)=>s.questions.forEach((q,j)=>{assert.equal(q.answer,tr(b[i].questions[j].answer));assert.equal(JSON.stringify(q.check),JSON.stringify(b[i].questions[j].check));assert(!/[가-힣]|undefined|NaN/.test(q.prompt+q.task+q.reason+q.visual+q.answer));count++;}));}
 const d={};vm.createContext(d);load(d,['en/types.js','es/reuse/drill-catalog.js','ko/drill-engine.js']);const rows=d.DrillEngine.rows;load(d,['es/reuse/drill-localize.js']);let drills=0;
-for(const p of d.DrillCatalog.units[0].drills)for(let seed=0;seed<40;seed++){
+for(const p of d.DrillCatalog.units.flatMap(u=>u.drills))for(let seed=0;seed<40;seed++){
 const a=d.DrillEngine.rows(p,seed,4),b=rows(p,seed,4);a.forEach((q,i)=>{assert.equal(q.answer,b[i].answer);assert.equal(q.work,b[i].work);for(const k of ['a','b','op','mask'])assert.equal(q[k],b[i][k]);assert(!/[가-힣]|undefined|NaN/.test((q.prompt||'')+(q.work||'')+q.answer));drills++;});}
 console.log('PASS '+count+' activity answers and '+drills+' drill questions against the original Korean generators');
