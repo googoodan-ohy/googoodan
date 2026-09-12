@@ -1,6 +1,12 @@
 /* Display-only translation around the unchanged ko/drill-engine.js. */
 (()=>{
-function localize(q){if(!q.prompt)return q;q={...q,prompt:q.prompt.replace(/(\d+)과 (\d+\/\d+)/g,'$1 $2'),answer:typeof q.answer==='string'?q.answer.replace(/(\d+)과 (\d+\/\d+)/g,'$1 $2'):q.answer};let prompt=q.prompt;const rules=[
+function localize(q){if(!q.prompt)return q;q={...q,prompt:q.prompt.replace(/(?<![\d/])(\d+)과 (\d+\/\d+)/g,'$1 $2'),answer:typeof q.answer==='string'?q.answer.replace(/(?<![\d/])(\d+)과 (\d+\/\d+)/g,'$1 $2'):q.answer};let prompt=q.prompt;const rules=[
+ [/^(.+)의 약수를 모두 쓰세요\.$/,(_,a)=>'Scrivi tutti i divisori positivi di '+a+'.'],
+ [/^(.+)과 (.+)의 공약수를 모두 쓰세요\.$/,(_,a,b)=>'Scrivi tutti i divisori comuni positivi di '+a+' e '+b+'.'],
+ [/^(.+)을 기약분수로 나타내세요\.$/,(_,a)=>'Riduci '+a+' ai minimi termini.'],
+ [/^(.+)의 배수를 작은 것부터 5개 쓰세요\.$/,(_,a)=>'Scrivi i primi cinque multipli positivi di '+a+'.'],
+ [/^(.+)과 (.+)의 공배수를 작은 것부터 3개 쓰세요\.$/,(_,a,b)=>'Scrivi i primi tre multipli comuni positivi di '+a+' e '+b+'.'],
+ [/^(.+)과 (.+)을 가장 작은 공통 분모로 통분하세요\.$/,(_,a,b)=>'Riscrivi '+a+' e '+b+' con il minimo denominatore comune.'],
  [/^(.+)을 대분수로 나타내세요\.$/,(_,a)=>'Scrivi '+a+' come numero misto.'],
  [/^(.+)을 가분수로 나타내세요\.$/,(_,a)=>'Scrivi '+a+' come frazione impropria.'],
  [/^(.+)개를 한 묶음에 (.+)개씩 묶습니다\. 몇 묶음이고 몇 개가 남나요\?$/,(_,a,b)=>'Forma gruppi da '+b+' elementi usando '+a+' elementi. Quanti gruppi completi ottieni e quanti elementi avanzano?'],
