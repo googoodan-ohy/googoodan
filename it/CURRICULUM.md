@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 116 HTML pages, 89 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 120 HTML pages, 89 curriculum drill profiles and 14 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -50,3 +50,9 @@ Validation: 11,680 drill questions compared with the untranslated generator; 20 
 2026-09-12: Added 16 profiles as an editorial class-four progression: 15 original Korean 3-2-3 calculation, missing-number/digit and story profiles plus the original 3-1-3 exact-division profile for prerequisite review. Repeated multiplication-table review pages were not copied again. Internal source IDs remain unchanged to preserve generator behavior.
 
 One full Italian remainder-story template and display translations for group/remainder labels preserve quotient, remainder and calculation. Validation compares 14,240 drill questions, retaining all original numbers and working; all 16 routes pass browser checks and all 32 question/answer A4 PDFs have one page.
+
+## Illustrated geometry and measurement
+
+2026-09-12: Added angle classification, protractor reading, rectangle perimeter and rectangle area. Original angle-type, angle-measure, perimeter and area-rectangle branches and SVG diagrams remain unchanged. Display wording, answer labels and explanations are localized. Activities are placed in classes four/five as an editorial progression within primary geometry goals.
+
+Validation: 3,780 original-versus-localized activity answers across all 14 profiles; four routes with ten seeds each pass browser/diagram checks. All eight new question/answer A4 PDFs contain one page. Diagrams are marked as schematic in the static explanation.
