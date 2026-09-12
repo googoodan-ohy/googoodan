@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 130 HTML pages; 19 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 134 HTML pages; 23 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -45,3 +45,9 @@ Validation: 3,780 activity answers compared to source across 14 profiles; four n
 2026-09-12: Added ruler:cm, convert:mm, convert:m, convert:kg and convert:L using the original Korean generator and data. Full Spanish instructions express compound measurements in the smaller unit; reverse conversions are not claimed. Grade directories include these activities.
 
 Validation: 5,130 source-compared activity answers across 19 profiles; five routes with ten seeds each pass browser checks. All ten question/answer A4 PDFs contain one page. Static checks pass for 130 Spanish pages.
+
+## Decimals and fractions
+
+2026-09-12: Added decimal-model, decimal-fraction, reduce and fraction-compare-unlike using unchanged Korean generators. Display translation preserves numerical values and SVG coordinates; decimal text uses a comma. All four are editorial course-five placements within the third-cycle number representation, fraction comparison and divisibility objectives of [RD 157/2022](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). This is selected practice, not complete regional curriculum coverage.
+
+Validation: 6,210 activity answers and 14,240 drill questions agree with their original generators. Four new routes with ten seeds each pass diagram, description and answer checks. All eight question/answer PDFs contain one A4 page. Static checks pass for 134 pages.
