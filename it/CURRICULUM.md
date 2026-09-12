@@ -137,3 +137,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added first-year shape classification/counting (sort) and direct length comparison (length-compare). Original symbol groups and bar figures reused without changing values or generation. Diagram labels translated to A/B and short instructions to avoid SVG clipping. Selected introductory practice only. Validation: 17,820 activity answers and 14,240 drills agree with Korean sources; browser routes, regenerated sets and A4 question/answer PDFs pass.
+
+
+2026-09-12: Added original pattern (ABC/AAB repeating shapes) in year one and sequence:100 (consecutive numbers, step one) in year two. Static descriptions state these limits. Reused source figures, answer boxes and generation unchanged. Validation: 18,360 activity answers and 14,240 drill questions agree with originals; all new browser routes and one-page A4 question/answer PDFs pass.

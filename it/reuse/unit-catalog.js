@@ -33,6 +33,7 @@ definitions.push(...[["it-2-contare-cubetti",2,8,"Contare i cubetti","2-1-2","cu
 definitions.push(["it-2-solidi",2,9,"Riconoscere i solidi","2-2-6","solid-basic"]);
 definitions.push(...[["it-1-contare-forme",1,4,"Contare le forme uguali","1-1-2","sort"],["it-1-confrontare-lunghezze",1,5,"Confrontare le lunghezze","1-1-5","length-compare"]]);
 const compareText=s=>String(s).replaceAll('막대가 길수록 길이가 큽니다.',"Confronta le lunghezze.").replace(/(?<![가-힣])(가|나)(?![가-힣])/g,(_,x)=>x==='가'?'A':'B');
+definitions.push(...[["it-1-sequenze-forme",1,6,"Completare sequenze di forme","1-2-5","pattern"],["it-2-sequenze-numeri",2,10,"Numeri mancanti entro 100","1-2-1","sequence:100"]]);
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
@@ -77,6 +78,8 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='solid-basic'){prompt="Qual è il nome del solido rappresentato?";reason="Osserva le superfici piane e curve. Confronta il disegno con un oggetto reale.";}
   else if(skill==='sort'){prompt="Quanti simboli uguali a "+q.prompt[0]+" ci sono?";reason="Raggruppa i simboli della stessa forma e contali.";}
   else if(skill==='length-compare'){prompt="Quale barretta è più lunga, A o B?";reason="Le barrette partono dallo stesso punto. Confronta dove arrivano.";}
+  else if(skill==='pattern'){prompt="Quale simbolo continua la sequenza?";reason="Si ripete questo gruppo: "+q.reason.replace('가 반복됩니다.','')+'.';}
+  else if(skill==='sequence'){prompt="Scrivi il numero mancante.";reason="Ogni numero aumenta di "+q.reason.match(/^\d+/)[0]+'.';}
   else if(skill==='count'){prompt='Quanti pallini ci sono?';reason='Conta ogni pallino una sola volta.';}
   else if(skill==='compare'){prompt='Confronta i numeri. Quale segno è corretto?';reason='Confronta le quantità e usa >, < oppure =.';}
   else if(skill==='place'){const m=q.prompt.match(/^(\d+)에서 (일|십|백|천)의/),place=({일:'unità',십:'decine',백:'centinaia',천:'migliaia'})[m[2]];prompt='Qual è la cifra delle '+place+' nel numero '+m[1]+'?';reason='Da destra trovi unità, decine, centinaia e migliaia.';}
