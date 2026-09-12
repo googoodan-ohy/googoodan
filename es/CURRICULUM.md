@@ -105,3 +105,10 @@ Validation: 15,120 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added percent, chance and average-missing as selected course-six practice. Percent computes the percentage from a part/whole, not the quantity for a given percentage. Chance preserves three original red/blue-ball scenarios (impossible, certain, 50%); missing-data tasks preserve the original three-number mean. Instructions and display labels are Spanish, with generation unchanged.
 
 Validation: 15,930 activity answers and 14,240 drill questions agree with source. Three browser routes with ten seeds each pass descriptions and answers; all six question/answer PDFs contain one A4 page. Static checks pass for 171 Spanish pages.
+
+
+## Cubes and spatial visualization
+
+2026-09-12: Added four profiles: adjacent cube counting in course two; height-map counting, front/right views and column removal in course six. Placement is editorial practice under RD157/2022 spatial sense and manipulatives, https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296. This does not claim region-specific textbook alignment. Original Korean cube generation and figures remain unchanged.
+
+Validation: 17,010 activity answers and 14,240 drill questions match original engines. All 175 static pages pass. Four browser routes with ten seeds each and eight single-page A4 PDFs pass.
