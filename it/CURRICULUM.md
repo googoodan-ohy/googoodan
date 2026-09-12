@@ -146,3 +146,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added decimal-mul and decimal-div, retaining original arithmetic and answers. Localized decimal commas apply to expressions, answers and explanations without changing SVG attributes. Placement: class five in Italy; course six in Spain. Division is exact, at most one decimal place in the quotient. Validation: 19,440 activity answers and 14,240 drills match original; browser routes and one-page A4 question/answer PDFs pass.
+
+
+2026-09-12 usability audit: Localized the remaining 78 copy-count labels from Sets to Serie. At a 390px mobile viewport, unit selection works and actual PDF download produces four A4 pages for two question/answer sets, with different questions between sets. The same download check passed for Spanish. No worksheet generation or CSS changed.
