@@ -3,8 +3,8 @@ const outputs=[];
 for(const lang of ['it','es']){
  const c={KoMath:{}};vm.createContext(c);for(const f of ['en/types.js',lang+'/reuse/unit-catalog.js',lang+'/reuse/drill-catalog.js'])vm.runInContext(fs.readFileSync(f,'utf8'),c);
  const defs=lang==='it'?c.ItDefinitions:c.EsDefinitions;
- const names=lang==='it'?['prima','seconda','terza','quarta','quinta']:['primero','segundo','tercero','cuarto','quinto'];
- const routes=names.map((n,i)=>({grade:i+1,path:'/'+lang+'/'+(lang==='it'?'classe-'+n:'matematicas-'+(i+1)+'-primaria')+'.html',label:lang==='it'?'Classe '+n:(i+1)+'º de primaria'}));
+ const names=lang==='it'?['prima','seconda','terza','quarta','quinta']:['primero','segundo','tercero','cuarto','quinto','sexto'];
+ const routes=names.map((n,i)=>({grade:i+1,path:'/'+lang+'/'+(lang==='it'?'classe-'+n:'matematicas-'+(i+1)+'-primaria')+'.html',label:lang==='it'?'Classe '+n:(i+1)+'º de primaria'})).filter(r=>defs.some(d=>d[1]===r.grade));
  const template=fs.readFileSync(lang+'/units.html','utf8').replace(/<section class="fr-static"[^>]*>[\s\S]*?<\/section>/g,'');
  for(const route of routes){const g=route.grade,activities=defs.filter(d=>d[1]===g),drills=c.DrillCatalog.units.filter(u=>u.grade===g).flatMap(u=>u.drills);if(!activities.length)continue;
  const title=lang==='it'?'Matematica classe '+names[g-1]+': schede da stampare':'Matemáticas '+g+'º de primaria: fichas';

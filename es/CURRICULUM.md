@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 163 HTML pages; 52 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 168 HTML pages; 56 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -10,7 +10,7 @@ The common menus and engines reuse Korean assets. Activity generation uses the u
 
 Validation: 2,700 activity answers compared with original generation; 1,120 drill questions compared for answers, operands and working; browser checks for all 13 common routes, 10 activity routes and 7 drill routes. A4/Letter common-table PDFs each have one page. Activity and drill print checks must be retained before publication.
 
-Remaining: sixth-course material, broader geometry, measurement, data, fractions, regional mappings, and more arithmetic units. Reuse compatible Korean activities only; do not fill gaps with unrelated topics. No search-volume or ranking claims have been measured.
+Remaining: broader sixth-course material, broader geometry, measurement, data, fractions, regional mappings, and more arithmetic units. Reuse compatible Korean activities only; do not fill gaps with unrelated topics. No search-volume or ranking claims have been measured.
 
 Build experiments are under .work-english/spanish/. Builders recreate drafts and must not overwrite published pages without release preparation, version updates and verification.
 
@@ -93,3 +93,9 @@ Validation: 12,960 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added round-nearest, mixed, mixed-bracket and common-denominator as editorial course-five practice. Rounding is prerequisite review of three-digit numbers to tens/hundreds; expressions combine addition/multiplication; common-denominator tasks require both equivalent fractions. No original generation, choices or answers were changed.
 
 Validation: 14,040 activity answers and 14,240 drill questions agree with source. Four new browser routes with ten seeds each pass descriptions and answers. All eight question/answer A4 PDFs contain one page. Static checks pass for 163 Spanish pages.
+
+## Sixth-course polygon areas
+
+2026-09-12: Added original area-triangle, area-parallelogram, area-trapezoid and area-rhombus as editorial course-six practice within third-cycle area objectives. Original measurements and diagrams are retained; prompts specify bases/heights or diagonals and cm². Drawings are explicitly schematic. Added the sixth-course directory only after actual activities existed; its four links and grade selection are verified. Expanded display themes to twelve entries to support grade six using the unchanged Korean rendering scheme.
+
+Validation: 15,120 activity answers and 14,240 drill questions agree with source. Four activity routes with ten seeds each and the sixth-course directory pass browser checks. Grade switching and type selection work. All nine question/answer/directory A4 PDFs contain one page. Static checks pass for 168 Spanish pages.
