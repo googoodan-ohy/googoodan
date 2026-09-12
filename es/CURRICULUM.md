@@ -175,3 +175,6 @@ Grade 5 reuses Korean decimal-place (4-2-3), identifying the digit in tenths, hu
 
 ## Decimal comparison — 2026-09-12
 Grade 5 reuses Korean decimal-compare:3 with three-place values, comparing, choosing the relation and checking a proposed answer. Uses a decimal comma without altering numeric generation. Original source comparisons and ten browser seeds passed. No matching decimal-comparison activity was found in the shared common arithmetic definitions.
+
+## Grade-five decimal drills — 2026-09-12
+Added 19 profiles from Korean 4-2-3: 12 horizontal/vertical addition and subtraction profiles through three decimal places, four natural-number prerequisite reviews, two missing-number profiles and one story profile. This is editorial placement within the national third-cycle decimal arithmetic objectives, not a claim of matching every autonomous community. Original generation, profile settings and pools remain unchanged. Only finite fractional values in this decimal story are displayed as equivalent decimals. The four-group Korean menu is reused. All 26,190 activity answers and 17,280 drill questions match the original source; 19 browser routes and 38 separate A4 one-page question/answer PDFs passed. Spanish drills now total 108; activities remain 97.
