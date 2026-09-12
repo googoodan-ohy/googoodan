@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 100 HTML pages, 73 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 116 HTML pages, 89 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -21,7 +21,7 @@ Class labels are an editorial progression within these goals, not a claim that n
 
 Initial validation: 12 common routes; 10 activity routes with 10 seeds each; 7 drill routes; 2,700 original-versus-localized activity answers; 27 one-page activity/drill A4 PDFs; A4 and Letter common-table PDFs; four-page PDF download containing two sets with answers.
 
-Still to expand: drill units for classes four and five; broader picture-based activities, geometry, metric measurement, data and fractions; class-specific static directories. Reuse compatible Korean material and validate each mapping before adding it. Do not pad counts with duplicate pages or unrelated review.
+Still to expand: drill units for class five; broader picture-based activities, geometry, metric measurement, data and fractions; class-specific static directories. Reuse compatible Korean material and validate each mapping before adding it. Do not pad counts with duplicate pages or unrelated review.
 
 Search wording was checked against Italian educational resources, including Giunti Scuola's “Addizioni e sottrazioni” and Cose per Crescere's fractions/primary worksheets. No search-volume data or top-100 keyword coverage has been measured.
 
@@ -44,3 +44,9 @@ Validation: 8,480 drill questions compared to the untranslated generator, plus 2
 2026-09-12: Added 20 original Korean 3-1-4 profiles to class three as a second arithmetic unit. Two-digit by one-digit multiplication, prerequisite tables, missing factors/digits and equal-group problems reuse the original generation. Equal-group problems include inverse division; they are identified in the static explanation. Four complete Italian sentence templates translate the original multiplicative relations without changing answers or working.
 
 Validation: 11,680 drill questions compared with the untranslated generator; 20 browser routes passed selection, regeneration, descriptions and answers. All 40 new question/answer A4 PDFs contain one page. The 100-page static check passes.
+
+## Division with and without remainders
+
+2026-09-12: Added 16 profiles as an editorial class-four progression: 15 original Korean 3-2-3 calculation, missing-number/digit and story profiles plus the original 3-1-3 exact-division profile for prerequisite review. Repeated multiplication-table review pages were not copied again. Internal source IDs remain unchanged to preserve generator behavior.
+
+One full Italian remainder-story template and display translations for group/remainder labels preserve quotient, remainder and calculation. Validation compares 14,240 drill questions, retaining all original numbers and working; all 16 routes pass browser checks and all 32 question/answer A4 PDFs have one page.
