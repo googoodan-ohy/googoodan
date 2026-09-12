@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 193 HTML pages; 79 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 195 HTML pages; 81 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -142,3 +142,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Reused data-targets bar construction/comparison and picture-graph-to-table activities. Year-four bars include tied maxima, totals, drawing and paired-category differences. Year-three pictograms retain one symbol = 10 and correct confusion between symbols and actual counts. Original bank and artwork unchanged. Validation: 21,330 activity answers and 14,240 drills agree with original; all new routes and eight A4 question/answer PDFs across editions pass.
+
+
+2026-09-12: Added circle-parts and circle-size as editorial year-four practice. Original radius figure and diameter calculation reused, with complete terminology translated before shorter overlapping words. Static text states that the drawing is schematic and measurements come from the given labels. Validation: 21,870 activity answers and 14,240 drills agree with original; all four new routes and eight one-page A4 PDFs pass.
