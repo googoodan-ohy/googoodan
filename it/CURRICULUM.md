@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 80 HTML pages, 53 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 100 HTML pages, 73 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -38,3 +38,9 @@ Validation: source-comparison checks now cover 4,480 drill questions, plus the p
 2026-09-12: Added 25 original Korean 2-1-3 profiles for class two. Basic horizontal/vertical calculations, with/without carrying or borrowing, prerequisite one-digit work, missing digits/numbers, and relational problems are separated into the existing four menu groups. The stated two-digit range refers to operands; sums can exceed 99. Original generation logic and settings remain unchanged.
 
 Validation: 8,480 drill questions compared to the untranslated generator, plus 2,700 activity answers. All 25 added pages pass browser selection, static-description, answer and regeneration checks. All 50 question/answer A4 PDFs contain one page.
+
+## Multiplication and tables
+
+2026-09-12: Added 20 original Korean 3-1-4 profiles to class three as a second arithmetic unit. Two-digit by one-digit multiplication, prerequisite tables, missing factors/digits and equal-group problems reuse the original generation. Equal-group problems include inverse division; they are identified in the static explanation. Four complete Italian sentence templates translate the original multiplicative relations without changing answers or working.
+
+Validation: 11,680 drill questions compared with the untranslated generator; 20 browser routes passed selection, regeneration, descriptions and answers. All 40 new question/answer A4 PDFs contain one page. The 100-page static check passes.
