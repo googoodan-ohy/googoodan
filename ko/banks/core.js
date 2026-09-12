@@ -15,6 +15,73 @@ cuboid:'직육면체의 구성','cube-net':'정육면체의 전개도','cuboid-e
 'fraction-div-whole':'분수를 자연수로 나누기','whole-div-fraction-result':'몫을 분수로 나타내기',prism:'각기둥의 구성',pyramid:'각뿔의 구성','prism-net':'전개도로 입체 찾기','decimal-div-whole':'소수를 자연수로 나누기','decimal-fraction':'분수와 소수 연결',ratio:'비로 나타내기',percent:'백분율 구하기','ratio-compare':'비율 비교','graph-choice':'알맞은 그래프 선택',surface:'직육면체의 겉넓이',volume:'직육면체의 부피','volume-convert':'부피 단위 바꾸기',
 'fraction-div':'분수끼리 나누기','whole-div-fraction':'자연수를 분수로 나누기','fraction-div-mixed':'대분수 나눗셈','cube-view':'보는 방향과 모양','cube-missing':'가려진 쌓기나무','decimal-div':'소수끼리 나누기',proportion:'비례식의 빈칸','share-ratio':'비례배분','ratio-simplify':'간단한 자연수의 비','circle-circumference':'원의 둘레','circle-area':'원의 넓이','circle-half':'반원의 넓이',cylinder:'원기둥의 구성',cone:'원뿔의 구성',sphere:'구의 성질','cylinder-net':'원기둥 전개도'
 };
+// Approved topic names; keep the metadata in engine.js in sync.
+const profileNames={
+  "1-1-2": "입체 모양 구별하기",
+  "1-1-3": "9까지 더하고 빼기",
+  "1-1-4": "길이·넓이·무게 비교하기",
+  "1-1-5": "50까지 수 비교하기",
+  "1-2-1": "100까지 수 순서 찾기",
+  "1-2-3": "도형 구별하고 시계 읽기",
+  "1-2-5": "모양과 수의 규칙 찾기",
+  "2-1-1": "세 자리 수 비교하기",
+  "2-1-2": "평면도형·쌓기나무 알아보기",
+  "2-1-3": "두 자리 수 더하고 빼기",
+  "2-1-4": "자로 길이 재기",
+  "2-1-5": "기준에 따라 분류하기",
+  "2-1-6": "묶음으로 곱셈하기",
+  "2-2-1": "네 자리 수 비교하기",
+  "2-2-3": "m·cm 단위 바꾸기",
+  "2-2-4": "시각과 시간 계산하기",
+  "2-2-5": "표와 그래프 읽기",
+  "2-2-6": "수 배열의 규칙 찾기",
+  "3-1-1": "세 자리 수 더하고 빼기",
+  "3-1-2": "선의 종류와 직각 찾기",
+  "3-1-3": "곱셈구구로 나눗셈하기",
+  "3-1-4": "두 자리 수 곱셈하기",
+  "3-1-5": "길이·시간 단위 바꾸기",
+  "3-1-6": "분수와 소수 비교하기",
+  "3-2-1": "두·세 자리 수 곱셈하기",
+  "3-2-2": "반지름과 지름 구하기",
+  "3-2-3": "몫과 나머지 구하기",
+  "3-2-4": "들이 단위 바꾸고 더하기",
+  "3-2-5": "가분수를 대분수로 바꾸기",
+  "3-2-6": "그림그래프 읽고 계산하기",
+  "4-1-1": "큰 수 자릿값·크기 알기",
+  "4-1-2": "각도 읽고 각의 합 구하기",
+  "4-1-3": "두 자리 수로 곱셈·나눗셈",
+  "4-1-4": "도형 밀기·뒤집기·돌리기",
+  "4-1-5": "막대그래프와 표 읽기",
+  "4-1-6": "수와 도형의 규칙 찾기",
+  "4-2-1": "분모 같은 분수 계산하기",
+  "4-2-2": "삼각형 분류·각 구하기",
+  "4-2-3": "소수 더하고 빼고 비교하기",
+  "4-2-4": "사각형 성질·각 알아보기",
+  "4-2-5": "꺾은선그래프와 표 읽기",
+  "4-2-6": "다각형·대각선 알아보기",
+  "5-1-1": "혼합 계산 순서 익히기",
+  "5-1-2": "약수·배수 구하기",
+  "5-1-3": "대응 관계와 빈칸 찾기",
+  "5-1-5": "통분해 분수 계산하기",
+  "5-2-1": "수의 범위·어림 익히기",
+  "5-2-2": "분수 곱셈 계산하기",
+  "5-2-3": "합동·대칭 성질 알아보기",
+  "5-2-4": "소수 곱셈·소수점 익히기",
+  "5-2-5": "직육면체·전개도 살펴보기",
+  "5-2-6": "평균·가능성 알아보기",
+  "6-1-1": "분수를 자연수로 나누기",
+  "6-1-2": "각기둥·각뿔 살펴보기",
+  "6-1-3": "소수를 자연수로 나누기",
+  "6-1-4": "비·비율·백분율 구하기",
+  "6-1-5": "띠그래프 읽고 종류 고르기",
+  "6-1-6": "겉넓이·부피 구하기",
+  "6-2-1": "분수로 나눗셈하기",
+  "6-2-2": "쌓기나무 수·모양 알아보기",
+  "6-2-3": "소수로 나눗셈하기",
+  "6-2-4": "비례식·비례배분 풀기",
+  "6-2-5": "원주·원 넓이 구하기",
+  "6-2-6": "원기둥·원뿔·구 살펴보기"
+};
 const banks={};
 for(const u of KoCatalog.units){
  const seen=new Set(),activities=[];
@@ -28,7 +95,7 @@ for(const u of KoCatalog.units){
  if(activities.length<3)activities.push({skill:activities[0].skill,mode:2,method:'diagnose',title:'주장의 옳고 그름 판단하기'});
  if(activities.length<3)activities.push({skill:'equal',mode:0,method:'prerequisite-equality',title:'이전에 배운 개념 · 같은 수 만들기'});
  const chunks=[];if(activities.length<=5)chunks.push(activities);else{chunks.push(activities.slice(0,3),activities.slice(3))}
- banks[u.id]=chunks.map((activities,i)=>({name:chunks.length===1?'핵심 개념과 적용':i===0?'기본 개념 연결':'여러 조건에 적용',activities}));
+ banks[u.id]=chunks.map((activities,i)=>({name:chunks.length===1?(profileNames[u.id]||'핵심 개념과 적용'):i===0?'기본 개념 연결':'여러 조건에 적용',activities}));
 }
 function generate(id,p,seed,n,excluded){
  const spec=banks[id][p],art=KoArt.session(seed,excluded);
