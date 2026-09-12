@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 205 HTML pages, 89 curriculum drill profiles and 92 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 206 HTML pages, 89 curriculum drill profiles and 93 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -182,3 +182,6 @@ Three activities reuse the unchanged Korean measurement bank: hours/half-hours i
 
 ## Area units — 2026-09-12
 Added square-metre/square-centimetre conversion, reconstruction and comparison, placed in Italian grade 5 and Spanish grade 6. Reuses the Korean measurement bank without changing generation or answers. The static explanation distinguishes the area factor 10,000 from the length factor 100. Browser checks covered ten seeds and separate one-page question/answer PDFs.
+
+## Fraction times a natural number — 2026-09-12
+Added the unchanged Korean fraction-mul-whole activity from 5-2-2, as upper-primary supplementary fraction practice (Italian grade 5; Spanish grade 6). Requires equivalent fractions and repeated addition; includes improper results and explicit denominator-one notation. Placement is editorial, not a claim of a mandated year-specific objective. Original answers/checks and ten browser seeds passed; separate question/answer PDFs each fit A4.
