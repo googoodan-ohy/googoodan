@@ -10,7 +10,7 @@
    button.disabled=true;button.textContent=(en?"Preparing PDF…":"Preparazione PDF…");
    if(typeof window.GDPreparePDF!=='function')throw Error((en?"PDF saving is not available on this page yet.":"Il salvataggio PDF non è disponibile qui."));
    window.GDPreparePDF();const bundle=document.querySelector('#print-bundle');if(!bundle?.children.length)throw Error((en?"Select worksheets or answer sheets to save.":"Scegli le schede o le soluzioni."));
-   await Promise.all([load('/vendor/html2canvas.min.js'),load('/vendor/jspdf.umd.min.js')]);
+   await Promise.all([load('/vendor/html2canvas.min.js?v=20260912-pdf-tools'),load('/vendor/jspdf.umd.min.js?v=20260912-pdf-tools')]);
    const css=await Promise.all([...document.querySelectorAll('link[rel=stylesheet]')].map(async link=>{const r=await fetch(link.href);if(!r.ok)throw Error((en?"Could not load the worksheet styles.":"Impossibile caricare gli stili della scheda."));return (await r.text()).replace(/url\((?!["']?(?:data:|https?:|\/|#))(["']?)([^)'" ]+)\1\)/g,(_,q,url)=>'url("'+new URL(url,link.href).href+'")');}));
    const styles=[...css,...[...document.querySelectorAll('style')].map(s=>s.textContent)].join('\n').replace(/@media\s+screen/gi,'@media not all').replace(/@media\s+print/gi,'@media all');
    frame=document.createElement('iframe');frame.setAttribute('aria-hidden','true');frame.style.cssText='position:fixed;left:-20000px;top:0;width:1280px;height:1200px;border:0;pointer-events:none';document.body.append(frame);

@@ -149,3 +149,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12 usability audit: Localized the remaining 78 copy-count labels from Sets to Serie. At a 390px mobile viewport, unit selection works and actual PDF download produces four A4 pages for two question/answer sets, with different questions between sets. The same download check passed for Spanish. No worksheet generation or CSS changed.
+
+
+2026-09-12: Versioned dynamically loaded html2canvas/jsPDF URLs and every reference to the language PDF exporter. Actual four-page question/answer download passed for both editions after the cache change. PDF generation and worksheet calculations are unchanged.
