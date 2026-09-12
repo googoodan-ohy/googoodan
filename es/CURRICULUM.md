@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 208 HTML pages; 88 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 211 HTML pages; 88 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -166,3 +166,12 @@ Added the unchanged Korean fraction-mul-whole activity from 5-2-2, as upper-prim
 
 ## Equivalent ratios — 2026-09-12
 Grade 6 adds the unchanged proportion activity from Korean 6-2-4. This is practice in equality of ratios using the same multiplication factor, not inverse proportion or a complete contextual word-problem sequence. Spain third-cycle proportional reasoning explicitly includes equality of ratios and proportionality coefficients: https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296 (Annex II, Mathematics, third cycle, A.5). Thirty source-comparison seeds and ten browser seeds passed; question/answer PDFs each fit one A4 page.
+
+## Volume units — 2026-09-12
+Grade 6 reuses Korean 6-1-6 measurement-bank m³/cm³ conversions and comparisons. The conversion factor is 1,000,000. Long numeric answers use an 80px writing box verified in the browser; separate question/answer PDFs fit A4 across ten seeds. Source: RD 157/2022 Annex II, Mathematics, third-cycle metric volume and equivalences: https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296
+
+## Decimal place identification — 2026-09-12
+Grade 5 reuses Korean decimal-place (4-2-3), identifying the digit in tenths, hundredths and thousandths. Decimal comma is display-only. The original deliberate wrong answers are preserved, including 10 as an impossible digit for students to reject. Source-answer comparisons and ten browser seeds passed; question and answer PDFs each fit A4.
+
+## Decimal comparison — 2026-09-12
+Grade 5 reuses Korean decimal-compare:3 with three-place values, comparing, choosing the relation and checking a proposed answer. Uses a decimal comma without altering numeric generation. Original source comparisons and ten browser seeds passed. No matching decimal-comparison activity was found in the shared common arithmetic definitions.

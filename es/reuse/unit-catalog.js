@@ -34,6 +34,9 @@ definitions.push(...[["es-2-dibujar-reloj",2,13,"Dibujar el reloj: horas y media
 definitions.push(["es-6-metros-cuadrados-centimetros",6,16,"Metros cuadrados y centímetros cuadrados","5-1-6","metric-m²-cm²",0]);
 definitions.push(["es-6-fracciones-por-naturales",6,17,"Fracciones por un número natural","5-2-2","fraction-mul-whole"]);
 definitions.push(["es-6-proporciones-equivalentes",6,18,"Proporciones equivalentes","6-2-4","proportion"]);
+definitions.push(["es-6-metros-cubicos-centimetros",6,19,"Metros cúbicos y centímetros cúbicos","6-1-6","metric-m³-cm³",0]);
+definitions.push(["es-5-valor-posicional-decimales",5,23,"Valor posicional de los decimales","4-2-3","decimal-place"]);
+definitions.push(["es-5-comparar-decimales",5,24,"Comparar números decimales","4-2-3","decimal-compare:3"]);
 const documentLang='es';
 const clockCopy={"draw":"Dibuja las agujas para indicar las ","read":"Lee la hora y escribe también qué hora será 30 minutos después.","long":"La aguja de los minutos señala ","short":" y la de las horas señala ","between":" y está entre ","end":". Escribe la hora y dibuja las agujas.","reason":"La aguja corta indica las horas y la larga los minutos. Cada intervalo grande vale 5 minutos.","now":"Hora actual","later":"30 minutos después","time":"Hora","work":"Operación o línea del tiempo","answer":"Respuesta","duration":["Tiempo transcurrido","Hora de inicio","Hora final"],"clock":["Dibuja las agujas","Lee y añade tiempo","Reconstruye la hora"],"start":"Inicio: ","arrival":"Final: ","elapsed":"Tiempo transcurrido: ","askDuration":"¿Cuánto tiempo ha transcurrido?","askStart":"¿A qué hora empezó?","askEnd":"¿A qué hora terminó?","reasons":["Resta la hora inicial de la final.","Resta la duración de la hora final.","Suma la duración a la hora inicial."]};
 const timeText=s=>String(s).replaceAll('class="learning-clock"','class="learning-clock" style="width:85px;height:85px"').replaceAll('식 또는 시간선',clockCopy.work).replaceAll('30분 뒤',clockCopy.later).replaceAll('지금',clockCopy.now).replaceAll('시각',clockCopy.time).replaceAll('답:',clockCopy.answer+':').replace(/(\d+)분/g,'$1 min');
@@ -76,6 +79,8 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='flat-count'){prompt='¿Cuántos lados rectos tiene la figura?';reason='El triángulo tiene 3 lados y el cuadrilátero 4; el círculo no tiene lados rectos.';}
   else if(skill==='lines'){prompt='¿La figura es una recta, una semirrecta o un segmento?';reason='El segmento tiene dos extremos; la semirrecta tiene un origen; la recta continúa en ambas direcciones.';}
   else if(skill==='polygon'){prompt='¿Cuántos lados tiene el polígono?';reason='Sigue el contorno y cuenta cada lado una sola vez.';}
+  else if(skill==='decimal-compare'){prompt='Compara los números y escribe >, < o =.';reason='Alinea las comas y compara desde la parte entera. Si es igual, sigue con décimas, centésimas y milésimas.';}
+  else if(skill==='decimal-place'){const value=q.prompt.match(/^[0-9.]+/)[0],place=q.prompt.includes('첫째')?'décimas':q.prompt.includes('둘째')?'centésimas':'milésimas';prompt='En '+value+', ¿qué cifra ocupa el lugar de las '+place+'?';reason='Después de la coma están, en orden, las décimas, las centésimas y las milésimas.';}
   else if(skill==='proportion'){prompt='Encuentra el número que falta para que las dos razones sean equivalentes.';reason='Multiplica los dos términos de la primera razón por '+q.reason.match(/같은 수 (\d+)/)[1]+'.';}
   else if(skill==='factor'){const n=q.prompt.match(/^(\d+)/)[0];prompt='Escribe todos los divisores positivos de '+n+'.';reason='Busca los números naturales que dividen '+n+' sin dejar resto.';}
   else if(skill==='multiple'){const n=q.prompt.match(/^(\d+)/)[0];prompt='Escribe los tres primeros múltiplos positivos de '+n+' en orden creciente.';reason='Multiplica '+n+' por 1, 2 y 3.';}
@@ -107,7 +112,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   if(!q.check&&!skill.startsWith('time-clock')&&i===1)prompt+=' Elige la respuesta.';
   if(!q.check&&!skill.startsWith('time-clock')&&i===2)prompt+=' Comprueba la respuesta propuesta.';
   const display=(skill.startsWith('time-clock')||skill==='time-duration')?s=>timeText(tr(geometryText(s))):skill.startsWith('metric-')?s=>tr(geometryText(s)):skill.startsWith('data-')?s=>tr(bankText(geometryText(s))):skill.startsWith('geometry-')?s=>tr(geometryText(s)):skill==='length-compare'?s=>tr(compareText(s)):skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
-  if(skill==='metric-m²-cm²'&&i<2){let boxIndex=0;q={...q,task:q.task.replace(/□/g,()=>{boxIndex++;return i===0||boxIndex===2?'<span class="write-answer-box" style="min-width:70px" aria-label="□"></span>':'□';})};}
+  if(['metric-m²-cm²','metric-m³-cm³'].includes(skill)&&i<2){let boxIndex=0;q={...q,task:q.task.replace(/□/g,()=>{boxIndex++;return i===0||boxIndex===2?'<span class="write-answer-box" style="min-width:80px!important" aria-label="□"></span>':'□';})};}
   return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};
