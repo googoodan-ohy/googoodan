@@ -1,6 +1,12 @@
 /* Display-only translation around the unchanged ko/drill-engine.js. */
 (()=>{
 function localize(q){if(!q.prompt)return q;q={...q,prompt:q.prompt.replace(/(?<![\d/])(\d+)과 (\d+\/\d+)/g,'$1 $2'),answer:typeof q.answer==='string'?q.answer.replace(/(?<![\d/])(\d+)과 (\d+\/\d+)/g,'$1 $2'):q.answer};let prompt=q.prompt;const rules=[
+ [/^(.+)의 약수를 모두 쓰세요\.$/,(_,a)=>'Escribe todos los divisores positivos de '+a+'.'],
+ [/^(.+)과 (.+)의 공약수를 모두 쓰세요\.$/,(_,a,b)=>'Escribe todos los divisores comunes positivos de '+a+' y '+b+'.'],
+ [/^(.+)과 (.+)의 최대공약수를 구하세요\.$/,(_,a,b)=>'Calcula el máximo común divisor de '+a+' y '+b+'.'],
+ [/^(.+)의 배수를 작은 것부터 5개 쓰세요\.$/,(_,a)=>'Escribe los primeros cinco múltiplos positivos de '+a+'.'],
+ [/^(.+)과 (.+)의 공배수를 작은 것부터 3개 쓰세요\.$/,(_,a,b)=>'Escribe los primeros tres múltiplos comunes positivos de '+a+' y '+b+'.'],
+ [/^(.+)과 (.+)의 최소공배수를 구하세요\.$/,(_,a,b)=>'Calcula el mínimo común múltiplo de '+a+' y '+b+'.'],
  [/^(.+)을 기약분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como fracción irreducible.'],
  [/^(.+)과 (.+)을 가장 작은 공통 분모로 통분하세요\.$/,(_,a,b)=>'Escribe '+a+' y '+b+' con el mínimo denominador común.'],
  [/^(.+)을 대분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como número mixto.'],
