@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 194 HTML pages, 89 curriculum drill profiles and 81 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 196 HTML pages, 89 curriculum drill profiles and 83 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -167,3 +167,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added circle-parts and circle-size as editorial year-four practice. Original radius figure and diameter calculation reused, with complete terminology translated before shorter overlapping words. Static text states that the drawing is schematic and measurements come from the given labels. Validation: 21,870 activity answers and 14,240 drills agree with original; all four new routes and eight one-page A4 PDFs pass.
+
+
+2026-09-12: Added triangle-type and quad-type in editorial year four. Triangle angle data and quadrilateral property scenarios preserved; full shape names translated before overlapping fragments. Quadrilateral instructions ask for the most specific name to accommodate inclusive classifications. Validation: 22,410 activity answers and 14,240 drills agree with original; browser and A4 question/answer PDFs pass.
