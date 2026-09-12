@@ -9,6 +9,7 @@ definitions.push(...[["es-2-leer-tablas",2,4,"Leer tablas de datos","2-2-5","tab
 definitions.push(...[["es-2-horas-medias",2,5,"Reloj: horas y medias horas","1-2-3","clock:30"],["es-2-semanas-dias",2,6,"Semanas y días","2-2-4","calendar"],["es-3-reloj-minutos",3,6,"Reloj: intervalos de 5 minutos","2-2-4","clock:5"],["es-3-hora-final",3,7,"Calcular la hora final","2-2-4","elapsed"],["es-4-minutos-segundos",4,9,"Convertir minutos y segundos","3-1-5","time-seconds"]]);
 definitions.push(...[["es-1-figuras-planas",1,3,"Reconocer figuras planas","1-2-3","flat-basic"],["es-2-contar-lados",2,7,"Contar los lados de las figuras","2-1-2","flat-count"],["es-3-lineas-segmentos",3,8,"Rectas, semirrectas y segmentos","3-1-2","lines"],["es-3-lados-poligonos",3,9,"Contar los lados de los polígonos","4-2-6","polygon"]]);
 definitions.push(...[["es-5-sumas-igual-denominador",5,9,"Sumas de fracciones: igual denominador","4-2-1","fraction-add-same"],["es-5-restas-igual-denominador",5,10,"Restas de fracciones: igual denominador","4-2-1","fraction-sub-same"],["es-5-sumas-fracciones",5,11,"Sumas de fracciones","5-1-5","fraction-add"],["es-5-restas-fracciones",5,12,"Restas de fracciones","5-1-5","fraction-sub"]]);
+definitions.push(...[["es-5-sumas-decimales",5,13,"Sumas con números decimales","4-2-3","decimal-add"],["es-5-restas-decimales",5,14,"Restas con números decimales","4-2-3","decimal-sub"],["es-5-decimales-por-naturales",5,15,"Multiplicar decimales por naturales","5-2-4","decimal-mul-whole"],["es-5-decimales-entre-naturales",5,16,"Dividir decimales entre naturales","6-1-3","decimal-div-whole"]]);
 const dataText=s=>String(s).replaceAll('사과','Manzanas').replaceAll('배','Peras').replaceAll('귤','Mandarinas').replace(/● 한 개는 (\d+)명/g,'● = $1 personas').replaceAll('선택한 사람 수 (명)','Número de personas').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 const tr=s=>String(s).replaceAll('삼각형','triángulo').replaceAll('사각형','cuadrilátero').replaceAll('원','círculo').replaceAll('선분','segmento').replaceAll('반직선','semirrecta').replaceAll('직선','recta').replace(/(\d+)시\s*(\d+)분/g,(_,h,m)=>h+':'+m.padStart(2,'0')).replaceAll('친구의 답:','Respuesta propuesta:').replaceAll('맞으면 ○, 틀리면 ×. 틀린 답은 고치세요.','Verdadero: ○. Falso: ×. Corrige la respuesta incorrecta.').replaceAll('바른 답:','Respuesta correcta:').replaceAll('예각','agudo').replaceAll('직각','recto').replaceAll('둔각','obtuso').replaceAll('아니요','No').replaceAll('예','Sí').replaceAll('문제 그림','Figura del ejercicio');
@@ -18,7 +19,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
  const d=definitions.find(x=>x[0]===id);if(!d||p!==0)throw Error('Unsupported Spanish topic');
  return source.generate(d[4],0,seed,n,[0,1,2].map(mode=>({skill:d[5],mode}))).map((s,i)=>({...s,title:['Observa y resuelve','Completa o elige','Comprueba la respuesta'][i],questions:s.questions.map(q=>{
   const skill=d[5].split(':')[0];let prompt,reason;
-  if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcula el resultado.','Escribe el número que falta.','Comprueba el resultado propuesto.'][i];reason=c.x+' '+c.op+' '+c.y+' = '+c.result;}
+  if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcula el resultado.','Escribe el número que falta.','Comprueba el resultado de '+q.reason.split(' = ')[0]+'.'][i];reason=q.reason.replaceAll('이므로',', por tanto');}
   else if(q.check?.kind==='fraction'){prompt=i===1?'Completa el numerador que falta.':i===2?'Calcula y comprueba el resultado propuesto.':d[4]==='4-2-1'?'Calcula el resultado.':'Calcula y escribe una fracción irreducible o un número entero.';reason=q.reason;}
   else if(skill==='perimeter'){const c=q.check;prompt='¿Cuál es el perímetro del rectángulo en cm?';reason='('+c.a+' + '+c.b+') × 2 = '+c.result+' cm';}
   else if(skill==='area-rectangle'){const c=q.check;prompt='¿Cuál es el área del rectángulo en cm²?';reason=c.a+' × '+c.b+' = '+c.result+' cm²';}
@@ -51,7 +52,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   if(!q.check&&i===1)prompt+=' Elige la respuesta.';
   if(!q.check&&i===2)prompt+=' Comprueba la respuesta propuesta.';
   const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
-  return {...q,prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
+  return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};
 })();
