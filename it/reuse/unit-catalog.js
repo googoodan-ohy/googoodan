@@ -36,15 +36,18 @@ const compareText=s=>String(s).replaceAll('막대가 길수록 길이가 큽니�
 definitions.push(...[["it-1-sequenze-forme",1,6,"Completare sequenze di forme","1-2-5","pattern"],["it-2-sequenze-numeri",2,10,"Numeri mancanti entro 100","1-2-1","sequence:100"]]);
 definitions.push(...[["it-1-scomporre-numeri",1,7,"Scomporre i numeri entro 10","1-2-2","bond:10"],["it-2-moltiplicazioni-schieramenti",2,11,"Moltiplicazioni con schieramenti","2-1-6","array"]]);
 definitions.push(...[["it-5-moltiplicare-decimali",5,28,"Moltiplicare due numeri decimali","5-2-4","decimal-mul"],["it-5-divisore-decimale",5,29,"Dividere per un numero decimale","6-2-2","decimal-div"]]);
+definitions.push(...[["it-4-traslazioni-griglia",4,16,"Traslazioni sulla griglia","4-1-4","geometry-move"],["it-4-riflessioni-griglia",4,17,"Riflessioni sulla griglia","4-1-4","geometry-flip"],["it-5-rotazioni-griglia",5,30,"Rotazioni di 90 gradi sulla griglia","4-1-4","geometry-turn"]]);
+const geometryText=s=>String(s).replaceAll('빨간 모양을 확인하세요.',"Controlla la figura rossa.").replaceAll('빨간 모양이 처음 모양입니다.',"La figura rossa è quella iniziale.").replaceAll('×, 빨간 모양으로 고칩니다.',"×, correggi seguendo la figura rossa.").replaceAll('중심',"Centro").replace(/src="art\//g,'src="/ko/art/').replace(/alt="[^"]*"/g,'alt=""');
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
 globalThis.KoCatalog={units:definitions.map(([id,grade,number,name])=>({id,grade,number,name,semester:1,gradeLabel:'Classe '+grade})),themes:Array.from({length:10},()=>['Un passo alla volta','Osserva, calcola e spiega','#278477','#edf8e9','rabbit'])};
 globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id);return d?[{name:d[3]}]:[];},generate(id,p,seed,n){
  const d=definitions.find(x=>x[0]===id);if(!d||p!==0)throw Error('Unsupported Italian topic');
- return source.generate(d[4],0,seed,n,[0,1,2].map(mode=>({skill:d[5],mode}))).map((s,i)=>({...s,title:['Osserva e risolvi','Completa o scegli','Controlla la risposta'][i],questions:s.questions.map(q=>{
+ return (d[5].startsWith('geometry-')?ItGeometrySource.generate(d[4],source.profiles(d[4]).length+['geometry-move','geometry-flip','geometry-turn'].indexOf(d[5]),seed,n):source.generate(d[4],0,seed,n,[0,1,2].map(mode=>({skill:d[5],mode})))).map((s,i)=>({...s,title:['Osserva e risolvi','Completa o scegli','Controlla la risposta'][i],questions:s.questions.map(q=>{
   const skill=d[5].split(':')[0];let prompt,reason;
-  if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcola il risultato.','Scrivi il numero mancante.','Controlla il risultato di '+q.reason.split(' = ')[0]+'.'][i];reason=q.reason.replaceAll('이므로',', quindi');}
+  if(q.check?.kind==='transform'){const inst=q.check.type==='move'?"Sposta la figura di "+q.check.dx+" caselle a destra e di una casella in basso.":q.check.type==='flip'?"Rifletti la figura rispetto alla linea tratteggiata.":"Ruota la figura di 90° in senso orario intorno al punto indicato.";prompt=inst+[" Disegna la figura trasformata."," La figura mostra il risultato: disegna la figura iniziale."," La figura viola è il risultato corretto della trasformazione della figura verde? Correggila se necessario."][i];reason=["Applica la stessa trasformazione a ogni vertice.","Ripercorri la trasformazione al contrario.","Controlla la posizione di ogni vertice: forma e dimensioni restano uguali."][i];}
+  else if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcola il risultato.','Scrivi il numero mancante.','Controlla il risultato di '+q.reason.split(' = ')[0]+'.'][i];reason=q.reason.replaceAll('이므로',', quindi');}
   else if(q.check?.kind==='fraction'){prompt=i===1?'Completa il numeratore mancante.':i===2?'Calcola e controlla il risultato proposto.':d[4]==='4-2-1'?'Calcola il risultato.':'Calcola e scrivi una frazione ridotta o un numero intero.';reason=q.reason;}
   else if(skill==='perimeter'){const c=q.check;prompt='Qual è il perimetro del rettangolo in cm?';reason='('+c.a+' + '+c.b+') × 2 = '+c.result+' cm';}
   else if(skill==='area-rectangle'){const c=q.check;prompt='Qual è l’area del rettangolo in cm²?';reason=c.a+' × '+c.b+' = '+c.result+' cm²';}
@@ -92,7 +95,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else{prompt='Confronta le due frazioni.';reason='Con denominatori uguali, confronta i numeratori.';}
   if(!q.check&&i===1)prompt+=' Scegli la risposta.';
   if(!q.check&&i===2)prompt+=' Controlla la risposta proposta.';
-  const display=skill==='length-compare'?s=>tr(compareText(s)):skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
+  const display=skill.startsWith('geometry-')?s=>tr(geometryText(s)):skill==='length-compare'?s=>tr(compareText(s)):skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
   return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};
