@@ -15,7 +15,7 @@ const modes={
 '배열을 보고 곱셈식 쓰기':'array','가려진 묶음 수 찾기':'missing','잘못 계산한 구구단 고치기':'error',
 '구구단 표의 빈칸 채우기':'table','이웃한 구구단으로 계산하기':'neighbor','이야기에 맞는 식 고르기':'choose'
 };
-const profiles=Array.from({length:8},(_,i)=>({name:(i+2)+'단 익히기',tables:[i+2],activities:single[i].map(title=>({title,method:modes[title]}))}));
+const profiles=Array.from({length:8},(_,i)=>({name:(i+2)+'단 익히기 · 개념 문제',tables:[i+2],activities:single[i].map(title=>({title,method:modes[title]}))}));
 const add=(name,tables,methods)=>profiles.push({name,tables,activities:methods.map(method=>({method,title:Object.keys(modes).find(k=>modes[k]===method)||({
 'zero-groups':'빈 묶음의 개수','zero-order':'순서를 바꾼 0의 곱셈','zero-story':'0묶음인 이야기',family:'가족 소풍 이야기',pack:'상자 수 거꾸로 찾기',team:'준비물 계산의 실수 찾기',ticket:'장난감 탈것 배열하기',reverse:'이야기 속 묶음 수 찾기',compare:'두 묶음의 개수 비교',create:'구구단에 맞는 그림 그리기',commute:'줄과 칸을 바꾸어 보기',target:'목표 수를 만드는 구구단',chain:'구구단 규칙 이어가기'
 })[method]}))});
