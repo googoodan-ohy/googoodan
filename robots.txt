@@ -3,7 +3,6 @@ Allow: /
 
 Sitemap: https://googoodan.com/sitemap.xml
 
-Sitemap: https://googoodan.com/en/sitemap.xml
 
 Sitemap: https://googoodan.com/ja/sitemap.xml
 
