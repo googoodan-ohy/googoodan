@@ -60,8 +60,9 @@ Total: 45 profiles.
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 | Schriftlich rechnen bis 100 | Klasse 3/4 | 1 |
 | Dreistellig addieren und subtrahieren | Klasse 3/4 | 7 |
+| Rechenwege bis 100 | Klasse 1/2 | 3 |
 
-Total: 110 profiles.
+Total: 113 profiles.
 
 ## Next priorities
 
