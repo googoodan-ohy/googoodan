@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 191 HTML pages; 77 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 193 HTML pages; 79 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -139,3 +139,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Reused data-targets line and percent banks in a scoped wrapper. Line tasks find tied maxima, draw from a table and compare consecutive increases; percent tasks use a total of 200, cumulative strip boundaries and paired category comparison. Original values and graphics preserved. Weekday/category labels and full prompts localized; section headings now describe actual drawing/data tasks. Validation: 20,790 activity answers and 14,240 drills match original; browser regeneration and A4 PDFs pass.
+
+
+2026-09-12: Reused data-targets bar construction/comparison and picture-graph-to-table activities. Year-four bars include tied maxima, totals, drawing and paired-category differences. Year-three pictograms retain one symbol = 10 and correct confusion between symbols and actual counts. Original bank and artwork unchanged. Validation: 21,330 activity answers and 14,240 drills agree with original; all new routes and eight A4 question/answer PDFs across editions pass.
