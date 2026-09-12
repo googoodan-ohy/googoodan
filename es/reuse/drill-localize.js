@@ -1,6 +1,8 @@
 /* Display-only translation around the unchanged ko/drill-engine.js. */
 (()=>{
-function localize(q){if(!q.prompt)return q;let prompt=q.prompt;const rules=[
+function localize(q){if(!q.prompt)return q;q={...q,prompt:q.prompt.replace(/(\d+)과 (\d+\/\d+)/g,'$1 $2'),answer:typeof q.answer==='string'?q.answer.replace(/(\d+)과 (\d+\/\d+)/g,'$1 $2'):q.answer};let prompt=q.prompt;const rules=[
+ [/^(.+)을 대분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como número mixto.'],
+ [/^(.+)을 가분수로 나타내세요\.$/,(_,a)=>'Escribe '+a+' como fracción impropia.'],
  [/^(.+)개를 한 묶음에 (.+)개씩 묶습니다\. 몇 묶음이고 몇 개가 남나요\?$/,(_,a,b)=>'Forma grupos de '+b+' elementos usando '+a+' elementos. ¿Cuántos grupos completos obtienes y cuántos elementos sobran?'],
  [/^한 묶음의 양이 (.+)입니다\. (.+)묶음에 해당하는 양은 얼마인가요\?$/,(_,a,b)=>'Cada grupo tiene '+a+' elementos. ¿Cuántos elementos hay en '+b+(Number(b)===1?' grupo?':' grupos?')],
  [/^(.+)의 (.+)배에 해당하는 수를 구하세요\.$/,(_,a,b)=>'Calcula '+b+(Number(b)===1?' vez ':' veces ')+a+'.'],
