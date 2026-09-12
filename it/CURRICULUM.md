@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 201 HTML pages, 89 curriculum drill profiles and 88 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 204 HTML pages, 89 curriculum drill profiles and 91 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -176,3 +176,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added cm/mm and km/m measurement-bank profiles, with both-direction conversions and comparisons. Exact original bank indices 0/1 from 3-1-5 are used. Validation: 23,760 activity answers and 14,240 drills agree with original; four new browser routes and eight A4 question/answer PDFs pass.
+
+## Clock drawing and time relationships — 2026-09-12
+Three activities reuse the unchanged Korean measurement bank: hours/half-hours in grade 2, five-minute clock drawing and start/end/duration in grade 3. Display text and clock dimensions are localized. Original answers and checks match across 30 seeds; all six question/answer PDFs per language fit one A4 page.
