@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 183 HTML pages, 89 curriculum drill profiles and 72 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 185 HTML pages, 89 curriculum drill profiles and 72 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -152,3 +152,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Versioned dynamically loaded html2canvas/jsPDF URLs and every reference to the language PDF exporter. Actual four-page question/answer download passed for both editions after the cache change. PDF generation and worksheet calculations are unchanged.
+
+
+2026-09-12: Added two standalone 100-cell calculation grids (addition and multiplication), outside the 72 activity-profile count. Korean hundred.js copied with only two visible labels translated; Korean hundred.css reused directly. Static 10x10 blank table remains readable without JS. All 100 answers checked over ten shuffled grids per page, plus eight single-page A4 question/answer PDFs across both editions.
