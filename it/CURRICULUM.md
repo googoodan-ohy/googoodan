@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 55 HTML pages, 28 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 80 HTML pages, 53 curriculum drill profiles and 10 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -21,7 +21,7 @@ Class labels are an editorial progression within these goals, not a claim that n
 
 Initial validation: 12 common routes; 10 activity routes with 10 seeds each; 7 drill routes; 2,700 original-versus-localized activity answers; 27 one-page activity/drill A4 PDFs; A4 and Letter common-table PDFs; four-page PDF download containing two sets with answers.
 
-Still to expand: drill units for classes two, four and five; broader picture-based activities, geometry, metric measurement, data and fractions; class-specific static directories. Reuse compatible Korean material and validate each mapping before adding it. Do not pad counts with duplicate pages or unrelated review.
+Still to expand: drill units for classes four and five; broader picture-based activities, geometry, metric measurement, data and fractions; class-specific static directories. Reuse compatible Korean material and validate each mapping before adding it. Do not pad counts with duplicate pages or unrelated review.
 
 Search wording was checked against Italian educational resources, including Giunti Scuola's “Addizioni e sottrazioni” and Cose per Crescere's fractions/primary worksheets. No search-volume data or top-100 keyword coverage has been measured.
 
@@ -32,3 +32,9 @@ Build experiments and checks are in `.work-english/italian/`. The draft builders
 2026-09-12: Added 21 original Korean 3-1-1 drill profiles as an editorial class-three progression: horizontal and written addition/subtraction, carry/borrowing practice, directly related two-digit review, missing numbers/digits and relational problems. Operand length is three digits; addition results may exceed 999. All original source, condition, mode, layout, pool and generation values are retained.
 
 Validation: source-comparison checks now cover 4,480 drill questions, plus the prior 2,700 activity answers. All 21 new routes were browser-checked for correct selection, descriptions, answers and regeneration. Their 42 question/answer A4 PDFs each contain one page.
+
+## Two-digit addition and subtraction
+
+2026-09-12: Added 25 original Korean 2-1-3 profiles for class two. Basic horizontal/vertical calculations, with/without carrying or borrowing, prerequisite one-digit work, missing digits/numbers, and relational problems are separated into the existing four menu groups. The stated two-digit range refers to operands; sums can exceed 99. Original generation logic and settings remain unchanged.
+
+Validation: 8,480 drill questions compared to the untranslated generator, plus 2,700 activity answers. All 25 added pages pass browser selection, static-description, answer and regeneration checks. All 50 question/answer A4 PDFs contain one page.
