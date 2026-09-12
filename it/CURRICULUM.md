@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 206 HTML pages, 89 curriculum drill profiles and 93 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 208 HTML pages, 89 curriculum drill profiles and 95 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -185,3 +185,6 @@ Added square-metre/square-centimetre conversion, reconstruction and comparison, 
 
 ## Fraction times a natural number — 2026-09-12
 Added the unchanged Korean fraction-mul-whole activity from 5-2-2, as upper-primary supplementary fraction practice (Italian grade 5; Spanish grade 6). Requires equivalent fractions and repeated addition; includes improper results and explicit denominator-one notation. Placement is editorial, not a claim of a mandated year-specific objective. Original answers/checks and ten browser seeds passed; separate question/answer PDFs each fit A4.
+
+## Decimal place and comparison — 2026-09-12
+Two grade-five activities reuse decimal-place and decimal-compare:3 from Korean 4-2-3. Identify digits through thousandths and compare decimal values. Display uses the Italian comma; original generation, answers and deliberate wrong answers remain intact. Ten browser seeds for both routes and original-answer checks passed.
