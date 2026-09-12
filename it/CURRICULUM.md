@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 138 HTML pages, 89 curriculum drill profiles and 27 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 143 HTML pages, 89 curriculum drill profiles and 32 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -76,3 +76,9 @@ Validation: 6,210 activity answers compared to source across 23 profiles. Four r
 2026-09-12: Added table, graph:picture, graph:bar and average from the original Korean engine. Class-two tables, class-three pictograms, class-four bar charts and class-five arithmetic mean are editorial placements within the documented primary data objectives. Values, chart coordinates, scales and correct answers are unchanged; visible labels and full instructions are Italian. The pictogram legend explicitly states ten people per symbol.
 
 Validation: 7,290 activity answers and 14,240 drill questions agree with the original generators. Four new browser routes tested with ten seeds each; all eight question/answer A4 PDFs contain one page. Static checks pass for 138 Italian pages.
+
+## Clock and time measures
+
+2026-09-12: Added clock:30, calendar, clock:5, elapsed and time-seconds using the unchanged Korean engine. Course placement: class two for hours/half-hours and weeks/days, class three for five-minute readings and finding the final time, class four for minutes/seconds. These are editorial selections within time measurement, not a complete annual curriculum. The elapsed source gives an initial time and duration and asks for the final time; its displayed title reflects that precise task. Time labels use h:mm without changing the generated values.
+
+Validation: 8,640 activity answers and 14,240 drill questions agree with their source. Five browser routes with ten seeds each pass diagrams, descriptions and answers. All ten question/answer PDFs contain one A4 page. Static checks pass for 143 Italian pages.
