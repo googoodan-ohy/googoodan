@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 184 HTML pages; 72 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 186 HTML pages; 72 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -130,3 +130,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Versioned dynamically loaded html2canvas/jsPDF URLs and every reference to the language PDF exporter. Actual four-page question/answer download passed for both editions after the cache change. PDF generation and worksheet calculations are unchanged.
+
+
+2026-09-12: Added two standalone 100-cell calculation grids (addition and multiplication), outside the 72 activity-profile count. Korean hundred.js copied with only two visible labels translated; Korean hundred.css reused directly. Static 10x10 blank table remains readable without JS. All 100 answers checked over ten shuffled grids per page, plus eight single-page A4 question/answer PDFs across both editions.
