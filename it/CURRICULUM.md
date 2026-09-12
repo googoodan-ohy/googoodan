@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 151 HTML pages, 89 curriculum drill profiles and 40 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 155 HTML pages, 89 curriculum drill profiles and 44 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -94,3 +94,9 @@ Validation: 9,720 activity answers and 14,240 drill questions agree with source.
 2026-09-12: Added original fraction-add-same/fraction-sub-same in class four and fraction-add/fraction-sub in class five. The latter allow coinciding or different denominators, so titles do not claim exclusively unlike denominators. Class-four originals retain their unreduced answers; class-five originals reduce results. No calculation or fraction-rendering logic was changed. Missing-numerator tasks preserve the original denominator and expected numerator.
 
 Validation: 10,800 activity answers and 14,240 drill questions agree with source. Four browser routes with ten seeds each pass descriptions, answers and writing boxes. All eight question/answer PDFs contain one A4 page. Static checks pass for 151 Italian pages.
+
+## Decimal operations
+
+2026-09-12: Added decimal-add/sub in class four and decimal-mul-whole/div-whole in class five using unchanged Korean generators. Decimal text uses commas without touching SVG coordinates or numeric data. Corrected the calculation adapter so result-check questions include the original expression; explanations now reuse the source-formatted equation instead of exposing raw floating-point results. This also repairs existing integer result-check instructions.
+
+Validation: 11,880 activity answers and 14,240 drill questions agree with source. Result-check tests require the operation to be visible. Four new browser routes with ten seeds each pass descriptions, answers and writing boxes; all eight question/answer PDFs contain one A4 page. Static checks pass for 155 Italian pages.

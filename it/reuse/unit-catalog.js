@@ -24,6 +24,7 @@ definitions.push(...[["it-2-leggere-tabelle",2,4,"Leggere le tabelle","2-2-5","t
 definitions.push(...[["it-2-ore-mezzore",2,5,"Orologio: ore e mezzore","1-2-3","clock:30"],["it-2-settimane-giorni",2,6,"Settimane e giorni","2-2-4","calendar"],["it-3-orologio-minuti",3,6,"Orologio: intervalli di 5 minuti","2-2-4","clock:5"],["it-3-tempo-trascorso",3,7,"Calcolare l’orario finale","2-2-4","elapsed"],["it-4-minuti-secondi",4,10,"Convertire minuti e secondi","3-1-5","time-seconds"]]);
 definitions.push(...[["it-1-figure-piane",1,3,"Riconoscere le figure piane","1-2-3","flat-basic"],["it-2-contare-lati",2,7,"Contare i lati delle figure","2-1-2","flat-count"],["it-3-linee-segmenti",3,8,"Rette, semirette e segmenti","3-1-2","lines"],["it-3-lati-poligoni",3,9,"Contare i lati dei poligoni","4-2-6","polygon"]]);
 definitions.push(...[["it-4-somma-frazioni-stesso-denominatore",4,11,"Frazioni: somma con uguale denominatore","4-2-1","fraction-add-same"],["it-4-sottrazione-frazioni-stesso-denominatore",4,12,"Frazioni: sottrazione con uguale denominatore","4-2-1","fraction-sub-same"],["it-5-addizioni-frazioni",5,8,"Addizioni di frazioni","5-1-5","fraction-add"],["it-5-sottrazioni-frazioni",5,9,"Sottrazioni di frazioni","5-1-5","fraction-sub"]]);
+definitions.push(...[["it-4-addizioni-decimali",4,13,"Addizioni con i numeri decimali","4-2-3","decimal-add"],["it-4-sottrazioni-decimali",4,14,"Sottrazioni con i numeri decimali","4-2-3","decimal-sub"],["it-5-decimali-per-interi",5,10,"Moltiplicare decimali per interi","5-2-4","decimal-mul-whole"],["it-5-decimali-divisi-interi",5,11,"Dividere decimali per interi","6-1-3","decimal-div-whole"]]);
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
@@ -32,7 +33,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
  const d=definitions.find(x=>x[0]===id);if(!d||p!==0)throw Error('Unsupported Italian topic');
  return source.generate(d[4],0,seed,n,[0,1,2].map(mode=>({skill:d[5],mode}))).map((s,i)=>({...s,title:['Osserva e risolvi','Completa o scegli','Controlla la risposta'][i],questions:s.questions.map(q=>{
   const skill=d[5].split(':')[0];let prompt,reason;
-  if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcola il risultato.','Scrivi il numero mancante.','Controlla il risultato proposto.'][i];reason=c.x+' '+c.op+' '+c.y+' = '+c.result;}
+  if(q.check?.kind==='calc'){const c=q.check;prompt=['Calcola il risultato.','Scrivi il numero mancante.','Controlla il risultato di '+q.reason.split(' = ')[0]+'.'][i];reason=q.reason.replaceAll('이므로',', quindi');}
   else if(q.check?.kind==='fraction'){prompt=i===1?'Completa il numeratore mancante.':i===2?'Calcola e controlla il risultato proposto.':d[4]==='4-2-1'?'Calcola il risultato.':'Calcola e scrivi una frazione ridotta o un numero intero.';reason=q.reason;}
   else if(skill==='perimeter'){const c=q.check;prompt='Qual è il perimetro del rettangolo in cm?';reason='('+c.a+' + '+c.b+') × 2 = '+c.result+' cm';}
   else if(skill==='area-rectangle'){const c=q.check;prompt='Qual è l’area del rettangolo in cm²?';reason=c.a+' × '+c.b+' = '+c.result+' cm²';}
@@ -65,7 +66,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   if(!q.check&&i===1)prompt+=' Scegli la risposta.';
   if(!q.check&&i===2)prompt+=' Controlla la risposta proposta.';
   const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
-  return {...q,prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
+  return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};
 })();
