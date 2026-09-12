@@ -112,3 +112,6 @@ Validation: 15,930 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added four profiles: adjacent cube counting in course two; height-map counting, front/right views and column removal in course six. Placement is editorial practice under RD157/2022 spatial sense and manipulatives, https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296. This does not claim region-specific textbook alignment. Original Korean cube generation and figures remain unchanged.
 
 Validation: 17,010 activity answers and 14,240 drill questions match original engines. All 175 static pages pass. Four browser routes with ten seeds each and eight single-page A4 PDFs pass.
+
+
+2026-09-12: Added introductory solid identification in year two (original solid-basic, 2-2-6). Cuboid, cylinder and sphere display names localized, including answer choices; source generation and pictures preserved. This is selected introductory geometry practice, not full curriculum coverage. Validation: 17,280 activity answers and 14,240 drill questions match original; browser, static metadata and both one-page A4 PDFs pass.
