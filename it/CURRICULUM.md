@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 155 HTML pages, 89 curriculum drill profiles and 44 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 159 HTML pages, 89 curriculum drill profiles and 48 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -100,3 +100,9 @@ Validation: 10,800 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added decimal-add/sub in class four and decimal-mul-whole/div-whole in class five using unchanged Korean generators. Decimal text uses commas without touching SVG coordinates or numeric data. Corrected the calculation adapter so result-check questions include the original expression; explanations now reuse the source-formatted equation instead of exposing raw floating-point results. This also repairs existing integer result-check instructions.
 
 Validation: 11,880 activity answers and 14,240 drill questions agree with source. Result-check tests require the operation to be visible. Four new browser routes with ten seeds each pass descriptions, answers and writing boxes; all eight question/answer PDFs contain one A4 page. Static checks pass for 155 Italian pages.
+
+## Place digits, factors and multiples
+
+2026-09-12: Added place:3 and place:4 in classes three/four, factor and multiple in class five. The digit prompt maps units/tens/hundreds/thousands explicitly and asks for the digit, not its total place value. Multiples explicitly means the first three positive multiples, matching the unchanged original generator (zero excluded). Factors are positive divisors.
+
+Validation: 12,960 activity answers and 14,240 drill questions agree with source. Four browser routes with ten seeds each pass descriptions and answers; all eight question/answer PDFs contain one A4 page. Static checks pass for 159 Italian pages.
