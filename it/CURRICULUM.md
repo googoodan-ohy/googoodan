@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 170 HTML pages, 89 curriculum drill profiles and 59 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 183 HTML pages, 89 curriculum drill profiles and 72 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -143,3 +143,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added bond:10 (year one, totals 2–10, not always ten) and array (year two, 2–6 rows and 2–9 columns). Original dots, grids, arithmetic, missing-factor questions and checks remain unchanged. These are introductory selected practice. Validation: 18,900 activity answers and 14,240 drills match original engines; local browser, regenerated sets, static metadata and all four A4 question/answer PDFs per language pass.
+
+
+2026-09-12: Added decimal-mul and decimal-div, retaining original arithmetic and answers. Localized decimal commas apply to expressions, answers and explanations without changing SVG attributes. Placement: class five in Italy; course six in Spain. Division is exact, at most one decimal place in the quotient. Validation: 19,440 activity answers and 14,240 drills match original; browser routes and one-page A4 question/answer PDFs pass.

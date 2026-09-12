@@ -35,6 +35,7 @@ definitions.push(...[["it-1-contare-forme",1,4,"Contare le forme uguali","1-1-2"
 const compareText=s=>String(s).replaceAll('막대가 길수록 길이가 큽니다.',"Confronta le lunghezze.").replace(/(?<![가-힣])(가|나)(?![가-힣])/g,(_,x)=>x==='가'?'A':'B');
 definitions.push(...[["it-1-sequenze-forme",1,6,"Completare sequenze di forme","1-2-5","pattern"],["it-2-sequenze-numeri",2,10,"Numeri mancanti entro 100","1-2-1","sequence:100"]]);
 definitions.push(...[["it-1-scomporre-numeri",1,7,"Scomporre i numeri entro 10","1-2-2","bond:10"],["it-2-moltiplicazioni-schieramenti",2,11,"Moltiplicazioni con schieramenti","2-1-6","array"]]);
+definitions.push(...[["it-5-moltiplicare-decimali",5,28,"Moltiplicare due numeri decimali","5-2-4","decimal-mul"],["it-5-divisore-decimale",5,29,"Dividere per un numero decimale","6-2-2","decimal-div"]]);
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
