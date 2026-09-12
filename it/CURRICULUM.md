@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 190 HTML pages, 89 curriculum drill profiles and 77 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 192 HTML pages, 89 curriculum drill profiles and 79 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -161,3 +161,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Reused data-targets line and percent banks in a scoped wrapper. Line tasks find tied maxima, draw from a table and compare consecutive increases; percent tasks use a total of 200, cumulative strip boundaries and paired category comparison. Original values and graphics preserved. Weekday/category labels and full prompts localized; section headings now describe actual drawing/data tasks. Validation: 20,790 activity answers and 14,240 drills match original; browser regeneration and A4 PDFs pass.
+
+
+2026-09-12: Reused data-targets bar construction/comparison and picture-graph-to-table activities. Year-four bars include tied maxima, totals, drawing and paired-category differences. Year-three pictograms retain one symbol = 10 and correct confusion between symbols and actual counts. Original bank and artwork unchanged. Validation: 21,330 activity answers and 14,240 drills agree with original; all new routes and eight A4 question/answer PDFs across editions pass.
