@@ -188,3 +188,6 @@ Added the unchanged Korean fraction-mul-whole activity from 5-2-2, as upper-prim
 
 ## Decimal place and comparison — 2026-09-12
 Two grade-five activities reuse decimal-place and decimal-compare:3 from Korean 4-2-3. Identify digits through thousandths and compare decimal values. Display uses the Italian comma; original generation, answers and deliberate wrong answers remain intact. Ten browser seeds for both routes and original-answer checks passed.
+
+## Grade-five decimal drills — 2026-09-12
+Added 19 profiles from Korean 4-2-3: 12 horizontal/vertical addition and subtraction profiles through three decimal places, four three-digit natural-number prerequisite reviews, two missing-number profiles and one story profile. Source settings, pools and generation remain unchanged. The existing Korean-style four-group selector is reused. Finite fractional values in this decimal story profile are displayed as equivalent decimals, without modifying source answers. Placement in grade five is editorial, within upper-primary decimal arithmetic, not a claim of an exact mandated unit. Validation: 25,650 activity answers and 17,280 drill questions match the original engines; 19 browser routes and 38 separate one-page A4 question/answer PDFs pass. Italian drill count is now 108; activity count remains 95.
