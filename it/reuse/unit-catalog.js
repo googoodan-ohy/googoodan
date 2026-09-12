@@ -20,6 +20,8 @@ const definitions=[
 definitions.push(['it-2-righello',2,3,'Leggere il righello','2-1-4','ruler:cm'],['it-3-centimetri-millimetri',3,3,'Centimetri e millimetri','3-1-5','convert:mm'],['it-3-metri-centimetri',3,4,'Metri e centimetri','2-2-3','convert:m'],['it-4-chilogrammi-grammi',4,5,'Chilogrammi e grammi','3-2-4','convert:kg'],['it-4-litri-millilitri',4,6,'Litri e millilitri','3-2-4','convert:L']);
 definitions.push(['it-4-decimali-figure',4,7,'Decimi e numeri decimali','3-1-6','decimal-model'],['it-4-centesimi-decimali',4,8,'Dai centesimi ai numeri decimali','6-1-3','decimal-fraction'],['it-5-semplificare-frazioni',5,5,'Semplificare le frazioni','5-1-4','reduce'],['it-5-confrontare-denominatori',5,6,'Confrontare frazioni diverse','5-1-4','fraction-compare-unlike']);
 const tr=s=>String(s).replaceAll('친구의 답:','Risposta proposta:').replaceAll('맞으면 ○, 틀리면 ×. 틀린 답은 고치세요.','Vero: ○. Falso: ×. Correggi la risposta sbagliata.').replaceAll('바른 답:','Risposta corretta:').replaceAll('예각','acuto').replaceAll('직각','retto').replaceAll('둔각','ottuso').replaceAll('아니요','No').replaceAll('예','Sì').replaceAll('문제 그림','Figura dell’esercizio');
+definitions.push(...[["it-2-leggere-tabelle",2,4,"Leggere le tabelle","2-2-5","table"],["it-3-pittogrammi",3,5,"Leggere i pittogrammi","3-2-6","graph:picture"],["it-4-grafici-barre",4,9,"Leggere i grafici a barre","4-1-5","graph:bar"],["it-5-media-aritmetica",5,7,"Calcolare la media aritmetica","5-2-6","average"]]);
+const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
 globalThis.KoCatalog={units:definitions.map(([id,grade,number,name])=>({id,grade,number,name,semester:1,gradeLabel:'Classe '+grade})),themes:Array.from({length:10},()=>['Un passo alla volta','Osserva, calcola e spiega','#278477','#edf8e9','rabbit'])};
@@ -38,6 +40,9 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='decimal-fraction'){const n=q.prompt.match(/^(\d+)\/100/)[1];prompt='Scrivi '+n+'/100 come numero decimale.';reason=n+' centesimi: usa due cifre dopo la virgola.';}
   else if(skill==='reduce'){prompt='Riduci la frazione ai minimi termini.';const n=q.reason.match(/(\d+)로/)[1];reason='Dividi numeratore e denominatore per il loro massimo comune divisore, '+n+'.';}
   else if(skill==='fraction-compare-unlike'){prompt='Confronta le frazioni con denominatori diversi.';reason='Porta le frazioni allo stesso denominatore e confronta i numeratori.';}
+  else if(skill==='table'){const fruit=q.prompt.match(/^(사과|배|귤)/)[1];prompt='Quanti elementi ci sono nella colonna '+dataText(fruit)+'?';reason='Leggi il numero sotto il nome del frutto nella tabella.';}
+  else if(skill==='graph'){if(i===2){prompt='Somma i valori delle categorie A e B.';reason=q.reason;}else{const label=({가:'A',나:'B',다:'C'})[q.prompt[0]];prompt='Quante persone hanno scelto la categoria '+label+'?';reason='Leggi la scala o la legenda e trova il valore della categoria.';}}
+  else if(skill==='average'){const sum=q.reason.match(/합 (\d+)/)[1];prompt='Calcola la media dei tre numeri.';reason='Dividi la somma '+sum+' per il numero dei dati, 3.';}
   else if(skill==='count'){prompt='Quanti pallini ci sono?';reason='Conta ogni pallino una sola volta.';}
   else if(skill==='compare'){prompt='Confronta i numeri. Quale segno è corretto?';reason='Confronta le quantità e usa >, < oppure =.';}
   else if(skill==='place'){const number=q.prompt.match(/^\d+/)[0],place=q.prompt.includes('십의')?'decine':'unità';prompt='Qual è la cifra delle '+place+' nel numero '+number+'?';reason='Da destra trovi prima le unità, poi le decine.';}
@@ -47,7 +52,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else{prompt='Confronta le due frazioni.';reason='Con denominatori uguali, confronta i numeratori.';}
   if(!q.check&&i===1)prompt+=' Scegli la risposta.';
   if(!q.check&&i===2)prompt+=' Controlla la risposta proposta.';
-  const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):tr;
+  const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
   return {...q,prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};

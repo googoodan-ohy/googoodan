@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 134 HTML pages, 89 curriculum drill profiles and 23 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 138 HTML pages, 89 curriculum drill profiles and 27 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -70,3 +70,9 @@ Validation: 5,130 source-compared activity answers across 19 profiles; five new 
 2026-09-12: Added original decimal-model, decimal-fraction, reduce and fraction-compare-unlike activities. Decimal points are localized to commas only in displayed text nodes; SVG attributes and source numeric values stay unchanged. These selected primary activities are placed editorially in classes four/five.
 
 Validation: 6,210 activity answers compared to source across 23 profiles. Four routes with ten seeds each pass descriptions, answers and diagrams; all eight new question/answer A4 PDFs contain one page. Grade directories include the activities and static checks pass for 134 pages.
+
+## Tables, charts and arithmetic mean
+
+2026-09-12: Added table, graph:picture, graph:bar and average from the original Korean engine. Class-two tables, class-three pictograms, class-four bar charts and class-five arithmetic mean are editorial placements within the documented primary data objectives. Values, chart coordinates, scales and correct answers are unchanged; visible labels and full instructions are Italian. The pictogram legend explicitly states ten people per symbol.
+
+Validation: 7,290 activity answers and 14,240 drill questions agree with the original generators. Four new browser routes tested with ten seeds each; all eight question/answer A4 PDFs contain one page. Static checks pass for 138 Italian pages.
