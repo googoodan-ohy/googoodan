@@ -59,9 +59,9 @@ Total: 45 profiles.
 | Rechnen mit der 10 | Klasse 1/2 | 6 |
 | Rechnen und Denken bis 100 | Klasse 1/2 | 2 |
 | Schriftlich rechnen bis 100 | Klasse 3/4 | 1 |
-| Dreistellig addieren: ein Übertrag | Klasse 3/4 | 1 |
+| Dreistellig addieren und subtrahieren | Klasse 3/4 | 7 |
 
-Total: 104 profiles.
+Total: 110 profiles.
 
 ## Next priorities
 
