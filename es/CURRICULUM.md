@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 171 HTML pages; 59 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 184 HTML pages; 72 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -124,3 +124,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added bond:10 (year one, totals 2–10, not always ten) and array (year two, 2–6 rows and 2–9 columns). Original dots, grids, arithmetic, missing-factor questions and checks remain unchanged. These are introductory selected practice. Validation: 18,900 activity answers and 14,240 drills match original engines; local browser, regenerated sets, static metadata and all four A4 question/answer PDFs per language pass.
+
+
+2026-09-12: Added decimal-mul and decimal-div, retaining original arithmetic and answers. Localized decimal commas apply to expressions, answers and explanations without changing SVG attributes. Placement: class five in Italy; course six in Spain. Division is exact, at most one decimal place in the quotient. Validation: 19,440 activity answers and 14,240 drills match original; browser routes and one-page A4 question/answer PDFs pass.
