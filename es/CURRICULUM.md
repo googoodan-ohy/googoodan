@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 143 HTML pages; 32 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 147 HTML pages; 36 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -63,3 +63,9 @@ Validation: 7,290 activity answers and 14,240 drill questions agree with the ori
 2026-09-12: Added clock:30, calendar, clock:5, elapsed and time-seconds using unchanged Korean generators. Course two: hours/half-hours and weeks/days; course three: five-minute readings and finding a final time; course four: minutes/seconds. Placement is editorial within national time-measurement progression, not regional certification. The elapsed source asks for a final time given an initial time and duration, so the title is Calcular la hora final. Display labels use h:mm and preserve original times.
 
 Validation: 8,640 activity answers and 14,240 drill questions agree with the original generators. Five browser routes with ten seeds each pass images, descriptions and answers. All ten question/answer PDFs contain one A4 page. Static checks pass for 143 Spanish pages.
+
+## Early plane geometry
+
+2026-09-12: Added flat-basic, flat-count, lines and polygon from the original Korean engine. Course one recognizes triangle/quadrilateral/circle, course two counts straight sides, course three distinguishes line/ray/segment and counts polygon sides. Placements are editorial within primary plane geometry. The original four-sided category remains cuadrilátero rather than being narrowed to square. Drawings and correct answers are unchanged apart from display translation.
+
+Validation: 9,720 activity answers and 14,240 drill questions agree with source. Four new browser routes with ten seeds each pass images, descriptions and answers. All eight question/answer A4 PDFs contain one page. Static checks pass for 147 Spanish pages.
