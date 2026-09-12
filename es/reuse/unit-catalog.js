@@ -16,6 +16,8 @@ definitions.push(...[["es-6-area-triangulo",6,1,"Área del triángulo","5-1-6","
 definitions.push(...[["es-6-porcentajes",6,5,"Calcular un porcentaje","6-1-4","percent"],["es-6-probabilidad-basica",6,6,"Sucesos seguros, imposibles y al 50%","5-2-6","chance"],["es-6-media-dato-desconocido",6,7,"La media y el dato desconocido","5-2-6","average-missing"]]);
 definitions.push(...[["es-2-contar-cubos",2,9,"Contar cubos","2-1-2","cube-count"],["es-6-columnas-cubos",6,8,"Contar cubos desde un plano","6-2-3","cube-count"],["es-6-vistas-cubos",6,9,"Cubos: vistas frontal y lateral","6-2-3","cube-view"],["es-6-quitar-columna",6,10,"Quitar una columna de cubos","6-2-3","cube-missing"]]);
 definitions.push(["es-2-cuerpos-geometricos",2,10,"Reconocer cuerpos geométricos","2-2-6","solid-basic"]);
+definitions.push(...[["es-1-contar-formas",1,4,"Contar formas iguales","1-1-2","sort"],["es-1-comparar-longitudes",1,5,"Comparar longitudes","1-1-5","length-compare"]]);
+const compareText=s=>String(s).replaceAll('막대가 길수록 길이가 큽니다.',"Compara las longitudes.").replace(/(?<![가-힣])(가|나)(?![가-힣])/g,(_,x)=>x==='가'?'A':'B');
 const dataText=s=>String(s).replaceAll('사과','Manzanas').replaceAll('배','Peras').replaceAll('귤','Mandarinas').replace(/● 한 개는 (\d+)명/g,'● = $1 personas').replaceAll('선택한 사람 수 (명)','Número de personas').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 const tr=s=>String(s).replaceAll('직육면체','prisma rectangular').replaceAll('원기둥','cilindro').replace(/(?<![가-힣])구(?![가-힣])/g,'esfera').replaceAll('위에서 본 모양 · 숫자는 그 자리의 개수 · 아래쪽이 앞','Vista superior: cada número indica los cubos de la columna. El borde inferior es el frente.').replaceAll('불가능하다','imposible').replaceAll('확실하다','seguro').replaceAll('반반이다','probabilidad del 50%').replaceAll('길이는 문제의 조건을 보세요','Medidas indicadas en el texto').replaceAll('삼각형','triángulo').replaceAll('사각형','cuadrilátero').replaceAll('원','círculo').replaceAll('선분','segmento').replaceAll('반직선','semirrecta').replaceAll('직선','recta').replace(/(\d+)시\s*(\d+)분/g,(_,h,m)=>h+':'+m.padStart(2,'0')).replaceAll('친구의 답:','Respuesta propuesta:').replaceAll('맞으면 ○, 틀리면 ×. 틀린 답은 고치세요.','Verdadero: ○. Falso: ×. Corrige la respuesta incorrecta.').replaceAll('바른 답:','Respuesta correcta:').replaceAll('예각','agudo').replaceAll('직각','recto').replaceAll('둔각','obtuso').replaceAll('아니요','No').replaceAll('예','Sí').replaceAll('문제 그림','Figura del ejercicio');
@@ -59,6 +61,8 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='average-missing'){const n=q.prompt.match(/평균이 (\d+)/)[1],sum=q.reason.match(/합 (\d+)/)[1];prompt='La media de los tres números es '+n+'. Encuentra el número que falta.';reason='La suma de los tres números es '+sum+'. Resta los dos números conocidos.';}
   else if(['cube-count','cube-view','cube-missing'].includes(skill)){prompt=skill==='cube-view'?'¿Cuántos cuadrados se ven en la vista '+(q.prompt.startsWith('앞')?'frontal':'desde la derecha')+'?':skill==='cube-missing'?'Quita todos los cubos de la columna situada arriba a la izquierda en el plano. ¿Cuántos cubos quedan?':'¿Cuántos cubos hay en total?';reason=d[4]==='2-1-2'?'Cuenta una vez cada cubo dibujado.':skill==='cube-view'?'En cada fila de la dirección de observación toma la altura de la columna más alta; después suma las alturas.':q.reason;}
   else if(skill==='solid-basic'){prompt="¿Cómo se llama el cuerpo geométrico representado?";reason="Observa las superficies planas y curvas. Compara el dibujo con un objeto real.";}
+  else if(skill==='sort'){prompt="¿Cuántos símbolos iguales a "+q.prompt[0]+" hay?";reason="Agrupa los símbolos de la misma forma y cuéntalos.";}
+  else if(skill==='length-compare'){prompt="¿Qué barra es más larga, A o B?";reason="Las barras empiezan en el mismo punto. Compara hasta dónde llegan.";}
   else if(skill==='count'){prompt='¿Cuántos puntos hay?';reason='Cuenta cada punto una sola vez.';}
   else if(skill==='compare'){prompt='Compara los números. ¿Qué signo es correcto?';reason='Compara las cantidades y usa >, < o =.';}
   else if(skill==='place'){const m=q.prompt.match(/^(\d+)에서 (일|십|백|천)의/),place=({일:'las unidades',십:'las decenas',백:'las centenas',천:'los millares'})[m[2]];prompt='¿Cuál es la cifra de '+place+' en el número '+m[1]+'?';reason='Desde la derecha se encuentran las unidades, decenas, centenas y unidades de millar.';}
@@ -68,7 +72,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else{prompt='Compara las dos fracciones.';reason='Si los denominadores son iguales, compara los numeradores.';}
   if(!q.check&&i===1)prompt+=' Elige la respuesta.';
   if(!q.check&&i===2)prompt+=' Comprueba la respuesta propuesta.';
-  const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
+  const display=skill==='length-compare'?s=>tr(compareText(s)):skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
   return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};
