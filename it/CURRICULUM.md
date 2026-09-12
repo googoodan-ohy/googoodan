@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 147 HTML pages, 89 curriculum drill profiles and 36 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 151 HTML pages, 89 curriculum drill profiles and 40 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -88,3 +88,9 @@ Validation: 8,640 activity answers and 14,240 drill questions agree with their s
 2026-09-12: Added flat-basic, flat-count, lines and polygon using unchanged Korean drawings and generators. Class one recognizes triangle/quadrilateral/circle, class two counts straight sides, class three distinguishes line/ray/segment and counts polygon sides. These are editorial placements within primary plane-geometry objectives. Italian names preserve the original geometric categories: the four-sided figure is labelled quadrilatero rather than narrowing it to square.
 
 Validation: 9,720 activity answers and 14,240 drill questions agree with source. Four new routes with ten seeds each pass images, descriptions and answers; all eight A4 question/answer PDFs contain one page. Static checks pass for 147 Italian pages.
+
+## Fraction addition and subtraction
+
+2026-09-12: Added original fraction-add-same/fraction-sub-same in class four and fraction-add/fraction-sub in class five. The latter allow coinciding or different denominators, so titles do not claim exclusively unlike denominators. Class-four originals retain their unreduced answers; class-five originals reduce results. No calculation or fraction-rendering logic was changed. Missing-numerator tasks preserve the original denominator and expected numerator.
+
+Validation: 10,800 activity answers and 14,240 drill questions agree with source. Four browser routes with ten seeds each pass descriptions, answers and writing boxes. All eight question/answer PDFs contain one A4 page. Static checks pass for 151 Italian pages.
