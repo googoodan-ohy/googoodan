@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 159 HTML pages, 89 curriculum drill profiles and 48 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 163 HTML pages, 89 curriculum drill profiles and 52 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -106,3 +106,9 @@ Validation: 11,880 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added place:3 and place:4 in classes three/four, factor and multiple in class five. The digit prompt maps units/tens/hundreds/thousands explicitly and asks for the digit, not its total place value. Multiples explicitly means the first three positive multiples, matching the unchanged original generator (zero excluded). Factors are positive divisors.
 
 Validation: 12,960 activity answers and 14,240 drill questions agree with source. Four browser routes with ten seeds each pass descriptions and answers; all eight question/answer PDFs contain one A4 page. Static checks pass for 159 Italian pages.
+
+## Rounding and calculation strategies
+
+2026-09-12: Added round-nearest, mixed, mixed-bracket and common-denominator as editorial class-five practice. Rounding covers three-digit numbers to tens/hundreds; order tasks combine addition/multiplication; common-denominator tasks ask for both equivalent fractions, not just the denominator. Generation, choices and answers remain the original Korean implementations.
+
+Validation: 14,040 activity answers and 14,240 drill questions agree with source. Four routes with ten seeds each pass descriptions and answers; all eight question/answer PDFs contain one A4 page. Static checks pass for 163 Italian pages.
