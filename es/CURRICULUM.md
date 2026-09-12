@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 120 HTML pages; 14 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 125 HTML pages; 14 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -37,3 +37,5 @@ The complete remainder-story translation preserves quotient and remainder; only 
 2026-09-12: Added angle classification and protractor reading in course four, rectangle perimeter and area in course five. The original Korean angle-type, angle-measure, perimeter and area-rectangle generators and SVG diagrams are unchanged. Spanish prompts, labels and explanations are localized. Course placement remains editorial within the national cycles.
 
 Validation: 3,780 activity answers compared to source across 14 profiles; four new routes with ten seeds each pass diagram, description and answer checks. All eight question/answer A4 PDFs contain one page. Static checks pass for 120 pages.
+
+2026-09-12: Five grade-directory pages added for discovery; profile counts are unchanged. See SEARCH_DISCOVERY.md.

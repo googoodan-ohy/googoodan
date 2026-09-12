@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 120 HTML pages, 89 curriculum drill profiles and 14 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 125 HTML pages, 89 curriculum drill profiles and 14 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -56,3 +56,5 @@ One full Italian remainder-story template and display translations for group/rem
 2026-09-12: Added angle classification, protractor reading, rectangle perimeter and rectangle area. Original angle-type, angle-measure, perimeter and area-rectangle branches and SVG diagrams remain unchanged. Display wording, answer labels and explanations are localized. Activities are placed in classes four/five as an editorial progression within primary geometry goals.
 
 Validation: 3,780 original-versus-localized activity answers across all 14 profiles; four routes with ten seeds each pass browser/diagram checks. All eight new question/answer A4 PDFs contain one page. Diagrams are marked as schematic in the static explanation.
+
+2026-09-12: Five grade-directory pages added for discovery; profile counts are unchanged. See SEARCH_DISCOVERY.md.
