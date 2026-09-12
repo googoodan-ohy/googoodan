@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 155 HTML pages; 44 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 159 HTML pages; 48 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -81,3 +81,9 @@ Validation: 10,800 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added decimal-add/sub and decimal-mul-whole/div-whole as editorial course-five practice within third-cycle decimal operations. The second operand in multiplication/division is a natural number. Decimal text uses commas without changing numeric data or SVG coordinates. The calculation adapter now includes the expression in result-check prompts and reuses the source-formatted explanation, avoiding raw floating-point display artifacts; this also repairs existing integer result-check instructions.
 
 Validation: 11,880 activity answers and 14,240 drill questions agree with source. Result-check tests require the operation in the prompt. Four new browser routes with ten seeds each pass descriptions, answers and writing boxes. All eight question/answer A4 PDFs contain one page. Static checks pass for 155 Spanish pages.
+
+## Place digits, factors and multiples
+
+2026-09-12: Added place:3 in course two (first-cycle numbers to 999), place:4 in course three (second-cycle numbers to 9999), factor and multiple in course five. Digit prompts map units/tens/hundreds/thousands explicitly and ask for the digit rather than total place value. Multiples are explicitly the first three positive multiples, excluding zero to match the original generator. Divisors are positive.
+
+Validation: 12,960 activity answers and 14,240 drill questions agree with source. Four new browser routes with ten seeds each pass descriptions and answers. All eight question/answer A4 PDFs contain one page. Static checks pass for 159 Spanish pages.
