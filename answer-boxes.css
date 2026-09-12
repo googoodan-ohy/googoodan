@@ -1,0 +1,4 @@
+/* Writing space shared by every language; dimensions also apply to print. */
+.write-answer-box{display:inline-block!important;box-sizing:border-box!important;width:10mm!important;min-width:10mm!important;height:8mm!important;border:1px solid #64838b!important;border-radius:1mm;vertical-align:middle;margin:1mm .6mm;background:#fff;line-height:1;flex-shrink:0}
+.paper .box{min-width:10mm;min-height:8mm;width:auto;height:auto;padding:1mm;box-sizing:border-box}
+.facts-nine>span{line-height:2.5}.task:has(.write-answer-box),.kequation:has(.write-answer-box){line-height:2.2}
