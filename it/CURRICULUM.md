@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 199 HTML pages, 89 curriculum drill profiles and 86 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 201 HTML pages, 89 curriculum drill profiles and 88 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -173,3 +173,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Reused measurement-targets m/cm, kg/g and L/mL profiles in a scoped wrapper. Added reverse conversion into compound units and comparisons, alongside forward conversion. Original factors, values, bank indices and decorative art preserved. Grade placement remains editorial practice. Validation: 23,220 activity answers and 14,240 drills match original; six routes and twelve A4 question/answer PDFs pass.
+
+
+2026-09-12: Added cm/mm and km/m measurement-bank profiles, with both-direction conversions and comparisons. Exact original bank indices 0/1 from 3-1-5 are used. Validation: 23,760 activity answers and 14,240 drills agree with original; four new browser routes and eight A4 question/answer PDFs pass.

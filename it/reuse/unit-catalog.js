@@ -44,6 +44,7 @@ definitions.push(...[["it-4-costruire-grafici-barre",4,18,"Disegnare e confronta
 definitions.push(...[["it-4-raggio-cerchio",4,19,"Riconoscere il raggio del cerchio","3-2-2","circle-parts"],["it-4-diametro-cerchio",4,20,"Calcolare il diametro del cerchio","3-2-2","circle-size"]]);
 definitions.push(...[["it-4-classificare-triangoli",4,21,"Classificare i triangoli per angoli","4-2-2","triangle-type"],["it-4-classificare-quadrilateri",4,22,"Classificare i quadrilateri","4-2-4","quad-type"]]);
 definitions.push(...[["it-3-metri-centimetri-confronti",3,12,"Metri e centimetri: convertire e confrontare","2-2-3","metric-m-cm",0],["it-4-peso-conversioni-confronti",4,23,"Chilogrammi e grammi: equivalenze","3-2-4","metric-kg-g",1],["it-4-capacita-conversioni-confronti",4,24,"Litri e millilitri: equivalenze","3-2-4","metric-L-mL",0]]);
+definitions.push(...[["it-3-centimetri-millimetri-equivalenze",3,13,"Centimetri e millimetri: equivalenze","3-1-5","metric-cm-mm",0],["it-3-chilometri-metri-equivalenze",3,14,"Chilometri e metri: equivalenze","3-1-5","metric-km-m",1]]);
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
