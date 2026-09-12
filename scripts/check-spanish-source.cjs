@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
 const load=(c,files)=>files.forEach(f=>vm.runInContext(fs.readFileSync(f,'utf8'),c));
 const c={};vm.createContext(c);load(c,['ko/catalog.js','ko/engine.js','es/reuse/unit-catalog.js']);
-const tr=s=>String(s).replaceAll('바른 답:','Respuesta correcta:').replaceAll('예각','agudo').replaceAll('직각','recto').replaceAll('둔각','obtuso').replaceAll('아니요','No').replaceAll('예','Sí').replace(/(\d)\.(\d)/g,'$1,$2');let count=0;
+const tr=s=>String(s).replace(/(\d+)시\s*(\d+)분/g,(_,h,m)=>h+':'+m.padStart(2,'0')).replaceAll('바른 답:','Respuesta correcta:').replaceAll('예각','agudo').replaceAll('직각','recto').replaceAll('둔각','obtuso').replaceAll('아니요','No').replaceAll('예','Sí').replace(/(\d)\.(\d)/g,'$1,$2');let count=0;
 for(const[id,g,n,name,src,skill]of c.EsDefinitions)for(let seed=0;seed<30;seed++){
 const a=c.KoMath.generate(id,0,seed,3),b=c.EsSourceMath.generate(src,0,seed,3,[0,1,2].map(mode=>({skill,mode})));
 a.forEach((s,i)=>s.questions.forEach((q,j)=>{assert.equal(q.answer,tr(b[i].questions[j].answer));assert.equal(JSON.stringify(q.check),JSON.stringify(b[i].questions[j].check));assert(!/[가-힣]|undefined|NaN/.test(q.prompt+q.task+q.reason+q.visual+q.answer));count++;}));}
