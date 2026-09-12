@@ -61,8 +61,10 @@ Total: 45 profiles.
 | Schriftlich rechnen bis 100 | Klasse 3/4 | 1 |
 | Dreistellig addieren und subtrahieren | Klasse 3/4 | 7 |
 | Rechenwege bis 100 | Klasse 1/2 | 3 |
+| Schriftlich multiplizieren | Klasse 3/4 | 7 |
+| Schriftlich dividieren | Klasse 3/4 | 4 |
 
-Total: 113 profiles.
+Total: 124 profiles.
 
 ## Next priorities
 
