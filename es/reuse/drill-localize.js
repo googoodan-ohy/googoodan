@@ -1,6 +1,10 @@
 /* Display-only translation around the unchanged ko/drill-engine.js. */
 (()=>{
 function localize(q){if(!q.prompt)return q;let prompt=q.prompt;const rules=[
+ [/^한 묶음의 양이 (.+)입니다\. (.+)묶음에 해당하는 양은 얼마인가요\?$/,(_,a,b)=>'Cada grupo tiene '+a+' elementos. ¿Cuántos elementos hay en '+b+(Number(b)===1?' grupo?':' grupos?')],
+ [/^(.+)의 (.+)배에 해당하는 수를 구하세요\.$/,(_,a,b)=>'Calcula '+b+(Number(b)===1?' vez ':' veces ')+a+'.'],
+ [/^전체 양 (.+)을 (.+)씩 나누면 몇 묶음인가요\?$/,(_,c,a)=>'Reparte '+c+' elementos en grupos de '+a+'. ¿Cuántos grupos obtienes?'],
+ [/^전체 양 (.+)을 (.+)묶음으로 똑같이 나누면 한 묶음의 양은 얼마인가요\?$/,(_,c,b)=>'Reparte '+c+' elementos en '+b+(Number(b)===1?' grupo.':' grupos iguales.')+' ¿Cuántos elementos hay en cada grupo?'],
  [/^(.+)보다 (.+) 큰 수는 얼마인가요\?$/,(_,a,b)=>'¿Qué número es '+b+' mayor que '+a+'?'],
  [/^(.+)이 (.+)이 되려면 얼마가 더 필요한가요\?$/,(_,a,c)=>'¿Cuánto le falta a '+a+' para llegar a '+c+'?'],
  [/^(.+)은 (.+)보다 얼마나 작은가요\?$/,(_,b,c)=>'¿Cuánto menor es '+b+' que '+c+'?'],
