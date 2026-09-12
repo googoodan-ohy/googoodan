@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 168 HTML pages; 56 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 171 HTML pages; 59 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -99,3 +99,9 @@ Validation: 14,040 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added original area-triangle, area-parallelogram, area-trapezoid and area-rhombus as editorial course-six practice within third-cycle area objectives. Original measurements and diagrams are retained; prompts specify bases/heights or diagonals and cm². Drawings are explicitly schematic. Added the sixth-course directory only after actual activities existed; its four links and grade selection are verified. Expanded display themes to twelve entries to support grade six using the unchanged Korean rendering scheme.
 
 Validation: 15,120 activity answers and 14,240 drill questions agree with source. Four activity routes with ten seeds each and the sixth-course directory pass browser checks. Grade switching and type selection work. All nine question/answer/directory A4 PDFs contain one page. Static checks pass for 168 Spanish pages.
+
+## Percentages, chance and missing data
+
+2026-09-12: Added percent, chance and average-missing as selected course-six practice. Percent computes the percentage from a part/whole, not the quantity for a given percentage. Chance preserves three original red/blue-ball scenarios (impossible, certain, 50%); missing-data tasks preserve the original three-number mean. Instructions and display labels are Spanish, with generation unchanged.
+
+Validation: 15,930 activity answers and 14,240 drill questions agree with source. Three browser routes with ten seeds each pass descriptions and answers; all six question/answer PDFs contain one A4 page. Static checks pass for 171 Spanish pages.
