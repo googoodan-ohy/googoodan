@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 125 HTML pages, 89 curriculum drill profiles and 14 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 130 HTML pages, 89 curriculum drill profiles and 19 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -58,3 +58,9 @@ One full Italian remainder-story template and display translations for group/rem
 Validation: 3,780 original-versus-localized activity answers across all 14 profiles; four routes with ten seeds each pass browser/diagram checks. All eight new question/answer A4 PDFs contain one page. Diagrams are marked as schematic in the static explanation.
 
 2026-09-12: Five grade-directory pages added for discovery; profile counts are unchanged. See SEARCH_DISCOVERY.md.
+
+## Metric measurement activities
+
+2026-09-12: Added original ruler:cm, convert:mm, convert:m, convert:kg and convert:L activities with full Italian prompts and unchanged source values. Conversions express compound measurements in the smaller unit; reverse conversions are not claimed. Grade placement is editorial. Grade directories were rebuilt to include the new activities.
+
+Validation: 5,130 source-compared activity answers across 19 profiles; five new routes with ten seeds each pass browser checks. All ten question/answer A4 PDFs contain one page. Static checks pass for 130 Italian pages.

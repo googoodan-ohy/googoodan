@@ -17,6 +17,7 @@ const definitions=[
  ['it-5-perimetro-rettangolo',5,3,'Perimetro del rettangolo','5-1-6','perimeter'],
  ['it-5-area-rettangolo',5,4,'Area del rettangolo','5-1-6','area-rectangle']
 ];
+definitions.push(['it-2-righello',2,3,'Leggere il righello','2-1-4','ruler:cm'],['it-3-centimetri-millimetri',3,3,'Centimetri e millimetri','3-1-5','convert:mm'],['it-3-metri-centimetri',3,4,'Metri e centimetri','2-2-3','convert:m'],['it-4-chilogrammi-grammi',4,5,'Chilogrammi e grammi','3-2-4','convert:kg'],['it-4-litri-millilitri',4,6,'Litri e millilitri','3-2-4','convert:L']);
 const tr=s=>String(s).replaceAll('친구의 답:','Risposta proposta:').replaceAll('맞으면 ○, 틀리면 ×. 틀린 답은 고치세요.','Vero: ○. Falso: ×. Correggi la risposta sbagliata.').replaceAll('바른 답:','Risposta corretta:').replaceAll('예각','acuto').replaceAll('직각','retto').replaceAll('둔각','ottuso').replaceAll('아니요','No').replaceAll('예','Sì').replaceAll('문제 그림','Figura dell’esercizio');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
 globalThis.KoCatalog={units:definitions.map(([id,grade,number,name])=>({id,grade,number,name,semester:1,gradeLabel:'Classe '+grade})),themes:Array.from({length:10},()=>['Un passo alla volta','Osserva, calcola e spiega','#278477','#edf8e9','rabbit'])};
@@ -29,6 +30,8 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='area-rectangle'){const c=q.check;prompt='Qual è l’area del rettangolo in cm²?';reason=c.a+' × '+c.b+' = '+c.result+' cm²';}
   else if(skill==='angle-type'){prompt='L’angolo è acuto, retto oppure ottuso?';reason='Acuto: meno di 90°. Retto: 90°. Ottuso: più di 90° e meno di 180°.';}
   else if(skill==='angle-measure'){prompt='Leggi il goniometro. Quanto misura l’angolo?';const degrees=q.reason.match(/(\d+)°를/)[1];reason='Parti dallo zero a destra: l’altro lato indica '+degrees+'°.';}
+  else if(skill==='ruler'){prompt='Quanto è lunga la barretta in cm?';reason='Sottrai la misura iniziale da quella finale: '+q.reason+'.';}
+  else if(skill==='convert'){const m=q.prompt.match(/^(\d+)(\w+) (\d+)(\w+)는 몇 (\w+)인가요/);prompt='Esprimi '+m[1]+' '+m[2]+' e '+m[3]+' '+m[4]+' in '+m[5]+'.';reason=q.reason.replaceAll('입니다.','.');}
   else if(skill==='count'){prompt='Quanti pallini ci sono?';reason='Conta ogni pallino una sola volta.';}
   else if(skill==='compare'){prompt='Confronta i numeri. Quale segno è corretto?';reason='Confronta le quantità e usa >, < oppure =.';}
   else if(skill==='place'){const number=q.prompt.match(/^\d+/)[0],place=q.prompt.includes('십의')?'decine':'unità';prompt='Qual è la cifra delle '+place+' nel numero '+number+'?';reason='Da destra trovi prima le unità, poi le decine.';}
