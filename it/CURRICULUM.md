@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 143 HTML pages, 89 curriculum drill profiles and 32 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 147 HTML pages, 89 curriculum drill profiles and 36 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -82,3 +82,9 @@ Validation: 7,290 activity answers and 14,240 drill questions agree with the ori
 2026-09-12: Added clock:30, calendar, clock:5, elapsed and time-seconds using the unchanged Korean engine. Course placement: class two for hours/half-hours and weeks/days, class three for five-minute readings and finding the final time, class four for minutes/seconds. These are editorial selections within time measurement, not a complete annual curriculum. The elapsed source gives an initial time and duration and asks for the final time; its displayed title reflects that precise task. Time labels use h:mm without changing the generated values.
 
 Validation: 8,640 activity answers and 14,240 drill questions agree with their source. Five browser routes with ten seeds each pass diagrams, descriptions and answers. All ten question/answer PDFs contain one A4 page. Static checks pass for 143 Italian pages.
+
+## Early plane geometry
+
+2026-09-12: Added flat-basic, flat-count, lines and polygon using unchanged Korean drawings and generators. Class one recognizes triangle/quadrilateral/circle, class two counts straight sides, class three distinguishes line/ray/segment and counts polygon sides. These are editorial placements within primary plane-geometry objectives. Italian names preserve the original geometric categories: the four-sided figure is labelled quadrilatero rather than narrowing it to square.
+
+Validation: 9,720 activity answers and 14,240 drill questions agree with source. Four new routes with ten seeds each pass images, descriptions and answers; all eight A4 question/answer PDFs contain one page. Static checks pass for 147 Italian pages.
