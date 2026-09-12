@@ -124,3 +124,10 @@ Validation: 15,120 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added percent, chance and average-missing as selected class-five practice. Percent asks for the percentage represented by a part/whole, not for a quantity from a given percentage. Chance retains the three original red/blue-ball scenarios: impossible, certain and 50%. Missing-data questions retain the original three-number mean. Full instructions and display labels are localized; generation is unchanged.
 
 Validation: 15,930 activity answers and 14,240 drill questions agree with source. Three browser routes with ten seeds each pass descriptions and answers; all six question/answer PDFs contain one A4 page. Static checks pass for 170 Italian pages.
+
+
+## Cubes and spatial visualization
+
+2026-09-12: Four profiles reuse cube-count (class-two adjacent cubes; class-five height map), cube-view and cube-missing. Class-five placement is editorial spatial visualization practice supported by DM254/2012 geometry objectives, https://www.mim.gov.it/documents/20182/51310/DM%2B254_2012.pdf. A height map is explicitly labelled as a top view, with the front at its lower edge. No cube-generation logic changed.
+
+Validation: 17,010 activity answers and 14,240 drill questions match original engines; 174 static pages pass. Four browser routes, ten seeds each, and eight single-page A4 question/answer PDFs pass.
