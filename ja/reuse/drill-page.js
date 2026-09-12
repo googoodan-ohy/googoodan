@@ -62,4 +62,16 @@ function scalePage(){const paper=document.querySelector('.paper'),w=document.que
 rootInit();scalePage();function rootInit(){document.querySelector('aside>p').textContent='基本計算から復習まで選べます';setProfile(selected.id);}
 window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
 window.DrillPage={set(unit,id,number=713){selectedUnit=DC.units.find(u=>u.id===unit);seed=number;setProfile(id||selectedUnit.drills[0].id)},inspect(){return {unit:selectedUnit.id,profile:selected.id,count:document.querySelectorAll('.paper>.problems>.problem').length}},render};
+// Drill-only controls: preview answers whenever answers are selected for output.
+// Keep render() independent so print bundles can render each requested mode.
+const printQuestions=document.querySelector('#print-worksheet'),printAnswers=document.querySelector('#print-answer');
+function syncOutputPreview(){
+ clearPrintBundle();
+ if(printQuestions.checked||printAnswers.checked)answers=printAnswers.checked;
+ updatePrintSelection();render();
+}
+document.querySelector('#questions').onclick=()=>{printQuestions.checked=true;printAnswers.checked=false;syncOutputPreview();};
+document.querySelector('#answers').onclick=()=>{printQuestions.checked=false;printAnswers.checked=true;syncOutputPreview();};
+printQuestions.onchange=syncOutputPreview;printAnswers.onchange=syncOutputPreview;
+syncOutputPreview();
 })();
