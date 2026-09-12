@@ -1,6 +1,6 @@
 # Italian edition — initial release
 
-Checked 2026-09-12. This release contains 163 HTML pages, 89 curriculum drill profiles and 52 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
+Checked 2026-09-12. This release contains 167 HTML pages, 89 curriculum drill profiles and 56 activity profiles. These are selected exercises, not a complete curriculum. The common calculator also reuses the numeric families already present on the Korean home page.
 
 ## Sources and placement
 
@@ -112,3 +112,9 @@ Validation: 12,960 activity answers and 14,240 drill questions agree with source
 2026-09-12: Added round-nearest, mixed, mixed-bracket and common-denominator as editorial class-five practice. Rounding covers three-digit numbers to tens/hundreds; order tasks combine addition/multiplication; common-denominator tasks ask for both equivalent fractions, not just the denominator. Generation, choices and answers remain the original Korean implementations.
 
 Validation: 14,040 activity answers and 14,240 drill questions agree with source. Four routes with ten seeds each pass descriptions and answers; all eight question/answer PDFs contain one A4 page. Static checks pass for 163 Italian pages.
+
+## Polygon areas
+
+2026-09-12: Added area-triangle, area-parallelogram, area-trapezoid and area-rhombus as editorial class-five practice. Original numeric measurements and diagrams are reused. Prompts include base/height or diagonals and cm². Static text clarifies that the drawing is schematic and measurements come from the question, not a ruler.
+
+Validation: 15,120 activity answers and 14,240 drill questions agree with source. Four routes with ten seeds each pass images, descriptions and answers; all eight question/answer PDFs contain one A4 page. Static checks pass for 167 Italian pages.
