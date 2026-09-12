@@ -31,6 +31,8 @@ definitions.push(...[["it-5-area-triangolo",5,18,"Area del triangolo","5-1-6","a
 definitions.push(...[["it-5-percentuali",5,22,"Calcolare una percentuale","6-1-4","percent"],["it-5-probabilita-base",5,23,"Eventi certi, impossibili e al 50%","5-2-6","chance"],["it-5-media-dato-mancante",5,24,"La media e il dato mancante","5-2-6","average-missing"]]);
 definitions.push(...[["it-2-contare-cubetti",2,8,"Contare i cubetti","2-1-2","cube-count"],["it-5-colonne-cubetti",5,25,"Contare cubetti da una pianta","6-2-3","cube-count"],["it-5-viste-cubetti",5,26,"Cubetti: vista frontale e laterale","6-2-3","cube-view"],["it-5-togliere-colonne",5,27,"Togliere una colonna di cubetti","6-2-3","cube-missing"]]);
 definitions.push(["it-2-solidi",2,9,"Riconoscere i solidi","2-2-6","solid-basic"]);
+definitions.push(...[["it-1-contare-forme",1,4,"Contare le forme uguali","1-1-2","sort"],["it-1-confrontare-lunghezze",1,5,"Confrontare le lunghezze","1-1-5","length-compare"]]);
+const compareText=s=>String(s).replaceAll('막대가 길수록 길이가 큽니다.',"Confronta le lunghezze.").replace(/(?<![가-힣])(가|나)(?![가-힣])/g,(_,x)=>x==='가'?'A':'B');
 const dataText=s=>String(s).replaceAll('사과','Mele').replaceAll('배','Pere').replaceAll('귤','Mandarini').replace(/● 한 개는 (\d+)명/g,'● = $1 persone').replaceAll('선택한 사람 수 (명)','Numero di persone').replace(/>(가|나|다)</g,(_,x)=>'>'+({가:'A',나:'B',다:'C'}[x])+'<');
 const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
 globalThis.ItSourceMath=source;globalThis.ItDefinitions=definitions;
@@ -73,6 +75,8 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else if(skill==='average-missing'){const n=q.prompt.match(/평균이 (\d+)/)[1],sum=q.reason.match(/합 (\d+)/)[1];prompt='La media dei tre numeri è '+n+'. Trova il numero mancante.';reason='La somma dei tre numeri è '+sum+'. Sottrai i due numeri conosciuti.';}
   else if(['cube-count','cube-view','cube-missing'].includes(skill)){prompt=skill==='cube-view'?'Quanti quadrati si vedono nella vista '+(q.prompt.startsWith('앞')?'frontale':'da destra')+'?':skill==='cube-missing'?'Togli tutti i cubetti della colonna in alto a sinistra nella pianta. Quanti cubetti restano?':'Quanti cubetti ci sono in tutto?';reason=d[4]==='2-1-2'?'Conta una volta ciascun cubetto disegnato.':skill==='cube-view'?'Per ogni fila nella direzione di osservazione considera solo la colonna più alta; poi somma le altezze.':q.reason;}
   else if(skill==='solid-basic'){prompt="Qual è il nome del solido rappresentato?";reason="Osserva le superfici piane e curve. Confronta il disegno con un oggetto reale.";}
+  else if(skill==='sort'){prompt="Quanti simboli uguali a "+q.prompt[0]+" ci sono?";reason="Raggruppa i simboli della stessa forma e contali.";}
+  else if(skill==='length-compare'){prompt="Quale barretta è più lunga, A o B?";reason="Le barrette partono dallo stesso punto. Confronta dove arrivano.";}
   else if(skill==='count'){prompt='Quanti pallini ci sono?';reason='Conta ogni pallino una sola volta.';}
   else if(skill==='compare'){prompt='Confronta i numeri. Quale segno è corretto?';reason='Confronta le quantità e usa >, < oppure =.';}
   else if(skill==='place'){const m=q.prompt.match(/^(\d+)에서 (일|십|백|천)의/),place=({일:'unità',십:'decine',백:'centinaia',천:'migliaia'})[m[2]];prompt='Qual è la cifra delle '+place+' nel numero '+m[1]+'?';reason='Da destra trovi unità, decine, centinaia e migliaia.';}
@@ -82,7 +86,7 @@ globalThis.KoMath={...source,profiles(id){const d=definitions.find(x=>x[0]===id)
   else{prompt='Confronta le due frazioni.';reason='Con denominatori uguali, confronta i numeratori.';}
   if(!q.check&&i===1)prompt+=' Scegli la risposta.';
   if(!q.check&&i===2)prompt+=' Controlla la risposta proposta.';
-  const display=skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
+  const display=skill==='length-compare'?s=>tr(compareText(s)):skill.startsWith('decimal-')?s=>decimalText(tr(s)):['table','graph'].includes(skill)?s=>dataText(tr(s)):tr;
   return {...q,prompt:skill.startsWith('decimal-')?decimalText(prompt):prompt,reason:skill.startsWith('decimal-')?decimalText(reason):reason,visual:display(q.visual),task:display(q.task),answer:display(q.answer)};
  })}));
 }};

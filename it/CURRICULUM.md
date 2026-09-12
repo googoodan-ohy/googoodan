@@ -134,3 +134,6 @@ Validation: 17,010 activity answers and 14,240 drill questions match original en
 
 
 2026-09-12: Added introductory solid identification in year two (original solid-basic, 2-2-6). Cuboid, cylinder and sphere display names localized, including answer choices; source generation and pictures preserved. This is selected introductory geometry practice, not full curriculum coverage. Validation: 17,280 activity answers and 14,240 drill questions match original; browser, static metadata and both one-page A4 PDFs pass.
+
+
+2026-09-12: Added first-year shape classification/counting (sort) and direct length comparison (length-compare). Original symbol groups and bar figures reused without changing values or generation. Diagram labels translated to A/B and short instructions to avoid SVG clipping. Selected introductory practice only. Validation: 17,820 activity answers and 14,240 drills agree with Korean sources; browser routes, regenerated sets and A4 question/answer PDFs pass.
