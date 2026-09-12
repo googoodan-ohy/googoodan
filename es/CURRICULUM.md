@@ -1,6 +1,6 @@
 # Spanish edition — initial scope
 
-2026-09-12: 147 HTML pages; 36 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
+2026-09-12: 151 HTML pages; 40 selected activity profiles and 89 arithmetic profiles. This is not a complete curriculum or a claim of coverage of every autonomous community.
 
 Official source checked: [Real Decreto 157/2022, consolidated BOE text](https://www.boe.es/buscar/act.php?id=BOE-A-2022-3296). National minimum content is organized in two-year cycles. First-cycle number work extends to 999; second-cycle number work extends to 9999 and includes proper fractions with denominators up to 12. Course placement here is editorial within that progression. Third-course subtraction and fifth-course fraction comparison are explicitly prerequisite review.
 
@@ -69,3 +69,9 @@ Validation: 8,640 activity answers and 14,240 drill questions agree with the ori
 2026-09-12: Added flat-basic, flat-count, lines and polygon from the original Korean engine. Course one recognizes triangle/quadrilateral/circle, course two counts straight sides, course three distinguishes line/ray/segment and counts polygon sides. Placements are editorial within primary plane geometry. The original four-sided category remains cuadrilátero rather than being narrowed to square. Drawings and correct answers are unchanged apart from display translation.
 
 Validation: 9,720 activity answers and 14,240 drill questions agree with source. Four new browser routes with ten seeds each pass images, descriptions and answers. All eight question/answer A4 PDFs contain one page. Static checks pass for 147 Spanish pages.
+
+## Fraction addition and subtraction
+
+2026-09-12: Added fraction-add-same/fraction-sub-same as course-five prerequisite practice, followed by fraction-add/fraction-sub. Placement follows third-cycle fraction operations rather than claiming a regional annual sequence. The generic originals may also produce equal denominators, so titles do not claim exclusively different denominators. Same-denominator sources retain unreduced results; generic sources reduce results. Missing-numerator tasks preserve the original denominator and expected numerator.
+
+Validation: 10,800 activity answers and 14,240 drill questions agree with source. Four routes with ten seeds each pass descriptions, answers and writing boxes. All eight question/answer A4 PDFs contain one page. Static checks pass for 151 Spanish pages.
