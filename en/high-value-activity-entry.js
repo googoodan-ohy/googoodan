@@ -71,9 +71,30 @@
   if (family === 'story') {
     const bank = body.dataset.hvBank;
     const profile = Number(body.dataset.hvProfile);
+    const methods = (body.dataset.hvMethods || '').split(',').filter(Boolean);
+    const count = Math.max(1, Number(body.dataset.hvCount) || methods.length);
     if (!bank || !Number.isInteger(profile) || !KoMath.profiles(bank)[profile]) return;
     current.bankId = bank;
     current.bankProfile = profile;
+    if (methods.length) {
+      const originalGenerate = KoMath.generate.bind(KoMath);
+      globalThis.KoMath = {...globalThis.KoMath, generate(id, selectedProfile, worksheetSeed, n) {
+        if (id !== bank || selectedProfile !== profile) return originalGenerate(id, selectedProfile, worksheetSeed, n);
+        const sections = [];
+        let pass = 0;
+        while (sections.length < count && pass < count * 3) {
+          const generated = originalGenerate(bank, profile, (worksheetSeed + pass * 7907) >>> 0, 1);
+          for (const section of generated) {
+            if (!methods.includes(section.skill)) continue;
+            sections.push(section);
+            if (sections.length === count) break;
+          }
+          pass++;
+        }
+        if (sections.length !== count) throw new Error('Could not materialize the requested existing story methods.');
+        return sections;
+      }};
+    }
     const gradeSelect = document.querySelector('#story-grade');
     const profileSelect = document.querySelector('#story-profile');
     if (gradeSelect) gradeSelect.value = bank;
@@ -94,6 +115,7 @@
       compensate: 'Balance both sides',
       'bridge-sub': 'Subtract by making 10',
       'zero-ten': 'Subtract from 10',
+      'three-sub': 'Subtract three numbers',
       error: 'Find and fix the math mistake'
     };
     const translate = (question, method) => {
@@ -107,6 +129,9 @@
       } else if (method === 'zero-ten') {
         copy.prompt = 'Subtract from 10.';
         copy.reason = 'Use the related number pair that makes 10 to check the difference.';
+      } else if (method === 'three-sub') {
+        copy.prompt = 'Subtract from left to right.';
+        copy.reason = 'Subtract the second number first, then subtract the third number.';
       } else if (method === 'error') {
         copy.prompt = 'Check the equation. Find the mistake and write the correct answer.';
         copy.reason = 'Recalculate the left side and compare it with the answer that was shown.';
@@ -129,6 +154,24 @@
       }
       if (sections.length !== count) throw new Error('Could not materialize the requested existing activity methods.');
       return sections;
+    }};
+    document.querySelector('#early-activity')?.closest('label')?.remove();
+    installRenderWrapper();
+    return;
+  }
+
+  if (family === 'early-numbers') {
+    const method = body.dataset.hvMethod;
+    const count = Math.max(1, Number(body.dataset.hvCount) || 4);
+    if (!method || !globalThis.EarlyActivities?.sourceFor || !globalThis.EarlyActivities?.translate) return;
+    const originalGenerate = KoMath.generate.bind(KoMath);
+    globalThis.KoMath = {...globalThis.KoMath, generate(id, profile, worksheetSeed, n) {
+      if (id !== current.bankId) return originalGenerate(id, profile, worksheetSeed, n);
+      const source = EarlyActivities.sourceFor(method);
+      return Array.from({length:count}, (_, index) => {
+        const question = EarlyActivities.translate(source((worksheetSeed + index * 7907) >>> 0), method);
+        return {title:EarlyActivities.labels[method], skill:method, questions:[question]};
+      });
     }};
     document.querySelector('#early-activity')?.closest('label')?.remove();
     installRenderWrapper();

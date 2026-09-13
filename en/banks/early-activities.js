@@ -7,7 +7,7 @@
     ['ten-frame-activities','Ten Frame and Make 10 Worksheets',['ten-frame','ten-missing','pair-ten'],'Kindergarten–Grade 1 · make 10'],
     ['picture-addition','Picture Addition Activity Worksheets',['picture-add','bridge-add'],'Grade 1 · addition within 20']
   ];
-  const labels={count:'Count and write',mark:'Circle a set',compare:'Compare picture groups',words:'Match numbers and words',order:'Order the number cards',ordinal:'Find a position',neighbors:'Before and after',line:'Complete the number line',repair:'Fix the number order','ten-frame':'Complete a ten frame','ten-missing':'Find a partner for 10','pair-ten':'Circle a pair that makes 10','picture-add':'Pictures to an addition sentence','bridge-add':'Make 10 to add'};
+  const labels={count:'Count and write',mark:'Circle a set',compare:'Compare picture groups',words:'Match numbers and words',order:'Order the number cards',ordinal:'Find a position',neighbors:'Before and after',clue:'Find numbers between two values',line:'Complete the number line',repair:'Fix the number order','ten-frame':'Complete a ten frame','ten-missing':'Find a partner for 10','pair-ten':'Circle a pair that makes 10','picture-add':'Pictures to an addition sentence','bridge-add':'Make 10 to add'};
   const numberWords={'하나':'one','둘':'two','셋':'three','넷':'four','다섯':'five','여섯':'six','일곱':'seven','여덟':'eight','아홉':'nine'};
   const originalIcon=KoArt.icon;
   KoArt.icon=(asset,...args)=>originalIcon({...asset,file:asset.file.startsWith('/')?asset.file:'/ko/'+asset.file,name:asset.nameEn||'counting picture'},...args);
@@ -36,6 +36,7 @@
       case 'order':prompt='Write the number cards in order, smallest first.';reason='Start with the smallest number.';break;
       case 'ordinal':prompt=`Start at the left. Circle picture number ${nums[0]}.`;answer=`Circle the ${nums[0]}${nums[0]==='1'?'st':nums[0]==='2'?'nd':nums[0]==='3'?'rd':'th'} picture from the left.`;reason='Count positions from left to right.';break;
       case 'neighbors':prompt='Write the number before and the number after.';reason='The number before is one less; the number after is one more.';break;
+      case 'clue':prompt=`Circle every number greater than ${nums[0]} and less than ${nums[1]}.`;task='Numbers: ____ and ____';reason=`The endpoints ${nums[0]} and ${nums[1]} are not included.`;break;
       case 'line':prompt='Fill in the missing number on the number line.';reason='Each step to the right increases the number by one.';break;
       case 'repair':prompt='Two cards are in the wrong order. Write the two numbers to swap.';task='____ and ____';reason='The cards should count forward by one.';break;
       case 'ten-frame':prompt='Draw one dot in each empty box to make 10. How many dots did you add?';task='Dots added: ____';reason='Count the empty boxes.';break;
@@ -60,5 +61,5 @@
     if(!methods.length)throw Error('Unknown activity selection');
     return Array.from({length:4},(_,i)=>{const method=methods[i%methods.length],q=english(sourceFor(method)(seed+i*7907),method);return{title:labels[method],questions:[q]};});
   }};
-  globalThis.EarlyActivities={definitions,labels,select(method){selection=method;},sourceFor};
+  globalThis.EarlyActivities={definitions,labels,select(method){selection=method;},sourceFor,translate:english};
 })();

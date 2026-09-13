@@ -4,7 +4,7 @@ const path = require('path');
 
 const enDir = __dirname;
 const site = 'https://googoodan.com';
-const version = '20260913-high-value-activity';
+const version = '20260913-us-activity-batch2';
 
 const entries = [
   page({
@@ -66,7 +66,68 @@ const entries = [
     purpose:'Every displayed equation contains an answer that needs checking. Students become error detectives by recalculating two-digit addition and replacing an incorrect result.',
     action:'Cover the shown answer, solve the left side independently, and compare the two results. Record the corrected answer and explain one mistake aloud.',
     tip:'Treat a wrong answer as useful evidence. Ask whether the ones, tens, or regrouping caused the mismatch, then verify the correction with a second strategy or an estimate.'
+  }),
+  page({
+    file:'find-the-unknown-word-problems.html', source:'word-problems.html', family:'story', bank:'1-1-3', profile:0,
+    title:'Find the Unknown Word Problems Worksheets',
+    description:'Free printable find the unknown word problems for first grade. Practice start, change, and result unknown stories within 10, then print matching answer keys.',
+    grade:'Grade 1', standard:'1.OA.A.1',
+    instruction:'Read each story. Decide whether the start, change, or result is unknown, then write an equation and solve.',
+    purpose:'These stories keep every quantity within 10 while changing the position of the unknown. Students solve for a result, a starting amount, or a change instead of relying on one repeated story pattern.',
+    action:'Circle the question and name the unknown before choosing an operation. Draw objects or a quick bar if needed, write an equation with a box for the unknown, and solve.',
+    tip:'Ask what we know now and what we are trying to find. A student who can name the unknown is less likely to choose an operation from a single clue word.'
+  }),
+  page({
+    file:'compare-word-problems-more-fewer.html', source:'word-problems.html', family:'story', bank:'1-2-6', profile:1, methods:['compare-more','compare-less'], count:4,
+    title:'Compare Word Problems: More and Fewer Worksheets',
+    description:'Free printable compare word problems for second grade. Practice how many more and how many fewer stories within 100, make new sets, and print answers.',
+    grade:'Grade 2', standard:'2.OA.A.1',
+    instruction:'Compare the two quantities. Decide whether to add or subtract when a person has more or fewer.',
+    purpose:'Four focused comparison stories use quantities within 100. Students connect the phrases more than and fewer than to the relationship between a reference amount and a compared amount.',
+    action:'Underline the reference amount, box the difference, and identify whose amount is unknown. Write an equation that matches that relationship, then check whether the answer should be larger or smaller.',
+    tip:'Read the comparison sentence in both directions. For example, if Maya has 6 more than Alex, Alex has 6 fewer than Maya. This verbal reversal makes the relationship clearer.'
+  }),
+  page({
+    file:'word-problems-with-extra-information.html', source:'word-problems.html', family:'story', bank:'1-2-6', profile:3,
+    title:'Word Problems with Extra Information Worksheets',
+    description:'Free printable word problems with extra information for second grade. Find the useful numbers, ignore irrelevant details, solve, and print matching answers.',
+    grade:'Grade 2', standard:'2.OA.A.1',
+    instruction:'Read each story. Cross out information you do not need, use the two useful numbers, and solve.',
+    purpose:'Each story includes one realistic detail that is not needed for the calculation. Students decide which information answers the question before they add or subtract within 100.',
+    action:'Read the question first. Underline the two quantities that describe the same objects, cross out the room number, other item count, or age, and write an equation with only the useful numbers.',
+    tip:'Ask the student to explain why the unused number does not belong in the equation. This turns a simple calculation into careful reading without increasing the arithmetic difficulty.'
+  }),
+  page({
+    file:'open-ended-math-word-problems.html', source:'word-problems.html', family:'story', bank:'1-2-6', profile:5,
+    title:'Open-Ended Math Word Problems Worksheets',
+    description:'Free printable open-ended math word problems for second grade. Write a question, check a claim, explain your strategy, and print matching answer keys.',
+    grade:'Grade 2', standard:'2.OA.A.1; MP3',
+    instruction:'Write a question, check a classmate\'s claim, or explain why your equation matches the story.',
+    purpose:'These prompts use familiar addition and subtraction stories within 100, then ask students to create, critique, and justify. The mathematical quantities come from the existing story bank.',
+    action:'Use complete sentences when the prompt asks for a question or explanation. Make sure the question, equation, and answer describe the same quantities, and show enough work for another person to follow.',
+    tip:'Accept different wording when the mathematics is consistent. For a claim, ask the student to identify exactly which quantity is unknown and use that relationship as evidence.'
+  }),
+  page({
+    file:'subtracting-three-numbers.html', source:'picture-addition.html', family:'early-arithmetic', bank:'1-2-2', profile:0, methods:['three-sub'], count:6,
+    title:'Subtracting Three Numbers Worksheets',
+    description:'Free printable subtracting three numbers worksheets for first grade. Subtract within 10 from left to right, make fresh sets, and print matching answers.',
+    grade:'Grade 1', standard:'1.OA.C.6',
+    instruction:'Subtract the three numbers from left to right. Write the final difference in the box.',
+    purpose:'Every equation begins with a number from 6 through 9 and subtracts two small amounts. All intermediate and final values stay nonnegative and within 10.',
+    action:'Cover the third number, solve the first subtraction, then subtract the last number from that result. Record the final difference and check it by repeating the two steps.',
+    tip:'Have the student say the intermediate result aloud. This prevents treating both smaller numbers as one number and reinforces that equal-priority subtraction is worked from left to right.'
+  }),
+  page({
+    file:'greater-than-less-than-number-clues.html', source:'number-order-activities.html', family:'early-numbers', method:'clue', count:4,
+    title:'Greater Than and Less Than Number Clues Worksheets',
+    description:'Free printable greater than and less than number clue worksheets for kindergarten and first grade. Find numbers between endpoints, make new sets, and print answers.',
+    grade:'Kindergarten and Grade 1', standard:'K.CC.C.7',
+    instruction:'Circle every number that is greater than the first endpoint and less than the second endpoint.',
+    purpose:'Each clue shows four number cards from 1 through 9 and asks children to find the values strictly between two endpoints. The task connects comparison words to a visible number sequence.',
+    action:'Read both parts of the clue, point to the lower and upper endpoints, then circle only the cards between them. Write the two matching numbers in the answer space.',
+    tip:'Emphasize that greater than and less than do not include the endpoints. Place four number cards in order and physically move the two inside cards forward when extra support is useful.'
   })
+
 ];
 
 function page(config) { return config; }

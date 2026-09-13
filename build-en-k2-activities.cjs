@@ -1,6 +1,6 @@
 const fs=require('fs');
 const {definitions,labels}=require('./en/banks/k2-activities.js');
-const version='20260913-k2-hands-on-2';
+const version='20260913-answer-space-fix';
 const descriptions={
   'count-and-color':'Free printable count and color worksheets for kindergarten. Count picture groups, color a requested amount, and check each activity with an answer key.',
   'picture-subtraction':'Free printable picture subtraction worksheets for kindergarten and first grade. Cross out objects, write subtraction equations, and print answer keys.',
@@ -68,7 +68,7 @@ for(const def of definitions){
   html=html.replace('<script defer src="app.js',injected+'<script defer src="app.js');
   html=html.replace(/<link rel="alternate" hreflang="[^"]+" href="[^"]+">/g,'');
   const alternates=`<link rel="alternate" hreflang="en" href="${url}"><link rel="alternate" hreflang="ko" href="https://googoodan.com/ko/"><link rel="alternate" hreflang="ja" href="https://googoodan.com/ja/"><link rel="alternate" hreflang="fr" href="https://googoodan.com/fr/"><link rel="alternate" hreflang="de" href="https://googoodan.com/de/"><link rel="alternate" hreflang="x-default" href="https://googoodan.com/">`;
-  html=html.replace('</head>',`${alternates}<meta property="og:image" content="${image}"><meta property="og:image:width" content="1000"><meta property="og:image:height" content="1500"><meta property="og:image:alt" content="Printable ${title.toLowerCase()} sample"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/en/banks/k2-activities.css?v=${version}"><script defer src="/en/banks/k2-activity-controls.js?v=${version}"></script></head>`);
+  html=html.replace('</head>',`${alternates}<meta property="og:image" content="${image}"><meta property="og:image:width" content="1000"><meta property="og:image:height" content="1500"><meta property="og:image:alt" content="Printable ${title.toLowerCase()} sample"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/en/banks/k2-activities.css?v=20260913-answer-space-fix"><script defer src="/en/banks/k2-activity-controls.js?v=${version}"></script></head>`);
   html=html.replace(/<meta (?:name="description"|property="og:description") content="[^"]*">/g,tag=>tag.replace(/content="[^"]*"/,`content="${description}"`));
   html=html.replace(/<script(?: id="website-identity")? type="application\/ld\+json">([\s\S]*?)<\/script>/g,(all,json)=>{const data=JSON.parse(json);if(data['@type']==='WebSite'){Object.assign(data,{name:'googoodan',alternateName:'구구단닷컴'});return'<script id="website-identity" type="application/ld+json">'+JSON.stringify(data)+'</script>';}if(data['@type']==='LearningResource'){Object.assign(data,{name:title,description,url,image,inLanguage:'en',educationalLevel:level,learningResourceType:'Activity worksheet',teaches:standard});return'<script type="application/ld+json">'+JSON.stringify(data)+'</script>';}return all;});
   const [what,how]=unique[id];

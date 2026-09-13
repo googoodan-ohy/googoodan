@@ -15,7 +15,13 @@ const expected = new Set([
   'balance-the-equation.html',
   'make-10-subtraction.html',
   'choose-operation-word-problems.html',
-  'math-mistake-detective.html'
+  'math-mistake-detective.html',
+  'find-the-unknown-word-problems.html',
+  'compare-word-problems-more-fewer.html',
+  'word-problems-with-extra-information.html',
+  'open-ended-math-word-problems.html',
+  'subtracting-three-numbers.html',
+  'greater-than-less-than-number-clues.html'
 ]);
 
 function match(html, pattern, label, file) {
@@ -27,8 +33,8 @@ function visibleWords(html) {
   return html.replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(/<style\b[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&\w+;/g, ' ').trim().split(/\s+/).filter(Boolean).length;
 }
 function staticCheck() {
-  if (manifest.count !== 6 || manifest.pages.length !== 6) throw new Error('Manifest must contain exactly six pages');
-  if (new Set(manifest.pages.map(item => item.file)).size !== 6) throw new Error('Duplicate manifest file');
+  if (manifest.count !== expected.size || manifest.pages.length !== expected.size) throw new Error('Manifest must contain exactly twelve pages');
+  if (new Set(manifest.pages.map(item => item.file)).size !== expected.size) throw new Error('Duplicate manifest file');
   for (const file of expected) if (!manifest.pages.some(item => item.file === file)) throw new Error(`Manifest missing ${file}`);
   const titles = new Set();
   const canonicals = new Set();
@@ -48,7 +54,7 @@ function staticCheck() {
     if (description !== item.description || description.length < 120 || description.length > 180) throw new Error(`${item.file}: description length/identity ${description.length}`);
     if (wordCount < 250) throw new Error(`${item.file}: only ${wordCount} static guide words`);
     if (!/<meta name="robots" content="index,follow">/i.test(html)) throw new Error(`${item.file}: robots meta missing`);
-    if (!html.includes('/en/high-value-activity-entry.js?v=20260913-high-value-activity')) throw new Error(`${item.file}: focused adapter missing`);
+    if (!html.includes('/en/high-value-activity-entry.js?v=20260913-us-activity-batch2')) throw new Error(`${item.file}: focused adapter missing`);
     if (!html.includes('/answer-boxes.css?v=20260913-bank-answers') || !html.includes('/answer-boxes.js?v=20260913-bank-answers')) throw new Error(`${item.file}: answer box cache version is stale`);
     const required = {en:item.canonical,ko:'https://googoodan.com/ko/',ja:'https://googoodan.com/ja/',fr:'https://googoodan.com/fr/',de:'https://googoodan.com/de/','x-default':'https://googoodan.com/'};
     for (const [lang, href] of Object.entries(required)) {
@@ -62,6 +68,7 @@ function staticCheck() {
     if (!resource || resource.name !== item.title || resource.url !== item.canonical || resource.description !== item.description || resource.isAccessibleForFree !== true) throw new Error(`${item.file}: invalid LearningResource JSON-LD`);
     const cleanVisible = html.replace(/<script\b[\s\S]*?<\/script>/gi, ' ').replace(/<style\b[\s\S]*?<\/style>/gi, ' ');
     if (/[가-힣]/.test(cleanVisible)) throw new Error(`${item.file}: Korean text in visible static HTML`);
+    if (/[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(html)) throw new Error(`${item.file}: C0 control character found`);
     if (titles.has(title) || canonicals.has(canonical)) throw new Error(`${item.file}: duplicate title or canonical in set`);
     titles.add(title); canonicals.add(canonical);
     report.push({file:item.file, words:wordCount, description:description.length});
@@ -134,6 +141,9 @@ async function browserCheck() {
           minus:[...document.querySelectorAll('.color-cell,.kequation')].filter(node => node.textContent.includes('−')).length,
           choose:[...document.querySelectorAll('.bank-question')].filter(node => node.textContent.includes('Choose an equation')).length,
           keyRanges:document.querySelectorAll('.color-key span').length,
+          prompts:[...document.querySelectorAll('.bank-question > p:first-of-type')].map(node => node.textContent.replace(/\s+/g, ' ').trim()),
+          equations:[...document.querySelectorAll('.kequation')].map(node => node.textContent.replace(/\s+/g, ' ').trim()),
+          numberCardRows:[...document.querySelectorAll('.number-cards')].map(row => [...row.querySelectorAll('b')].map(node => Number(node.textContent))),
           pdfButton:!!document.querySelector('#save-pdf'),
           preparePDF:typeof window.GDPreparePDF === 'function'
         };
@@ -147,6 +157,12 @@ async function browserCheck() {
       if (item.file === 'balance-the-equation.html' && (before.count !== 6 || before.minus !== 0)) throw new Error(`${item.file}: balance profile mismatch`);
       if (item.file === 'make-10-subtraction.html' && (before.count !== 6 || before.minus !== 6)) throw new Error(`${item.file}: make-10 subtraction profile mismatch`);
       if (item.file === 'math-mistake-detective.html' && before.count !== 6) throw new Error(`${item.file}: detective profile mismatch`);
+      if (item.file === 'find-the-unknown-word-problems.html' && (before.count !== 3 || !before.prompts.some(text => text.startsWith('Alex has')) || !before.prompts.some(text => text.startsWith('After Maya brings')) || !before.prompts.some(text => text.includes('for school supplies')))) throw new Error(`${item.file}: unknown-position story profile mismatch`);
+      if (item.file === 'compare-word-problems-more-fewer.html' && (before.count !== 4 || before.prompts.filter(text => text.includes('more than')).length !== 2 || before.prompts.filter(text => text.includes('fewer')).length !== 2)) throw new Error(`${item.file}: compare-more/fewer filter mismatch`);
+      if (item.file === 'word-problems-with-extra-information.html' && (before.count !== 3 || !before.prompts.some(text => text.includes('room 8')) || !before.prompts.some(text => text.includes('6 notebooks')) || !before.prompts.some(text => text.includes('sister is 7 years old')))) throw new Error(`${item.file}: extra-information profile mismatch`);
+      if (item.file === 'open-ended-math-word-problems.html' && (before.count !== 3 || !before.text.includes('Write a question') || !before.text.includes('A friend says') || !before.text.includes('Why?'))) throw new Error(`${item.file}: open-ended profile mismatch`);
+      if (item.file === 'subtracting-three-numbers.html' && (before.count !== 6 || before.equations.length !== 6 || before.equations.some(text => text.split(String.fromCharCode(8722)).length - 1 !== 2))) throw new Error(`${item.file}: three-number subtraction mismatch`);
+      if (item.file === 'greater-than-less-than-number-clues.html' && (before.count !== 4 || before.prompts.some(text => !text.includes('greater than') || !text.includes('less than')) || before.numberCardRows.length !== 4 || before.numberCardRows.some(values => values.length !== 4 || values.some(value => value < 1 || value > 9)))) throw new Error(`${item.file}: number-clue profile mismatch`);
 
       await page.click('#answers');
       const answer = await page.evaluate(() => {
@@ -168,8 +184,15 @@ async function browserCheck() {
       if (answer.worksheetChecked || !answer.answerChecked) throw new Error(`${item.file}: answer checkbox sync failed`);
 
       await page.click('#new');
-      const afterNew = await page.evaluate(() => ({set:document.querySelector('#set')?.textContent, signature:[...document.querySelectorAll('.bank-question,.color-cell')].map(node => node.textContent).join('|')}));
-      if (afterNew.set === before.set) throw new Error(`${item.file}: New problems did not change the set`);
+      const afterNew = await page.evaluate(() => {
+        const signature = [...document.querySelectorAll('.bank-question,.color-cell')].map(node => {
+          const copy = node.cloneNode(true);
+          copy.querySelectorAll('.bank-answer,small').forEach(answer => answer.remove());
+          return copy.textContent.replace(/\s+/g, ' ').trim();
+        });
+        return {set:document.querySelector('#set')?.textContent, signature:JSON.stringify(signature)};
+      });
+      if (afterNew.set === before.set || afterNew.signature === before.signature) throw new Error(`${item.file}: New problems did not change the set and content`);
       await page.click('#questions');
       const printDom = await page.evaluate(() => ({paper:!!document.querySelector('.paper'),problems:!!document.querySelector('.problems'),set:!!document.querySelector('#set'),status:!!document.querySelector('#status'),bundle:!!document.querySelector('#print-bundle')}));
       if (!printDom.paper || !printDom.problems || !printDom.set || !printDom.status) throw new Error(`${item.file}: print source DOM missing ${JSON.stringify(printDom)}`);

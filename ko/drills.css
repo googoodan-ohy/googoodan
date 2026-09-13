@@ -11,3 +11,46 @@
 
 /* Make the worked example the primary menu label. */
 .drill-choice .drill-example{font-size:23px;line-height:1.4;font-weight:750;color:#193f50;overflow-wrap:anywhere}.drill-choice .drill-description{font-size:11px;line-height:1.5;font-weight:400;color:#647f75;margin-top:7px}.drill-choice{padding:13px 10px}
+/* US printable writing spaces. */
+.drill-sheet .answer{
+  display:inline-flex;
+  box-sizing:border-box;
+  width:12mm;
+  min-width:12mm;
+  height:9mm;
+  min-height:9mm;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #64838b;
+  border-radius:1mm;
+  vertical-align:middle;
+  background:#fff;
+  line-height:1;
+}
+.drill-sheet .answer.concealed{visibility:visible;color:transparent}
+.drill-sheet .vertical .result{
+  box-sizing:border-box;
+  min-width:12mm;
+  min-height:9mm;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+.drill-sheet .worked.multiplication .working>div:last-child{
+  box-sizing:border-box;
+  min-width:12mm;
+  min-height:9mm;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+.drill-sheet .worked.multiplication .working.concealed>div:last-child{
+  visibility:visible;
+  color:transparent;
+  border-top:1.5px solid #64838b;
+}
+.drill-sheet .drill-box{
+  box-sizing:border-box;
+  min-width:12mm;
+  min-height:9mm;
+}

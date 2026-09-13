@@ -67,7 +67,7 @@ for(const def of api.definitions){
   assert.ok(jsonLd.some(data=>data['@type']==='LearningResource'&&data.url===url&&data.name===def.title),def.id+' learning resource schema');
   const resource=html.match(/<section class="seo-resource"[\s\S]*?<\/section>/)?.[0]||'';
   assert.ok(strip(resource).split(/\s+/).length>=250,def.id+' static guide too short');
-  assert.ok(html.includes('k2-activities.js?v=20260913-k2-hands-on-2')&&html.includes('k2-activities.css?v=20260913-k2-hands-on-2'),def.id+' cache version');
+  assert.ok(html.includes('k2-activities.js?v=20260913-answer-space-fix')&&html.includes('k2-activities.css?v=20260913-answer-space-fix'),def.id+' cache version');
   if(process.argv.includes('--with-previews')){
     const preview=path.join('en','activity-previews',def.id+'.png');
     assert.ok(fs.existsSync(preview),def.id+' preview missing');
