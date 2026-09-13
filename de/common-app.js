@@ -15,8 +15,8 @@ else if(c?.kind==='integer')t.title=op+' mit negativen Zahlen';
 else if(baseTitles[t.id])t.title=baseTitles[t.id];
 t.instruction=t.group==='Division'?'Rechne die Divisionen. Gib gegebenenfalls den Rest an.':t.group==='Number sense'?'Ergänze die passende Zahl oder das Zeichen.':'Rechne und schreibe das Ergebnis auf.';}
 let koBrowse='topic';
-function koMenu(){groups.innerHTML='<nav class="edition-tabs"><a href="/de/" aria-current="page"><span class="arithmetic-menu-icons"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>Grundrechenarten</span></a><a href="/de/drills.html">Rechnen nach Kapiteln</a><a href="/de/units.html">Aufgabentypen nach Kapiteln</a></nav>';
- GDRegions.mount(groups);const nav=document.createElement('div');nav.className='filter-row';
+function koMenu(){groups.innerHTML='<nav class="edition-tabs"><a href="/de/" aria-current="page"><span class="arithmetic-menu-icons"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>Grundrechenarten</span></a><a href="/de/drills.html">Rechnen nach Themen</a><a href="/de/units.html">Aufgabentypen nach Themen</a></nav>';
+ const nav=document.createElement('div');nav.className='filter-row';
  for(const f of Object.keys(familyNames)){const b=document.createElement('button');b.className='number-category';b.innerHTML=numberArt[f]+'<span>'+familyNames[f]+'</span>';b.setAttribute('aria-pressed',family===f);b.onclick=()=>{family=f;operation=f==='Times tables'?'Multiplication':'Addition';if(f==='Times tables'){current=GDTimes.type;seed++;}menu();if(f==='Times tables')render();};nav.append(b)}groups.append(nav);
  if(family==='Times tables'){GDTimes.menu(groups,()=>{current=GDTimes.type;seed++;history.replaceState(null,'',location.pathname+'?type=times-tables&tables='+GDTimes.selected.join(','));render();});return;}
  const ops=document.createElement('div');ops.className='operation-row';
