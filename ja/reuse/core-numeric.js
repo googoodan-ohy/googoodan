@@ -92,8 +92,8 @@ else if(['fraction-model','fraction-form','fraction-compare','decimal-model','de
  if(kind==='decimal-compare'){const scale=10**max;a=between(1,scale*3)/scale;b=between(1,scale*3)/scale;const ans=a>b?'>':a<b?'<':'=';finish('合う記号を書きましょう。','<div class="kequation">'+a+' □ '+b+'</div>',ans,'小数点をそろえて、大きい位から比べます。',{choices:['>','<','='],wrong:ans==='>'?'<':'>'})}
  if(kind==='decimal-place'){a=between(101,999);const pos=r(3),names=['第1','第2','第3'],v=Number(String(a)[pos]);finish((a/1000).toFixed(3)+'の小数'+names[pos]+'位の数字は何ですか。','',v,'小数点の右から位を確かめます。')}
  if(kind==='decimal-fraction'){a=between(1,99);finish(a+'/100を小数で表しましょう。','',a/100,'100分の1が'+a+'個です。')}
- if(kind==='reduce'){a=between(2,5);finish('기약分수로 약分하세요.','<div class="kequation">'+F(n*a,d*a)+'</div>',frac(n,d),'分자와 分모를 最大公約数 '+gcd(n*a,d*a)+'でわります。',{wrong:(n*a)+'/'+(d*a+1)})}
- if(kind==='common-denominator'){const e=d+1,l=d*e/gcd(d,e);finish('가장 작은 공통分모로 통分하세요.','<div class="kequation">'+F(n,d)+' , '+F(1,e)+'</div>',(n*l/d)+'/'+l+', '+(l/e)+'/'+l,'分모の最小公倍数は '+l+'です。',{wrong:n+'/'+l+', 1/'+l})}
+ if(kind==='reduce'){a=between(2,5);finish('これ以上約分できない分数にしましょう。','<div class="kequation">'+F(n*a,d*a)+'</div>',frac(n,d),'分子と分母を最大公約数の'+gcd(n*a,d*a)+'でわります。',{wrong:(n*a)+'/'+(d*a+1)})}
+ if(kind==='common-denominator'){const e=d+1,l=d*e/gcd(d,e);finish('分母の最小公倍数を使って通分しましょう。','<div class="kequation">'+F(n,d)+' , '+F(1,e)+'</div>',(n*l/d)+'/'+l+', '+(l/e)+'/'+l,'分母の最小公倍数は'+l+'です。',{wrong:n+'/'+l+', 1/'+l})}
 }
 else if(kind.startsWith('fraction-')||kind==='whole-div-fraction'||kind==='whole-div-fraction-result'){
  let d=between(2,9),e=kind.includes('same')?d:between(2,9),n=between(1,d-1),m=between(1,e-1);
@@ -130,7 +130,7 @@ else if(['ratio','percent','ratio-compare','proportion','share-ratio','ratio-sim
  else if(kind==='proportion')finish('等しい比になるように□の数を求めましょう。','<div class="kequation">'+a+' : '+b+' = □ : '+b*c+'</div>',a*c,'両方の数に同じ数'+c+'をかけます。');
  else if(kind==='share-ratio'){const total=(a+b)*c;finish(total+'個を'+a+' : '+b+'の比で分けると、前の数に当たる分は何個ですか。','',a*c,total+' × '+a+'/('+a+' + '+b+') = '+a*c)}
  else if(kind==='ratio-simplify'){const g=gcd(a,b);finish(a*c+' : '+b*c+'を最も簡単な整数の比にしましょう。','',a/g+' : '+b/g,'両方の数を最大公約数'+g*c+'でわります。',{wrong:a/g+' : '+(b/g+1)})}
- else if(kind==='chance'){const ans=pick(['불가능하다','확실하다','반반이다']),stem=ans==='불가능하다'?'빨간 공만 있は 상자の파란 공を뽑を가능성은 어떤가요?':ans==='확실하다'?'파란 공만 있は 상자の파란 공を뽑を가능성은 어떤가요?':'빨간 공 1개와 파란 공 1個のうち보지 않고 하나를 뽑を때 빨간 공日目 가능성은 어떤가요?';finish(stem,'',ans,'상자 안の공 종류와 개수를 비교します。',{choices:['불가능하다','확실하다','반반이다'],wrong:ans==='확실하다'?'불가능하다':'확실하다'})}
+ else if(kind==='chance'){const ans=pick(['起こらない','必ず起こる','半々である']),stem=ans==='起こらない'?'赤いボールだけが入った箱から、青いボールを取り出すことはありますか。':ans==='必ず起こる'?'青いボールだけが入った箱から一つ取り出すと、青いボールが出ますか。':'赤いボールと青いボールが1個ずつ入った箱から、見ないで一つ取り出します。赤いボールが出る可能性はどれですか。';finish(stem,'',ans,'箱の中のボールの色と個数を比べます。',{choices:['起こらない','必ず起こる','半々である'],wrong:ans==='必ず起こる'?'起こらない':'必ず起こる'})}
  else {a=between(5,15);b=between(1,4);const vals=[a-b,a,a+b];if(kind==='average')finish('三つの数の平均を求めましょう。','<div class="kequation">'+vals.join(', ')+'</div>',a,'合計'+a*3+'をデータの個数3でわります。');else finish('平均が'+a+'のとき、□の数を求めましょう。','<div class="kequation">'+(a-b)+', □, '+(a+b)+'</div>',a,'合計'+a*3+'から分かっている二つの数を引きます。')}
 }
 else if(kind==='graph'||kind==='graph-choice'){
@@ -147,17 +147,17 @@ else if(kind==='graph'||kind==='graph-choice'){
 }
 else if(['angle-right','lines','angle-type','angle-measure','angle-sum','triangle-angle','quad-angle','parallel','triangle-side','triangle-type','quad-type','polygon','diagonal','tile'].includes(kind)){
  if(kind==='angle-right'){const yes=r(2)===0;finish('直角の図ですか。',svg('<path d="M65 15V67H165" fill="none" stroke="#547b92" stroke-width="3" transform="'+(yes?'':'translate(25 0) skewX(-25)')+'"/>'),yes?'はい':'いいえ','紙の角を重ねて確かめます。',{choices:['はい','いいえ'],wrong:yes?'いいえ':'はい'})}
- else if(kind==='lines'){const idx=r(3),names=['선分','반직선','직선'];visual=svg('<path d="M35 42H190" stroke="#537e8d" stroke-width="3"/>'+(idx===0?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><circle cx="190" cy="42" r="4" fill="#537e8d"/>':idx===1?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><path d="M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>':'<path d="M44 35L35 42L44 49M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>'));finish('그림の이름を書きましょう.',visual,names[idx],'끝점と뻗は 방향を확인します。',{choices:names,wrong:names[(idx+1)%3]})}
+ else if(kind==='lines'){const idx=r(3),names=['線分','半直線','直線'];visual=svg('<path d="M35 42H190" stroke="#537e8d" stroke-width="3"/>'+(idx===0?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><circle cx="190" cy="42" r="4" fill="#537e8d"/>':idx===1?'<circle cx="35" cy="42" r="4" fill="#537e8d"/><path d="M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>':'<path d="M44 35L35 42L44 49M181 35L190 42L181 49" fill="none" stroke="#537e8d" stroke-width="2"/>'));finish('図の名前を書きましょう。',visual,names[idx],'端の点と線が伸びる方向を確かめます。',{choices:names,wrong:names[(idx+1)%3]})}
  else if(kind==='angle-type'||kind==='angle-measure'){
  const angle=pick([30,40,60,90,120,130,150]),rad=angle*Math.PI/180,cx=110,cy=82,R=67;
  const ticks=Array.from({length:19},(_,i)=>{const t=i*Math.PI/18;return '<path d="M'+(cx+(R-6)*Math.cos(t))+' '+(cy-(R-6)*Math.sin(t))+'L'+(cx+R*Math.cos(t))+' '+(cy-R*Math.sin(t))+'" stroke="#7c929e"/>'+(i%3===0?text(cx+(R-17)*Math.cos(t),cy-(R-17)*Math.sin(t)+3,i*10):'')}).join('');
  visual=svg((kind==='angle-measure'?'<path d="M43 82A67 67 0 0 1 177 82" fill="#f7fafb" stroke="#a6bdc8"/>'+ticks:'')+'<path d="M110 82H181M110 82L'+(cx+R*Math.cos(rad))+' '+(cy-R*Math.sin(rad))+'" stroke="#486b98" stroke-width="2" fill="none"/>',230,98);
- finish(kind==='angle-type'?'각の종류를 選びましょう.':'分度器の目盛りを読んで角度を求めましょう。',visual,kind==='angle-type'?(angle<90?'예각':angle===90?'직각':'둔각'):angle,kind==='angle-measure'?'右の0°から、もう一方の辺が指す目盛り'+angle+'°を読みます。':'90°보다 작으면 예각, 같으면 직각, 크고 180°보다 작으면 둔각です。',{choices:kind==='angle-type'?['예각','직각','둔각']:undefined,wrong:kind==='angle-type'?(angle===90?'예각':'직각'):angle+10})
+ finish(kind==='angle-type'?'角の種類を選びましょう。':'分度器の目盛りを読んで角度を求めましょう。',visual,kind==='angle-type'?(angle<90?'鋭角':angle===90?'直角':'鈍角'):angle,kind==='angle-measure'?'右の0°から、もう一方の辺が指す目盛り'+angle+'°を読みます。':'90°より小さい角は鋭角、90°の角は直角、90°より大きく180°より小さい角は鈍角です。',{choices:kind==='angle-type'?['鋭角','直角','鈍角']:undefined,wrong:kind==='angle-type'?(angle===90?'鋭角':'直角'):angle+10})
 }
  else if(kind==='angle-sum'){a=between(2,8)*10;b=between(1,8)*10;finish('隣り合う二つの角'+a+'°と'+b+'°を合わせると何度ですか。','',a+b,a+' + '+b+' = '+(a+b)+'°')}
  else if(kind==='triangle-angle'||kind==='quad-angle'){const tri=kind==='triangle-angle',sum=tri?180:360,vals=tri?[between(3,7)*10,between(3,7)*10]:[90,90,between(6,12)*10];finish((tri?'三角形':'四角形')+'の角のうち'+vals.map(v=>v+'°').join(', ')+'が分かっています。残りの角は何度ですか。','',sum-vals.reduce((x,y)=>x+y),'角の和'+sum+'°から分かっている角を引きます。')}
- else if(kind==='triangle-side'){a=between(3,9);finish('세 변が모두 '+a+'cmの三角形の이름은 무엇ですか。',poly(3),'정三角形','세 변の長さ가 모두 같습니다.',{choices:['정三角形','직각三角形','둔각三角形'],wrong:'둔각三角形'})}
- else if(kind==='triangle-type'){const idx=r(3),angles=[[60,60,60],[30,60,90],[30,30,120]][idx];finish('세 각が'+angles.join('°, ')+'°인 三角形を각に따라 分류하세요.','',['예각三角形','직각三角形','둔각三角形'][idx],'직각 또は 둔각が있は지 확인します。',{choices:['예각三角形','직각三角形','둔각三角形'],wrong:['둔각三角形','예각三角形','직각三角形'][idx]})}
+ else if(kind==='triangle-side'){a=between(3,9);finish('三つの辺がすべて'+a+'cmの三角形の名前は何ですか。',poly(3),'正三角形','三つの辺の長さがすべて等しくなっています。',{choices:['正三角形','直角三角形','鈍角三角形'],wrong:'鈍角三角形'})}
+ else if(kind==='triangle-type'){const idx=r(3),angles=[[60,60,60],[30,60,90],[30,30,120]][idx];finish('三つの角が'+angles.join('°, ')+'°の三角形を、角の大きさで分類しましょう。','',['鋭角三角形','直角三角形','鈍角三角形'][idx],'直角や鈍角があるかどうかを確かめます。',{choices:['鋭角三角形','直角三角形','鈍角三角形'],wrong:['鈍角三角形','鋭角三角形','直角三角形'][idx]})}
  else if(kind==='quad-type'){const idx=r(4),names=['長方形','正方形','ひし形','平行四辺形'],facts=['四つの角が直角で、横6cm、縦3cm','四つの角が直角で、四つの辺がすべて4cm','四つの辺の長さが等しく、一つの角が60°','向かい合う二組の辺が平行で、隣り合う辺が4cmと6cm、一つの角が60°'];finish(facts[idx]+'の四角形の名前は何ですか。','',names[idx],'辺の長さと角の条件を確かめます。',{choices:names,wrong:names[(idx+1)%4]})}
  else if(kind==='parallel')finish('長方形の向かい合う二つの辺の関係を書きましょう。',rect('6 cm','3 cm'),'平行','どこまでも延ばしても交わらない二つの直線です。',{choices:['平行','垂直'],wrong:'垂直'});
  else if(kind==='tile'){a=between(2,5);b=between(2,6);finish('一つのますに一枚ずつ置きます。何枚必要ですか。',grid(a,b),a*b,a+' × '+b+' = '+a*b)}
@@ -171,9 +171,9 @@ else if(['circle-parts','circle-size','circle-draw','circle-circumference','circ
  else {const result=kind==='circle-circumference'?2*a*3.14:kind==='circle-half'?a*a*3.14/2:a*a*3.14;finish((kind==='circle-circumference'?'円周(cm)':kind==='circle-half'?'この円の半分の面積(cm²)':'円の面積(cm²)')+'を求めましょう。（円周率：3.14）',visual,Number(result.toFixed(2)),kind==='circle-circumference'?'直径 × 3.14 = '+a*2+' × 3.14':'半径 × 半径 × 3.14'+(kind==='circle-half'?' ÷ 2':''))}
 }
 else if(['move','flip','turn','congruent','symmetry-line','symmetry-point'].includes(kind)){
- if(kind==='move'){a=between(1,4);b=between(1,4);finish('오른쪽 '+a+'칸, 다時오른쪽 '+b+'칸 움직이면 처음の오른쪽何칸ですか。',grid(2,8),a+b,a+' + '+b+'こです。')}
- else if(kind==='flip')finish('화살표를 좌우로 뒤집으면 어느 쪽を향하나요?','<div class="kequation">→</div>','왼쪽','좌우가 바뀝니다.',{choices:['왼쪽','오른쪽','위쪽'],wrong:'오른쪽'});
- else if(kind==='turn'){const turns=between(1,3),names=['오른쪽','아래쪽','왼쪽'];finish('시계 방향으로 직각만큼 '+turns+'번 돌리면 어느 쪽を향하나요?','<div class="kequation">↑</div>',names[turns-1],'위→오른쪽→아래→왼쪽으로 바뀝니다.',{choices:names,wrong:'위쪽'})}
+ if(kind==='move'){a=between(1,4);b=between(1,4);finish('右に'+a+'マス、さらに右に'+b+'マス動きます。初めの位置から右に何マス動きましたか。',grid(2,8),a+b,a+' + '+b+'こです。')}
+ else if(kind==='flip')finish('矢印を左右に裏返すと、どちらを向きますか。','<div class="kequation">→</div>','左','左右が入れ替わります。',{choices:['左','右','上'],wrong:'右'});
+ else if(kind==='turn'){const turns=between(1,3),names=['右','下','左'];finish('時計回りに90°ずつ'+turns+'回回すと、どちらを向きますか。','<div class="kequation">↑</div>',names[turns-1],'上→右→下→左の順に向きが変わります。',{choices:names,wrong:'上'})}
  else if(kind==='congruent'){a=between(3,9);finish('合同な二つの三角形の一方の辺が'+a+'cmです。対応する辺は何cmですか。',poly(3),a,'対応する辺の長さは等しいです。')}
  else if(kind==='symmetry-line')finish('正方形の対称の軸は何本ですか。',poly(4),4,'向かい合う辺の中点を結ぶ2本と、対角線2本です。');
  else finish('点対称な図形は、対称の中心のまわりに何度回すともとの図形と重なりますか。','',180,'半回転は180°です。');
@@ -181,7 +181,7 @@ else if(['move','flip','turn','congruent','symmetry-line','symmetry-point'].incl
 else if(kind.startsWith('area-')||['perimeter','surface','volume','volume-convert'].includes(kind)){
  a=between(3,12);b=between(2,9);c=between(2,8);let result,stem,art,why;
  if(kind==='perimeter'){result=2*(a+b);stem='長方形の周りの長さは何cmですか。';art=rect(a+' cm',b+' cm');why='(横 + 縦) × 2'}
- else if(kind==='surface'){result=2*(a*b+b*c+a*c);stem='横 '+a+' cm, 縦 '+b+' cm, 高さ '+c+'cmの直方体の겉広さは何cm²ですか。';art=cubeArt();why='(横×縦 + 縦×高さ + 横×高さ) × 2'}
+ else if(kind==='surface'){result=2*(a*b+b*c+a*c);stem='横 '+a+' cm, 縦 '+b+' cm, 高さ '+c+'cmの直方体の表面積は何cm²ですか。';art=cubeArt();why='(横×縦 + 縦×高さ + 横×高さ) × 2'}
  else if(kind==='volume'){result=a*b*c;stem='横 '+a+' cm, 縦 '+b+' cm, 高さ '+c+'cmの直方体の体積は何cm³ですか。';art=cubeArt();why='横 × 縦 × 高さ'}
  else if(kind==='volume-convert'){result=a*1000000;stem=a+'m³は何cm³ですか。';art='';why='1 m³ = 1,000,000 cm³'}
  else {b=2*between(2,5);if(kind==='area-trapezoid')c=a+between(1,5);result=kind==='area-triangle'?a*b/2:kind==='area-trapezoid'?(a+c)*b/2:kind==='area-rhombus'?a*b/2:a*b;stem=kind==='area-triangle'?'底辺 '+a+' cm, 高さ '+b+'cmの三角形':kind==='area-trapezoid'?'上底 '+a+' cm, 下底 '+c+' cm, 高さ '+b+'cmの台形':kind==='area-rhombus'?'二つの対角線が'+a+' cm, '+b+'cmのひし形':kind==='area-parallelogram'?'底辺 '+a+' cm, 高さ '+b+'cmの平行四辺形':'横 '+a+' cm, 縦 '+b+'cmの長方形';stem+='の面積は何cm²ですか。';art=kind==='area-rectangle'?rect(a+' cm',b+' cm'):svg('<path d="'+(kind==='area-triangle'?'M35 70L95 12L180 70Z':kind==='area-trapezoid'?'M35 70L65 15H140L180 70Z':kind==='area-rhombus'?'M35 43L105 10L180 43L105 77Z':'M35 70L65 15H185L155 70Z')+'" fill="#e6edf8" stroke="#6d86a5" stroke-width="2"/>'+text(110,91,'長さは問題文を見てください'),220,100);why=kind==='area-triangle'?'底辺 × 高さ ÷ 2':kind==='area-trapezoid'?'(上底 + 下底) × 高さ ÷ 2':kind==='area-rhombus'?'対角線 × もう一つの対角線 ÷ 2':'底辺(横) × 高さ(縦)'}
@@ -195,10 +195,10 @@ else if(['cuboid','cuboid-edges','cube-net','prism','pyramid','prism-net','cylin
  else {const result=kind==='cube-view'?(front?Math.max(hs[0],hs[2])+Math.max(hs[1],hs[3]):Math.max(hs[0],hs[1])+Math.max(hs[2],hs[3])):kind==='cube-missing'?sum-hs[0]:sum;finish(kind==='cube-view'?(front?'正面':'右側')+'から見える正方形は何個ですか。':kind==='cube-missing'?'左上の位置の積み木を全部取り除くと、何個残りますか。':'積み木は全部で何個ですか。',visual,result,kind==='cube-view'?'見る方向に重なる列ごとの最大の高さを足すと'+result+'個です。':hs.join(' + ')+' = '+sum+(kind==='cube-missing'?', '+sum+' − '+hs[0]+' = '+result:''))}
 }
  else if(kind==='cube-net'){const cells=[[1,0],[0,1],[1,1],[2,1],[3,1],[1,2]],idx=r(6);visual=svg(cells.map(([x,y],i)=>'<rect x="'+(30+x*24)+'" y="'+(5+y*24)+'" width="24" height="24" fill="'+(i===idx?'#efca80':'#e7eff5')+'" stroke="#64879a"/>').join(''),170,85);finish('立方体の展開図で色をぬっていない面はいくつですか。',visual,5,'正方形6枚から色をぬった1枚を引くと5枚です。');if(mode===4){prompt='この展開図を折ると立方体になる理由を説明しましょう。';answer='6枚の正方形が重ならず、立方体の6つの面になります。';reason='切り取って折り、確かめてもよいです。'}}
- else if(['cuboid','cuboid-edges'].includes(kind)){const attr=kind==='cuboid-edges'?['辺',12]:kind==='cube-net'?['전개도に필요한 正方形',6]:pick([['面',6],['頂点',8],['辺',12]]);finish((kind==='cube-net'?'立方体':'直方体')+'の'+attr[0]+'はいくつですか。',cubeArt(),attr[1],'面は6つ、頂点は8つ、辺は12本です。')}
+ else if(['cuboid','cuboid-edges'].includes(kind)){const attr=kind==='cuboid-edges'?['辺',12]:kind==='cube-net'?['展開図に必要な正方形',6]:pick([['面',6],['頂点',8],['辺',12]]);finish((kind==='cube-net'?'立方体':'直方体')+'の'+attr[0]+'はいくつですか。',cubeArt(),attr[1],'面は6つ、頂点は8つ、辺は12本です。')}
  else if(kind==='prism-net'){visual=svg('<path d="M28 31H124V71H28ZM60 31V71M92 31V71M28 31L44 4L60 31M28 71L44 98L60 71" fill="#dce9f3" stroke="#62879c"/>',155,106);finish('この展開図を組み立てた立体の名前を書きましょう。',visual,'三角柱','三角形の底面が2つ、長方形の側面が3つあります。',{choices:['三角柱','円柱','四角柱'],wrong:'円柱'})}
- else if(['prism','pyramid'].includes(kind)){const n=between(3,6),pyr=kind==='pyramid',attr=pick(['面','頂点','辺']),result=attr==='面'?(pyr?n+1:n+2):attr==='頂点'?(pyr?n+1:2*n):(pyr?2*n:3*n),name=['','','','三','四','五','六'][n]+(pyr?'각뿔':'角柱');finish(name+'の'+attr+'はいくつですか。','',result,pyr?'밑면と꼭대기 頂点を구分して셉니다.':'上下の底面と側面を分けて数えます。')}
- else {const facts={cylinder:['円柱の底面はいくつですか。',2,'合同な円が2つあります。'],cone:['원뿔の頂点はいくつですか。',1,'꼭대기 頂点은 1個です。'],sphere:['구の중심の겉면까지の거리は 무엇이라고 하나요?','半径','半径은 어느 방향이나 같습니다.'],'cylinder-net':['円柱の側面を高さの方向に切って広げると、どんな形になりますか。','長方形','平行な二つの底面の間を高さの方向に切ります。']};const [stem,result,why]=facts[kind];finish(stem,'',result,why,{wrong:typeof result==='number'?result+1:'三角形',choices:typeof result==='number'?undefined:[result,'三角形','頂点']})}
+ else if(['prism','pyramid'].includes(kind)){const n=between(3,6),pyr=kind==='pyramid',attr=pick(['面','頂点','辺']),result=attr==='面'?(pyr?n+1:n+2):attr==='頂点'?(pyr?n+1:2*n):(pyr?2*n:3*n),name=['','','','三','四','五','六'][n]+(pyr?'角すい':'角柱');finish(name+'の'+attr+'はいくつですか。','',result,pyr?'底面と頂点を区別して数えます。':'上下の底面と側面を分けて数えます。')}
+ else {const facts={cylinder:['円柱の底面はいくつですか。',2,'合同な円が2つあります。'],cone:['円すいの頂点はいくつですか。',1,'頂点は1個です。'],sphere:['球の中心から表面までの距離を何といいますか。','半径','半径はどの方向でも等しくなります。'],'cylinder-net':['円柱の側面を高さの方向に切って広げると、どんな形になりますか。','長方形','平行な二つの底面の間を高さの方向に切ります。']};const [stem,result,why]=facts[kind];finish(stem,'',result,why,{wrong:typeof result==='number'?result+1:'三角形',choices:typeof result==='number'?undefined:[result,'三角形','頂点']})}
 }
 else throw Error('Unimplemented '+skill);
 if(!prompt||answer==='')throw Error('Empty '+skill);
@@ -213,16 +213,16 @@ number:'数の位と順序',count:'図の数を数える',place:'位の数字を
 'solid-basic':'立体の形を知る','solid-sort':'立体の形を分ける','flat-basic':'平らな形を知る','flat-count':'辺を数える','flat-build':'形を組み合わせる','cube-count':'積み木を数える',
 'length-compare':'長さを比べる','area-compare':'広さを比べる','capacity-compare':'かさを比べる','weight-compare':'重さを比べる',ruler:'目もりから長さを読む',measure:'単位を選ぶ',convert:'単位を変える','measure-add':'量の計算',
 sort:'種類に分ける',table:'表を読む',graph:'グラフを読む',groups:'まとまりとかけ算',mul:'かけ算',array:'並び方とかけ算','unknown-mul':'かけ算の□',clock:'時計を読む',elapsed:'時間を求める',calendar:'週と日',pattern:'繰り返すきまり','array-pattern':'表のきまり',
-lines:'선분·직선·반직선','angle-right':'直角を見つける',div:'わり算','groups-div':'まとまりの数',inverse:'かけ算とわり算の関係','time-seconds':'分と秒',
+lines:'線分・直線・半直線','angle-right':'直角を見つける',div:'わり算','groups-div':'まとまりの数',inverse:'かけ算とわり算の関係','time-seconds':'分と秒',
 'fraction-model':'図を分数で表す','fraction-compare':'分数を比べる','decimal-model':'図を小数で表す','decimal-compare':'小数を比べる','mul-two':'二けたをかける','circle-parts':'円のつくり','circle-size':'半径と直径','circle-draw':'コンパスの開き','div-remainder':'商とあまり','fraction-form':'仮分数から帯分数へ',
-'large-number':'万・億・兆','angle-measure':'分度器を読む','angle-sum':'角を合わせる','triangle-angle':'三角形の角','quad-angle':'四角形の角','div-two':'二けたでわる',move:'밀어서 옮기기',flip:'뒤집기',turn:'돌리기',equal:'等しい式',
-'fraction-add-same':'同分母のたし算','fraction-sub-same':'同分母のひき算','fraction-mixed-same':'帯分数の計算','triangle-side':'변으로 삼각형 분류','triangle-type':'각으로 삼각형 분류','decimal-add':'小数のたし算','decimal-sub':'小数のひき算','decimal-place':'小数の位','quad-type':'四角形の性質',parallel:'平行な辺',polygon:'多角形を調べる',diagonal:'対角線を数える',tile:'すき間なく並べる',
-mixed:'計算の順序','mixed-bracket':'かっこのある式','mixed-story':'文章と計算の順序',factor:'約数を求める',multiple:'倍数を求める',gcd:'最大公約数',lcm:'最小公倍数',correspond:'二つの量の関係',reduce:'기약분수 만들기','common-denominator':'공통분모 만들기','fraction-compare-unlike':'이분모 분수 비교',
+'large-number':'万・億・兆','angle-measure':'分度器を読む','angle-sum':'角を合わせる','triangle-angle':'三角形の角','quad-angle':'四角形の角','div-two':'二けたでわる',move:'平行に動かす',flip:'裏返す',turn:'回す',equal:'等しい式',
+'fraction-add-same':'同分母のたし算','fraction-sub-same':'同分母のひき算','fraction-mixed-same':'帯分数の計算','triangle-side':'辺の長さで三角形を分ける','triangle-type':'角の大きさで三角形を分ける','decimal-add':'小数のたし算','decimal-sub':'小数のひき算','decimal-place':'小数の位','quad-type':'四角形の性質',parallel:'平行な辺',polygon:'多角形を調べる',diagonal:'対角線を数える',tile:'すき間なく並べる',
+mixed:'計算の順序','mixed-bracket':'かっこのある式','mixed-story':'文章と計算の順序',factor:'約数を求める',multiple:'倍数を求める',gcd:'最大公約数',lcm:'最小公倍数',correspond:'二つの量の関係',reduce:'約分する','common-denominator':'通分する','fraction-compare-unlike':'分母の違う分数を比べる',
 'fraction-add':'分数のたし算','fraction-sub':'分数のひき算','fraction-mixed':'帯分数の計算',perimeter:'周りの長さ','area-rectangle':'長方形の面積','area-triangle':'三角形の面積','area-parallelogram':'平行四辺形の面積','area-trapezoid':'台形の面積','area-rhombus':'ひし形の面積',range:'数の範囲','round-up':'切り上げ','round-down':'切り捨て','round-nearest':'四捨五入',
 'fraction-mul-whole':'分数と整数のかけ算','fraction-mul':'分数同士のかけ算','fraction-mul-mixed':'帯分数のかけ算',congruent:'合同と対応する辺','symmetry-line':'線対称な図形','symmetry-point':'点対称な図形','decimal-mul-whole':'小数と整数のかけ算','decimal-mul':'小数同士のかけ算','decimal-scale':'10倍・100倍と小数点',
-cuboid:'直方体のつくり','cube-net':'立方体の展開図','cuboid-edges':'辺を数える',average:'平均を求める','average-missing':'平均から□を求める',chance:'가능성 판단',
-'fraction-div-whole':'分数を整数でわる','whole-div-fraction-result':'商を分数で表す',prism:'角柱のつくり',pyramid:'각뿔의 구성','prism-net':'展開図から立体を考える','decimal-div-whole':'小数を整数でわる','decimal-fraction':'分数と小数',ratio:'比で表す',percent:'百分率を求める','ratio-compare':'割合を比べる','graph-choice':'グラフを選ぶ',surface:'직육면체의 겉넓이',volume:'直方体の体積','volume-convert':'体積の単位を変える',
-'fraction-div':'分数同士のわり算','whole-div-fraction':'整数を分数でわる','fraction-div-mixed':'帯分数のわり算','cube-view':'見る方向と形','cube-missing':'積み木を取り除く','decimal-div':'小数同士のわり算',proportion:'等しい比と□','share-ratio':'比で分ける','ratio-simplify':'簡単な整数の比','circle-circumference':'円周','circle-area':'円の面積','circle-half':'半円の面積',cylinder:'円柱のつくり',cone:'원뿔의 구성',sphere:'구의 성질','cylinder-net':'円柱の展開図'
+cuboid:'直方体のつくり','cube-net':'立方体の展開図','cuboid-edges':'辺を数える',average:'平均を求める','average-missing':'平均から□を求める',chance:'起こりやすさを考える',
+'fraction-div-whole':'分数を整数でわる','whole-div-fraction-result':'商を分数で表す',prism:'角柱のつくり',pyramid:'角すいのつくり','prism-net':'展開図から立体を考える','decimal-div-whole':'小数を整数でわる','decimal-fraction':'分数と小数',ratio:'比で表す',percent:'百分率を求める','ratio-compare':'割合を比べる','graph-choice':'グラフを選ぶ',surface:'直方体の表面積',volume:'直方体の体積','volume-convert':'体積の単位を変える',
+'fraction-div':'分数同士のわり算','whole-div-fraction':'整数を分数でわる','fraction-div-mixed':'帯分数のわり算','cube-view':'見る方向と形','cube-missing':'積み木を取り除く','decimal-div':'小数同士のわり算',proportion:'等しい比と□','share-ratio':'比で分ける','ratio-simplify':'簡単な整数の比','circle-circumference':'円周','circle-area':'円の面積','circle-half':'半円の面積',cylinder:'円柱のつくり',cone:'円すいのつくり',sphere:'球の性質','cylinder-net':'円柱の展開図'
 };
 const banks={};
 for(const u of JaCoreCatalog.units){
