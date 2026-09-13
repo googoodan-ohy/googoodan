@@ -43,18 +43,25 @@
     var saved = null;
     try { saved = localStorage.getItem(KEY); } catch (e) {}
     if (saved === 'ko') return;
-    if (saved && /^(en|ja|fr)$/.test(saved)) { location.replace('/' + saved + '/'); return; }
+    if (saved && /^(en|ja|fr|de|es|it)$/.test(saved)) { location.replace('/' + saved + '/'); return; }
 
     var list = (navigator.languages && navigator.languages.length)
       ? navigator.languages : [navigator.language || ''];
     var primary = String(list[0] || '').toLowerCase();
     if (primary.indexOf('ko') === 0) return;
 
-    var target = 'en';
-    if (primary.indexOf('ja') === 0) target = 'ja';
-    else if (primary.indexOf('fr') === 0) target = 'fr';
+    var target = '/en/';
+    if (primary.indexOf('en-gb') === 0) target = '/en/?country=GB';
+    else if (primary.indexOf('en-ca') === 0) target = '/en/?country=CA';
+    else if (primary.indexOf('en-au') === 0) target = '/en/?country=AU';
+    else if (primary.indexOf('en') === 0) target = '/en/?country=US';
+    else if (primary.indexOf('ja') === 0) target = '/ja/';
+    else if (primary.indexOf('fr') === 0) target = '/fr/';
+    else if (primary.indexOf('de') === 0) target = '/de/';
+    else if (primary.indexOf('es') === 0) target = '/es/';
+    else if (primary.indexOf('it') === 0) target = '/it/';
 
-    location.replace('/' + target + '/');
+    location.replace(target);
   } catch (e) {}
 })();
 </script>
