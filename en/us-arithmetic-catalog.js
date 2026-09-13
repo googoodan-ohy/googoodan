@@ -12,7 +12,7 @@ const specs=locale.specs||[
 [6,'fractiondiv','Divide fractions by fractions','6.NS.A.1','fractiondiv'],[6,'longdiv','Multi-digit division','6.NS.B.2','div',5,2],[6,'decimals','Multi-digit decimal operations','6.NS.B.3','decimal',3],[6,'gcf','Greatest common factor','6.NS.B.4','gcf'],[6,'lcm','Least common multiple','6.NS.B.4','lcm']
 ];
 const units=[],profiles=new Map(),W=root.Worksheets;let numbering={};
-for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade;const u={id:(locale.prefix||'us')+'-'+grade+'-'+id,grade:g,gradeLabel:grade==='K'?'Kindergarten':(locale.yearLabel||'Grade')+' '+grade,number:(numbering[grade]=(numbering[grade]||0)+1),semester:1,name,standard,kind,a,b,drills:[]};units.push(u);
+for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade;const u={id:(locale.prefix||'us')+'-'+grade+'-'+id,grade:g,gradeLabel:locale.gradeLabels?.[grade]||(grade==='K'?'Kindergarten':(locale.yearLabel||'Grade')+' '+grade),number:(numbering[grade]=(numbering[grade]||0)+1),semester:1,name,standard,kind,a,b,drills:[]};units.push(u);
  const family=['like','unlike','fractionwhole','fractionmul','unitdivide','fractiondiv'].includes(kind)?'Fractions':kind==='decimal'?'Decimals':'Natural numbers';
  const variants=['fouradd','bond','factors','gcf','lcm','expressions'].includes(kind)?[['skill','horizontal','Practice']]:[['basic','horizontal','Horizontal practice'],['basic','vertical','Vertical practice'],['blank','horizontal','Missing numbers']];
  // Fractions use a horizontal layout so numerator and denominator stay aligned.
