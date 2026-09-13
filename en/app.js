@@ -125,7 +125,7 @@ function render(){
  if(current.id==='times-tables'&&!GDTimes.selected.length){document.querySelector('.problems').innerHTML='';document.querySelector('#status').textContent='Choose at least one table.';return;}
  if(current.bankId||current.customWorksheet){
  const sections=current.customWorksheet?generate(current.id,seed,6).map(q=>({title:'Practice',questions:[{...q,visual:'',task:'________________'}]})):KoMath.generate(current.bankId,current.bankProfile||0,seed,1),paper=document.querySelector('.paper');paper.classList.add('bank-sheet');paper.classList.toggle('bank-answers',answers);paper.style.setProperty('--cols',1);paper.style.setProperty('--rows',sections.length);
- document.querySelector('.problems').innerHTML=sections.map((s,i)=>{const q=s.questions[0];return '<div class="bank-question"><b>'+(i+1)+'. '+s.title+'</b><p>'+q.prompt+'</p>'+q.visual+'<div>'+q.task+'</div>'+(answers?'<p class="bank-answer">'+q.answer+'<br>'+q.reason+'</p>':'')+'</div>';}).join('');document.querySelector('#set').textContent='Set '+seed;document.querySelector('#status').textContent=current.title;return;
+ document.querySelector('.problems').innerHTML=sections.map((s,i)=>{const q=s.questions[0];return '<div class="bank-question"><b>'+(i+1)+'. '+s.title+'</b><p>'+q.prompt+'</p>'+q.visual+'<div>'+q.task+'</div>'+(answers?'<p class="bank-answer">'+q.answer+'<br>'+q.reason+'</p>':'')+'</div>';}).join('');document.querySelector('#set').textContent='Set '+seed;document.querySelector('#status').textContent=current.title;window.GDRegionalEnglish?.apply(paper);return;
  }
  document.querySelector('.paper').classList.remove('bank-sheet','bank-answers');
  const sample=generate(current.id,seed,1)[0];
@@ -146,7 +146,7 @@ function render(){
  return `<div class="problem ${p.op==='missing'||p.op==='compare'?'concept':''}"><span class="number">${i+1}.</span>${html}</div>`;
  }).join('');
  document.querySelector('#set').textContent=`Set ${seed} · ${answers?'Answers':count+' questions'}`;
- document.querySelector('#status').textContent=current.title+(answers?', answer key':', '+count+' questions ready');
+ document.querySelector('#status').textContent=current.title+(answers?', answer key':', '+count+' questions ready');window.GDRegionalEnglish?.apply(paper);
 }
 document.querySelector('#questions').onclick=()=>{answers=false;render();};
 document.querySelector('#answers').onclick=()=>{answers=true;trackWorksheet('worksheet_answer_view');render();};
