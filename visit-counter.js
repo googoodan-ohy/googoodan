@@ -1,71 +1,11 @@
-/* ============================================================
-   구구단닷컴 방문자 카운터
-   ------------------------------------------------------------
-   index.html / index_main.html / board.html / notice.html / info.html
-   5개 페이지가 이 파일 하나를 함께 씁니다.
-   Firestore의 stats/visits 문서에 실제 방문 수를 기록·표시합니다.
-   (board-common.js가 이미 firebase를 초기화한 페이지에서는 그 앱을 그대로 재사용합니다)
-   ============================================================ */
-(function(){
-  if (!['googoodan.com','www.googoodan.com'].includes(location.hostname) || navigator.webdriver) return;
-  let operatorExcluded = false;
-  try { operatorExcluded = localStorage.getItem('gd_operator_excluded') === '1'; } catch {}
-  if (typeof firebase === 'undefined') return;
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyBtt3L-bM-qqt6wz-mSHH_WQ8JuKUc0cK0",
-    authDomain: "googoodan-cce67.firebaseapp.com",
-    projectId: "googoodan-cce67",
-    storageBucket: "googoodan-cce67.firebasestorage.app",
-    messagingSenderId: "352992873909",
-    appId: "1:352992873909:web:6b32ed2221bd7ceb471dfc"
-  };
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
-  const fsdb = firebase.firestore();
-  const ref = fsdb.collection('stats').doc('visits');
-
-  function todayStr(){
-    const d = new Date();
-    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-  }
-  function renderVisit(today, total){
-    const t = document.getElementById('visitToday');
-    const a = document.getElementById('visitTotal');
-    if(t) t.textContent = (today || 0).toLocaleString('ko-KR');
-    if(a) a.textContent = (total || 0).toLocaleString('ko-KR');
-  }
-
-  const dateNow = todayStr();
-  let alreadyCounted = false;
-  try {
-    alreadyCounted = localStorage.getItem('gd_lastVisit') === dateNow;
-  } catch(e){ /* 시크릿 모드 등에서 localStorage 접근 불가 - 매번 카운트됨 */ }
-
-  if(!alreadyCounted && !operatorExcluded){
-    fsdb.runTransaction(tx => {
-      return tx.get(ref).then(snap => {
-        let total = 1, today = 1;
-        if(snap.exists){
-          const data = snap.data();
-          total = (data.total || 0) + 1;
-          today = (data.todayDate === dateNow) ? (data.today || 0) + 1 : 1;
-        }
-        tx.set(ref, { total, today, todayDate: dateNow }, { merge: true });
-        return { total, today };
-      });
-    }).then(result => {
-      try { localStorage.setItem('gd_lastVisit', dateNow); } catch(e){}
-      renderVisit(result.today, result.total);
-    }).catch(err => console.error('방문자 카운트 오류:', err));
-  }else{
-    ref.get().then(snap => {
-      if(snap.exists){
-        const data = snap.data();
-        const today = (data.todayDate === dateNow) ? (data.today || 0) : 0;
-        renderVisit(today, data.total);
-      }
-    }).catch(err => console.error('방문자 카운트 오류:', err));
-  }
+/* Country visitor counter. One browser is counted once per country and Korean calendar day. */
+(()=>{
+ const siteNames={ko:'한국',us:'United States',gb:'England',ca:'Canada',au:'Australia',ja:'日本',fr:'France',de:'Deutschland',es:'España',it:'Italia'};
+ const copies={ko:['오늘 방문자','누적 방문자'],en:['Visitors today','Total visitors'],ja:['本日の訪問者','累計訪問者'],fr:["Visiteurs aujourd’hui",'Total'],de:['Besucher heute','Gesamt'],es:['Visitas hoy','Total'],it:['Visite oggi','Totale']};
+ function englishSite(){const path=location.pathname.toLowerCase();if(/^\/en\/(england|uk)-/.test(path))return'gb';if(/^\/en\/australia-/.test(path))return'au';if(/^\/en\/canada-/.test(path))return'ca';if(/^\/en\/us-/.test(path))return'us';const q=new URLSearchParams(location.search).get('country')?.toUpperCase();if(['US','GB','CA','AU'].includes(q))return q.toLowerCase();try{const saved=JSON.parse(localStorage.getItem('gd-learning-region')||'{}').country;if(['US','GB','CA','AU'].includes(saved))return saved.toLowerCase();}catch{}const language=(navigator.language||'').toLowerCase();if(language==='en-gb')return'gb';if(language==='en-ca')return'ca';if(language==='en-au')return'au';return'us';}
+ function currentSite(){const edition=location.pathname.split('/')[1].toLowerCase();if(edition==='en')return englishSite();return['ko','ja','fr','de','es','it'].includes(edition)?edition:'ko';}
+ function addStyle(){if(document.getElementById('worksheet-metrics-style'))return;const style=document.createElement('style');style.id='worksheet-metrics-style';style.textContent='.worksheet-counter-area{max-width:790px;margin:10px auto 24px;display:flex;flex-wrap:wrap;gap:8px;color:#526e68;font-size:11px;line-height:1.45}.worksheet-metric-card,.worksheet-counter-area .visit-counter{display:flex;align-items:center;justify-content:flex-start;gap:14px;flex-wrap:wrap;width:auto;margin:0;padding:8px 12px;border:1px solid #d2e3df;border-radius:8px;background:#fff;box-shadow:none}.worksheet-metric-card span,.worksheet-counter-area .visit-counter span{white-space:nowrap}.worksheet-metric-card b,.worksheet-counter-area .visit-counter b{margin-left:4px;color:#176e5c;font-size:13px}.worksheet-metric-country{font-weight:700;color:#315f55}@media(max-width:520px){.worksheet-counter-area{margin-left:0;margin-right:0}.worksheet-metric-card,.worksheet-counter-area .visit-counter{width:100%;gap:8px 14px}}@media print{.worksheet-counter-area{display:none!important}}';document.head.append(style);}
+ function area(){let box=document.querySelector('.worksheet-counter-area');if(box)return box;const sheet=document.querySelector('.paper,#sheet-view,article.sheet,#sheet,.hundred-paper');if(!sheet)return null;box=document.createElement('div');box.className='worksheet-counter-area';box.setAttribute('aria-label','Site counters');sheet.insertAdjacentElement('afterend',box);return box;}
+ function koreanDay(){return new Date(Date.now()+32400000).toISOString().slice(0,10);}
+ addEventListener('DOMContentLoaded',async()=>{addStyle();const box=area();let counter=document.querySelector('.visit-counter');if(!counter&&!box)return;if(!counter){counter=document.createElement('div');counter.className='visit-counter';}if(box)box.prepend(counter);const site=currentSite(),lang=(document.documentElement.lang||'en').slice(0,2),copy=copies[lang]||copies.en;counter.setAttribute('aria-label',siteNames[site]+' visitor count');counter.innerHTML='<span class="worksheet-metric-country">'+siteNames[site]+'</span><span>'+copy[0]+' <b id="visitToday" data-visit-today>…</b></span><span>'+copy[1]+' <b id="visitTotal" data-visit-total>…</b></span>';const todayNode=counter.querySelector('[data-visit-today]'),totalNode=counter.querySelector('[data-visit-total]');if(!['googoodan.com','www.googoodan.com'].includes(location.hostname)||navigator.webdriver){counter.querySelectorAll('b').forEach(node=>node.textContent=lang==='ko'?'테스트 제외':'—');return;}let excluded=false;try{excluded=localStorage.getItem('gd_operator_excluded')==='1';}catch{}const date=koreanDay(),key='gd-visit-'+site+'-'+date;let id=null,legacy=false;try{id=localStorage.getItem(key);legacy=site==='ko'&&localStorage.getItem('gd_lastVisit')===date;if(!id&&!legacy){id=crypto.randomUUID();localStorage.setItem(key,id);}}catch{if(!legacy)id=crypto.randomUUID();}const endpoint='https://googoodan-community.googoodan-community.workers.dev';try{const readOnly=excluded||legacy||!id;const response=await fetch(endpoint+(readOnly?'/visits/today':'/visits/load'),readOnly?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,site}),keepalive:true});if(!response.ok)throw Error('HTTP '+response.status);const data=await response.json(),row=data.sites?.[site]||{today:0,total:0};todayNode.textContent=Number(row.today||0).toLocaleString();totalNode.textContent=Number(row.total||0).toLocaleString();}catch(error){counter.querySelectorAll('b').forEach(node=>node.textContent=lang==='ko'?'확인 필요':'—');console.warn('Visitor count failed',error.message);}});
 })();
