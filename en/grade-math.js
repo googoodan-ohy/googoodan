@@ -10,7 +10,7 @@ const box='<span class="write-box"></span>';
 const svg=(body,w=190,h=90)=>'<div class="art">'+`<svg viewBox="0 0 ${w} ${h}" aria-hidden="true">${body}</svg></div>`;
 const gcd=(a,b)=>b?gcd(b,a%b):a;
 const frac=(n,d)=>{const g=gcd(n,d);return d/g===1?String(n/g):(n/g)+'/'+(d/g)};
-const fhtml=(n,d)=>`<span class="fraction"><span>${n}</span><span>${d}</span></span>`;
+const fhtml=(n,d)=>`<span class="fraction"><span>${n==='□'?box:n}</span><span>${d}</span></span>`;
 const rectangle=(a,b)=>svg(`<rect x="35" y="18" width="120" height="52" fill="#e6eef3" stroke="#48697a"/><text x="95" y="13" text-anchor="middle">${a} units</text><text x="95" y="87" text-anchor="middle">${b} units high</text>`);
 function generate(grade,id,seed){let state=seed>>>0;const r=n=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return Math.floor(state/4294967296*n)};
 const make=mode=>{

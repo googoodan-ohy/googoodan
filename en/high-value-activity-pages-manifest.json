@@ -1,0 +1,114 @@
+{
+  "version": "20260913-high-value-activity",
+  "count": 6,
+  "pages": [
+    {
+      "file": "subtraction-color-by-number.html",
+      "source": "color-by-number.html",
+      "family": "color",
+      "method": "subtract-small",
+      "title": "Subtraction Color by Number Worksheets",
+      "description": "Free printable subtraction color by number worksheets within 10. Solve each fact, follow the color key, make a fresh set, and print the matching answer key.",
+      "grade": "Grade 1",
+      "standard": "1.OA.C.6",
+      "instruction": "Solve each subtraction fact. Use the answer ranges in the key to color the mosaic.",
+      "purpose": "Students practice subtraction facts within 10 while using each difference to select a color range. The compact mosaic gives every calculation a visible purpose.",
+      "action": "Solve all 16 subtraction facts in pencil. Match each difference to the four-range color key, then color the corresponding square.",
+      "tip": "Ask the student to finish the arithmetic before coloring. If a color seems out of place, recalculate that difference and check its range instead of guessing from neighboring squares.",
+      "canonical": "https://googoodan.com/en/subtraction-color-by-number.html"
+    },
+    {
+      "file": "tape-diagram-word-problems.html",
+      "source": "word-problems.html",
+      "family": "story",
+      "bank": "1-2-6",
+      "profile": 4,
+      "title": "Tape Diagram Word Problems Worksheets",
+      "description": "Free printable tape diagram word problems for grades 1–2. Model addition and subtraction stories, generate fresh numbers, and print the matching answer key.",
+      "grade": "Grades 1–2",
+      "standard": "1.OA.A.1; 2.OA.A.1",
+      "instruction": "Read each story. Use the tape diagram to identify the whole, the known part, and the missing part.",
+      "purpose": "Tape diagrams, also called bar models, show how the quantities in a story are related. The same model supports joining, missing-part, and difference situations.",
+      "action": "Read the question before choosing an operation. Label the whole and the two parts in the diagram, write an equation, and solve for the box.",
+      "tip": "Have the student point to the quantity being found. A larger number in the story is not always the answer, and the word “more” does not always mean that the required operation is addition.",
+      "canonical": "https://googoodan.com/en/tape-diagram-word-problems.html"
+    },
+    {
+      "file": "balance-the-equation.html",
+      "source": "picture-addition.html",
+      "family": "early-arithmetic",
+      "bank": "1-2-4",
+      "profile": 1,
+      "methods": [
+        "compensate"
+      ],
+      "count": 6,
+      "title": "Balance the Equation Worksheets",
+      "description": "Free printable balance the equation worksheets for first grade. Find the missing number that makes both sides equal, create fresh sets, and print matching answers.",
+      "grade": "Grade 1",
+      "standard": "1.OA.D.7–8",
+      "instruction": "Fill in each box so both sides of the equation have the same value.",
+      "purpose": "These missing-number equations treat the equal sign as a statement that two expressions have the same value. Students reason about both sides instead of reading the sign as “the answer comes next.”",
+      "action": "Calculate the total on the complete side, then decide what number makes the other side match. Write the missing number in the large answer space.",
+      "tip": "Ask the student to read the equation as “has the same value as.” After filling the box, add both sides again. This quick check makes the meaning of equality visible.",
+      "canonical": "https://googoodan.com/en/balance-the-equation.html"
+    },
+    {
+      "file": "make-10-subtraction.html",
+      "source": "picture-addition.html",
+      "family": "early-arithmetic",
+      "bank": "1-2-2",
+      "profile": 2,
+      "methods": [
+        "bridge-sub",
+        "zero-ten"
+      ],
+      "count": 6,
+      "title": "Make 10 Subtraction Worksheets",
+      "description": "Free printable make 10 subtraction worksheets for first grade. Break apart teen numbers, subtract from 10, generate fresh practice, and print the matching answer key.",
+      "grade": "Grade 1",
+      "standard": "1.OA.C.6",
+      "instruction": "Use 10 as a friendly number to solve each subtraction problem.",
+      "purpose": "The worksheet practices two connected ideas: subtracting directly from 10 and breaking a teen number into 10 plus some ones. Both rely on fluent number pairs that make 10.",
+      "action": "For a teen-number problem, subtract from 10 first and then add the extra ones. Complete each displayed step rather than writing only the final difference.",
+      "tip": "Use a ten frame or counters when the steps are new. Once the student can explain why the leftover ones are added back, move toward solving the same structure mentally.",
+      "canonical": "https://googoodan.com/en/make-10-subtraction.html"
+    },
+    {
+      "file": "choose-operation-word-problems.html",
+      "source": "word-problems.html",
+      "family": "story",
+      "bank": "1-2-6",
+      "profile": 2,
+      "title": "Choose the Operation Word Problems Worksheets",
+      "description": "Free printable choose the operation word problems for grades 1–2. Decide whether to add or subtract, solve fresh stories, and print matching answer keys.",
+      "grade": "Grades 1–2",
+      "standard": "1.OA.A.1; 2.OA.A.1",
+      "instruction": "Read each story, choose the addition or subtraction equation that matches, and solve.",
+      "purpose": "Students decide which operation represents the relationship in each story. The choices include total, starting-amount, and change-unknown situations with familiar school contexts.",
+      "action": "Underline the known quantities and circle what the question asks. Compare the two offered equations, choose the one that matches the story, and then calculate.",
+      "tip": "Do not teach a single clue-word rule. Ask whether quantities are being joined, separated, or compared, and identify which quantity is unknown before choosing addition or subtraction.",
+      "canonical": "https://googoodan.com/en/choose-operation-word-problems.html"
+    },
+    {
+      "file": "math-mistake-detective.html",
+      "source": "picture-addition.html",
+      "family": "early-arithmetic",
+      "bank": "1-2-6",
+      "profile": 2,
+      "methods": [
+        "error"
+      ],
+      "count": 6,
+      "title": "Math Mistake Detective Worksheets",
+      "description": "Free printable math mistake detective worksheets for second grade. Check incorrect addition equations, correct each error, make new sets, and print matching answers.",
+      "grade": "Grade 2",
+      "standard": "2.NBT.B.5–7",
+      "instruction": "Check each equation, find the math mistake, and write the correct answer.",
+      "purpose": "Every displayed equation contains an answer that needs checking. Students become error detectives by recalculating two-digit addition and replacing an incorrect result.",
+      "action": "Cover the shown answer, solve the left side independently, and compare the two results. Record the corrected answer and explain one mistake aloud.",
+      "tip": "Treat a wrong answer as useful evidence. Ask whether the ones, tens, or regrouping caused the mismatch, then verify the correction with a second strategy or an estimate.",
+      "canonical": "https://googoodan.com/en/math-mistake-detective.html"
+    }
+  ]
+}
