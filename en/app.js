@@ -132,8 +132,8 @@ function render(){
  const isDivision=sample.op==='÷'&&['Natural numbers','Decimals'].includes(current.family);
  const isMultiplication=sample.op==='×'&&sample.vertical;
  const digits=String(sample.b).length;
- const cols=isDivision?2:isMultiplication?3:current.family==='Fractions'?2:4;
- const count=isDivision?(current.family==='Decimals'?4:(digits>=4?2:Math.max(String(sample.a).length,digits)>=3?4:6)):isMultiplication?(digits>=4?6:digits>=3?9:12):current.family==='Fractions'?20:sample.vertical?24:28;
+ const cols=isDivision?(current.family==='Decimals'||digits>=4?2:3):isMultiplication?3:current.family==='Fractions'?2:4;
+ const count=isDivision?(current.family==='Decimals'?4:(digits>=4?6:Math.max(String(sample.a).length,digits)>=3?9:12)):isMultiplication?(digits>=4?6:digits>=3?9:12):current.family==='Fractions'?20:sample.vertical?24:28;
  const rows=generate(current.id,seed,count);
  const paper=document.querySelector('.paper');paper.dataset.family=current.family;paper.style.setProperty('--rows',Math.ceil(count/cols));paper.style.setProperty('--cols',cols);paper.classList.toggle('written-sheet',isDivision||isMultiplication);
  document.querySelector('.problems').innerHTML=rows.map((p,i)=>{
