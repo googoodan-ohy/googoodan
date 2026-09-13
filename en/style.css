@@ -46,7 +46,8 @@
 .worked{font:22px/1.35 monospace;text-align:right;width:max-content;min-width:95px;margin:2px auto;color:#243e55}
 .work-rule{border-bottom:1.5px solid #243e55}.work-total{border-top:1.5px solid #c62828}
 .working{color:#c62828}.concealed{visibility:hidden}
-.long-division{display:block;margin:0 auto;max-width:100%;overflow:visible}
+.long-division{display:inline-block;vertical-align:top;margin:0;max-width:100%;overflow:visible}
+.problem:has(.long-division){text-align:center}
 .division-note{font-size:11px;color:#45627a;text-align:center;margin-bottom:4px}
 .written-sheet .problem{min-height:180px}
 @media(max-width:760px){.written-sheet .problems{grid-template-columns:repeat(2,minmax(0,1fr))}.worked{font-size:19px}}
