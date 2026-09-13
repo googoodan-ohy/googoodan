@@ -51,25 +51,31 @@ else if(selected.mode==='digit'){const digit=(v,which)=>String(v).split('').map(
 else{const work=selected.layout==='vertical'?(current.family==='Decimals'&&q.op==='×'?decimalMultiply(q,show):writtenWork(q,show)):null;if(work)html=work;else if(selected.layout==='vertical')html='<div class="vertical"><div>'+esc(q.a)+'</div><div class="bottom"><span>'+q.op+'</span><span>'+esc(q.b)+'</span></div><div class="result">'+hide(scalar(q.answer),show)+'</div></div>';else html='<span class="expression">'+scalar(q.a)+' '+q.op+' '+scalar(q.b)+' =</span><span class="answer '+(q.op==='÷'&&current.family==='Natural numbers'?'division-answer-line ':'')+(show?'':'concealed')+'">'+(q.fraction?fractionAnswer(q):scalar(q.answer))+'</span>';
 }
 return '<div class="problem"><span class="number">'+(i+1)+'.</span>'+html+'</div>';}
-function layout(){const q=generate(current.id,seed,1)[0],vert=selected.layout==='vertical',op=q.op;let cols=4,count=48;
+function layout(){const q=generate(current.id,seed,1)[0],vert=selected.layout==='vertical',op=q.op;let cols=4,count=48,fixed=false;
 if(selected.mode==='story'){cols=2;count=selectedUnit.grade<=2?12:16;}
 else if(selected.mode==='skill'){cols=2;count=selected.skill==='groups'?6:20;}
 else if(selected.mode==='digit'){cols=3;count=18;}
 else if(current.family==='Fractions'){cols=2;count=20;}
 else if(selected.mode==='blank'){cols=2;count=24;}
-else if(vert&&op==='÷'){cols=2;count=current.family==='Decimals'?4:Math.max(String(q.a).length,String(q.b).length)>=3?4:6;}
-else if(vert&&op==='×'){cols=3;const d=String(q.b).replace('.','').length;count=d>=4?6:d>=3?9:12;}
+else if(vert&&op==='÷'){cols=current.family==='Decimals'?4:3;count=current.family==='Decimals'?8:selected.source==='natural-div-3-1'?9:12;fixed=true;}
+else if(vert&&op==='×'){cols=3;const d=String(q.b).replace('.','').length;count=current.family==='Decimals'?12:d>=4?6:d>=3?9:12;fixed=current.family==='Decimals';}
 else if(vert){cols=4;count=24;}
 else if(selectedUnit.grade<=2){cols=3;count=24;}
-return {cols,count};}
+return {cols,count,fixed};}
 render=function(){const theme=KoCatalog.themes[(selectedUnit.grade-1)*2+selectedUnit.semester-1],paper=document.querySelector('.paper');current=types.find(t=>t.id===selected.id);paper.classList.add('drill-sheet');paper.classList.toggle('written-sheet',selected.layout==='vertical');paper.dataset.family=current.family;paper.style.setProperty('--tone',theme[2]);paper.style.setProperty('--wash',theme[3]);
 const remedial=selected.group==='기초 보충';document.querySelector('#sheet-title').textContent=(remedial?'[기초 보충] ':'')+selected.title;document.querySelector('.adventure-label').textContent=selectedUnit.grade+'학년 '+selectedUnit.semester+'학기 · '+(selectedUnit.semesterReview?'학기 시작 복습':selectedUnit.number+'. '+selectedUnit.name);document.querySelector('#instructions').textContent=selectedUnit.semesterReview?'새 학기를 시작하기 전 4학년 곱셈과 나눗셈을 복습하세요.':remedial?'현재 단원을 위한 이전 학습 복습':selected.mode==='story'?'상황을 읽고 필요한 계산을 스스로 골라 풀어 보세요.':selected.mode==='digit'||selected.mode==='blank'?'□에 알맞은 수를 쓰세요.':'차근차근 계산하세요.';
 let art=paper.querySelector('.drill-theme');if(!art){paper.querySelector('.math-buddy')?.remove();art=document.createElement('div');art.className='drill-theme';paper.querySelector('.sheet-hero').append(art)}art.innerHTML=KoThemeScene(theme[4],mascot);
-const grid=paper.querySelector('.problems'),plan=layout();grid.classList.toggle('fraction-sheet',current.family==='Fractions');grid.classList.toggle('drill-word-grid',['skill','story'].includes(selected.mode));paper.style.setProperty('--cols',plan.cols);let count=plan.count;const all=generate(current.id,seed,count);let rows;
+const grid=paper.querySelector('.problems'),plan=layout();paper.classList.toggle('dense-written',plan.fixed);grid.classList.toggle('fraction-sheet',current.family==='Fractions');grid.classList.toggle('drill-word-grid',['skill','story'].includes(selected.mode));paper.style.setProperty('--cols',plan.cols);let count=plan.count;const all=generate(current.id,seed,count);let rows;
 // Fit using the answer layout; hidden answers reserve identical space on worksheets.
-do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan.cols));grid.innerHTML=rows.map((q,i)=>qhtml(q,i,true)).join('');const bad=[...grid.children].some(el=>el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1);if(!bad)break;count-=plan.cols;}while(count>=plan.cols);
+// These written layouts use the same fixed A4 grid in every output mode.
+// Do not let viewport zoom or print-only SVG sizing change the question set.
+if(plan.fixed){rows=all;paper.style.setProperty('--rows',Math.ceil(count/plan.cols));}
+else do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan.cols));grid.innerHTML=rows.map((q,i)=>qhtml(q,i,true)).join('');const bad=[...grid.children].some(el=>el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1);if(!bad)break;count-=plan.cols;}while(count>=plan.cols);
 if(count<plan.cols)throw Error('문제지 공간 부족: '+selected.id);
-grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=window.WORKSHEET_ENTRY?.title||(selectedUnit.grade+'학년 '+selectedUnit.name+' '+selected.title+' | 구구단닷컴');const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/drill-'+selected.id+'.html';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname+(selectedUnit.semesterReview?'?set='+seed:''):('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
+grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');
+// Explicit intrinsic dimensions also keep the PDF canvas SVG image uncropped.
+if(plan.fixed)grid.querySelectorAll('svg.long-division').forEach(svg=>{svg.setAttribute('width',svg.viewBox.baseVal.width);svg.setAttribute('height',svg.viewBox.baseVal.height);});
+document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=window.WORKSHEET_ENTRY?.title||(selectedUnit.grade+'학년 '+selectedUnit.name+' '+selected.title+' | 구구단닷컴');const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/drill-'+selected.id+'.html';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname+(selectedUnit.semesterReview?'?set='+seed:''):('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
 function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
 rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent='학년·단원별 연산';document.querySelector('aside>p').textContent='기본 연산부터 기초 보충까지 한곳에서';setProfile(selected.id);}
 window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
