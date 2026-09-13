@@ -113,3 +113,8 @@ German picturemul profiles 12–19 reuse remaining Korean profiles 0,3,4,5,6,7,8
 
 ## 2026-09-12: Picture addition and missing story numbers
 Map KoEarlyArithmetic 1-2-4 profiles 0 and 2 to German tenstrategies profiles 4 and 5. Preserve bridging steps, picture counts, story values and error proposals. The existing negative-expression compare activity remains excluded. 5,100 combined source checks passed; four new question/answer PDFs are single-page.
+
+
+## 2026-09-13: Four-digit addition and subtraction
+Eight profiles reuse existing natural-add/sub generators: four horizontal/written practices, two three-digit reviews and two missing-number variants. Both operands are four-digit in the main practice; addition results may have five digits, so no claim of a 10,000 result limit is made. This fits Bayern 3/4 section 1.2 number range up to one million. Existing engines and numerical settings are unchanged. 19,200 generated rows passed arithmetic/range checks; 16 native question/answer PDFs each fit one A4 page. All eight published routes and answer-selection controls were verified live.
+Source: https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/3/mathematik

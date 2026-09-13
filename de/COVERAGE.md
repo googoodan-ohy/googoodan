@@ -1,6 +1,6 @@
 # German published coverage
 
-Verified from the running menus on 2026-09-12. Bayern only. Profile counts describe selectable activities, not unique mathematical skills or full curriculum coverage.
+Unit arithmetic updated from the running menus on 2026-09-13; unit-type counts retain their 2026-09-12 audit. Bayern only. Profile counts describe selectable activities, not unique mathematical skills or full curriculum coverage.
 
 ## Unit arithmetic
 
@@ -12,8 +12,9 @@ Verified from the running menus on 2026-09-12. Bayern only. Profile counts descr
 | Einstellige Zahlen addieren und subtrahieren bis 99 | Klasse 1/2 | 8 |
 | Einmaleins und Geteiltaufgaben | Klasse 3/4 | 6 |
 | Addition und Subtraktion bis 1 000 | Klasse 3/4 | 7 |
+| Vierstellige Zahlen addieren und subtrahieren | Klasse 3/4 | 8 |
 
-Total: 45 profiles.
+Total: 53 profiles.
 
 ## Unit types
 
@@ -69,7 +70,7 @@ Total: 130 profiles.
 
 ## Next priorities
 
-- Extend arithmetic beyond 1 000 using existing Korean generators, checking Bayern number ranges and prerequisite skills.
+- Four-digit addition/subtraction now supplements the existing arithmetic. Next assess larger multiplication practice using existing generators; keep written divisors within Bayern’s limit of 10.
 - Audit metric measurement coverage: money is not covered by the current five conversion profiles.
 - Review reusable spatial transformations and pattern activities against the official curriculum.
 - Keep unsupported regional curricula explicitly unavailable. Do not infer completion from region selector entries.
