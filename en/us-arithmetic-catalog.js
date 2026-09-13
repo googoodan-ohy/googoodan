@@ -19,14 +19,14 @@ for(const [grade,id,name,standard,kind,a,b]of specs){const g=grade==='K'?0:grade
  for(const [mode,layout,label]of variants.filter(v=>family!=='Fractions'||v[1]!=='vertical')){const p={id:u.id+'-'+u.drills.length,title:name+' · '+label,group:mode==='blank'?'빈칸 응용':'기본 연산',mode,layout,unit:u.id,standard,skill:mode==='skill'?kind:undefined};u.drills.push(p);profiles.set(p.id,p);W.types.push({id:p.id,title:p.title,instruction:'Calculate.',example:'2 + 3',family,group:'Practice',config:{kind:'us-curriculum'}});}
 }
 root.USArithmetic={units,profiles};root.DrillCatalog={units,profiles};
-function rows(p,seed,count){const u=units.find(x=>x.id===p.unit);let state=seed>>>0;const r=(min,max)=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return min+Math.floor(state/4294967296*(max-min+1))};const fraction=(n,d)=>W.fraction(n,d);const out=[];
+function rows(p,seed,count){const u=units.find(x=>x.id===p.unit);let state=seed>>>0;const r=(min,max)=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return min+Math.floor(state/4294967296*(max-min+1))};const fraction=(n,d)=>W.fraction(n,d);const out=[];let factPairs=[];
 for(let i=0;i<count;i++){let a,b,op,answer,prompt;const minus=i%2===1;
  const custom=locale.row?.(u,p,r,i);if(custom){const q={...custom};if(q.answer===undefined){const [n,d]=W.exact(q.a,q.b,q.op);q.answer=fraction(n,d);}if(p.mode==='blank')q.mask=q.op==='÷'&&String(q.answer).includes(' R ')||q.op==='×'&&(!Number(q.a)||!Number(q.b))?2:i%3;out.push(q);continue;}
  switch(u.kind){
  case 'early':a=r(0,u.a);b=r(0,u.a-a);op=minus?'−':'+';if(minus)[a,b]=[a+b,b];break;
  case 'add100':a=r(10,90);b=r(0,Math.min(9,100-a));op='+';break;
  case 'tens':a=r(0,9)*10;b=r(0,9-a/10)*10;op=minus?'−':'+';if(minus)[a,b]=[a+b,b];break;
- case 'facts':b=r(1,10);a=r(0,10);op=minus?'÷':'×';if(minus)a*=b;break;
+ case 'facts':if((!locale.prefix||locale.prefix==='us')&&u.grade===3){if(i%24===23){a=r(0,1);b=r(2,10);}else{if(!factPairs.length)factPairs=Array.from({length:81},(_,k)=>[2+Math.floor(k/9),2+k%9]);[a,b]=factPairs.splice(r(0,factPairs.length-1),1)[0];}}else{b=r(1,10);a=r(0,10);}op=minus?'÷':'×';if(minus)a*=b;break;
  case 'tensmul':a=r(1,9);b=r(1,9)*10;op='×';break;
  case 'mul':a=r(10**(u.a-1),10**u.a-1);b=r(10**(u.b-1),10**u.b-1);op='×';break;
  case 'div':b=r(u.b===1?2:10,10**u.b-1);a=r(10**(u.a-1),10**u.a-1);op='÷';answer=Math.floor(a/b)+(a%b?' R '+a%b:'');break;
