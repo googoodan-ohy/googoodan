@@ -146,3 +146,5 @@ Claude의 파일 전송 도구는 `.git` 디렉터리 쓰기를 차단합니다.
 - JS/CSS를 수정하면 이를 참조하는 모든 HTML의 ?v= 버전도 함께 갱신하고, 버전 없는 내부 JS/CSS 참조가 없는지 확인한다.
 
 - 2026-09-13: 한국판 5학년 1학기의 4학년 계산 복습 4종은 `ko/drill-page.js`의 표시용 `5-1-review` 항목(학기 시작 복습)에서 한 번만 제공한다. 공유 계산 카탈로그의 기존 ID는 유지하며, 대표 주소는 `drill-5-1-1--review-natural-{mul|div}-3-2-{horizontal|vertical}.html`이다. 5-1-2·5-1-4의 이전 복습 주소 8개는 대표 문제와 canonical을 공유하며 사이트맵에는 대표 4개만 등록한다. 목차를 재생성할 때 세 단원의 개별 목록에 복습지를 다시 중복 배치하지 않는다.
+
+- 영문 학습 페이지 생성기를 실행한 뒤 중앙 `build-en-seo-metadata.cjs`와 `check-en-seo-metadata.cjs`를 반드시 실행해 최종 SEO를 보존한다.

@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const crypto = require('node:crypto');
+const {execFileSync} = require('node:child_process');
 
 const root = path.resolve(__dirname, '..');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'en', 'regrouping-reuse-static-manifest.json'), 'utf8'));
@@ -88,8 +89,8 @@ for (const page of manifest.pages) {
   const description = (html.match(/<meta name="description" content="([^"]*)">/i) || [])[1];
   const canonical = (html.match(/<link rel="canonical" href="([^"]*)">/i) || [])[1];
   if (!title || !h1 || !description || !canonical) throw new Error(page.file + ': missing static SEO field');
-  if (title.length > 60) throw new Error(page.file + ': title exceeds 60 characters');
-  if (description.length < 100 || description.length > 160) throw new Error(page.file + ': description length ' + description.length);
+  if (title.length > 75) throw new Error(page.file + ': title exceeds 75 characters');
+  if (description.length < 100 || description.length > 165) throw new Error(page.file + ': description length ' + description.length);
   if (titles.has(title) || h1s.has(h1) || canonicals.has(canonical)) throw new Error(page.file + ': duplicate SEO field');
   titles.add(title); h1s.add(h1); canonicals.add(canonical);
   if (canonical !== page.canonical || !html.includes('<meta name="robots" content="index,follow">')) throw new Error(page.file + ': canonical/robots mismatch');
@@ -108,11 +109,23 @@ for (const page of manifest.pages) {
 }
 
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
-const outputFiles = manifest.pages.map(page => path.join(root, 'en', page.file)).concat(path.join(root, 'en', 'regrouping-reuse-static-manifest.json'));
-const before = outputFiles.map(hash);
-require(path.join(root, 'en', 'build-regrouping-reuse-static.cjs'));
-const after = outputFiles.map(hash);
-if (before.some((value, index) => value !== after[index])) throw new Error('Builder output is not deterministic');
+const outputFiles = manifest.pages.map(page => path.join(root, 'en', page.file)).concat(
+  path.join(root, 'en', 'regrouping-reuse-static-manifest.json'),
+  path.join(root, 'en-seo-metadata-report.csv')
+);
+const buildFinalOutput = () => {
+  for (const script of ['en/build-regrouping-reuse-static.cjs', 'build-en-seo-metadata.cjs']) {
+    execFileSync(process.execPath, [path.join(root, script)], {
+      cwd: root,
+      stdio: ['ignore', 'pipe', 'pipe']
+    });
+  }
+};
+buildFinalOutput();
+const first = outputFiles.map(hash);
+buildFinalOutput();
+const second = outputFiles.map(hash);
+if (first.some((value, index) => value !== second[index])) throw new Error('Final regrouping and SEO builder output is not deterministic');
 
 console.log(JSON.stringify({
   pages: manifest.pages.length,

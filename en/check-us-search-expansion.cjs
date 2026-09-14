@@ -1,6 +1,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const {parseCsv, REPORT_PATH} = require('../en-seo-metadata.cjs');
 
 const root = path.resolve(__dirname, '..');
 const en = __dirname;
@@ -8,14 +9,22 @@ const errors = [];
 const manifest = JSON.parse(fs.readFileSync(path.join(en, 'cut-and-paste-manifest.json'), 'utf8'));
 const numberSenseManifest = JSON.parse(fs.readFileSync(path.join(en, 'number-sense-static-manifest.json'), 'utf8'));
 const pages = [
-  ['kindergarten.html', 'Kindergarten Math Worksheets - Free Printables | Googoodan'],
-  ['number-sense-worksheets.html', 'Number Sense Worksheets for K–2 | Googoodan'],
-  ['addition-worksheets.html', 'Addition Worksheets - Free Printable | Googoodan'],
-  ['subtraction-worksheets.html', 'Subtraction Worksheets - Free Printable | Googoodan'],
-  ...manifest.pages.map(page => [page.file, page.title + ' | Googoodan']),
-  ...numberSenseManifest.pages.map(page => [page.file, page.title])
+  'kindergarten.html',
+  'number-sense-worksheets.html',
+  'addition-worksheets.html',
+  'subtraction-worksheets.html',
+  ...manifest.pages.map(page => page.file),
+  ...numberSenseManifest.pages.map(page => page.file)
 ];
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+const reportRows = fs.existsSync(REPORT_PATH) ? parseCsv(fs.readFileSync(REPORT_PATH, 'utf8')) : [];
+const reportTitles = new Map();
+if (!fs.existsSync(REPORT_PATH)) errors.push('Missing SEO metadata report: en-seo-metadata-report.csv');
+for (const row of reportRows) {
+  if (!row.current_file || !row.recommended_title) continue;
+  if (reportTitles.has(row.current_file)) errors.push('Duplicate SEO report row: ' + row.current_file);
+  reportTitles.set(row.current_file, row.recommended_title);
+}
 const allTitles = new Map();
 for (const file of walk(en).filter(file => file.endsWith('.html'))) {
   const source = fs.readFileSync(file, 'utf8');
@@ -45,7 +54,7 @@ function resolveInternal(href) {
   return path.join(root, ...pathname.split('/').filter(Boolean));
 }
 
-for (const [fileName, expectedTitle] of pages) {
+for (const fileName of pages) {
   const file = path.join(en, fileName);
   if (!fs.existsSync(file)) {
     errors.push('Missing page: ' + fileName);
@@ -56,7 +65,10 @@ for (const [fileName, expectedTitle] of pages) {
   const title = source.match(/<title>([^<]+)<\/title>/i)?.[1] || '';
   const h1 = source.match(/<h1(?:\s[^>]*)?>([\s\S]*?)<\/h1>/i)?.[1].replace(/<[^>]+>/g, '').trim() || '';
   const description = source.match(/<meta name="description" content="([^"]+)"/i)?.[1] || '';
-  if (title !== expectedTitle) errors.push(fileName + ': title mismatch: ' + title);
+  const reportFile = 'en/' + fileName.replaceAll('\\', '/');
+  const expectedTitle = reportTitles.get(reportFile);
+  if (!expectedTitle) errors.push(fileName + ': missing recommended_title in SEO metadata report');
+  else if (title !== expectedTitle) errors.push(fileName + ': title differs from SEO metadata report: ' + title);
   if (!h1) errors.push(fileName + ': missing H1');
   if (description.length < 120 || description.length > 170) errors.push(fileName + ': description length ' + description.length);
   if (count(source, '<link rel="canonical" href="' + canonical + '">') !== 1) errors.push(fileName + ': canonical mismatch');
