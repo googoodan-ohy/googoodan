@@ -3,10 +3,28 @@ const generate=(id,s,n)=>id==='times-tables'?GDTimes.rows(s,n):Worksheets.genera
 if(!types.some(t=>t.id==='times-tables'))types.push(GDTimes.type);
 const familyNames={'Natural numbers':'Entiers',Fractions:'Fractions',Decimals:'Décimaux','Times tables':'Tables'};
 const operationNames={Addition:'Addition',Subtraction:'Soustraction',Multiplication:'Multiplication',Division:'Division','Number sense':'Numération'};
+const digitLabel=n=>n+' '+(n===1?'chiffre':'chiffres');
+const operationSymbols={add:'+',sub:'−',mul:'×',div:'÷'};
+const baseTitles={
+ 'add-small':'Additions jusqu’à 20',
+ 'add-two':'2 chiffres + 2 chiffres · sans retenue',
+ 'add-carry':'2 chiffres + 2 chiffres · avec retenue',
+ 'subtract-small':'Soustractions jusqu’à 10',
+ 'subtract-two':'2 chiffres − 2 chiffres · sans retenue',
+ 'subtract-borrow':'2 chiffres − 2 chiffres · avec retenue',
+ 'multiply-one':'1 chiffre × 1 chiffre',
+ 'multiply-two-one':'2 chiffres × 1 chiffre',
+ 'multiply-two':'2 chiffres × 2 chiffres',
+ 'divide':'Divisions exactes',
+ 'missing':'Nombre manquant',
+ 'compare-ten':'Comparer les nombres jusqu’à 10',
+ 'compare':'Comparer les nombres'
+};
 for(const t of types){
  const c=t.config;
- if(c?.kind==='natural')t.title=c.da+' chiffres '+({'add':'Addition','sub':'Soustraction','mul':'Multiplication','div':'Division'}[c.code])+' · '+c.db+' chiffres';
- else t.title=t.title.replaceAll('Addition within 20','Additions jusqu’à 20').replaceAll('Subtraction within 10','Soustractions jusqu’à 10').replaceAll('Two-digit addition','2 chiffres Addition').replaceAll('Two-digit subtraction','2 chiffres Soustraction').replaceAll('no regrouping','sans retenue').replaceAll('regrouping','avec retenue').replaceAll('One digit','1 chiffres').replaceAll('one digit','1 chiffres').replaceAll('Two digits','2 chiffres').replaceAll('two digits','2 chiffres').replaceAll('no remainders','sans reste').replaceAll('Find the missing number','Nombre manquant').replaceAll('Compare numbers within 10','Comparer les nombres jusqu’à 10').replaceAll('Compare numbers','Comparer les nombres').replaceAll('Addition','Addition').replaceAll('Subtraction','Soustraction').replaceAll('Multiplication','Multiplication').replaceAll('Division','Division').replaceAll('decimal places',' décimales').replaceAll('decimal place',' décimales').replaceAll('Whole number','Entiers').replaceAll('whole number','Entiers').replaceAll('different denominators','dénominateurs différents').replaceAll('same denominators','même dénominateur').replaceAll('improper fraction','fraction supérieure à 1').replaceAll('proper fraction','fraction inférieure à 1').replaceAll('mixed fraction','nombre mixte').replaceAll('with negative numbers','avec nombres négatifs');
+ if(c?.kind==='natural')t.title=digitLabel(c.da)+' '+operationSymbols[c.code]+' '+digitLabel(c.db);
+ else if(baseTitles[t.id])t.title=baseTitles[t.id];
+ else t.title=t.title.replaceAll('no regrouping','sans retenue').replaceAll('regrouping','avec retenue').replaceAll('One digit','1 chiffre').replaceAll('one digit','1 chiffre').replaceAll('Two digits','2 chiffres').replaceAll('two digits','2 chiffres').replaceAll('no remainders','sans reste').replaceAll('Find the missing number','Nombre manquant').replaceAll('Compare numbers within 10','Comparer les nombres jusqu’à 10').replaceAll('Compare numbers','Comparer les nombres').replaceAll('decimal places','décimales').replaceAll('decimal place','décimale').replaceAll('Whole number','Entier').replaceAll('whole number','entier').replaceAll('different denominators','dénominateurs différents').replaceAll('same denominators','même dénominateur').replaceAll('improper fraction','fraction supérieure à 1').replaceAll('proper fraction','fraction inférieure à 1').replaceAll('mixed fraction','nombre mixte').replaceAll('with negative numbers','avec nombres négatifs').replaceAll('Addition','Addition').replaceAll('Subtraction','Soustraction').replaceAll('Multiplication','Multiplication').replaceAll('Division','Division');
  t.instruction=t.group==='Division'?'Calcule les divisions. Indique le reste si nécessaire.':t.group==='Number sense'?'Complète avec le nombre ou le signe qui convient.':'Calcule et écris la réponse.';
 }
 let koBrowse='topic';
@@ -68,7 +86,7 @@ function digitOrder(t){
 const numberArt={
 'Natural numbers':'<svg viewBox="0 0 100 52" aria-hidden="true"><g fill="#df8351"><circle cx="18" cy="35" r="6"/><circle cx="43" cy="35" r="6"/><circle cx="43" cy="19" r="6"/><circle cx="73" cy="35" r="6"/><circle cx="73" cy="19" r="6"/><circle cx="87" cy="35" r="6"/></g></svg>',
 'Fractions':'<svg viewBox="0 0 100 52" aria-hidden="true"><circle cx="50" cy="26" r="22" fill="#f4e8db" stroke="#a77648"/><path d="M50 4 A22 22 0 0 1 72 26 H50 Z" fill="#df8351"/><path d="M28 26H72M50 4V48" stroke="#a77648"/></svg>',
-'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0.3</text></svg>',
+'Decimals':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="10" y="12" width="80" height="22" fill="#f4e8db" stroke="#a77648"/><rect x="10" y="12" width="24" height="22" fill="#df8351"/><path d="M18 12V34M26 12V34M34 12V34M42 12V34M50 12V34M58 12V34M66 12V34M74 12V34M82 12V34" stroke="#a77648"/><text x="50" y="49" text-anchor="middle" font-size="13">0,3</text></svg>',
 'Times tables':'<svg viewBox="0 0 100 52" aria-hidden="true"><rect x="18" y="4" width="64" height="44" rx="8" fill="#e9f5e9" stroke="#278477"/><text x="50" y="32" text-anchor="middle" font-size="21" fill="#176e5c">2×3</text></svg>'};
 function choose(t){if(t.id===current.id)return;location.href='/fr/?type='+encodeURIComponent(t.id);}
 function menu(){koMenu();}

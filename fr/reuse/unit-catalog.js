@@ -1,3 +1,4 @@
+const FrCurriculumSource=globalThis.KoMath;
 const angleTypeActivities=[{title:'Angles aigus, droits et obtus',method:'angle-type'}];function angleTypeGenerate(p,seed,n){if(p!==0)throw Error('Unknown profile');const art=KoArt.session(seed,excluded);return FrCoreGeometry.generate('4-1-2',seed,n).map((s,i)=>({...s,title:angleTypeActivities[i].title,questions:s.questions.map(q=>{const a=art.take();return {...q,methodId:'angle-type',artId:a.id,visual:'<span class="picture-badge">'+KoArt.icon(a)+'</span>'+q.visual}})}))}
 const angleActivities=[{title:'Reconnaître un angle droit',method:'angle-right'},{title:'Compter les côtés',method:'flat-count'}];function angleGenerate(p,seed,n){if(p!==0)throw Error('Unknown profile');const art=KoArt.session(seed,excluded);return FrCoreGeometry.generate('3-1-2',seed,n).map((s,i)=>({...s,title:angleActivities[i].title,questions:s.questions.map(q=>{const a=art.take();return {...q,methodId:angleActivities[i].method,artId:a.id,visual:'<span class="picture-badge">'+KoArt.icon(a)+'</span>'+q.visual}})}))}
 const decimalOpActivities=[{title:'Multiplier par un entier',method:'decimal-mul-whole'},{title:'Multiplier par 10 ou 100',method:'decimal-scale'},{title:'Diviser par un entier',method:'decimal-div-whole'}];function decimalOpGenerate(p,seed,n){if(p!==0)throw Error('Unknown profile');const art=KoArt.session(seed,excluded);return FrCoreDecimals.generate('cm2-decimal-operations',seed,n).map((s,i)=>({...s,title:decimalOpActivities[i].title,questions:s.questions.map(q=>{const a=art.take();return {...q,methodId:decimalOpActivities[i].method,artId:a.id,visual:'<span class="picture-badge">'+KoArt.icon(a)+'</span>'+q.visual}})}))}
@@ -45,8 +46,92 @@ KoCatalog.units.push({id:"fr-cm1-bar",grade:4,semester:1,number:5,name:"Lire et 
 KoCatalog.units.push({id:"fr-cm2-line",grade:5,semester:1,number:4,name:"Lire et construire une courbe"});
 KoCatalog.units.push({id:"fr-cm1-symmetry",grade:4,semester:1,number:6,name:"Construire une figure symétrique"});
 KoCatalog.units.push({id:"fr-cm1-capacity",grade:4,semester:1,number:7,name:"Convertir et comparer des contenances"});
-KoCatalog.units.push({id:"fr-cm2-numbers",grade:5,semester:1,number:5,name:"Les nombres jusqu’à 99 999 999"});
+KoCatalog.units.push({id:"fr-cm2-numbers",grade:5,semester:1,number:5,name:"Les nombres jusqu’à 999 999 999"});
 KoCatalog.units.push({id:"fr-ce1-angles",grade:2,semester:1,number:13,name:"Angles droits et côtés"});
 KoCatalog.units.push({id:"fr-cm2-area",grade:5,semester:1,number:6,name:"Convertir et comparer des aires"});
 KoCatalog.units.push({id:"fr-cm1-angles",grade:4,semester:1,number:8,name:"Reconnaître les angles"});
 KoCatalog.units.push({id:"fr-cm1-numbers",grade:4,semester:1,number:9,name:"Les nombres jusqu’à 999 999"});
+
+// French cycle 3 curriculum additions (reusing existing generators).
+(()=>{
+const base=globalThis.KoMath;
+const defs=[
+ {id:'fr-cm1-proportionality',grade:4,number:10,name:'Proportionnalité',profiles:[{name:'Compléter une proportion',kind:'source',source:'6-2-4',skill:'proportion'}]},
+ {id:'fr-cm1-perimeter',grade:4,number:11,name:'Périmètre du rectangle',profiles:[{name:'Calculer le périmètre d’un rectangle',kind:'source',source:'5-1-6',skill:'perimeter'}]},
+ {id:'fr-cm1-area-formulas',grade:4,number:12,name:'Aire du rectangle',profiles:[{name:'Calculer l’aire d’un rectangle',kind:'source',source:'5-1-6',skill:'area-rectangle'}]},
+ {id:'fr-cm2-proportionality',grade:5,number:7,name:'Proportionnalité',profiles:[{name:'Compléter une proportion',kind:'source',source:'6-2-4',skill:'proportion'}]},
+ {id:'fr-cm2-perimeter',grade:5,number:8,name:'Périmètres et circonférence',profiles:[
+   {name:'Périmètre du rectangle',kind:'source',source:'5-1-6',skill:'perimeter'},
+   {name:'Circonférence du cercle',kind:'source',source:'6-2-5',skill:'circle-circumference'}]},
+ {id:'fr-cm2-area-formulas',grade:5,number:9,name:'Aire du rectangle',profiles:[{name:'Calculer l’aire d’un rectangle',kind:'source',source:'5-1-6',skill:'area-rectangle'}]},
+ {id:'fr-cm2-symmetry',grade:5,number:10,name:'Axes et figures symétriques',profiles:[
+   {name:'Construire par symétrie axiale',kind:'symmetry-grid'},
+   {name:'Axes de symétrie du carré',kind:'source',source:'5-2-3',skill:'symmetry-line'}]},
+ {id:'fr-cm2-angles',grade:5,number:11,name:'Reconnaître et mesurer les angles',profiles:[
+   {name:'Angles aigus, droits et obtus',kind:'source',source:'4-1-2',skill:'angle-type'},
+   {name:'Mesurer au rapporteur',kind:'source',source:'4-1-2',skill:'angle-measure'}]},
+ {id:'fr-cm2-solids',grade:5,number:12,name:'Solides et patrons',profiles:[
+   {name:'Faces, sommets et arêtes du pavé droit',kind:'source',source:'5-2-5',skill:'cuboid'},
+   {name:'Patron du cube',kind:'source',source:'5-2-5',skill:'cube-net'}]},
+ {id:'fr-cm2-time',grade:5,number:13,name:'Heures et durées',profiles:[{name:'Calculer une durée',kind:'duration'}]},
+ {id:'fr-cm2-measures',grade:5,number:14,name:'Masse et contenance',profiles:[
+   {name:'Kilogrammes et grammes',kind:'mass'},
+   {name:'Litres et millilitres',kind:'capacity'}]},
+ {id:'fr-cm2-probability',grade:5,number:15,name:'Probabilités',profiles:[{name:'Exprimer une chance sur deux',kind:'source',source:'5-2-6',skill:'chance'}]}
+];
+KoCatalog.units.push(...defs.map(d=>({id:d.id,grade:d.grade,semester:1,number:d.number,name:d.name})));
+const find=id=>defs.find(d=>d.id===id);
+const activityTitles=['Comprendre et résoudre','Choisir ou compléter','Vérifier une réponse'];
+const decimalText=s=>String(s).split(/(<[^>]*>)/g).map((t,i)=>i%2?t:t.replace(/(\d)\.(\d)/g,'$1,$2')).join('');
+const commonText=s=>String(s)
+ .replaceAll('친구의 답:','Réponse proposée :')
+ .replaceAll('맞으면 ○, 틀리면 ×. 틀린 답은 고치세요.','Écris ○ si la réponse est juste ou × si elle est fausse, puis corrige-la.')
+ .replaceAll('바른 답:','Bonne réponse :')
+ .replaceAll('문제 그림','Figure de l’exercice')
+ .replaceAll('예각','angle aigu').replaceAll('직각','angle droit').replaceAll('둔각','angle obtus')
+ .replaceAll('직육면체','pavé droit').replaceAll('정육면체','cube')
+ .replaceAll('삼각기둥','prisme droit à base triangulaire').replaceAll('삼각뿔','pyramide à base triangulaire').replaceAll('사각기둥','prisme droit à base quadrangulaire')
+ .replaceAll('반지름','rayon').replaceAll('지름','diamètre')
+ .replaceAll('직사각형','rectangle').replaceAll('삼각형','triangle').replaceAll('꼭짓점','sommet')
+ .replaceAll('불가능하다','0 chance sur 2').replaceAll('반반이다','1 chance sur 2').replaceAll('확실하다','2 chances sur 2');
+function sourceQuestion(q,skill,mode){
+ let prompt='',reason='';
+ if(skill==='proportion'){
+  prompt=mode===1?'Choisis le nombre qui complète la proportion.':mode===2?'Complète la proportion, puis vérifie la réponse proposée.':'Trouve le nombre qui complète la proportion.';
+  const m=String(q.reason).match(/같은 수 (\d+)/);reason='On multiplie les deux termes par le même nombre'+(m?' : '+m[1]+'.':'.');
+ }else if(skill==='perimeter'){
+  const c=q.check;prompt='Calcule le périmètre du rectangle en cm.'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason='('+c.a+' + '+c.b+') × 2 = '+c.result+' cm.';
+ }else if(skill==='area-rectangle'){
+  const c=q.check;prompt='Calcule l’aire du rectangle de '+c.a+' cm sur '+c.b+' cm.'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason=c.a+' × '+c.b+' = '+c.result+' cm².';
+ }else if(skill==='circle-circumference'){
+  prompt='Calcule la circonférence du cercle en cm (π ≈ 3,14).'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason=decimalText(commonText(q.reason).replace('diamètre × 3.14','diamètre × 3,14'))+'.';
+ }else if(skill==='symmetry-line'){
+  prompt='Combien un carré possède-t-il d’axes de symétrie ?'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason='Deux axes passent par les milieux des côtés opposés et deux autres suivent les diagonales.';
+ }else if(skill==='angle-type'){
+  prompt='Indique si l’angle est aigu, droit ou obtus.'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason='Un angle aigu mesure moins de 90°, un angle droit 90° et un angle obtus entre 90° et 180°.';
+ }else if(skill==='angle-measure'){
+  prompt='Lis le rapporteur et indique la mesure de l’angle.'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');const m=String(q.reason).match(/눈금 (\d+)°/);reason='Pars de 0° à droite et lis la graduation indiquée'+(m?' : '+m[1]+'°.':'.');
+ }else if(skill==='cuboid'){
+  const attr=String(q.prompt).includes('모서리')?'arêtes':String(q.prompt).includes('꼭짓점')?'sommets':'faces';prompt='Combien le pavé droit possède-t-il de '+attr+' ?'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason='Un pavé droit possède 6 faces, 8 sommets et 12 arêtes.';
+ }else if(skill==='cube-net'){
+  prompt='Dans ce patron de cube, combien de faces ne sont pas colorées ?'+(mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'');reason='Le patron compte 6 carrés : un est coloré, il en reste 5.';
+ }else if(skill==='chance'){
+  const src=String(q.prompt);prompt=src.startsWith('빨간 공만')?'Une boîte contient seulement des boules rouges. Quelle est la chance de tirer une boule bleue ?':src.startsWith('파란 공만')?'Une boîte contient seulement des boules bleues. Quelle est la chance de tirer une boule bleue ?':'Une boîte contient une boule rouge et une boule bleue. Quelle est la chance de tirer la boule rouge sans regarder ?';prompt+=mode===1?' Choisis la bonne réponse.':mode===2?' Vérifie la réponse proposée.':'';reason='Compare le nombre de résultats favorables au nombre total de boules.';
+ }else throw Error('Unsupported source skill '+skill);
+ const convert=skill==='circle-circumference'?x=>decimalText(commonText(x)):commonText;
+ return {...q,prompt,reason,visual:convert(q.visual),task:convert(q.task),answer:convert(q.answer)};
+}
+function generateProfile(d,profile,seed,n){
+ const spec=d.profiles[profile];if(!spec)throw Error('Unsupported French curriculum profile');
+ if(spec.kind==='symmetry-grid')return FrGeometry.generate(0,seed,n,excluded);
+ if(spec.kind==='duration')return FrMeasurement.generateDuration(0,seed,n,excluded);
+ if(spec.kind==='mass')return FrMeasurement.generateMetric(2,seed,n,excluded);
+ if(spec.kind==='capacity')return FrMeasurement.generateCapacity(0,seed,n,excluded);
+ return FrCurriculumSource.generate(spec.source,0,seed,n,[0,1,2].map(mode=>({skill:spec.skill,mode}))).map((section,i)=>({...section,title:activityTitles[i],questions:section.questions.map(q=>sourceQuestion(q,spec.skill,i))}));
+}
+globalThis.KoMath={...base,
+ profiles(id){const d=find(id);return d?d.profiles.map(({name})=>({name})):base.profiles(id);},
+ generate(id,p,seed,n){const d=find(id);return d?generateProfile(d,p,seed,n):base.generate(id,p,seed,n);},
+ excludeArt(ids){base.excludeArt?.(ids);FrCurriculumSource.excludeArt?.(ids);}
+};
+})();
