@@ -2,11 +2,13 @@ const assert=require('node:assert/strict');
 const {types,generate,rational,exact}=require('./types.js');
 const value=x=>{const [n,d]=rational(x);return n/d;};
 let count=0;
-for(const t of types)for(let seed=0;seed<100;seed++){
- const rows=generate(t.id,seed);
+const generatedTypes=types.filter(t=>!t.bankId&&!t.customWorksheet);
+const customTypes=types.filter(t=>t.customWorksheet);
+for(const t of generatedTypes)for(let seed=0;seed<100;seed++){
+ const rows=generate(t.id,seed,20);
  assert.equal(rows.length,20,t.id);
  assert.equal(new Set(rows.map(p=>`${p.a}:${p.b}`)).size,20,t.id);
- assert.deepEqual(rows,generate(t.id,seed));
+ assert.deepEqual(rows,generate(t.id,seed,20));
  for(const p of rows){
  const a=value(p.a),b=value(p.b);
  if(p.op==='compare')assert.equal(p.answer,a<b?'<':a>b?'>':'=');
@@ -34,4 +36,5 @@ for(const t of types)for(let seed=0;seed<100;seed++){
  count++;
  }
 }
-console.log(`${types.length} types: ${count} questions passed arithmetic, uniqueness, deterministic generation, and preset checks.`);
+for(const t of customTypes)for(let seed=0;seed<100;seed++){const rows=generate(t.id,seed,20);assert.equal(rows.length,20,t.id);assert.deepEqual(rows,generate(t.id,seed,20));for(const p of rows){assert.ok(p.prompt&&String(p.answer).length,t.id);}}
+console.log(`${generatedTypes.length} arithmetic types: ${count} questions passed arithmetic, uniqueness, deterministic generation, and preset checks; ${customTypes.length} custom types passed deterministic generation checks.`);

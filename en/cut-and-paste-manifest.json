@@ -1,0 +1,108 @@
+{
+  "version": "20260914-cut-paste-unique",
+  "count": 6,
+  "pages": [
+    {
+      "slug": "cut-and-paste-math-worksheets",
+      "title": "Cut and Paste Math Worksheets for Kindergarten",
+      "description": "Free printable cut and paste math worksheets for kindergarten with counting, number words, number order, make 10 activities, and matching answer keys.",
+      "level": "Kindergarten",
+      "standards": "K.CC.A-B; K.OA.A.4",
+      "summary": "Practice counting, number words, number order, and partners for 10 on one mixed activity sheet.",
+      "activities": [
+        "Count a picture group and paste its numeral.",
+        "Match written number words to numerals.",
+        "Order number cards from least to greatest.",
+        "Find and paste the missing partner that makes 10."
+      ],
+      "tip": "Use the mixed page when you want a short review of several early math skills. Each new set changes the pictures and numbers while keeping the same four-part routine.",
+      "file": "cut-and-paste-math-worksheets.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-math-worksheets.html"
+    },
+    {
+      "slug": "cut-and-paste-counting",
+      "title": "Cut and Paste Counting Worksheets",
+      "description": "Free printable cut and paste counting worksheets for kindergarten. Count familiar pictures, choose the matching numeral card, and print answer keys.",
+      "level": "Kindergarten",
+      "standards": "K.CC.B.4-5",
+      "summary": "Count each familiar picture group, cut out the numeral choices, and paste the card that shows how many.",
+      "activities": [
+        "Touch each picture once while counting.",
+        "Say the final number aloud.",
+        "Choose the numeral card with the same total.",
+        "Paste the card in the large dashed answer space."
+      ],
+      "tip": "Ask the child to count once from left to right and once in a different order. The total should stay the same even when the counting order changes.",
+      "file": "cut-and-paste-counting.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-counting.html"
+    },
+    {
+      "slug": "cut-and-paste-number-words",
+      "title": "Cut and Paste Number Words Worksheets",
+      "description": "Free printable cut and paste number word worksheets for kindergarten. Match numerals with English number words, make new sets, and print answers.",
+      "level": "Kindergarten",
+      "standards": "K.CC.A.3",
+      "summary": "Read each numeral, cut out its written number word, and paste the word beside the matching number.",
+      "activities": [
+        "Read the three numerals aloud.",
+        "Cut along the dotted borders around the word cards.",
+        "Match each word to the same numeral.",
+        "Paste the cards and check them with the answer key."
+      ],
+      "tip": "If reading the word is new, say it together first. Then mix the cards and let the learner use the beginning sound and letter pattern to find it again.",
+      "file": "cut-and-paste-number-words.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-number-words.html"
+    },
+    {
+      "slug": "cut-and-paste-number-order",
+      "title": "Cut and Paste Number Order Worksheets",
+      "description": "Free printable cut and paste number order worksheets for kindergarten and first grade. Arrange number cards from least to greatest with answers.",
+      "level": "Kindergarten-Grade 1",
+      "standards": "K.CC.A.1-2; 1.NBT.A.1",
+      "summary": "Cut out three number cards and paste them into a row from least to greatest.",
+      "activities": [
+        "Find the smallest number first.",
+        "Place the next greater number in the middle.",
+        "Put the greatest number in the last space.",
+        "Read the finished number sequence aloud."
+      ],
+      "tip": "A child who is unsure can say the counting sequence and point when each card number is reached. The card reached first is the least number.",
+      "file": "cut-and-paste-number-order.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-number-order.html"
+    },
+    {
+      "slug": "cut-and-paste-make-10",
+      "title": "Cut and Paste Make 10 Worksheets",
+      "description": "Free printable cut and paste make 10 worksheets for kindergarten and first grade. Find missing partners for ten and print matching answer keys.",
+      "level": "Kindergarten-Grade 1",
+      "standards": "K.OA.A.4; 1.OA.C.6",
+      "summary": "Complete each addition sentence by cutting out and pasting the missing number that makes 10.",
+      "activities": [
+        "Read the number already shown.",
+        "Think about how many more make a full group of 10.",
+        "Choose the correct card from the answer choices.",
+        "Paste it in the equation and check the complete fact."
+      ],
+      "tip": "A ten frame or ten small counters can help. Build the given number, count the empty places, and then select the card with that missing amount.",
+      "file": "cut-and-paste-make-10.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-make-10.html"
+    },
+    {
+      "slug": "cut-and-paste-number-patterns",
+      "title": "Cut and Paste Number Pattern Worksheets",
+      "description": "Free printable cut and paste number pattern worksheets for kindergarten and first grade. Complete number lines and counting sequences with answers.",
+      "level": "Kindergarten-Grade 1",
+      "standards": "K.CC.A.1-2; 1.NBT.A.1",
+      "summary": "Use cut-out number cards to complete before-and-after patterns, number lines, and mixed counting sequences.",
+      "activities": [
+        "Look for the number that comes before and after.",
+        "Move one step at a time on the number line.",
+        "Find where a mixed sequence stops counting forward.",
+        "Paste the cards so the finished row is in order."
+      ],
+      "tip": "Have the learner read the completed row from left to right. If every step increases by one, the cards are in the correct places.",
+      "file": "cut-and-paste-number-patterns.html",
+      "canonical": "https://googoodan.com/en/cut-and-paste-number-patterns.html"
+    }
+  ]
+}
