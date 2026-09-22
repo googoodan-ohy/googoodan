@@ -1,1 +1,0 @@
-(()=>{const notice='Grundlage: LehrplanPLUS Bayern. Weitere Bundesländer folgen.';window.GDRegions={mount(root){if(!root||root.querySelector('.de-curriculum-note'))return;const paragraph=document.createElement('p');paragraph.className='ja-unit-note de-curriculum-note';paragraph.textContent=notice;root.append(paragraph);}};})();

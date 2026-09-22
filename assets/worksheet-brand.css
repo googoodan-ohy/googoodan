@@ -1,0 +1,146 @@
+/* Shared branding for every worksheet and answer key; not translated. */
+.gd-brand-name{white-space:nowrap;font-size:28px;letter-spacing:-1.2px}.gd-brand-name>span{font-size:inherit}
+.sheet-brand-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.sheet-brand{font-family:Arial,sans-serif;font-size:20px;line-height:1.2;letter-spacing:-.5px;font-weight:800;color:#176e5c;text-transform:none}
+.sheet-mode{font-size:13px;border:1px solid #b6cfc5;border-radius:4px;padding:3px 8px;white-space:nowrap}
+.sheet-top h2{line-height:1.25}.sheet-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#214c50}.sheet-foot strong{font-size:12px;letter-spacing:0}
+.sheet-instruction{font-size:14px}.answer-space{min-height:42px}
+@media(max-width:440px){.gd-brand-name{font-size:26px}.sheet-brand{font-size:19px}.sheet-brand-row{gap:8px}.sheet-mode{font-size:12px}}
+@media print{.sheet-brand{font-size:18px;color:#176e5c}.sheet-mode{font-size:12px}.sheet-foot strong{font-size:11px}.sheet-instruction{font-size:13px}}
+
+/* Text contrast on the pale site background. */
+.gd-brand-name>span{color:#b74724}.gd-brand-copy small{color:#496358}
+
+/* Use the printable page height without shrinking children's answer boxes. */
+@media print{
+ .sheet{display:flex;flex-direction:column}
+ .sheet-top,.sheet-meta,.sheet-instruction,.sheet-foot{flex-shrink:0}
+ .sheet .questions{flex:1;min-height:0;grid-template-rows:repeat(var(--worksheet-rows),minmax(0,1fr));align-content:stretch;row-gap:4mm!important}
+ .sheet .question{min-height:0;align-items:flex-start;padding-top:1mm;padding-bottom:1mm}
+ .sheet .sheet-foot{margin-top:4mm!important}
+ .sheet[data-layout=horizontal] .horizontal-question .answer-space{margin:6px 0 0}
+ .sheet[data-layout=horizontal] .working-space{min-height:4px}
+ .sheet[data-layout=vertical] .regroup-space{height:16px}
+ .sheet[data-layout=pictures] .questions{row-gap:3mm!important}
+}
+
+/* Readable answer keys: shared across every locale and question layout. */
+.sheet .answer-space,.sheet .fraction-answer{display:flex;align-items:center;justify-content:center;text-align:center;padding:0 3px;letter-spacing:0}
+.sheet .answer{color:#c01823;font-size:28px;font-weight:800;line-height:1.1;letter-spacing:0;text-align:center}
+.sheet .answer .fraction>span:first-child{border-bottom-color:currentColor}
+@media print{.sheet .answer{color:#c01823;font-size:28px;font-weight:800;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+.sheet .fraction-answer{height:76px}
+.sheet .answer .fraction{line-height:1}
+
+/* Match answer size to the problem numerals in each layout and viewport. */
+.sheet{--problem-number-size:23px}
+.sheet[data-layout=vertical]{--problem-number-size:25px}
+.sheet[data-layout=pictures]{--problem-number-size:22px}
+.sheet .sum,.sheet .equation,.sheet .picture-equation,.sheet .answer{font-size:var(--problem-number-size)}
+@media screen and (max-width:760px){
+ .sheet{--problem-number-size:20px}
+ .sheet[data-layout=vertical]{--problem-number-size:23px}
+ .sheet[data-layout=pictures]{--problem-number-size:22px}
+}
+
+.sheet[data-layout=stories]{--problem-number-size:17px}
+
+.sheet[data-layout=story-pairs]{--problem-number-size:17px}
+
+.small-grouping-bars{display:block;width:100%;max-width:340px;height:auto;margin:5px 0}.small-grouping-response .answer-space{min-width:0}.small-grouping-working .calculation-space{height:55px;min-height:55px}
+
+.sheet[data-layout="fraction-comparison"] .questions,.sheet[data-layout="unlike-fraction-comparison"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sheet[data-layout="fraction-comparison"] .equation{display:flex;align-items:center;gap:14px}
+.sheet[data-layout="fraction-comparison"] .answer-space{min-width:44px;width:44px}
+
+.sheet[data-layout="decimal-place-digits"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.decimal-digit-question>p{font-size:18px;line-height:1.5;margin:0 0 12px}
+@media screen and (max-width:600px){.sheet[data-layout="decimal-place-digits"] .questions{grid-template-columns:1fr}.decimal-digit-question{min-width:0}}
+
+.sheet[data-layout="decimal-comparison"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.decimal-compare-question .equation{display:flex;align-items:center;gap:12px}
+.decimal-compare-question .answer-space{width:44px;min-width:44px}
+@media screen and (max-width:600px){.sheet[data-layout="decimal-comparison"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="fraction-simplify"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sheet[data-layout="fraction-simplify"] .equation{display:flex;align-items:center;gap:14px}
+@media screen and (max-width:600px){.sheet[data-layout="fraction-simplify"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="common-denominators"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.common-denominator-question .equation{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.common-denominator-question .fraction-answer{min-height:50px;height:50px}
+.common-denominator-question .product-working-space{min-height:20px;height:20px}
+@media screen and (max-width:600px){.sheet[data-layout="common-denominators"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="shaded-fractions"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.original-fraction-model svg{display:block;width:100%;max-width:260px;height:auto}
+.shaded-fraction-question>p{font-size:16px;line-height:1.4}
+@media screen and (max-width:600px){.sheet[data-layout="shaded-fractions"] .questions{grid-template-columns:1fr}}
+
+@media print{.shaded-fraction-question>p{margin:0 0 8px}.shaded-fraction-question .fraction-answer{height:64px;min-height:64px}}
+
+.sheet[data-layout="expanded-form"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.expanded-form-question{width:100%;min-width:0}.expanded-form-question .expanded-form-answer{width:100%;min-width:0;box-sizing:border-box;min-height:64px}.expanded-form-question .equation{margin:0 0 16px}
+@media screen and (max-width:600px){.sheet[data-layout="expanded-form"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="clock-reading"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.clock-reading-question{width:100%;min-width:0}.original-clock svg{display:block;width:100%;max-width:260px;height:auto}.clock-reading-question .answer-space{width:120px;min-width:0;min-height:44px;margin:8px 0 0}.original-clock .art{margin:0}
+@media screen and (max-width:600px){.sheet[data-layout="clock-reading"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="rectangle-measurement"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.rectangle-measurement-question{width:100%;min-width:0}.original-rectangle svg{display:block;width:100%;max-width:220px;height:auto}.original-rectangle .art{margin:0}.measurement-response{display:flex;align-items:center;gap:8px;margin-top:6px}.measurement-response .answer-space{width:90px;min-width:0;margin:0}.perimeter-working{height:30px;border-bottom:1px solid #b6cfc5;margin-top:6px}
+@media screen and (max-width:600px){.sheet[data-layout="rectangle-measurement"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="area-tiles"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.area-tiles-question{width:100%;min-width:0}.original-area-grid{height:110px;display:flex;align-items:center}.original-area-grid svg{display:block;width:auto;height:auto;max-width:100%;max-height:105px}.original-area-grid .art{margin:0}.area-tiles-question .measurement-response{font-size:14px}
+@media screen and (max-width:600px){.sheet[data-layout="area-tiles"] .questions{grid-template-columns:1fr}}
+.original-area-grid .art{width:110px;flex:0 0 110px}.original-area-grid svg{width:110px;height:auto}
+
+.sheet[data-layout="volume-layers"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.volume-layers-question{width:100%;min-width:0}.volume-layers-question>p{font-size:14px;line-height:1.4;margin:0 0 8px}.original-volume-grid{height:180px;display:flex;align-items:center}.original-volume-grid .art{width:182px;flex:0 0 182px;margin:0}.original-volume-grid svg{display:block;width:182px;height:auto;max-height:180px}.volume-layers-question .volume-grid-caption{font-size:12px;margin:4px 0 8px}.volume-layers-question .measurement-response{font-size:14px}
+@media screen and (max-width:600px){.sheet[data-layout="volume-layers"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="coordinate-reading"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.coordinate-reading-question{width:100%;min-width:0}.original-coordinate-grid .art{width:100%;margin:0}.original-coordinate-grid svg{display:block;width:100%;max-width:340px;height:auto}.coordinate-reading-question .answer-space{width:125px;min-height:44px}
+@media screen and (max-width:600px){.sheet[data-layout="coordinate-reading"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="rounding"] .questions,.sheet[data-layout="ten-change"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.rounding-question{width:100%;min-width:0}.rounding-question>p{font-size:var(--problem-number-size);line-height:1.4;margin:0 0 12px}.rounding-question .answer-space{width:120px;min-width:0;min-height:44px}.rounding-question .perimeter-working{height:36px}
+@media screen and (max-width:600px){.sheet[data-layout="rounding"] .questions,.sheet[data-layout="ten-change"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="large-comparison"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.large-comparison-question{width:100%;min-width:0}.large-comparison-question .equation{display:flex;align-items:center;gap:8px;white-space:nowrap}.large-comparison-question .answer-space{width:40px;min-width:40px;flex:0 0 40px;margin:0}.large-comparison-question>p{font-size:14px}
+@media screen and (max-width:600px){.sheet[data-layout="large-comparison"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="equal-parts-drawing"] .questions{grid-template-columns:1fr}.sheet[data-layout="equal-parts-drawing"]{--problem-number-size:18px}.equal-parts-question{width:100%;min-width:0}.equal-parts-question>p{margin:0 0 6px;font-size:var(--problem-number-size)}.partition-original{width:100%;max-width:400px}.partition-original .art{width:100%}.partition-original svg{display:block;width:100%;height:auto;max-height:120px}.partition-response{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:var(--problem-number-size)}.partition-response .answer-space{min-width:65px;min-height:32px}.equal-parts-question .partition-guidance{font-size:12px;margin:6px 0 0}
+
+.sheet[data-layout="odd-even"]{--problem-number-size:18px}.sheet[data-layout="odd-even"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.odd-even-question{width:100%;min-width:0}.odd-even-question>p{font-size:14px;line-height:1.35;margin:0 0 5px;min-height:57px}.odd-even-number{font-size:var(--problem-number-size);margin-bottom:5px}.odd-even-question .answer-space{width:100%;min-width:0;min-height:52px;box-sizing:border-box}.odd-even-question .answer{white-space:normal;overflow-wrap:break-word}.odd-even-working{height:48px;border-bottom:1px solid #b8cfca;margin-top:7px}@media screen and (max-width:600px){.sheet[data-layout="odd-even"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="length-ordering"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="length-ordering"]{--problem-number-size:20px}.length-order-question{width:100%;min-width:0}.length-order-question>p{font-size:16px;line-height:1.4;min-height:48px;margin:0 0 8px}.original-length-strips{width:100%;margin-bottom:12px}.original-length-strips .art{width:100%}.original-length-strips svg{display:block;width:100%;height:auto}.length-order-question .answer-space{width:150px;min-width:0}.length-order-question .perimeter-working{height:48px}@media screen and (max-width:600px){.sheet[data-layout="length-ordering"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="vote-graphs"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="vote-graphs"]{--problem-number-size:18px}.vote-graph-question{width:100%;min-width:0}.vote-graph-question>p{font-size:14px;line-height:1.3;min-height:40px;margin:0 0 4px}.original-vote-graph{width:100%;max-width:210px}.original-vote-graph .art{width:100%}.original-vote-graph svg{display:block;width:100%;height:auto}.vote-graph-question>small{display:block;font-size:11px;margin:3px 0}.vote-graph-question .answer-space{width:95px;min-width:0;min-height:32px}.vote-graph-question .perimeter-working{height:20px}@media screen and (max-width:600px){.sheet[data-layout="vote-graphs"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="measurement-lineplots"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="measurement-lineplots"]{--problem-number-size:20px}.measurement-plot-question{width:100%;min-width:0}.measurement-plot-question>p{font-size:15px;line-height:1.35;min-height:60px;margin:0 0 8px}.original-measurement-plot{width:100%}.original-measurement-plot .art{width:100%}.original-measurement-plot svg{display:block;width:100%;height:auto}.measurement-plot-question>small{display:block;font-size:11px;margin:8px 0}.measurement-plot-question .answer-space{width:100px;min-width:0}.measurement-plot-question .perimeter-working{height:42px}@media screen and (max-width:600px){.sheet[data-layout="measurement-lineplots"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="equation-truth"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="equation-truth"]{--problem-number-size:22px}.equation-truth-question{width:100%;min-width:0}.equation-truth-question>p{font-size:14px;margin:0 0 12px}.equation-truth-question .equation{font-size:var(--problem-number-size);margin-bottom:12px}.equation-truth-question .answer-space{width:140px;min-width:0}.equation-truth-question .perimeter-working{height:48px}@media screen and (max-width:600px){.sheet[data-layout="equation-truth"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="missing-factor-dividend"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="missing-factor-dividend"]{--problem-number-size:22px}.missing-fact-question{width:100%;min-width:0}.missing-fact-question>p{font-size:14px;margin:0 0 12px}.missing-fact-question .equation{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:var(--problem-number-size)}.missing-fact-question .answer-space{width:55px;min-width:55px;margin:0}.missing-fact-question .perimeter-working{height:64px}@media screen and (max-width:600px){.sheet[data-layout="missing-factor-dividend"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="unlike-fraction-comparison"] .equation{display:flex;align-items:center;gap:14px}.sheet[data-layout="unlike-fraction-comparison"] .answer-space{min-width:44px;width:44px}@media screen and (max-width:600px){.sheet[data-layout="unlike-fraction-comparison"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="decimal-fraction-conversion"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="decimal-fraction-conversion"]{--problem-number-size:22px}.decimal-fraction-question{width:100%;min-width:0}.decimal-fraction-question>p{font-size:14px;margin:0 0 12px}.decimal-fraction-question .equation{display:flex;align-items:center;gap:12px;font-size:var(--problem-number-size)}.decimal-fraction-question .answer-space{width:90px;min-width:0;margin:0}.decimal-fraction-question .numerator-response .answer-space{width:58px;min-height:32px}.decimal-fraction-question .perimeter-working{height:48px}@media screen and (max-width:600px){.sheet[data-layout="decimal-fraction-conversion"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="factor-classification"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="factor-classification"]{--problem-number-size:20px}.factor-classification-question{width:100%;min-width:0}.factor-classification-question>p{font-size:var(--problem-number-size);line-height:1.35;min-height:54px;margin:0 0 10px}.factor-classification-question .answer-space{width:180px;max-width:100%;min-width:0;box-sizing:border-box}.factor-classification-question .perimeter-working{height:55px}@media screen and (max-width:600px){.sheet[data-layout="factor-classification"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="shape-explanation"] .questions{grid-template-columns:1fr}.sheet[data-layout="shape-explanation"]{--problem-number-size:18px}.shape-explanation-question{width:100%;min-width:0}.shape-explanation-question>p{font-size:var(--problem-number-size);margin:0 0 10px}.shape-reasoning-space{min-height:100px;border:1px solid #a8c5c1;padding:12px;display:flex;align-items:center;justify-content:center;text-align:center}.shape-reasoning-space .answer{white-space:normal;overflow-wrap:anywhere}
+
+.sheet[data-layout="forward-sequence"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="forward-sequence"]{--problem-number-size:18px}.forward-sequence-question{width:100%;min-width:0}.forward-sequence-question>p{font-size:15px;min-height:40px;margin:0 0 10px}.sequence-values{display:flex;align-items:center;gap:5px;font-size:var(--problem-number-size);flex-wrap:wrap}.sequence-values .answer-space{width:52px;min-width:52px;margin:0;min-height:34px}.forward-sequence-question .perimeter-working{height:55px}@media screen and (max-width:600px){.sheet[data-layout="forward-sequence"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="time-stories"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="time-stories"]{--problem-number-size:20px}.time-story-question{width:100%;min-width:0}.time-story-question>p{font-size:16px;line-height:1.35;min-height:66px;margin:0 0 10px}.time-story-response{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.time-story-response .answer-space{min-width:0;width:155px;max-width:100%;margin:0}.time-story-question .perimeter-working{height:48px}@media screen and (max-width:600px){.sheet[data-layout="time-stories"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="number-name-writing"] .questions{grid-template-columns:1fr}.sheet[data-layout="number-name-writing"]{--problem-number-size:20px}.number-name-question{width:100%;min-width:0}.number-name-question>p{font-size:14px;margin:0 0 6px}.number-name-given{font-size:var(--problem-number-size);margin-bottom:10px}.number-name-question .answer-space{display:flex;width:100%;min-width:0;min-height:52px;box-sizing:border-box;margin:0;padding:6px}.number-name-question .answer{white-space:normal;overflow-wrap:anywhere}
+
+.sheet[data-layout="symmetry-drawing"] .questions{grid-template-columns:1fr}.sheet[data-layout="symmetry-drawing"]{--problem-number-size:18px}.symmetry-question{width:100%;min-width:0}.symmetry-question>p{font-size:16px;margin:0 0 8px}.symmetry-original{width:100%;max-width:560px}.symmetry-original .art{width:100%}.symmetry-original svg{display:block;width:100%;height:auto}.symmetry-guidance{min-height:50px;display:flex;align-items:center;justify-content:center;text-align:center}.symmetry-guidance .answer{white-space:normal}
+
+.sheet[data-layout="line-drawing"] .questions{grid-template-columns:1fr}.sheet[data-layout="line-drawing"]{--problem-number-size:18px}.line-drawing-question{width:100%;min-width:0}.line-drawing-question>p{font-size:16px;margin:0 0 6px}.line-original{width:210px;max-width:100%}.line-original svg{display:block;width:100%;height:auto}.line-response{border:1px solid #a8c5c1;min-height:32px;width:100px;display:flex;align-items:center;justify-content:center;text-align:center}.line-response.draw-space{width:100%;min-height:90px;box-sizing:border-box;padding:8px}.line-response .answer{white-space:normal}
+
+.sheet[data-layout="unit-conversion"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="unit-conversion"]{--problem-number-size:20px}.unit-conversion-question{width:100%;min-width:0}.unit-conversion-question>p{font-size:14px;min-height:40px;margin:0 0 12px}.unit-conversion-equation{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:var(--problem-number-size)}.unit-conversion-equation .answer-space{width:90px;min-width:0;margin:0}.unit-conversion-question .perimeter-working{height:65px}@media screen and (max-width:600px){.sheet[data-layout="unit-conversion"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="angle-activities"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet[data-layout="angle-activities"]{--problem-number-size:18px}.angle-activity{width:100%;min-width:0}.angle-activity>p{font-size:15px;min-height:44px;margin:0 0 8px}.angle-original{width:100%;max-width:300px}.angle-original .art{width:100%}.angle-original svg{display:block;width:100%;height:auto}.angle-drawing-space{height:140px;border:1px solid #a8c5c1}.angle-response{display:flex;align-items:center;justify-content:center;gap:6px;min-height:65px;text-align:center}.angle-response .answer-space{min-width:0;width:65px;margin:0}.angle-response .answer{white-space:normal}@media screen and (max-width:600px){.sheet[data-layout="angle-activities"] .questions{grid-template-columns:1fr}}
+
+.sheet[data-layout="book-measurement"] .questions{grid-template-columns:1fr}.sheet[data-layout="book-measurement"]{--problem-number-size:20px}.book-measurement-question{width:100%;min-width:0}.book-measurement-question>p{font-size:18px;margin:0 0 30px}.measurement-record{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0;font-size:20px}.measurement-record .answer-space{width:140px;min-width:0;margin:0}.measurement-check{margin-top:30px;min-height:100px;text-align:center;display:flex;align-items:center;justify-content:center}.measurement-check .answer{white-space:normal}
+
+.hundredths-compare>p{margin:4px 0;font-size:13px}.hundredths-compare .product-working-space{height:52px}

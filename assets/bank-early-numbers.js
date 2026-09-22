@@ -1,0 +1,35 @@
+(function(root){
+const profiles=[
+ {name:'세기·표시하기·수 읽기',activities:[['count','그림을 세어 수로 쓰기'],['mark','개수만큼 동그라미 하기'],['words','수와 읽는 말 연결하기']]},
+ {name:'순서와 크기 살펴보기',activities:[['ordinal','차례에 맞게 표시하기'],['neighbors','앞뒤에 오는 수 찾기'],['compare','두 묶음의 개수 비교하기']]},
+ {name:'수가 나타내는 뜻',activities:[['zero','아무것도 없는 수 0'],['two-read','수를 두 가지로 읽기'],['order','수 카드를 순서대로 놓기']]},
+ {name:'조건을 읽고 수 찾기',activities:[['clue','조건에 맞는 수 모두 찾기'],['line','수직선의 자리 찾기'],['repair','잘못 놓인 수 카드 고치기']]}
+].map(x=>({...x,activities:x.activities.map(([method,title])=>({method,title}))}));
+function generate(p,seed,n,excluded){
+ const session=KoArt.session(seed,excluded);let state=seed>>>0;const r=k=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return Math.floor(state/4294967296*k)},between=(a,b)=>a+r(b-a+1);
+ const equation=x=>'<div class="kequation">'+x+'</div>',blank='<span class="kblank"></span>';
+ const sino=['영','일','이','삼','사','오','육','칠','팔','구'];
+ const names=['영','하나','둘','셋','넷','다섯','여섯','일곱','여덟','아홉'];
+ return profiles[p].activities.map(s=>({title:s.title,skill:s.method,questions:Array.from({length:s.method==='zero'?1:n},()=>{
+ const asset=session.take(),a=between(1,9),b=between(1,9);let prompt='',visual='',task=blank,answer='',reason='',open=false;
+ const count=x=>KoArt.count(asset,x),cards=xs=>'<div class="number-cards">'+xs.map(x=>'<b>'+x+'</b>').join('')+'</div>';
+ if(s.method==='zero'){prompt='아무것도 없는 바구니의 개수를 수로 쓰세요.';visual='<div class="empty-count-basket">비어 있어요</div>';answer='0';reason='하나도 없는 것은 0으로 나타냅니다.'}
+ if(s.method==='two-read'){prompt='그림의 수를 세고 두 가지 방법으로 읽어 쓰세요.';visual=count(a);task='수: ____　읽기: ______, ______';answer=a+' / '+sino[a]+', '+names[a];reason='같은 수를 두 가지 말로 읽을 수 있습니다.'}
+ if(s.method==='count'){prompt='그림은 모두 몇 개인가요? 수로 쓰세요.';visual=count(a);answer=a;reason='하나씩 짚으며 세면 '+a+'개입니다.'}
+ if(s.method==='mark'){const total=between(4,9),k=between(1,total-1);prompt='그림 중 '+k+'개에만 동그라미 하세요.';visual=count(total);task='';answer=k+'개에 표시';reason='어느 그림이든 '+k+'개를 골라 표시하면 됩니다.';open=true}
+ if(s.method==='words'){const vals=[a,a%9+1,(a+1)%9+1],rot=r(3),right=vals.slice(rot).concat(vals.slice(0,rot));prompt='수와 읽는 말을 선으로 이으세요.';visual='<span class="picture-badge">'+KoArt.icon(asset)+'</span><div class="match-columns"><div>'+vals.map(x=>'<p>'+x+' ●</p>').join('')+'</div><div>'+right.map(x=>'<p>● '+names[x]+'</p>').join('')+'</div></div>';task='';answer=vals.map(x=>x+' → '+names[x]).join(', ');reason='수를 읽는 말을 확인합니다.'}
+ if(s.method==='ordinal'){const total=between(4,8),k=between(1,total);prompt='왼쪽부터 '+k+'번째 그림에만 동그라미 하세요.';visual='<div class="ordinal-row">'+Array.from({length:total},()=>KoArt.icon(asset)).join('')+'</div>';task='';answer='왼쪽에서 '+k+'번째';reason='왼쪽부터 하나씩 차례를 세어 한 곳에 표시합니다.';open=true}
+ if(s.method==='neighbors'){const k=between(2,8);prompt='바로 앞의 수와 바로 뒤의 수를 쓰세요.';visual=cards(['□',k,'□']);answer=(k-1)+', '+(k+1);reason=(k-1)+' → '+k+' → '+(k+1)+' 순서입니다.'}
+ if(s.method==='compare'){const k=between(1,4),j=between(5,9);prompt='그림이 더 많은 쪽에 동그라미 하세요.';const reverse=r(2);visual='<div class="two-baskets"><div>가'+count(reverse?j:k)+'</div><div>나'+count(reverse?k:j)+'</div></div>';task='가 / 나';answer=reverse?'가':'나';reason=j+'개가 '+k+'개보다 많습니다.'}
+ if(s.method==='bond'){const total=between(3,9),left=between(1,total-1);prompt='전체를 두 묶음으로 가릅니다. 빈칸을 채우세요.';visual=count(total)+'<div class="number-bond"><b>'+total+'</b><span>↙　↘</span><span>'+left+'　　□</span></div>';answer=total-left;reason=left+'개를 한쪽에 놓으면 '+(total-left)+'개가 남습니다.'}
+ if(s.method==='complete'){const total=between(3,9),given=between(1,total-1);prompt='모두 '+total+'개가 되도록 부족한 만큼 간단한 그림을 더 그리세요.';visual=count(given);task='<div class="kdraw"></div>';answer=(total-given)+'개 더 그리기';reason=given+'개와 '+(total-given)+'개를 모으면 '+total+'개입니다.';open=true}
+ if(s.method==='order'){let vals=[...new Set([a,b,between(1,9),between(1,9)])];while(vals.length<3){const v=between(1,9);if(!vals.includes(v))vals.push(v)}vals=vals.slice(0,3);prompt='작은 수부터 차례대로 쓰세요.';visual=cards(vals);task='____ → ____ → ____';answer=[...vals].sort((x,y)=>x-y).join(' → ');reason='가장 작은 수부터 놓습니다.'}
+ if(s.method==='clue'){const lo=between(1,5),hi=lo+3;prompt=lo+'보다 크고 '+hi+'보다 작은 수를 모두 찾으세요.';visual=cards([lo,lo+1,lo+2,hi]);answer=(lo+1)+', '+(lo+2);reason=lo+'와 '+hi+'는 조건에 맞지 않습니다.'}
+ if(s.method==='line'){const start=between(1,5),missing=between(1,3);prompt='수직선의 □에 들어갈 수를 쓰세요.';visual='<svg class="concept-art" viewBox="0 0 240 55"><path d="M15 20H225" stroke="#456c78"/>'+Array.from({length:5},(_,i)=>'<path d="M'+(20+i*50)+' 16v9" stroke="#456c78"/><text x="'+(20+i*50)+'" y="44" font-size="17" text-anchor="middle">'+(i===missing?'□':start+i)+'</text>').join('')+'</svg>';answer=start+missing;reason='오른쪽으로 한 칸 갈 때마다 1씩 커집니다.'}
+ if(s.method==='repair'){const start=between(1,6);prompt='작은 수부터 놓으려다 카드 두 장이 바뀌었습니다. 바뀐 두 수를 쓰세요.';visual=cards([start,start+2,start+1,start+3]);task='____와 ____';answer=(start+2)+', '+(start+1);reason='바른 순서는 '+[start,start+1,start+2,start+3].join(', ')+'입니다.'}
+ if(!visual.includes('data-art-id'))visual='<span class="picture-badge">'+KoArt.icon(asset)+'</span>'+visual;
+ return {methodId:s.method,skill:s.method,prompt,visual,task,answer:String(answer),reason,open,artId:asset.id};
+ })}));
+}
+root.KoEarlyNumbers={profiles,generate};
+})(globalThis);
