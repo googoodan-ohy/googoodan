@@ -7,3 +7,5 @@ if(['127.0.0.1','localhost'].includes(location.hostname)){
 
 // First-party, daily aggregate usage metrics.
 {const metricsScript=document.createElement("script");metricsScript.src="/assets/site-metrics.js";metricsScript.defer=true;document.head.append(metricsScript);}
+
+{const script=document.createElement("script");script.src="/assets/pdf-controls.js?v=1";document.head.append(script);}
