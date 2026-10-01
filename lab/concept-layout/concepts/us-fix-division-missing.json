@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-division-missing",
+  "title": "Find a missing whole-number division value",
+  "intro": "The dividend is made from complete groups and any leftover amount. This relationship also solves an equation with one missing value.",
+  "html": "<h2>Find a missing whole-number division value</h2><p>The dividend is made from complete groups and any leftover amount. This relationship also solves an equation with one missing value.</p><p>If there is no remainder, dividend = divisor × quotient. With a remainder, add it after multiplying. A remainder is always nonnegative and smaller than the divisor.</p><h3>A method to try</h3><ol><li>Identify the blank and any stated remainder.</li><li>Use the multiplication relationship to find the missing value.</li><li>Check the entire original equation and the remainder condition.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>□ ÷ 35 = 1404 R 21</strong><p>Multiply 35 by 1404, then add the 21 left over.</p><p class=\"sample-equation\">□ = 49161</p><p>Check: 49161 ÷ 35 = 1404 R 21.</p></div><div class=\"model\"><strong>840 ÷ □ = 24</strong><p>Find the number that multiplies 24 to make 840.</p><p class=\"sample-equation\">□ = 35</p><p>Check: 35 × 24 = 840.</p></div><h3>A mistake to watch for</h3><p>A missing divisor is not dividend × quotient. Divide the amount used in full groups by the quotient.</p><h3>Check and explain</h3><p>If the blank is the quotient, carry out division and record any requested remainder.</p>",
+  "examples": [
+    [
+      "□ ÷ 35 = 1404 R 21",
+      "Multiply 35 by 1404, then add the 21 left over.",
+      "□ = 49161",
+      "49161 ÷ 35 = 1404 R 21."
+    ],
+    [
+      "840 ÷ □ = 24",
+      "Find the number that multiplies 24 to make 840.",
+      "□ = 35",
+      "35 × 24 = 840."
+    ]
+  ]
+}

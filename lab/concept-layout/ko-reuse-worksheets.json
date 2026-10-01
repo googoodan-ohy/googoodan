@@ -1,0 +1,1460 @@
+[
+  {
+    "id": "ko-reuse-1-1-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Addition and Subtraction Within 9",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 0,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00017",
+      "e00019"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-1",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 1,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-2",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 2,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-3-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-3-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-1-5",
+    "grade": 1,
+    "unit": "tens-and-ones",
+    "title": "Place Value and Number Order Within 50",
+    "sourceUnit": "1-1-5",
+    "sourceProfile": 0,
+    "standard": "1.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-1-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00082"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-1",
+    "grade": 2,
+    "unit": "three-digit-place-value",
+    "title": "Place Value and Number Order Within 100",
+    "sourceUnit": "1-2-1",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00081"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-7",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 7,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-7.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-2-8",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 8,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-8.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-2-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-7",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 7,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-7.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-4-8",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 8,
+    "standard": "1.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-8.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-4-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-1-2-6-3",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 3,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-1-2-6-4",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 4,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-1-2-6-5",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Match Word Problems to Equations (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 5,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-1-2-6-6",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 6,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-1-2-6-7",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems with Bar Models (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 7,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-7.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-1-2-6-8",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Write and Check Word Problems (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 8,
+    "standard": "2.NBT;2.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-8.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-1-2-6-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-within100-stories",
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-1-1",
+    "grade": 2,
+    "unit": "three-digit-place-value",
+    "title": "Three-Digit Place Value and Number Order",
+    "sourceUnit": "2-1-1",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00081"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Addition and Subtraction Within 100",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-addition-regroup",
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-1-3-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Find the Unknown (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 1,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-2",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 2,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-3",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Match Word Problems to Equations (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 3,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-4",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Choose Relevant Information (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 4,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-5",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems with Bar Models (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 5,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-6",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Write and Check Word Problems (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 6,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-7",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Addition Without Regrouping",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 7,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-7.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-1-3-8",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Addition with 1 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 8,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-8.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-addition-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-1-3-9",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "2-Digit Addition with 2 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 9,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-9.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-9.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-1-3-10",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Subtraction Without Regrouping",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 10,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-10.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-10.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00011"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-1-3-11",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Subtraction with 1 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 11,
+    "standard": "2.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-11.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-1-3-11.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "ko-reuse-2-2-1",
+    "grade": 4,
+    "unit": "compare-large-numbers",
+    "title": "Four-Digit Place Value and Number Order",
+    "sourceUnit": "2-2-1",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-2-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00089"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-2-2-3-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "m and cm: Convert and Compare",
+    "sourceUnit": "2-2-3",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-2-3-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-2-2-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Addition and Subtraction Within 1000",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 0,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Find the Unknown (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 1,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-2",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 2,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-3",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Match Word Problems to Equations (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 3,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-4",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Choose Relevant Information (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 4,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-5",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems with Bar Models (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 5,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-5.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-6",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Write and Check Word Problems (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 6,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-6.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-7",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition Without Regrouping",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 7,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-7.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-8",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition with 1 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 8,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-8.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-9",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition with 2 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 9,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-9.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-9.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-10",
+    "grade": 4,
+    "unit": "multi-digit-addition",
+    "title": "3-Digit Addition with 3 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 10,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-10.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-10.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-11",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction Without Regrouping",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 11,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-11.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-11.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-12",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction with 1 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 12,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-12.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-12.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-1-13",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction with 2 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 13,
+    "standard": "3.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-13.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-1-13.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-3",
+    "grade": 3,
+    "unit": "multiplication-division",
+    "title": "Division Facts and Missing Numbers",
+    "sourceUnit": "3-1-3",
+    "sourceProfile": 0,
+    "standard": "3.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00003",
+      "e00016"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-4",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "Multiply Two-Digit Numbers by One Digit",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-4-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-4-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-4-2",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-4-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-4-3",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-4-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-5-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "cm and mm: Convert and Compare",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-5-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-5-2",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "km and m: Convert and Compare",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 2,
+    "standard": "4.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-5-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-1-5-3",
+    "grade": 3,
+    "unit": "elapsed-time-word-problems",
+    "title": "Elapsed Time Word Problems",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 3,
+    "standard": "3.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-1-5-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00104"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "Multi-Digit Multiplication Practice",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-1-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-1-2",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-1-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-1-3",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-1-4",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 3 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 4,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-3-1",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "2-Digit by 1-Digit Division Without Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-3-2",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "2-Digit by 1-Digit Division with Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-3-3",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "3-Digit by 1-Digit Division Without Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-3-4",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "3-Digit by 1-Digit Division with Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 4,
+    "standard": "4.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-4-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "L and mL: Convert and Compare",
+    "sourceUnit": "3-2-4",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-4-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-4-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-3-2-4-2",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "kg and g: Convert and Compare",
+    "sourceUnit": "3-2-4",
+    "sourceProfile": 2,
+    "standard": "4.MD",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-4-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-3-2-4-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-4-1-3-1",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "2-Digit by 2-Digit Division Without Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 1,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-4-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-4-1-3-2",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "2-Digit by 2-Digit Division with Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 2,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-2.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-4-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-4-1-3-3",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "3-Digit by 2-Digit Division Without Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 3,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-4-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-4-1-3-4",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "3-Digit by 2-Digit Division with Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 4,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-4-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-4-2-3",
+    "grade": 5,
+    "unit": "decimal-addition-subtraction",
+    "title": "Add, Subtract, and Compare Decimals",
+    "sourceUnit": "4-2-3",
+    "sourceProfile": 0,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-2-3.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-4-2-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00005",
+      "e00038"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-5-1-1",
+    "grade": 5,
+    "unit": "numerical-expressions",
+    "title": "Order of Operations and Word Problems",
+    "sourceUnit": "5-1-1",
+    "sourceProfile": 0,
+    "standard": "5.OA",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-5-1-1.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-5-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00051"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "ko-reuse-5-2-4",
+    "grade": 5,
+    "unit": "decimal-multiplication",
+    "title": "Decimal Multiplication and Powers of Ten",
+    "sourceUnit": "5-2-4",
+    "sourceProfile": 0,
+    "standard": "5.NBT",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-5-2-4.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/ko-reuse-5-2-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00072",
+      "e00039"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  }
+]

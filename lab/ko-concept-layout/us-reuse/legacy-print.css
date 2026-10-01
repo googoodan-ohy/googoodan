@@ -1,0 +1,7 @@
+/* Show only the selected legacy sheets when the browser print dialog opens. */
+@media print{
+ body.printing-bundle>main{display:none!important}
+ body.printing-bundle>#print-bundle[hidden]{display:block!important}
+ body.printing-bundle>#print-bundle>.sheet{margin:0 auto!important;break-inside:avoid}
+ body.printing-bundle>#print-bundle>.sheet+.sheet{break-before:page;page-break-before:always}
+}

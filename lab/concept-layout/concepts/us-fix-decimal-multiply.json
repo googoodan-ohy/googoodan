@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-decimal-multiply",
+  "title": "Multiply decimals and preserve the scale",
+  "intro": "Multiplication can describe equal groups, scaling, or rectangular area. The units represented by the factors determine the units of the product.",
+  "html": "<h2>Multiply decimals and preserve the scale</h2><p>Multiplication can describe equal groups, scaling, or rectangular area. The units represented by the factors determine the units of the product.</p><p>First find the whole-number product of the digits. Then account for the decimal scale in both factors. For example, tenths multiplied by hundredths give thousandths.</p><h3>A method to try</h3><ol><li>Estimate whether the product should be smaller or larger than the first factor.</li><li>Multiply the digit values as whole numbers, including every partial product.</li><li>Divide by the powers of ten represented by both factors; write the exact product.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>2.4 × 1.25</strong><p>24 × 125 = 3000. The factors were enlarged by 10 and 100, so divide 3000 by 1000.</p><p class=\"sample-equation\">2.4 × 1.25 = 3</p><p>Check: 3 ÷ 1.25 = 2.4; a factor greater than 1 increased 2.4.</p></div><h3>A mistake to watch for</h3><p>Aligning decimal points is the addition rule, not the rule for placing the decimal point in a product.</p><h3>Check and explain</h3><p>Use the sizes of both factors and an inverse division to check the product.</p>",
+  "examples": [
+    [
+      "2.4 × 1.25",
+      "24 × 125 = 3000. The factors were enlarged by 10 and 100, so divide 3000 by 1000.",
+      "2.4 × 1.25 = 3",
+      "3 ÷ 1.25 = 2.4; a factor greater than 1 increased 2.4."
+    ]
+  ]
+}

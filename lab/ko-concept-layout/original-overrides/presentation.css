@@ -1,0 +1,8 @@
+/* Local presentation only. Existing question engines are preserved. */
+@media screen {
+ body>header,body>.ad,body>.ad-banner,body>footer,#community,#volunteer,.ad,.ad-banner,main>aside,.unit-edition-tabs,.site-navigation{display:none!important}
+ main{display:block!important;width:100%!important;max-width:100%!important;margin:0!important;padding:8px!important}
+ main>.preview{min-width:0!important;width:100%!important;margin-top:0!important}
+ main{margin-top:0!important}
+}
+.sheet .activity>h3{display:none!important}

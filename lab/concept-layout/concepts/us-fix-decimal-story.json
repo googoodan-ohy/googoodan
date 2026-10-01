@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-decimal-story",
+  "title": "Choose operations and units in decimal stories",
+  "intro": "The situation decides the operation. Combining lengths uses addition; removing a length uses subtraction. Multiplying rectangle side lengths gives area in square units.",
+  "html": "<h2>Choose operations and units in decimal stories</h2><p>The situation decides the operation. Combining lengths uses addition; removing a length uses subtraction. Multiplying rectangle side lengths gives area in square units.</p><p>Dividing total length by a unit length gives the number of equivalent unit lengths. A fractional unit is meaningful when the question explicitly includes it; this differs from counting only complete cut pieces.</p><h3>A method to try</h3><ol><li>Identify the quantity requested and its unit.</li><li>Write an equation that matches combining, removing, area or unit-length comparison.</li><li>Calculate exactly and label the result with the unit in the question.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>A ribbon is 12.960 feet long; one unit length is 1 foot. How many unit lengths, including a fractional unit?</strong><p>Divide the total length by the unit length.</p><p class=\"sample-equation\">12.960 ÷ 1 = 12.96 unit lengths</p><p>Check: 12.96 × 1 foot = 12.96 feet.</p></div><div class=\"model\"><strong>A rectangle is 2.4 feet by 1.25 feet.</strong><p>Multiply the two side lengths.</p><p class=\"sample-equation\">Area = 3 square feet</p><p>Check: 24 × 125 ÷ 1000 = 3; area uses square feet, not feet.</p></div><h3>A mistake to watch for</h3><p>Do not round a unit-length ratio down unless only complete pieces are requested. Do not label area with a length unit.</p><h3>Check and explain</h3><p>Multiply a ratio by its unit length to recover the total; add back a removed length to check subtraction.</p>",
+  "examples": [
+    [
+      "A ribbon is 12.960 feet long; one unit length is 1 foot. How many unit lengths, including a fractional unit?",
+      "Divide the total length by the unit length.",
+      "12.960 ÷ 1 = 12.96 unit lengths",
+      "12.96 × 1 foot = 12.96 feet."
+    ],
+    [
+      "A rectangle is 2.4 feet by 1.25 feet.",
+      "Multiply the two side lengths.",
+      "Area = 3 square feet",
+      "24 × 125 ÷ 1000 = 3; area uses square feet, not feet."
+    ]
+  ]
+}

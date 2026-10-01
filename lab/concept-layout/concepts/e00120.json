@@ -1,0 +1,7 @@
+{
+  "id": "e00120",
+  "title": "Number Patterns and Ordered Pairs",
+  "intro": "Apply each rule separately, pair the terms in the same position, and write each pair as (x, y). On a coordinate grid, move across for x and up for y.",
+  "html": "<h2>Number Patterns and Ordered Pairs</h2><p>Apply each rule separately, pair the terms in the same position, and write each pair as (x, y). On a coordinate grid, move across for x and up for y.</p><h3>Worked example</h3><div class=\"model\"><p>Starting at 0, add 2 for x and add 3 for y. The pairs are (0, 0), (2, 3), (4, 6), and (6, 9).</p></div><h3>Watch out</h3><p>Keep the same term positions together and do not reverse x and y.</p>",
+  "origin": "new"
+}

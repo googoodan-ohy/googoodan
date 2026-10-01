@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-fraction-divide-whole",
+  "title": "Divide a fraction by a whole number",
+  "intro": "Sharing a fractional amount equally among a whole number of groups makes each share smaller. Each original fractional part is divided into that many smaller parts.",
+  "html": "<h2>Divide a fraction by a whole number</h2><p>Sharing a fractional amount equally among a whole number of groups makes each share smaller. Each original fractional part is divided into that many smaller parts.</p><p>For a/b ÷ n, the result is a/(b × n), with n nonzero. This is also a/b × 1/n. Simplify without changing the value.</p><h3>A method to try</h3><ol><li>Keep track of the total fractional amount and the number of equal shares.</li><li>Multiply the denominator by the number of shares, or multiply by its reciprocal.</li><li>Simplify and multiply the share by the number of groups to check.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>4/5 ÷ 9</strong><p>Divide each fifth into nine equal pieces. There are now forty-fifths, and each share contains four of them.</p><p class=\"sample-equation\">4/5 ÷ 9 = 4/45</p><p>Check: 9 × 4/45 = 4/5.</p></div><h3>A mistake to watch for</h3><p>Do not divide the numerator alone and round it to a whole number. A share can remain an exact fraction.</p><h3>Check and explain</h3><p>For a missing dividend, multiply the share by the number of groups; for a missing group count, divide the total by the share.</p>",
+  "examples": [
+    [
+      "4/5 ÷ 9",
+      "Divide each fifth into nine equal pieces. There are now forty-fifths, and each share contains four of them.",
+      "4/5 ÷ 9 = 4/45",
+      "9 × 4/45 = 4/5."
+    ]
+  ]
+}

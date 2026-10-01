@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-decimal-divide",
+  "title": "Divide decimals without changing the quotient",
+  "intro": "Division asks how many divisor-sized groups fit into the dividend, including a fractional group when the question allows it. Multiplying both numbers by the same nonzero power of ten preserves this quotient.",
+  "html": "<h2>Divide decimals without changing the quotient</h2><p>Division asks how many divisor-sized groups fit into the dividend, including a fractional group when the question allows it. Multiplying both numbers by the same nonzero power of ten preserves this quotient.</p><p>Make the divisor a whole number before using long division. Preserve all the digits of the dividend. Append zeros if more decimal places are needed; do not round the dividend to make the work easier.</p><h3>A method to try</h3><ol><li>Multiply both dividend and divisor by the same power of ten until the divisor is whole.</li><li>Divide from left to right, recording zeros in the quotient when needed.</li><li>Continue into decimal places when required and check quotient times divisor.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>12.74 ÷ 2.45</strong><p>Multiply both numbers by 100: 1274 ÷ 245. Five groups use 1225, leaving 49; 49/245 is 0.2.</p><p class=\"sample-equation\">12.74 ÷ 2.45 = 5.2</p><p>Check: 2.45 × 5.2 = 12.74.</p></div><div class=\"model\"><strong>14.375 ÷ 1</strong><p>Dividing by one leaves the original value unchanged. All three decimal places remain.</p><p class=\"sample-equation\">14.375 ÷ 1 = 14.375</p><p>Check: 14.375 × 1 = 14.375.</p></div><h3>A mistake to watch for</h3><p>Changing only one number changes the quotient. Rounding 14.375 to 14.38 changes the problem.</p><h3>Check and explain</h3><p>Check using exact multiplication, not rounded values.</p>",
+  "examples": [
+    [
+      "12.74 ÷ 2.45",
+      "Multiply both numbers by 100: 1274 ÷ 245. Five groups use 1225, leaving 49; 49/245 is 0.2.",
+      "12.74 ÷ 2.45 = 5.2",
+      "2.45 × 5.2 = 12.74."
+    ],
+    [
+      "14.375 ÷ 1",
+      "Dividing by one leaves the original value unchanged. All three decimal places remain.",
+      "14.375 ÷ 1 = 14.375",
+      "14.375 × 1 = 14.375."
+    ]
+  ]
+}

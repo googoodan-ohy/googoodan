@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-decimal-add",
+  "title": "Add decimals using place value",
+  "intro": "Decimals name parts of the same whole. Align decimal points so that thousandths are added to thousandths, hundredths to hundredths, and ones to ones.",
+  "html": "<h2>Add decimals using place value</h2><p>Decimals name parts of the same whole. Align decimal points so that thousandths are added to thousandths, hundredths to hundredths, and ones to ones.</p><p>Trailing zeros do not change a number: 2.26 and 2.260 have equal value. Exchange ten units in any column for one unit in the column to its left. Keep the exact value unless the question asks for rounding.</p><h3>A method to try</h3><ol><li>Write the numbers with decimal points in one column. Add trailing zeros when helpful.</li><li>Add from the smallest place. Regroup ten of one unit as one of the next larger unit.</li><li>Place the decimal point in line with the original decimal points.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>5.300 + 2.251</strong><p>Think of 5300 thousandths plus 2251 thousandths. Their sum is 7551 thousandths.</p><p class=\"sample-equation\">5.300 + 2.251 = 7.551</p><p>Check: 7.551 − 2.251 = 5.300.</p></div><h3>A mistake to watch for</h3><p>Do not line up only the rightmost digits: 2.3 means 2.300, not 0.023.</p><h3>Check and explain</h3><p>Estimate the whole-number size and subtract one addend from the sum.</p>",
+  "examples": [
+    [
+      "5.300 + 2.251",
+      "Think of 5300 thousandths plus 2251 thousandths. Their sum is 7551 thousandths.",
+      "5.300 + 2.251 = 7.551",
+      "7.551 − 2.251 = 5.300."
+    ]
+  ]
+}

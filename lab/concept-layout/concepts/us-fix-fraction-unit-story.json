@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-fraction-unit-story",
+  "title": "Fractional unit lengths in division stories",
+  "intro": "Compare a total length with one stated unit length. Division tells how many of those unit lengths make the total, including a fractional unit when specified.",
+  "html": "<h2>Fractional unit lengths in division stories</h2><p>Compare a total length with one stated unit length. Division tells how many of those unit lengths make the total, including a fractional unit when specified.</p><p>A unit length is a reference amount, not a requirement to cut only whole pieces. Thus a total smaller than one unit can have a positive answer smaller than one.</p><h3>A method to try</h3><ol><li>Write total length ÷ unit length.</li><li>Multiply by the reciprocal of the unit length and simplify.</li><li>Report unit lengths, and check by multiplying back by the reference length.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>A ribbon is 1 foot long. One unit length is 8/5 feet. How many unit lengths, including a fractional unit?</strong><p>Calculate 1 ÷ 8/5 = 1 × 5/8.</p><p class=\"sample-equation\">5/8 of a unit length</p><p>Check: 5/8 × 8/5 feet = 1 foot.</p></div><h3>A mistake to watch for</h3><p>Do not call this five eighths of a complete cut piece. The answer measures the length relative to a reference unit.</p><h3>Check and explain</h3><p>If a different task asks only for complete pieces, interpret the quotient and leftover separately.</p>",
+  "examples": [
+    [
+      "A ribbon is 1 foot long. One unit length is 8/5 feet. How many unit lengths, including a fractional unit?",
+      "Calculate 1 ÷ 8/5 = 1 × 5/8.",
+      "5/8 of a unit length",
+      "5/8 × 8/5 feet = 1 foot."
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-gcf",
+  "title": "Greatest common factor and identical groups",
+  "intro": "A factor divides a whole number with no remainder. A common factor divides both numbers; the greatest common factor is the largest such positive number.",
+  "html": "<h2>Greatest common factor and identical groups</h2><p>A factor divides a whole number with no remainder. A common factor divides both numbers; the greatest common factor is the largest such positive number.</p><p>For identical bags using all of two kinds of objects, the number of bags must divide both totals. The greatest possible bag count is therefore their greatest common factor.</p><h3>A method to try</h3><ol><li>List factor pairs of each number, or use prime factors.</li><li>Identify the common factors and choose the greatest.</li><li>Divide both starting numbers by it and verify that both results are whole numbers.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>Find the greatest common factor of 36 and 60.</strong><p>Their common factors are 1, 2, 3, 4, 6 and 12. The largest is 12.</p><p class=\"sample-equation\">GCF(36,60) = 12</p><p>Check: 36 ÷ 12 = 3 and 60 ÷ 12 = 5.</p></div><div class=\"model\"><strong>Make the greatest number of identical bags from 29 red and 44 blue counters.</strong><p>29 and 44 have no common factor greater than 1.</p><p class=\"sample-equation\">1 bag</p><p>Check: The one bag contains 29 red and 44 blue counters; two or more identical bags cannot use all counters.</p></div><h3>A mistake to watch for</h3><p>The greatest common factor is not the product of the two numbers and need not be one of the numbers.</p><h3>Check and explain</h3><p>For a missing-result problem, fill in the GCF. In a story, state whether the answer counts bags or objects in each bag.</p>",
+  "examples": [
+    [
+      "Find the greatest common factor of 36 and 60.",
+      "Their common factors are 1, 2, 3, 4, 6 and 12. The largest is 12.",
+      "GCF(36,60) = 12",
+      "36 ÷ 12 = 3 and 60 ÷ 12 = 5."
+    ],
+    [
+      "Make the greatest number of identical bags from 29 red and 44 blue counters.",
+      "29 and 44 have no common factor greater than 1.",
+      "1 bag",
+      "The one bag contains 29 red and 44 blue counters; two or more identical bags cannot use all counters."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-addition-regroup",
+  "title": "Add within 100 with or without regrouping",
+  "intro": "Add ones to ones and tens to tens. Sometimes the ones total is less than ten; sometimes ten ones must be exchanged for one ten.",
+  "html": "<h2>Add within 100 with or without regrouping</h2><p>Add ones to ones and tens to tens. Sometimes the ones total is less than ten; sometimes ten ones must be exchanged for one ten.</p><p>This exchange preserves the total value. Decide whether to regroup by looking at the actual numbers, not by assuming every problem uses the same kind of exchange.</p><h3>A method to try</h3><ol><li>Add the ones.</li><li>If there are at least ten ones, exchange ten for one ten.</li><li>Add the tens, including any new ten, and combine the remaining ones.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>22 + 28</strong><p>2 ones + 8 ones = 10 ones = 1 ten. Then 2 tens + 2 tens + 1 ten = 5 tens.</p><p class=\"sample-equation\">22 + 28 = 50</p><p>Check: 50 − 28 = 22.</p></div><h3>A mistake to watch for</h3><p>Do not forget the ten made from the ones or count it twice.</p><h3>Check and explain</h3><p>Use tens and ones, then subtract one addend to check.</p>",
+  "examples": [
+    [
+      "22 + 28",
+      "2 ones + 8 ones = 10 ones = 1 ten. Then 2 tens + 2 tens + 1 ten = 5 tens.",
+      "22 + 28 = 50",
+      "50 − 28 = 22."
+    ]
+  ]
+}

@@ -1,0 +1,3225 @@
+[
+  {
+    "id": "old-grade-1-add",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Addition within 20",
+    "sourceUnit": "add",
+    "standard": "1.OA.C.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=add&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-add.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00001",
+      "e00017"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-sub",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Subtraction within 20",
+    "sourceUnit": "sub",
+    "standard": "1.OA.C.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=sub&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-sub.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00010",
+      "e00017"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-place",
+    "grade": 1,
+    "unit": "tens-and-ones",
+    "title": "Tens and ones",
+    "sourceUnit": "place",
+    "standard": "1.NBT.B.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=place&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-place.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00082"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-shape",
+    "grade": 1,
+    "unit": "legacy-shape",
+    "title": "Shape detectives",
+    "sourceUnit": "shape",
+    "standard": "1.G.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=shape&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-shape.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00113"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-clock",
+    "grade": 1,
+    "unit": "time-hours-half-hours",
+    "title": "Hours and half hours",
+    "sourceUnit": "clock",
+    "standard": "1.MD.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=clock&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-clock.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00083"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-data",
+    "grade": 1,
+    "unit": "legacy-data",
+    "title": "Picture data",
+    "sourceUnit": "data",
+    "standard": "1.MD.C.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=data&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-data.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00009"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-missing",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Missing numbers",
+    "sourceUnit": "missing",
+    "standard": "1.OA.A.1;1.OA.B.4;1.OA.D.8",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=missing&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-missing.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00013",
+      "e00028"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-three",
+    "grade": 1,
+    "unit": "legacy-three",
+    "title": "Three numbers together",
+    "sourceUnit": "three",
+    "standard": "1.OA.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=three&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-three.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00123"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-facts",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Related facts",
+    "sourceUnit": "facts",
+    "standard": "1.OA.B.3–4",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=facts&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-facts.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-count-on",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Count on and back",
+    "sourceUnit": "count-on",
+    "standard": "1.OA.C.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=count-on&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-count-on.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-equal",
+    "grade": 1,
+    "unit": "understand-equality",
+    "title": "True or false equations",
+    "sourceUnit": "equal",
+    "standard": "1.OA.D.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=equal&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-equal.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00097"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-count120",
+    "grade": 1,
+    "unit": "legacy-count120",
+    "title": "Number paths to 120",
+    "sourceUnit": "count120",
+    "standard": "1.NBT.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=count120&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-count120.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00082",
+      "e00008"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-compare",
+    "grade": 1,
+    "unit": "compare-two-digit-numbers",
+    "title": "Compare two-digit numbers",
+    "sourceUnit": "compare",
+    "standard": "1.NBT.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00091"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-add100",
+    "grade": 1,
+    "unit": "add-ones-to-two-digit",
+    "title": "Add using tens and ones",
+    "sourceUnit": "add100",
+    "standard": "1.NBT.C.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=add100&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-add100.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00053"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-ten-more",
+    "grade": 1,
+    "unit": "ten-more-less",
+    "title": "Ten more, ten less",
+    "sourceUnit": "ten-more",
+    "standard": "1.NBT.C.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=ten-more&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-ten-more.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00092"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-tens-sub",
+    "grade": 1,
+    "unit": "adding-subtracting-tens",
+    "title": "Subtract multiples of ten",
+    "sourceUnit": "tens-sub",
+    "standard": "1.NBT.C.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=tens-sub&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-tens-sub.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00050"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-order-length",
+    "grade": 1,
+    "unit": "order-lengths",
+    "title": "Order and compare lengths",
+    "sourceUnit": "order-length",
+    "standard": "1.MD.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=order-length&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-order-length.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00095"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-unit-length",
+    "grade": 1,
+    "unit": "legacy-unit-length",
+    "title": "Measure with equal units",
+    "sourceUnit": "unit-length",
+    "standard": "1.MD.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=unit-length&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-unit-length.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00112"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-shape-build",
+    "grade": 1,
+    "unit": "shape-composition",
+    "title": "Build and draw shapes",
+    "sourceUnit": "shape-build",
+    "standard": "1.G.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=shape-build&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-shape-build.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00108"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-1-halves",
+    "grade": 1,
+    "unit": "legacy-halves",
+    "title": "Halves and fourths",
+    "sourceUnit": "halves",
+    "standard": "1.G.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=halves&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-1-halves.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00093"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-add",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Addition within 100",
+    "sourceUnit": "add",
+    "standard": "2.NBT.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=add&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-add.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "us-fix-addition-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-grade-2-sub",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Subtraction within 100",
+    "sourceUnit": "sub",
+    "standard": "2.NBT.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=sub&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-sub.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "us-fix-subtraction-regroup"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-grade-2-place",
+    "grade": 2,
+    "unit": "three-digit-place-value",
+    "title": "Hundreds, tens and ones",
+    "sourceUnit": "place",
+    "standard": "2.NBT.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=place&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-place.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00081"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-money",
+    "grade": 2,
+    "unit": "legacy-money",
+    "title": "Count the coins",
+    "sourceUnit": "money",
+    "standard": "2.MD.C.8",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=money&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-money.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00119"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-clock",
+    "grade": 2,
+    "unit": "time-five-minutes",
+    "title": "Time to five minutes",
+    "sourceUnit": "clock",
+    "standard": "2.MD.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=clock&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-clock.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00007"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-length",
+    "grade": 2,
+    "unit": "legacy-length",
+    "title": "Measure and compare",
+    "sourceUnit": "length",
+    "standard": "2.MD.A.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=length&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-length.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00112",
+      "e00095"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-stories",
+    "grade": 2,
+    "unit": "two-step-add-subtract",
+    "title": "Two-step stories",
+    "sourceUnit": "stories",
+    "standard": "2.OA.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=stories&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-stories.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00054"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-facts20",
+    "grade": 2,
+    "unit": "mental-strategies-within-20",
+    "title": "Fluent facts within 20",
+    "sourceUnit": "facts20",
+    "standard": "2.OA.B.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=facts20&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-facts20.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-odd-even",
+    "grade": 2,
+    "unit": "odd-even",
+    "title": "Odd and even groups",
+    "sourceUnit": "odd-even",
+    "standard": "2.OA.C.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=odd-even&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-odd-even.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00094"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-arrays",
+    "grade": 2,
+    "unit": "legacy-arrays",
+    "title": "Rows and columns",
+    "sourceUnit": "arrays",
+    "standard": "2.OA.C.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=arrays&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-arrays.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00003"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-skip",
+    "grade": 2,
+    "unit": "skip-count-five-ten-hundred",
+    "title": "Skip-count to 1000",
+    "sourceUnit": "skip",
+    "standard": "2.NBT.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=skip&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-skip.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00008"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-number-names",
+    "grade": 2,
+    "unit": "three-digit-number-names",
+    "title": "Number names and expanded form",
+    "sourceUnit": "number-names",
+    "standard": "2.NBT.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=number-names&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-number-names.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00105"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-compare",
+    "grade": 2,
+    "unit": "compare-three-digit-numbers",
+    "title": "Compare three-digit numbers",
+    "sourceUnit": "compare",
+    "standard": "2.NBT.A.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00079"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-four-add",
+    "grade": 2,
+    "unit": "four-addends",
+    "title": "Add four numbers",
+    "sourceUnit": "four-add",
+    "standard": "2.NBT.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=four-add&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-four-add.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00048"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-calc1000",
+    "grade": 2,
+    "unit": "model-add-sub-within-1000",
+    "title": "Add and subtract within 1000",
+    "sourceUnit": "calc1000",
+    "standard": "2.NBT.B.7,9",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=calc1000&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-calc1000.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00024"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-mental",
+    "grade": 2,
+    "unit": "ten-hundred-more-less",
+    "title": "Ten or a hundred more",
+    "sourceUnit": "mental",
+    "standard": "2.NBT.B.8",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=mental&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-mental.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00103"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-measure-tools",
+    "grade": 2,
+    "unit": "legacy-measure-tools",
+    "title": "Choose a measuring tool",
+    "sourceUnit": "measure-tools",
+    "standard": "2.MD.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=measure-tools&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-measure-tools.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00118"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-measure-units",
+    "grade": 2,
+    "unit": "legacy-measure-units",
+    "title": "Measure in two units",
+    "sourceUnit": "measure-units",
+    "standard": "2.MD.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=measure-units&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-measure-units.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-estimate-length",
+    "grade": 2,
+    "unit": "estimate-measure-book",
+    "title": "Estimate and measure",
+    "sourceUnit": "estimate-length",
+    "standard": "2.MD.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=estimate-length&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-estimate-length.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00112"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-length-story",
+    "grade": 2,
+    "unit": "length-word-problems",
+    "title": "Length stories",
+    "sourceUnit": "length-story",
+    "standard": "2.MD.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=length-story&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-length-story.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00056"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-numberline",
+    "grade": 2,
+    "unit": "legacy-numberline",
+    "title": "Numbers on a line",
+    "sourceUnit": "numberline",
+    "standard": "2.MD.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=numberline&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-numberline.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00008"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-lineplot",
+    "grade": 2,
+    "unit": "read-measurement-plots",
+    "title": "Measurement line plots",
+    "sourceUnit": "lineplot",
+    "standard": "2.MD.D.9",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=lineplot&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-lineplot.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00096"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-graphs",
+    "grade": 2,
+    "unit": "read-graphs",
+    "title": "Read and build graphs",
+    "sourceUnit": "graphs",
+    "standard": "2.MD.D.10",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=graphs&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-graphs.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00009"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-shape",
+    "grade": 2,
+    "unit": "shape-attributes",
+    "title": "Shape attributes",
+    "sourceUnit": "shape",
+    "standard": "2.G.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=shape&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-shape.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00113"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-tile",
+    "grade": 2,
+    "unit": "legacy-tile",
+    "title": "Tile a rectangle",
+    "sourceUnit": "tile",
+    "standard": "2.G.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=tile&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-tile.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00085"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-2-partition",
+    "grade": 2,
+    "unit": "equal-parts",
+    "title": "Halves, thirds and fourths",
+    "sourceUnit": "partition",
+    "standard": "2.G.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=partition&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-2-partition.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00093"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-mul",
+    "grade": 3,
+    "unit": "multiplication-division",
+    "title": "Multiplication facts",
+    "sourceUnit": "mul",
+    "standard": "3.OA.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=mul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-mul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00003",
+      "e00018"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-div",
+    "grade": 3,
+    "unit": "multiplication-division",
+    "title": "Division facts",
+    "sourceUnit": "div",
+    "standard": "3.OA.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=div&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-div.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00003",
+      "e00016"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-fraction",
+    "grade": 3,
+    "unit": "fraction-comparison",
+    "title": "Fractions of a whole",
+    "sourceUnit": "fraction",
+    "standard": "3.NF.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-fraction.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00080",
+      "e00073"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-area",
+    "grade": 3,
+    "unit": "area-square-units",
+    "title": "Area adventures",
+    "sourceUnit": "area",
+    "standard": "3.MD.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-area.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00085"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-perimeter",
+    "grade": 3,
+    "unit": "rectangle-perimeter",
+    "title": "Around the edges",
+    "sourceUnit": "perimeter",
+    "standard": "3.MD.D.8",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=perimeter&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-perimeter.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00084"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-data",
+    "grade": 3,
+    "unit": "legacy-data",
+    "title": "Scaled bar graphs",
+    "sourceUnit": "data",
+    "standard": "3.MD.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=data&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-data.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "us-fix-scaled-vote-graph"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-grade-3-groups",
+    "grade": 3,
+    "unit": "multiplication-division",
+    "title": "Equal groups and sharing",
+    "sourceUnit": "groups",
+    "standard": "3.OA.A.1–3",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=groups&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-groups.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00003",
+      "e00066"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-unknown",
+    "grade": 3,
+    "unit": "missing-factors-dividends",
+    "title": "Missing factors and quotients",
+    "sourceUnit": "unknown",
+    "standard": "3.OA.A.4;3.OA.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=unknown&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-unknown.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00098"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-properties",
+    "grade": 3,
+    "unit": "legacy-properties",
+    "title": "Multiplication strategies",
+    "sourceUnit": "properties",
+    "standard": "3.OA.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=properties&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-properties.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00003"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-stories",
+    "grade": 3,
+    "unit": "legacy-stories",
+    "title": "Two-step operation stories",
+    "sourceUnit": "stories",
+    "standard": "3.OA.D.8",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=stories&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-stories.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00055"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-grade-3-patterns",
+    "grade": 3,
+    "unit": "legacy-patterns",
+    "title": "Arithmetic patterns",
+    "sourceUnit": "patterns",
+    "standard": "3.OA.D.9",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=patterns&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-patterns.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00121"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-round",
+    "grade": 3,
+    "unit": "rounding",
+    "title": "Round to tens and hundreds",
+    "sourceUnit": "round",
+    "standard": "3.NBT.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=round&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-round.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00088"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-calc1000",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Add and subtract within 1000",
+    "sourceUnit": "calc1000",
+    "standard": "3.NBT.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=calc1000&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-calc1000.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-tens-multiply",
+    "grade": 3,
+    "unit": "multiples-of-ten",
+    "title": "Multiply by multiples of ten",
+    "sourceUnit": "tens-multiply",
+    "standard": "3.NBT.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=tens-multiply&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-tens-multiply.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00049"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-fraction-line",
+    "grade": 3,
+    "unit": "fraction-comparison",
+    "title": "Fractions on a number line",
+    "sourceUnit": "fraction-line",
+    "standard": "3.NF.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction-line&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-fraction-line.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00080",
+      "e00073"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-fraction-compare",
+    "grade": 3,
+    "unit": "fraction-comparison",
+    "title": "Equivalent and ordered fractions",
+    "sourceUnit": "fraction-compare",
+    "standard": "3.NF.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction-compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-fraction-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00073",
+      "e00078"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-elapsed",
+    "grade": 3,
+    "unit": "elapsed-time-word-problems",
+    "title": "Time to the minute",
+    "sourceUnit": "elapsed",
+    "standard": "3.MD.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=elapsed&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-elapsed.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00104"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-mass",
+    "grade": 3,
+    "unit": "liters-grams-word-problems",
+    "title": "Mass and liquid volume",
+    "sourceUnit": "mass",
+    "standard": "3.MD.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=mass&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-mass.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00057"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-lineplot",
+    "grade": 3,
+    "unit": "read-quarter-unit-lineplots",
+    "title": "Halves and fourths on line plots",
+    "sourceUnit": "lineplot",
+    "standard": "3.MD.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=lineplot&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-lineplot.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00111"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-area-tiles",
+    "grade": 3,
+    "unit": "area-square-units",
+    "title": "Square units and tiling",
+    "sourceUnit": "area-tiles",
+    "standard": "3.MD.C.5–6",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area-tiles&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-area-tiles.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00085"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-area-parts",
+    "grade": 3,
+    "unit": "area-square-units",
+    "title": "Area by adding parts",
+    "sourceUnit": "area-parts",
+    "standard": "3.MD.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area-parts&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-area-parts.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00085"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-quadrilaterals",
+    "grade": 3,
+    "unit": "quadrilateral-families",
+    "title": "Sort quadrilaterals",
+    "sourceUnit": "quadrilaterals",
+    "standard": "3.G.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=quadrilaterals&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-quadrilaterals.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00006"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-3-equal-area",
+    "grade": 3,
+    "unit": "legacy-equal-area",
+    "title": "Equal-area parts",
+    "sourceUnit": "equal-area",
+    "standard": "3.G.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=equal-area&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-3-equal-area.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00093"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-mul",
+    "grade": 4,
+    "unit": "legacy-mul",
+    "title": "Multi-digit multiplication",
+    "sourceUnit": "mul",
+    "standard": "4.NBT.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=mul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-mul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-div",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "Division with remainders",
+    "sourceUnit": "div",
+    "standard": "4.NBT.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=div&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-div.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-equivalent",
+    "grade": 4,
+    "unit": "legacy-equivalent",
+    "title": "Equivalent fractions",
+    "sourceUnit": "equivalent",
+    "standard": "4.NF.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=equivalent&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-equivalent.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00076"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-fractionAdd",
+    "grade": 4,
+    "unit": "fraction-addition",
+    "title": "Add like fractions",
+    "sourceUnit": "fractionAdd",
+    "standard": "4.NF.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fractionAdd&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-fractionAdd.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00004",
+      "e00015"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-angle",
+    "grade": 4,
+    "unit": "legacy-angle",
+    "title": "Angles and turns",
+    "sourceUnit": "angle",
+    "standard": "4.MD.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=angle&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-angle.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00110"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-place",
+    "grade": 4,
+    "unit": "legacy-place",
+    "title": "Place-value patterns",
+    "sourceUnit": "place",
+    "standard": "4.NBT.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=place&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-place.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00074",
+      "e00101"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-times-as-many",
+    "grade": 4,
+    "unit": "multiplicative-comparison",
+    "title": "Times as many",
+    "sourceUnit": "times-as-many",
+    "standard": "4.OA.A.1–2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=times-as-many&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-times-as-many.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00071"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-stories",
+    "grade": 4,
+    "unit": "legacy-stories",
+    "title": "Multi-step stories and remainders",
+    "sourceUnit": "stories",
+    "standard": "4.OA.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=stories&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-stories.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00055"
+    ],
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-grade-4-factors",
+    "grade": 4,
+    "unit": "prime-composite-multiples",
+    "title": "Factors, multiples and primes",
+    "sourceUnit": "factors",
+    "standard": "4.OA.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=factors&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-factors.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00102"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-patterns",
+    "grade": 4,
+    "unit": "legacy-patterns",
+    "title": "Rules and number patterns",
+    "sourceUnit": "patterns",
+    "standard": "4.OA.C.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=patterns&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-patterns.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00121"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-ten-times",
+    "grade": 4,
+    "unit": "legacy-ten-times",
+    "title": "Ten times the place value",
+    "sourceUnit": "ten-times",
+    "standard": "4.NBT.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=ten-times&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-ten-times.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00101"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-compare",
+    "grade": 4,
+    "unit": "compare-large-numbers",
+    "title": "Compare large numbers",
+    "sourceUnit": "compare",
+    "standard": "4.NBT.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00089"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-round",
+    "grade": 4,
+    "unit": "legacy-round",
+    "title": "Round to any whole-number place",
+    "sourceUnit": "round",
+    "standard": "4.NBT.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=round&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-round.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00122"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-large-calc",
+    "grade": 4,
+    "unit": "place-value-million",
+    "title": "Multi-digit addition and subtraction",
+    "sourceUnit": "large-calc",
+    "standard": "4.NBT.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=large-calc&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-large-calc.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00032"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-large-mul",
+    "grade": 4,
+    "unit": "legacy-large-mul",
+    "title": "Four-digit and two-digit products",
+    "sourceUnit": "large-mul",
+    "standard": "4.NBT.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=large-mul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-large-mul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-long-div",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "Four-digit division",
+    "sourceUnit": "long-div",
+    "standard": "4.NBT.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=long-div&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-long-div.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-fraction-compare",
+    "grade": 4,
+    "unit": "compare-unlike-fractions",
+    "title": "Compare unlike fractions",
+    "sourceUnit": "fraction-compare",
+    "standard": "4.NF.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-fraction-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00099"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-fraction-sub",
+    "grade": 4,
+    "unit": "fraction-addition",
+    "title": "Subtract like and mixed fractions",
+    "sourceUnit": "fraction-sub",
+    "standard": "4.NF.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-sub&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-fraction-sub.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00004",
+      "e00015"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-fraction-whole",
+    "grade": 4,
+    "unit": "fraction-multiplication",
+    "title": "Multiply fractions by whole numbers",
+    "sourceUnit": "fraction-whole",
+    "standard": "4.NF.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-whole&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-fraction-whole.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00041"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-tenths-hundredths",
+    "grade": 4,
+    "unit": "tenths-hundredths-decimals",
+    "title": "Tenths and hundredths",
+    "sourceUnit": "tenths-hundredths",
+    "standard": "4.NF.C.5–6",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=tenths-hundredths&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-tenths-hundredths.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00100"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-decimal-compare",
+    "grade": 4,
+    "unit": "decimal-compare-hundredths",
+    "title": "Compare decimals",
+    "sourceUnit": "decimal-compare",
+    "standard": "4.NF.C.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=decimal-compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-decimal-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00114"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-convert",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "Measurement conversions",
+    "sourceUnit": "convert",
+    "standard": "4.MD.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=convert&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-convert.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-measure-stories",
+    "grade": 4,
+    "unit": "legacy-measure-stories",
+    "title": "Measurement word problems",
+    "sourceUnit": "measure-stories",
+    "standard": "4.MD.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=measure-stories&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-measure-stories.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00056",
+      "e00057"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-area-perimeter",
+    "grade": 4,
+    "unit": "legacy-area-perimeter",
+    "title": "Area and perimeter formulas",
+    "sourceUnit": "area-perimeter",
+    "standard": "4.MD.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=area-perimeter&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-area-perimeter.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00084",
+      "e00085"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-lineplot",
+    "grade": 4,
+    "unit": "legacy-lineplot",
+    "title": "Fraction measurement line plots",
+    "sourceUnit": "lineplot",
+    "standard": "4.MD.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=lineplot&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-lineplot.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00111"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-protractor",
+    "grade": 4,
+    "unit": "measure-draw-angles",
+    "title": "Measure and draw angles",
+    "sourceUnit": "protractor",
+    "standard": "4.MD.C.5–6",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=protractor&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-protractor.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00110"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-lines",
+    "grade": 4,
+    "unit": "lines-rays-segments",
+    "title": "Lines, rays and right angles",
+    "sourceUnit": "lines",
+    "standard": "4.G.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=lines&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-lines.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00107"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-shape-class",
+    "grade": 4,
+    "unit": "legacy-shape-class",
+    "title": "Classify triangles and quadrilaterals",
+    "sourceUnit": "shape-class",
+    "standard": "4.G.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=shape-class&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-shape-class.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00006",
+      "e00113"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-4-symmetry",
+    "grade": 4,
+    "unit": "rectangle-square-symmetry",
+    "title": "Lines of symmetry",
+    "sourceUnit": "symmetry",
+    "standard": "4.G.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=symmetry&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-4-symmetry.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00106"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-decimal",
+    "grade": 5,
+    "unit": "legacy-decimal",
+    "title": "Decimal operations",
+    "sourceUnit": "decimal",
+    "standard": "5.NBT.B.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-decimal.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00005",
+      "e00038"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fractionAdd",
+    "grade": 5,
+    "unit": "unlike-fraction-stories",
+    "title": "Add unlike fractions",
+    "sourceUnit": "fractionAdd",
+    "standard": "5.NF.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fractionAdd&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fractionAdd.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00044"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fractionMul",
+    "grade": 5,
+    "unit": "legacy-fractionMul",
+    "title": "Multiply fractions",
+    "sourceUnit": "fractionMul",
+    "standard": "5.NF.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fractionMul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fractionMul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00117"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-unitDiv",
+    "grade": 5,
+    "unit": "legacy-unitDiv",
+    "title": "Divide with unit fractions",
+    "sourceUnit": "unitDiv",
+    "standard": "5.NF.B.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=unitDiv&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-unitDiv.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00124"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-volume",
+    "grade": 5,
+    "unit": "legacy-volume",
+    "title": "Volume lab",
+    "sourceUnit": "volume",
+    "standard": "5.MD.C.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-volume.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00086"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-coordinate",
+    "grade": 5,
+    "unit": "coordinate-plane",
+    "title": "Coordinate missions",
+    "sourceUnit": "coordinate",
+    "standard": "5.G.A.1–2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=coordinate&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-coordinate.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00087"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-expressions",
+    "grade": 5,
+    "unit": "numerical-expressions",
+    "title": "Evaluate grouped expressions",
+    "sourceUnit": "expressions",
+    "standard": "5.OA.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=expressions&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-expressions.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00051"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-write-expressions",
+    "grade": 5,
+    "unit": "numerical-expressions",
+    "title": "Write numerical expressions",
+    "sourceUnit": "write-expressions",
+    "standard": "5.OA.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=write-expressions&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-write-expressions.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00051"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-paired-patterns",
+    "grade": 5,
+    "unit": "legacy-paired-patterns",
+    "title": "Patterns and ordered pairs",
+    "sourceUnit": "paired-patterns",
+    "standard": "5.OA.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=paired-patterns&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-paired-patterns.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00120"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-place-ratio",
+    "grade": 5,
+    "unit": "powers-of-ten",
+    "title": "Ten times and one tenth",
+    "sourceUnit": "place-ratio",
+    "standard": "5.NBT.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=place-ratio&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-place-ratio.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00101"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-powers10",
+    "grade": 5,
+    "unit": "powers-of-ten",
+    "title": "Powers of ten",
+    "sourceUnit": "powers10",
+    "standard": "5.NBT.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=powers10&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-powers10.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00101"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-decimal-place",
+    "grade": 5,
+    "unit": "decimal-place-value",
+    "title": "Decimal names and expanded form",
+    "sourceUnit": "decimal-place",
+    "standard": "5.NBT.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-place&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-decimal-place.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00074",
+      "e00075"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-decimal-compare",
+    "grade": 5,
+    "unit": "decimal-place-value",
+    "title": "Compare decimals to thousandths",
+    "sourceUnit": "decimal-compare",
+    "standard": "5.NBT.A.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-compare&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-decimal-compare.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00075",
+      "e00074"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-round-decimal",
+    "grade": 5,
+    "unit": "rounding-decimals",
+    "title": "Round decimals",
+    "sourceUnit": "round-decimal",
+    "standard": "5.NBT.A.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=round-decimal&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-round-decimal.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00090"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-whole-mul",
+    "grade": 5,
+    "unit": "multi-digit-multiplication",
+    "title": "Multi-digit whole-number products",
+    "sourceUnit": "whole-mul",
+    "standard": "5.NBT.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=whole-mul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-whole-mul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-whole-div",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "Two-digit divisors",
+    "sourceUnit": "whole-div",
+    "standard": "5.NBT.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=whole-div&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-whole-div.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-decimal-mul",
+    "grade": 5,
+    "unit": "legacy-decimal-mul",
+    "title": "Multiply decimals",
+    "sourceUnit": "decimal-mul",
+    "standard": "5.NBT.B.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-mul&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-decimal-mul.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00039"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-decimal-div",
+    "grade": 5,
+    "unit": "legacy-decimal-div",
+    "title": "Divide decimals exactly",
+    "sourceUnit": "decimal-div",
+    "standard": "5.NBT.B.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-div&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-decimal-div.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00040"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fraction-sub",
+    "grade": 5,
+    "unit": "unlike-fraction-stories",
+    "title": "Subtract unlike and mixed fractions",
+    "sourceUnit": "fraction-sub",
+    "standard": "5.NF.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-sub&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fraction-sub.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00044"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fraction-story",
+    "grade": 5,
+    "unit": "unlike-fraction-stories",
+    "title": "Fraction stories and estimation",
+    "sourceUnit": "fraction-story",
+    "standard": "5.NF.A.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-story&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fraction-story.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00044"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fraction-division",
+    "grade": 5,
+    "unit": "legacy-fraction-division",
+    "title": "Fractions as division",
+    "sourceUnit": "fraction-division",
+    "standard": "5.NF.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-division&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fraction-division.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00116"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fraction-area",
+    "grade": 5,
+    "unit": "fraction-area",
+    "title": "Area with fractional sides",
+    "sourceUnit": "fraction-area",
+    "standard": "5.NF.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-area&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fraction-area.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00042",
+      "e00043"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-scaling",
+    "grade": 5,
+    "unit": "legacy-scaling",
+    "title": "Multiplication as scaling",
+    "sourceUnit": "scaling",
+    "standard": "5.NF.B.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=scaling&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-scaling.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00067"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-fraction-products",
+    "grade": 5,
+    "unit": "fraction-recipe-scaling",
+    "title": "Fraction and mixed-number stories",
+    "sourceUnit": "fraction-products",
+    "standard": "5.NF.B.6",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-products&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-fraction-products.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00059",
+      "e00067"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-unit-sharing",
+    "grade": 5,
+    "unit": "legacy-unit-sharing",
+    "title": "Unit-fraction sharing stories",
+    "sourceUnit": "unit-sharing",
+    "standard": "5.NF.B.7",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=unit-sharing&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-unit-sharing.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00045"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-convert",
+    "grade": 5,
+    "unit": "legacy-convert",
+    "title": "Convert measurement units",
+    "sourceUnit": "convert",
+    "standard": "5.MD.A.1",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=convert&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-convert.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00115",
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-lineplot",
+    "grade": 5,
+    "unit": "legacy-lineplot",
+    "title": "Fraction data and line plots",
+    "sourceUnit": "lineplot",
+    "standard": "5.MD.B.2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=lineplot&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-lineplot.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00111"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-volume-cubes",
+    "grade": 5,
+    "unit": "volume-unit-cubes",
+    "title": "Volume in unit cubes",
+    "sourceUnit": "volume-cubes",
+    "standard": "5.MD.C.3–4",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume-cubes&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-volume-cubes.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00086"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-volume-parts",
+    "grade": 5,
+    "unit": "legacy-volume-parts",
+    "title": "Add volumes of joined prisms",
+    "sourceUnit": "volume-parts",
+    "standard": "5.MD.C.5",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume-parts&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-volume-parts.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00125"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-plot-points",
+    "grade": 5,
+    "unit": "coordinate-plane",
+    "title": "Plot and interpret points",
+    "sourceUnit": "plot-points",
+    "standard": "5.G.A.1–2",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=plot-points&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-plot-points.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00087"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-shape-properties",
+    "grade": 5,
+    "unit": "legacy-shape-properties",
+    "title": "Shape properties and families",
+    "sourceUnit": "shape-properties",
+    "standard": "5.G.B.3",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=shape-properties&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-shape-properties.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00006",
+      "e00113"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-grade-5-shape-hierarchy",
+    "grade": 5,
+    "unit": "legacy-shape-hierarchy",
+    "title": "Shape classification hierarchy",
+    "sourceUnit": "shape-hierarchy",
+    "standard": "5.G.B.4",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=shape-hierarchy&set=123",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-grade-5-shape-hierarchy.png",
+    "placementReason": "Original question activities checked; same scope unit or separate original skill unit.",
+    "conceptPending": false,
+    "conceptRefs": [
+      "e00006"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions."
+  },
+  {
+    "id": "old-k-count-and-color",
+    "grade": 0,
+    "unit": "hands-on-numbers",
+    "title": "Count and Color Worksheets",
+    "sourceUnit": "count-and-color",
+    "standard": "K.CC.B.4–5",
+    "url": "/lab/legacy-k-activities/count-and-color.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-count-and-color.png",
+    "conceptRefs": [
+      "e00128"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "old-k-picture-number-matching",
+    "grade": 0,
+    "unit": "hands-on-numbers",
+    "title": "Picture and Number Matching Worksheets",
+    "sourceUnit": "picture-number-matching",
+    "standard": "K.CC.B.4–5",
+    "url": "/lab/legacy-k-activities/picture-number-matching.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-picture-number-matching.png",
+    "conceptRefs": [
+      "e00128"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "old-k-number-tracing",
+    "grade": 0,
+    "unit": "hands-on-numbers",
+    "title": "Number Tracing Worksheets for Kindergarten",
+    "sourceUnit": "number-tracing",
+    "standard": "K.CC.A.3",
+    "url": "/lab/legacy-k-activities/number-tracing.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-number-tracing.png",
+    "conceptRefs": [
+      "e00128"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "old-k-dot-to-dot-numbers",
+    "grade": 0,
+    "unit": "hands-on-numbers",
+    "title": "Dot-to-Dot Number Order Worksheets",
+    "sourceUnit": "dot-to-dot-numbers",
+    "standard": "K.CC.A.1; 1.NBT.A.1",
+    "url": "/lab/legacy-k-activities/dot-to-dot-numbers.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-dot-to-dot-numbers.png",
+    "conceptRefs": [
+      "e00128"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "old-k-shape-sorting",
+    "grade": 0,
+    "unit": "hands-on-shapes",
+    "title": "Shape Sorting Worksheets for Kindergarten",
+    "sourceUnit": "shape-sorting",
+    "standard": "K.G.B.4–5",
+    "url": "/lab/legacy-k-activities/shape-sorting.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-shape-sorting.png",
+    "conceptRefs": [
+      "e00139"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "old-k-compose-shapes",
+    "grade": 0,
+    "unit": "hands-on-shapes",
+    "title": "Compose Shapes Worksheets for Kindergarten",
+    "sourceUnit": "compose-shapes",
+    "standard": "K.G.B.6",
+    "url": "/lab/legacy-k-activities/compose-shapes.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-k-compose-shapes.png",
+    "conceptRefs": [
+      "e00108"
+    ],
+    "conceptPending": false,
+    "source": "Original US K2Activities generator; unchanged bank",
+    "explanationScope": "Related foundation; original worksheet instructions describe the activity."
+  },
+  {
+    "id": "supplemental-addition-flashcards",
+    "grade": 1,
+    "unit": "printable-whole",
+    "title": "Addition Flashcards Within 10",
+    "url": "/lab/concept-layout/supplemental/addition-flashcards.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-addition-flashcards.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-counting-to-100",
+    "grade": 0,
+    "unit": "printable-whole",
+    "title": "Counting to 100: Missing Numbers",
+    "url": "/lab/concept-layout/supplemental/counting-to-100.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-counting-to-100.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-divisibility-rules",
+    "grade": 4,
+    "unit": "printable-whole",
+    "title": "Divisibility Rules Chart: 2 to 10",
+    "url": "/lab/concept-layout/supplemental/divisibility-rules.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-divisibility-rules.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-domino-addition",
+    "grade": 1,
+    "unit": "printable-whole",
+    "title": "Domino Addition Worksheets",
+    "url": "/lab/concept-layout/supplemental/domino-addition.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-domino-addition.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-exit-ticket",
+    "grade": 1,
+    "unit": "printable-whole",
+    "title": "Addition and Subtraction Exit Tickets",
+    "url": "/lab/concept-layout/supplemental/exit-ticket.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-exit-ticket.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-fraction-strips",
+    "grade": 3,
+    "unit": "printable-fractions",
+    "title": "Fraction Strips Printable",
+    "url": "/lab/concept-layout/supplemental/fraction-strips.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-fraction-strips.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "fractions"
+  },
+  {
+    "id": "supplemental-multiplication-chart",
+    "grade": 3,
+    "unit": "printable-whole",
+    "title": "Multiplication Table Chart 0–12",
+    "url": "/lab/concept-layout/supplemental/multiplication-chart.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-multiplication-chart.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-numbers-1-20",
+    "grade": 0,
+    "unit": "printable-whole",
+    "title": "Numbers 1 to 20: Counting Cards",
+    "url": "/lab/concept-layout/supplemental/numbers-1-20.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-numbers-1-20.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-positional-words",
+    "grade": 0,
+    "unit": "printable-geometry",
+    "title": "Position Words: Above, Below, Left and Right",
+    "url": "/lab/concept-layout/supplemental/positional-words.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-positional-words.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "geometry"
+  },
+  {
+    "id": "supplemental-roman-chart",
+    "grade": 4,
+    "unit": "printable-whole",
+    "title": "Roman Numerals Chart: 1 to 100",
+    "url": "/lab/concept-layout/supplemental/roman-chart.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-roman-chart.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-shape-matching",
+    "grade": 0,
+    "unit": "printable-geometry",
+    "title": "Matching 2D Shapes Worksheets",
+    "url": "/lab/concept-layout/supplemental/shape-matching.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-shape-matching.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "geometry"
+  },
+  {
+    "id": "supplemental-shape-tracing",
+    "grade": 0,
+    "unit": "printable-geometry",
+    "title": "2D Shape Tracing Worksheets",
+    "url": "/lab/concept-layout/supplemental/shape-tracing.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-shape-tracing.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "geometry"
+  },
+  {
+    "id": "supplemental-size-comparison",
+    "grade": 0,
+    "unit": "printable-measurement",
+    "title": "Comparing Sizes: Larger and Smaller",
+    "url": "/lab/concept-layout/supplemental/size-comparison.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-size-comparison.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "measurement"
+  },
+  {
+    "id": "supplemental-venn-sorting",
+    "grade": 2,
+    "unit": "printable-data",
+    "title": "Venn Diagram Number Sorting",
+    "url": "/lab/concept-layout/supplemental/venn-sorting.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-venn-sorting.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "data"
+  },
+  {
+    "id": "supplemental-tally-mark-activities",
+    "grade": 1,
+    "unit": "printable-data",
+    "title": "Tally Marks Worksheets for Kids",
+    "url": "/lab/legacy-k-activities/tally-mark-activities.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-tally-mark-activities.png",
+    "conceptRefs": [],
+    "conceptPending": false,
+    "worksheetOnly": true,
+    "topic": "data"
+  },
+  {
+    "id": "supplemental-factor-trees",
+    "grade": 5,
+    "unit": "printable-whole",
+    "title": "Prime Factorization and Factor Trees Worksheets",
+    "url": "/lab/concept-layout/supplemental/factor-trees.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-factor-trees.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-thermometer-reading",
+    "grade": 2,
+    "unit": "printable-measurement",
+    "title": "Reading Thermometers Worksheets: Celsius",
+    "url": "/lab/concept-layout/supplemental/thermometer-reading.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-thermometer-reading.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "measurement"
+  },
+  {
+    "id": "supplemental-heavy-light",
+    "grade": 0,
+    "unit": "printable-measurement",
+    "title": "Heavier and Lighter Worksheets",
+    "url": "/lab/concept-layout/supplemental/heavy-light.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-heavy-light.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "measurement"
+  },
+  {
+    "id": "supplemental-capacity-comparison",
+    "grade": 0,
+    "unit": "printable-measurement",
+    "title": "Comparing Capacity Worksheets",
+    "url": "/lab/concept-layout/supplemental/capacity-comparison.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-capacity-comparison.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "measurement"
+  },
+  {
+    "id": "supplemental-cut-paste-counting",
+    "grade": 0,
+    "unit": "printable-whole",
+    "title": "Counting Cut and Paste Worksheets",
+    "url": "/lab/concept-layout/supplemental/cut-paste-counting.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-cut-paste-counting.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-color-addition",
+    "grade": 1,
+    "unit": "printable-whole",
+    "title": "Addition Color by Number Worksheets",
+    "url": "/lab/concept-layout/supplemental/color-addition.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-color-addition.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-color-multiplication",
+    "grade": 3,
+    "unit": "printable-whole",
+    "title": "Multiplication Color by Number Worksheets",
+    "url": "/lab/concept-layout/supplemental/color-multiplication.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-color-multiplication.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-color-division",
+    "grade": 3,
+    "unit": "printable-whole",
+    "title": "Division Color by Code Worksheets",
+    "url": "/lab/concept-layout/supplemental/color-division.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-color-division.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-kindergarten-skill-check",
+    "grade": 0,
+    "unit": "printable-whole",
+    "title": "Kindergarten Math Skill Check",
+    "url": "/lab/concept-layout/supplemental/kindergarten-skill-check.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-kindergarten-skill-check.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "supplemental-grade-one-skill-check",
+    "grade": 1,
+    "unit": "printable-whole",
+    "title": "1st Grade Math Skill Check",
+    "url": "/lab/concept-layout/supplemental/grade-one-skill-check.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/supplemental-grade-one-skill-check.png",
+    "conceptRefs": [],
+    "worksheetOnly": true,
+    "topic": "whole"
+  },
+  {
+    "id": "old-six-grade-6-decimals-horizontal-practice",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Multi-Digit Decimal Operations Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-horizontal-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimals-horizontal-practice.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add",
+      "us-fix-decimal-subtract",
+      "us-fix-decimal-multiply",
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimals-missing-number-practice",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Missing Number Multidigit Decimal Operations Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-missing-number-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimals-missing-number-practice.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add",
+      "us-fix-decimal-subtract",
+      "us-fix-decimal-multiply",
+      "us-fix-decimal-divide",
+      "us-fix-missing-operations"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimals-prerequisite-review",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Multi-Digit Decimal Operations Review Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-prerequisite-review.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimals-prerequisite-review.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add",
+      "us-fix-decimal-subtract",
+      "us-fix-decimal-multiply",
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimals-vertical-practice",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Multidigit Decimal Operations Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-vertical-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimals-vertical-practice.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add",
+      "us-fix-decimal-subtract",
+      "us-fix-decimal-multiply",
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimals-word-problems",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Multidigit Decimal Operations Word Problem Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-word-problems.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimals-word-problems.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add",
+      "us-fix-decimal-subtract",
+      "us-fix-decimal-multiply",
+      "us-fix-decimal-divide",
+      "us-fix-decimal-story"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fractiondiv-horizontal-practice",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Dividing Fractions by Fractions Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-horizontal-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fractiondiv-horizontal-practice.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fractiondiv-missing-number-practice",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Missing Number Dividing Fractions by Fractions Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-missing-number-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fractiondiv-missing-number-practice.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide",
+      "us-fix-fraction-missing"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fractiondiv-prerequisite-review",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Dividing Fractions by Fractions Review Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-prerequisite-review.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fractiondiv-prerequisite-review.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fractiondiv-word-problems",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Dividing Fractions by Fractions Word Problem Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-word-problems.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fractiondiv-word-problems.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide",
+      "us-fix-fraction-unit-story"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-gcf-horizontal-practice",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Greatest Common Factor Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-horizontal-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-gcf-horizontal-practice.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-gcf"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-gcf-missing-part-challenge",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Greatest Common Factor: Missing Parts Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-missing-part-challenge.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-gcf-missing-part-challenge.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-gcf"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-gcf-prerequisite-review",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Greatest Common Factor Review Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-prerequisite-review.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-gcf-prerequisite-review.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-gcf"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-gcf-word-problems",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Greatest Common Factor Word Problem Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-word-problems.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-gcf-word-problems.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-gcf"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-lcm-horizontal-practice",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Least Common Multiple Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-horizontal-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-lcm-horizontal-practice.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-lcm"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-lcm-missing-part-challenge",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Least Common Multiple: Missing Parts Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-missing-part-challenge.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-lcm-missing-part-challenge.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-lcm"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-lcm-prerequisite-review",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Least Common Multiple Review Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-prerequisite-review.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-lcm-prerequisite-review.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-lcm"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-lcm-word-problems",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Least Common Multiple Word Problem Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-word-problems.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-lcm-word-problems.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-lcm"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-longdiv-horizontal-practice",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Multi-Digit Long Division Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-horizontal-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-longdiv-horizontal-practice.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-long-division"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-longdiv-missing-number-practice",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Missing Number Multidigit Long Division Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-missing-number-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-longdiv-missing-number-practice.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-long-division",
+      "us-fix-division-missing"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-longdiv-prerequisite-review",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Multi-Digit Long Division Review Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-prerequisite-review.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-longdiv-prerequisite-review.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-long-division"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-longdiv-vertical-practice",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Vertical Multi-Digit Long Division Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-vertical-practice.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-longdiv-vertical-practice.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-long-division"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-longdiv-word-problems",
+    "grade": 6,
+    "unit": "six-factors-multiples",
+    "title": "Multidigit Long Division Word Problem Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-word-problems.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-longdiv-word-problems.png",
+    "topic": "whole",
+    "conceptRefs": [
+      "us-fix-long-division"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Addition: Hundredths and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Decimal Addition: Tenths and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Decimal Addition: Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Addition: Whole Numbers and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Subtraction: Hundredths Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Subtraction: Tenths Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Decimal Subtraction: Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Horizontal Subtraction: Whole Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Addition: Hundredths and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Addition: Tenths and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Addition: Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Addition: Whole Numbers and Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-add"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Subtraction: Hundredths Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Subtraction: Tenths Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Subtraction: Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Subtraction: Whole Minus Thousandths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-subtract"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Missing Number Division: Whole Numbers by Tenths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide",
+      "us-fix-missing-operations"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Division: Hundredths by Hundredths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Division: Hundredths by Tenths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Division: Tenths by Hundredths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Division: Tenths by Tenths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Division: Whole Numbers by Hundredths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "grade": 6,
+    "unit": "six-decimals",
+    "title": "Vertical Decimal Division: Whole Numbers by Tenths Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets.png",
+    "topic": "decimals",
+    "conceptRefs": [
+      "us-fix-decimal-divide"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fraction-div-missing-number-fraction-division-worksheets",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Missing Number Fraction Division Worksheets – Grade 6",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-fraction-div-missing-number-fraction-division-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fraction-div-missing-number-fraction-division-worksheets.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide",
+      "us-fix-fraction-missing"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  },
+  {
+    "id": "old-six-grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets",
+    "grade": 6,
+    "unit": "six-fraction-division",
+    "title": "Missing Number: Proper Fraction by Whole Number Worksheets",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets.html",
+    "thumbnail": "/lab/concept-layout/thumbnails/old-six-grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets.png",
+    "topic": "fractions",
+    "conceptRefs": [
+      "us-fix-fraction-divide-whole",
+      "us-fix-fraction-missing"
+    ],
+    "worksheetOnly": false,
+    "conceptPending": false,
+    "explanationScope": "Explanations matched to the operations and representations in this worksheet."
+  }
+]

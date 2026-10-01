@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-long-division",
+  "title": "Whole-number long division and remainders",
+  "intro": "Long division builds a quotient one place at a time. Each chosen digit must fit the current amount without using more than is available.",
+  "html": "<h2>Whole-number long division and remainders</h2><p>Long division builds a quotient one place at a time. Each chosen digit must fit the current amount without using more than is available.</p><p>After dividing and subtracting, bring down the next digit. A zero may be needed in the quotient. A remainder records what is left and must be smaller than the divisor.</p><h3>A method to try</h3><ol><li>Estimate the first quotient digit from the leftmost usable digits.</li><li>Multiply, subtract and bring down the next digit; repeat for every place.</li><li>Check dividend = divisor × quotient + remainder, with remainder smaller than divisor.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>49161 ÷ 35</strong><p>35 × 1400 = 49000, leaving 161. Four more groups use 140, leaving 21.</p><p class=\"sample-equation\">49161 ÷ 35 = 1404 R 21</p><p>Check: 35 × 1404 + 21 = 49161, and 21 &lt; 35.</p></div><h3>A mistake to watch for</h3><p>Do not drop an interior zero from 1404. Do not include another full group when fewer than 35 objects remain.</p><h3>Check and explain</h3><p>In a packing story, label full groups and leftover objects separately.</p>",
+  "examples": [
+    [
+      "49161 ÷ 35",
+      "35 × 1400 = 49000, leaving 161. Four more groups use 140, leaving 21.",
+      "49161 ÷ 35 = 1404 R 21",
+      "35 × 1404 + 21 = 49161, and 21 < 35."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-lcm",
+  "title": "Least common multiple and the first shared event",
+  "intro": "A multiple is made by multiplying a whole number by a positive whole number. The least common multiple is the smallest positive number in both lists.",
+  "html": "<h2>Least common multiple and the first shared event</h2><p>A multiple is made by multiplying a whole number by a positive whole number. The least common multiple is the smallest positive number in both lists.</p><p>When two lights flash together now, the next shared flash occurs after a positive common multiple of their intervals. Time zero is the starting event, not the answer to when they next meet.</p><h3>A method to try</h3><ol><li>List positive multiples of each interval.</li><li>Find the first number in both lists.</li><li>Check that dividing by either interval gives a whole number and no smaller positive shared time works.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>Lights flash every 4 seconds and every 6 seconds. When do they next flash together?</strong><p>Multiples of 4: 4,8,12. Multiples of 6: 6,12.</p><p class=\"sample-equation\">12 seconds</p><p>Check: 12 ÷ 4 = 3 and 12 ÷ 6 = 2.</p></div><h3>A mistake to watch for</h3><p>Adding 4 and 6 gives 10, which is not a multiple of either interval. Zero is not the next event.</p><h3>Check and explain</h3><p>Use seconds for elapsed time, or simply the number when the task asks for an LCM.</p>",
+  "examples": [
+    [
+      "Lights flash every 4 seconds and every 6 seconds. When do they next flash together?",
+      "Multiples of 4: 4,8,12. Multiples of 6: 6,12.",
+      "12 seconds",
+      "12 ÷ 4 = 3 and 12 ÷ 6 = 2."
+    ]
+  ]
+}

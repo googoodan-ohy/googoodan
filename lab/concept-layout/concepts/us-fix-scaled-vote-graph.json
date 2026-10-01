@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-scaled-vote-graph",
+  "title": "Read a graph whose blocks represent two votes",
+  "intro": "A graph key tells what one drawn block represents. In this graph each block represents two votes, so the number of blocks is not the number of votes.",
+  "html": "<h2>Read a graph whose blocks represent two votes</h2><p>A graph key tells what one drawn block represents. In this graph each block represents two votes, so the number of blocks is not the number of votes.</p><p>Use equal groups: two blocks mean 2 + 2 = 4 votes. Compare categories after applying the same scale to each.</p><h3>A method to try</h3><ol><li>Read the key before counting.</li><li>Count the blocks for the requested category and multiply by 2.</li><li>For a total, add the votes; for a difference, subtract the smaller vote count from the larger.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>A has 2 blocks and B has 5 blocks. Each block represents 2 votes.</strong><p>A has 2 × 2 = 4 votes. B has 5 × 2 = 10 votes.</p><p class=\"sample-equation\">B has 6 more votes than A.</p><p>Check: 10 − 4 = 6, matching 3 extra blocks × 2 votes.</p></div><h3>A mistake to watch for</h3><p>Counting two blocks as two votes ignores the key.</p><h3>Check and explain</h3><p>Write votes in the answer and explain how the key changes the count.</p>",
+  "examples": [
+    [
+      "A has 2 blocks and B has 5 blocks. Each block represents 2 votes.",
+      "A has 2 × 2 = 4 votes. B has 5 × 2 = 10 votes.",
+      "B has 6 more votes than A.",
+      "10 − 4 = 6, matching 3 extra blocks × 2 votes."
+    ]
+  ]
+}

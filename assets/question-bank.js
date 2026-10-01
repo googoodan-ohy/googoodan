@@ -906,20 +906,20 @@ function generate(type,seed){
   if(selected.length!==6)throw Error('Insufficient original rounding questions');return selected;
  }
  if(type.bank==='grade-extension'&&type.id==='coordinate-ordered-pairs'){
-  if(type.sourceGrade!==5||type.sourceUnit!=='coordinate'||type.count!==4)throw Error('Unsupported coordinate source');
+  if(type.sourceGrade!==5||type.sourceUnit!=='coordinate'||![4,8].includes(type.count))throw Error('Unsupported coordinate source');
   const selected=[],seen=new Set();
-  for(let pass=0;pass<32&&selected.length<4;pass++){
+  for(let pass=0;pass<32&&selected.length<type.count;pass++){
    const sourceSeed=(seed+Math.imul(pass,0x9e3779b9))>>>0;
    root.GradeMath.generate(5,'coordinate',sourceSeed)[0].questions.forEach((q,sourceIndex)=>{
     const m=q.visual.match(/<circle cx="(\d+)" cy="(\d+)"/);
     if(!m)throw Error('Original coordinate diagram changed');
     const x=(Number(m[1])-35)/12,y=(75-Number(m[2]))/12;
     if(!Number.isInteger(x)||!Number.isInteger(y)||x<1||x>5||y<1||y>5||q.answer!=='('+x+', '+y+')')throw Error('Original coordinate mismatch');
-    if(selected.length===4||seen.has(q.answer))return;
+    if(selected.length===type.count||seen.has(q.answer))return;
     seen.add(q.answer);selected.push({...q,x,y,sourceSeed,sourceGroup:0,sourceIndex});
    });
   }
-  if(selected.length!==4)throw Error('Insufficient original coordinate questions');return selected;
+  if(selected.length!==type.count)throw Error('Insufficient original coordinate questions');return selected;
  }
  if(type.bank==='grade-extension'&&type.id==='volume-unit-cube-layers'){
   if(type.sourceGrade!==5||type.sourceUnit!=='volume-cubes'||type.count!==4)throw Error('Unsupported volume layer source');

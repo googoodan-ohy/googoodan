@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-missing-operations",
+  "title": "Find a missing number using inverse operations",
+  "intro": "A blank may stand for an input or for the result. First identify its position; the same operation cannot solve every position.",
+  "html": "<h2>Find a missing number using inverse operations</h2><p>A blank may stand for an input or for the result. First identify its position; the same operation cannot solve every position.</p><p>Addition and subtraction undo each other. Multiplication and division undo each other when the divisor is nonzero. Substitute the proposed number into the original equation after solving.</p><h3>A method to try</h3><ol><li>Read the entire equation and identify what the blank represents.</li><li>Choose the inverse operation for an unknown input, or calculate directly for an unknown result.</li><li>Substitute the number and verify that both sides have equal value.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>□ + 4.352 = 10.027</strong><p>Subtract the known addend from the total.</p><p class=\"sample-equation\">□ = 5.675</p><p>Check: 5.675 + 4.352 = 10.027.</p></div><div class=\"model\"><strong>17 ÷ □ = 42.5</strong><p>The unknown divisor times 42.5 must be 17. Calculate 17 ÷ 42.5.</p><p class=\"sample-equation\">□ = 0.4</p><p>Check: 42.5 × 0.4 = 17, so 17 ÷ 0.4 = 42.5.</p></div><h3>A mistake to watch for</h3><p>For a missing divisor, do not multiply dividend by quotient. For a missing subtrahend, subtract the difference from the starting number.</p><h3>Check and explain</h3><p>Name what each number represents before choosing the inverse operation.</p>",
+  "examples": [
+    [
+      "□ + 4.352 = 10.027",
+      "Subtract the known addend from the total.",
+      "□ = 5.675",
+      "5.675 + 4.352 = 10.027."
+    ],
+    [
+      "17 ÷ □ = 42.5",
+      "The unknown divisor times 42.5 must be 17. Calculate 17 ÷ 42.5.",
+      "□ = 0.4",
+      "42.5 × 0.4 = 17, so 17 ÷ 0.4 = 42.5."
+    ]
+  ]
+}

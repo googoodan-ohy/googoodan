@@ -1,0 +1,41 @@
+
+.sheet.training-book{padding:9mm 12mm!important;box-sizing:border-box;color:#243e38;--problem-number-size:25px;display:flex!important;flex-direction:column;gap:0}
+.training-book .sheet-top{border:0!important;padding:0!important;flex:none}.training-book .sheet-brand-row{margin:0 0 12px}.training-book .sheet-brand{display:flex;align-items:center;gap:6px;font-size:19px}.training-book .sheet-brand span{color:#cd744b;margin-left:-6px}.training-book .sheet-mode{font-size:11px;background:#fff7dc;border:0;border-radius:12px;padding:5px 10px}
+.book-hero{position:relative;background:#eff7ee;border:1.5px solid #94bba4;border-radius:15px;padding:13px 85px 14px 17px;min-height:88px}.book-hero small{font:700 9px/1.2 Arial,sans-serif;letter-spacing:1.5px;color:#597859}.book-hero h2{font:750 23px/1.15 "Segoe UI",Arial,sans-serif!important;margin:7px 0 0!important;color:#235f51!important}.book-hero .explorer{position:absolute;right:8px;top:5px;width:75px;height:75px}
+.training-book .sheet-meta{margin:13px 0!important;font-size:12px;flex:none}.training-book .sheet-instruction{margin:0 0 10px!important;padding:6px 0 9px;border-bottom:1px solid #c3d7c8;font-size:12px;line-height:1.35;flex:none}
+.sheet.training-book .questions{display:grid!important;grid-template-columns:repeat(var(--book-columns),minmax(0,1fr))!important;grid-template-rows:repeat(var(--book-rows),minmax(0,1fr))!important;gap:10px!important;flex:1;min-height:0;height:auto!important;align-content:stretch}
+.sheet.training-book .question{position:relative;border:1px solid #ceded5!important;border-radius:11px;background:linear-gradient(#f3f8ef 0 25px,white 25px);padding:33px 13px 10px!important;min-height:0!important;margin:0!important;display:block!important;break-inside:avoid}.training-book .number{position:absolute;top:5px;left:11px;font:650 11px/1.3 "Segoe UI",sans-serif;color:#54765e}
+.training-book .sum,.training-book .equation,.training-book .worked,.training-book .answer{font-family:Cambria,Georgia,serif!important;font-variant-numeric:tabular-nums lining-nums;letter-spacing:.5px}.training-book .sum{width:110px;max-width:100%;margin:0 auto!important;line-height:1.18}.training-book .regroup-space{height:10px!important;min-height:10px!important}.training-book .equation{font-size:24px!important;line-height:1.3;gap:6px!important;white-space:normal}.training-book .answer-space{min-width:65px;min-height:36px;height:36px;margin-top:6px}.training-book .sum .answer-space{width:100%;border-radius:0;border:1px solid #64877b}.training-book .worked{font-size:25px!important;line-height:1.2;min-width:0;width:130px;max-width:100%;margin:auto}.training-book .working{min-height:55px}.training-book .fraction-answer{height:55px}.training-book .working-space{display:block;height:40px!important;min-height:40px!important;border:0!important}.training-book .answer{color:#c01823!important;font-weight:700}.training-book .book-tip{font:11px/1.35 "Segoe UI",Arial,sans-serif;margin:12px 0 10px;padding:9px 13px;border-left:3px solid #e6bd60;border-radius:0 8px 8px 0;background:#fff8e5;flex:none}.training-book .sheet-foot{position:static!important;margin:0!important;padding-top:9px!important;font-size:10px;border-top:1px solid #b9d0bf;flex:none}.training-book .sheet-foot strong{font-size:11px}.training-book .long-division{display:block;margin:auto;max-width:100%}.training-book .division-note{font-size:12px}
+@media print{.training-book,.training-book *{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Inline answers free up room without removing the working area. */
+.training-book .horizontal-question,.training-book .fraction-question{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.training-book .horizontal-question .equation,.training-book .fraction-question .equation{display:inline-flex;align-items:center;margin:0!important;flex:none}
+.training-book .horizontal-question .answer-space{margin:0!important;width:54px;min-width:54px}
+.training-book .fraction-question .fraction-answer{margin:0!important;min-width:65px;width:78px;height:53px;display:inline-flex;align-items:center;justify-content:center}
+.training-book .horizontal-question .working-space,.training-book .fraction-question .working-space{flex-basis:100%;height:20px!important;min-height:20px!important}
+.training-book .horizontal-question .equation{font-size:22px!important}
+
+.training-book.early-practice{--problem-number-size:29px}.training-book.early-practice .equation,.training-book.early-practice .worked{font-size:29px!important}.training-book.early-practice .answer-space{min-height:42px;height:42px;min-width:66px}
+
+.training-book:not(.early-practice){--problem-number-size:23px}
+.training-book .fraction-question{gap:5px;flex-wrap:nowrap}
+.training-book .fraction-question .equation{font-size:21px!important;gap:4px!important}
+.training-book .fraction-question .fraction-answer{min-width:57px;width:66px;flex:none}
+.training-book .fraction-question .working-space{display:none!important}
+.training-book .fraction-question .fraction,.training-book .fraction-question .mixed-number{font-size:inherit}
+.training-book:not(.early-practice) .horizontal-question .working-space{display:none!important}
+
+.sheet.training-book.early-practice .question{padding-top:27px!important}.training-book .horizontal-question .working-space{display:none!important}
+
+/* Answer ink is identical on screen and in print; concealed work stays hidden. */
+.sheet.training-book[data-mode="answers"] .answer,
+.sheet.training-book[data-mode="answers"] .working,
+.sheet.training-book[data-mode="answers"] .work-total{color:#c01823!important}
+.sheet.training-book[data-mode="answers"] svg .working,
+.sheet.training-book[data-mode="answers"] svg .working text{fill:#c01823!important}
+.sheet.training-book[data-mode="answers"] svg .working path{stroke:#c01823!important}
+
+.training-book .multiplication-answer{border:1px solid #64877b;height:42px;min-height:42px;margin-top:6px;display:flex;align-items:center;justify-content:center;color:#c01823}.training-book .multiplication-answer .answer{font-size:inherit}
+
+.training-book[data-mode="answers"] .fraction-answer{width:auto!important;min-width:66px;flex:1!important}.training-book[data-mode="answers"] .fraction-answer .answer{display:flex;align-items:center;justify-content:center;gap:4px;font-size:20px;white-space:nowrap}.training-book .equivalent-sign{font-family:Cambria,serif}

@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-subtraction-regroup",
+  "title": "Subtract within 100 with or without regrouping",
+  "intro": "Subtract ones from ones and tens from tens. When there are not enough ones, exchange one ten for ten ones.",
+  "html": "<h2>Subtract within 100 with or without regrouping</h2><p>Subtract ones from ones and tens from tens. When there are not enough ones, exchange one ten for ten ones.</p><p>The starting amount stays the same: 85 is 8 tens and 5 ones, or 7 tens and 15 ones. Some questions need this exchange and others do not.</p><h3>A method to try</h3><ol><li>Compare the ones digits.</li><li>Exchange one ten if the starting ones are too few.</li><li>Subtract the ones and the remaining tens.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>85 − 46</strong><p>Exchange 85 for 7 tens and 15 ones. 15 − 6 = 9 ones and 7 − 4 = 3 tens.</p><p class=\"sample-equation\">85 − 46 = 39</p><p>Check: 39 + 46 = 85.</p></div><h3>A mistake to watch for</h3><p>After exchanging a ten, reduce the tens count by one. Do not subtract 5 from 6 simply because 6 is larger.</p><h3>Check and explain</h3><p>Add the difference and the subtracted amount to recover the starting number.</p>",
+  "examples": [
+    [
+      "85 − 46",
+      "Exchange 85 for 7 tens and 15 ones. 15 − 6 = 9 ones and 7 − 4 = 3 tens.",
+      "85 − 46 = 39",
+      "39 + 46 = 85."
+    ]
+  ]
+}

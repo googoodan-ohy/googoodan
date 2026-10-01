@@ -1,0 +1,3962 @@
+[
+  {
+    "title": "Addition Within 20 Worksheets",
+    "summary": "Count on or make ten to add two numbers.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/add-small.html",
+    "conceptId": "e00001",
+    "worksheetId": "w00001-1",
+    "route": "concept/e00001/w00001-1"
+  },
+  {
+    "title": "Picture Addition Worksheets",
+    "summary": "Count two groups of pictures and write the matching addition equation.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/picture-addition.html",
+    "conceptId": "e00001",
+    "worksheetId": "w00001-2",
+    "route": "concept/e00001/w00001-2"
+  },
+  {
+    "title": "2-Digit Addition Without Regrouping Worksheets",
+    "summary": "Add tens to tens and ones to ones without exchanging ten ones.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/add-two.html",
+    "conceptId": "e00002",
+    "worksheetId": "w00002-1",
+    "route": "concept/e00002/w00002-1"
+  },
+  {
+    "title": "Single Digit Multiplication Worksheets",
+    "summary": "Use equal groups and arrays to practise multiplication facts with factors from 2 to 9.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/multiply-one.html",
+    "conceptId": "e00003",
+    "worksheetId": "w00003-1",
+    "route": "concept/e00003/w00003-1"
+  },
+  {
+    "title": "Adding Fractions With Like Denominators Worksheets",
+    "summary": "Add equal-sized parts; simplify sums that may be greater than one.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/fraction-add-same.html",
+    "conceptId": "e00004",
+    "worksheetId": "w00004-1",
+    "route": "concept/e00004/w00004-1"
+  },
+  {
+    "title": "Adding Decimals to Hundredths Worksheets",
+    "summary": "Align decimal points and exchange ten hundredths for one tenth.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/decimal-add-2.html",
+    "conceptId": "e00005",
+    "worksheetId": "w00005-1",
+    "route": "concept/e00005/w00005-1"
+  },
+  {
+    "title": "Quadrilateral Families Worksheets",
+    "summary": "Explain rectangle and square families, then draw a different quadrilateral.",
+    "grade": 3,
+    "topic": "Shapes",
+    "url": "/en/quadrilateral-rectangle-square-families.html",
+    "conceptId": "e00006",
+    "worksheetId": "w00006-1",
+    "route": "concept/e00006/w00006-1"
+  },
+  {
+    "title": "Telling Time to Five Minutes Worksheets",
+    "summary": "Count minutes in fives and check the hour hand.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/telling-time-five-minutes.html",
+    "conceptId": "e00007",
+    "worksheetId": "w00007-1",
+    "route": "concept/e00007/w00007-1"
+  },
+  {
+    "title": "Count Forward by 5, 10, and 100 Worksheets",
+    "summary": "Complete two missing numbers in each equal-jump sequence.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/skip-counting-by-5-10-100.html",
+    "conceptId": "e00008",
+    "worksheetId": "w00008-1",
+    "route": "concept/e00008/w00008-1"
+  },
+  {
+    "title": "Reading Vote Graphs Worksheets",
+    "summary": "Count votes, find totals, and compare groups in unit-block graphs.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/reading-vote-graphs.html",
+    "conceptId": "e00009",
+    "worksheetId": "w00009-1",
+    "route": "concept/e00009/w00009-1"
+  },
+  {
+    "title": "Subtraction Within 10 Worksheets",
+    "summary": "Take away or count back, including subtracting zero and subtracting a number from itself.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/subtract-small.html",
+    "conceptId": "e00010",
+    "worksheetId": "w00010-1",
+    "route": "concept/e00010/w00010-1"
+  },
+  {
+    "title": "2-Digit Subtraction Without Regrouping Worksheets",
+    "summary": "Keep the place values aligned and subtract without exchanging a ten.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/subtract-two.html",
+    "conceptId": "e00011",
+    "worksheetId": "w00011-1",
+    "route": "concept/e00011/w00011-1"
+  },
+  {
+    "title": "2-Digit Subtraction With Regrouping Worksheets",
+    "summary": "Exchange one ten for ten ones and subtract within 100.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/subtract-borrow.html",
+    "conceptId": "e00012",
+    "worksheetId": "w00012-1",
+    "route": "concept/e00012/w00012-1"
+  },
+  {
+    "title": "Missing Addend Worksheets Within 20",
+    "summary": "Find the missing part of an addition equation; use counting on or subtraction.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/missing.html",
+    "conceptId": "e00013",
+    "worksheetId": "w00013-1",
+    "route": "concept/e00013/w00013-1"
+  },
+  {
+    "title": "2-Digit Addition With Regrouping Worksheets",
+    "summary": "Exchange ten ones for a ten and keep the total within 100.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/add-carry.html",
+    "conceptId": "e00014",
+    "worksheetId": "w00014-1",
+    "route": "concept/e00014/w00014-1"
+  },
+  {
+    "title": "Subtracting Fractions With Like Denominators Worksheets",
+    "summary": "Take away equal-sized parts of the same whole and simplify the difference.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/fraction-sub-same.html",
+    "conceptId": "e00015",
+    "worksheetId": "w00015-1",
+    "route": "concept/e00015/w00015-1"
+  },
+  {
+    "title": "Division Without Remainders Worksheets",
+    "summary": "Share equally or make equal groups, then check each quotient with multiplication.",
+    "grade": 3,
+    "topic": "Division",
+    "url": "/en/divide.html",
+    "conceptId": "e00016",
+    "worksheetId": "w00016-1",
+    "route": "concept/e00016/w00016-1"
+  },
+  {
+    "title": "Addition and Subtraction Word Problems Within 20",
+    "summary": "Read joining and taking-away stories, choose an equation, and answer in context.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-within20-word-problems.html",
+    "conceptId": "e00017",
+    "worksheetId": "w00017-1",
+    "route": "concept/e00017/w00017-1"
+  },
+  {
+    "title": "3rd Grade Multiplication and Division Word Problems",
+    "summary": "Choose mixed facts, zero-and-one groups, or two- and three-digit group amounts. Explain what the answer counts.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-facts-word-problems.html",
+    "conceptId": "e00018",
+    "worksheetId": "w00018-1",
+    "route": "concept/e00018/w00018-1"
+  },
+  {
+    "title": "Find the Starting Amount Word Problems",
+    "summary": "Work backward from a final total to find how many there were before.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/find-the-unknown-word-problems.html",
+    "conceptId": "e00019",
+    "worksheetId": "w00019-1",
+    "route": "concept/e00019/w00019-1"
+  },
+  {
+    "title": "More and Fewer Comparison Word Problems",
+    "summary": "Identify the known amount and compare two people’s collections.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/compare-word-problems-more-fewer.html",
+    "conceptId": "e00020",
+    "worksheetId": "w00020-1",
+    "route": "concept/e00020/w00020-1"
+  },
+  {
+    "title": "Word Problems With Extra Information",
+    "summary": "Choose the useful quantities instead of calculating with every number.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/word-problems-with-extra-information.html",
+    "conceptId": "e00021",
+    "worksheetId": "w00021-1",
+    "route": "concept/e00021/w00021-1"
+  },
+  {
+    "title": "Find the Missing Change Word Problems",
+    "summary": "Use the starting amount and what remains to find how many cents were spent.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/change-unknown-word-problems.html",
+    "conceptId": "e00022",
+    "worksheetId": "w00022-1",
+    "route": "concept/e00022/w00022-1"
+  },
+  {
+    "title": "Addition & Subtraction Word Problems Within 100",
+    "summary": "Choose an operation for a joining or taking-away story, then solve within 100.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-2-within100-word-problems.html",
+    "conceptId": "e00023",
+    "worksheetId": "w00023-1",
+    "route": "concept/e00023/w00023-1"
+  },
+  {
+    "title": "Addition & Subtraction Within 1,000 Worksheets",
+    "summary": "Use hundreds, tens, and ones to add or subtract, with room to show your strategy.",
+    "grade": 3,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-horizontal-practice.html",
+    "conceptId": "e00024",
+    "worksheetId": "w00024-1",
+    "route": "concept/e00024/w00024-1"
+  },
+  {
+    "title": "Addition and Subtraction Word Problems Within 1,000",
+    "summary": "Explain a joining or taking-away situation and check the calculation with place value.",
+    "grade": 3,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-word-problems.html",
+    "conceptId": "e00025",
+    "worksheetId": "w00025-1",
+    "route": "concept/e00025/w00025-1"
+  },
+  {
+    "title": "Choose an Equation Word Problems",
+    "summary": "Decide whether addition or subtraction finds the missing quantity in the story.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/choose-operation-word-problems.html",
+    "conceptId": "e00026",
+    "worksheetId": "w00026-1",
+    "route": "concept/e00026/w00026-1"
+  },
+  {
+    "title": "Bar Model Word Problems",
+    "summary": "Use a whole-and-parts diagram to find the total, the starting amount, or the amount used.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/bar-model-word-problems.html",
+    "conceptId": "e00027",
+    "worksheetId": "w00027-1",
+    "route": "concept/e00027/w00027-1"
+  },
+  {
+    "title": "Same Numbers, Different Questions Word Problems",
+    "summary": "Compare two stories with the same numbers: find the new total in one and the starting amount in the other.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/same-numbers-different-questions-word-problems.html",
+    "conceptId": "e00028",
+    "worksheetId": "w00028-1",
+    "route": "concept/e00028/w00028-1"
+  },
+  {
+    "title": "Explain Your Thinking Word Problems",
+    "summary": "Explain why the equation fits a taking-away story.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/explain-your-thinking-word-problems.html",
+    "conceptId": "e00029",
+    "worksheetId": "w00029-1",
+    "route": "concept/e00029/w00029-1"
+  },
+  {
+    "title": "Error Analysis Word Problems: Find and Fix the Mistake",
+    "summary": "Correct a friend who chooses addition just because more items arrive.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/error-analysis-word-problems.html",
+    "conceptId": "e00030",
+    "worksheetId": "w00030-1",
+    "route": "concept/e00030/w00030-1"
+  },
+  {
+    "title": "Write Your Own Question Word Problems",
+    "summary": "Write a question about the total, then answer it with an addition equation using whole dollars.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/write-your-own-question-word-problems.html",
+    "conceptId": "e00031",
+    "worksheetId": "w00031-1",
+    "route": "concept/e00031/w00031-1"
+  },
+  {
+    "title": "Multi-Digit Addition and Subtraction Word Problems",
+    "summary": "Add and subtract cable lengths within 1,000,000 and label the answer in feet.",
+    "grade": 4,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-largeadd-word-problems.html",
+    "conceptId": "e00032",
+    "worksheetId": "w00032-1",
+    "route": "concept/e00032/w00032-1"
+  },
+  {
+    "title": "2-Digit Multiplication Word Problems: Rectangle Area",
+    "summary": "Multiply two two-digit side lengths to find a rectangular field’s area in square feet.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-mul2-word-problems.html",
+    "conceptId": "e00033",
+    "worksheetId": "w00033-1",
+    "route": "concept/e00033/w00033-1"
+  },
+  {
+    "title": "4-Digit Division Word Problems With and Without Remainders",
+    "summary": "Find complete groups or cable pieces, and record what is left separately from the quotient.",
+    "grade": 4,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-div1-word-problems.html",
+    "conceptId": "e00034",
+    "worksheetId": "w00034-1",
+    "route": "concept/e00034/w00034-1"
+  },
+  {
+    "title": "4-Digit by 1-Digit Multiplication Word Problems",
+    "summary": "Use place-value partial products to find rectangle area from a four-digit length and a one-digit width.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-mul4-word-problems.html",
+    "conceptId": "e00035",
+    "worksheetId": "w00035-1",
+    "route": "concept/e00035/w00035-1"
+  },
+  {
+    "title": "Adding and Subtracting Fractions Word Problems With Like Denominators",
+    "summary": "Combine or remove fractional cable lengths measured using the same one-foot whole.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-likefractions-word-problems.html",
+    "conceptId": "e00036",
+    "worksheetId": "w00036-1",
+    "route": "concept/e00036/w00036-1"
+  },
+  {
+    "title": "Adding and Subtracting Decimals Word Problems",
+    "summary": "Combine cable lengths or find what remains, using place value through hundredths.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-decimals-word-problems.html",
+    "conceptId": "e00037",
+    "worksheetId": "w00037-1",
+    "route": "concept/e00037/w00037-1"
+  },
+  {
+    "title": "Subtracting Decimals to Hundredths Worksheets",
+    "summary": "Align decimal points and rename tenths and hundredths before subtracting.",
+    "grade": 5,
+    "topic": "Subtraction",
+    "url": "/en/decimal-sub-2.html",
+    "conceptId": "e00038",
+    "worksheetId": "w00038-1",
+    "route": "concept/e00038/w00038-1"
+  },
+  {
+    "title": "Multiplying Decimals Worksheets – Tenths by Tenths",
+    "summary": "Use tenths and hundredths to explain the product, then show your work.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/decimal-mul-1.html",
+    "conceptId": "e00039",
+    "worksheetId": "w00039-1",
+    "route": "concept/e00039/w00039-1"
+  },
+  {
+    "title": "Dividing Decimals Worksheets – Tenths by Tenths",
+    "summary": "Scale both numbers together, divide exactly, and check with multiplication.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/decimal-div-1.html",
+    "conceptId": "e00040",
+    "worksheetId": "w00040-1",
+    "route": "concept/e00040/w00040-1"
+  },
+  {
+    "title": "Multiplying Fractions by Whole Numbers Worksheets",
+    "summary": "Count repeated groups of equal fraction parts and simplify the product.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/fraction-mul-proper-whole.html",
+    "conceptId": "e00041",
+    "worksheetId": "w00041-1",
+    "route": "concept/e00041/w00041-1"
+  },
+  {
+    "title": "Fraction Multiplication Word Problems: Rectangle Area",
+    "summary": "Multiply a fractional side length by a whole-number side to find area in square feet.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-fractionwhole-word-problems.html",
+    "conceptId": "e00042",
+    "worksheetId": "w00042-1",
+    "route": "concept/e00042/w00042-1"
+  },
+  {
+    "title": "Multiplying Two Fractions Word Problems: Area",
+    "summary": "Find rectangle area when both side lengths are written as fractions; include lengths greater than one foot.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-fractionmul-word-problems.html",
+    "conceptId": "e00043",
+    "worksheetId": "w00043-1",
+    "route": "concept/e00043/w00043-1"
+  },
+  {
+    "title": "Adding and Subtracting Fractions Word Problems With Unlike Denominators",
+    "summary": "Use equivalent fractions to combine or remove cable lengths measured against the same one-foot whole.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-unlike-word-problems.html",
+    "conceptId": "e00044",
+    "worksheetId": "w00044-1",
+    "route": "concept/e00044/w00044-1"
+  },
+  {
+    "title": "Dividing Whole Numbers by Unit Fractions Word Problems",
+    "summary": "Count fractional-foot cable pieces in a whole-number length, using equal groups and multiplication to check.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-unitdivide-word-problems.html",
+    "conceptId": "e00045",
+    "worksheetId": "w00045-1",
+    "route": "concept/e00045/w00045-1"
+  },
+  {
+    "title": "4-Digit by 2-Digit Division Word Problems",
+    "summary": "Use estimates and partial quotients to find complete groups with two-digit divisors, then interpret any remainder. Choose a smaller exact-group activity before four-digit totals.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-div-word-problems.html",
+    "conceptId": "e00046",
+    "worksheetId": "w00046-1",
+    "route": "concept/e00046/w00046-1"
+  },
+  {
+    "title": "3-Digit by 2-Digit Multiplication Word Problems",
+    "summary": "Find rectangle area using a three-digit length and two-digit width; connect partial products to the written multiplication method.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-mul-word-problems.html",
+    "conceptId": "e00047",
+    "worksheetId": "w00047-1",
+    "route": "concept/e00047/w00047-1"
+  },
+  {
+    "title": "Adding Four 2-Digit Numbers Word Problems",
+    "summary": "Combine four boxes of counters. Pair friendly sums or add tens and ones, keeping every box in the total.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-2-fouradd-word-problems.html",
+    "conceptId": "e00048",
+    "worksheetId": "w00048-1",
+    "route": "concept/e00048/w00048-1"
+  },
+  {
+    "title": "Multiplying by Multiples of 10 Word Problems",
+    "summary": "Count equal boxes of 10–90 counters. Use a known multiplication fact to find the number of tens, then express the total in ones.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-tensmul-word-problems.html",
+    "conceptId": "e00049",
+    "worksheetId": "w00049-1",
+    "route": "concept/e00049/w00049-1"
+  },
+  {
+    "title": "Adding and Subtracting Tens Word Problems",
+    "summary": "Combine or remove whole tens of counters. Explain the place value, including stories where zero counters change or remain.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-tens-word-problems.html",
+    "conceptId": "e00050",
+    "worksheetId": "w00050-1",
+    "route": "concept/e00050/w00050-1"
+  },
+  {
+    "title": "Order of Operations Word Problems with Parentheses",
+    "summary": "Add two colors of counters in each box, then multiply by the number of boxes. Explain what the parentheses group together.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-expressions-word-problems.html",
+    "conceptId": "e00051",
+    "worksheetId": "w00051-1",
+    "route": "concept/e00051/w00051-1"
+  },
+  {
+    "title": "Factors and Factor Pairs Word Problems",
+    "summary": "Arrange counters into equal rows with none left. Find every possible count per row and check that the factor list is complete.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-factors-word-problems.html",
+    "conceptId": "e00052",
+    "worksheetId": "w00052-1",
+    "route": "concept/e00052/w00052-1"
+  },
+  {
+    "title": "2-Digit Plus 1-Digit Addition Word Problems",
+    "summary": "Add 0–9 more counters to a two-digit collection. Count on, add the ones, or make the next ten; sums stay below 100.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-add100-word-problems.html",
+    "conceptId": "e00053",
+    "worksheetId": "w00053-1",
+    "route": "concept/e00053/w00053-1"
+  },
+  {
+    "title": "Two-Step Addition and Subtraction Word Problems",
+    "summary": "Find a new total, then subtract what is given away. Follow both changes with small numbers.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/grade-2-two-step-word-problems-worksheet.html",
+    "conceptId": "e00054",
+    "worksheetId": "w00054-1",
+    "route": "concept/e00054/w00054-1"
+  },
+  {
+    "title": "Two-Step Multiplication and Subtraction Word Problems",
+    "summary": "Find the number of pencils in equal boxes, then subtract the pencils used. Explain both steps.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/grade-skills/grade-3-two-step-word-problems-worksheet.html",
+    "conceptId": "e00055",
+    "worksheetId": "w00055-1",
+    "route": "concept/e00055/w00055-1"
+  },
+  {
+    "title": "Length Word Problems in Centimeters",
+    "summary": "Join two ribbon lengths, then cut some off. Model both steps and label the remaining length in centimeters.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/print/grade-2-length-word-problems-worksheet.html",
+    "conceptId": "e00056",
+    "worksheetId": "w00056-1",
+    "route": "concept/e00056/w00056-1"
+  },
+  {
+    "title": "Liters and Grams Word Problems",
+    "summary": "Find the total in equal containers or the amount left after use. Keep liters and grams in separate problems.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/print/grade-skills/grade-4-measurement-word-problems-worksheet.html",
+    "conceptId": "e00057",
+    "worksheetId": "w00057-1",
+    "route": "concept/e00057/w00057-1"
+  },
+  {
+    "title": "Division Word Problems: Round Up the Remainder",
+    "summary": "Find the fewest vans that seat every student. Compare exact division with a remainder that needs one more van.",
+    "grade": 4,
+    "topic": "Division",
+    "url": "/en/print/grade-skills/grade-4-multi-step-word-problems-worksheet.html",
+    "conceptId": "e00058",
+    "worksheetId": "w00058-1",
+    "route": "concept/e00058/w00058-1"
+  },
+  {
+    "title": "Fraction Multiplication Word Problems: Recipes",
+    "summary": "Make a fraction of a recipe. Scale amounts below and above one cup while keeping the cup unit.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/grade-skills/grade-5-fraction-and-mixed-number-word-problems-worksheet.html",
+    "conceptId": "e00059",
+    "worksheetId": "w00059-1",
+    "route": "concept/e00059/w00059-1"
+  },
+  {
+    "title": "Missing Part Word Problems — Within 100 or 1,000",
+    "summary": "Find a missing part or an amount needed to reach a target. Choose practice within 100 or extend to 1,000.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/missing-part-word-problems-within-100.html",
+    "conceptId": "e00060",
+    "worksheetId": "w00060-1",
+    "route": "concept/e00060/w00060-1"
+  },
+  {
+    "title": "Missing Fraction Part Word Problems",
+    "summary": "Find a missing fraction amount, including mixed numbers, and check by adding the parts.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/missing-fraction-part-word-problems.html",
+    "conceptId": "e00061",
+    "worksheetId": "w00061-1",
+    "route": "concept/e00061/w00061-1"
+  },
+  {
+    "title": "Missing Fraction Part Word Problems With Unlike Denominators",
+    "summary": "Use a common denominator to find the missing part, then add the parts to check the total.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/missing-fraction-part-unlike-denominators-word-problems.html",
+    "conceptId": "e00062",
+    "worksheetId": "w00062-1",
+    "route": "concept/e00062/w00062-1"
+  },
+  {
+    "title": "Missing Decimal Part Word Problems",
+    "summary": "Find a missing decimal amount through hundredths. Align place values and check by adding the parts.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/missing-decimal-part-word-problems.html",
+    "conceptId": "e00063",
+    "worksheetId": "w00063-1",
+    "route": "concept/e00063/w00063-1"
+  },
+  {
+    "title": "Dividing Decimals by Whole Numbers Word Problems",
+    "summary": "Measure how many full and partial groups fit in a decimal amount. Use exact decimal quotients and a multiplication check.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/dividing-decimals-by-whole-numbers-word-problems.html",
+    "conceptId": "e00064",
+    "worksheetId": "w00064-1",
+    "route": "concept/e00064/w00064-1"
+  },
+  {
+    "title": "Dividing by Decimals Word Problems",
+    "summary": "Compare decimal group sizes below and above one. Rename both quantities to divide and include partial groups.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/dividing-by-decimals-word-problems.html",
+    "conceptId": "e00065",
+    "worksheetId": "w00065-1",
+    "route": "concept/e00065/w00065-1"
+  },
+  {
+    "title": "Equal Groups Division Word Problems",
+    "summary": "Find group count or group size with division facts, or share larger totals to find two-digit amounts.",
+    "grade": 3,
+    "topic": "Division",
+    "url": "/en/equal-groups-division-word-problems.html",
+    "conceptId": "e00066",
+    "worksheetId": "w00066-1",
+    "route": "concept/e00066/w00066-1"
+  },
+  {
+    "title": "Fraction Scaling Word Problems: Making Amounts Larger",
+    "summary": "Multiply by a fraction greater than one. Separate the original amount, extra amount, and new total.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/fraction-scaling-up-word-problems.html",
+    "conceptId": "e00067",
+    "worksheetId": "w00067-1",
+    "route": "concept/e00067/w00067-1"
+  },
+  {
+    "title": "Difference Word Problems Within 20",
+    "summary": "Match two rows of counters to find how much less one amount is than another.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/difference-word-problems-within-20.html",
+    "conceptId": "e00068",
+    "worksheetId": "w00068-1",
+    "route": "concept/e00068/w00068-1"
+  },
+  {
+    "title": "How Many More? Word Problems Within 20",
+    "summary": "Find the amount to add to reach a target. Fill the empty spaces and check the missing part.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/how-many-more-word-problems-within-20.html",
+    "conceptId": "e00069",
+    "worksheetId": "w00069-1",
+    "route": "concept/e00069/w00069-1"
+  },
+  {
+    "title": "Difference Word Problems — Within 100 or 1,000",
+    "summary": "Compare aligned bars and find the difference. Choose the default range within 100 or compare three-digit amounts within 1,000.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/difference-word-problems-within-100.html",
+    "conceptId": "e00070",
+    "worksheetId": "w00070-1",
+    "route": "concept/e00070/w00070-1"
+  },
+  {
+    "title": "Multiplicative Comparison Word Problems",
+    "summary": "Compare one- or two-digit reference amounts using equal bar units and whole-number multipliers.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/multiplicative-comparison-word-problems.html",
+    "conceptId": "e00071",
+    "worksheetId": "w00071-1",
+    "route": "concept/e00071/w00071-1"
+  },
+  {
+    "title": "Decimal Scaling Word Problems",
+    "summary": "Compare ribbon lengths using decimal multipliers below and above one. Explain the scale and keep exact answers.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/decimal-scaling-word-problems.html",
+    "conceptId": "e00072",
+    "worksheetId": "w00072-1",
+    "route": "concept/e00072/w00072-1"
+  },
+  {
+    "title": "Comparing Fractions With the Same Denominator Worksheets",
+    "summary": "Compare equal-sized parts using >, <, or = and explain your choice.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/comparing-fractions-same-denominator.html",
+    "conceptId": "e00073",
+    "worksheetId": "w00073-1",
+    "route": "concept/e00073/w00073-1"
+  },
+  {
+    "title": "Decimal Place Value: Find the Digit Worksheets",
+    "summary": "Identify the tenths, hundredths, or thousandths digit, including zero.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/decimal-place-value-digits.html",
+    "conceptId": "e00074",
+    "worksheetId": "w00074-1",
+    "route": "concept/e00074/w00074-1"
+  },
+  {
+    "title": "Comparing Decimals Through Thousandths Worksheets",
+    "summary": "Align decimal places and compare using >, <, or =.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/comparing-decimals-thousandths.html",
+    "conceptId": "e00075",
+    "worksheetId": "w00075-1",
+    "route": "concept/e00075/w00075-1"
+  },
+  {
+    "title": "Simplifying Fractions Worksheets",
+    "summary": "Divide both numbers by a common factor while keeping the fraction value unchanged.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/simplifying-fractions.html",
+    "conceptId": "e00076",
+    "worksheetId": "w00076-1",
+    "route": "concept/e00076/w00076-1"
+  },
+  {
+    "title": "Finding Common Denominators Worksheets",
+    "summary": "Rewrite both fractions with the least common denominator without changing their values.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/common-denominator-fractions.html",
+    "conceptId": "e00077",
+    "worksheetId": "w00077-1",
+    "route": "concept/e00077/w00077-1"
+  },
+  {
+    "title": "Write Fractions From Shaded Parts Worksheets",
+    "summary": "Count all equal parts, then the shaded parts, to name the fraction shown.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/shaded-fraction-worksheets.html",
+    "conceptId": "e00078",
+    "worksheetId": "w00078-1",
+    "route": "concept/e00078/w00078-1"
+  },
+  {
+    "title": "Comparing Three-Digit Numbers Worksheets",
+    "summary": "Compare hundreds, tens, and ones using >, <, or =.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/comparing-three-digit-numbers.html",
+    "conceptId": "e00079",
+    "worksheetId": "w00079-1",
+    "route": "concept/e00079/w00079-1"
+  },
+  {
+    "title": "Fractions on a Number Line Worksheets",
+    "summary": "Count equal intervals from zero to name the fraction at a marked point.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/fractions-on-a-number-line.html",
+    "conceptId": "e00080",
+    "worksheetId": "w00080-1",
+    "route": "concept/e00080/w00080-1"
+  },
+  {
+    "title": "Place Value Worksheets: 3-Digit Expanded Form",
+    "summary": "Write hundreds, tens, and ones as a sum.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/three-digit-expanded-form.html",
+    "conceptId": "e00081",
+    "worksheetId": "w00081-1",
+    "route": "concept/e00081/w00081-1"
+  },
+  {
+    "title": "Tens and Ones Expanded Form Worksheets",
+    "summary": "Show the tens and ones in a two-digit number.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/tens-and-ones-expanded-form.html",
+    "conceptId": "e00082",
+    "worksheetId": "w00082-1",
+    "route": "concept/e00082/w00082-1"
+  },
+  {
+    "title": "Telling Time: Hours and Half Hours Worksheets",
+    "summary": "Read analog clocks and write the time to the hour or half hour.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/en/telling-time-hours-half-hours.html",
+    "conceptId": "e00083",
+    "worksheetId": "w00083-1",
+    "route": "concept/e00083/w00083-1"
+  },
+  {
+    "title": "Rectangle Perimeter Worksheets",
+    "summary": "Use labeled side lengths to find the distance around a rectangle.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/rectangle-perimeter-worksheets.html",
+    "conceptId": "e00084",
+    "worksheetId": "w00084-1",
+    "route": "concept/e00084/w00084-1"
+  },
+  {
+    "title": "Counting Square Units: Area Worksheets",
+    "summary": "Count equal square tiles and use rows to find area.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/counting-square-units-area.html",
+    "conceptId": "e00085",
+    "worksheetId": "w00085-1",
+    "route": "concept/e00085/w00085-1"
+  },
+  {
+    "title": "Volume with Layers of Unit Cubes Worksheets",
+    "summary": "Count cubes in one layer and multiply by the number of layers.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/en/volume-unit-cube-layers.html",
+    "conceptId": "e00086",
+    "worksheetId": "w00086-1",
+    "route": "concept/e00086/w00086-1"
+  },
+  {
+    "title": "Reading Ordered Pairs Worksheets",
+    "summary": "Read the horizontal and vertical position of a marked point.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/reading-ordered-pairs.html",
+    "conceptId": "e00087",
+    "worksheetId": "w00087-1",
+    "route": "concept/e00087/w00087-1"
+  },
+  {
+    "title": "Rounding to Tens and Hundreds Worksheets",
+    "summary": "Compare nearby multiples and round to the requested place.",
+    "grade": 3,
+    "topic": "Numbers",
+    "url": "/en/rounding-tens-hundreds.html",
+    "conceptId": "e00088",
+    "worksheetId": "w00088-1",
+    "route": "concept/e00088/w00088-1"
+  },
+  {
+    "title": "Comparing Large Whole Numbers Worksheets",
+    "summary": "Compare numbers below one million using place value.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/comparing-large-whole-numbers.html",
+    "conceptId": "e00089",
+    "worksheetId": "w00089-1",
+    "route": "concept/e00089/w00089-1"
+  },
+  {
+    "title": "Rounding Decimals Worksheets",
+    "summary": "Round to a whole number or tenth using nearby values.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/rounding-decimals.html",
+    "conceptId": "e00090",
+    "worksheetId": "w00090-1",
+    "route": "concept/e00090/w00090-1"
+  },
+  {
+    "title": "Comparing Two-Digit Numbers Worksheets",
+    "summary": "Compare tens first, then ones, using numbers from 10 to 99.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/comparing-two-digit-numbers.html",
+    "conceptId": "e00091",
+    "worksheetId": "w00091-1",
+    "route": "concept/e00091/w00091-1"
+  },
+  {
+    "title": "10 More and 10 Less Worksheets",
+    "summary": "Change one ten and keep the ones the same.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/ten-more-ten-less.html",
+    "conceptId": "e00092",
+    "worksheetId": "w00092-1",
+    "route": "concept/e00092/w00092-1"
+  },
+  {
+    "title": "Fractions Worksheets: Halves, Thirds, and Fourths",
+    "summary": "Divide rectangles into equal parts and shade one part.",
+    "grade": 2,
+    "topic": "Shapes",
+    "url": "/en/halves-thirds-fourths-rectangles.html",
+    "conceptId": "e00093",
+    "worksheetId": "w00093-1",
+    "route": "concept/e00093/w00093-1"
+  },
+  {
+    "title": "Odd and Even Numbers Worksheets Within 20",
+    "summary": "Classify numbers, draw pairs, and write equal addends.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/odd-even-numbers-within-20.html",
+    "conceptId": "e00094",
+    "worksheetId": "w00094-1",
+    "route": "concept/e00094/w00094-1"
+  },
+  {
+    "title": "Ordering Three Lengths Worksheets",
+    "summary": "Order three aligned strips and find the longest.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/en/ordering-three-lengths.html",
+    "conceptId": "e00095",
+    "worksheetId": "w00095-1",
+    "route": "concept/e00095/w00095-1"
+  },
+  {
+    "title": "Reading Whole-Number Line Plots Worksheets",
+    "summary": "Count measurements and read the frequency of a length.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/reading-whole-number-line-plots.html",
+    "conceptId": "e00096",
+    "worksheetId": "w00096-1",
+    "route": "concept/e00096/w00096-1"
+  },
+  {
+    "title": "Addition Equations Worksheets: True or False",
+    "summary": "Compare both sides of an addition equation and explain whether they match.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/true-false-addition-equations.html",
+    "conceptId": "e00097",
+    "worksheetId": "w00097-1",
+    "route": "concept/e00097/w00097-1"
+  },
+  {
+    "title": "Missing Number Worksheets: Factors and Dividends",
+    "summary": "Use related multiplication and division facts to find the missing number.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/missing-factors-and-dividends.html",
+    "conceptId": "e00098",
+    "worksheetId": "w00098-1",
+    "route": "concept/e00098/w00098-1"
+  },
+  {
+    "title": "Comparing Fractions with Unlike Denominators Worksheets",
+    "summary": "Compare fractions using equivalent fractions or a common benchmark.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/comparing-fractions-unlike-denominators.html",
+    "conceptId": "e00099",
+    "worksheetId": "w00099-1",
+    "route": "concept/e00099/w00099-1"
+  },
+  {
+    "title": "Fractions and Decimals Worksheets: Tenths and Hundredths",
+    "summary": "Connect hundredths to decimals and rename tenths as hundredths.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/tenths-hundredths-and-decimals.html",
+    "conceptId": "e00100",
+    "worksheetId": "w00100-1",
+    "route": "concept/e00100/w00100-1"
+  },
+  {
+    "title": "Multiply and Divide by 10, 100, and 1,000 Worksheets",
+    "summary": "Explain place-value changes when multiplying and dividing by powers of ten.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/multiply-divide-by-10-100-1000.html",
+    "conceptId": "e00101",
+    "worksheetId": "w00101-1",
+    "route": "concept/e00101/w00101-1"
+  },
+  {
+    "title": "Factors and Multiples Worksheets: Prime and Composite Numbers",
+    "summary": "Classify numbers and test multiples using factor facts.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/prime-composite-numbers-and-multiples.html",
+    "conceptId": "e00102",
+    "worksheetId": "w00102-1",
+    "route": "concept/e00102/w00102-1"
+  },
+  {
+    "title": "10 or 100 More and Less Worksheets",
+    "summary": "Add or remove one ten or one hundred using place value.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/ten-hundred-more-less.html",
+    "conceptId": "e00103",
+    "worksheetId": "w00103-1",
+    "route": "concept/e00103/w00103-1"
+  },
+  {
+    "title": "Elapsed Time Word Problems",
+    "summary": "Find elapsed minutes, starting times, and finishing times.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/elapsed-time-word-problems.html",
+    "conceptId": "e00104",
+    "worksheetId": "w00104-1",
+    "route": "concept/e00104/w00104-1"
+  },
+  {
+    "title": "Number Names Worksheets: 3-Digit Numbers",
+    "summary": "Read and write three-digit numbers in digits and words.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/three-digit-number-names.html",
+    "conceptId": "e00105",
+    "worksheetId": "w00105-1",
+    "route": "concept/e00105/w00105-1"
+  },
+  {
+    "title": "Square and Rectangle Symmetry Worksheets",
+    "summary": "Draw all symmetry lines on two original shapes.",
+    "grade": 4,
+    "topic": "Shapes",
+    "url": "/en/square-rectangle-lines-of-symmetry.html",
+    "conceptId": "e00106",
+    "worksheetId": "w00106-1",
+    "route": "concept/e00106/w00106-1"
+  },
+  {
+    "title": "Geometry Worksheets: Lines, Rays, and Line Segments",
+    "summary": "Identify parallel and perpendicular lines, then draw three types of figures.",
+    "grade": 4,
+    "topic": "Shapes",
+    "url": "/en/lines-rays-line-segments.html",
+    "conceptId": "e00107",
+    "worksheetId": "w00107-1",
+    "route": "concept/e00107/w00107-1"
+  },
+  {
+    "title": "Shape Worksheets: Building and Drawing Shapes",
+    "summary": "Join triangles, squares, and cubes, then sketch your models.",
+    "grade": 1,
+    "topic": "Shapes",
+    "url": "/en/build-and-draw-shapes.html",
+    "conceptId": "e00108",
+    "worksheetId": "w00108-1",
+    "route": "concept/e00108/w00108-1"
+  },
+  {
+    "title": "Measurement Conversion Worksheets",
+    "summary": "Convert four larger units to smaller units within the same system.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/en/measurement-unit-conversions.html",
+    "conceptId": "e00109",
+    "worksheetId": "w00109-1",
+    "route": "concept/e00109/w00109-1"
+  },
+  {
+    "title": "Angles Worksheets: Measuring and Drawing Angles",
+    "summary": "Use a protractor to measure two angles and draw two more.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/en/measuring-drawing-angles.html",
+    "conceptId": "e00110",
+    "worksheetId": "w00110-1",
+    "route": "concept/e00110/w00110-1"
+  },
+  {
+    "title": "Line Plot Worksheets: Fraction Measurements",
+    "summary": "Count measurements and read quarter-unit labels on original plots.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/reading-fraction-line-plots.html",
+    "conceptId": "e00111",
+    "worksheetId": "w00111-1",
+    "route": "concept/e00111/w00111-1"
+  },
+  {
+    "title": "Measurement Worksheets: Estimating and Measuring a Book",
+    "summary": "Estimate, measure, and compare one book edge in centimeters.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/estimate-measure-book-length.html",
+    "conceptId": "e00112",
+    "worksheetId": "w00112-1",
+    "route": "concept/e00112/w00112-1"
+  },
+  {
+    "title": "Shape Attributes Worksheets: Sides, Corners, and Faces",
+    "summary": "Review pentagon sides, hexagon corners, and cube faces.",
+    "grade": 2,
+    "topic": "Shapes",
+    "url": "/en/shape-sides-corners-faces.html",
+    "conceptId": "e00113",
+    "worksheetId": "w00113-1",
+    "route": "concept/e00113/w00113-1"
+  },
+  {
+    "title": "Comparing Decimals Worksheets Through Hundredths",
+    "summary": "Compare matching places and explain your reasoning.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/compare-decimals-hundredths.html",
+    "conceptId": "e00114",
+    "worksheetId": "w00114-1",
+    "route": "concept/e00114/w00114-1"
+  },
+  {
+    "title": "Measurement Conversion Worksheets: Larger Units",
+    "summary": "Convert cm to m, g to kg, mL to L, and inches to feet.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/en/measurement-units-larger.html",
+    "conceptId": "e00115",
+    "worksheetId": "w00115-1",
+    "route": "concept/e00115/w00115-1"
+  },
+  {
+    "title": "Kindergarten Addition and Subtraction Within 5",
+    "summary": "Count and combine pictures, or cross out the amount taken away.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-within-5.html",
+    "conceptId": "e00126",
+    "worksheetId": "w00126-1",
+    "route": "concept/e00126/w00126-1"
+  },
+  {
+    "title": "Kindergarten Word Problems Within 5",
+    "summary": "Listen to a short story, act it out, and draw or write an answer within 5.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-word-problems.html",
+    "conceptId": "e00127",
+    "worksheetId": "w00127-1",
+    "route": "concept/e00127/w00127-1"
+  },
+  {
+    "title": "Count and Write Worksheets for Kindergarten",
+    "summary": "Count picture groups from 1 to 9 and write 0 for an empty group. Touch each object once and record the total.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/kindergarten-count-and-write.html",
+    "conceptId": "e00128",
+    "worksheetId": "w00128-1",
+    "route": "concept/e00128/w00128-1"
+  },
+  {
+    "title": "Compare Picture Groups Worksheets for Kindergarten",
+    "summary": "Match or count two groups and circle the group with more objects.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/compare-picture-groups-kindergarten.html",
+    "conceptId": "e00129",
+    "worksheetId": "w00129-1",
+    "route": "concept/e00129/w00129-1"
+  },
+  {
+    "title": "Count and Circle Worksheets for Kindergarten",
+    "summary": "Circle a requested number of pictures. Any selection with the right count is correct.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/circle-the-correct-number-of-pictures.html",
+    "conceptId": "e00130",
+    "worksheetId": "w00130-1",
+    "route": "concept/e00130/w00130-1"
+  },
+  {
+    "title": "Number Word Matching Worksheets for Kindergarten",
+    "summary": "Draw lines from numerals 1–9 to their English number words. An adult can read the words aloud.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/number-word-matching-kindergarten.html",
+    "conceptId": "e00131",
+    "worksheetId": "w00131-1",
+    "route": "concept/e00131/w00131-1"
+  },
+  {
+    "title": "Ordering Numbers Worksheets for Kindergarten",
+    "summary": "Put three different numbers from 1–9 in order from smallest to largest. Use counters or number cards for support.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/ordering-number-cards-kindergarten.html",
+    "conceptId": "e00132",
+    "worksheetId": "w00132-1",
+    "route": "concept/e00132/w00132-1"
+  },
+  {
+    "title": "Before and After Numbers Worksheets for Kindergarten",
+    "summary": "Find the number just before and just after a given number. Count one step back and one step forward within 1–9.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/before-and-after-numbers.html",
+    "conceptId": "e00133",
+    "worksheetId": "w00133-1",
+    "route": "concept/e00133/w00133-1"
+  },
+  {
+    "title": "Missing Numbers on a Number Line Worksheets for Kindergarten",
+    "summary": "Count by ones along five evenly spaced marks and fill one missing number. These short number lines stay within 1–9.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/missing-numbers-on-a-number-line.html",
+    "conceptId": "e00134",
+    "worksheetId": "w00134-1",
+    "route": "concept/e00134/w00134-1"
+  },
+  {
+    "title": "Making 10 with Ten Frames Worksheets",
+    "summary": "Draw a dot in each empty box, then write how many more make 10. Start with 5–9 pictures in a two-row frame.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/activity/complete-the-ten-frame.html",
+    "conceptId": "e00135",
+    "worksheetId": "w00135-1",
+    "route": "concept/e00135/w00135-1"
+  },
+  {
+    "title": "Make 10 Missing Addend Worksheets",
+    "summary": "Find the missing part in an addition equation that totals 10. Use the drawing space or counters to explain your answer.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/activity/make-10-missing-number.html",
+    "conceptId": "e00136",
+    "worksheetId": "w00136-1",
+    "route": "concept/e00136/w00136-1"
+  },
+  {
+    "title": "Longer and Shorter Worksheets for Kindergarten",
+    "summary": "Compare two bars that start at the same point. Circle the longer one and write A or B without using a ruler.",
+    "grade": 0,
+    "topic": "Measurement",
+    "url": "/en/print/k-longer-and-shorter.html",
+    "conceptId": "e00137",
+    "worksheetId": "w00137-1",
+    "route": "concept/e00137/w00137-1"
+  },
+  {
+    "title": "Sort and Count Shapes Worksheets for Kindergarten",
+    "summary": "Circle every shape of the requested kind, then count the circles, triangles, or squares you selected.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/k-sort-by-shape.html",
+    "conceptId": "e00138",
+    "worksheetId": "w00138-1",
+    "route": "concept/e00138/w00138-1"
+  },
+  {
+    "title": "2D Shape Recognition Worksheets for Kindergarten",
+    "summary": "Trace and name a triangle, square, or circle. Notice that a square is still a square when it rests on a corner.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/k-meet-flat-shapes.html",
+    "conceptId": "e00139",
+    "worksheetId": "w00139-1",
+    "route": "concept/e00139/w00139-1"
+  },
+  {
+    "title": "Counting Sides Worksheets for Kindergarten",
+    "summary": "Trace and count the straight sides of triangles, squares, and circles. A circle has a curved boundary and zero straight sides.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/k-shape-detectives.html",
+    "conceptId": "e00140",
+    "worksheetId": "w00140-1",
+    "route": "concept/e00140/w00140-1"
+  },
+  {
+    "title": "Repeating Shape Patterns Worksheets for Kindergarten",
+    "summary": "Find the repeating group of three shapes, then draw the next shape. Practice ABC and AAB patterns with a matching answer key.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/hands-on/complete-repeating-patterns.html",
+    "conceptId": "e00141",
+    "worksheetId": "w00141-1",
+    "route": "concept/e00141/w00141-1"
+  },
+  {
+    "title": "Missing Part Number Bonds Worksheets Within 9",
+    "summary": "Circle part of a group and complete the number bond. Choose two nonempty parts or one empty part (0). Empty-part practice also includes wholes of 1 or 10.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/hands-on/missing-part-number-bonds.html",
+    "conceptId": "e00142",
+    "worksheetId": "w00142-1",
+    "route": "concept/e00142/w00142-1"
+  },
+  {
+    "title": "Ordinal Number Worksheets for Kindergarten",
+    "summary": "Count from the left and circle one picture in the requested position. An adult can read the directions aloud.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/ordinal-numbers-kindergarten.html",
+    "conceptId": "e00143",
+    "worksheetId": "w00143-1",
+    "route": "concept/e00143/w00143-1"
+  },
+  {
+    "title": "Kindergarten Word Problems Within 10",
+    "summary": "Listen, move counters, and draw joining or taking-away stories with amounts up to 10.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-word-problems-within-10.html",
+    "conceptId": "e00144",
+    "worksheetId": "w00144-1",
+    "route": "concept/e00144/w00144-1"
+  },
+  {
+    "title": "Addition within 20",
+    "summary": "Addition within 20. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=add&set=123",
+    "worksheetId": "old-grade-1-add",
+    "route": "legacy/old-grade-1-add"
+  },
+  {
+    "title": "Subtraction within 20",
+    "summary": "Subtraction within 20. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=sub&set=123",
+    "worksheetId": "old-grade-1-sub",
+    "route": "legacy/old-grade-1-sub"
+  },
+  {
+    "title": "Tens and ones",
+    "summary": "Tens and ones. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=place&set=123",
+    "worksheetId": "old-grade-1-place",
+    "route": "legacy/old-grade-1-place"
+  },
+  {
+    "title": "Shape detectives",
+    "summary": "Shape detectives. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=shape&set=123",
+    "worksheetId": "old-grade-1-shape",
+    "route": "legacy/old-grade-1-shape"
+  },
+  {
+    "title": "Hours and half hours",
+    "summary": "Hours and half hours. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=clock&set=123",
+    "worksheetId": "old-grade-1-clock",
+    "route": "legacy/old-grade-1-clock"
+  },
+  {
+    "title": "Picture data",
+    "summary": "Picture data. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=data&set=123",
+    "worksheetId": "old-grade-1-data",
+    "route": "legacy/old-grade-1-data"
+  },
+  {
+    "title": "Missing numbers",
+    "summary": "Missing numbers. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=missing&set=123",
+    "worksheetId": "old-grade-1-missing",
+    "route": "legacy/old-grade-1-missing"
+  },
+  {
+    "title": "Three numbers together",
+    "summary": "Three numbers together. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=three&set=123",
+    "worksheetId": "old-grade-1-three",
+    "route": "legacy/old-grade-1-three"
+  },
+  {
+    "title": "Related facts",
+    "summary": "Related facts. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=facts&set=123",
+    "worksheetId": "old-grade-1-facts",
+    "route": "legacy/old-grade-1-facts"
+  },
+  {
+    "title": "Count on and back",
+    "summary": "Count on and back. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=count-on&set=123",
+    "worksheetId": "old-grade-1-count-on",
+    "route": "legacy/old-grade-1-count-on"
+  },
+  {
+    "title": "True or false equations",
+    "summary": "True or false equations. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=equal&set=123",
+    "worksheetId": "old-grade-1-equal",
+    "route": "legacy/old-grade-1-equal"
+  },
+  {
+    "title": "Number paths to 120",
+    "summary": "Number paths to 120. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=count120&set=123",
+    "worksheetId": "old-grade-1-count120",
+    "route": "legacy/old-grade-1-count120"
+  },
+  {
+    "title": "Compare two-digit numbers",
+    "summary": "Compare two-digit numbers. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=compare&set=123",
+    "worksheetId": "old-grade-1-compare",
+    "route": "legacy/old-grade-1-compare"
+  },
+  {
+    "title": "Add using tens and ones",
+    "summary": "Add using tens and ones. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=add100&set=123",
+    "worksheetId": "old-grade-1-add100",
+    "route": "legacy/old-grade-1-add100"
+  },
+  {
+    "title": "Ten more, ten less",
+    "summary": "Ten more, ten less. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=ten-more&set=123",
+    "worksheetId": "old-grade-1-ten-more",
+    "route": "legacy/old-grade-1-ten-more"
+  },
+  {
+    "title": "Subtract multiples of ten",
+    "summary": "Subtract multiples of ten. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=tens-sub&set=123",
+    "worksheetId": "old-grade-1-tens-sub",
+    "route": "legacy/old-grade-1-tens-sub"
+  },
+  {
+    "title": "Order and compare lengths",
+    "summary": "Order and compare lengths. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=order-length&set=123",
+    "worksheetId": "old-grade-1-order-length",
+    "route": "legacy/old-grade-1-order-length"
+  },
+  {
+    "title": "Measure with equal units",
+    "summary": "Measure with equal units. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=unit-length&set=123",
+    "worksheetId": "old-grade-1-unit-length",
+    "route": "legacy/old-grade-1-unit-length"
+  },
+  {
+    "title": "Build and draw shapes",
+    "summary": "Build and draw shapes. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=shape-build&set=123",
+    "worksheetId": "old-grade-1-shape-build",
+    "route": "legacy/old-grade-1-shape-build"
+  },
+  {
+    "title": "Halves and fourths",
+    "summary": "Halves and fourths. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=1&unit=halves&set=123",
+    "worksheetId": "old-grade-1-halves",
+    "route": "legacy/old-grade-1-halves"
+  },
+  {
+    "title": "Addition within 100",
+    "summary": "Addition within 100. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=add&set=123",
+    "worksheetId": "old-grade-2-add",
+    "route": "legacy/old-grade-2-add"
+  },
+  {
+    "title": "Subtraction within 100",
+    "summary": "Subtraction within 100. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=sub&set=123",
+    "worksheetId": "old-grade-2-sub",
+    "route": "legacy/old-grade-2-sub"
+  },
+  {
+    "title": "Hundreds, tens and ones",
+    "summary": "Hundreds, tens and ones. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=place&set=123",
+    "worksheetId": "old-grade-2-place",
+    "route": "legacy/old-grade-2-place"
+  },
+  {
+    "title": "Count the coins",
+    "summary": "Count the coins. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=money&set=123",
+    "worksheetId": "old-grade-2-money",
+    "route": "legacy/old-grade-2-money"
+  },
+  {
+    "title": "Time to five minutes",
+    "summary": "Time to five minutes. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=clock&set=123",
+    "worksheetId": "old-grade-2-clock",
+    "route": "legacy/old-grade-2-clock"
+  },
+  {
+    "title": "Measure and compare",
+    "summary": "Measure and compare. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=length&set=123",
+    "worksheetId": "old-grade-2-length",
+    "route": "legacy/old-grade-2-length"
+  },
+  {
+    "title": "Two-step stories",
+    "summary": "Two-step stories. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=stories&set=123",
+    "worksheetId": "old-grade-2-stories",
+    "route": "legacy/old-grade-2-stories"
+  },
+  {
+    "title": "Fluent facts within 20",
+    "summary": "Fluent facts within 20. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=facts20&set=123",
+    "worksheetId": "old-grade-2-facts20",
+    "route": "legacy/old-grade-2-facts20"
+  },
+  {
+    "title": "Odd and even groups",
+    "summary": "Odd and even groups. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=odd-even&set=123",
+    "worksheetId": "old-grade-2-odd-even",
+    "route": "legacy/old-grade-2-odd-even"
+  },
+  {
+    "title": "Rows and columns",
+    "summary": "Rows and columns. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=arrays&set=123",
+    "worksheetId": "old-grade-2-arrays",
+    "route": "legacy/old-grade-2-arrays"
+  },
+  {
+    "title": "Skip-count to 1000",
+    "summary": "Skip-count to 1000. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=skip&set=123",
+    "worksheetId": "old-grade-2-skip",
+    "route": "legacy/old-grade-2-skip"
+  },
+  {
+    "title": "Number names and expanded form",
+    "summary": "Number names and expanded form. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=number-names&set=123",
+    "worksheetId": "old-grade-2-number-names",
+    "route": "legacy/old-grade-2-number-names"
+  },
+  {
+    "title": "Compare three-digit numbers",
+    "summary": "Compare three-digit numbers. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=compare&set=123",
+    "worksheetId": "old-grade-2-compare",
+    "route": "legacy/old-grade-2-compare"
+  },
+  {
+    "title": "Add four numbers",
+    "summary": "Add four numbers. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=four-add&set=123",
+    "worksheetId": "old-grade-2-four-add",
+    "route": "legacy/old-grade-2-four-add"
+  },
+  {
+    "title": "Add and subtract within 1000",
+    "summary": "Add and subtract within 1000. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=calc1000&set=123",
+    "worksheetId": "old-grade-2-calc1000",
+    "route": "legacy/old-grade-2-calc1000"
+  },
+  {
+    "title": "Ten or a hundred more",
+    "summary": "Ten or a hundred more. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=mental&set=123",
+    "worksheetId": "old-grade-2-mental",
+    "route": "legacy/old-grade-2-mental"
+  },
+  {
+    "title": "Choose a measuring tool",
+    "summary": "Choose a measuring tool. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=measure-tools&set=123",
+    "worksheetId": "old-grade-2-measure-tools",
+    "route": "legacy/old-grade-2-measure-tools"
+  },
+  {
+    "title": "Measure in two units",
+    "summary": "Measure in two units. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=measure-units&set=123",
+    "worksheetId": "old-grade-2-measure-units",
+    "route": "legacy/old-grade-2-measure-units"
+  },
+  {
+    "title": "Estimate and measure",
+    "summary": "Estimate and measure. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=estimate-length&set=123",
+    "worksheetId": "old-grade-2-estimate-length",
+    "route": "legacy/old-grade-2-estimate-length"
+  },
+  {
+    "title": "Length stories",
+    "summary": "Length stories. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=length-story&set=123",
+    "worksheetId": "old-grade-2-length-story",
+    "route": "legacy/old-grade-2-length-story"
+  },
+  {
+    "title": "Numbers on a line",
+    "summary": "Numbers on a line. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=numberline&set=123",
+    "worksheetId": "old-grade-2-numberline",
+    "route": "legacy/old-grade-2-numberline"
+  },
+  {
+    "title": "Measurement line plots",
+    "summary": "Measurement line plots. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=lineplot&set=123",
+    "worksheetId": "old-grade-2-lineplot",
+    "route": "legacy/old-grade-2-lineplot"
+  },
+  {
+    "title": "Read and build graphs",
+    "summary": "Read and build graphs. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=graphs&set=123",
+    "worksheetId": "old-grade-2-graphs",
+    "route": "legacy/old-grade-2-graphs"
+  },
+  {
+    "title": "Shape attributes",
+    "summary": "Shape attributes. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=shape&set=123",
+    "worksheetId": "old-grade-2-shape",
+    "route": "legacy/old-grade-2-shape"
+  },
+  {
+    "title": "Tile a rectangle",
+    "summary": "Tile a rectangle. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=tile&set=123",
+    "worksheetId": "old-grade-2-tile",
+    "route": "legacy/old-grade-2-tile"
+  },
+  {
+    "title": "Halves, thirds and fourths",
+    "summary": "Halves, thirds and fourths. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=2&unit=partition&set=123",
+    "worksheetId": "old-grade-2-partition",
+    "route": "legacy/old-grade-2-partition"
+  },
+  {
+    "title": "Multiplication facts",
+    "summary": "Multiplication facts. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=mul&set=123",
+    "worksheetId": "old-grade-3-mul",
+    "route": "legacy/old-grade-3-mul"
+  },
+  {
+    "title": "Division facts",
+    "summary": "Division facts. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=div&set=123",
+    "worksheetId": "old-grade-3-div",
+    "route": "legacy/old-grade-3-div"
+  },
+  {
+    "title": "Fractions of a whole",
+    "summary": "Fractions of a whole. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction&set=123",
+    "worksheetId": "old-grade-3-fraction",
+    "route": "legacy/old-grade-3-fraction"
+  },
+  {
+    "title": "Area adventures",
+    "summary": "Area adventures. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area&set=123",
+    "worksheetId": "old-grade-3-area",
+    "route": "legacy/old-grade-3-area"
+  },
+  {
+    "title": "Around the edges",
+    "summary": "Around the edges. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=perimeter&set=123",
+    "worksheetId": "old-grade-3-perimeter",
+    "route": "legacy/old-grade-3-perimeter"
+  },
+  {
+    "title": "Scaled bar graphs",
+    "summary": "Scaled bar graphs. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=data&set=123",
+    "worksheetId": "old-grade-3-data",
+    "route": "legacy/old-grade-3-data"
+  },
+  {
+    "title": "Equal groups and sharing",
+    "summary": "Equal groups and sharing. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=groups&set=123",
+    "worksheetId": "old-grade-3-groups",
+    "route": "legacy/old-grade-3-groups"
+  },
+  {
+    "title": "Missing factors and quotients",
+    "summary": "Missing factors and quotients. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=unknown&set=123",
+    "worksheetId": "old-grade-3-unknown",
+    "route": "legacy/old-grade-3-unknown"
+  },
+  {
+    "title": "Multiplication strategies",
+    "summary": "Multiplication strategies. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=properties&set=123",
+    "worksheetId": "old-grade-3-properties",
+    "route": "legacy/old-grade-3-properties"
+  },
+  {
+    "title": "Two-step operation stories",
+    "summary": "Two-step operation stories. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=stories&set=123",
+    "worksheetId": "old-grade-3-stories",
+    "route": "legacy/old-grade-3-stories"
+  },
+  {
+    "title": "Arithmetic patterns",
+    "summary": "Arithmetic patterns. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Patterns and Relationships",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=patterns&set=123",
+    "worksheetId": "old-grade-3-patterns",
+    "route": "legacy/old-grade-3-patterns"
+  },
+  {
+    "title": "Round to tens and hundreds",
+    "summary": "Round to tens and hundreds. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=round&set=123",
+    "worksheetId": "old-grade-3-round",
+    "route": "legacy/old-grade-3-round"
+  },
+  {
+    "title": "Add and subtract within 1000",
+    "summary": "Add and subtract within 1000. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=calc1000&set=123",
+    "worksheetId": "old-grade-3-calc1000",
+    "route": "legacy/old-grade-3-calc1000"
+  },
+  {
+    "title": "Multiply by multiples of ten",
+    "summary": "Multiply by multiples of ten. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=tens-multiply&set=123",
+    "worksheetId": "old-grade-3-tens-multiply",
+    "route": "legacy/old-grade-3-tens-multiply"
+  },
+  {
+    "title": "Fractions on a number line",
+    "summary": "Fractions on a number line. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction-line&set=123",
+    "worksheetId": "old-grade-3-fraction-line",
+    "route": "legacy/old-grade-3-fraction-line"
+  },
+  {
+    "title": "Equivalent and ordered fractions",
+    "summary": "Equivalent and ordered fractions. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=fraction-compare&set=123",
+    "worksheetId": "old-grade-3-fraction-compare",
+    "route": "legacy/old-grade-3-fraction-compare"
+  },
+  {
+    "title": "Time to the minute",
+    "summary": "Time to the minute. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=elapsed&set=123",
+    "worksheetId": "old-grade-3-elapsed",
+    "route": "legacy/old-grade-3-elapsed"
+  },
+  {
+    "title": "Mass and liquid volume",
+    "summary": "Mass and liquid volume. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=mass&set=123",
+    "worksheetId": "old-grade-3-mass",
+    "route": "legacy/old-grade-3-mass"
+  },
+  {
+    "title": "Halves and fourths on line plots",
+    "summary": "Halves and fourths on line plots. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=lineplot&set=123",
+    "worksheetId": "old-grade-3-lineplot",
+    "route": "legacy/old-grade-3-lineplot"
+  },
+  {
+    "title": "Square units and tiling",
+    "summary": "Square units and tiling. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area-tiles&set=123",
+    "worksheetId": "old-grade-3-area-tiles",
+    "route": "legacy/old-grade-3-area-tiles"
+  },
+  {
+    "title": "Area by adding parts",
+    "summary": "Area by adding parts. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=area-parts&set=123",
+    "worksheetId": "old-grade-3-area-parts",
+    "route": "legacy/old-grade-3-area-parts"
+  },
+  {
+    "title": "Sort quadrilaterals",
+    "summary": "Sort quadrilaterals. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=quadrilaterals&set=123",
+    "worksheetId": "old-grade-3-quadrilaterals",
+    "route": "legacy/old-grade-3-quadrilaterals"
+  },
+  {
+    "title": "Equal-area parts",
+    "summary": "Equal-area parts. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=3&unit=equal-area&set=123",
+    "worksheetId": "old-grade-3-equal-area",
+    "route": "legacy/old-grade-3-equal-area"
+  },
+  {
+    "title": "Multi-digit multiplication",
+    "summary": "Multi-digit multiplication. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=mul&set=123",
+    "worksheetId": "old-grade-4-mul",
+    "route": "legacy/old-grade-4-mul"
+  },
+  {
+    "title": "Division with remainders",
+    "summary": "Division with remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=div&set=123",
+    "worksheetId": "old-grade-4-div",
+    "route": "legacy/old-grade-4-div"
+  },
+  {
+    "title": "Equivalent fractions",
+    "summary": "Equivalent fractions. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=equivalent&set=123",
+    "worksheetId": "old-grade-4-equivalent",
+    "route": "legacy/old-grade-4-equivalent"
+  },
+  {
+    "title": "Add like fractions",
+    "summary": "Add like fractions. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fractionAdd&set=123",
+    "worksheetId": "old-grade-4-fractionAdd",
+    "route": "legacy/old-grade-4-fractionAdd"
+  },
+  {
+    "title": "Angles and turns",
+    "summary": "Angles and turns. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=angle&set=123",
+    "worksheetId": "old-grade-4-angle",
+    "route": "legacy/old-grade-4-angle"
+  },
+  {
+    "title": "Place-value patterns",
+    "summary": "Place-value patterns. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=place&set=123",
+    "worksheetId": "old-grade-4-place",
+    "route": "legacy/old-grade-4-place"
+  },
+  {
+    "title": "Times as many",
+    "summary": "Times as many. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=times-as-many&set=123",
+    "worksheetId": "old-grade-4-times-as-many",
+    "route": "legacy/old-grade-4-times-as-many"
+  },
+  {
+    "title": "Multi-step stories and remainders",
+    "summary": "Multi-step stories and remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=stories&set=123",
+    "worksheetId": "old-grade-4-stories",
+    "route": "legacy/old-grade-4-stories"
+  },
+  {
+    "title": "Factors, multiples and primes",
+    "summary": "Factors, multiples and primes. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=factors&set=123",
+    "worksheetId": "old-grade-4-factors",
+    "route": "legacy/old-grade-4-factors"
+  },
+  {
+    "title": "Rules and number patterns",
+    "summary": "Rules and number patterns. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Patterns and Relationships",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=patterns&set=123",
+    "worksheetId": "old-grade-4-patterns",
+    "route": "legacy/old-grade-4-patterns"
+  },
+  {
+    "title": "Ten times the place value",
+    "summary": "Ten times the place value. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=ten-times&set=123",
+    "worksheetId": "old-grade-4-ten-times",
+    "route": "legacy/old-grade-4-ten-times"
+  },
+  {
+    "title": "Compare large numbers",
+    "summary": "Compare large numbers. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=compare&set=123",
+    "worksheetId": "old-grade-4-compare",
+    "route": "legacy/old-grade-4-compare"
+  },
+  {
+    "title": "Round to any whole-number place",
+    "summary": "Round to any whole-number place. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=round&set=123",
+    "worksheetId": "old-grade-4-round",
+    "route": "legacy/old-grade-4-round"
+  },
+  {
+    "title": "Multi-digit addition and subtraction",
+    "summary": "Multi-digit addition and subtraction. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=large-calc&set=123",
+    "worksheetId": "old-grade-4-large-calc",
+    "route": "legacy/old-grade-4-large-calc"
+  },
+  {
+    "title": "Four-digit and two-digit products",
+    "summary": "Four-digit and two-digit products. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=large-mul&set=123",
+    "worksheetId": "old-grade-4-large-mul",
+    "route": "legacy/old-grade-4-large-mul"
+  },
+  {
+    "title": "Four-digit division",
+    "summary": "Four-digit division. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=long-div&set=123",
+    "worksheetId": "old-grade-4-long-div",
+    "route": "legacy/old-grade-4-long-div"
+  },
+  {
+    "title": "Compare unlike fractions",
+    "summary": "Compare unlike fractions. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-compare&set=123",
+    "worksheetId": "old-grade-4-fraction-compare",
+    "route": "legacy/old-grade-4-fraction-compare"
+  },
+  {
+    "title": "Subtract like and mixed fractions",
+    "summary": "Subtract like and mixed fractions. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-sub&set=123",
+    "worksheetId": "old-grade-4-fraction-sub",
+    "route": "legacy/old-grade-4-fraction-sub"
+  },
+  {
+    "title": "Multiply fractions by whole numbers",
+    "summary": "Multiply fractions by whole numbers. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=fraction-whole&set=123",
+    "worksheetId": "old-grade-4-fraction-whole",
+    "route": "legacy/old-grade-4-fraction-whole"
+  },
+  {
+    "title": "Tenths and hundredths",
+    "summary": "Tenths and hundredths. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=tenths-hundredths&set=123",
+    "worksheetId": "old-grade-4-tenths-hundredths",
+    "route": "legacy/old-grade-4-tenths-hundredths"
+  },
+  {
+    "title": "Compare decimals",
+    "summary": "Compare decimals. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=decimal-compare&set=123",
+    "worksheetId": "old-grade-4-decimal-compare",
+    "route": "legacy/old-grade-4-decimal-compare"
+  },
+  {
+    "title": "Measurement conversions",
+    "summary": "Measurement conversions. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=convert&set=123",
+    "worksheetId": "old-grade-4-convert",
+    "route": "legacy/old-grade-4-convert"
+  },
+  {
+    "title": "Measurement word problems",
+    "summary": "Measurement word problems. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=measure-stories&set=123",
+    "worksheetId": "old-grade-4-measure-stories",
+    "route": "legacy/old-grade-4-measure-stories"
+  },
+  {
+    "title": "Area and perimeter formulas",
+    "summary": "Area and perimeter formulas. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=area-perimeter&set=123",
+    "worksheetId": "old-grade-4-area-perimeter",
+    "route": "legacy/old-grade-4-area-perimeter"
+  },
+  {
+    "title": "Fraction measurement line plots",
+    "summary": "Fraction measurement line plots. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=lineplot&set=123",
+    "worksheetId": "old-grade-4-lineplot",
+    "route": "legacy/old-grade-4-lineplot"
+  },
+  {
+    "title": "Measure and draw angles",
+    "summary": "Measure and draw angles. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=protractor&set=123",
+    "worksheetId": "old-grade-4-protractor",
+    "route": "legacy/old-grade-4-protractor"
+  },
+  {
+    "title": "Lines, rays and right angles",
+    "summary": "Lines, rays and right angles. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=lines&set=123",
+    "worksheetId": "old-grade-4-lines",
+    "route": "legacy/old-grade-4-lines"
+  },
+  {
+    "title": "Classify triangles and quadrilaterals",
+    "summary": "Classify triangles and quadrilaterals. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=shape-class&set=123",
+    "worksheetId": "old-grade-4-shape-class",
+    "route": "legacy/old-grade-4-shape-class"
+  },
+  {
+    "title": "Lines of symmetry",
+    "summary": "Lines of symmetry. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=4&unit=symmetry&set=123",
+    "worksheetId": "old-grade-4-symmetry",
+    "route": "legacy/old-grade-4-symmetry"
+  },
+  {
+    "title": "Decimal operations",
+    "summary": "Decimal operations. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal&set=123",
+    "worksheetId": "old-grade-5-decimal",
+    "route": "legacy/old-grade-5-decimal"
+  },
+  {
+    "title": "Add unlike fractions",
+    "summary": "Add unlike fractions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fractionAdd&set=123",
+    "worksheetId": "old-grade-5-fractionAdd",
+    "route": "legacy/old-grade-5-fractionAdd"
+  },
+  {
+    "title": "Multiply fractions",
+    "summary": "Multiply fractions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fractionMul&set=123",
+    "worksheetId": "old-grade-5-fractionMul",
+    "route": "legacy/old-grade-5-fractionMul"
+  },
+  {
+    "title": "Divide with unit fractions",
+    "summary": "Divide with unit fractions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=unitDiv&set=123",
+    "worksheetId": "old-grade-5-unitDiv",
+    "route": "legacy/old-grade-5-unitDiv"
+  },
+  {
+    "title": "Volume lab",
+    "summary": "Volume lab. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume&set=123",
+    "worksheetId": "old-grade-5-volume",
+    "route": "legacy/old-grade-5-volume"
+  },
+  {
+    "title": "Coordinate missions",
+    "summary": "Coordinate missions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Patterns and Relationships",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=coordinate&set=123",
+    "worksheetId": "old-grade-5-coordinate",
+    "route": "legacy/old-grade-5-coordinate"
+  },
+  {
+    "title": "Evaluate grouped expressions",
+    "summary": "Evaluate grouped expressions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=expressions&set=123",
+    "worksheetId": "old-grade-5-expressions",
+    "route": "legacy/old-grade-5-expressions"
+  },
+  {
+    "title": "Write numerical expressions",
+    "summary": "Write numerical expressions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=write-expressions&set=123",
+    "worksheetId": "old-grade-5-write-expressions",
+    "route": "legacy/old-grade-5-write-expressions"
+  },
+  {
+    "title": "Patterns and ordered pairs",
+    "summary": "Patterns and ordered pairs. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Patterns and Relationships",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=paired-patterns&set=123",
+    "worksheetId": "old-grade-5-paired-patterns",
+    "route": "legacy/old-grade-5-paired-patterns"
+  },
+  {
+    "title": "Ten times and one tenth",
+    "summary": "Ten times and one tenth. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=place-ratio&set=123",
+    "worksheetId": "old-grade-5-place-ratio",
+    "route": "legacy/old-grade-5-place-ratio"
+  },
+  {
+    "title": "Powers of ten",
+    "summary": "Powers of ten. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=powers10&set=123",
+    "worksheetId": "old-grade-5-powers10",
+    "route": "legacy/old-grade-5-powers10"
+  },
+  {
+    "title": "Decimal names and expanded form",
+    "summary": "Decimal names and expanded form. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-place&set=123",
+    "worksheetId": "old-grade-5-decimal-place",
+    "route": "legacy/old-grade-5-decimal-place"
+  },
+  {
+    "title": "Compare decimals to thousandths",
+    "summary": "Compare decimals to thousandths. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-compare&set=123",
+    "worksheetId": "old-grade-5-decimal-compare",
+    "route": "legacy/old-grade-5-decimal-compare"
+  },
+  {
+    "title": "Round decimals",
+    "summary": "Round decimals. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=round-decimal&set=123",
+    "worksheetId": "old-grade-5-round-decimal",
+    "route": "legacy/old-grade-5-round-decimal"
+  },
+  {
+    "title": "Multi-digit whole-number products",
+    "summary": "Multi-digit whole-number products. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=whole-mul&set=123",
+    "worksheetId": "old-grade-5-whole-mul",
+    "route": "legacy/old-grade-5-whole-mul"
+  },
+  {
+    "title": "Two-digit divisors",
+    "summary": "Two-digit divisors. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=whole-div&set=123",
+    "worksheetId": "old-grade-5-whole-div",
+    "route": "legacy/old-grade-5-whole-div"
+  },
+  {
+    "title": "Multiply decimals",
+    "summary": "Multiply decimals. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-mul&set=123",
+    "worksheetId": "old-grade-5-decimal-mul",
+    "route": "legacy/old-grade-5-decimal-mul"
+  },
+  {
+    "title": "Divide decimals exactly",
+    "summary": "Divide decimals exactly. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=decimal-div&set=123",
+    "worksheetId": "old-grade-5-decimal-div",
+    "route": "legacy/old-grade-5-decimal-div"
+  },
+  {
+    "title": "Subtract unlike and mixed fractions",
+    "summary": "Subtract unlike and mixed fractions. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-sub&set=123",
+    "worksheetId": "old-grade-5-fraction-sub",
+    "route": "legacy/old-grade-5-fraction-sub"
+  },
+  {
+    "title": "Fraction stories and estimation",
+    "summary": "Fraction stories and estimation. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-story&set=123",
+    "worksheetId": "old-grade-5-fraction-story",
+    "route": "legacy/old-grade-5-fraction-story"
+  },
+  {
+    "title": "Fractions as division",
+    "summary": "Fractions as division. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-division&set=123",
+    "worksheetId": "old-grade-5-fraction-division",
+    "route": "legacy/old-grade-5-fraction-division"
+  },
+  {
+    "title": "Area with fractional sides",
+    "summary": "Area with fractional sides. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-area&set=123",
+    "worksheetId": "old-grade-5-fraction-area",
+    "route": "legacy/old-grade-5-fraction-area"
+  },
+  {
+    "title": "Multiplication as scaling",
+    "summary": "Multiplication as scaling. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=scaling&set=123",
+    "worksheetId": "old-grade-5-scaling",
+    "route": "legacy/old-grade-5-scaling"
+  },
+  {
+    "title": "Fraction and mixed-number stories",
+    "summary": "Fraction and mixed-number stories. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=fraction-products&set=123",
+    "worksheetId": "old-grade-5-fraction-products",
+    "route": "legacy/old-grade-5-fraction-products"
+  },
+  {
+    "title": "Unit-fraction sharing stories",
+    "summary": "Unit-fraction sharing stories. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=unit-sharing&set=123",
+    "worksheetId": "old-grade-5-unit-sharing",
+    "route": "legacy/old-grade-5-unit-sharing"
+  },
+  {
+    "title": "Convert measurement units",
+    "summary": "Convert measurement units. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=convert&set=123",
+    "worksheetId": "old-grade-5-convert",
+    "route": "legacy/old-grade-5-convert"
+  },
+  {
+    "title": "Fraction data and line plots",
+    "summary": "Fraction data and line plots. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=lineplot&set=123",
+    "worksheetId": "old-grade-5-lineplot",
+    "route": "legacy/old-grade-5-lineplot"
+  },
+  {
+    "title": "Volume in unit cubes",
+    "summary": "Volume in unit cubes. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume-cubes&set=123",
+    "worksheetId": "old-grade-5-volume-cubes",
+    "route": "legacy/old-grade-5-volume-cubes"
+  },
+  {
+    "title": "Add volumes of joined prisms",
+    "summary": "Add volumes of joined prisms. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=volume-parts&set=123",
+    "worksheetId": "old-grade-5-volume-parts",
+    "route": "legacy/old-grade-5-volume-parts"
+  },
+  {
+    "title": "Plot and interpret points",
+    "summary": "Plot and interpret points. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Patterns and Relationships",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=plot-points&set=123",
+    "worksheetId": "old-grade-5-plot-points",
+    "route": "legacy/old-grade-5-plot-points"
+  },
+  {
+    "title": "Shape properties and families",
+    "summary": "Shape properties and families. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=shape-properties&set=123",
+    "worksheetId": "old-grade-5-shape-properties",
+    "route": "legacy/old-grade-5-shape-properties"
+  },
+  {
+    "title": "Shape classification hierarchy",
+    "summary": "Shape classification hierarchy. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Geometry",
+    "url": "/lab/legacy-english/en/grades.html?grade=5&unit=shape-hierarchy&set=123",
+    "worksheetId": "old-grade-5-shape-hierarchy",
+    "route": "legacy/old-grade-5-shape-hierarchy"
+  },
+  {
+    "title": "Count and Color Worksheets",
+    "summary": "Count and Color Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-k-activities/count-and-color.html",
+    "worksheetId": "old-k-count-and-color",
+    "route": "legacy/old-k-count-and-color"
+  },
+  {
+    "title": "Picture and Number Matching Worksheets",
+    "summary": "Picture and Number Matching Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-k-activities/picture-number-matching.html",
+    "worksheetId": "old-k-picture-number-matching",
+    "route": "legacy/old-k-picture-number-matching"
+  },
+  {
+    "title": "Number Tracing Worksheets for Kindergarten",
+    "summary": "Number Tracing Worksheets for Kindergarten. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-k-activities/number-tracing.html",
+    "worksheetId": "old-k-number-tracing",
+    "route": "legacy/old-k-number-tracing"
+  },
+  {
+    "title": "Dot-to-Dot Number Order Worksheets",
+    "summary": "Dot-to-Dot Number Order Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-k-activities/dot-to-dot-numbers.html",
+    "worksheetId": "old-k-dot-to-dot-numbers",
+    "route": "legacy/old-k-dot-to-dot-numbers"
+  },
+  {
+    "title": "Shape Sorting Worksheets for Kindergarten",
+    "summary": "Shape Sorting Worksheets for Kindergarten. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Geometry",
+    "url": "/lab/legacy-k-activities/shape-sorting.html",
+    "worksheetId": "old-k-shape-sorting",
+    "route": "legacy/old-k-shape-sorting"
+  },
+  {
+    "title": "Compose Shapes Worksheets for Kindergarten",
+    "summary": "Compose Shapes Worksheets for Kindergarten. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Geometry",
+    "url": "/lab/legacy-k-activities/compose-shapes.html",
+    "worksheetId": "old-k-compose-shapes",
+    "route": "legacy/old-k-compose-shapes"
+  },
+  {
+    "title": "Addition Flashcards Within 10",
+    "summary": "Addition Flashcards Within 10. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/addition-flashcards.html",
+    "worksheetId": "supplemental-addition-flashcards",
+    "route": "legacy/supplemental-addition-flashcards"
+  },
+  {
+    "title": "Counting to 100: Missing Numbers",
+    "summary": "Counting to 100: Missing Numbers. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/counting-to-100.html",
+    "worksheetId": "supplemental-counting-to-100",
+    "route": "legacy/supplemental-counting-to-100"
+  },
+  {
+    "title": "Divisibility Rules Chart: 2 to 10",
+    "summary": "Divisibility Rules Chart: 2 to 10. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/divisibility-rules.html",
+    "worksheetId": "supplemental-divisibility-rules",
+    "route": "legacy/supplemental-divisibility-rules"
+  },
+  {
+    "title": "Domino Addition Worksheets",
+    "summary": "Domino Addition Worksheets. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/domino-addition.html",
+    "worksheetId": "supplemental-domino-addition",
+    "route": "legacy/supplemental-domino-addition"
+  },
+  {
+    "title": "Addition and Subtraction Exit Tickets",
+    "summary": "Addition and Subtraction Exit Tickets. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/exit-ticket.html",
+    "worksheetId": "supplemental-exit-ticket",
+    "route": "legacy/supplemental-exit-ticket"
+  },
+  {
+    "title": "Fraction Strips Printable",
+    "summary": "Fraction Strips Printable. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/lab/concept-layout/supplemental/fraction-strips.html",
+    "worksheetId": "supplemental-fraction-strips",
+    "route": "legacy/supplemental-fraction-strips"
+  },
+  {
+    "title": "Multiplication Table Chart 0–12",
+    "summary": "Multiplication Table Chart 0–12. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/multiplication-chart.html",
+    "worksheetId": "supplemental-multiplication-chart",
+    "route": "legacy/supplemental-multiplication-chart"
+  },
+  {
+    "title": "Numbers 1 to 20: Counting Cards",
+    "summary": "Numbers 1 to 20: Counting Cards. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/numbers-1-20.html",
+    "worksheetId": "supplemental-numbers-1-20",
+    "route": "legacy/supplemental-numbers-1-20"
+  },
+  {
+    "title": "Position Words: Above, Below, Left and Right",
+    "summary": "Position Words: Above, Below, Left and Right. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Geometry",
+    "url": "/lab/concept-layout/supplemental/positional-words.html",
+    "worksheetId": "supplemental-positional-words",
+    "route": "legacy/supplemental-positional-words"
+  },
+  {
+    "title": "Roman Numerals Chart: 1 to 100",
+    "summary": "Roman Numerals Chart: 1 to 100. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/roman-chart.html",
+    "worksheetId": "supplemental-roman-chart",
+    "route": "legacy/supplemental-roman-chart"
+  },
+  {
+    "title": "Matching 2D Shapes Worksheets",
+    "summary": "Matching 2D Shapes Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Geometry",
+    "url": "/lab/concept-layout/supplemental/shape-matching.html",
+    "worksheetId": "supplemental-shape-matching",
+    "route": "legacy/supplemental-shape-matching"
+  },
+  {
+    "title": "2D Shape Tracing Worksheets",
+    "summary": "2D Shape Tracing Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Geometry",
+    "url": "/lab/concept-layout/supplemental/shape-tracing.html",
+    "worksheetId": "supplemental-shape-tracing",
+    "route": "legacy/supplemental-shape-tracing"
+  },
+  {
+    "title": "Comparing Sizes: Larger and Smaller",
+    "summary": "Comparing Sizes: Larger and Smaller. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/supplemental/size-comparison.html",
+    "worksheetId": "supplemental-size-comparison",
+    "route": "legacy/supplemental-size-comparison"
+  },
+  {
+    "title": "Venn Diagram Number Sorting",
+    "summary": "Venn Diagram Number Sorting. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Data and Probability",
+    "url": "/lab/concept-layout/supplemental/venn-sorting.html",
+    "worksheetId": "supplemental-venn-sorting",
+    "route": "legacy/supplemental-venn-sorting"
+  },
+  {
+    "title": "Tally Marks Worksheets for Kids",
+    "summary": "Tally Marks Worksheets for Kids. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Data and Probability",
+    "url": "/lab/legacy-k-activities/tally-mark-activities.html",
+    "worksheetId": "supplemental-tally-mark-activities",
+    "route": "legacy/supplemental-tally-mark-activities"
+  },
+  {
+    "title": "Prime Factorization and Factor Trees Worksheets",
+    "summary": "Prime Factorization and Factor Trees Worksheets. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/factor-trees.html",
+    "worksheetId": "supplemental-factor-trees",
+    "route": "legacy/supplemental-factor-trees"
+  },
+  {
+    "title": "Reading Thermometers Worksheets: Celsius",
+    "summary": "Reading Thermometers Worksheets: Celsius. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/supplemental/thermometer-reading.html",
+    "worksheetId": "supplemental-thermometer-reading",
+    "route": "legacy/supplemental-thermometer-reading"
+  },
+  {
+    "title": "Heavier and Lighter Worksheets",
+    "summary": "Heavier and Lighter Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/supplemental/heavy-light.html",
+    "worksheetId": "supplemental-heavy-light",
+    "route": "legacy/supplemental-heavy-light"
+  },
+  {
+    "title": "Comparing Capacity Worksheets",
+    "summary": "Comparing Capacity Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/supplemental/capacity-comparison.html",
+    "worksheetId": "supplemental-capacity-comparison",
+    "route": "legacy/supplemental-capacity-comparison"
+  },
+  {
+    "title": "Counting Cut and Paste Worksheets",
+    "summary": "Counting Cut and Paste Worksheets. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/cut-paste-counting.html",
+    "worksheetId": "supplemental-cut-paste-counting",
+    "route": "legacy/supplemental-cut-paste-counting"
+  },
+  {
+    "title": "Addition Color by Number Worksheets",
+    "summary": "Addition Color by Number Worksheets. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/color-addition.html",
+    "worksheetId": "supplemental-color-addition",
+    "route": "legacy/supplemental-color-addition"
+  },
+  {
+    "title": "Multiplication Color by Number Worksheets",
+    "summary": "Multiplication Color by Number Worksheets. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/color-multiplication.html",
+    "worksheetId": "supplemental-color-multiplication",
+    "route": "legacy/supplemental-color-multiplication"
+  },
+  {
+    "title": "Division Color by Code Worksheets",
+    "summary": "Division Color by Code Worksheets. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/color-division.html",
+    "worksheetId": "supplemental-color-division",
+    "route": "legacy/supplemental-color-division"
+  },
+  {
+    "title": "Kindergarten Math Skill Check",
+    "summary": "Kindergarten Math Skill Check. Printable practice with an answer key where provided.",
+    "grade": 0,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/kindergarten-skill-check.html",
+    "worksheetId": "supplemental-kindergarten-skill-check",
+    "route": "legacy/supplemental-kindergarten-skill-check"
+  },
+  {
+    "title": "1st Grade Math Skill Check",
+    "summary": "1st Grade Math Skill Check. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/supplemental/grade-one-skill-check.html",
+    "worksheetId": "supplemental-grade-one-skill-check",
+    "route": "legacy/supplemental-grade-one-skill-check"
+  },
+  {
+    "title": "Multi-Digit Decimal Operations Worksheets – Grade 6",
+    "summary": "Multi-Digit Decimal Operations Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-horizontal-practice.html",
+    "worksheetId": "old-six-grade-6-decimals-horizontal-practice",
+    "route": "legacy/old-six-grade-6-decimals-horizontal-practice"
+  },
+  {
+    "title": "Missing Number Multidigit Decimal Operations Worksheets",
+    "summary": "Missing Number Multidigit Decimal Operations Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-missing-number-practice.html",
+    "worksheetId": "old-six-grade-6-decimals-missing-number-practice",
+    "route": "legacy/old-six-grade-6-decimals-missing-number-practice"
+  },
+  {
+    "title": "Multi-Digit Decimal Operations Review Worksheets – Grade 6",
+    "summary": "Multi-Digit Decimal Operations Review Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-prerequisite-review.html",
+    "worksheetId": "old-six-grade-6-decimals-prerequisite-review",
+    "route": "legacy/old-six-grade-6-decimals-prerequisite-review"
+  },
+  {
+    "title": "Vertical Multidigit Decimal Operations Worksheets",
+    "summary": "Vertical Multidigit Decimal Operations Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-vertical-practice.html",
+    "worksheetId": "old-six-grade-6-decimals-vertical-practice",
+    "route": "legacy/old-six-grade-6-decimals-vertical-practice"
+  },
+  {
+    "title": "Multidigit Decimal Operations Word Problem Worksheets",
+    "summary": "Multidigit Decimal Operations Word Problem Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-decimals-word-problems.html",
+    "worksheetId": "old-six-grade-6-decimals-word-problems",
+    "route": "legacy/old-six-grade-6-decimals-word-problems"
+  },
+  {
+    "title": "Dividing Fractions by Fractions Worksheets – Grade 6",
+    "summary": "Dividing Fractions by Fractions Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-horizontal-practice.html",
+    "worksheetId": "old-six-grade-6-fractiondiv-horizontal-practice",
+    "route": "legacy/old-six-grade-6-fractiondiv-horizontal-practice"
+  },
+  {
+    "title": "Missing Number Dividing Fractions by Fractions Worksheets",
+    "summary": "Missing Number Dividing Fractions by Fractions Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-missing-number-practice.html",
+    "worksheetId": "old-six-grade-6-fractiondiv-missing-number-practice",
+    "route": "legacy/old-six-grade-6-fractiondiv-missing-number-practice"
+  },
+  {
+    "title": "Dividing Fractions by Fractions Review Worksheets",
+    "summary": "Dividing Fractions by Fractions Review Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-prerequisite-review.html",
+    "worksheetId": "old-six-grade-6-fractiondiv-prerequisite-review",
+    "route": "legacy/old-six-grade-6-fractiondiv-prerequisite-review"
+  },
+  {
+    "title": "Dividing Fractions by Fractions Word Problem Worksheets",
+    "summary": "Dividing Fractions by Fractions Word Problem Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-fractiondiv-word-problems.html",
+    "worksheetId": "old-six-grade-6-fractiondiv-word-problems",
+    "route": "legacy/old-six-grade-6-fractiondiv-word-problems"
+  },
+  {
+    "title": "Greatest Common Factor Worksheets – Grade 6",
+    "summary": "Greatest Common Factor Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-horizontal-practice.html",
+    "worksheetId": "old-six-grade-6-gcf-horizontal-practice",
+    "route": "legacy/old-six-grade-6-gcf-horizontal-practice"
+  },
+  {
+    "title": "Greatest Common Factor: Missing Parts Worksheets – Grade 6",
+    "summary": "Greatest Common Factor: Missing Parts Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-missing-part-challenge.html",
+    "worksheetId": "old-six-grade-6-gcf-missing-part-challenge",
+    "route": "legacy/old-six-grade-6-gcf-missing-part-challenge"
+  },
+  {
+    "title": "Greatest Common Factor Review Worksheets – Grade 6",
+    "summary": "Greatest Common Factor Review Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-prerequisite-review.html",
+    "worksheetId": "old-six-grade-6-gcf-prerequisite-review",
+    "route": "legacy/old-six-grade-6-gcf-prerequisite-review"
+  },
+  {
+    "title": "Greatest Common Factor Word Problem Worksheets – Grade 6",
+    "summary": "Greatest Common Factor Word Problem Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-gcf-word-problems.html",
+    "worksheetId": "old-six-grade-6-gcf-word-problems",
+    "route": "legacy/old-six-grade-6-gcf-word-problems"
+  },
+  {
+    "title": "Least Common Multiple Worksheets – Grade 6",
+    "summary": "Least Common Multiple Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-horizontal-practice.html",
+    "worksheetId": "old-six-grade-6-lcm-horizontal-practice",
+    "route": "legacy/old-six-grade-6-lcm-horizontal-practice"
+  },
+  {
+    "title": "Least Common Multiple: Missing Parts Worksheets – Grade 6",
+    "summary": "Least Common Multiple: Missing Parts Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-missing-part-challenge.html",
+    "worksheetId": "old-six-grade-6-lcm-missing-part-challenge",
+    "route": "legacy/old-six-grade-6-lcm-missing-part-challenge"
+  },
+  {
+    "title": "Least Common Multiple Review Worksheets – Grade 6",
+    "summary": "Least Common Multiple Review Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-prerequisite-review.html",
+    "worksheetId": "old-six-grade-6-lcm-prerequisite-review",
+    "route": "legacy/old-six-grade-6-lcm-prerequisite-review"
+  },
+  {
+    "title": "Least Common Multiple Word Problem Worksheets – Grade 6",
+    "summary": "Least Common Multiple Word Problem Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-lcm-word-problems.html",
+    "worksheetId": "old-six-grade-6-lcm-word-problems",
+    "route": "legacy/old-six-grade-6-lcm-word-problems"
+  },
+  {
+    "title": "Multi-Digit Long Division Worksheets – Grade 6",
+    "summary": "Multi-Digit Long Division Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-horizontal-practice.html",
+    "worksheetId": "old-six-grade-6-longdiv-horizontal-practice",
+    "route": "legacy/old-six-grade-6-longdiv-horizontal-practice"
+  },
+  {
+    "title": "Missing Number Multidigit Long Division Worksheets",
+    "summary": "Missing Number Multidigit Long Division Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-missing-number-practice.html",
+    "worksheetId": "old-six-grade-6-longdiv-missing-number-practice",
+    "route": "legacy/old-six-grade-6-longdiv-missing-number-practice"
+  },
+  {
+    "title": "Multi-Digit Long Division Review Worksheets – Grade 6",
+    "summary": "Multi-Digit Long Division Review Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-prerequisite-review.html",
+    "worksheetId": "old-six-grade-6-longdiv-prerequisite-review",
+    "route": "legacy/old-six-grade-6-longdiv-prerequisite-review"
+  },
+  {
+    "title": "Vertical Multi-Digit Long Division Worksheets – Grade 6",
+    "summary": "Vertical Multi-Digit Long Division Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-vertical-practice.html",
+    "worksheetId": "old-six-grade-6-longdiv-vertical-practice",
+    "route": "legacy/old-six-grade-6-longdiv-vertical-practice"
+  },
+  {
+    "title": "Multidigit Long Division Word Problem Worksheets – Grade 6",
+    "summary": "Multidigit Long Division Word Problem Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Whole Numbers",
+    "url": "/lab/legacy-grade-six/en/print/common-core-arithmetic-upper/grade-6-longdiv-word-problems.html",
+    "worksheetId": "old-six-grade-6-longdiv-word-problems",
+    "route": "legacy/old-six-grade-6-longdiv-word-problems"
+  },
+  {
+    "title": "Horizontal Addition: Hundredths and Thousandths Worksheets",
+    "summary": "Horizontal Addition: Hundredths and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Decimal Addition: Tenths and Thousandths Worksheets",
+    "summary": "Horizontal Decimal Addition: Tenths and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Decimal Addition: Thousandths Worksheets",
+    "summary": "Horizontal Decimal Addition: Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Addition: Whole Numbers and Thousandths Worksheets",
+    "summary": "Horizontal Addition: Whole Numbers and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Subtraction: Hundredths Minus Thousandths Worksheets",
+    "summary": "Horizontal Subtraction: Hundredths Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Subtraction: Tenths Minus Thousandths Worksheets",
+    "summary": "Horizontal Subtraction: Tenths Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Decimal Subtraction: Thousandths Worksheets",
+    "summary": "Horizontal Decimal Subtraction: Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets"
+  },
+  {
+    "title": "Horizontal Subtraction: Whole Minus Thousandths Worksheets",
+    "summary": "Horizontal Subtraction: Whole Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Addition: Hundredths and Thousandths Worksheets",
+    "summary": "Vertical Addition: Hundredths and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Addition: Tenths and Thousandths Worksheets",
+    "summary": "Vertical Decimal Addition: Tenths and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Addition: Thousandths Worksheets",
+    "summary": "Vertical Decimal Addition: Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Addition: Whole Numbers and Thousandths Worksheets",
+    "summary": "Vertical Addition: Whole Numbers and Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Subtraction: Hundredths Minus Thousandths Worksheets",
+    "summary": "Vertical Subtraction: Hundredths Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Subtraction: Tenths Minus Thousandths Worksheets",
+    "summary": "Vertical Subtraction: Tenths Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Subtraction: Thousandths Worksheets",
+    "summary": "Vertical Decimal Subtraction: Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets"
+  },
+  {
+    "title": "Vertical Subtraction: Whole Minus Thousandths Worksheets",
+    "summary": "Vertical Subtraction: Whole Minus Thousandths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets"
+  },
+  {
+    "title": "Missing Number Division: Whole Numbers by Tenths Worksheets",
+    "summary": "Missing Number Division: Whole Numbers by Tenths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Division: Hundredths by Hundredths Worksheets",
+    "summary": "Vertical Decimal Division: Hundredths by Hundredths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Division: Hundredths by Tenths Worksheets",
+    "summary": "Vertical Decimal Division: Hundredths by Tenths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Division: Tenths by Hundredths Worksheets",
+    "summary": "Vertical Decimal Division: Tenths by Hundredths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Division: Tenths by Tenths Worksheets",
+    "summary": "Vertical Decimal Division: Tenths by Tenths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets"
+  },
+  {
+    "title": "Vertical Division: Whole Numbers by Hundredths Worksheets",
+    "summary": "Vertical Division: Whole Numbers by Hundredths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets"
+  },
+  {
+    "title": "Vertical Decimal Division: Whole Numbers by Tenths Worksheets",
+    "summary": "Vertical Decimal Division: Whole Numbers by Tenths Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Decimals",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets.html",
+    "worksheetId": "old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets"
+  },
+  {
+    "title": "Missing Number Fraction Division Worksheets – Grade 6",
+    "summary": "Missing Number Fraction Division Worksheets – Grade 6. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-fraction-div-missing-number-fraction-division-worksheets.html",
+    "worksheetId": "old-six-grade-6-fraction-div-missing-number-fraction-division-worksheets",
+    "route": "legacy/old-six-grade-6-fraction-div-missing-number-fraction-division-worksheets"
+  },
+  {
+    "title": "Missing Number: Proper Fraction by Whole Number Worksheets",
+    "summary": "Missing Number: Proper Fraction by Whole Number Worksheets. Printable practice with an answer key where provided.",
+    "grade": 6,
+    "topic": "Fractions",
+    "url": "/lab/legacy-grade-six/en/print/level-skills-upper/grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets.html",
+    "worksheetId": "old-six-grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets",
+    "route": "legacy/old-six-grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets"
+  },
+  {
+    "title": "Addition and Subtraction Within 9",
+    "summary": "Addition and Subtraction Within 9. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3.html",
+    "worksheetId": "ko-reuse-1-1-3",
+    "route": "legacy/ko-reuse-1-1-3"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 9)",
+    "summary": "Word Problems: Find the Unknown (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-1.html",
+    "worksheetId": "ko-reuse-1-1-3-1",
+    "route": "legacy/ko-reuse-1-1-3-1"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 9)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-2.html",
+    "worksheetId": "ko-reuse-1-1-3-2",
+    "route": "legacy/ko-reuse-1-1-3-2"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 9)",
+    "summary": "Match Word Problems to Equations (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-3.html",
+    "worksheetId": "ko-reuse-1-1-3-3",
+    "route": "legacy/ko-reuse-1-1-3-3"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 9)",
+    "summary": "Word Problems: Choose Relevant Information (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-4.html",
+    "worksheetId": "ko-reuse-1-1-3-4",
+    "route": "legacy/ko-reuse-1-1-3-4"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 9)",
+    "summary": "Word Problems with Bar Models (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-5.html",
+    "worksheetId": "ko-reuse-1-1-3-5",
+    "route": "legacy/ko-reuse-1-1-3-5"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 9)",
+    "summary": "Write and Check Word Problems (Within 9). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-3-6.html",
+    "worksheetId": "ko-reuse-1-1-3-6",
+    "route": "legacy/ko-reuse-1-1-3-6"
+  },
+  {
+    "title": "Place Value and Number Order Within 50",
+    "summary": "Place Value and Number Order Within 50. Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-1-5.html",
+    "worksheetId": "ko-reuse-1-1-5",
+    "route": "legacy/ko-reuse-1-1-5"
+  },
+  {
+    "title": "Place Value and Number Order Within 100",
+    "summary": "Place Value and Number Order Within 100. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-1.html",
+    "worksheetId": "ko-reuse-1-2-1",
+    "route": "legacy/ko-reuse-1-2-1"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "summary": "Word Problems: Find the Unknown (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-3.html",
+    "worksheetId": "ko-reuse-1-2-2-3",
+    "route": "legacy/ko-reuse-1-2-2-3"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-4.html",
+    "worksheetId": "ko-reuse-1-2-2-4",
+    "route": "legacy/ko-reuse-1-2-2-4"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 20)",
+    "summary": "Match Word Problems to Equations (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-5.html",
+    "worksheetId": "ko-reuse-1-2-2-5",
+    "route": "legacy/ko-reuse-1-2-2-5"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "summary": "Word Problems: Choose Relevant Information (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-6.html",
+    "worksheetId": "ko-reuse-1-2-2-6",
+    "route": "legacy/ko-reuse-1-2-2-6"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 20)",
+    "summary": "Word Problems with Bar Models (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-7.html",
+    "worksheetId": "ko-reuse-1-2-2-7",
+    "route": "legacy/ko-reuse-1-2-2-7"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 20)",
+    "summary": "Write and Check Word Problems (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-2-8.html",
+    "worksheetId": "ko-reuse-1-2-2-8",
+    "route": "legacy/ko-reuse-1-2-2-8"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "summary": "Word Problems: Find the Unknown (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-3.html",
+    "worksheetId": "ko-reuse-1-2-4-3",
+    "route": "legacy/ko-reuse-1-2-4-3"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-4.html",
+    "worksheetId": "ko-reuse-1-2-4-4",
+    "route": "legacy/ko-reuse-1-2-4-4"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 20)",
+    "summary": "Match Word Problems to Equations (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-5.html",
+    "worksheetId": "ko-reuse-1-2-4-5",
+    "route": "legacy/ko-reuse-1-2-4-5"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "summary": "Word Problems: Choose Relevant Information (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-6.html",
+    "worksheetId": "ko-reuse-1-2-4-6",
+    "route": "legacy/ko-reuse-1-2-4-6"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 20)",
+    "summary": "Word Problems with Bar Models (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-7.html",
+    "worksheetId": "ko-reuse-1-2-4-7",
+    "route": "legacy/ko-reuse-1-2-4-7"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 20)",
+    "summary": "Write and Check Word Problems (Within 20). Printable practice with an answer key where provided.",
+    "grade": 1,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-4-8.html",
+    "worksheetId": "ko-reuse-1-2-4-8",
+    "route": "legacy/ko-reuse-1-2-4-8"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 100)",
+    "summary": "Word Problems: Find the Unknown (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-3.html",
+    "worksheetId": "ko-reuse-1-2-6-3",
+    "route": "legacy/ko-reuse-1-2-6-3"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 100)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-4.html",
+    "worksheetId": "ko-reuse-1-2-6-4",
+    "route": "legacy/ko-reuse-1-2-6-4"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 100)",
+    "summary": "Match Word Problems to Equations (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-5.html",
+    "worksheetId": "ko-reuse-1-2-6-5",
+    "route": "legacy/ko-reuse-1-2-6-5"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 100)",
+    "summary": "Word Problems: Choose Relevant Information (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-6.html",
+    "worksheetId": "ko-reuse-1-2-6-6",
+    "route": "legacy/ko-reuse-1-2-6-6"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 100)",
+    "summary": "Word Problems with Bar Models (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-7.html",
+    "worksheetId": "ko-reuse-1-2-6-7",
+    "route": "legacy/ko-reuse-1-2-6-7"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 100)",
+    "summary": "Write and Check Word Problems (Within 100). Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-1-2-6-8.html",
+    "worksheetId": "ko-reuse-1-2-6-8",
+    "route": "legacy/ko-reuse-1-2-6-8"
+  },
+  {
+    "title": "Three-Digit Place Value and Number Order",
+    "summary": "Three-Digit Place Value and Number Order. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-1.html",
+    "worksheetId": "ko-reuse-2-1-1",
+    "route": "legacy/ko-reuse-2-1-1"
+  },
+  {
+    "title": "Addition and Subtraction Within 100",
+    "summary": "Addition and Subtraction Within 100. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3.html",
+    "worksheetId": "ko-reuse-2-1-3",
+    "route": "legacy/ko-reuse-2-1-3"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 200)",
+    "summary": "Word Problems: Find the Unknown (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-1.html",
+    "worksheetId": "ko-reuse-2-1-3-1",
+    "route": "legacy/ko-reuse-2-1-3-1"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 200)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-2.html",
+    "worksheetId": "ko-reuse-2-1-3-2",
+    "route": "legacy/ko-reuse-2-1-3-2"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 200)",
+    "summary": "Match Word Problems to Equations (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-3.html",
+    "worksheetId": "ko-reuse-2-1-3-3",
+    "route": "legacy/ko-reuse-2-1-3-3"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 200)",
+    "summary": "Word Problems: Choose Relevant Information (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-4.html",
+    "worksheetId": "ko-reuse-2-1-3-4",
+    "route": "legacy/ko-reuse-2-1-3-4"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 200)",
+    "summary": "Word Problems with Bar Models (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-5.html",
+    "worksheetId": "ko-reuse-2-1-3-5",
+    "route": "legacy/ko-reuse-2-1-3-5"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 200)",
+    "summary": "Write and Check Word Problems (Within 200). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-6.html",
+    "worksheetId": "ko-reuse-2-1-3-6",
+    "route": "legacy/ko-reuse-2-1-3-6"
+  },
+  {
+    "title": "2-Digit Addition Without Regrouping",
+    "summary": "2-Digit Addition Without Regrouping. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-7.html",
+    "worksheetId": "ko-reuse-2-1-3-7",
+    "route": "legacy/ko-reuse-2-1-3-7"
+  },
+  {
+    "title": "2-Digit Addition with 1 Regrouping Steps",
+    "summary": "2-Digit Addition with 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-8.html",
+    "worksheetId": "ko-reuse-2-1-3-8",
+    "route": "legacy/ko-reuse-2-1-3-8"
+  },
+  {
+    "title": "2-Digit Addition with 2 Regrouping Steps",
+    "summary": "2-Digit Addition with 2 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-9.html",
+    "worksheetId": "ko-reuse-2-1-3-9",
+    "route": "legacy/ko-reuse-2-1-3-9"
+  },
+  {
+    "title": "2-Digit Subtraction Without Regrouping",
+    "summary": "2-Digit Subtraction Without Regrouping. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-10.html",
+    "worksheetId": "ko-reuse-2-1-3-10",
+    "route": "legacy/ko-reuse-2-1-3-10"
+  },
+  {
+    "title": "2-Digit Subtraction with 1 Regrouping Steps",
+    "summary": "2-Digit Subtraction with 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 2,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-1-3-11.html",
+    "worksheetId": "ko-reuse-2-1-3-11",
+    "route": "legacy/ko-reuse-2-1-3-11"
+  },
+  {
+    "title": "Four-Digit Place Value and Number Order",
+    "summary": "Four-Digit Place Value and Number Order. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-2-1.html",
+    "worksheetId": "ko-reuse-2-2-1",
+    "route": "legacy/ko-reuse-2-2-1"
+  },
+  {
+    "title": "m and cm: Convert and Compare",
+    "summary": "m and cm: Convert and Compare. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-2-2-3-1.html",
+    "worksheetId": "ko-reuse-2-2-3-1",
+    "route": "legacy/ko-reuse-2-2-3-1"
+  },
+  {
+    "title": "Addition and Subtraction Within 1000",
+    "summary": "Addition and Subtraction Within 1000. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1.html",
+    "worksheetId": "ko-reuse-3-1-1",
+    "route": "legacy/ko-reuse-3-1-1"
+  },
+  {
+    "title": "Word Problems: Find the Unknown (Within 1000)",
+    "summary": "Word Problems: Find the Unknown (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-1.html",
+    "worksheetId": "ko-reuse-3-1-1-1",
+    "route": "legacy/ko-reuse-3-1-1-1"
+  },
+  {
+    "title": "Word Problems: Same Numbers, Different Questions (Within 1000)",
+    "summary": "Word Problems: Same Numbers, Different Questions (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-2.html",
+    "worksheetId": "ko-reuse-3-1-1-2",
+    "route": "legacy/ko-reuse-3-1-1-2"
+  },
+  {
+    "title": "Match Word Problems to Equations (Within 1000)",
+    "summary": "Match Word Problems to Equations (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-3.html",
+    "worksheetId": "ko-reuse-3-1-1-3",
+    "route": "legacy/ko-reuse-3-1-1-3"
+  },
+  {
+    "title": "Word Problems: Choose Relevant Information (Within 1000)",
+    "summary": "Word Problems: Choose Relevant Information (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-4.html",
+    "worksheetId": "ko-reuse-3-1-1-4",
+    "route": "legacy/ko-reuse-3-1-1-4"
+  },
+  {
+    "title": "Word Problems with Bar Models (Within 1000)",
+    "summary": "Word Problems with Bar Models (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-5.html",
+    "worksheetId": "ko-reuse-3-1-1-5",
+    "route": "legacy/ko-reuse-3-1-1-5"
+  },
+  {
+    "title": "Write and Check Word Problems (Within 1000)",
+    "summary": "Write and Check Word Problems (Within 1000). Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-6.html",
+    "worksheetId": "ko-reuse-3-1-1-6",
+    "route": "legacy/ko-reuse-3-1-1-6"
+  },
+  {
+    "title": "3-Digit Addition Without Regrouping",
+    "summary": "3-Digit Addition Without Regrouping. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-7.html",
+    "worksheetId": "ko-reuse-3-1-1-7",
+    "route": "legacy/ko-reuse-3-1-1-7"
+  },
+  {
+    "title": "3-Digit Addition with 1 Regrouping Steps",
+    "summary": "3-Digit Addition with 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-8.html",
+    "worksheetId": "ko-reuse-3-1-1-8",
+    "route": "legacy/ko-reuse-3-1-1-8"
+  },
+  {
+    "title": "3-Digit Addition with 2 Regrouping Steps",
+    "summary": "3-Digit Addition with 2 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-9.html",
+    "worksheetId": "ko-reuse-3-1-1-9",
+    "route": "legacy/ko-reuse-3-1-1-9"
+  },
+  {
+    "title": "3-Digit Addition with 3 Regrouping Steps",
+    "summary": "3-Digit Addition with 3 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-10.html",
+    "worksheetId": "ko-reuse-3-1-1-10",
+    "route": "legacy/ko-reuse-3-1-1-10"
+  },
+  {
+    "title": "3-Digit Subtraction Without Regrouping",
+    "summary": "3-Digit Subtraction Without Regrouping. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-11.html",
+    "worksheetId": "ko-reuse-3-1-1-11",
+    "route": "legacy/ko-reuse-3-1-1-11"
+  },
+  {
+    "title": "3-Digit Subtraction with 1 Regrouping Steps",
+    "summary": "3-Digit Subtraction with 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-12.html",
+    "worksheetId": "ko-reuse-3-1-1-12",
+    "route": "legacy/ko-reuse-3-1-1-12"
+  },
+  {
+    "title": "3-Digit Subtraction with 2 Regrouping Steps",
+    "summary": "3-Digit Subtraction with 2 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-1-13.html",
+    "worksheetId": "ko-reuse-3-1-1-13",
+    "route": "legacy/ko-reuse-3-1-1-13"
+  },
+  {
+    "title": "Division Facts and Missing Numbers",
+    "summary": "Division Facts and Missing Numbers. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-3.html",
+    "worksheetId": "ko-reuse-3-1-3",
+    "route": "legacy/ko-reuse-3-1-3"
+  },
+  {
+    "title": "Multiply Two-Digit Numbers by One Digit",
+    "summary": "Multiply Two-Digit Numbers by One Digit. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4.html",
+    "worksheetId": "ko-reuse-3-1-4",
+    "route": "legacy/ko-reuse-3-1-4"
+  },
+  {
+    "title": "2-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "summary": "2-Digit Multiply by One Digit: 0 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-1.html",
+    "worksheetId": "ko-reuse-3-1-4-1",
+    "route": "legacy/ko-reuse-3-1-4-1"
+  },
+  {
+    "title": "2-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "summary": "2-Digit Multiply by One Digit: 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-2.html",
+    "worksheetId": "ko-reuse-3-1-4-2",
+    "route": "legacy/ko-reuse-3-1-4-2"
+  },
+  {
+    "title": "2-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "summary": "2-Digit Multiply by One Digit: 2 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-4-3.html",
+    "worksheetId": "ko-reuse-3-1-4-3",
+    "route": "legacy/ko-reuse-3-1-4-3"
+  },
+  {
+    "title": "cm and mm: Convert and Compare",
+    "summary": "cm and mm: Convert and Compare. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-1.html",
+    "worksheetId": "ko-reuse-3-1-5-1",
+    "route": "legacy/ko-reuse-3-1-5-1"
+  },
+  {
+    "title": "km and m: Convert and Compare",
+    "summary": "km and m: Convert and Compare. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-2.html",
+    "worksheetId": "ko-reuse-3-1-5-2",
+    "route": "legacy/ko-reuse-3-1-5-2"
+  },
+  {
+    "title": "Elapsed Time Word Problems",
+    "summary": "Elapsed Time Word Problems. Printable practice with an answer key where provided.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-1-5-3.html",
+    "worksheetId": "ko-reuse-3-1-5-3",
+    "route": "legacy/ko-reuse-3-1-5-3"
+  },
+  {
+    "title": "Multi-Digit Multiplication Practice",
+    "summary": "Multi-Digit Multiplication Practice. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1.html",
+    "worksheetId": "ko-reuse-3-2-1",
+    "route": "legacy/ko-reuse-3-2-1"
+  },
+  {
+    "title": "3-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "summary": "3-Digit Multiply by One Digit: 0 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-1.html",
+    "worksheetId": "ko-reuse-3-2-1-1",
+    "route": "legacy/ko-reuse-3-2-1-1"
+  },
+  {
+    "title": "3-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "summary": "3-Digit Multiply by One Digit: 1 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-2.html",
+    "worksheetId": "ko-reuse-3-2-1-2",
+    "route": "legacy/ko-reuse-3-2-1-2"
+  },
+  {
+    "title": "3-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "summary": "3-Digit Multiply by One Digit: 2 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-3.html",
+    "worksheetId": "ko-reuse-3-2-1-3",
+    "route": "legacy/ko-reuse-3-2-1-3"
+  },
+  {
+    "title": "3-Digit Multiply by One Digit: 3 Regrouping Steps",
+    "summary": "3-Digit Multiply by One Digit: 3 Regrouping Steps. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-1-4.html",
+    "worksheetId": "ko-reuse-3-2-1-4",
+    "route": "legacy/ko-reuse-3-2-1-4"
+  },
+  {
+    "title": "2-Digit by 1-Digit Division Without Remainders",
+    "summary": "2-Digit by 1-Digit Division Without Remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-1.html",
+    "worksheetId": "ko-reuse-3-2-3-1",
+    "route": "legacy/ko-reuse-3-2-3-1"
+  },
+  {
+    "title": "2-Digit by 1-Digit Division with Remainders",
+    "summary": "2-Digit by 1-Digit Division with Remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-2.html",
+    "worksheetId": "ko-reuse-3-2-3-2",
+    "route": "legacy/ko-reuse-3-2-3-2"
+  },
+  {
+    "title": "3-Digit by 1-Digit Division Without Remainders",
+    "summary": "3-Digit by 1-Digit Division Without Remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-3.html",
+    "worksheetId": "ko-reuse-3-2-3-3",
+    "route": "legacy/ko-reuse-3-2-3-3"
+  },
+  {
+    "title": "3-Digit by 1-Digit Division with Remainders",
+    "summary": "3-Digit by 1-Digit Division with Remainders. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-3-4.html",
+    "worksheetId": "ko-reuse-3-2-3-4",
+    "route": "legacy/ko-reuse-3-2-3-4"
+  },
+  {
+    "title": "L and mL: Convert and Compare",
+    "summary": "L and mL: Convert and Compare. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-4-1.html",
+    "worksheetId": "ko-reuse-3-2-4-1",
+    "route": "legacy/ko-reuse-3-2-4-1"
+  },
+  {
+    "title": "kg and g: Convert and Compare",
+    "summary": "kg and g: Convert and Compare. Printable practice with an answer key where provided.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-3-2-4-2.html",
+    "worksheetId": "ko-reuse-3-2-4-2",
+    "route": "legacy/ko-reuse-3-2-4-2"
+  },
+  {
+    "title": "2-Digit by 2-Digit Division Without Remainders",
+    "summary": "2-Digit by 2-Digit Division Without Remainders. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-1.html",
+    "worksheetId": "ko-reuse-4-1-3-1",
+    "route": "legacy/ko-reuse-4-1-3-1"
+  },
+  {
+    "title": "2-Digit by 2-Digit Division with Remainders",
+    "summary": "2-Digit by 2-Digit Division with Remainders. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-2.html",
+    "worksheetId": "ko-reuse-4-1-3-2",
+    "route": "legacy/ko-reuse-4-1-3-2"
+  },
+  {
+    "title": "3-Digit by 2-Digit Division Without Remainders",
+    "summary": "3-Digit by 2-Digit Division Without Remainders. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-3.html",
+    "worksheetId": "ko-reuse-4-1-3-3",
+    "route": "legacy/ko-reuse-4-1-3-3"
+  },
+  {
+    "title": "3-Digit by 2-Digit Division with Remainders",
+    "summary": "3-Digit by 2-Digit Division with Remainders. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-1-3-4.html",
+    "worksheetId": "ko-reuse-4-1-3-4",
+    "route": "legacy/ko-reuse-4-1-3-4"
+  },
+  {
+    "title": "Add, Subtract, and Compare Decimals",
+    "summary": "Add, Subtract, and Compare Decimals. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-4-2-3.html",
+    "worksheetId": "ko-reuse-4-2-3",
+    "route": "legacy/ko-reuse-4-2-3"
+  },
+  {
+    "title": "Order of Operations and Word Problems",
+    "summary": "Order of Operations and Word Problems. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Whole Numbers",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-5-1-1.html",
+    "worksheetId": "ko-reuse-5-1-1",
+    "route": "legacy/ko-reuse-5-1-1"
+  },
+  {
+    "title": "Decimal Multiplication and Powers of Ten",
+    "summary": "Decimal Multiplication and Powers of Ten. Printable practice with an answer key where provided.",
+    "grade": 5,
+    "topic": "Decimals",
+    "url": "/lab/concept-layout/ko-reuse/ko-reuse-5-2-4.html",
+    "worksheetId": "ko-reuse-5-2-4",
+    "route": "legacy/ko-reuse-5-2-4"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-fraction-missing",
+  "title": "Solve missing-number fraction division",
+  "intro": "An unknown dividend, divisor and quotient have different roles. Use divisor × quotient = dividend to connect them.",
+  "html": "<h2>Solve missing-number fraction division</h2><p>An unknown dividend, divisor and quotient have different roles. Use divisor × quotient = dividend to connect them.</p><p>The given quotient can itself be a fraction. Use exact fractions for every step rather than rounding a decimal approximation.</p><h3>A method to try</h3><ol><li>Identify whether the blank is the dividend, divisor or quotient.</li><li>Use dividend = divisor × quotient, or divide the dividend by the known factor.</li><li>Substitute the exact fraction back into the original division.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>2/7 ÷ □ = 22/49</strong><p>The divisor is (2/7) ÷ (22/49) = (2/7) × (49/22) = 7/11.</p><p class=\"sample-equation\">□ = 7/11</p><p>Check: 2/7 ÷ 7/11 = 22/49.</p></div><div class=\"model\"><strong>□ ÷ 6 = 7/54</strong><p>Multiply the quotient by the divisor.</p><p class=\"sample-equation\">□ = 7/9</p><p>Check: 7/9 ÷ 6 = 7/54.</p></div><h3>A mistake to watch for</h3><p>Do not apply the reciprocal rule to whichever fraction is nearest the blank. Write the multiplication relationship first.</p><h3>Check and explain</h3><p>Equivalent simplified or unsimplified fractions can represent the same answer.</p>",
+  "examples": [
+    [
+      "2/7 ÷ □ = 22/49",
+      "The divisor is (2/7) ÷ (22/49) = (2/7) × (49/22) = 7/11.",
+      "□ = 7/11",
+      "2/7 ÷ 7/11 = 22/49."
+    ],
+    [
+      "□ ÷ 6 = 7/54",
+      "Multiply the quotient by the divisor.",
+      "□ = 7/9",
+      "7/9 ÷ 6 = 7/54."
+    ]
+  ]
+}

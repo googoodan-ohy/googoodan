@@ -1,0 +1,20 @@
+{
+  "id": "us-fix-fraction-divide",
+  "title": "Divide fractions by fractions",
+  "intro": "A quotient measures how many divisor-sized amounts make the dividend. Fraction division can have an answer greater than one, equal to one, or less than one.",
+  "html": "<h2>Divide fractions by fractions</h2><p>A quotient measures how many divisor-sized amounts make the dividend. Fraction division can have an answer greater than one, equal to one, or less than one.</p><p>Dividing by c/d is equivalent to multiplying by d/c because those two factors multiply to one. The divisor cannot be zero. Fractions greater than one are valid inputs; convert a mixed number to an improper fraction first when necessary.</p><h3>A method to try</h3><ol><li>Identify the dividend and the nonzero divisor.</li><li>Keep the dividend and multiply by the reciprocal of the divisor.</li><li>Multiply, simplify, and check by multiplying the quotient by the original divisor.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>2/9 ÷ 13/12</strong><p>Multiply 2/9 by 12/13. The product is 24/117, which simplifies by 3.</p><p class=\"sample-equation\">2/9 ÷ 13/12 = 8/39</p><p>Check: 8/39 × 13/12 = 2/9.</p></div><div class=\"model\"><strong>3/4 ÷ 1/2</strong><p>Express both in fourths: three fourths contain one and a half groups of two fourths.</p><p class=\"sample-equation\">3/4 ÷ 1/2 = 3/2</p><p>Check: 3/2 × 1/2 = 3/4.</p></div><h3>A mistake to watch for</h3><p>Invert only the divisor. Inverting both fractions changes the quotient.</p><h3>Check and explain</h3><p>A quotient smaller than one is reasonable when the dividend is smaller than the divisor.</p>",
+  "examples": [
+    [
+      "2/9 ÷ 13/12",
+      "Multiply 2/9 by 12/13. The product is 24/117, which simplifies by 3.",
+      "2/9 ÷ 13/12 = 8/39",
+      "8/39 × 13/12 = 2/9."
+    ],
+    [
+      "3/4 ÷ 1/2",
+      "Express both in fourths: three fourths contain one and a half groups of two fourths.",
+      "3/4 ÷ 1/2 = 3/2",
+      "3/2 × 1/2 = 3/4."
+    ]
+  ]
+}

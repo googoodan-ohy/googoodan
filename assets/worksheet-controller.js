@@ -1,5 +1,19 @@
 (function(){
 'use strict';
+function generateQuestions(config,set){
+ if(!config.sourceCount||config.count<=config.sourceCount)return SharedQuestionBank.generate(config,set);
+ const output=[],seen=new Set();
+ for(let batch=0;output.length<config.count&&batch<(config.distinctBatches?40:20);batch++){
+  const questions=SharedQuestionBank.generate({...config,count:config.sourceCount},(set+104729*batch)>>>0);
+  for(const question of questions){
+   if(config.distinctBatches){const key=JSON.stringify([question.prompt,question.visual,question.symbols,question.a,question.b,question.answer]);if(seen.has(key))continue;seen.add(key);}
+   output.push(question);
+  }
+ }
+ if(output.length<config.count)throw Error('Insufficient questions');
+ return output.slice(0,config.count);
+}
+
 const type=JSON.parse(document.getElementById('worksheet-config').textContent),version=type.version;
 const params=new URLSearchParams(location.search),requested=params.get('set');
 let seed=/^\d{1,10}$/.test(requested||'')&&Number(requested)<=4294967295?Number(requested):crypto.getRandomValues(new Uint32Array(1))[0];
@@ -200,13 +214,13 @@ function update(){
  const letter=document.getElementById('paper').value==='Letter';document.getElementById('paper-rule').textContent=`@media print{@page{size:${letter?'Letter':'A4'};margin:0}.sheet{height:${letter?'278mm':'296mm'}}}`;
 }
 function generate(){
- try{items=SharedQuestionBank.generate(activityControl?{...type,activity}:type,seed);failed=false;const clean=new URLSearchParams({set:String(seed),v:version});if(activityControl&&activity!=='standard')clean.set('activity',activity);history.replaceState(null,'',location.pathname+'?'+clean+location.hash);update();}
+ try{items=generateQuestions(activityControl?{...type,activity}:type,seed);failed=false;const clean=new URLSearchParams({set:String(seed),v:version});if(activityControl&&activity!=='standard')clean.set('activity',activity);history.replaceState(null,'',location.pathname+'?'+clean+location.hash);update();}
  catch(e){failed=true;update();status.textContent='This set could not be created. Please try new numbers.';console.error(e);}
 }
 if(activityControl)activityControl.addEventListener('change',()=>{activity=activityControl.value;generate();});
 qbox.addEventListener('change',update);abox.addEventListener('change',update);document.getElementById('paper').addEventListener('change',update);
 document.getElementById('new').onclick=()=>{if(activityControl)activity=activityControl.value;seed=crypto.getRandomValues(new Uint32Array(1))[0];generate();};
-window.GDPreparePDF=()=>{if(failed||(!qbox.checked&&!abox.checked))return false;const count=Math.min(20,Math.max(1,Math.floor(Number(document.getElementById('worksheet-copies')?.value)||1))),originalSeed=seed,originalItems=items;let pages='';try{for(let n=0;n<count;n++){seed=(originalSeed+n)>>>0;items=n===0?originalItems:SharedQuestionBank.generate(activityControl?{...type,activity}:type,seed);pages+=(qbox.checked?sheet(false):'')+(abox.checked?sheet(true):'')}}finally{seed=originalSeed;items=originalItems}document.getElementById('print-root').innerHTML=pages;return true;};
+window.GDPreparePDF=()=>{if(failed||(!qbox.checked&&!abox.checked))return false;const count=Math.min(20,Math.max(1,Math.floor(Number(document.getElementById('worksheet-copies')?.value)||1))),originalSeed=seed,originalItems=items;let pages='';try{for(let n=0;n<count;n++){seed=(originalSeed+n)>>>0;items=n===0?originalItems:generateQuestions(activityControl?{...type,activity}:type,seed);pages+=(qbox.checked?sheet(false):'')+(abox.checked?sheet(true):'')}}finally{seed=originalSeed;items=originalItems}document.getElementById('print-root').innerHTML=pages;return true;};
 printButton.onclick=()=>{update();if(!printButton.disabled)window.print();};window.addEventListener('beforeprint',update);
 document.getElementById('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);status.textContent='Set link copied. This local preview link works on this computer while the preview is running.';}catch{status.textContent='Copy the browser address to keep this set.';}};
 if(invalidActivity){failed=true;update();status.textContent='This activity is not available. Choose an activity or New numbers.';}else if(params.has('v')&&params.get('v')!==version){failed=true;update();status.textContent='This link uses an earlier preview version. Choose New numbers to make a new set.';}else generate();

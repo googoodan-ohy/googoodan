@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-decimal-subtract",
+  "title": "Subtract decimals using equal units",
+  "intro": "Subtraction compares or removes amounts expressed in the same place-value units. Align decimal points before calculating.",
+  "html": "<h2>Subtract decimals using equal units</h2><p>Subtraction compares or removes amounts expressed in the same place-value units. Align decimal points before calculating.</p><p>When a column has too few units, exchange one unit from the next larger place for ten smaller units. Adding a trailing zero changes the written form, not the value.</p><h3>A method to try</h3><ol><li>Write both decimals with aligned places, using zeros where needed.</li><li>Regroup as needed, working from right to left.</li><li>Subtract each column and keep the decimal point aligned.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>5.300 − 2.251</strong><p>Regroup 5.300 as 5 ones, 2 tenths, 9 hundredths and 10 thousandths. Subtract by place.</p><p class=\"sample-equation\">5.300 − 2.251 = 3.049</p><p>Check: 3.049 + 2.251 = 5.300.</p></div><h3>A mistake to watch for</h3><p>Do not subtract the smaller digit from the larger digit separately in each column; regroup the original amount.</p><h3>Check and explain</h3><p>Add the difference to the amount subtracted. The sum must recover the starting number.</p>",
+  "examples": [
+    [
+      "5.300 − 2.251",
+      "Regroup 5.300 as 5 ones, 2 tenths, 9 hundredths and 10 thousandths. Subtract by place.",
+      "5.300 − 2.251 = 3.049",
+      "3.049 + 2.251 = 5.300."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "us-fix-within100-stories",
+  "title": "Represent a whole, its parts and an unknown",
+  "intro": "A story may give two parts and ask for the whole, or give a whole and one part and ask for the other. A comparison asks how much larger one amount is.",
+  "html": "<h2>Represent a whole, its parts and an unknown</h2><p>A story may give two parts and ask for the whole, or give a whole and one part and ask for the other. A comparison asks how much larger one amount is.</p><p>Label the quantities before choosing a calculation. Use addition to join parts and subtraction to find a missing part or a difference. Numbers within 100 may require regrouping.</p><h3>A method to try</h3><ol><li>Say what each number counts and identify the question.</li><li>Draw and label a part-whole bar or comparison, then mark the unknown.</li><li>Write and solve an equation; check that the answer fits both the numbers and the story.</li></ol><h3>Worked examples</h3><div class=\"model\"><strong>A box has 50 pencils. 28 are blue. How many are not blue?</strong><p>The whole is 50 and the known part is 28. Subtract to find the other part.</p><p class=\"sample-equation\">50 − 28 = 22 pencils</p><p>Check: 28 + 22 = 50.</p></div><h3>A mistake to watch for</h3><p>Do not automatically add every number in a story. Extra information may be irrelevant to the requested amount.</p><h3>Check and explain</h3><p>When writing a story, specify the whole and parts clearly and use the same units throughout.</p>",
+  "examples": [
+    [
+      "A box has 50 pencils. 28 are blue. How many are not blue?",
+      "The whole is 50 and the known part is 28. Subtract to find the other part.",
+      "50 − 28 = 22 pencils",
+      "28 + 22 = 50."
+    ]
+  ]
+}
