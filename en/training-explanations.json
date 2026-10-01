@@ -2,100 +2,100 @@
   "lessons": {
     "whole-add": {
       "title": "Adding whole numbers",
-      "method": "Read each number by place value. Add the ones, then the tens and any remaining places. When a column totals ten or more, exchange ten units for one unit in the next place. Record the carried amount before continuing. In a horizontal problem, you may rewrite the numbers vertically; the ones must still line up.",
-      "mistake": "A carried ten belongs in the next column. Do not write a two-digit total into a single place or forget to include a carry in the next sum.",
-      "check": "Subtract one addend from the sum. The result should equal the other addend.",
+      "method": "Model lining up ones, tens, and hundreds before adding. When a column reaches ten, show the exchange for one unit in the next place. Ask your student to explain what each regrouping mark represents.",
+      "mistake": "If your student forgets a regrouped ten, match the written work to tens and ones. Check that the new ten is included once in the next column.",
+      "check": "Have your student subtract one addend from the sum. Ask whether the result matches the other addend.",
       "concept": "e00002"
     },
     "whole-sub": {
       "title": "Subtracting whole numbers",
-      "method": "Start in the ones place and subtract corresponding places. If a top digit is too small, exchange one unit from the next place for ten units in the current place. Mark both changes: the giving place decreases by one and the receiving place increases by ten. Continue left, using the changed digits.",
-      "mistake": "Do not reverse the digits just because the lower digit is larger. Subtraction keeps its original order. When a zero is involved, follow the exchange across the places rather than changing every zero independently.",
-      "check": "Add the difference to the number subtracted. You should recover the starting number.",
+      "method": "Use place-value blocks to show the starting number. When there are not enough ones to subtract, exchange one ten for ten ones and record both changes. Model exchanges across a zero one place at a time.",
+      "mistake": "If your student subtracts the smaller digit from the larger regardless of position, return to the starting collection. Show why the subtraction order must stay the same.",
+      "check": "Ask your student to add the difference to the amount taken away. Together they should make the starting amount.",
       "concept": "e00012"
     },
     "whole-mul": {
       "title": "Multiplying whole numbers",
-      "method": "Use known multiplication facts and place value together. Multiply the top number by each digit of the lower number, starting with the ones. Regroup when a product exceeds nine. If the lower number has more than one digit, write a separate partial product for each place and add the partial products. A tens digit represents tens, not ones.",
-      "mistake": "A partial product for the tens place must be shifted one place. Keep a carried amount separate from the next multiplication fact, then add it once.",
-      "check": "Estimate using nearby convenient numbers. You can also divide the product by one factor to recover the other.",
+      "method": "Start with an area model or partial products. Name the value of each digit before multiplying, then connect each partial product to its place in the written algorithm.",
+      "mistake": "If a tens partial product is misplaced, ask what the tens digit represents. Compare multiplying by two with multiplying by twenty.",
+      "check": "Have your student estimate the product, then check by dividing by one factor. Discuss whether both checks support the answer.",
       "concept": "e00003"
     },
     "whole-div": {
       "title": "Dividing whole numbers",
-      "method": "Decide how many complete groups of the divisor fit into the current amount. Write a quotient digit, multiply it by the divisor, and subtract. Bring down the next digit and repeat. A zero quotient digit may be needed to hold a place. At the end, the remainder must be smaller than the divisor.",
-      "mistake": "Do not stop just because a current digit is smaller than the divisor. Check whether more digits remain to be brought down. A remainder equal to or larger than the divisor means another complete group fits.",
-      "check": "Multiply the quotient by the divisor and add the remainder. This must equal the dividend.",
+      "method": "Model long division using place-value units. At each step, discuss the amount being shared or grouped, then record the quotient digit, product, and difference. Show why a zero is sometimes needed in the quotient.",
+      "mistake": "If your student stops too early, check for a digit still to be brought down. If the remainder is at least as large as the divisor, show that another group can be made.",
+      "check": "Ask your student to multiply the quotient by the divisor and add the remainder. The result should equal the dividend.",
       "concept": "e00016"
     },
     "decimal-add": {
       "title": "Adding decimals",
-      "method": "Line up decimal points so that ones, tenths, and hundredths match. Add trailing zeros if they help you see the places; this does not change a number. Add from the smallest place shown and regroup as needed. Put the decimal point in the sum directly below the other decimal points.",
-      "mistake": "Align decimal points, not the right-hand ends of the numbers. For example, a tenth must not be added to a hundredth merely because both digits happen to be last.",
-      "check": "Subtract either addend from the sum. Estimate with nearby whole numbers to check the size of the answer.",
+      "method": "Use a place-value chart to line up decimal points. Show how trailing zeros can make equivalent places easier to see. Model regrouping from hundredths to tenths just as you would from ones to tens.",
+      "mistake": "If your student lines up the right-hand digits instead of decimal points, label the place value of each digit before adding.",
+      "check": "Have your student subtract an addend from the sum. Also compare the answer with an estimate using nearby whole numbers.",
       "concept": "e00005"
     },
     "decimal-sub": {
       "title": "Subtracting decimals",
-      "method": "Align the decimal points and write equivalent trailing zeros when needed. Subtract from the smallest place. An exchange from one place gives ten units of the place immediately to its right, just as in whole-number subtraction. Keep the decimal point aligned in the difference.",
-      "mistake": "Adding a zero at the end of a decimal is allowed; moving its decimal point is not. Remember to reduce the place from which you exchanged one unit.",
-      "check": "Add the difference to the amount subtracted. Compare the total with the original decimal.",
+      "method": "Line up decimal points and model adding trailing zeros without changing the value. Show each exchange between neighboring places, recording the reduced digit as well as the added units.",
+      "mistake": "If your student changes the decimal point or forgets to reduce the place used for regrouping, compare the renamed number with the original amount.",
+      "check": "Ask your student to add the difference to the amount subtracted. The result should match the original starting amount.",
       "concept": "e00038"
     },
     "decimal-mul": {
       "title": "Multiplying decimals",
-      "method": "First multiply using the digits as whole numbers. Count the decimal places in both original factors. Their total tells you where to place the decimal point in the product. Include leading zeros after the decimal point when needed, then remove unnecessary trailing zeros only when the value stays unchanged.",
-      "mistake": "Do not align decimal points as you would for addition. Multiplying by a positive number less than one makes a positive quantity smaller, so a large answer may indicate a misplaced point.",
-      "check": "Estimate the product before calculating. Divide the product by a nonzero factor to check the other factor.",
+      "method": "Use an area or scaling example to establish a reasonable product first. Then model whole-number multiplication and explain how the factors' decimal places determine the product's place value.",
+      "mistake": "If your student lines up decimal points as in addition, return to the size of the factors. Discuss why multiplying a positive amount by a number between zero and one makes it smaller.",
+      "check": "Have your student compare the product with the estimate. Division by a nonzero factor should give the other factor.",
       "concept": "e00039"
     },
     "decimal-div": {
       "title": "Dividing decimals",
-      "method": "If the divisor has decimal places, multiply both numbers by the same power of ten until the divisor is a whole number. The quotient stays the same. Divide using place value, keeping track of the decimal point in the quotient. These worksheets use the answers supplied by the existing calculation bank; do not round unless a question explicitly asks you to.",
-      "mistake": "Moving only the divisor’s decimal point changes the problem. Apply the same shift to the dividend, and keep any zero needed to hold a quotient place.",
-      "check": "Multiply the quotient by the original divisor. The result should return the original dividend.",
+      "method": "Show how multiplying both the dividend and divisor by the same power of ten leaves the quotient unchanged. Use a measurement example before connecting the idea to written division. Remind your student to round only when the question asks for it.",
+      "mistake": "If your student shifts only one decimal point, compare the new quantities with the original problem. Both must be scaled by the same factor.",
+      "check": "Ask your student to multiply the quotient by the original divisor. The product should equal the original dividend.",
       "concept": "e00040"
     },
     "fraction-add": {
       "title": "Adding fractions",
-      "method": "Fractions must refer to equal-sized parts before you combine them. For like denominators, add the numerators and keep the denominator. For unlike denominators, rewrite both fractions using a common denominator, then add. Convert a mixed number to an equivalent improper fraction when that makes the calculation easier. Finally, simplify the result.",
-      "mistake": "Do not add the denominators. Rewriting a fraction requires multiplying its numerator and denominator by the same number. Our answer key shows an improper fraction beside its equivalent mixed number when the result is greater than one.",
-      "check": "Subtract one original fraction from the total. Use equivalent fractions if necessary to compare the result with the other addend.",
+      "method": "Use matching fraction strips to establish equal-sized pieces. For unlike denominators, model renaming both fractions before adding the numerators. Discuss simplified fractions and equivalent mixed numbers when the sum is greater than one.",
+      "mistake": "If your student adds denominators, point to the unchanged size of each piece. When renaming a fraction, show why the numerator and denominator must change by the same factor.",
+      "check": "Have your student subtract one original fraction from the sum. Accept equivalent fractions that represent the other addend.",
       "concept": "e00077"
     },
     "fraction-sub": {
       "title": "Subtracting fractions",
-      "method": "Use a common denominator so both fractions name the same-sized parts. Subtract the numerators in the stated order and keep that common denominator. With mixed numbers, you can first convert to improper fractions. Simplify the difference; if it is greater than one, read the equivalent improper and mixed forms together.",
-      "mistake": "Keep the subtraction order. Subtracting denominators or changing only a numerator does not preserve the original quantities.",
-      "check": "Add the difference to the fraction subtracted. Simplify or find a common denominator to compare it with the starting amount.",
+      "method": "Keep the same reference whole and show why the pieces must be the same size. Model a common denominator, then subtract the numerators. For mixed numbers, demonstrate conversion to improper fractions when helpful.",
+      "mistake": "If your student reverses the subtraction or changes only a numerator, return to the total and the part being removed in the model.",
+      "check": "Ask your student to add the difference to the fraction subtracted. Compare the result with the starting amount using equivalent fractions.",
       "concept": "e00015"
     },
     "fraction-mul": {
       "title": "Multiplying fractions",
-      "method": "Write whole numbers over one and convert mixed numbers to improper fractions. Multiply the numerators and multiply the denominators. You may cancel common factors between a numerator and a denominator before multiplying, or simplify the product afterward. A common denominator is not required for multiplication.",
-      "mistake": "Do not multiply a mixed number’s whole part and fractional part separately and join them. Convert the entire mixed number first. Cancellation removes common factors, not digits that merely look alike.",
-      "check": "Estimate the size of each factor. A positive factor below one reduces the other positive factor. Check by dividing by a nonzero original factor.",
+      "method": "Use an area model to show a fraction of another fraction. Connect the overlap to multiplying numerators and denominators. Show how to convert mixed numbers before calculating and simplify using common factors.",
+      "mistake": "If your student cancels matching digits, distinguish digits from factors. If a mixed number is multiplied in separate parts incorrectly, model its equivalent improper fraction first.",
+      "check": "Have your student estimate the product and explain its size. Division by a nonzero original factor should give the other factor.",
       "concept": "e00041"
     },
     "fraction-div": {
       "title": "Dividing fractions",
-      "method": "Convert any mixed numbers to improper fractions and write whole numbers over one. Keep the first fraction, replace division with multiplication, and use the reciprocal of the second fraction. Multiply and simplify. The reciprocal is applied to the divisor only.",
-      "mistake": "Do not flip the first fraction or both fractions. Division by a fraction below one can produce an answer larger than the dividend; this is consistent with asking how many smaller groups fit.",
-      "check": "Multiply the quotient by the original divisor, not its reciprocal. The result should equal the dividend.",
+      "method": "Start with a sharing or measurement model so the quotient has meaning. Then connect the model to multiplying by the divisor's reciprocal. Convert mixed numbers before applying the procedure.",
+      "mistake": "If your student flips the first fraction or both fractions, label the dividend and divisor. Use a simple example to check which reciprocal produces the correct quotient.",
+      "check": "Ask your student to multiply the quotient by the original divisor. The product should equal the dividend.",
       "concept": "e00076"
     },
     "round": {
       "title": "Rounding decimals",
-      "method": "Identify the requested place first. Look one place to its right: a digit from zero to four keeps the target digit, while five to nine increases it by one. Remove the digits beyond the requested place after completing any carry. A whole-number answer and an answer to the nearest tenth use different target places.",
-      "mistake": "Do not round an intermediate digit first. Read the requested place in each question rather than applying the same place to the whole sheet.",
-      "check": "Locate the two neighboring whole numbers or tenths. The rounded value should be the nearer neighbor; an exact midpoint rounds upward for these positive-number examples.",
+      "method": "Place the decimal between the two possible rounded values on a number line. Identify the midpoint, then connect the nearer endpoint to the digit rule. For these positive-number examples, explain that an exact midpoint rounds up.",
+      "mistake": "If your student rounds in several stages, return to the original number and the requested place. Rounding an intermediate result can change the final answer.",
+      "check": "Have your student name the two neighboring possible answers and explain which is closer to the original number.",
       "concept": "e00090"
     }
   },
   "worksheets": {
     "legacy-natural-add-1-1": {
       "lesson": "whole-add",
-      "intro": "Practice single-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach single-digit addition. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -110,7 +110,7 @@
     },
     "legacy-natural-add-1-2": {
       "lesson": "whole-add",
-      "intro": "Practice 1-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 1-digit and 2-digit addition. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -125,7 +125,7 @@
     },
     "legacy-natural-add-2-1": {
       "lesson": "whole-add",
-      "intro": "Practice 2-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit and 1-digit addition. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -140,7 +140,7 @@
     },
     "legacy-natural-add-2-2": {
       "lesson": "whole-add",
-      "intro": "Practice 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit addition. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -155,7 +155,7 @@
     },
     "legacy-natural-add-3-1": {
       "lesson": "whole-add",
-      "intro": "Practice 3-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit and 1-digit addition. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -170,7 +170,7 @@
     },
     "legacy-natural-add-3-2": {
       "lesson": "whole-add",
-      "intro": "Practice 3-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit and 2-digit addition. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -185,7 +185,7 @@
     },
     "legacy-natural-add-3-3": {
       "lesson": "whole-add",
-      "intro": "Practice 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit addition. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -200,7 +200,7 @@
     },
     "legacy-natural-add-1-3": {
       "lesson": "whole-add",
-      "intro": "Practice 1-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 1-digit and 3-digit addition. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -215,7 +215,7 @@
     },
     "legacy-natural-add-2-3": {
       "lesson": "whole-add",
-      "intro": "Practice 2-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit and 3-digit addition. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -230,7 +230,7 @@
     },
     "legacy-natural-add-4-1": {
       "lesson": "whole-add",
-      "intro": "Practice 4-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 1-digit addition. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -245,7 +245,7 @@
     },
     "legacy-natural-add-4-2": {
       "lesson": "whole-add",
-      "intro": "Practice 4-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 2-digit addition. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -260,7 +260,7 @@
     },
     "legacy-natural-add-4-3": {
       "lesson": "whole-add",
-      "intro": "Practice 4-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 3-digit addition. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -275,7 +275,7 @@
     },
     "legacy-natural-add-4-4": {
       "lesson": "whole-add",
-      "intro": "Practice 4-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit addition. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
       "condition": "",
       "examples": [
         {
@@ -290,7 +290,7 @@
     },
     "legacy-decimal-add-1": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition to tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition to tenths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -305,7 +305,7 @@
     },
     "legacy-decimal-add-2": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -320,7 +320,7 @@
     },
     "legacy-fraction-add-same": {
       "lesson": "fraction-add",
-      "intro": "Practice adding fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding fractions with like denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -335,7 +335,7 @@
     },
     "legacy-fraction-add-different": {
       "lesson": "fraction-add",
-      "intro": "Practice adding fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding fractions with unlike denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -350,7 +350,7 @@
     },
     "legacy-natural-sub-1-1": {
       "lesson": "whole-sub",
-      "intro": "Practice single-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach single-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -365,7 +365,7 @@
     },
     "legacy-natural-sub-2-1": {
       "lesson": "whole-sub",
-      "intro": "Practice 2-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit and 1-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -380,7 +380,7 @@
     },
     "legacy-natural-sub-2-2": {
       "lesson": "whole-sub",
-      "intro": "Practice 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -395,7 +395,7 @@
     },
     "legacy-natural-sub-3-1": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit and 1-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -410,7 +410,7 @@
     },
     "legacy-natural-sub-3-2": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit by 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit and 2-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -425,7 +425,7 @@
     },
     "legacy-natural-sub-3-3": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -440,7 +440,7 @@
     },
     "legacy-natural-sub-4-1": {
       "lesson": "whole-sub",
-      "intro": "Practice 4-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 1-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -455,7 +455,7 @@
     },
     "legacy-natural-sub-4-2": {
       "lesson": "whole-sub",
-      "intro": "Practice 4-digit by 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 2-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -470,7 +470,7 @@
     },
     "legacy-natural-sub-4-3": {
       "lesson": "whole-sub",
-      "intro": "Practice 4-digit by 3-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit and 3-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -485,7 +485,7 @@
     },
     "legacy-natural-sub-4-4": {
       "lesson": "whole-sub",
-      "intro": "Practice 4-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit subtraction. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
       "condition": "",
       "examples": [
         {
@@ -500,7 +500,7 @@
     },
     "legacy-decimal-sub-1": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction to tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction to tenths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -515,7 +515,7 @@
     },
     "legacy-decimal-sub-2": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -530,7 +530,7 @@
     },
     "legacy-fraction-sub-same": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting fractions with like denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -545,7 +545,7 @@
     },
     "legacy-fraction-sub-different": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting fractions with unlike denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -560,7 +560,7 @@
     },
     "legacy-natural-mul-1-1": {
       "lesson": "whole-mul",
-      "intro": "Practice single-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach single-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -575,7 +575,7 @@
     },
     "legacy-natural-mul-1-2": {
       "lesson": "whole-mul",
-      "intro": "Practice 1-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 1-digit by 2-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -590,7 +590,7 @@
     },
     "legacy-natural-mul-2-1": {
       "lesson": "whole-mul",
-      "intro": "Practice 2-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit by 1-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -605,7 +605,7 @@
     },
     "legacy-natural-mul-2-2": {
       "lesson": "whole-mul",
-      "intro": "Practice 2-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit by 2-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -620,7 +620,7 @@
     },
     "legacy-natural-mul-3-1": {
       "lesson": "whole-mul",
-      "intro": "Practice 3-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit by 1-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -635,7 +635,7 @@
     },
     "legacy-natural-mul-3-2": {
       "lesson": "whole-mul",
-      "intro": "Practice 3-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit by 2-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -650,7 +650,7 @@
     },
     "legacy-natural-mul-3-3": {
       "lesson": "whole-mul",
-      "intro": "Practice 3-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 3-digit by 3-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -665,7 +665,7 @@
     },
     "legacy-natural-mul-1-3": {
       "lesson": "whole-mul",
-      "intro": "Practice 1-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 1-digit by 3-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -680,7 +680,7 @@
     },
     "legacy-natural-mul-2-3": {
       "lesson": "whole-mul",
-      "intro": "Practice 2-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 2-digit by 3-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -695,7 +695,7 @@
     },
     "legacy-natural-mul-4-1": {
       "lesson": "whole-mul",
-      "intro": "Practice 4-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit by 1-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
       "condition": "",
       "examples": [
         {
@@ -710,7 +710,7 @@
     },
     "legacy-natural-mul-4-2": {
       "lesson": "whole-mul",
-      "intro": "Practice 4-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit by 2-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
       "condition": "",
       "examples": [
         {
@@ -725,7 +725,7 @@
     },
     "legacy-natural-mul-4-3": {
       "lesson": "whole-mul",
-      "intro": "Practice 4-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit by 3-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
       "condition": "",
       "examples": [
         {
@@ -740,7 +740,7 @@
     },
     "legacy-natural-mul-4-4": {
       "lesson": "whole-mul",
-      "intro": "Practice 4-digit by 4-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "intro": "Use this worksheet to teach 4-digit by 4-digit multiplication. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
       "condition": "",
       "examples": [
         {
@@ -755,7 +755,7 @@
     },
     "legacy-decimal-mul-1": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication (1 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication (1 and 1 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -770,7 +770,7 @@
     },
     "legacy-decimal-mul-2": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication (2 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication (2 and 2 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -785,7 +785,7 @@
     },
     "legacy-fraction-mul-same": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying fractions with like denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -800,7 +800,7 @@
     },
     "legacy-fraction-mul-different": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying fractions with unlike denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -815,8 +815,8 @@
     },
     "legacy-natural-div-1-1": {
       "lesson": "whole-div",
-      "intro": "Practice single-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach single-digit division. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "8 ÷ 2 = 4",
@@ -830,8 +830,8 @@
     },
     "legacy-natural-div-2-1": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 2-digit by 1-digit division. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "80 ÷ 2 = 40",
@@ -845,8 +845,8 @@
     },
     "legacy-natural-div-2-2": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 2-digit by 2-digit division. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "80 ÷ 26 = 3 R 2",
@@ -860,8 +860,8 @@
     },
     "legacy-natural-div-3-1": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 3-digit by 1-digit division. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "808 ÷ 2 = 404",
@@ -875,8 +875,8 @@
     },
     "legacy-natural-div-3-2": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 3-digit by 2-digit division. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "808 ÷ 26 = 31 R 2",
@@ -890,8 +890,8 @@
     },
     "legacy-natural-div-3-3": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 3-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 3-digit by 3-digit division. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "808 ÷ 260 = 3 R 28",
@@ -905,8 +905,8 @@
     },
     "legacy-natural-div-4-1": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 4-digit by 1-digit division. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "8085 ÷ 2 = 4042 R 1",
@@ -920,8 +920,8 @@
     },
     "legacy-natural-div-4-2": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 4-digit by 2-digit division. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "8085 ÷ 26 = 310 R 25",
@@ -935,8 +935,8 @@
     },
     "legacy-natural-div-4-3": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 3-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 4-digit by 3-digit division. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "8085 ÷ 260 = 31 R 25",
@@ -950,8 +950,8 @@
     },
     "legacy-natural-div-4-4": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 4-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
-      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "intro": "Use this worksheet to teach 4-digit by 4-digit division. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
+      "condition": "This set may include division with and without remainders. Ask your student to explain any remainder in the context of equal groups.",
       "examples": [
         {
           "equation": "8085 ÷ 2606 = 3 R 267",
@@ -965,7 +965,7 @@
     },
     "legacy-decimal-div-1": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division (1 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division (1 and 1 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -980,7 +980,7 @@
     },
     "legacy-decimal-div-2": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division (2 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division (2 and 2 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -995,7 +995,7 @@
     },
     "legacy-fraction-div-same": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing fractions with like denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1010,7 +1010,7 @@
     },
     "legacy-fraction-div-different": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing fractions with unlike denominators. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1025,7 +1025,7 @@
     },
     "legacy-decimal-add-0dp-1dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1040,7 +1040,7 @@
     },
     "legacy-decimal-add-0dp-2dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1055,7 +1055,7 @@
     },
     "legacy-decimal-add-1dp-0dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1070,7 +1070,7 @@
     },
     "legacy-decimal-add-1dp-2dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1085,7 +1085,7 @@
     },
     "legacy-decimal-add-2dp-0dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1100,7 +1100,7 @@
     },
     "legacy-decimal-add-2dp-1dp": {
       "lesson": "decimal-add",
-      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal addition to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1115,7 +1115,7 @@
     },
     "legacy-fraction-add-whole-proper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding whole numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding whole numbers and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1130,7 +1130,7 @@
     },
     "legacy-fraction-add-whole-improper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding whole numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding whole numbers and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1145,7 +1145,7 @@
     },
     "legacy-fraction-add-whole-mixed": {
       "lesson": "fraction-add",
-      "intro": "Practice adding whole numbers and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding whole numbers and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1160,7 +1160,7 @@
     },
     "legacy-fraction-add-proper-whole": {
       "lesson": "fraction-add",
-      "intro": "Practice adding proper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding proper fractions and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1175,7 +1175,7 @@
     },
     "legacy-fraction-add-proper-improper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding proper fractions and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding proper fractions and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1190,7 +1190,7 @@
     },
     "legacy-fraction-add-proper-mixed": {
       "lesson": "fraction-add",
-      "intro": "Practice adding proper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding proper fractions and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1205,7 +1205,7 @@
     },
     "legacy-fraction-add-improper-whole": {
       "lesson": "fraction-add",
-      "intro": "Practice adding improper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding improper fractions and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1220,7 +1220,7 @@
     },
     "legacy-fraction-add-improper-proper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding improper fractions and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding improper fractions and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1235,7 +1235,7 @@
     },
     "legacy-fraction-add-improper-improper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1250,7 +1250,7 @@
     },
     "legacy-fraction-add-improper-mixed": {
       "lesson": "fraction-add",
-      "intro": "Practice adding improper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding improper fractions and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1265,7 +1265,7 @@
     },
     "legacy-fraction-add-mixed-whole": {
       "lesson": "fraction-add",
-      "intro": "Practice adding mixed numbers and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding mixed numbers and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1280,7 +1280,7 @@
     },
     "legacy-fraction-add-mixed-proper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding mixed numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding mixed numbers and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1295,7 +1295,7 @@
     },
     "legacy-fraction-add-mixed-improper": {
       "lesson": "fraction-add",
-      "intro": "Practice adding mixed numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding mixed numbers and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1310,7 +1310,7 @@
     },
     "legacy-fraction-add-mixed-mixed": {
       "lesson": "fraction-add",
-      "intro": "Practice adding mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach adding mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1325,7 +1325,7 @@
     },
     "legacy-decimal-sub-0dp-1dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1340,7 +1340,7 @@
     },
     "legacy-decimal-sub-0dp-2dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1355,7 +1355,7 @@
     },
     "legacy-decimal-sub-1dp-0dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1370,7 +1370,7 @@
     },
     "legacy-decimal-sub-1dp-2dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1385,7 +1385,7 @@
     },
     "legacy-decimal-sub-2dp-0dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1400,7 +1400,7 @@
     },
     "legacy-decimal-sub-2dp-1dp": {
       "lesson": "decimal-sub",
-      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal subtraction to hundredths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1415,7 +1415,7 @@
     },
     "legacy-fraction-sub-whole-proper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting proper fractions from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting proper fractions from whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1430,7 +1430,7 @@
     },
     "legacy-fraction-sub-whole-improper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting improper fractions from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting improper fractions from whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1445,7 +1445,7 @@
     },
     "legacy-fraction-sub-whole-mixed": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting mixed numbers from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting mixed numbers from whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1460,7 +1460,7 @@
     },
     "legacy-fraction-sub-improper-whole": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting whole numbers from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting whole numbers from improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1475,7 +1475,7 @@
     },
     "legacy-fraction-sub-improper-proper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting proper fractions from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting proper fractions from improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1490,7 +1490,7 @@
     },
     "legacy-fraction-sub-improper-improper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1505,7 +1505,7 @@
     },
     "legacy-fraction-sub-improper-mixed": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting mixed numbers from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting mixed numbers from improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1520,7 +1520,7 @@
     },
     "legacy-fraction-sub-mixed-whole": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting whole numbers from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting whole numbers from mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1535,7 +1535,7 @@
     },
     "legacy-fraction-sub-mixed-proper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting proper fractions from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting proper fractions from mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1550,7 +1550,7 @@
     },
     "legacy-fraction-sub-mixed-improper": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting improper fractions from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting improper fractions from mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1565,7 +1565,7 @@
     },
     "legacy-fraction-sub-mixed-mixed": {
       "lesson": "fraction-sub",
-      "intro": "Practice subtracting mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach subtracting mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1580,7 +1580,7 @@
     },
     "legacy-decimal-mul-0dp-1dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1595,7 +1595,7 @@
     },
     "legacy-decimal-mul-0dp-2dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1610,7 +1610,7 @@
     },
     "legacy-decimal-mul-1dp-0dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1625,7 +1625,7 @@
     },
     "legacy-decimal-mul-1dp-2dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication (1 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication (1 and 2 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1640,7 +1640,7 @@
     },
     "legacy-decimal-mul-2dp-0dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1655,7 +1655,7 @@
     },
     "legacy-decimal-mul-2dp-1dp": {
       "lesson": "decimal-mul",
-      "intro": "Practice decimal multiplication (2 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal multiplication (2 and 1 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1670,7 +1670,7 @@
     },
     "legacy-fraction-mul-whole-proper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying whole numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying whole numbers and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1685,7 +1685,7 @@
     },
     "legacy-fraction-mul-whole-improper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying whole numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying whole numbers and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1700,7 +1700,7 @@
     },
     "legacy-fraction-mul-whole-mixed": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying whole numbers and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying whole numbers and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1715,7 +1715,7 @@
     },
     "legacy-fraction-mul-proper-whole": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying proper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying proper fractions and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1730,7 +1730,7 @@
     },
     "legacy-fraction-mul-proper-improper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying proper fractions and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying proper fractions and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1745,7 +1745,7 @@
     },
     "legacy-fraction-mul-proper-mixed": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying proper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying proper fractions and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1760,7 +1760,7 @@
     },
     "legacy-fraction-mul-improper-whole": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying improper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying improper fractions and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1775,7 +1775,7 @@
     },
     "legacy-fraction-mul-improper-proper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying improper fractions and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying improper fractions and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1790,7 +1790,7 @@
     },
     "legacy-fraction-mul-improper-improper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1805,7 +1805,7 @@
     },
     "legacy-fraction-mul-improper-mixed": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying improper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying improper fractions and mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1820,7 +1820,7 @@
     },
     "legacy-fraction-mul-mixed-whole": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying mixed numbers and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying mixed numbers and whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1835,7 +1835,7 @@
     },
     "legacy-fraction-mul-mixed-proper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying mixed numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying mixed numbers and proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1850,7 +1850,7 @@
     },
     "legacy-fraction-mul-mixed-improper": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying mixed numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying mixed numbers and improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1865,7 +1865,7 @@
     },
     "legacy-fraction-mul-mixed-mixed": {
       "lesson": "fraction-mul",
-      "intro": "Practice multiplying mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach multiplying mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1880,7 +1880,7 @@
     },
     "legacy-decimal-div-0dp-1dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1895,7 +1895,7 @@
     },
     "legacy-decimal-div-0dp-2dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1910,7 +1910,7 @@
     },
     "legacy-decimal-div-1dp-0dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1925,7 +1925,7 @@
     },
     "legacy-decimal-div-1dp-2dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division (1 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division (1 and 2 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1940,7 +1940,7 @@
     },
     "legacy-decimal-div-2dp-0dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division with whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1955,7 +1955,7 @@
     },
     "legacy-decimal-div-2dp-1dp": {
       "lesson": "decimal-div",
-      "intro": "Practice decimal division (2 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach decimal division (2 and 1 decimal places). Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1970,7 +1970,7 @@
     },
     "legacy-fraction-div-whole-proper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing whole numbers by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing whole numbers by proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -1985,7 +1985,7 @@
     },
     "legacy-fraction-div-whole-improper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing whole numbers by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing whole numbers by improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2000,7 +2000,7 @@
     },
     "legacy-fraction-div-whole-mixed": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing whole numbers by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing whole numbers by mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2015,7 +2015,7 @@
     },
     "legacy-fraction-div-proper-whole": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing proper fractions by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing proper fractions by whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2030,7 +2030,7 @@
     },
     "legacy-fraction-div-proper-improper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing proper fractions by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing proper fractions by improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2045,7 +2045,7 @@
     },
     "legacy-fraction-div-proper-mixed": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing proper fractions by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing proper fractions by mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2060,7 +2060,7 @@
     },
     "legacy-fraction-div-improper-whole": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing improper fractions by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing improper fractions by whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2075,7 +2075,7 @@
     },
     "legacy-fraction-div-improper-proper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing improper fractions by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing improper fractions by proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2090,7 +2090,7 @@
     },
     "legacy-fraction-div-improper-improper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2105,7 +2105,7 @@
     },
     "legacy-fraction-div-improper-mixed": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing improper fractions by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing improper fractions by mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2120,7 +2120,7 @@
     },
     "legacy-fraction-div-mixed-whole": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing mixed numbers by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing mixed numbers by whole numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2135,7 +2135,7 @@
     },
     "legacy-fraction-div-mixed-proper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing mixed numbers by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing mixed numbers by proper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2150,7 +2150,7 @@
     },
     "legacy-fraction-div-mixed-improper": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing mixed numbers by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing mixed numbers by improper fractions. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2165,7 +2165,7 @@
     },
     "legacy-fraction-div-mixed-mixed": {
       "lesson": "fraction-div",
-      "intro": "Practice dividing mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach dividing mixed numbers. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2180,8 +2180,8 @@
     },
     "detail-natural-add-2-2-regroup": {
       "lesson": "whole-add",
-      "intro": "Practice 2-digit addition with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "intro": "Use this worksheet to teach 2-digit addition with regrouping. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "Every problem requires regrouping. Model how to record both parts of each exchange before assigning the worksheet.",
       "examples": [
         {
           "equation": "80 + 26 = 106",
@@ -2195,8 +2195,8 @@
     },
     "detail-natural-add-2-2-no-regroup": {
       "lesson": "whole-add",
-      "intro": "Practice 2-digit addition without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "intro": "Use this worksheet to teach 2-digit addition without regrouping. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "These problems do not require regrouping. Use them to check place-value alignment and the order of subtraction.",
       "examples": [
         {
           "equation": "54 + 30 = 84",
@@ -2210,8 +2210,8 @@
     },
     "detail-natural-add-3-3-regroup": {
       "lesson": "whole-add",
-      "intro": "Practice 3-digit addition with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "intro": "Use this worksheet to teach 3-digit addition with regrouping. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "Every problem requires regrouping. Model how to record both parts of each exchange before assigning the worksheet.",
       "examples": [
         {
           "equation": "808 + 260 = 1068",
@@ -2225,8 +2225,8 @@
     },
     "detail-natural-add-3-3-no-regroup": {
       "lesson": "whole-add",
-      "intro": "Practice 3-digit addition without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "intro": "Use this worksheet to teach 3-digit addition without regrouping. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "These problems do not require regrouping. Use them to check place-value alignment and the order of subtraction.",
       "examples": [
         {
           "equation": "712 + 237 = 949",
@@ -2240,8 +2240,8 @@
     },
     "detail-natural-sub-2-2-regroup": {
       "lesson": "whole-sub",
-      "intro": "Practice 2-digit subtraction with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "intro": "Use this worksheet to teach 2-digit subtraction with regrouping. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "Every problem requires regrouping. Model how to record both parts of each exchange before assigning the worksheet.",
       "examples": [
         {
           "equation": "80 − 26 = 54",
@@ -2255,8 +2255,8 @@
     },
     "detail-natural-sub-2-2-no-regroup": {
       "lesson": "whole-sub",
-      "intro": "Practice 2-digit subtraction without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "intro": "Use this worksheet to teach 2-digit subtraction without regrouping. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "These problems do not require regrouping. Use them to check place-value alignment and the order of subtraction.",
       "examples": [
         {
           "equation": "54 − 30 = 24",
@@ -2270,8 +2270,8 @@
     },
     "detail-natural-sub-3-3-regroup": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit subtraction with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "intro": "Use this worksheet to teach 3-digit subtraction with regrouping. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "Every problem requires regrouping. Model how to record both parts of each exchange before assigning the worksheet.",
       "examples": [
         {
           "equation": "808 − 260 = 548",
@@ -2285,8 +2285,8 @@
     },
     "detail-natural-sub-3-3-no-regroup": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit subtraction without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "intro": "Use this worksheet to teach 3-digit subtraction without regrouping. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "These problems do not require regrouping. Use them to check place-value alignment and the order of subtraction.",
       "examples": [
         {
           "equation": "269 − 109 = 160",
@@ -2300,8 +2300,8 @@
     },
     "detail-natural-sub-3-2-across-zero": {
       "lesson": "whole-sub",
-      "intro": "Practice 3-digit subtraction across zeros. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
-      "condition": "These questions require an exchange through a zero. Follow the exchange from the nearest available place, updating every affected digit.",
+      "intro": "Use this worksheet to teach 3-digit subtraction across zeros. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
+      "condition": "These problems require regrouping across a zero. Demonstrate each exchange and have your student explain the changed digits.",
       "examples": [
         {
           "equation": "805 − 46 = 759",
@@ -2315,8 +2315,8 @@
     },
     "detail-natural-div-2-1-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 2-digit division with remainders. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "43 ÷ 8 = 5 R 3",
@@ -2330,8 +2330,8 @@
     },
     "detail-natural-div-2-1-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 2-digit division without remainders. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 1 digit.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "80 ÷ 2 = 40",
@@ -2345,8 +2345,8 @@
     },
     "detail-natural-div-3-1-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 3-digit division with remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "545 ÷ 3 = 181 R 2",
@@ -2360,8 +2360,8 @@
     },
     "detail-natural-div-3-1-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 3-digit division without remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 1 digit.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "808 ÷ 2 = 404",
@@ -2375,8 +2375,8 @@
     },
     "detail-natural-div-4-1-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 4-digit division with remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "8085 ÷ 2 = 4042 R 1",
@@ -2390,8 +2390,8 @@
     },
     "detail-natural-div-4-1-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 4-digit division without remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 1 digit.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "5457 ÷ 3 = 1819",
@@ -2405,7 +2405,7 @@
     },
     "detail-rounding-decimals": {
       "lesson": "round",
-      "intro": "Practice rounding decimals to whole numbers and tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "intro": "Use this worksheet to teach rounding decimals to whole numbers and tenths. Work through one example with your student before assigning independent practice.",
       "condition": "",
       "examples": [
         {
@@ -2420,8 +2420,8 @@
     },
     "detail-natural-div-1-1-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice single-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach single-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "5 ÷ 3 = 1 R 2",
@@ -2435,8 +2435,8 @@
     },
     "detail-natural-div-1-1-exact": {
       "lesson": "whole-div",
-      "intro": "Practice single-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach single-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 1 digit, and the second has 1 digit.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "8 ÷ 2 = 4",
@@ -2450,8 +2450,8 @@
     },
     "detail-natural-div-2-2-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 2-digit by 2-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "80 ÷ 26 = 3 R 2",
@@ -2465,8 +2465,8 @@
     },
     "detail-natural-div-2-2-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 2-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 2-digit by 2-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 2 digits, and the second has 2 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "40 ÷ 40 = 1",
@@ -2480,8 +2480,8 @@
     },
     "detail-natural-div-3-2-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 3-digit by 2-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "808 ÷ 26 = 31 R 2",
@@ -2495,8 +2495,8 @@
     },
     "detail-natural-div-3-2-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 3-digit by 2-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 2 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "546 ÷ 39 = 14",
@@ -2510,8 +2510,8 @@
     },
     "detail-natural-div-3-3-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 3-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 3-digit by 3-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "808 ÷ 260 = 3 R 28",
@@ -2525,8 +2525,8 @@
     },
     "detail-natural-div-3-3-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 3-digit by 3-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 3-digit by 3-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 3 digits, and the second has 3 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "920 ÷ 115 = 8",
@@ -2540,8 +2540,8 @@
     },
     "detail-natural-div-4-2-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 4-digit by 2-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "8085 ÷ 26 = 310 R 25",
@@ -2555,8 +2555,8 @@
     },
     "detail-natural-div-4-2-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 4-digit by 2-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 2 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "5460 ÷ 39 = 140",
@@ -2570,8 +2570,8 @@
     },
     "detail-natural-div-4-3-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 3-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 4-digit by 3-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "8085 ÷ 260 = 31 R 25",
@@ -2585,8 +2585,8 @@
     },
     "detail-natural-div-4-3-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 3-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 4-digit by 3-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 3 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "4992 ÷ 624 = 8",
@@ -2600,8 +2600,8 @@
     },
     "detail-natural-div-4-4-remainder": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 4-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
-      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "intro": "Use this worksheet to teach 4-digit by 4-digit division — with remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
+      "condition": "Every problem has a remainder. Ask for a whole-number quotient and remainder, and discuss what the remainder represents.",
       "examples": [
         {
           "equation": "8085 ÷ 2606 = 3 R 267",
@@ -2615,8 +2615,8 @@
     },
     "detail-natural-div-4-4-exact": {
       "lesson": "whole-div",
-      "intro": "Practice 4-digit by 4-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
-      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "intro": "Use this worksheet to teach 4-digit by 4-digit division — without remainders. Work through one example with your student before assigning independent practice. The first number has 4 digits, and the second has 4 digits.",
+      "condition": "These problems divide evenly. Have your student check each quotient with multiplication.",
       "examples": [
         {
           "equation": "8106 ÷ 1351 = 6",

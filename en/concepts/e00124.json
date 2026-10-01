@@ -1,7 +1,7 @@
 {
   "id": "e00124",
   "title": "Dividing With Unit Fractions",
-  "intro": "For a whole number divided by a unit fraction, count how many fraction-size groups fit. For a unit fraction divided by a whole number, split that fraction into equal smaller shares.",
-  "html": "<h2>Dividing With Unit Fractions</h2><p>For a whole number divided by a unit fraction, count how many fraction-size groups fit. For a unit fraction divided by a whole number, split that fraction into equal smaller shares.</p><h3>Worked example</h3><div class=\"model\"><p>2 ÷ 1/4 = 8 because two wholes contain eight quarters. In contrast, 1/2 ÷ 3 = 1/6 because half a whole is split into three equal shares.</p></div><h3>Watch out</h3><p>These two division situations are different. Draw the whole and mark equal parts before calculating.</p>",
+  "intro": "Contrast the two meanings of division involving a unit fraction.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Model a whole number divided into fraction-sized groups. Then model a unit fraction shared among a whole number of people.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>2 ÷ 1/4 = 8 because two wholes contain eight quarters. In contrast, 1/2 ÷ 3 = 1/6 because half a whole is split into three equal shares.</p></div><h3>Ask your student</h3><blockquote><p>Are we counting pieces of a given size or finding the size of each share?</p></blockquote><h3>If your student needs help</h3><p>If the student uses the same model for both, label the known group count or group size explicitly.</p>",
   "origin": "new"
 }

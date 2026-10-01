@@ -7,7 +7,7 @@
       "title": "Addition Worksheets Within 20",
       "grade": 1,
       "topic": "whole",
-      "intro": "Move from counting every object to using a known number. Each sum is 20 or less, with space to show a counting-on or make-ten strategy.",
+      "intro": "Help your student move from counting every object to counting on or making ten.",
       "source": "content/en-US/addition-within-20.json",
       "worksheets": [
         "w00001-1",
@@ -31,7 +31,7 @@
       "title": "2-Digit Addition Worksheets Without Regrouping",
       "grade": 2,
       "topic": "whole",
-      "intro": "Keep tens with tens and ones with ones. These two-digit additions stay within 100 and do not require carrying a new ten.",
+      "intro": "Use this worksheet to teach place value before introducing regrouping.",
       "source": "content/en-US/addition-two-digit-no-regrouping.json",
       "worksheets": [
         "w00002-1"
@@ -54,7 +54,7 @@
       "title": "Multiplication Worksheets: Equal Groups and Facts",
       "grade": 3,
       "topic": "whole",
-      "intro": "Multiplication counts equal groups. Connect the factors to a picture, then practise facts with both factors from 2 through 9. The worksheet has room to sketch a strategy instead of guessing a fact.",
+      "intro": "Teach multiplication with equal groups before asking your student to recall facts.",
       "source": "content/en-US/multiplication-one-digit.json",
       "worksheets": [
         "w00003-1"
@@ -77,7 +77,7 @@
       "title": "Adding Fractions Worksheets: Like Denominators",
       "grade": 4,
       "topic": "fractions",
-      "intro": "Add the number of equal-sized parts while keeping the size of each part unchanged. Some sums are greater than one; the answer key shows simplified fractions.",
+      "intro": "Use fraction strips to show why the denominator stays the same when adding like fractions.",
       "source": "content/en-US/fraction-addition-like-denominators.json",
       "worksheets": [
         "w00004-1"
@@ -100,7 +100,7 @@
       "title": "Adding Decimals Worksheets to Hundredths",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Add hundredths to hundredths and tenths to tenths. Start with a place-value exchange, then practice 15 vertical addition problems with space for regrouping marks and answers.",
+      "intro": "Teach decimal addition by connecting each regrouping step to place value.",
       "source": "content/en-US/decimal-addition-hundredths.json",
       "worksheets": [
         "w00005-1"
@@ -123,7 +123,7 @@
       "title": "Quadrilateral Worksheets: Shape Classification",
       "grade": 3,
       "topic": "geometry",
-      "intro": "A shape can have more than one correct name. Use its sides and corners to explain which families it belongs to.",
+      "intro": "Help your student classify shapes by their properties rather than their appearance.",
       "source": "content/en-US/quadrilateral-families.json",
       "worksheets": [
         "w00006-1"
@@ -146,7 +146,7 @@
       "title": "Telling Time Worksheets to 5 Minutes",
       "grade": 2,
       "topic": "measurement",
-      "intro": "Count around the clock in fives, then check which hour the short hand has passed.",
+      "intro": "Use a clock with movable hands to teach time to the nearest five minutes.",
       "source": "content/en-US/clock-five-minutes.json",
       "worksheets": [
         "w00007-1"
@@ -169,7 +169,7 @@
       "title": "Skip Counting Worksheets by 5, 10, and 100",
       "grade": 2,
       "topic": "patterns",
-      "intro": "Keep the jump the same each time. Begin at the number shown, even when it is not a multiple of the jump.",
+      "intro": "Teach skip counting as repeated equal jumps from the given starting number.",
       "source": "content/en-US/skip-count-five-ten-hundred.json",
       "worksheets": [
         "w00008-1"
@@ -192,7 +192,7 @@
       "title": "Picture Graph Worksheets",
       "grade": 2,
       "topic": "data",
-      "intro": "Use the graph key to connect each block to one vote. Then decide whether the question asks for one group, the total, or a difference.",
+      "intro": "Show your student how a graph key connects each symbol to a count.",
       "source": "content/en-US/read-vote-graphs.json",
       "worksheets": [
         "w00009-1"
@@ -215,7 +215,7 @@
       "title": "Subtraction Within 10 Worksheets",
       "grade": 1,
       "topic": "whole",
-      "intro": "Make the amount taken away visible before moving to number sentences. The starting number and the answer stay within 10, and answers never go below zero.",
+      "intro": "Introduce subtraction by showing what is taken away and what remains.",
       "source": "content/en-US/subtraction-within-10.json",
       "worksheets": [
         "w00010-1"
@@ -238,7 +238,7 @@
       "title": "2-Digit Subtraction Without Regrouping Worksheets",
       "grade": 2,
       "topic": "whole",
-      "intro": "Subtract the ones and tens without exchanging a ten. Each problem has enough ones in the starting number to subtract directly.",
+      "intro": "Use tens and ones to teach subtraction without regrouping.",
       "source": "content/en-US/subtraction-two-digit-no-regrouping.json",
       "worksheets": [
         "w00011-1"
@@ -261,7 +261,7 @@
       "title": "2-Digit Subtraction With Regrouping Worksheets",
       "grade": 2,
       "topic": "whole",
-      "intro": "Trade one ten for ten ones, then subtract. Use the worked example to explain the exchange before printing a fresh practice set.",
+      "intro": "Show your student that regrouping changes how a number is represented, not its value.",
       "source": "content/en-US/subtraction-two-digit-regrouping.json",
       "worksheets": [
         "w00012-1"
@@ -284,7 +284,7 @@
       "title": "Missing Addends Within 20 Worksheets",
       "grade": 1,
       "topic": "whole",
-      "intro": "A blank does not always mean the answer goes at the end. Find the part that makes both sides of the equation equal. These problems keep the missing number after the plus sign, with totals up to 20.",
+      "intro": "Teach the blank as an unknown part of a total.",
       "source": "content/en-US/missing-addend-within-20.json",
       "worksheets": [
         "w00013-1"
@@ -307,7 +307,7 @@
       "title": "2-Digit Addition With Regrouping Worksheets",
       "grade": 2,
       "topic": "whole",
-      "intro": "Regrouping gives ten ones a new place without changing their value. Use a tens-and-ones example, then practise two-digit addition with a carry from the ones column. Every total is 100 or less.",
+      "intro": "Teach regrouping in addition as an exchange of ten ones for one ten.",
       "source": "content/en-US/addition-two-digit-regrouping.json",
       "worksheets": [
         "w00014-1"
@@ -330,7 +330,7 @@
       "title": "Subtracting Fractions With Like Denominators Worksheets",
       "grade": 4,
       "topic": "fractions",
-      "intro": "Subtract the number of parts, not the size of each part. Work with proper fractions that share a denominator; each difference is nonnegative and may be zero.",
+      "intro": "Use like-sized fraction pieces to explain subtraction with like denominators.",
       "source": "content/en-US/fraction-subtraction-like-denominators.json",
       "worksheets": [
         "w00015-1"
@@ -353,7 +353,7 @@
       "title": "Division Within 100 — No Remainders Worksheets",
       "grade": 3,
       "topic": "whole",
-      "intro": "Division can tell how many belong in each group or how many groups can be made. These whole-number problems divide evenly, with totals no greater than 100 and one-digit divisors from 2 through 9.",
+      "intro": "Teach both meanings of division: equal sharing and making equal groups.",
       "source": "content/en-US/division-within-100.json",
       "worksheets": [
         "w00016-1"
@@ -376,7 +376,7 @@
       "title": "Addition & Subtraction Word Problems Within 20",
       "grade": 1,
       "topic": "whole",
-      "intro": "A story tells what changes; an equation records that change. Practice finding a new total after counters are added or taken away. Each printable set has six stories with numbers and results within 20.",
+      "intro": "Help your student connect an addition or subtraction story to an action.",
       "source": "content/en-US/word-problems-add-sub-within-20.json",
       "worksheets": [
         "w00017-1"
@@ -403,7 +403,7 @@
       "title": "Multiplication & Division Word Problems",
       "grade": 3,
       "topic": "whole",
-      "intro": "Choose six multiplication and division stories, or four equal-group stories that explore zero and one. Name the number of groups, the amount in each group, and the total before choosing a calculation. Choose two- or three-digit group amounts for place-value multiplication practice.",
+      "intro": "Teach your student to identify the groups, group size, and total before calculating.",
       "source": "content/en-US/word-problems-multiplication-division.json",
       "worksheets": [
         "w00018-1"
@@ -430,7 +430,7 @@
       "title": "Addition and Subtraction Word Problems: Unknown Starting Number",
       "grade": 1,
       "topic": "whole",
-      "intro": "Sometimes a story tells you the ending, but asks about the beginning. Use the final total and the amount received to find how many there were before. These six stories use small quantities within 20.",
+      "intro": "Help your student work backward from an ending total to an unknown starting amount.",
       "source": "content/en-US/word-problems-unknown-start.json",
       "worksheets": [
         "w00019-1"
@@ -453,7 +453,7 @@
       "title": "More and Fewer Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "A comparison names one amount and describes another amount in relation to it. Find who has the known collection, what the difference means, and whose amount is being asked for.",
+      "intro": "Use matching rows of counters to teach more-than and fewer-than comparisons.",
       "source": "content/en-US/word-problems-more-fewer.json",
       "worksheets": [
         "w00020-1"
@@ -476,7 +476,7 @@
       "title": "Word Problems With Extra Information",
       "grade": 1,
       "topic": "whole",
-      "intro": "Not every number in a story belongs in the calculation. Read the question first, identify the quantities it asks about, and leave out details such as a room number or someone’s age.",
+      "intro": "Teach your student to select information based on the question.",
       "source": "content/en-US/word-problems-extra-information.json",
       "worksheets": [
         "w00021-1"
@@ -499,7 +499,7 @@
       "title": "Money Word Problems: Finding Cents Spent",
       "grade": 1,
       "topic": "whole",
-      "intro": "A story can tell you how much there was before and how much is left, while leaving out what happened in between. Find the amount spent by connecting the starting amount, the change, and the amount remaining.",
+      "intro": "Use this worksheet to teach an unknown amount spent, rather than coin identification.",
       "source": "content/en-US/word-problems-unknown-change.json",
       "worksheets": [
         "w00022-1"
@@ -522,7 +522,7 @@
       "title": "Word Problems Within 100",
       "grade": 2,
       "topic": "whole",
-      "intro": "Read what changes before choosing an operation. These one-step stories combine or remove counters, then ask for the new total or the amount remaining. Some calculations need regrouping; all quantities and answers stay within 100.",
+      "intro": "Separate understanding the story from carrying out the calculation.",
       "source": "content/en-US/word-problems-add-sub-within-100.json",
       "worksheets": [
         "w00023-1"
@@ -545,7 +545,7 @@
       "title": "3-Digit Addition and Subtraction Worksheets Within 1,000",
       "grade": 3,
       "topic": "whole",
-      "intro": "Use hundreds, tens, and ones to make larger calculations understandable. This mixed set keeps quantities and answers within 1,000 and leaves space for a drawing, a split-number strategy, or a written calculation.",
+      "intro": "Use place-value models to teach addition and subtraction within 1,000.",
       "source": "content/en-US/addition-subtraction-within-1000.json",
       "worksheets": [
         "w00024-1"
@@ -568,7 +568,7 @@
       "title": "Word Problems Within 1,000",
       "grade": 3,
       "topic": "whole",
-      "intro": "Larger quantities should not hide a simple relationship. Decide whether the story combines counters or takes some away, write an equation, and use place value to calculate. Each of these six stories has one step.",
+      "intro": "Help your student recognize familiar story structures when the numbers get larger.",
       "source": "content/en-US/word-problems-add-sub-within-1000.json",
       "worksheets": [
         "w00025-1"
@@ -595,7 +595,7 @@
       "title": "Choose an Equation Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "The same two numbers can tell different stories. Read what is known and what is missing, choose the calculation that answers the question, and then solve it. These four questions mix totals, starting amounts, and amounts used.",
+      "intro": "Teach your student to choose an equation by identifying what is unknown.",
       "source": "content/en-US/word-problems-choose-equation.json",
       "worksheets": [
         "w00026-1"
@@ -618,7 +618,7 @@
       "title": "Bar Model Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "A bar model organizes the quantities in a story. The top bar names the whole, and the two lower parts fit together to make it. Find which quantity is missing, fill its box, and connect the diagram to an equation.",
+      "intro": "Use bar models to make the relationship between a whole and its parts visible.",
       "source": "content/en-US/word-problems-bar-model.json",
       "worksheets": [
         "w00027-1"
@@ -641,7 +641,7 @@
       "title": "Same Numbers, Different Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "The numbers stay the same, but what they mean changes. In each pair, one story asks for a new total and the other asks for a starting amount. Compare both before choosing the operations.",
+      "intro": "Help your student see why the same numbers can require different operations.",
       "source": "content/en-US/word-problems-same-numbers.json",
       "worksheets": [
         "w00028-1"
@@ -664,7 +664,7 @@
       "title": "Explain Your Thinking Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "A correct number is a useful start. Explaining what the numbers mean shows whether the child understands the story. Find the amount used, then describe how the starting amount and the amount left are connected.",
+      "intro": "Use these problems to discuss reasoning as well as answers.",
       "source": "content/en-US/word-problems-explain-thinking.json",
       "worksheets": [
         "w00029-1"
@@ -687,7 +687,7 @@
       "title": "Find and Fix the Mistake Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "A friend notices that more items arrive and immediately chooses addition. Check which quantity the question asks for before agreeing. Find the starting amount and explain how to correct the friend’s reasoning.",
+      "intro": "Teach students to check a proposed solution against the question.",
       "source": "content/en-US/word-problems-error-analysis.json",
       "worksheets": [
         "w00030-1"
@@ -710,7 +710,7 @@
       "title": "Write Your Own Question Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "The story gives the numbers, but the child supplies the question. Ask about the total money after more is earned, then write an equation and an answer that match that question.",
+      "intro": "Help your student write a question that can be answered from the story.",
       "source": "content/en-US/word-problems-write-question.json",
       "worksheets": [
         "w00031-1"
@@ -733,7 +733,7 @@
       "title": "Multi-Digit Addition & Subtraction Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "Read the change in a warehouse’s cable supply, choose an equation, and calculate with place value. The four one-step stories use whole-number lengths within 1,000,000. A large number changes the calculation work, but not the meaning of receiving or shipping cable.",
+      "intro": "Teach large-number word problems by separating the situation from the arithmetic.",
       "source": "content/en-US/word-problems-add-sub-million.json",
       "worksheets": [
         "w00032-1"
@@ -756,7 +756,7 @@
       "title": "2-Digit Multiplication Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "Use two side lengths to find how much surface a rectangular field covers. Each of the four stories uses two-digit whole numbers. Connect the multiplication to rows of square units before calculating.",
+      "intro": "Connect two-digit multiplication to rectangular area.",
       "source": "content/en-US/word-problems-two-digit-area.json",
       "worksheets": [
         "w00033-1"
@@ -779,7 +779,7 @@
       "title": "4-Digit Division Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "A division answer can describe complete groups and something left over. Read what the groups contain before interpreting the remainder. The default four-problem sets use four-digit totals and one-digit divisors; they may include exact division, remainders, or both. Choose Smaller totals: remainders for two- or three-digit totals with a positive amount left over in every question.",
+      "intro": "Teach students to interpret a remainder in the context of the story.",
       "source": "content/en-US/word-problems-division-remainders.json",
       "worksheets": [
         "w00034-1"
@@ -802,7 +802,7 @@
       "title": "4-Digit by 1-Digit Multiplication Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "A four-digit factor can be split into thousands, hundreds, tens, and ones. Use those parts to calculate the area of a rectangular field, then connect the partial products to a shorter written multiplication method.",
+      "intro": "Use an area model to explain multiplication with a four-digit factor.",
       "source": "content/en-US/word-problems-four-digit-area.json",
       "worksheets": [
         "w00035-1"
@@ -825,7 +825,7 @@
       "title": "Like-Denominator Fraction Word Problems",
       "grade": 4,
       "topic": "fractions",
-      "intro": "A fraction describes part of a chosen whole. In these cable-length stories, that whole is one foot. Join or remove equal-sized fractional parts, then describe the resulting length in feet.",
+      "intro": "Keep the unit whole visible when teaching fraction word problems.",
       "source": "content/en-US/word-problems-like-fractions.json",
       "worksheets": [
         "w00036-1"
@@ -848,7 +848,7 @@
       "title": "Decimal Addition & Subtraction Word Problems",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Help a child turn a cable-length story into an equation. Add or subtract through hundredths, explain why decimal points line up, and check the remaining or combined length in feet.",
+      "intro": "Help your student translate the cable-length story before working with decimals.",
       "source": "content/en-US/word-problems-add-sub-decimals.json",
       "worksheets": [
         "w00037-1"
@@ -871,7 +871,7 @@
       "title": "Subtracting Decimals to Hundredths Worksheets",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Keep the starting number intact while renaming its units. Practice 15 vertical decimal subtraction problems, including guidance for regrouping and checking the difference with addition.",
+      "intro": "Teach decimal subtraction by modeling each regrouping step.",
       "source": "content/en-US/decimal-subtraction-hundredths.json",
       "worksheets": [
         "w00038-1"
@@ -894,7 +894,7 @@
       "title": "Multiplying Decimals: Tenths by Tenths Worksheets",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Explain how tenths multiplied by tenths become hundredths. Then print eight problems with space for a drawing, partial products, or a written method.",
+      "intro": "Use an area model to explain why tenths times tenths gives hundredths.",
       "source": "content/en-US/decimal-multiplication-tenths.json",
       "worksheets": [
         "w00039-1"
@@ -917,7 +917,7 @@
       "title": "Dividing Decimals: Tenths by Tenths Worksheets",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Keep the quotient unchanged by scaling the dividend and divisor together. Use the group model, then print eight problems with room for written division and a multiplication check.",
+      "intro": "Teach decimal division by scaling both quantities together.",
       "source": "content/en-US/decimal-division-tenths.json",
       "worksheets": [
         "w00040-1"
@@ -940,7 +940,7 @@
       "title": "Multiplying Fractions by Whole Numbers Worksheets",
       "grade": 4,
       "topic": "fractions",
-      "intro": "Repeat equal-sized fraction parts, then simplify the product. Use the fraction-strip example and print six problems with room for a model or calculation.",
+      "intro": "Show multiplication by a whole number as repeated copies of a fraction.",
       "source": "content/en-US/fraction-multiplication-whole.json",
       "worksheets": [
         "w00041-1"
@@ -963,7 +963,7 @@
       "title": "Fraction Multiplication: Area Word Problems",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Connect fraction multiplication to a measurable surface. Read two side lengths, sketch equal strips, and find the area in square feet. These are Grade 5 area applications of multiplying a fraction by a whole number.",
+      "intro": "Connect a fractional side length to the area of a rectangle.",
       "source": "content/en-US/word-problems-fraction-whole-area.json",
       "worksheets": [
         "w00042-1"
@@ -986,7 +986,7 @@
       "title": "Two Fractions: Area Word Problems",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Use two fractional side lengths to measure a rectangular surface. A unit grid explains why the numerators and denominators multiply, including when a side is longer than one foot.",
+      "intro": "Use overlapping partitions to teach area with two fractional side lengths.",
       "source": "content/en-US/word-problems-fraction-fraction-area.json",
       "worksheets": [
         "w00043-1"
@@ -1009,7 +1009,7 @@
       "title": "Unlike-Denominator Fraction Word Problems",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Give unlike fraction parts a common name before adding or subtracting. These cable-length stories keep one foot as the shared whole and connect the action in each story to an equation.",
+      "intro": "Teach common denominators as a way to work with equal-sized pieces.",
       "source": "content/en-US/word-problems-unlike-fractions.json",
       "worksheets": [
         "w00044-1"
@@ -1032,7 +1032,7 @@
       "title": "Whole Number ÷ Unit Fraction Word Problems",
       "grade": 5,
       "topic": "fractions",
-      "intro": "How many fractional-foot pieces fit into a whole-number cable length? Use equal groups to understand the quotient, then check that the pieces rebuild the original length.",
+      "intro": "Use fraction strips to show how many small pieces fit into a whole-number length.",
       "source": "content/en-US/word-problems-whole-divided-unit-fraction.json",
       "worksheets": [
         "w00045-1"
@@ -1055,7 +1055,7 @@
       "title": "4-Digit by 2-Digit Division Word Problems",
       "grade": 5,
       "topic": "whole",
-      "intro": "Use friendly multiples to divide a four-digit total into groups with a two-digit size. Estimate, adjust, and check the quotient while keeping the meaning of any remainder clear. Need a smaller starting point? Choose Exact groups: 1–9 groups to find how many two-digit groups fit into a smaller total before tackling four-digit totals. To find the amount in each group instead, choose Equal sharing: two-digit groups. In that option the number of groups is given, and every total divides exactly. To practice full groups and leftovers with two- or three-digit totals, choose Smaller totals: remainders.",
+      "intro": "Teach division with two-digit divisors using estimates and labeled groups.",
       "source": "content/en-US/word-problems-two-digit-division.json",
       "worksheets": [
         "w00046-1"
@@ -1078,7 +1078,7 @@
       "title": "3-Digit by 2-Digit Multiplication Word Problems",
       "grade": 5,
       "topic": "whole",
-      "intro": "Connect rectangle area to multi-digit multiplication. Explain the value of each partial product, keep regrouping organized, and label the answer in square feet.",
+      "intro": "Use partial areas to explain three-digit by two-digit multiplication.",
       "source": "content/en-US/word-problems-three-by-two-digit-area.json",
       "worksheets": [
         "w00047-1"
@@ -1101,7 +1101,7 @@
       "title": "Adding Four 2-Digit Numbers Word Problems",
       "grade": 2,
       "topic": "whole",
-      "intro": "Keep track of four addends, choose helpful pairs, and use tens and ones to explain a total that may be greater than 100.",
+      "intro": "Teach flexible grouping when adding four two-digit numbers.",
       "source": "content/en-US/word-problems-four-addends.json",
       "worksheets": [
         "w00048-1"
@@ -1124,7 +1124,7 @@
       "title": "Multiplying by Multiples of 10 Word Problems",
       "grade": 3,
       "topic": "whole",
-      "intro": "Use familiar multiplication facts to count tens. Connect each factor to its role in the story and explain why 12 tens means 120 counters.",
+      "intro": "Connect multiplication facts to groups of ten.",
       "source": "content/en-US/word-problems-multiples-of-ten.json",
       "worksheets": [
         "w00049-1"
@@ -1147,7 +1147,7 @@
       "title": "Adding and Subtracting Tens Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "Read a short counter story, choose addition or subtraction, and explain the answer in tens and ones. Practice whole tens from 0 through 90.",
+      "intro": "Teach addition and subtraction of tens by counting groups of ten.",
       "source": "content/en-US/word-problems-add-sub-tens.json",
       "worksheets": [
         "w00050-1"
@@ -1170,7 +1170,7 @@
       "title": "Word Problems with Parentheses",
       "grade": 5,
       "topic": "patterns",
-      "intro": "Write and interpret an add-then-multiply expression. Use the contents of one complete box to explain why the sum belongs inside parentheses.",
+      "intro": "Use the contents of one box to explain parentheses.",
       "source": "content/en-US/word-problems-parentheses.json",
       "worksheets": [
         "w00051-1"
@@ -1193,7 +1193,7 @@
       "title": "Factors and Factor Pairs Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "Find every row size that uses all the counters. Connect arrays, multiplication pairs, and division with no remainder to a complete factor list.",
+      "intro": "Teach factor pairs by arranging a fixed collection into complete rows.",
       "source": "content/en-US/word-problems-factor-pairs.json",
       "worksheets": [
         "w00052-1"
@@ -1216,7 +1216,7 @@
       "title": "2-Digit Plus 1-Digit Addition Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "Add a few ones to a two-digit collection. Use a drawing, count on, or make the next ten while keeping track of every added counter.",
+      "intro": "Help your student add ones to a two-digit number using a strategy that fits.",
       "source": "content/en-US/word-problems-two-plus-one-digit.json",
       "worksheets": [
         "w00053-1"
@@ -1239,7 +1239,7 @@
       "title": "Two-Step Addition and Subtraction Word Problems",
       "grade": 2,
       "topic": "whole",
-      "intro": "Help a child follow one collection through two changes: find more, then give some away. Use the intermediate total to finish the story.",
+      "intro": "Teach students to track two changes in one story.",
       "source": "content/en-US/word-problems-two-step-add-subtract.json",
       "worksheets": [
         "w00054-1"
@@ -1262,7 +1262,7 @@
       "title": "Two-Step Multiplication and Subtraction Word Problems",
       "grade": 3,
       "topic": "whole",
-      "intro": "Find the total in equal groups, then subtract the amount used. Help a child explain the intermediate product and the number that remains.",
+      "intro": "Help your student use an intermediate product in a two-step problem.",
       "source": "content/en-US/word-problems-two-step-multiply-subtract.json",
       "worksheets": [
         "w00055-1"
@@ -1285,7 +1285,7 @@
       "title": "Length Word Problems",
       "grade": 2,
       "topic": "measurement",
-      "intro": "Follow a ribbon through two changes: join two lengths, then cut some off. Use a same-scale drawing to explain the length that remains.",
+      "intro": "Use a consistent scale to explain two changes in a length.",
       "source": "content/en-US/word-problems-two-step-length.json",
       "worksheets": [
         "w00056-1"
@@ -1308,7 +1308,7 @@
       "title": "Liters and Grams Word Problems",
       "grade": 3,
       "topic": "measurement",
-      "intro": "Help children distinguish a container count from the amount inside. Use equal groups for totals and subtraction for what remains.",
+      "intro": "Distinguish the number of containers from the amount in each container.",
       "source": "content/en-US/word-problems-liters-grams.json",
       "worksheets": [
         "w00057-1"
@@ -1331,7 +1331,7 @@
       "title": "Division Word Problems: Vans Needed",
       "grade": 4,
       "topic": "whole",
-      "intro": "A correct quotient is only the start. Help children decide whether a remaining student needs one more van, then check the fewest vehicles that can carry everyone.",
+      "intro": "Teach students to decide whether a remainder requires an additional group.",
       "source": "content/en-US/word-problems-division-round-up.json",
       "worksheets": [
         "w00058-1"
@@ -1354,7 +1354,7 @@
       "title": "Fraction Word Problems: Smaller Recipes",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Help a child distinguish half a recipe from half a cup. Scale the original ingredient amount and keep the measuring unit unchanged.",
+      "intro": "Explain scaling a recipe by referring to the original ingredient amount.",
       "source": "content/en-US/word-problems-fraction-recipes.json",
       "worksheets": [
         "w00059-1"
@@ -1377,7 +1377,7 @@
       "title": "Missing Part Word Problems Within 100",
       "grade": 2,
       "topic": "whole",
-      "intro": "Find the missing part of a known whole, or how much more is needed to reach a target. Begin within 100, or choose the Within 1,000 option for three-digit practice. For Grade 3 practice with a two-digit start and a total above 100, choose Crossing 100.",
+      "intro": "Teach a missing part as the amount needed to complete a known whole.",
       "source": "content/en-US/word-problems-missing-part-within-100.json",
       "worksheets": [
         "w00060-1"
@@ -1404,7 +1404,7 @@
       "title": "Missing Fraction Part Word Problems",
       "grade": 4,
       "topic": "fractions",
-      "intro": "The total is known and one part is missing. Keep the same unit whole as you find the other fraction amount or the increase needed to reach the target.",
+      "intro": "Keep the same reference whole when teaching missing fraction amounts.",
       "source": "content/en-US/word-problems-missing-fraction-part.json",
       "worksheets": [
         "w00061-1"
@@ -1427,7 +1427,7 @@
       "title": "Missing Fraction Parts: Unlike Denominators Worksheets",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Find the other part of a known total. Rename unlike fractions as equal-sized pieces, subtract, and check by adding the parts.",
+      "intro": "Use equivalent fractions to find a missing part with unlike denominators.",
       "source": "content/en-US/word-problems-missing-fraction-part-unlike.json",
       "worksheets": [
         "w00062-1"
@@ -1450,7 +1450,7 @@
       "title": "Missing Decimal Part Word Problems",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Find a missing decimal amount or the increase needed to reach a target. Identify the unknown first, then align place values and check the parts.",
+      "intro": "Teach students to identify the missing amount before calculating with decimals.",
       "source": "content/en-US/word-problems-missing-decimal-part.json",
       "worksheets": [
         "w00063-1"
@@ -1473,7 +1473,7 @@
       "title": "Decimal Division Word Problems: Full and Partial Groups",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Measure how many full and partial groups fit in a decimal amount. Include the fraction of the last group, then use multiplication to check.",
+      "intro": "Use a measurement model to explain a quotient that includes part of a group.",
       "source": "content/en-US/word-problems-decimal-group-measure.json",
       "worksheets": [
         "w00064-1"
@@ -1496,7 +1496,7 @@
       "title": "Decimal Division Word Problems: Decimal Group Sizes",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Find how many full and partial groups fit when the group size is a decimal. Rename both quantities together and check the quotient using the original units.",
+      "intro": "Explain division by a decimal using a clearly labeled group size.",
       "source": "content/en-US/word-problems-decimal-divisor-groups.json",
       "worksheets": [
         "w00065-1"
@@ -1519,7 +1519,7 @@
       "title": "Equal Groups Division Word Problems",
       "grade": 3,
       "topic": "whole",
-      "intro": "Is the missing number the number of groups, or the amount in each group? Compare both meanings of division with pictures, then solve four exact-division stories using facts from 2 to 9. For larger totals, choose Sharing: two-digit answers to practice finding the amount in each group.",
+      "intro": "Help your student distinguish equal sharing from finding the number of groups.",
       "source": "content/en-US/word-problems-equal-groups-division.json",
       "worksheets": [
         "w00066-1"
@@ -1546,7 +1546,7 @@
       "title": "Multiplying Fractions Word Problems: Scaling Up",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Explain why a fraction greater than one makes a positive amount larger. Use one copy plus part of a copy to understand the product.",
+      "intro": "Use one full copy and an extra part to explain multiplication by a fraction greater than one.",
       "source": "content/en-US/word-problems-fraction-scaling-up.json",
       "worksheets": [
         "w00067-1"
@@ -1569,7 +1569,7 @@
       "title": "Difference Word Problems Within 20",
       "grade": 1,
       "topic": "whole",
-      "intro": "Both amounts are known. Match equal-size counters, find the unmatched part, and explain the difference using subtraction and an addition check.",
+      "intro": "Teach a difference by matching two collections.",
       "source": "content/en-US/word-problems-difference-within-20.json",
       "worksheets": [
         "w00068-1"
@@ -1592,7 +1592,7 @@
       "title": "How Many More? Word Problems",
       "grade": 1,
       "topic": "whole",
-      "intro": "Start with a known amount and reach a known target. Find the amount added using a counter strip, counting on, or a related subtraction equation.",
+      "intro": "Show how counting on finds the amount needed to reach a target.",
       "source": "content/en-US/word-problems-how-many-more-within-20.json",
       "worksheets": [
         "w00069-1"
@@ -1615,7 +1615,7 @@
       "title": "Difference Word Problems Within 100",
       "grade": 2,
       "topic": "whole",
-      "intro": "Compare two amounts to find how much more or less one is than the other. Choose the default range within 100, or extend to two three-digit amounts within 1,000. For Grade 3, choose Crossing 100 to compare a two-digit amount with a total above 100.",
+      "intro": "Use comparison models to teach differences with larger numbers.",
       "source": "content/en-US/word-problems-difference-within-100.json",
       "worksheets": [
         "w00070-1"
@@ -1642,7 +1642,7 @@
       "title": "Multiplicative Comparison Word Problems",
       "grade": 4,
       "topic": "whole",
-      "intro": "Compare a reference amount with a second amount that is a whole-number multiple of it. Use equal units for smaller multipliers, or split a two-digit multiplier into tens and ones. Choose the range that matches the child's multiplication goal.",
+      "intro": "Distinguish times-as-many comparisons from additive comparisons.",
       "source": "content/en-US/word-problems-multiplicative-comparison.json",
       "worksheets": [
         "w00071-1"
@@ -1665,7 +1665,7 @@
       "title": "Decimal Scaling Word Problems",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Compare two ribbon lengths using a decimal multiplier. Predict whether the second ribbon is shorter or longer, multiply, and check the exact length in meters.",
+      "intro": "Use ribbon lengths to explain decimal scale factors.",
       "source": "content/en-US/word-problems-decimal-scaling.json",
       "worksheets": [
         "w00072-1"
@@ -1688,7 +1688,7 @@
       "title": "Comparing Fractions Worksheets: Like Denominators",
       "grade": 3,
       "topic": "fractions",
-      "intro": "When the parts are the same size, compare how many parts each fraction counts. Use greater than, less than, or equal to for six proper-fraction comparisons.",
+      "intro": "Teach fraction comparison by keeping the whole and the piece size the same.",
       "source": "content/en-US/fraction-compare-like-denominators.json",
       "worksheets": [
         "w00073-1"
@@ -1711,7 +1711,7 @@
       "title": "Decimal Place Value Worksheets: Identify the Digit",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Find a digit by its position, including positions occupied by zero. Use a place-value chart to explain what that digit represents.",
+      "intro": "Use a place-value chart to distinguish a digit from its value.",
       "source": "content/en-US/decimal-place-value-digits.json",
       "worksheets": [
         "w00074-1"
@@ -1734,7 +1734,7 @@
       "title": "Comparing Decimals Worksheets Through Thousandths",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Compare the values of decimals, even when they have different numbers of digits. Use matching place values to decide which number is greater.",
+      "intro": "Teach decimal comparison by matching place values.",
       "source": "content/en-US/decimal-compare-thousandths.json",
       "worksheets": [
         "w00075-1"
@@ -1757,7 +1757,7 @@
       "title": "Simplifying Fractions Worksheets",
       "grade": 5,
       "topic": "fractions",
-      "intro": "Simplifying changes the size and number of equal parts used to name an amount. It does not change the amount itself.",
+      "intro": "Explain simplifying as renaming the same fraction.",
       "source": "content/en-US/fraction-simplify.json",
       "worksheets": [
         "w00076-1"
@@ -1780,7 +1780,7 @@
       "title": "Common Denominator Worksheets",
       "grade": 5,
       "topic": "fractions",
-      "intro": "A common denominator lets two fractions use the same-sized parts. Rename each fraction while keeping its value, and write both results.",
+      "intro": "Teach common denominators with matching wholes.",
       "source": "content/en-US/fraction-common-denominators.json",
       "worksheets": [
         "w00077-1"
@@ -1803,7 +1803,7 @@
       "title": "Identifying Fractions Worksheets: Shaded Shapes",
       "grade": 3,
       "topic": "fractions",
-      "intro": "Start with one whole strip. Count all its equal parts, then count the shaded parts to write a fraction.",
+      "intro": "Help your student distinguish the whole, all equal parts, and shaded parts.",
       "source": "content/en-US/fraction-shaded-models.json",
       "worksheets": [
         "w00078-1"
@@ -1826,7 +1826,7 @@
       "title": "Comparing Numbers Worksheets: 3-Digit Numbers",
       "grade": 2,
       "topic": "whole",
-      "intro": "Use place value to decide which number is greater. Begin with hundreds and stop at the first place that differs.",
+      "intro": "Teach three-digit comparison from the greatest place value.",
       "source": "content/en-US/compare-three-digit-numbers.json",
       "worksheets": [
         "w00079-1"
@@ -1849,7 +1849,7 @@
       "title": "Fractions on a Number Line Worksheets",
       "grade": 3,
       "topic": "fractions",
-      "intro": "A fraction names a number on the line. Use the distance from 0 to 1 as one whole, then count equal intervals to locate the marked point.",
+      "intro": "Teach fractions on a number line by identifying the unit interval first.",
       "source": "content/en-US/fraction-number-line.json",
       "worksheets": [
         "w00080-1"
@@ -1872,7 +1872,7 @@
       "title": "Place Value Worksheets: 3-Digit Expanded Form",
       "grade": 2,
       "topic": "whole",
-      "intro": "A digit tells a different amount in each place. Write each amount as a sum to show how the whole number is built.",
+      "intro": "Use expanded form to show the value represented by each digit.",
       "source": "content/en-US/three-digit-expanded-form.json",
       "worksheets": [
         "w00081-1"
@@ -1895,7 +1895,7 @@
       "title": "Place Value Worksheets: Tens and Ones Expanded Form",
       "grade": 1,
       "topic": "whole",
-      "intro": "A ten is one group of ten ones. Use that group to explain why the two digits in a number have different values.",
+      "intro": "Teach a ten as a group of ten ones.",
       "source": "content/en-US/two-digit-expanded-form.json",
       "worksheets": [
         "w00082-1"
@@ -1918,7 +1918,7 @@
       "title": "Telling Time Worksheets: Hours and Half Hours",
       "grade": 1,
       "topic": "measurement",
-      "intro": "Use the long hand to read the minutes and the short hand to find the hour. Both hands help you read the time.",
+      "intro": "Teach hours and half hours using both clock hands.",
       "source": "content/en-US/clock-hours-half-hours.json",
       "worksheets": [
         "w00083-1"
@@ -1941,7 +1941,7 @@
       "title": "Perimeter Worksheets: Rectangles",
       "grade": 3,
       "topic": "measurement",
-      "intro": "Perimeter measures the distance around a shape. Follow the boundary once and include every side.",
+      "intro": "Teach perimeter as one complete trip around a boundary.",
       "source": "content/en-US/rectangle-perimeter.json",
       "worksheets": [
         "w00084-1"
@@ -1964,7 +1964,7 @@
       "title": "Area Worksheets: Counting Square Units",
       "grade": 3,
       "topic": "measurement",
-      "intro": "Area tells how much surface a shape covers. Count the equal squares inside the shape, not the lines around it.",
+      "intro": "Use unit squares to distinguish area from perimeter.",
       "source": "content/en-US/area-count-square-units.json",
       "worksheets": [
         "w00085-1"
@@ -1987,7 +1987,7 @@
       "title": "Volume Worksheets: Unit Cubes and Layers",
       "grade": 5,
       "topic": "measurement",
-      "intro": "Count the cubes in one layer, then use the number of equal layers to find the whole solid’s volume.",
+      "intro": "Teach volume by building and counting equal layers.",
       "source": "content/en-US/volume-unit-cube-layers.json",
       "worksheets": [
         "w00086-1"
@@ -2010,7 +2010,7 @@
       "title": "Coordinate Plane Worksheets: Reading Ordered Pairs",
       "grade": 5,
       "topic": "geometry",
-      "intro": "An ordered pair gives two positions in a fixed order: across first, then up.",
+      "intro": "Model the order of coordinates before introducing faster plotting.",
       "source": "content/en-US/coordinate-ordered-pairs.json",
       "worksheets": [
         "w00087-1"
@@ -2033,7 +2033,7 @@
       "title": "Rounding Worksheets to the Nearest 10 and 100",
       "grade": 3,
       "topic": "whole",
-      "intro": "Rounding chooses a nearby multiple. Read whether the question asks for tens or hundreds before deciding.",
+      "intro": "Teach rounding by comparing distances to neighboring multiples.",
       "source": "content/en-US/rounding-tens-hundreds.json",
       "worksheets": [
         "w00088-1"
@@ -2056,7 +2056,7 @@
       "title": "Comparing Numbers Worksheets: Large Whole Numbers",
       "grade": 4,
       "topic": "whole",
-      "intro": "Begin with the greatest place value. The first place that differs decides which whole number is greater.",
+      "intro": "Teach large-number comparison with aligned place-value columns.",
       "source": "content/en-US/compare-large-whole-numbers.json",
       "worksheets": [
         "w00089-1"
@@ -2079,7 +2079,7 @@
       "title": "Rounding Decimals Worksheets",
       "grade": 5,
       "topic": "decimals",
-      "intro": "Read the requested place, then decide which neighboring whole number or tenth is closer.",
+      "intro": "Connect decimal rounding to a number line before teaching the shortcut.",
       "source": "content/en-US/rounding-decimals.json",
       "worksheets": [
         "w00090-1"
@@ -2102,7 +2102,7 @@
       "title": "Comparing Numbers Worksheets: 2-Digit Numbers",
       "grade": 1,
       "topic": "whole",
-      "intro": "Compare the tens first. When the tens match, compare the ones to decide whether the numbers are greater, less, or equal.",
+      "intro": "Teach two-digit comparison by comparing tens before ones.",
       "source": "content/en-US/compare-two-digit-numbers.json",
       "worksheets": [
         "w00091-1"
@@ -2125,7 +2125,7 @@
       "title": "10 More and 10 Less Worksheets",
       "grade": 1,
       "topic": "whole",
-      "intro": "Adding or removing one ten changes the tens while the ones stay the same. Explain the change before relying on a digit rule.",
+      "intro": "Show how adding or subtracting ten changes a number's groups.",
       "source": "content/en-US/ten-more-less.json",
       "worksheets": [
         "w00092-1"
@@ -2148,7 +2148,7 @@
       "title": "Fractions Worksheets: Halves, Thirds, and Fourths",
       "grade": 2,
       "topic": "geometry",
-      "intro": "Make equal-area parts, then shade one. A fraction label and a correctly partitioned drawing should tell the same story.",
+      "intro": "Teach equal area as the essential feature of fractional parts.",
       "source": "content/en-US/rectangle-equal-parts.json",
       "worksheets": [
         "w00093-1"
@@ -2171,7 +2171,7 @@
       "title": "Odd and Even Numbers Worksheets Within 20",
       "grade": 2,
       "topic": "patterns",
-      "intro": "A number is even when every object has a partner. An odd number leaves one object without a partner.",
+      "intro": "Use pairs to explain odd and even numbers.",
       "source": "content/en-US/odd-even-within-20.json",
       "worksheets": [
         "w00094-1"
@@ -2194,7 +2194,7 @@
       "title": "Comparing Lengths Worksheets: Ordering 3 Objects",
       "grade": 1,
       "topic": "measurement",
-      "intro": "Align the starting ends, then compare how far each strip reaches. Use the labels to record the order.",
+      "intro": "Teach length comparison with aligned starting points.",
       "source": "content/en-US/order-three-lengths.json",
       "worksheets": [
         "w00095-1"
@@ -2217,7 +2217,7 @@
       "title": "Line Plot Worksheets: Reading Measurements",
       "grade": 2,
       "topic": "data",
-      "intro": "Read the length below a stack and count its marks separately. One mark represents one measurement.",
+      "intro": "Teach students to read a line plot as repeated measurements.",
       "source": "content/en-US/read-whole-number-lineplots.json",
       "worksheets": [
         "w00096-1"
@@ -2240,7 +2240,7 @@
       "title": "Addition Equations Worksheets: True or False",
       "grade": 1,
       "topic": "whole",
-      "intro": "An equation is true when both sides have the same value. Calculate the sum and compare it with the number on the other side.",
+      "intro": "Use true-or-false equations to teach the meaning of the equal sign.",
       "source": "content/en-US/addition-equations-true-false.json",
       "worksheets": [
         "w00097-1"
@@ -2263,7 +2263,7 @@
       "title": "Missing Number Worksheets: Factors and Dividends",
       "grade": 3,
       "topic": "whole",
-      "intro": "Look at the blank before choosing an operation. A missing factor and a missing starting total need different related facts.",
+      "intro": "Teach students to locate the unknown before choosing a related fact.",
       "source": "content/en-US/missing-factor-dividend.json",
       "worksheets": [
         "w00098-1"
@@ -2286,7 +2286,7 @@
       "title": "Comparing Fractions Worksheets: Unlike Denominators",
       "grade": 4,
       "topic": "fractions",
-      "intro": "Different denominators name different-sized parts. Use equivalent fractions or a benchmark to compare the amounts fairly.",
+      "intro": "Teach unlike-fraction comparison using equivalent fractions or a benchmark.",
       "source": "content/en-US/fraction-compare-unlike-denominators.json",
       "worksheets": [
         "w00099-1"
@@ -2309,7 +2309,7 @@
       "title": "Fractions and Decimals Worksheets: Tenths and Hundredths",
       "grade": 4,
       "topic": "decimals",
-      "intro": "A fraction and a decimal can name the same amount. Keep track of the size of each part and the place of each digit.",
+      "intro": "Connect tenths, hundredths, and decimals with a hundred grid.",
       "source": "content/en-US/tenths-hundredths-decimals.json",
       "worksheets": [
         "w00100-1"
@@ -2332,7 +2332,7 @@
       "title": "Powers of 10 Worksheets: Multiplying and Dividing",
       "grade": 5,
       "topic": "patterns",
-      "intro": "Follow the value of each digit as the number becomes ten, one hundred, or one thousand times as large or small.",
+      "intro": "Teach powers of ten as changes in place value.",
       "source": "content/en-US/multiply-divide-powers-ten.json",
       "worksheets": [
         "w00101-1"
@@ -2355,7 +2355,7 @@
       "title": "Factors and Multiples Worksheets: Prime and Composite Numbers",
       "grade": 4,
       "topic": "whole",
-      "intro": "Use factor facts to classify a number and decide whether it is a multiple of another number.",
+      "intro": "Use factor pairs to distinguish prime and composite numbers.",
       "source": "content/en-US/prime-composite-multiples.json",
       "worksheets": [
         "w00102-1"
@@ -2378,7 +2378,7 @@
       "title": "10 or 100 More and Less Worksheets",
       "grade": 2,
       "topic": "whole",
-      "intro": "Change a group of ten or a group of one hundred. Explain any regrouping while keeping track of the value of every digit.",
+      "intro": "Teach changes of ten or one hundred using place-value units.",
       "source": "content/en-US/ten-hundred-more-less.json",
       "worksheets": [
         "w00103-1"
@@ -2401,7 +2401,7 @@
       "title": "Elapsed Time Word Problems",
       "grade": 3,
       "topic": "measurement",
-      "intro": "Decide whether you need a length of time or a clock time. Use jumps in minutes to connect the start and finish.",
+      "intro": "Distinguish a clock time from an amount of elapsed time.",
       "source": "content/en-US/elapsed-time-word-problems.json",
       "worksheets": [
         "w00104-1"
@@ -2424,7 +2424,7 @@
       "title": "Number Names Worksheets: 3-Digit Numbers",
       "grade": 2,
       "topic": "whole",
-      "intro": "Connect each number name to hundreds, tens, and ones. A zero holds a place even when its name is not spoken.",
+      "intro": "Connect number names to place value, including unspoken zeros.",
       "source": "content/en-US/three-digit-number-names.json",
       "worksheets": [
         "w00105-1"
@@ -2447,7 +2447,7 @@
       "title": "Lines of Symmetry Worksheets",
       "grade": 4,
       "topic": "geometry",
-      "intro": "A line of symmetry is a fold line that makes both halves match exactly. Test the whole shape, not just its area.",
+      "intro": "Teach symmetry by checking whether a fold makes the entire shape match.",
       "source": "content/en-US/rectangle-square-symmetry.json",
       "worksheets": [
         "w00106-1"
@@ -2470,7 +2470,7 @@
       "title": "Geometry Worksheets: Lines, Rays, and Line Segments",
       "grade": 4,
       "topic": "geometry",
-      "intro": "Look at direction and endpoints. A drawn stroke can represent part of a line that continues beyond the page.",
+      "intro": "Use endpoints and arrows to distinguish lines, rays, and segments.",
       "source": "content/en-US/lines-rays-segments.json",
       "worksheets": [
         "w00107-1"
@@ -2493,7 +2493,7 @@
       "title": "Shape Worksheets: Building and Drawing Shapes",
       "grade": 1,
       "topic": "geometry",
-      "intro": "Put smaller shapes together, then show how they make a larger shape. Build first and sketch what you made.",
+      "intro": "Teach shape composition with pieces students can move.",
       "source": "content/en-US/shape-composition.json",
       "worksheets": [
         "w00108-1"
@@ -2516,7 +2516,7 @@
       "title": "Measurement Conversion Worksheets",
       "grade": 4,
       "topic": "measurement",
-      "intro": "The quantity stays the same when its unit changes. Count how many smaller units make each larger unit.",
+      "intro": "Teach unit conversion as renaming an unchanged measurement.",
       "source": "content/en-US/measurement-unit-conversions.json",
       "worksheets": [
         "w00109-1"
@@ -2539,7 +2539,7 @@
       "title": "Angles Worksheets: Measuring and Drawing Angles",
       "grade": 4,
       "topic": "measurement",
-      "intro": "Put the protractor center on the vertex and read from the zero that matches the starting arm.",
+      "intro": "Model how to position and read a protractor.",
       "source": "content/en-US/measure-draw-angles.json",
       "worksheets": [
         "w00110-1"
@@ -2562,7 +2562,7 @@
       "title": "Line Plot Worksheets: Fraction Measurements",
       "grade": 3,
       "topic": "data",
-      "intro": "A fraction label tells the length. Each cross tells you one measurement was recorded at that length.",
+      "intro": "Teach fraction line plots by separating the scale from the frequency.",
       "source": "content/en-US/read-quarter-unit-lineplots.json",
       "worksheets": [
         "w00111-1"
@@ -2585,7 +2585,7 @@
       "title": "Measurement Worksheets: Estimating and Measuring a Book",
       "grade": 2,
       "topic": "measurement",
-      "intro": "Make an estimate before using the ruler. Then measure the same edge and compare the results.",
+      "intro": "Use estimation to give a measurement context before reaching for a ruler.",
       "source": "content/en-US/estimate-measure-book.json",
       "worksheets": [
         "w00112-1"
@@ -2608,7 +2608,7 @@
       "title": "Shape Attributes Worksheets: Sides, Corners, and Faces",
       "grade": 2,
       "topic": "geometry",
-      "intro": "A flat shape has sides and corners. A solid has faces. Use these different features to describe a pentagon, a hexagon, and a cube.",
+      "intro": "Teach the attributes of flat shapes and solids with objects students can handle.",
       "source": "content/en-US/shape-attributes.json",
       "worksheets": [
         "w00113-1"
@@ -2631,7 +2631,7 @@
       "title": "Comparing Decimals Worksheets Through Hundredths",
       "grade": 4,
       "topic": "decimals",
-      "intro": "Compare matching place values, starting with the whole-number part. More decimal digits do not always mean a greater number.",
+      "intro": "Teach decimal comparison through hundredths using equal place values.",
       "source": "content/en-US/decimal-compare-hundredths.json",
       "worksheets": [
         "w00114-1"
@@ -2654,7 +2654,7 @@
       "title": "Measurement Conversion Worksheets: Larger Units",
       "grade": 5,
       "topic": "measurement",
-      "intro": "The measured amount stays the same when the unit changes. A larger unit means fewer units are needed to describe that amount.",
+      "intro": "Explain why a larger unit requires a smaller count for the same measurement.",
       "source": "content/en-US/measurement-units-larger.json",
       "worksheets": [
         "w00115-1"
@@ -2677,7 +2677,7 @@
       "title": "Kindergarten Addition and Subtraction Worksheets Within 5",
       "grade": 0,
       "topic": "whole",
-      "intro": "Lily has two toy apples and gets one more. Instead of starting with a rule about the plus sign, let her move the two apples and the new apple into one group. She touches each apple once and counts three. The written equation records that action: 2 + 1 = 3.",
+      "intro": "Introduce addition and subtraction within five through actions with objects.",
       "lessonFile": "concepts/e00126.json",
       "source": "content/en-US/kindergarten-picture-add-sub.json",
       "worksheets": [
@@ -2699,7 +2699,7 @@
       "title": "Kindergarten Addition and Subtraction Word Problems Within 5",
       "grade": 0,
       "topic": "whole",
-      "intro": "Leo hears, “You have three counters and get two more.” He points at the two new counters and answers two. He has counted the change but not the whole group. Put down three counters first, add two beside them, and invite him to count everything that is there now.",
+      "intro": "Read these short stories aloud and let your student act them out.",
       "lessonFile": "concepts/e00127.json",
       "source": "content/en-US/word-problems-kindergarten-within-5.json",
       "worksheets": [
@@ -2721,7 +2721,7 @@
       "title": "Count and Write Worksheets for Kindergarten",
       "grade": 0,
       "topic": "whole",
-      "intro": "Mia points to a row of six pictures. She says the number words in the right order but touches one picture twice. Her final answer is seven. Before asking her to memorize more number words, help her coordinate one spoken number with one object.",
+      "intro": "Teach one-to-one counting by matching one spoken number to one picture.",
       "lessonFile": "concepts/e00128.json",
       "source": "content/en-US/kindergarten-count-write.json",
       "worksheets": [
@@ -2740,10 +2740,10 @@
     },
     {
       "id": "e00129",
-      "title": "Compare Picture Groups Worksheets for Kindergarten",
+      "title": "Comparing Groups Worksheets for Kindergarten",
       "grade": 0,
       "topic": "whole",
-      "intro": "Ben sees three counters spread across a wide row and six counters packed close together. He says the wide row has more. Instead of correcting him immediately, line the counters up in pairs so that each counter in one group has a partner in the other.",
+      "intro": "Use matching pairs to compare groups without relying on spacing.",
       "lessonFile": "concepts/e00129.json",
       "source": "content/en-US/kindergarten-compare-groups.json",
       "worksheets": [
@@ -2765,7 +2765,7 @@
       "title": "Count and Circle Worksheets for Kindergarten – Free Printable Activities",
       "grade": 0,
       "topic": "whole",
-      "intro": "Choose a small group from a larger collection. Children circle the requested number of pictures and explain how they know when to stop. Read the directions aloud and accept any selection with the correct count.",
+      "intro": "Teach selecting a given number from a larger collection.",
       "lessonFile": "concepts/e00130.json",
       "source": "content/en-US/kindergarten-circle-pictures.json",
       "worksheets": [
@@ -2787,7 +2787,7 @@
       "title": "Number Word Matching Worksheets for Kindergarten – Free Printable",
       "grade": 0,
       "topic": "whole",
-      "intro": "Connect numerals to the number words one through nine. Each board has three pairs and space to draw connecting lines. Read the words aloud so early reading skills do not become a barrier to the math activity.",
+      "intro": "Keep the math accessible while introducing number words.",
       "lessonFile": "concepts/e00131.json",
       "source": "content/en-US/kindergarten-number-words.json",
       "worksheets": [
@@ -2809,7 +2809,7 @@
       "title": "Ordering Numbers Worksheets for Kindergarten – Smallest to Largest",
       "grade": 0,
       "topic": "whole",
-      "intro": "Compare three number cards and write them from smallest to largest. Use objects or movable number cards to explain the order before recording it in the answer boxes.",
+      "intro": "Use movable cards or objects to teach ordering three numbers.",
       "lessonFile": "concepts/e00132.json",
       "source": "content/en-US/kindergarten-order-numbers.json",
       "worksheets": [
@@ -2831,7 +2831,7 @@
       "title": "Before and After Numbers Worksheets for Kindergarten – Free Printable",
       "grade": 0,
       "topic": "whole",
-      "intro": "Find the number one step before and one step after a given numeral. Use a number path, counters, or spoken counting before writing in the two answer boxes.",
+      "intro": "Teach before and after as one step in the counting sequence.",
       "lessonFile": "concepts/e00133.json",
       "source": "content/en-US/kindergarten-before-after.json",
       "worksheets": [
@@ -2853,7 +2853,7 @@
       "title": "Missing Numbers on a Number Line Worksheets for Kindergarten",
       "grade": 0,
       "topic": "whole",
-      "intro": "Read the first label, count forward by one, and fill the missing number. Each short line has five evenly spaced marks and a large blank below one interior tick.",
+      "intro": "Help your student use the labels already shown on a number line.",
       "lessonFile": "concepts/e00134.json",
       "source": "content/en-US/kindergarten-number-line.json",
       "worksheets": [
@@ -2875,7 +2875,7 @@
       "title": "Ten Frame Worksheets: Making 10 for Kindergarten",
       "grade": 0,
       "topic": "whole",
-      "intro": "Fill each empty box with one dot, then write how many more make 10. Each frame starts with 5–9 pictures and gives children room to draw.",
+      "intro": "Use a ten-frame to show the missing part of ten.",
       "lessonFile": "concepts/e00135.json",
       "source": "content/en-US/kindergarten-ten-frame.json",
       "worksheets": [
@@ -2897,7 +2897,7 @@
       "title": "Make 10 Missing Addend Worksheets for Kindergarten",
       "grade": 0,
       "topic": "whole",
-      "intro": "Find the missing part that makes a total of 10. Begin with a written equation, then use counters or the open drawing space to show why your number works.",
+      "intro": "Connect a missing-addend equation to a model of ten.",
       "lessonFile": "concepts/e00136.json",
       "source": "content/en-US/kindergarten-make-ten-missing.json",
       "worksheets": [
@@ -2919,7 +2919,7 @@
       "title": "Longer and Shorter Worksheets for Kindergarten",
       "grade": 0,
       "topic": "measurement",
-      "intro": "Compare the lengths of two bars with their starting points lined up. Circle the longer bar and record its label, A or B.",
+      "intro": "Teach length comparison by lining up the starting points.",
       "lessonFile": "concepts/e00137.json",
       "source": "content/en-US/kindergarten-compare-lengths.json",
       "worksheets": [
@@ -2941,7 +2941,7 @@
       "title": "Sort and Count Shapes Worksheets for Kindergarten",
       "grade": 0,
       "topic": "geometry",
-      "intro": "Find one kind of shape in each collection. Circle every match, then write how many you found. An adult can read the shape names aloud.",
+      "intro": "Teach sorting by one named shape attribute at a time.",
       "lessonFile": "concepts/e00138.json",
       "source": "content/en-US/kindergarten-count-by-shape.json",
       "worksheets": [
@@ -2963,7 +2963,7 @@
       "title": "2D Shape Recognition Worksheets for Kindergarten",
       "grade": 0,
       "topic": "geometry",
-      "intro": "Trace each flat shape and name it. Use its sides and corners, not its color or position. An adult may read the names and write a spoken answer.",
+      "intro": "Teach shape names through sides and corners rather than orientation.",
       "lessonFile": "concepts/e00139.json",
       "source": "content/en-US/kindergarten-name-flat-shapes.json",
       "worksheets": [
@@ -2985,7 +2985,7 @@
       "title": "Counting Sides Worksheets for Kindergarten",
       "grade": 0,
       "topic": "geometry",
-      "intro": "Look at the boundary, not just the shape name. Trace each straight edge once and write how many straight sides the shape has.",
+      "intro": "Use tracing to help your student count each straight side once.",
       "lessonFile": "concepts/e00140.json",
       "source": "content/en-US/kindergarten-count-shape-sides.json",
       "worksheets": [
@@ -3007,7 +3007,7 @@
       "title": "Repeating Shape Patterns Worksheets for Kindergarten",
       "grade": 0,
       "topic": "patterns",
-      "intro": "Circle the first group of three shapes. Keep repeating that group in the same order, then draw the next shape in the box.",
+      "intro": "Teach repeating patterns by identifying the whole repeating unit.",
       "lessonFile": "concepts/e00141.json",
       "source": "content/en-US/kindergarten-repeating-patterns.json",
       "worksheets": [
@@ -3029,7 +3029,7 @@
       "title": "Missing Part Number Bonds Worksheets Within 9",
       "grade": 0,
       "topic": "whole",
-      "intro": "Split each pictured whole into two parts. Circle the requested number of pictures and record the other part. Choose two nonempty parts first, or practice a part with zero pictures.",
+      "intro": "Teach a number bond as two parts of one pictured whole.",
       "lessonFile": "concepts/e00142.json",
       "source": "content/en-US/kindergarten-missing-part-bonds.json",
       "worksheets": [
@@ -3051,7 +3051,7 @@
       "title": "Ordinal Number Worksheets for Kindergarten — First to Eighth",
       "grade": 0,
       "topic": "whole",
-      "intro": "An ordinal number tells where an object is in a line. Start at the left edge and circle just the picture in the requested position.",
+      "intro": "Distinguish an object's position from the number of objects.",
       "lessonFile": "concepts/e00143.json",
       "source": "content/en-US/kindergarten-ordinal-pictures.json",
       "worksheets": [
@@ -3073,7 +3073,7 @@
       "title": "Kindergarten Addition and Subtraction Word Problems Within 10",
       "grade": 0,
       "topic": "whole",
-      "intro": "Move from small-group stories within five to joining and taking away within ten. Read each story aloud and let the child use counters, fingers, or a drawing before recording an equation.",
+      "intro": "Extend familiar joining and taking-away stories to quantities within ten.",
       "lessonFile": "concepts/e00144.json",
       "source": "content/en-US/word-problems-kindergarten-within-10.json",
       "worksheets": [

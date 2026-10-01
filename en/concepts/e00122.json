@@ -1,7 +1,7 @@
 {
   "id": "e00122",
   "title": "Rounding Whole Numbers",
-  "intro": "Locate the requested place and look one digit to its right. A digit from 0 to 4 keeps the rounding-place digit; a digit from 5 to 9 increases it by one. Replace digits to the right with zeros.",
-  "html": "<h2>Rounding Whole Numbers</h2><p>Locate the requested place and look one digit to its right. A digit from 0 to 4 keeps the rounding-place digit; a digit from 5 to 9 increases it by one. Replace digits to the right with zeros.</p><h3>Worked example</h3><div class=\"model\"><p>Round 46,782 to the nearest thousand. The hundreds digit is 7, so the result is 47,000. To the nearest ten thousand, the result is 50,000.</p></div><h3>Watch out</h3><p>The requested place changes the answer. Do not round one place at a time in a chain.</p>",
+  "intro": "Teach whole-number rounding with neighboring multiples and a midpoint.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Mark the original number between two possible rounded values. Connect the nearer endpoint to the place-value rule.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>Round 46,782 to the nearest thousand. The hundreds digit is 7, so the result is 47,000. To the nearest ten thousand, the result is 50,000.</p></div><h3>Ask your student</h3><blockquote><p>Which two multiples are we choosing between?</p></blockquote><h3>If your student needs help</h3><p>If the student rounds repeatedly from smaller places, return to the original number and round directly.</p>",
   "origin": "new"
 }

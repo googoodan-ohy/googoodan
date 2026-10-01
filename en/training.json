@@ -2,7 +2,7 @@
   "whole": [
     {
       "name": "Addition",
-      "tip": "Line up ones with ones and tens with tens. Start in the ones column.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Line up ones with ones and tens with tens. Start in the ones column.",
       "url": "/en/add-two.html",
       "label": "2 Digit Addition Without Regrouping",
       "practiceKind": "calculation-only",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Subtraction",
-      "tip": "When you exchange a ten, reduce the tens digit before subtracting.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. When you exchange a ten, reduce the tens digit before subtracting.",
       "url": "/en/subtract-borrow.html",
       "label": "2 Digit Subtraction With Regrouping",
       "practiceKind": "calculation-only",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Multiplication",
-      "tip": "Count equal groups. Do not confuse adding a group with adding just one.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Count equal groups. Do not confuse adding a group with adding just one.",
       "url": "/en/multiply-one.html",
       "label": "Single Digit Multiplication Worksheets",
       "practiceKind": "calculation-only",
@@ -74,7 +74,7 @@
     },
     {
       "name": "Division",
-      "tip": "Check the quotient by multiplying it by the divisor.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Check the quotient by multiplying it by the divisor.",
       "url": "/en/divide.html",
       "label": "Division Without Remainders Worksheets",
       "practiceKind": "calculation-only",
@@ -107,7 +107,7 @@
       "name": "Addition",
       "url": "/en/fraction-add-same.html",
       "label": "Add fractions with like denominators",
-      "tip": "Add the numerators. Keep the common denominator.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Add the numerators. Keep the common denominator.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-fraction-add-same",
@@ -132,7 +132,7 @@
       "name": "Subtraction",
       "url": "/en/fraction-sub-same.html",
       "label": "Subtract fractions with like denominators",
-      "tip": "Subtract the numerators, not the denominators.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Subtract the numerators, not the denominators.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-fraction-sub-same",
@@ -154,7 +154,7 @@
       "name": "Multiplication",
       "url": "/en/fraction-mul-proper-whole.html",
       "label": "Multiply a fraction by a whole number",
-      "tip": "Multiply the numerator by the whole number, then simplify if needed.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Multiply the numerator by the whole number, then simplify if needed.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-fraction-mul-same",
@@ -179,7 +179,7 @@
       "name": "Division",
       "url": null,
       "label": "Divide a fraction by a whole number",
-      "tip": "Share the fractional amount equally. Check by multiplying the result by the whole number.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Share the fractional amount equally. Check by multiplying the result by the whole number.",
       "status": "pending-calculation-only-source",
       "practiceKind": "calculation-only",
       "worksheets": [
@@ -207,7 +207,7 @@
       "name": "Addition",
       "url": "/en/decimal-add-2.html",
       "label": "Add decimals to hundredths",
-      "tip": "Line up decimal points before adding.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Line up decimal points before adding.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-decimal-add-1",
@@ -224,7 +224,7 @@
       "name": "Subtraction",
       "url": "/en/decimal-sub-2.html",
       "label": "Subtract decimals to hundredths",
-      "tip": "Line up decimal points and use a zero placeholder when needed.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Line up decimal points and use a zero placeholder when needed.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-decimal-sub-1",
@@ -241,7 +241,7 @@
       "name": "Multiplication",
       "url": "/en/decimal-mul-1.html",
       "label": "Multiply decimals",
-      "tip": "Check the place value of the product, not just the digits.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Check the place value of the product, not just the digits.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-decimal-mul-1",
@@ -258,7 +258,7 @@
       "name": "Division",
       "url": "/en/decimal-div-1.html",
       "label": "Divide decimals",
-      "tip": "Use place value to check the quotient. Multiply to check your answer.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. Use place value to check the quotient. Multiply to check your answer.",
       "practiceKind": "calculation-only",
       "worksheets": [
         "legacy-decimal-div-1",
@@ -273,7 +273,7 @@
     },
     {
       "name": "Rounding",
-      "tip": "To round to the nearest tenth, look at the hundredths digit. To round to a whole number, look at the tenths digit.",
+      "tip": "Before assigning the worksheet, model the strategy with your student. To round to the nearest tenth, look at the hundredths digit. To round to a whole number, look at the tenths digit.",
       "worksheets": [
         "detail-rounding-decimals"
       ]

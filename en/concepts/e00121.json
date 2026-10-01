@@ -1,7 +1,7 @@
 {
   "id": "e00121",
   "title": "Arithmetic Patterns",
-  "intro": "Look for the operation that links consecutive terms. Test the rule on every given step before extending the pattern.",
-  "html": "<h2>Arithmetic Patterns</h2><p>Look for the operation that links consecutive terms. Test the rule on every given step before extending the pattern.</p><h3>Worked example</h3><div class=\"model\"><p>For 4, 8, 12, 16, add 4 each time. The next terms are 20 and 24. In 3, 6, 12, 24, multiply by 2 instead.</p></div><h3>Watch out</h3><p>A rule that fits just the first two terms may not fit the entire pattern.</p>",
+  "intro": "Help your student test a pattern rule across every given step.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Compare consecutive terms and try the proposed operation on each pair. Discuss why a rule must fit more than the first change.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>For 4, 8, 12, 16, add 4 each time. The next terms are 20 and 24. In 3, 6, 12, 24, multiply by 2 instead.</p></div><h3>Ask your student</h3><blockquote><p>Does your rule work from the third term to the fourth?</p></blockquote><h3>If your student needs help</h3><p>If it fails later, have the student revise the rule before extending the sequence.</p>",
   "origin": "new"
 }

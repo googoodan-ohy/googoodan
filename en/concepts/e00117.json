@@ -1,7 +1,7 @@
 {
   "id": "e00117",
   "title": "Multiplying Fractions",
-  "intro": "Multiply the numerators and multiply the denominators. An area model shows a fraction of another fraction. Simplify the result.",
-  "html": "<h2>Multiplying Fractions</h2><p>Multiply the numerators and multiply the denominators. An area model shows a fraction of another fraction. Simplify the result.</p><h3>Worked example</h3><div class=\"model\"><p>2/3 × 3/4 = 6/12 = 1/2. In a rectangle split into 12 equal parts, the overlapping region covers 6 parts.</p></div><h3>Watch out</h3><p>Do not add denominators or expect multiplication always to make a number larger.</p>",
+  "intro": "Use an area model to give meaning to fraction multiplication.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Shade one fraction of a rectangle, then a fraction of that shaded area. Count the overlap and connect it to multiplying numerators and denominators.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>2/3 × 3/4 = 6/12 = 1/2. In a rectangle split into 12 equal parts, the overlapping region covers 6 parts.</p></div><h3>Ask your student</h3><blockquote><p>What fraction of the whole rectangle is shaded both ways?</p></blockquote><h3>If your student needs help</h3><p>If the student expects a larger result, compare the multiplier with one and discuss taking only part of an amount.</p>",
   "origin": "new"
 }

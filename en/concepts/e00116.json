@@ -1,7 +1,7 @@
 {
   "id": "e00116",
   "title": "Fractions as Division",
-  "intro": "A fraction can represent equal sharing. Divide the numerator by the denominator; the denominator tells how many equal shares there are.",
-  "html": "<h2>Fractions as Division</h2><p>A fraction can represent equal sharing. Divide the numerator by the denominator; the denominator tells how many equal shares there are.</p><h3>Worked example</h3><div class=\"model\"><p>Sharing 3 pizzas equally among 4 children gives each child 3 ÷ 4 = 3/4 of a pizza. Sharing 7 pizzas among 4 gives 7/4 = 1 3/4 pizzas each.</p></div><h3>Watch out</h3><p>Keep the order: 3 ÷ 4 is 3/4, not 4/3.</p>",
+  "intro": "Use equal sharing to explain a fraction as division.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Draw three pizzas and share them among four students. Connect each share to 3 ÷ 4 and 3/4 before trying an amount greater than one.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>Sharing 3 pizzas equally among 4 children gives each child 3 ÷ 4 = 3/4 of a pizza. Sharing 7 pizzas among 4 gives 7/4 = 1 3/4 pizzas each.</p></div><h3>Ask your student</h3><blockquote><p>What does the denominator tell us about the sharing?</p></blockquote><h3>If your student needs help</h3><p>If the student reverses the fraction, label the total and the number of recipients in the picture.</p>",
   "origin": "new"
 }

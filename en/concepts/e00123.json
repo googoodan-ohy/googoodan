@@ -1,7 +1,7 @@
 {
   "id": "e00123",
   "title": "Adding Three Numbers",
-  "intro": "You can group two addends first without changing the total. Look for a pair that makes ten, then add the remaining number.",
-  "html": "<h2>Adding Three Numbers</h2><p>You can group two addends first without changing the total. Look for a pair that makes ten, then add the remaining number.</p><h3>Worked example</h3><div class=\"model\"><p>6 + 3 + 4 = (6 + 4) + 3 = 10 + 3 = 13. Check that all three original addends were used once.</p></div><h3>Watch out</h3><p>Reordering is useful for addition; do not apply the same shortcut to subtraction.</p>",
+  "intro": "Use three-addend problems to teach helpful grouping.",
+  "html": "<h2>Teaching notes for parents and teachers</h2><h3>How to teach it</h3><p>Model making ten with two addends, then add the third. Mark each original addend as it is used.</p><h3>Example to work through together</h3><p>Use the model below as you explain the example. Have your student point to the quantities as you discuss them.</p><div class=\"model\"><p>6 + 3 + 4 = (6 + 4) + 3 = 10 + 3 = 13. Check that all three original addends were used once.</p></div><h3>Ask your student</h3><blockquote><p>Which pair would make this addition easier?</p></blockquote><h3>If your student needs help</h3><p>If an addend is lost or repeated, use three separate groups of counters and combine them visibly.</p>",
   "origin": "new"
 }

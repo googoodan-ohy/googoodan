@@ -31,6 +31,6 @@ SharedQuestionBank.generate=function(type,seed){
    if((!division||!isOne)&&(!type.selection||trainingMatches(q,type.selection))&&!seen.has(key)){seen.add(key);result.push(q);if(result.length===type.count)break;}
   }
  }
- if(result.length!==type.count)throw Error('Insufficient original questions for '+type.selection);
+ if(result.length!==type.count)throw Error('Insufficient questions for '+type.selection);
  return result;
 };
