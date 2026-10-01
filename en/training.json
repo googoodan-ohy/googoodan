@@ -1,0 +1,282 @@
+{
+  "whole": [
+    {
+      "name": "Addition",
+      "tip": "Line up ones with ones and tens with tens. Start in the ones column.",
+      "url": "/en/add-two.html",
+      "label": "2 Digit Addition Without Regrouping",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-natural-add-1-1",
+        "legacy-natural-add-1-2",
+        "legacy-natural-add-2-1",
+        "legacy-natural-add-2-2",
+        "detail-natural-add-2-2-no-regroup",
+        "detail-natural-add-2-2-regroup",
+        "legacy-natural-add-3-1",
+        "legacy-natural-add-3-2",
+        "legacy-natural-add-3-3",
+        "detail-natural-add-3-3-no-regroup",
+        "detail-natural-add-3-3-regroup",
+        "legacy-natural-add-1-3",
+        "legacy-natural-add-2-3",
+        "legacy-natural-add-4-1",
+        "legacy-natural-add-4-2",
+        "legacy-natural-add-4-3",
+        "legacy-natural-add-4-4"
+      ]
+    },
+    {
+      "name": "Subtraction",
+      "tip": "When you exchange a ten, reduce the tens digit before subtracting.",
+      "url": "/en/subtract-borrow.html",
+      "label": "2 Digit Subtraction With Regrouping",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-natural-sub-1-1",
+        "legacy-natural-sub-2-1",
+        "legacy-natural-sub-2-2",
+        "detail-natural-sub-2-2-no-regroup",
+        "detail-natural-sub-2-2-regroup",
+        "legacy-natural-sub-3-1",
+        "legacy-natural-sub-3-2",
+        "detail-natural-sub-3-2-across-zero",
+        "legacy-natural-sub-3-3",
+        "detail-natural-sub-3-3-no-regroup",
+        "detail-natural-sub-3-3-regroup",
+        "legacy-natural-sub-4-1",
+        "legacy-natural-sub-4-2",
+        "legacy-natural-sub-4-3",
+        "legacy-natural-sub-4-4"
+      ]
+    },
+    {
+      "name": "Multiplication",
+      "tip": "Count equal groups. Do not confuse adding a group with adding just one.",
+      "url": "/en/multiply-one.html",
+      "label": "Single Digit Multiplication Worksheets",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-natural-mul-1-1",
+        "legacy-natural-mul-1-2",
+        "legacy-natural-mul-2-1",
+        "legacy-natural-mul-2-2",
+        "legacy-natural-mul-3-1",
+        "legacy-natural-mul-3-2",
+        "legacy-natural-mul-3-3",
+        "legacy-natural-mul-1-3",
+        "legacy-natural-mul-2-3",
+        "legacy-natural-mul-4-1",
+        "legacy-natural-mul-4-2",
+        "legacy-natural-mul-4-3",
+        "legacy-natural-mul-4-4"
+      ]
+    },
+    {
+      "name": "Division",
+      "tip": "Check the quotient by multiplying it by the divisor.",
+      "url": "/en/divide.html",
+      "label": "Division Without Remainders Worksheets",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "detail-natural-div-1-1-exact",
+        "detail-natural-div-1-1-remainder",
+        "detail-natural-div-2-1-exact",
+        "detail-natural-div-2-1-remainder",
+        "detail-natural-div-2-2-exact",
+        "detail-natural-div-2-2-remainder",
+        "detail-natural-div-3-1-exact",
+        "detail-natural-div-3-1-remainder",
+        "detail-natural-div-3-2-exact",
+        "detail-natural-div-3-2-remainder",
+        "detail-natural-div-3-3-exact",
+        "detail-natural-div-3-3-remainder",
+        "detail-natural-div-4-1-exact",
+        "detail-natural-div-4-1-remainder",
+        "detail-natural-div-4-2-exact",
+        "detail-natural-div-4-2-remainder",
+        "detail-natural-div-4-3-exact",
+        "detail-natural-div-4-3-remainder",
+        "detail-natural-div-4-4-exact",
+        "detail-natural-div-4-4-remainder"
+      ]
+    }
+  ],
+  "fractions": [
+    {
+      "name": "Addition",
+      "url": "/en/fraction-add-same.html",
+      "label": "Add fractions with like denominators",
+      "tip": "Add the numerators. Keep the common denominator.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-fraction-add-same",
+        "legacy-fraction-add-different",
+        "legacy-fraction-add-whole-proper",
+        "legacy-fraction-add-whole-improper",
+        "legacy-fraction-add-whole-mixed",
+        "legacy-fraction-add-proper-whole",
+        "legacy-fraction-add-proper-improper",
+        "legacy-fraction-add-proper-mixed",
+        "legacy-fraction-add-improper-whole",
+        "legacy-fraction-add-improper-proper",
+        "legacy-fraction-add-improper-improper",
+        "legacy-fraction-add-improper-mixed",
+        "legacy-fraction-add-mixed-whole",
+        "legacy-fraction-add-mixed-proper",
+        "legacy-fraction-add-mixed-improper",
+        "legacy-fraction-add-mixed-mixed"
+      ]
+    },
+    {
+      "name": "Subtraction",
+      "url": "/en/fraction-sub-same.html",
+      "label": "Subtract fractions with like denominators",
+      "tip": "Subtract the numerators, not the denominators.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-fraction-sub-same",
+        "legacy-fraction-sub-different",
+        "legacy-fraction-sub-whole-proper",
+        "legacy-fraction-sub-whole-improper",
+        "legacy-fraction-sub-whole-mixed",
+        "legacy-fraction-sub-improper-whole",
+        "legacy-fraction-sub-improper-proper",
+        "legacy-fraction-sub-improper-improper",
+        "legacy-fraction-sub-improper-mixed",
+        "legacy-fraction-sub-mixed-whole",
+        "legacy-fraction-sub-mixed-proper",
+        "legacy-fraction-sub-mixed-improper",
+        "legacy-fraction-sub-mixed-mixed"
+      ]
+    },
+    {
+      "name": "Multiplication",
+      "url": "/en/fraction-mul-proper-whole.html",
+      "label": "Multiply a fraction by a whole number",
+      "tip": "Multiply the numerator by the whole number, then simplify if needed.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-fraction-mul-same",
+        "legacy-fraction-mul-different",
+        "legacy-fraction-mul-whole-proper",
+        "legacy-fraction-mul-whole-improper",
+        "legacy-fraction-mul-whole-mixed",
+        "legacy-fraction-mul-proper-whole",
+        "legacy-fraction-mul-proper-improper",
+        "legacy-fraction-mul-proper-mixed",
+        "legacy-fraction-mul-improper-whole",
+        "legacy-fraction-mul-improper-proper",
+        "legacy-fraction-mul-improper-improper",
+        "legacy-fraction-mul-improper-mixed",
+        "legacy-fraction-mul-mixed-whole",
+        "legacy-fraction-mul-mixed-proper",
+        "legacy-fraction-mul-mixed-improper",
+        "legacy-fraction-mul-mixed-mixed"
+      ]
+    },
+    {
+      "name": "Division",
+      "url": null,
+      "label": "Divide a fraction by a whole number",
+      "tip": "Share the fractional amount equally. Check by multiplying the result by the whole number.",
+      "status": "pending-calculation-only-source",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-fraction-div-same",
+        "legacy-fraction-div-different",
+        "legacy-fraction-div-whole-proper",
+        "legacy-fraction-div-whole-improper",
+        "legacy-fraction-div-whole-mixed",
+        "legacy-fraction-div-proper-whole",
+        "legacy-fraction-div-proper-improper",
+        "legacy-fraction-div-proper-mixed",
+        "legacy-fraction-div-improper-whole",
+        "legacy-fraction-div-improper-proper",
+        "legacy-fraction-div-improper-improper",
+        "legacy-fraction-div-improper-mixed",
+        "legacy-fraction-div-mixed-whole",
+        "legacy-fraction-div-mixed-proper",
+        "legacy-fraction-div-mixed-improper",
+        "legacy-fraction-div-mixed-mixed"
+      ]
+    }
+  ],
+  "decimals": [
+    {
+      "name": "Addition",
+      "url": "/en/decimal-add-2.html",
+      "label": "Add decimals to hundredths",
+      "tip": "Line up decimal points before adding.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-decimal-add-1",
+        "legacy-decimal-add-2",
+        "legacy-decimal-add-0dp-1dp",
+        "legacy-decimal-add-0dp-2dp",
+        "legacy-decimal-add-1dp-0dp",
+        "legacy-decimal-add-1dp-2dp",
+        "legacy-decimal-add-2dp-0dp",
+        "legacy-decimal-add-2dp-1dp"
+      ]
+    },
+    {
+      "name": "Subtraction",
+      "url": "/en/decimal-sub-2.html",
+      "label": "Subtract decimals to hundredths",
+      "tip": "Line up decimal points and use a zero placeholder when needed.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-decimal-sub-1",
+        "legacy-decimal-sub-2",
+        "legacy-decimal-sub-0dp-1dp",
+        "legacy-decimal-sub-0dp-2dp",
+        "legacy-decimal-sub-1dp-0dp",
+        "legacy-decimal-sub-1dp-2dp",
+        "legacy-decimal-sub-2dp-0dp",
+        "legacy-decimal-sub-2dp-1dp"
+      ]
+    },
+    {
+      "name": "Multiplication",
+      "url": "/en/decimal-mul-1.html",
+      "label": "Multiply decimals",
+      "tip": "Check the place value of the product, not just the digits.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-decimal-mul-1",
+        "legacy-decimal-mul-2",
+        "legacy-decimal-mul-0dp-1dp",
+        "legacy-decimal-mul-0dp-2dp",
+        "legacy-decimal-mul-1dp-0dp",
+        "legacy-decimal-mul-1dp-2dp",
+        "legacy-decimal-mul-2dp-0dp",
+        "legacy-decimal-mul-2dp-1dp"
+      ]
+    },
+    {
+      "name": "Division",
+      "url": "/en/decimal-div-1.html",
+      "label": "Divide decimals",
+      "tip": "Use place value to check the quotient. Multiply to check your answer.",
+      "practiceKind": "calculation-only",
+      "worksheets": [
+        "legacy-decimal-div-1",
+        "legacy-decimal-div-2",
+        "legacy-decimal-div-0dp-1dp",
+        "legacy-decimal-div-0dp-2dp",
+        "legacy-decimal-div-1dp-0dp",
+        "legacy-decimal-div-1dp-2dp",
+        "legacy-decimal-div-2dp-0dp",
+        "legacy-decimal-div-2dp-1dp"
+      ]
+    },
+    {
+      "name": "Rounding",
+      "tip": "To round to the nearest tenth, look at the hundredths digit. To round to a whole number, look at the tenths digit.",
+      "worksheets": [
+        "detail-rounding-decimals"
+      ]
+    }
+  ]
+}

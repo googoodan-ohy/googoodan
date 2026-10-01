@@ -1,0 +1,7 @@
+{
+  "id": "e00119",
+  "title": "Counting Coins",
+  "intro": "Identify each coin by its value. A penny is 1 cent, a nickel 5 cents, a dime 10 cents, and a quarter 25 cents. Add the values, rather than counting every coin as one cent.",
+  "html": "<h2>Counting Coins</h2><p>Identify each coin by its value. A penny is 1 cent, a nickel 5 cents, a dime 10 cents, and a quarter 25 cents. Add the values, rather than counting every coin as one cent.</p><h3>Worked example</h3><div class=\"model\"><p>A quarter, two dimes, and three pennies total 25 + 10 + 10 + 1 + 1 + 1 = 48 cents.</p></div><h3>Watch out</h3><p>Coin size is not the value: a dime is smaller than a nickel but worth more.</p>",
+  "origin": "new"
+}

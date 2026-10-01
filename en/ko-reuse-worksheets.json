@@ -1,0 +1,2568 @@
+[
+  {
+    "id": "ko-reuse-1-1-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Addition and Subtraction Within 9",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 0,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00017",
+      "e00019"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.C.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-1",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 1,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-2",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 2,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-3-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 9)",
+    "sourceUnit": "1-1-3",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-1-3-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-3-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-1-5",
+    "grade": 1,
+    "unit": "tens-and-ones",
+    "title": "Place Value and Number Order Within 50",
+    "sourceUnit": "1-1-5",
+    "sourceProfile": 0,
+    "standard": "1.NBT",
+    "url": "/en/ko-reuse/ko-reuse-1-1-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-1-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00082"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.NBT.B.2",
+        "1.NBT.B.3"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-1",
+    "grade": 2,
+    "unit": "three-digit-place-value",
+    "title": "Place Value and Number Order Within 100",
+    "sourceUnit": "1-2-1",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-1-2-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00081"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.NBT.B.2",
+        "1.NBT.B.3"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-7",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 7,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-7.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-2-8",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 20)",
+    "sourceUnit": "1-2-2",
+    "sourceProfile": 8,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-2-8.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-2-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-3",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 3,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00019",
+      "e00030"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-4",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 4,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00028",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-5",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Match Word Problems to Equations (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 5,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00001",
+      "e00010"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-6",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 6,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00021",
+      "e00026"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-7",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Word Problems with Bar Models (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 7,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-7.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00027",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-4-8",
+    "grade": 1,
+    "unit": "addition-subtraction",
+    "title": "Write and Check Word Problems (Within 20)",
+    "sourceUnit": "1-2-4",
+    "sourceProfile": 8,
+    "standard": "1.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-4-8.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-4-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00031",
+      "e00001"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "1.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-3",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Find the Unknown (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 3,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-4",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 4,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-5",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Match Word Problems to Equations (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 5,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-6",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems: Choose Relevant Information (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 6,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-7",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Word Problems with Bar Models (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 7,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-7.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-1-2-6-8",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Write and Check Word Problems (Within 100)",
+    "sourceUnit": "1-2-6",
+    "sourceProfile": 8,
+    "standard": "2.NBT;2.OA",
+    "url": "/en/ko-reuse/ko-reuse-1-2-6-8.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-1-2-6-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.OA.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-1",
+    "grade": 2,
+    "unit": "three-digit-place-value",
+    "title": "Three-Digit Place Value and Number Order",
+    "sourceUnit": "2-1-1",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00081"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.A.1",
+        "2.NBT.A.3",
+        "2.NBT.A.4"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "Addition and Subtraction Within 100",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 0,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Find the Unknown (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 1,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-2",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 2,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-3",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Match Word Problems to Equations (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 3,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-4",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Choose Relevant Information (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 4,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-5",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems with Bar Models (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 5,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-6",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Write and Check Word Problems (Within 200)",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 6,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Generator max199 exceeds 1.OA.A.1 within20; only computation link recommended. Source-checked related skill only; not full-standard certification.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit",
+      "auditEvidence": [
+        "development/preview/en/engines/ko/banks/reading-stories.js:22",
+        "development/preview/en/engines/ko/banks/reading-stories.js:24",
+        "development/src/concept-layout/ko-reuse-question-language.js:4"
+      ],
+      "auditStatus": "source-reviewed-correction"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-7",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Addition Without Regrouping",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 7,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-7.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00011"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-8",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Addition with 1 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 8,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-8.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00002",
+      "e00014"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-9",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "2-Digit Addition with 2 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 9,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-9.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-9.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-10",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Subtraction Without Regrouping",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 10,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-10.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-10.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00011",
+      "e00002"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-1-3-11",
+    "grade": 2,
+    "unit": "place-value-subtraction",
+    "title": "2-Digit Subtraction with 1 Regrouping Steps",
+    "sourceUnit": "2-1-3",
+    "sourceProfile": 11,
+    "standard": "2.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-1-3-11.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-1-3-11.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00011",
+      "e00012"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-2-1",
+    "grade": 4,
+    "unit": "compare-large-numbers",
+    "title": "Four-Digit Place Value and Number Order",
+    "sourceUnit": "2-2-1",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-2-2-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00089"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-2-2-3-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "m and cm: Convert and Compare",
+    "sourceUnit": "2-2-3",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/en/ko-reuse/ko-reuse-2-2-3-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-2-2-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Addition and Subtraction Within 1000",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 0,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-1",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Find the Unknown (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 1,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-2",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Same Numbers, Different Questions (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 2,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-3",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Match Word Problems to Equations (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 3,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-4",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems: Choose Relevant Information (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 4,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-5",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Word Problems with Bar Models (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 5,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-5.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-5.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-6",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "Write and Check Word Problems (Within 1000)",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 6,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-6.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-6.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. One-step arithmetic contexts are not automatically 3.OA.D.8 two-step stories.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-7",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition Without Regrouping",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 7,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-7.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-7.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-8",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition with 1 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 8,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-8.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-8.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-9",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Addition with 2 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 9,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-9.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-9.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-10",
+    "grade": 4,
+    "unit": "multi-digit-addition",
+    "title": "3-Digit Addition with 3 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 10,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-10.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-10.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-11",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction Without Regrouping",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 11,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-11.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-11.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-12",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction with 1 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 12,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-12.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-12.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-1-13",
+    "grade": 3,
+    "unit": "addition-subtraction-1000",
+    "title": "3-Digit Subtraction with 2 Regrouping Steps",
+    "sourceUnit": "3-1-1",
+    "sourceProfile": 13,
+    "standard": "3.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-1-13.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-1-13.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00024",
+      "e00025"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-3",
+    "grade": 3,
+    "unit": "multiplication-division",
+    "title": "Division Facts and Missing Numbers",
+    "sourceUnit": "3-1-3",
+    "sourceProfile": 0,
+    "standard": "3.OA",
+    "url": "/en/ko-reuse/ko-reuse-3-1-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00003",
+      "e00016"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.OA.C.7",
+        "3.OA.A.4"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-4",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "Multiply Two-Digit Numbers by One Digit",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-4-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-4-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-4-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-4-2",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-4-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-4-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-4-3",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "2-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "sourceUnit": "3-1-4",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-1-4-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-4-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-5-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "cm and mm: Convert and Compare",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/en/ko-reuse/ko-reuse-3-1-5-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-5-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-5-2",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "km and m: Convert and Compare",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 2,
+    "standard": "4.MD",
+    "url": "/en/ko-reuse/ko-reuse-3-1-5-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-5-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-1-5-3",
+    "grade": 3,
+    "unit": "elapsed-time-word-problems",
+    "title": "Elapsed Time Word Problems",
+    "sourceUnit": "3-1-5",
+    "sourceProfile": 3,
+    "standard": "3.MD",
+    "url": "/en/ko-reuse/ko-reuse-3-1-5-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-1-5-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00104"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "3.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "Multi-Digit Multiplication Practice",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 0,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-1-1",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 0 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-1-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-1-2",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 1 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-1-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-1-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-1-3",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 2 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-1-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-1-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-1-4",
+    "grade": 4,
+    "unit": "multi-digit-products",
+    "title": "3-Digit Multiply by One Digit: 3 Regrouping Steps",
+    "sourceUnit": "3-2-1",
+    "sourceProfile": 4,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-1-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-1-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00035",
+      "e00047"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-3-1",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "2-Digit by 1-Digit Division Without Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 1,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-3-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-3-2",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "2-Digit by 1-Digit Division with Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 2,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-3-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-3-3",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "3-Digit by 1-Digit Division Without Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 3,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-3-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-3-4",
+    "grade": 4,
+    "unit": "division-remainders",
+    "title": "3-Digit by 1-Digit Division with Remainders",
+    "sourceUnit": "3-2-3",
+    "sourceProfile": 4,
+    "standard": "4.NBT",
+    "url": "/en/ko-reuse/ko-reuse-3-2-3-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00034"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-4-1",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "L and mL: Convert and Compare",
+    "sourceUnit": "3-2-4",
+    "sourceProfile": 1,
+    "standard": "4.MD",
+    "url": "/en/ko-reuse/ko-reuse-3-2-4-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-4-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-3-2-4-2",
+    "grade": 4,
+    "unit": "measurement-unit-conversions",
+    "title": "kg and g: Convert and Compare",
+    "sourceUnit": "3-2-4",
+    "sourceProfile": 2,
+    "standard": "4.MD",
+    "url": "/en/ko-reuse/ko-reuse-3-2-4-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-3-2-4-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00109"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "4.MD.A.1"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/MD/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-4-1-3-1",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "2-Digit by 2-Digit Division Without Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 1,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-4-1-3-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-4-1-3-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-4-1-3-2",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "2-Digit by 2-Digit Division with Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 2,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-4-1-3-2.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-4-1-3-2.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-4-1-3-3",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "3-Digit by 2-Digit Division Without Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 3,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-4-1-3-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-4-1-3-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-4-1-3-4",
+    "grade": 5,
+    "unit": "two-digit-divisors",
+    "title": "3-Digit by 2-Digit Division with Remainders",
+    "sourceUnit": "4-1-3",
+    "sourceProfile": 4,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-4-1-3-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-4-1-3-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00046"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-4-2-3",
+    "grade": 5,
+    "unit": "decimal-addition-subtraction",
+    "title": "Add, Subtract, and Compare Decimals",
+    "sourceUnit": "4-2-3",
+    "sourceProfile": 0,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-4-2-3.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-4-2-3.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00005",
+      "e00038"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.7",
+        "5.NBT.A.3.b"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-5-1-1",
+    "grade": 5,
+    "unit": "numerical-expressions",
+    "title": "Order of Operations and Word Problems",
+    "sourceUnit": "5-1-1",
+    "sourceProfile": 0,
+    "standard": "5.OA",
+    "url": "/en/ko-reuse/ko-reuse-5-1-1.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-5-1-1.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00051"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.OA.A.1",
+        "5.OA.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  {
+    "id": "ko-reuse-5-2-4",
+    "grade": 5,
+    "unit": "decimal-multiplication",
+    "title": "Decimal Multiplication and Powers of Ten",
+    "sourceUnit": "5-2-4",
+    "sourceProfile": 0,
+    "standard": "5.NBT",
+    "url": "/en/ko-reuse/ko-reuse-5-2-4.html",
+    "thumbnail": "/en/thumbnails/ko-reuse-5-2-4.png",
+    "conceptPending": false,
+    "source": "Korean original; display language only",
+    "conceptRefs": [
+      "e00072",
+      "e00039"
+    ],
+    "explanationScope": "Related foundational concepts; worksheet-specific conditions remain in its instructions.",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.7",
+        "5.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "proposed-profile-mapping",
+      "needsItemReview": true,
+      "note": "Proposed from source profile, title and existing domain placement; check all generated activities before asserting alignment. Verify decimal result precision and model/reasoning support.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  }
+]

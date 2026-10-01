@@ -1,0 +1,2632 @@
+{
+  "lessons": {
+    "whole-add": {
+      "title": "Adding whole numbers",
+      "method": "Read each number by place value. Add the ones, then the tens and any remaining places. When a column totals ten or more, exchange ten units for one unit in the next place. Record the carried amount before continuing. In a horizontal problem, you may rewrite the numbers vertically; the ones must still line up.",
+      "mistake": "A carried ten belongs in the next column. Do not write a two-digit total into a single place or forget to include a carry in the next sum.",
+      "check": "Subtract one addend from the sum. The result should equal the other addend.",
+      "concept": "e00002"
+    },
+    "whole-sub": {
+      "title": "Subtracting whole numbers",
+      "method": "Start in the ones place and subtract corresponding places. If a top digit is too small, exchange one unit from the next place for ten units in the current place. Mark both changes: the giving place decreases by one and the receiving place increases by ten. Continue left, using the changed digits.",
+      "mistake": "Do not reverse the digits just because the lower digit is larger. Subtraction keeps its original order. When a zero is involved, follow the exchange across the places rather than changing every zero independently.",
+      "check": "Add the difference to the number subtracted. You should recover the starting number.",
+      "concept": "e00012"
+    },
+    "whole-mul": {
+      "title": "Multiplying whole numbers",
+      "method": "Use known multiplication facts and place value together. Multiply the top number by each digit of the lower number, starting with the ones. Regroup when a product exceeds nine. If the lower number has more than one digit, write a separate partial product for each place and add the partial products. A tens digit represents tens, not ones.",
+      "mistake": "A partial product for the tens place must be shifted one place. Keep a carried amount separate from the next multiplication fact, then add it once.",
+      "check": "Estimate using nearby convenient numbers. You can also divide the product by one factor to recover the other.",
+      "concept": "e00003"
+    },
+    "whole-div": {
+      "title": "Dividing whole numbers",
+      "method": "Decide how many complete groups of the divisor fit into the current amount. Write a quotient digit, multiply it by the divisor, and subtract. Bring down the next digit and repeat. A zero quotient digit may be needed to hold a place. At the end, the remainder must be smaller than the divisor.",
+      "mistake": "Do not stop just because a current digit is smaller than the divisor. Check whether more digits remain to be brought down. A remainder equal to or larger than the divisor means another complete group fits.",
+      "check": "Multiply the quotient by the divisor and add the remainder. This must equal the dividend.",
+      "concept": "e00016"
+    },
+    "decimal-add": {
+      "title": "Adding decimals",
+      "method": "Line up decimal points so that ones, tenths, and hundredths match. Add trailing zeros if they help you see the places; this does not change a number. Add from the smallest place shown and regroup as needed. Put the decimal point in the sum directly below the other decimal points.",
+      "mistake": "Align decimal points, not the right-hand ends of the numbers. For example, a tenth must not be added to a hundredth merely because both digits happen to be last.",
+      "check": "Subtract either addend from the sum. Estimate with nearby whole numbers to check the size of the answer.",
+      "concept": "e00005"
+    },
+    "decimal-sub": {
+      "title": "Subtracting decimals",
+      "method": "Align the decimal points and write equivalent trailing zeros when needed. Subtract from the smallest place. An exchange from one place gives ten units of the place immediately to its right, just as in whole-number subtraction. Keep the decimal point aligned in the difference.",
+      "mistake": "Adding a zero at the end of a decimal is allowed; moving its decimal point is not. Remember to reduce the place from which you exchanged one unit.",
+      "check": "Add the difference to the amount subtracted. Compare the total with the original decimal.",
+      "concept": "e00038"
+    },
+    "decimal-mul": {
+      "title": "Multiplying decimals",
+      "method": "First multiply using the digits as whole numbers. Count the decimal places in both original factors. Their total tells you where to place the decimal point in the product. Include leading zeros after the decimal point when needed, then remove unnecessary trailing zeros only when the value stays unchanged.",
+      "mistake": "Do not align decimal points as you would for addition. Multiplying by a positive number less than one makes a positive quantity smaller, so a large answer may indicate a misplaced point.",
+      "check": "Estimate the product before calculating. Divide the product by a nonzero factor to check the other factor.",
+      "concept": "e00039"
+    },
+    "decimal-div": {
+      "title": "Dividing decimals",
+      "method": "If the divisor has decimal places, multiply both numbers by the same power of ten until the divisor is a whole number. The quotient stays the same. Divide using place value, keeping track of the decimal point in the quotient. These worksheets use the answers supplied by the existing calculation bank; do not round unless a question explicitly asks you to.",
+      "mistake": "Moving only the divisor’s decimal point changes the problem. Apply the same shift to the dividend, and keep any zero needed to hold a quotient place.",
+      "check": "Multiply the quotient by the original divisor. The result should return the original dividend.",
+      "concept": "e00040"
+    },
+    "fraction-add": {
+      "title": "Adding fractions",
+      "method": "Fractions must refer to equal-sized parts before you combine them. For like denominators, add the numerators and keep the denominator. For unlike denominators, rewrite both fractions using a common denominator, then add. Convert a mixed number to an equivalent improper fraction when that makes the calculation easier. Finally, simplify the result.",
+      "mistake": "Do not add the denominators. Rewriting a fraction requires multiplying its numerator and denominator by the same number. Our answer key shows an improper fraction beside its equivalent mixed number when the result is greater than one.",
+      "check": "Subtract one original fraction from the total. Use equivalent fractions if necessary to compare the result with the other addend.",
+      "concept": "e00077"
+    },
+    "fraction-sub": {
+      "title": "Subtracting fractions",
+      "method": "Use a common denominator so both fractions name the same-sized parts. Subtract the numerators in the stated order and keep that common denominator. With mixed numbers, you can first convert to improper fractions. Simplify the difference; if it is greater than one, read the equivalent improper and mixed forms together.",
+      "mistake": "Keep the subtraction order. Subtracting denominators or changing only a numerator does not preserve the original quantities.",
+      "check": "Add the difference to the fraction subtracted. Simplify or find a common denominator to compare it with the starting amount.",
+      "concept": "e00015"
+    },
+    "fraction-mul": {
+      "title": "Multiplying fractions",
+      "method": "Write whole numbers over one and convert mixed numbers to improper fractions. Multiply the numerators and multiply the denominators. You may cancel common factors between a numerator and a denominator before multiplying, or simplify the product afterward. A common denominator is not required for multiplication.",
+      "mistake": "Do not multiply a mixed number’s whole part and fractional part separately and join them. Convert the entire mixed number first. Cancellation removes common factors, not digits that merely look alike.",
+      "check": "Estimate the size of each factor. A positive factor below one reduces the other positive factor. Check by dividing by a nonzero original factor.",
+      "concept": "e00041"
+    },
+    "fraction-div": {
+      "title": "Dividing fractions",
+      "method": "Convert any mixed numbers to improper fractions and write whole numbers over one. Keep the first fraction, replace division with multiplication, and use the reciprocal of the second fraction. Multiply and simplify. The reciprocal is applied to the divisor only.",
+      "mistake": "Do not flip the first fraction or both fractions. Division by a fraction below one can produce an answer larger than the dividend; this is consistent with asking how many smaller groups fit.",
+      "check": "Multiply the quotient by the original divisor, not its reciprocal. The result should equal the dividend.",
+      "concept": "e00076"
+    },
+    "round": {
+      "title": "Rounding decimals",
+      "method": "Identify the requested place first. Look one place to its right: a digit from zero to four keeps the target digit, while five to nine increases it by one. Remove the digits beyond the requested place after completing any carry. A whole-number answer and an answer to the nearest tenth use different target places.",
+      "mistake": "Do not round an intermediate digit first. Read the requested place in each question rather than applying the same place to the whole sheet.",
+      "check": "Locate the two neighboring whole numbers or tenths. The rounded value should be the nearer neighbor; an exact midpoint rounds upward for these positive-number examples.",
+      "concept": "e00090"
+    }
+  },
+  "worksheets": {
+    "legacy-natural-add-1-1": {
+      "lesson": "whole-add",
+      "intro": "Practice single-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 + 2 = 10",
+          "step": "Check by subtraction: 10 − 2 = 8."
+        },
+        {
+          "equation": "5 + 3 = 8",
+          "step": "Check by subtraction: 8 − 3 = 5."
+        }
+      ]
+    },
+    "legacy-natural-add-1-2": {
+      "lesson": "whole-add",
+      "intro": "Practice 1-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 + 26 = 34",
+          "step": "Check by subtraction: 34 − 26 = 8."
+        },
+        {
+          "equation": "5 + 30 = 35",
+          "step": "Check by subtraction: 35 − 30 = 5."
+        }
+      ]
+    },
+    "legacy-natural-add-2-1": {
+      "lesson": "whole-add",
+      "intro": "Practice 2-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 + 2 = 82",
+          "step": "Check by subtraction: 82 − 2 = 80."
+        },
+        {
+          "equation": "54 + 3 = 57",
+          "step": "Check by subtraction: 57 − 3 = 54."
+        }
+      ]
+    },
+    "legacy-natural-add-2-2": {
+      "lesson": "whole-add",
+      "intro": "Practice 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 + 26 = 106",
+          "step": "Check by subtraction: 106 − 26 = 80."
+        },
+        {
+          "equation": "54 + 30 = 84",
+          "step": "Check by subtraction: 84 − 30 = 54."
+        }
+      ]
+    },
+    "legacy-natural-add-3-1": {
+      "lesson": "whole-add",
+      "intro": "Practice 3-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 + 2 = 810",
+          "step": "Check by subtraction: 810 − 2 = 808."
+        },
+        {
+          "equation": "545 + 3 = 548",
+          "step": "Check by subtraction: 548 − 3 = 545."
+        }
+      ]
+    },
+    "legacy-natural-add-3-2": {
+      "lesson": "whole-add",
+      "intro": "Practice 3-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 + 26 = 834",
+          "step": "Check by subtraction: 834 − 26 = 808."
+        },
+        {
+          "equation": "545 + 30 = 575",
+          "step": "Check by subtraction: 575 − 30 = 545."
+        }
+      ]
+    },
+    "legacy-natural-add-3-3": {
+      "lesson": "whole-add",
+      "intro": "Practice 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 + 260 = 1068",
+          "step": "Check by subtraction: 1068 − 260 = 808."
+        },
+        {
+          "equation": "545 + 308 = 853",
+          "step": "Check by subtraction: 853 − 308 = 545."
+        }
+      ]
+    },
+    "legacy-natural-add-1-3": {
+      "lesson": "whole-add",
+      "intro": "Practice 1-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 + 260 = 268",
+          "step": "Check by subtraction: 268 − 260 = 8."
+        },
+        {
+          "equation": "5 + 308 = 313",
+          "step": "Check by subtraction: 313 − 308 = 5."
+        }
+      ]
+    },
+    "legacy-natural-add-2-3": {
+      "lesson": "whole-add",
+      "intro": "Practice 2-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 + 260 = 340",
+          "step": "Check by subtraction: 340 − 260 = 80."
+        },
+        {
+          "equation": "54 + 308 = 362",
+          "step": "Check by subtraction: 362 − 308 = 54."
+        }
+      ]
+    },
+    "legacy-natural-add-4-1": {
+      "lesson": "whole-add",
+      "intro": "Practice 4-digit by 1-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 + 2 = 8087",
+          "step": "Check by subtraction: 8087 − 2 = 8085."
+        },
+        {
+          "equation": "5457 + 3 = 5460",
+          "step": "Check by subtraction: 5460 − 3 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-add-4-2": {
+      "lesson": "whole-add",
+      "intro": "Practice 4-digit by 2-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 + 26 = 8111",
+          "step": "Check by subtraction: 8111 − 26 = 8085."
+        },
+        {
+          "equation": "5457 + 30 = 5487",
+          "step": "Check by subtraction: 5487 − 30 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-add-4-3": {
+      "lesson": "whole-add",
+      "intro": "Practice 4-digit by 3-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 + 260 = 8345",
+          "step": "Check by subtraction: 8345 − 260 = 8085."
+        },
+        {
+          "equation": "5457 + 308 = 5765",
+          "step": "Check by subtraction: 5765 − 308 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-add-4-4": {
+      "lesson": "whole-add",
+      "intro": "Practice 4-digit addition. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 + 2606 = 10691",
+          "step": "Check by subtraction: 10691 − 2606 = 8085."
+        },
+        {
+          "equation": "5457 + 3082 = 8539",
+          "step": "Check by subtraction: 8539 − 3082 = 5457."
+        }
+      ]
+    },
+    "legacy-decimal-add-1": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition to tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 + 1.8 = 17.6",
+          "step": "Check by subtraction: 17.6 − 1.8 = 15.8."
+        },
+        {
+          "equation": "7.6 + 8.4 = 16",
+          "step": "Check by subtraction: 16 − 8.4 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-add-2": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 + 1.79 = 17.54",
+          "step": "Check by subtraction: 17.54 − 1.79 = 15.75."
+        },
+        {
+          "equation": "9.91 + 2.32 = 12.23",
+          "step": "Check by subtraction: 12.23 − 2.32 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-add-same": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 + 5/10 = 7/10",
+          "step": "Use denominator 10: 2/10 + 5/10. Then simplify."
+        },
+        {
+          "equation": "2/4 + 3/4 = 5/4",
+          "step": "Use denominator 4: 2/4 + 3/4. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-different": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5/10 + 1/3 = 5/6",
+          "step": "Use denominator 6: 3/6 + 2/6. Then simplify."
+        },
+        {
+          "equation": "5/6 + 10/11 = 115/66",
+          "step": "Use denominator 66: 55/66 + 60/66. Then simplify."
+        }
+      ]
+    },
+    "legacy-natural-sub-1-1": {
+      "lesson": "whole-sub",
+      "intro": "Practice single-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 − 2 = 6",
+          "step": "Check by addition: 6 + 2 = 8."
+        },
+        {
+          "equation": "5 − 3 = 2",
+          "step": "Check by addition: 2 + 3 = 5."
+        }
+      ]
+    },
+    "legacy-natural-sub-2-1": {
+      "lesson": "whole-sub",
+      "intro": "Practice 2-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 − 2 = 78",
+          "step": "Check by addition: 78 + 2 = 80."
+        },
+        {
+          "equation": "54 − 3 = 51",
+          "step": "Check by addition: 51 + 3 = 54."
+        }
+      ]
+    },
+    "legacy-natural-sub-2-2": {
+      "lesson": "whole-sub",
+      "intro": "Practice 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 − 26 = 54",
+          "step": "Check by addition: 54 + 26 = 80."
+        },
+        {
+          "equation": "54 − 30 = 24",
+          "step": "Check by addition: 24 + 30 = 54."
+        }
+      ]
+    },
+    "legacy-natural-sub-3-1": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 − 2 = 806",
+          "step": "Check by addition: 806 + 2 = 808."
+        },
+        {
+          "equation": "545 − 3 = 542",
+          "step": "Check by addition: 542 + 3 = 545."
+        }
+      ]
+    },
+    "legacy-natural-sub-3-2": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit by 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 − 26 = 782",
+          "step": "Check by addition: 782 + 26 = 808."
+        },
+        {
+          "equation": "545 − 30 = 515",
+          "step": "Check by addition: 515 + 30 = 545."
+        }
+      ]
+    },
+    "legacy-natural-sub-3-3": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 − 260 = 548",
+          "step": "Check by addition: 548 + 260 = 808."
+        },
+        {
+          "equation": "545 − 308 = 237",
+          "step": "Check by addition: 237 + 308 = 545."
+        }
+      ]
+    },
+    "legacy-natural-sub-4-1": {
+      "lesson": "whole-sub",
+      "intro": "Practice 4-digit by 1-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 − 2 = 8083",
+          "step": "Check by addition: 8083 + 2 = 8085."
+        },
+        {
+          "equation": "5457 − 3 = 5454",
+          "step": "Check by addition: 5454 + 3 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-sub-4-2": {
+      "lesson": "whole-sub",
+      "intro": "Practice 4-digit by 2-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 − 26 = 8059",
+          "step": "Check by addition: 8059 + 26 = 8085."
+        },
+        {
+          "equation": "5457 − 30 = 5427",
+          "step": "Check by addition: 5427 + 30 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-sub-4-3": {
+      "lesson": "whole-sub",
+      "intro": "Practice 4-digit by 3-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 − 260 = 7825",
+          "step": "Check by addition: 7825 + 260 = 8085."
+        },
+        {
+          "equation": "5457 − 308 = 5149",
+          "step": "Check by addition: 5149 + 308 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-sub-4-4": {
+      "lesson": "whole-sub",
+      "intro": "Practice 4-digit subtraction. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 − 2606 = 5479",
+          "step": "Check by addition: 5479 + 2606 = 8085."
+        },
+        {
+          "equation": "5457 − 3082 = 2375",
+          "step": "Check by addition: 2375 + 3082 = 5457."
+        }
+      ]
+    },
+    "legacy-decimal-sub-1": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction to tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 − 1.8 = 14",
+          "step": "Check by addition: 14 + 1.8 = 15.8."
+        },
+        {
+          "equation": "17.3 − 9.3 = 8",
+          "step": "Check by addition: 8 + 9.3 = 17.3."
+        }
+      ]
+    },
+    "legacy-decimal-sub-2": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 − 1.79 = 13.96",
+          "step": "Check by addition: 13.96 + 1.79 = 15.75."
+        },
+        {
+          "equation": "9.91 − 2.32 = 7.59",
+          "step": "Check by addition: 7.59 + 2.32 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-sub-same": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5/10 − 2/10 = 3/10",
+          "step": "Use denominator 10: 5/10 − 2/10. Then simplify."
+        },
+        {
+          "equation": "3/4 − 2/4 = 1/4",
+          "step": "Use denominator 4: 3/4 − 2/4. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-different": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5/10 − 1/3 = 1/6",
+          "step": "Use denominator 6: 3/6 − 2/6. Then simplify."
+        },
+        {
+          "equation": "10/11 − 5/6 = 5/66",
+          "step": "Use denominator 66: 60/66 − 55/66. Then simplify."
+        }
+      ]
+    },
+    "legacy-natural-mul-1-1": {
+      "lesson": "whole-mul",
+      "intro": "Practice single-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 × 2 = 16",
+          "step": "Check by division: 16 ÷ 2 = 8."
+        },
+        {
+          "equation": "5 × 3 = 15",
+          "step": "Check by division: 15 ÷ 3 = 5."
+        }
+      ]
+    },
+    "legacy-natural-mul-1-2": {
+      "lesson": "whole-mul",
+      "intro": "Practice 1-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 × 26 = 208",
+          "step": "Check by division: 208 ÷ 26 = 8."
+        },
+        {
+          "equation": "5 × 30 = 150",
+          "step": "Check by division: 150 ÷ 30 = 5."
+        }
+      ]
+    },
+    "legacy-natural-mul-2-1": {
+      "lesson": "whole-mul",
+      "intro": "Practice 2-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 × 2 = 160",
+          "step": "Check by division: 160 ÷ 2 = 80."
+        },
+        {
+          "equation": "54 × 3 = 162",
+          "step": "Check by division: 162 ÷ 3 = 54."
+        }
+      ]
+    },
+    "legacy-natural-mul-2-2": {
+      "lesson": "whole-mul",
+      "intro": "Practice 2-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 × 26 = 2080",
+          "step": "Check by division: 2080 ÷ 26 = 80."
+        },
+        {
+          "equation": "54 × 30 = 1620",
+          "step": "Check by division: 1620 ÷ 30 = 54."
+        }
+      ]
+    },
+    "legacy-natural-mul-3-1": {
+      "lesson": "whole-mul",
+      "intro": "Practice 3-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 × 2 = 1616",
+          "step": "Check by division: 1616 ÷ 2 = 808."
+        },
+        {
+          "equation": "545 × 3 = 1635",
+          "step": "Check by division: 1635 ÷ 3 = 545."
+        }
+      ]
+    },
+    "legacy-natural-mul-3-2": {
+      "lesson": "whole-mul",
+      "intro": "Practice 3-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 × 26 = 21008",
+          "step": "Check by division: 21008 ÷ 26 = 808."
+        },
+        {
+          "equation": "545 × 30 = 16350",
+          "step": "Check by division: 16350 ÷ 30 = 545."
+        }
+      ]
+    },
+    "legacy-natural-mul-3-3": {
+      "lesson": "whole-mul",
+      "intro": "Practice 3-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "808 × 260 = 210080",
+          "step": "Check by division: 210080 ÷ 260 = 808."
+        },
+        {
+          "equation": "545 × 308 = 167860",
+          "step": "Check by division: 167860 ÷ 308 = 545."
+        }
+      ]
+    },
+    "legacy-natural-mul-1-3": {
+      "lesson": "whole-mul",
+      "intro": "Practice 1-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8 × 260 = 2080",
+          "step": "Check by division: 2080 ÷ 260 = 8."
+        },
+        {
+          "equation": "5 × 308 = 1540",
+          "step": "Check by division: 1540 ÷ 308 = 5."
+        }
+      ]
+    },
+    "legacy-natural-mul-2-3": {
+      "lesson": "whole-mul",
+      "intro": "Practice 2-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "80 × 260 = 20800",
+          "step": "Check by division: 20800 ÷ 260 = 80."
+        },
+        {
+          "equation": "54 × 308 = 16632",
+          "step": "Check by division: 16632 ÷ 308 = 54."
+        }
+      ]
+    },
+    "legacy-natural-mul-4-1": {
+      "lesson": "whole-mul",
+      "intro": "Practice 4-digit by 1-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 × 2 = 16170",
+          "step": "Check by division: 16170 ÷ 2 = 8085."
+        },
+        {
+          "equation": "5457 × 3 = 16371",
+          "step": "Check by division: 16371 ÷ 3 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-mul-4-2": {
+      "lesson": "whole-mul",
+      "intro": "Practice 4-digit by 2-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 × 26 = 210210",
+          "step": "Check by division: 210210 ÷ 26 = 8085."
+        },
+        {
+          "equation": "5457 × 30 = 163710",
+          "step": "Check by division: 163710 ÷ 30 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-mul-4-3": {
+      "lesson": "whole-mul",
+      "intro": "Practice 4-digit by 3-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 × 260 = 2102100",
+          "step": "Check by division: 2102100 ÷ 260 = 8085."
+        },
+        {
+          "equation": "5457 × 308 = 1680756",
+          "step": "Check by division: 1680756 ÷ 308 = 5457."
+        }
+      ]
+    },
+    "legacy-natural-mul-4-4": {
+      "lesson": "whole-mul",
+      "intro": "Practice 4-digit by 4-digit multiplication. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "8085 × 2606 = 21069510",
+          "step": "Check by division: 21069510 ÷ 2606 = 8085."
+        },
+        {
+          "equation": "5457 × 3082 = 16818474",
+          "step": "Check by division: 16818474 ÷ 3082 = 5457."
+        }
+      ]
+    },
+    "legacy-decimal-mul-1": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication (1 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 × 1.8 = 28.44",
+          "step": "Check by division: 28.44 ÷ 1.8 = 15.8."
+        },
+        {
+          "equation": "7.6 × 8.4 = 63.84",
+          "step": "Check by division: 63.84 ÷ 8.4 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-mul-2": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication (2 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 × 1.79 = 28.1925",
+          "step": "Check by division: 28.1925 ÷ 1.79 = 15.75."
+        },
+        {
+          "equation": "9.91 × 2.32 = 22.9912",
+          "step": "Check by division: 22.9912 ÷ 2.32 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-mul-same": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 × 5/10 = 1/10",
+          "step": "Multiply 1 × 1 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "2/4 × 3/4 = 3/8",
+          "step": "Multiply 1 × 3 over 2 × 4, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-different": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5/10 × 1/3 = 1/6",
+          "step": "Multiply 1 × 1 over 2 × 3, then simplify."
+        },
+        {
+          "equation": "5/6 × 10/11 = 25/33",
+          "step": "Multiply 5 × 10 over 6 × 11, then simplify."
+        }
+      ]
+    },
+    "legacy-natural-div-1-1": {
+      "lesson": "whole-div",
+      "intro": "Practice single-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "8 ÷ 2 = 4",
+          "step": "Check: 4 × 2 + 0 = 8. The remainder is smaller than 2."
+        },
+        {
+          "equation": "5 ÷ 3 = 1 R 2",
+          "step": "Check: 1 × 3 + 2 = 5. The remainder is smaller than 3."
+        }
+      ]
+    },
+    "legacy-natural-div-2-1": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "80 ÷ 2 = 40",
+          "step": "Check: 40 × 2 + 0 = 80. The remainder is smaller than 2."
+        },
+        {
+          "equation": "54 ÷ 3 = 18",
+          "step": "Check: 18 × 3 + 0 = 54. The remainder is smaller than 3."
+        }
+      ]
+    },
+    "legacy-natural-div-2-2": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "80 ÷ 26 = 3 R 2",
+          "step": "Check: 3 × 26 + 2 = 80. The remainder is smaller than 26."
+        },
+        {
+          "equation": "54 ÷ 30 = 1 R 24",
+          "step": "Check: 1 × 30 + 24 = 54. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "legacy-natural-div-3-1": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "808 ÷ 2 = 404",
+          "step": "Check: 404 × 2 + 0 = 808. The remainder is smaller than 2."
+        },
+        {
+          "equation": "545 ÷ 3 = 181 R 2",
+          "step": "Check: 181 × 3 + 2 = 545. The remainder is smaller than 3."
+        }
+      ]
+    },
+    "legacy-natural-div-3-2": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "808 ÷ 26 = 31 R 2",
+          "step": "Check: 31 × 26 + 2 = 808. The remainder is smaller than 26."
+        },
+        {
+          "equation": "545 ÷ 30 = 18 R 5",
+          "step": "Check: 18 × 30 + 5 = 545. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "legacy-natural-div-3-3": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 3-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "808 ÷ 260 = 3 R 28",
+          "step": "Check: 3 × 260 + 28 = 808. The remainder is smaller than 260."
+        },
+        {
+          "equation": "545 ÷ 308 = 1 R 237",
+          "step": "Check: 1 × 308 + 237 = 545. The remainder is smaller than 308."
+        }
+      ]
+    },
+    "legacy-natural-div-4-1": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 1-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 2 = 4042 R 1",
+          "step": "Check: 4042 × 2 + 1 = 8085. The remainder is smaller than 2."
+        },
+        {
+          "equation": "5457 ÷ 3 = 1819",
+          "step": "Check: 1819 × 3 + 0 = 5457. The remainder is smaller than 3."
+        }
+      ]
+    },
+    "legacy-natural-div-4-2": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 2-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 26 = 310 R 25",
+          "step": "Check: 310 × 26 + 25 = 8085. The remainder is smaller than 26."
+        },
+        {
+          "equation": "5457 ÷ 30 = 181 R 27",
+          "step": "Check: 181 × 30 + 27 = 5457. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "legacy-natural-div-4-3": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 3-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 260 = 31 R 25",
+          "step": "Check: 31 × 260 + 25 = 8085. The remainder is smaller than 260."
+        },
+        {
+          "equation": "5457 ÷ 308 = 17 R 221",
+          "step": "Check: 17 × 308 + 221 = 5457. The remainder is smaller than 308."
+        }
+      ]
+    },
+    "legacy-natural-div-4-4": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 4-digit division. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "The original number range may include exact divisions and divisions with a remainder. Write a remainder when needed.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 2606 = 3 R 267",
+          "step": "Check: 3 × 2606 + 267 = 8085. The remainder is smaller than 2606."
+        },
+        {
+          "equation": "5457 ÷ 3082 = 1 R 2375",
+          "step": "Check: 1 × 3082 + 2375 = 5457. The remainder is smaller than 3082."
+        }
+      ]
+    },
+    "legacy-decimal-div-1": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division (1 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "3.8 ÷ 0.2 = 19",
+          "step": "Check by division: 19 ÷ 0.2 = 3.8."
+        },
+        {
+          "equation": "0.9 ÷ 1.2 = 0.75",
+          "step": "Check by division: 0.75 ÷ 1.2 = 0.9."
+        }
+      ]
+    },
+    "legacy-decimal-div-2": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division (2 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "1.65 ÷ 0.02 = 82.5",
+          "step": "Check by division: 82.5 ÷ 0.02 = 1.65."
+        },
+        {
+          "equation": "6.45 ÷ 5.16 = 1.25",
+          "step": "Check by division: 1.25 ÷ 5.16 = 6.45."
+        }
+      ]
+    },
+    "legacy-fraction-div-same": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing fractions with like denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 ÷ 5/10 = 2/5",
+          "step": "Keep 1/5; multiply by the reciprocal 2/1, then simplify."
+        },
+        {
+          "equation": "2/4 ÷ 3/4 = 2/3",
+          "step": "Keep 1/2; multiply by the reciprocal 4/3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-different": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing fractions with unlike denominators. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5/10 ÷ 1/3 = 3/2",
+          "step": "Keep 1/2; multiply by the reciprocal 3/1, then simplify."
+        },
+        {
+          "equation": "5/6 ÷ 10/11 = 11/12",
+          "step": "Keep 5/6; multiply by the reciprocal 11/10, then simplify."
+        }
+      ]
+    },
+    "legacy-decimal-add-0dp-1dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 + 1.8 = 17.8",
+          "step": "Check by subtraction: 17.8 − 1.8 = 16."
+        },
+        {
+          "equation": "10 + 2.4 = 12.4",
+          "step": "Check by subtraction: 12.4 − 2.4 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-add-0dp-2dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 + 1.79 = 17.79",
+          "step": "Check by subtraction: 17.79 − 1.79 = 16."
+        },
+        {
+          "equation": "10 + 2.32 = 12.32",
+          "step": "Check by subtraction: 12.32 − 2.32 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-add-1dp-0dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 + 2 = 17.8",
+          "step": "Check by subtraction: 17.8 − 2 = 15.8."
+        },
+        {
+          "equation": "7.6 + 9 = 16.6",
+          "step": "Check by subtraction: 16.6 − 9 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-add-1dp-2dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 + 1.79 = 17.59",
+          "step": "Check by subtraction: 17.59 − 1.79 = 15.8."
+        },
+        {
+          "equation": "7.6 + 8.34 = 15.94",
+          "step": "Check by subtraction: 15.94 − 8.34 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-add-2dp-0dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 + 2 = 17.75",
+          "step": "Check by subtraction: 17.75 − 2 = 15.75."
+        },
+        {
+          "equation": "9.91 + 3 = 12.91",
+          "step": "Check by subtraction: 12.91 − 3 = 9.91."
+        }
+      ]
+    },
+    "legacy-decimal-add-2dp-1dp": {
+      "lesson": "decimal-add",
+      "intro": "Practice decimal addition to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 + 1.8 = 17.55",
+          "step": "Check by subtraction: 17.55 − 1.8 = 15.75."
+        },
+        {
+          "equation": "9.91 + 2.4 = 12.31",
+          "step": "Check by subtraction: 12.31 − 2.4 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-add-whole-proper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding whole numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 + 2/4 = 11/2",
+          "step": "Use denominator 2: 10/2 + 1/2. Then simplify."
+        },
+        {
+          "equation": "8 + 4/6 = 26/3",
+          "step": "Use denominator 3: 24/3 + 2/3. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-whole-improper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding whole numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 + 34/4 = 27/2",
+          "step": "Use denominator 2: 10/2 + 17/2. Then simplify."
+        },
+        {
+          "equation": "8 + 58/6 = 53/3",
+          "step": "Use denominator 3: 24/3 + 29/3. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-whole-mixed": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding whole numbers and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 + 8 2/4 = 27/2",
+          "step": "Use denominator 2: 10/2 + 17/2. Then simplify."
+        },
+        {
+          "equation": "8 + 9 4/6 = 53/3",
+          "step": "Use denominator 3: 24/3 + 29/3. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-proper-whole": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding proper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 + 8 = 41/5",
+          "step": "Use denominator 5: 1/5 + 40/5. Then simplify."
+        },
+        {
+          "equation": "10/11 + 9 = 109/11",
+          "step": "Use denominator 11: 10/11 + 99/11. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-proper-improper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding proper fractions and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 + 34/4 = 87/10",
+          "step": "Use denominator 10: 2/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "10/11 + 58/6 = 349/33",
+          "step": "Use denominator 33: 30/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-proper-mixed": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding proper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 + 8 2/4 = 87/10",
+          "step": "Use denominator 10: 2/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "10/11 + 9 4/6 = 349/33",
+          "step": "Use denominator 33: 30/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-improper-whole": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding improper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 + 8 = 66/5",
+          "step": "Use denominator 5: 26/5 + 40/5. Then simplify."
+        },
+        {
+          "equation": "98/11 + 9 = 197/11",
+          "step": "Use denominator 11: 98/11 + 99/11. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-improper-proper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding improper fractions and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 + 2/4 = 57/10",
+          "step": "Use denominator 10: 52/10 + 5/10. Then simplify."
+        },
+        {
+          "equation": "98/11 + 4/6 = 316/33",
+          "step": "Use denominator 33: 294/33 + 22/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-improper-improper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 + 34/4 = 137/10",
+          "step": "Use denominator 10: 52/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "98/11 + 58/6 = 613/33",
+          "step": "Use denominator 33: 294/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-improper-mixed": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding improper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 + 8 2/4 = 137/10",
+          "step": "Use denominator 10: 52/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "98/11 + 9 4/6 = 613/33",
+          "step": "Use denominator 33: 294/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-mixed-whole": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding mixed numbers and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 + 8 = 66/5",
+          "step": "Use denominator 5: 26/5 + 40/5. Then simplify."
+        },
+        {
+          "equation": "8 10/11 + 9 = 197/11",
+          "step": "Use denominator 11: 98/11 + 99/11. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-mixed-proper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding mixed numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 + 2/4 = 57/10",
+          "step": "Use denominator 10: 52/10 + 5/10. Then simplify."
+        },
+        {
+          "equation": "8 10/11 + 4/6 = 316/33",
+          "step": "Use denominator 33: 294/33 + 22/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-mixed-improper": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding mixed numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 + 34/4 = 137/10",
+          "step": "Use denominator 10: 52/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "8 10/11 + 58/6 = 613/33",
+          "step": "Use denominator 33: 294/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-add-mixed-mixed": {
+      "lesson": "fraction-add",
+      "intro": "Practice adding mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 + 8 2/4 = 137/10",
+          "step": "Use denominator 10: 52/10 + 85/10. Then simplify."
+        },
+        {
+          "equation": "8 10/11 + 9 4/6 = 613/33",
+          "step": "Use denominator 33: 294/33 + 319/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-decimal-sub-0dp-1dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 − 1.8 = 14.2",
+          "step": "Check by addition: 14.2 + 1.8 = 16."
+        },
+        {
+          "equation": "10 − 2.4 = 7.6",
+          "step": "Check by addition: 7.6 + 2.4 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-sub-0dp-2dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 − 1.79 = 14.21",
+          "step": "Check by addition: 14.21 + 1.79 = 16."
+        },
+        {
+          "equation": "10 − 2.32 = 7.68",
+          "step": "Check by addition: 7.68 + 2.32 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-sub-1dp-0dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 − 2 = 13.8",
+          "step": "Check by addition: 13.8 + 2 = 15.8."
+        },
+        {
+          "equation": "17.3 − 10 = 7.3",
+          "step": "Check by addition: 7.3 + 10 = 17.3."
+        }
+      ]
+    },
+    "legacy-decimal-sub-1dp-2dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 − 1.79 = 14.01",
+          "step": "Check by addition: 14.01 + 1.79 = 15.8."
+        },
+        {
+          "equation": "12.3 − 9.91 = 2.39",
+          "step": "Check by addition: 2.39 + 9.91 = 12.3."
+        }
+      ]
+    },
+    "legacy-decimal-sub-2dp-0dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 − 2 = 13.75",
+          "step": "Check by addition: 13.75 + 2 = 15.75."
+        },
+        {
+          "equation": "9.91 − 3 = 6.91",
+          "step": "Check by addition: 6.91 + 3 = 9.91."
+        }
+      ]
+    },
+    "legacy-decimal-sub-2dp-1dp": {
+      "lesson": "decimal-sub",
+      "intro": "Practice decimal subtraction to hundredths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 − 1.8 = 13.95",
+          "step": "Check by addition: 13.95 + 1.8 = 15.75."
+        },
+        {
+          "equation": "9.91 − 2.4 = 7.51",
+          "step": "Check by addition: 7.51 + 2.4 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-sub-whole-proper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting proper fractions from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 − 2/4 = 9/2",
+          "step": "Use denominator 2: 10/2 − 1/2. Then simplify."
+        },
+        {
+          "equation": "8 − 4/6 = 22/3",
+          "step": "Use denominator 3: 24/3 − 2/3. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-whole-improper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting improper fractions from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "7 − 7/3 = 14/3",
+          "step": "Use denominator 3: 21/3 − 7/3. Then simplify."
+        },
+        {
+          "equation": "6 − 35/6 = 1/6",
+          "step": "Use denominator 6: 36/6 − 35/6. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-whole-mixed": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting mixed numbers from whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "7 − 2 1/3 = 14/3",
+          "step": "Use denominator 3: 21/3 − 7/3. Then simplify."
+        },
+        {
+          "equation": "6 − 5 5/6 = 1/6",
+          "step": "Use denominator 6: 36/6 − 35/6. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-improper-whole": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting whole numbers from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "25/4 − 6 = 1/4",
+          "step": "Use denominator 4: 25/4 − 24/4. Then simplify."
+        },
+        {
+          "equation": "30/4 − 2 = 11/2",
+          "step": "Use denominator 2: 15/2 − 4/2. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-improper-proper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting proper fractions from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 − 2/4 = 47/10",
+          "step": "Use denominator 10: 52/10 − 5/10. Then simplify."
+        },
+        {
+          "equation": "98/11 − 4/6 = 272/33",
+          "step": "Use denominator 33: 294/33 − 22/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-improper-improper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "30/4 − 7/3 = 31/6",
+          "step": "Use denominator 6: 45/6 − 14/6. Then simplify."
+        },
+        {
+          "equation": "73/12 − 35/6 = 1/4",
+          "step": "Use denominator 12: 73/12 − 70/12. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-improper-mixed": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting mixed numbers from improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "30/4 − 2 1/3 = 31/6",
+          "step": "Use denominator 6: 45/6 − 14/6. Then simplify."
+        },
+        {
+          "equation": "73/12 − 5 5/6 = 1/4",
+          "step": "Use denominator 12: 73/12 − 70/12. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-mixed-whole": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting whole numbers from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "6 1/4 − 6 = 1/4",
+          "step": "Use denominator 4: 25/4 − 24/4. Then simplify."
+        },
+        {
+          "equation": "7 2/4 − 2 = 11/2",
+          "step": "Use denominator 2: 15/2 − 4/2. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-mixed-proper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting proper fractions from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 − 2/4 = 47/10",
+          "step": "Use denominator 10: 52/10 − 5/10. Then simplify."
+        },
+        {
+          "equation": "8 10/11 − 4/6 = 272/33",
+          "step": "Use denominator 33: 294/33 − 22/33. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-mixed-improper": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting improper fractions from mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "7 2/4 − 7/3 = 31/6",
+          "step": "Use denominator 6: 45/6 − 14/6. Then simplify."
+        },
+        {
+          "equation": "6 1/12 − 35/6 = 1/4",
+          "step": "Use denominator 12: 73/12 − 70/12. Then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-sub-mixed-mixed": {
+      "lesson": "fraction-sub",
+      "intro": "Practice subtracting mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "7 2/4 − 2 1/3 = 31/6",
+          "step": "Use denominator 6: 45/6 − 14/6. Then simplify."
+        },
+        {
+          "equation": "6 1/12 − 5 5/6 = 1/4",
+          "step": "Use denominator 12: 73/12 − 70/12. Then simplify."
+        }
+      ]
+    },
+    "legacy-decimal-mul-0dp-1dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 × 1.8 = 28.8",
+          "step": "Check by division: 28.8 ÷ 1.8 = 16."
+        },
+        {
+          "equation": "10 × 2.4 = 24",
+          "step": "Check by division: 24 ÷ 2.4 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-mul-0dp-2dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "16 × 1.79 = 28.64",
+          "step": "Check by division: 28.64 ÷ 1.79 = 16."
+        },
+        {
+          "equation": "10 × 2.32 = 23.2",
+          "step": "Check by division: 23.2 ÷ 2.32 = 10."
+        }
+      ]
+    },
+    "legacy-decimal-mul-1dp-0dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 × 2 = 31.6",
+          "step": "Check by division: 31.6 ÷ 2 = 15.8."
+        },
+        {
+          "equation": "7.6 × 9 = 68.4",
+          "step": "Check by division: 68.4 ÷ 9 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-mul-1dp-2dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication (1 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 × 1.79 = 28.282",
+          "step": "Check by division: 28.282 ÷ 1.79 = 15.8."
+        },
+        {
+          "equation": "7.6 × 8.34 = 63.384",
+          "step": "Check by division: 63.384 ÷ 8.34 = 7.6."
+        }
+      ]
+    },
+    "legacy-decimal-mul-2dp-0dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 × 2 = 31.5",
+          "step": "Check by division: 31.5 ÷ 2 = 15.75."
+        },
+        {
+          "equation": "9.91 × 3 = 29.73",
+          "step": "Check by division: 29.73 ÷ 3 = 9.91."
+        }
+      ]
+    },
+    "legacy-decimal-mul-2dp-1dp": {
+      "lesson": "decimal-mul",
+      "intro": "Practice decimal multiplication (2 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 × 1.8 = 28.35",
+          "step": "Check by division: 28.35 ÷ 1.8 = 15.75."
+        },
+        {
+          "equation": "9.91 × 2.4 = 23.784",
+          "step": "Check by division: 23.784 ÷ 2.4 = 9.91."
+        }
+      ]
+    },
+    "legacy-fraction-mul-whole-proper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying whole numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 × 2/4 = 5/2",
+          "step": "Multiply 5 × 1 over 1 × 2, then simplify."
+        },
+        {
+          "equation": "8 × 4/6 = 16/3",
+          "step": "Multiply 8 × 2 over 1 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-whole-improper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying whole numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 × 34/4 = 85/2",
+          "step": "Multiply 5 × 17 over 1 × 2, then simplify."
+        },
+        {
+          "equation": "8 × 58/6 = 232/3",
+          "step": "Multiply 8 × 29 over 1 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-whole-mixed": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying whole numbers and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 × 8 2/4 = 85/2",
+          "step": "Multiply 5 × 17 over 1 × 2, then simplify."
+        },
+        {
+          "equation": "8 × 9 4/6 = 232/3",
+          "step": "Multiply 8 × 29 over 1 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-proper-whole": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying proper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 × 8 = 8/5",
+          "step": "Multiply 1 × 8 over 5 × 1, then simplify."
+        },
+        {
+          "equation": "10/11 × 9 = 90/11",
+          "step": "Multiply 10 × 9 over 11 × 1, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-proper-improper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying proper fractions and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 × 34/4 = 17/10",
+          "step": "Multiply 1 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "10/11 × 58/6 = 290/33",
+          "step": "Multiply 10 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-proper-mixed": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying proper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 × 8 2/4 = 17/10",
+          "step": "Multiply 1 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "10/11 × 9 4/6 = 290/33",
+          "step": "Multiply 10 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-improper-whole": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying improper fractions and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 × 8 = 208/5",
+          "step": "Multiply 26 × 8 over 5 × 1, then simplify."
+        },
+        {
+          "equation": "98/11 × 9 = 882/11",
+          "step": "Multiply 98 × 9 over 11 × 1, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-improper-proper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying improper fractions and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 × 2/4 = 13/5",
+          "step": "Multiply 26 × 1 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "98/11 × 4/6 = 196/33",
+          "step": "Multiply 98 × 2 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-improper-improper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 × 34/4 = 221/5",
+          "step": "Multiply 26 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "98/11 × 58/6 = 2842/33",
+          "step": "Multiply 98 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-improper-mixed": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying improper fractions and mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 × 8 2/4 = 221/5",
+          "step": "Multiply 26 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "98/11 × 9 4/6 = 2842/33",
+          "step": "Multiply 98 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-mixed-whole": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying mixed numbers and whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 × 8 = 208/5",
+          "step": "Multiply 26 × 8 over 5 × 1, then simplify."
+        },
+        {
+          "equation": "8 10/11 × 9 = 882/11",
+          "step": "Multiply 98 × 9 over 11 × 1, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-mixed-proper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying mixed numbers and proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 × 2/4 = 13/5",
+          "step": "Multiply 26 × 1 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "8 10/11 × 4/6 = 196/33",
+          "step": "Multiply 98 × 2 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-mixed-improper": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying mixed numbers and improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 × 34/4 = 221/5",
+          "step": "Multiply 26 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "8 10/11 × 58/6 = 2842/33",
+          "step": "Multiply 98 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-mul-mixed-mixed": {
+      "lesson": "fraction-mul",
+      "intro": "Practice multiplying mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 × 8 2/4 = 221/5",
+          "step": "Multiply 26 × 17 over 5 × 2, then simplify."
+        },
+        {
+          "equation": "8 10/11 × 9 4/6 = 2842/33",
+          "step": "Multiply 98 × 29 over 11 × 3, then simplify."
+        }
+      ]
+    },
+    "legacy-decimal-div-0dp-1dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "4 ÷ 0.2 = 20",
+          "step": "Check by division: 20 ÷ 0.2 = 4."
+        },
+        {
+          "equation": "14 ÷ 1.6 = 8.75",
+          "step": "Check by division: 8.75 ÷ 1.6 = 14."
+        }
+      ]
+    },
+    "legacy-decimal-div-0dp-2dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2 ÷ 0.02 = 100",
+          "step": "Check by division: 100 ÷ 0.02 = 2."
+        },
+        {
+          "equation": "15 ÷ 0.02 = 750",
+          "step": "Check by division: 750 ÷ 0.02 = 15."
+        }
+      ]
+    },
+    "legacy-decimal-div-1dp-0dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.8 ÷ 2 = 7.9",
+          "step": "Check by division: 7.9 ÷ 2 = 15.8."
+        },
+        {
+          "equation": "17.3 ÷ 10 = 1.73",
+          "step": "Check by division: 1.73 ÷ 10 = 17.3."
+        }
+      ]
+    },
+    "legacy-decimal-div-1dp-2dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division (1 and 2 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "1.7 ÷ 0.02 = 85",
+          "step": "Check by division: 85 ÷ 0.02 = 1.7."
+        },
+        {
+          "equation": "2.7 ÷ 0.12 = 22.5",
+          "step": "Check by division: 22.5 ÷ 0.12 = 2.7."
+        }
+      ]
+    },
+    "legacy-decimal-div-2dp-0dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division with whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "13.62 ÷ 2 = 6.81",
+          "step": "Check by division: 6.81 ÷ 2 = 13.62."
+        },
+        {
+          "equation": "0.82 ÷ 2 = 0.41",
+          "step": "Check by division: 0.41 ÷ 2 = 0.82."
+        }
+      ]
+    },
+    "legacy-decimal-div-2dp-1dp": {
+      "lesson": "decimal-div",
+      "intro": "Practice decimal division (2 and 1 decimal places). Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "15.75 ÷ 1.8 = 8.75",
+          "step": "Check by division: 8.75 ÷ 1.8 = 15.75."
+        },
+        {
+          "equation": "3.77 ÷ 0.2 = 18.85",
+          "step": "Check by division: 18.85 ÷ 0.2 = 3.77."
+        }
+      ]
+    },
+    "legacy-fraction-div-whole-proper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing whole numbers by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 ÷ 2/4 = 10",
+          "step": "Keep 5; multiply by the reciprocal 2/1, then simplify."
+        },
+        {
+          "equation": "8 ÷ 4/6 = 12",
+          "step": "Keep 8; multiply by the reciprocal 3/2, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-whole-improper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing whole numbers by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 ÷ 34/4 = 10/17",
+          "step": "Keep 5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "8 ÷ 58/6 = 24/29",
+          "step": "Keep 8; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-whole-mixed": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing whole numbers by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 ÷ 8 2/4 = 10/17",
+          "step": "Keep 5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "8 ÷ 9 4/6 = 24/29",
+          "step": "Keep 8; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-proper-whole": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing proper fractions by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 ÷ 8 = 1/40",
+          "step": "Keep 1/5; multiply by the reciprocal 1/8, then simplify."
+        },
+        {
+          "equation": "10/11 ÷ 9 = 10/99",
+          "step": "Keep 10/11; multiply by the reciprocal 1/9, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-proper-improper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing proper fractions by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 ÷ 34/4 = 2/85",
+          "step": "Keep 1/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "10/11 ÷ 58/6 = 30/319",
+          "step": "Keep 10/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-proper-mixed": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing proper fractions by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "2/10 ÷ 8 2/4 = 2/85",
+          "step": "Keep 1/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "10/11 ÷ 9 4/6 = 30/319",
+          "step": "Keep 10/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-improper-whole": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing improper fractions by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 ÷ 8 = 13/20",
+          "step": "Keep 26/5; multiply by the reciprocal 1/8, then simplify."
+        },
+        {
+          "equation": "98/11 ÷ 9 = 98/99",
+          "step": "Keep 98/11; multiply by the reciprocal 1/9, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-improper-proper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing improper fractions by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 ÷ 2/4 = 52/5",
+          "step": "Keep 26/5; multiply by the reciprocal 2/1, then simplify."
+        },
+        {
+          "equation": "98/11 ÷ 4/6 = 147/11",
+          "step": "Keep 98/11; multiply by the reciprocal 3/2, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-improper-improper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 ÷ 34/4 = 52/85",
+          "step": "Keep 26/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "98/11 ÷ 58/6 = 294/319",
+          "step": "Keep 98/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-improper-mixed": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing improper fractions by mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "52/10 ÷ 8 2/4 = 52/85",
+          "step": "Keep 26/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "98/11 ÷ 9 4/6 = 294/319",
+          "step": "Keep 98/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-mixed-whole": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing mixed numbers by whole numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 ÷ 8 = 13/20",
+          "step": "Keep 26/5; multiply by the reciprocal 1/8, then simplify."
+        },
+        {
+          "equation": "8 10/11 ÷ 9 = 98/99",
+          "step": "Keep 98/11; multiply by the reciprocal 1/9, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-mixed-proper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing mixed numbers by proper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 ÷ 2/4 = 52/5",
+          "step": "Keep 26/5; multiply by the reciprocal 2/1, then simplify."
+        },
+        {
+          "equation": "8 10/11 ÷ 4/6 = 147/11",
+          "step": "Keep 98/11; multiply by the reciprocal 3/2, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-mixed-improper": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing mixed numbers by improper fractions. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 ÷ 34/4 = 52/85",
+          "step": "Keep 26/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "8 10/11 ÷ 58/6 = 294/319",
+          "step": "Keep 98/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "legacy-fraction-div-mixed-mixed": {
+      "lesson": "fraction-div",
+      "intro": "Practice dividing mixed numbers. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "5 2/10 ÷ 8 2/4 = 52/85",
+          "step": "Keep 26/5; multiply by the reciprocal 2/17, then simplify."
+        },
+        {
+          "equation": "8 10/11 ÷ 9 4/6 = 294/319",
+          "step": "Keep 98/11; multiply by the reciprocal 3/29, then simplify."
+        }
+      ]
+    },
+    "detail-natural-add-2-2-regroup": {
+      "lesson": "whole-add",
+      "intro": "Practice 2-digit addition with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "examples": [
+        {
+          "equation": "80 + 26 = 106",
+          "step": "Check by subtraction: 106 − 26 = 80."
+        },
+        {
+          "equation": "43 + 85 = 128",
+          "step": "Check by subtraction: 128 − 85 = 43."
+        }
+      ]
+    },
+    "detail-natural-add-2-2-no-regroup": {
+      "lesson": "whole-add",
+      "intro": "Practice 2-digit addition without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "examples": [
+        {
+          "equation": "54 + 30 = 84",
+          "step": "Check by subtraction: 84 − 30 = 54."
+        },
+        {
+          "equation": "26 + 10 = 36",
+          "step": "Check by subtraction: 36 − 10 = 26."
+        }
+      ]
+    },
+    "detail-natural-add-3-3-regroup": {
+      "lesson": "whole-add",
+      "intro": "Practice 3-digit addition with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "examples": [
+        {
+          "equation": "808 + 260 = 1068",
+          "step": "Check by subtraction: 1068 − 260 = 808."
+        },
+        {
+          "equation": "545 + 308 = 853",
+          "step": "Check by subtraction: 853 − 308 = 545."
+        }
+      ]
+    },
+    "detail-natural-add-3-3-no-regroup": {
+      "lesson": "whole-add",
+      "intro": "Practice 3-digit addition without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "examples": [
+        {
+          "equation": "712 + 237 = 949",
+          "step": "Check by subtraction: 949 − 237 = 712."
+        },
+        {
+          "equation": "136 + 201 = 337",
+          "step": "Check by subtraction: 337 − 201 = 136."
+        }
+      ]
+    },
+    "detail-natural-sub-2-2-regroup": {
+      "lesson": "whole-sub",
+      "intro": "Practice 2-digit subtraction with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "examples": [
+        {
+          "equation": "80 − 26 = 54",
+          "step": "Check by addition: 54 + 26 = 80."
+        },
+        {
+          "equation": "80 − 46 = 34",
+          "step": "Check by addition: 34 + 46 = 80."
+        }
+      ]
+    },
+    "detail-natural-sub-2-2-no-regroup": {
+      "lesson": "whole-sub",
+      "intro": "Practice 2-digit subtraction without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "examples": [
+        {
+          "equation": "54 − 30 = 24",
+          "step": "Check by addition: 24 + 30 = 54."
+        },
+        {
+          "equation": "26 − 10 = 16",
+          "step": "Check by addition: 16 + 10 = 26."
+        }
+      ]
+    },
+    "detail-natural-sub-3-3-regroup": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit subtraction with regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "Every selected question requires at least one regrouping step. Mark the changed place values before continuing.",
+      "examples": [
+        {
+          "equation": "808 − 260 = 548",
+          "step": "Check by addition: 548 + 260 = 808."
+        },
+        {
+          "equation": "545 − 308 = 237",
+          "step": "Check by addition: 237 + 308 = 545."
+        }
+      ]
+    },
+    "detail-natural-sub-3-3-no-regroup": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit subtraction without regrouping. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected questions do not require regrouping. Concentrate on matching places and keeping the operation in its stated order.",
+      "examples": [
+        {
+          "equation": "269 − 109 = 160",
+          "step": "Check by addition: 160 + 109 = 269."
+        },
+        {
+          "equation": "833 − 521 = 312",
+          "step": "Check by addition: 312 + 521 = 833."
+        }
+      ]
+    },
+    "detail-natural-sub-3-2-across-zero": {
+      "lesson": "whole-sub",
+      "intro": "Practice 3-digit subtraction across zeros. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "These questions require an exchange through a zero. Follow the exchange from the nearest available place, updating every affected digit.",
+      "examples": [
+        {
+          "equation": "805 − 46 = 759",
+          "step": "Check by addition: 759 + 46 = 805."
+        },
+        {
+          "equation": "903 − 25 = 878",
+          "step": "Check by addition: 878 + 25 = 903."
+        }
+      ]
+    },
+    "detail-natural-div-2-1-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "43 ÷ 8 = 5 R 3",
+          "step": "Check: 5 × 8 + 3 = 43. The remainder is smaller than 8."
+        },
+        {
+          "equation": "87 ÷ 9 = 9 R 6",
+          "step": "Check: 9 × 9 + 6 = 87. The remainder is smaller than 9."
+        }
+      ]
+    },
+    "detail-natural-div-2-1-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "80 ÷ 2 = 40",
+          "step": "Check: 40 × 2 + 0 = 80. The remainder is smaller than 2."
+        },
+        {
+          "equation": "54 ÷ 3 = 18",
+          "step": "Check: 18 × 3 + 0 = 54. The remainder is smaller than 3."
+        }
+      ]
+    },
+    "detail-natural-div-3-1-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "545 ÷ 3 = 181 R 2",
+          "step": "Check: 181 × 3 + 2 = 545. The remainder is smaller than 3."
+        },
+        {
+          "equation": "438 ÷ 8 = 54 R 6",
+          "step": "Check: 54 × 8 + 6 = 438. The remainder is smaller than 8."
+        }
+      ]
+    },
+    "detail-natural-div-3-1-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "808 ÷ 2 = 404",
+          "step": "Check: 404 × 2 + 0 = 808. The remainder is smaller than 2."
+        },
+        {
+          "equation": "712 ÷ 2 = 356",
+          "step": "Check: 356 × 2 + 0 = 712. The remainder is smaller than 2."
+        }
+      ]
+    },
+    "detail-natural-div-4-1-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit division with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 2 = 4042 R 1",
+          "step": "Check: 4042 × 2 + 1 = 8085. The remainder is smaller than 2."
+        },
+        {
+          "equation": "4382 ÷ 8 = 547 R 6",
+          "step": "Check: 547 × 8 + 6 = 4382. The remainder is smaller than 8."
+        }
+      ]
+    },
+    "detail-natural-div-4-1-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit division without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "5457 ÷ 3 = 1819",
+          "step": "Check: 1819 × 3 + 0 = 5457. The remainder is smaller than 3."
+        },
+        {
+          "equation": "7128 ÷ 2 = 3564",
+          "step": "Check: 3564 × 2 + 0 = 7128. The remainder is smaller than 2."
+        }
+      ]
+    },
+    "detail-rounding-decimals": {
+      "lesson": "round",
+      "intro": "Practice rounding decimals to whole numbers and tenths. Work accurately before trying to work faster. Use the space provided to record the steps you need.",
+      "condition": "",
+      "examples": [
+        {
+          "equation": "3.46 → 3.5 (nearest tenth)",
+          "step": "The hundredths digit is 6, so increase the tenths digit from 4 to 5."
+        },
+        {
+          "equation": "3.46 → 3 (nearest whole number)",
+          "step": "The tenths digit is 4, so keep the whole-number part."
+        }
+      ]
+    },
+    "detail-natural-div-1-1-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice single-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "5 ÷ 3 = 1 R 2",
+          "step": "Check: 1 × 3 + 2 = 5. The remainder is smaller than 3."
+        },
+        {
+          "equation": "6 ÷ 4 = 1 R 2",
+          "step": "Check: 1 × 4 + 2 = 6. The remainder is smaller than 4."
+        }
+      ]
+    },
+    "detail-natural-div-1-1-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice single-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 1 digit(s), and the second has 1 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "8 ÷ 2 = 4",
+          "step": "Check: 4 × 2 + 0 = 8. The remainder is smaller than 2."
+        },
+        {
+          "equation": "8 ÷ 4 = 2",
+          "step": "Check: 2 × 4 + 0 = 8. The remainder is smaller than 4."
+        }
+      ]
+    },
+    "detail-natural-div-2-2-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "80 ÷ 26 = 3 R 2",
+          "step": "Check: 3 × 26 + 2 = 80. The remainder is smaller than 26."
+        },
+        {
+          "equation": "54 ÷ 30 = 1 R 24",
+          "step": "Check: 1 × 30 + 24 = 54. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "detail-natural-div-2-2-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 2-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 2 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "40 ÷ 40 = 1",
+          "step": "Check: 1 × 40 + 0 = 40. The remainder is smaller than 40."
+        },
+        {
+          "equation": "70 ÷ 35 = 2",
+          "step": "Check: 2 × 35 + 0 = 70. The remainder is smaller than 35."
+        }
+      ]
+    },
+    "detail-natural-div-3-2-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "808 ÷ 26 = 31 R 2",
+          "step": "Check: 31 × 26 + 2 = 808. The remainder is smaller than 26."
+        },
+        {
+          "equation": "545 ÷ 30 = 18 R 5",
+          "step": "Check: 18 × 30 + 5 = 545. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "detail-natural-div-3-2-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "546 ÷ 39 = 14",
+          "step": "Check: 14 × 39 + 0 = 546. The remainder is smaller than 39."
+        },
+        {
+          "equation": "637 ÷ 49 = 13",
+          "step": "Check: 13 × 49 + 0 = 637. The remainder is smaller than 49."
+        }
+      ]
+    },
+    "detail-natural-div-3-3-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 3-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "808 ÷ 260 = 3 R 28",
+          "step": "Check: 3 × 260 + 28 = 808. The remainder is smaller than 260."
+        },
+        {
+          "equation": "545 ÷ 308 = 1 R 237",
+          "step": "Check: 1 × 308 + 237 = 545. The remainder is smaller than 308."
+        }
+      ]
+    },
+    "detail-natural-div-3-3-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 3-digit by 3-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 3 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "920 ÷ 115 = 8",
+          "step": "Check: 8 × 115 + 0 = 920. The remainder is smaller than 115."
+        },
+        {
+          "equation": "257 ÷ 257 = 1",
+          "step": "Check: 1 × 257 + 0 = 257. The remainder is smaller than 257."
+        }
+      ]
+    },
+    "detail-natural-div-4-2-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 2-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 26 = 310 R 25",
+          "step": "Check: 310 × 26 + 25 = 8085. The remainder is smaller than 26."
+        },
+        {
+          "equation": "5457 ÷ 30 = 181 R 27",
+          "step": "Check: 181 × 30 + 27 = 5457. The remainder is smaller than 30."
+        }
+      ]
+    },
+    "detail-natural-div-4-2-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 2-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 2 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "5460 ÷ 39 = 140",
+          "step": "Check: 140 × 39 + 0 = 5460. The remainder is smaller than 39."
+        },
+        {
+          "equation": "1404 ÷ 54 = 26",
+          "step": "Check: 26 × 54 + 0 = 1404. The remainder is smaller than 54."
+        }
+      ]
+    },
+    "detail-natural-div-4-3-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 3-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 260 = 31 R 25",
+          "step": "Check: 31 × 260 + 25 = 8085. The remainder is smaller than 260."
+        },
+        {
+          "equation": "5457 ÷ 308 = 17 R 221",
+          "step": "Check: 17 × 308 + 221 = 5457. The remainder is smaller than 308."
+        }
+      ]
+    },
+    "detail-natural-div-4-3-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 3-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 3 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "4992 ÷ 624 = 8",
+          "step": "Check: 8 × 624 + 0 = 4992. The remainder is smaller than 624."
+        },
+        {
+          "equation": "5104 ÷ 176 = 29",
+          "step": "Check: 29 × 176 + 0 = 5104. The remainder is smaller than 176."
+        }
+      ]
+    },
+    "detail-natural-div-4-4-remainder": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 4-digit division — with remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "These selected divisions have a nonzero remainder. Write the whole-number quotient and the remainder; do not replace the remainder with an unexplained decimal.",
+      "examples": [
+        {
+          "equation": "8085 ÷ 2606 = 3 R 267",
+          "step": "Check: 3 × 2606 + 267 = 8085. The remainder is smaller than 2606."
+        },
+        {
+          "equation": "5457 ÷ 3082 = 1 R 2375",
+          "step": "Check: 1 × 3082 + 2375 = 5457. The remainder is smaller than 3082."
+        }
+      ]
+    },
+    "detail-natural-div-4-4-exact": {
+      "lesson": "whole-div",
+      "intro": "Practice 4-digit by 4-digit division — without remainders. Work accurately before trying to work faster. Use the space provided to record the steps you need. The first number has 4 digit(s), and the second has 4 digit(s).",
+      "condition": "These selected divisions have no remainder. Finish with a remainder of zero and check the quotient by multiplication.",
+      "examples": [
+        {
+          "equation": "8106 ÷ 1351 = 6",
+          "step": "Check: 6 × 1351 + 0 = 8106. The remainder is smaller than 1351."
+        },
+        {
+          "equation": "2959 ÷ 2959 = 1",
+          "step": "Check: 1 × 2959 + 0 = 2959. The remainder is smaller than 2959."
+        }
+      ]
+    }
+  }
+}

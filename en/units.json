@@ -1,0 +1,1889 @@
+[
+  {
+    "grade": 1,
+    "id": "addition-subtraction",
+    "title": "Addition & subtraction within 20",
+    "types": [
+      "addition-within-20",
+      "picture-addition",
+      "subtraction-within-10",
+      "missing-addend-within-20",
+      "word-problems-how-many-more-within-20",
+      "word-problems-add-sub-within-20",
+      "word-problems-unknown-start",
+      "word-problems-more-fewer",
+      "word-problems-difference-within-20",
+      "word-problems-extra-information",
+      "word-problems-unknown-change",
+      "word-problems-choose-equation",
+      "word-problems-bar-model",
+      "word-problems-same-numbers",
+      "word-problems-explain-thinking",
+      "word-problems-error-analysis",
+      "word-problems-write-question"
+    ],
+    "worksheets": [
+      {
+        "title": "Addition Within 20",
+        "url": "/en/add-small.html"
+      },
+      {
+        "title": "Picture Addition Worksheets",
+        "url": "/en/picture-addition.html"
+      },
+      {
+        "title": "Subtraction Within 10",
+        "url": "/en/subtract-small.html"
+      },
+      {
+        "title": "Missing Addend Worksheets Within 20",
+        "url": "/en/missing.html"
+      },
+      {
+        "title": "How Many More? Word Problems Within 20",
+        "url": "/en/how-many-more-word-problems-within-20.html"
+      },
+      {
+        "title": "Addition and Subtraction Word Problems Within 20",
+        "url": "/en/print/common-core-arithmetic/grade-1-within20-word-problems.html"
+      },
+      {
+        "title": "Find the Starting Amount Word Problems",
+        "url": "/en/find-the-unknown-word-problems.html"
+      },
+      {
+        "title": "More and Fewer Comparison Word Problems",
+        "url": "/en/compare-word-problems-more-fewer.html"
+      },
+      {
+        "title": "Difference Word Problems Within 20",
+        "url": "/en/difference-word-problems-within-20.html"
+      },
+      {
+        "title": "Word Problems With Extra Information",
+        "url": "/en/word-problems-with-extra-information.html"
+      },
+      {
+        "title": "Find the Missing Change Word Problems",
+        "url": "/en/change-unknown-word-problems.html"
+      },
+      {
+        "title": "Choose an Equation Word Problems",
+        "url": "/en/choose-operation-word-problems.html"
+      },
+      {
+        "title": "Bar Model Word Problems",
+        "url": "/en/bar-model-word-problems.html"
+      },
+      {
+        "title": "Same Numbers, Different Questions Word Problems",
+        "url": "/en/same-numbers-different-questions-word-problems.html"
+      },
+      {
+        "title": "Explain Your Thinking Word Problems",
+        "url": "/en/explain-your-thinking-word-problems.html"
+      },
+      {
+        "title": "Error Analysis Word Problems: Find and Fix the Mistake",
+        "url": "/en/error-analysis-word-problems.html"
+      },
+      {
+        "title": "Write Your Own Question Word Problems",
+        "url": "/en/write-your-own-question-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "place-value-subtraction",
+    "title": "Place value, addition & subtraction",
+    "types": [
+      "subtraction-two-digit-regrouping",
+      "addition-two-digit-no-regrouping",
+      "subtraction-two-digit-no-regrouping",
+      "addition-two-digit-regrouping",
+      "word-problems-add-sub-within-100"
+    ],
+    "worksheets": [
+      {
+        "title": "2 Digit Subtraction With Regrouping",
+        "url": "/en/subtract-borrow.html"
+      },
+      {
+        "title": "2 Digit Addition Without Regrouping",
+        "url": "/en/add-two.html"
+      },
+      {
+        "title": "2 Digit Subtraction Without Regrouping",
+        "url": "/en/subtract-two.html"
+      },
+      {
+        "title": "2 Digit Addition With Regrouping",
+        "url": "/en/add-carry.html"
+      },
+      {
+        "title": "Addition & Subtraction Word Problems Within 100",
+        "url": "/en/print/common-core-arithmetic/grade-2-within100-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "model-add-sub-within-1000",
+    "title": "Model addition & subtraction within 1,000",
+    "description": "Use base-ten blocks or drawings to explain exchanges between hundreds, tens, and ones. Connect each model to a written equation. These are the same one-step stories used in Grade 3, with an emphasis here on explaining the place-value strategy, not speed.",
+    "types": [
+      "word-problems-add-sub-within-1000"
+    ],
+    "worksheets": [
+      {
+        "title": "Addition and Subtraction Word Problems Within 1,000",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "mental-strategies-within-20",
+    "title": "Explain addition & subtraction within 20",
+    "description": "Use a short story to explain making ten, a known double, or a related addition fact. Read the story aloud if needed so reading difficulty does not hide the mental strategy. These shared stories support fact fluency; they do not measure memorization or cover every Grade 2 story structure.",
+    "types": [
+      "word-problems-add-sub-within-20"
+    ],
+    "worksheets": [
+      {
+        "title": "Addition and Subtraction Word Problems Within 20",
+        "url": "/en/print/common-core-arithmetic/grade-1-within20-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "multiplication-division",
+    "title": "Equal groups, multiplication & division",
+    "types": [
+      "multiplication-one-digit",
+      "division-within-100",
+      "word-problems-multiplication-division",
+      "word-problems-equal-groups-division"
+    ],
+    "worksheets": [
+      {
+        "title": "Single Digit Multiplication Worksheets",
+        "url": "/en/multiply-one.html"
+      },
+      {
+        "title": "Division Without Remainders Worksheets",
+        "url": "/en/divide.html"
+      },
+      {
+        "title": "3rd Grade Multiplication and Division Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-facts-word-problems.html"
+      },
+      {
+        "title": "Equal Groups Division Word Problems",
+        "url": "/en/equal-groups-division-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "addition-subtraction-1000",
+    "title": "Addition & subtraction within 1,000",
+    "types": [
+      "addition-subtraction-within-1000",
+      "word-problems-add-sub-within-1000",
+      "word-problems-missing-part-within-100",
+      "word-problems-difference-within-100"
+    ],
+    "description": "Practice accurate addition and subtraction within 1,000. Choose and explain an efficient place-value strategy, then check the result. The story worksheet is shared with Grade 2; use models as needed and work toward confident calculation. For missing amounts, choose the Within 1,000 option on the shared missing-part worksheet. Choose the Within 1,000 option on the difference worksheet to compare two known amounts. On the missing-part page, Crossing 100 starts with a two-digit amount and ends above 100. On the difference page, Crossing 100 compares a two-digit amount with an amount above 100.",
+    "worksheets": [
+      {
+        "title": "Addition & Subtraction Within 1,000",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-horizontal-practice.html"
+      },
+      {
+        "title": "Addition and Subtraction Word Problems Within 1,000",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-word-problems.html"
+      },
+      {
+        "title": "Missing Part Word Problems — Within 100 or 1,000",
+        "url": "/en/missing-part-word-problems-within-100.html"
+      },
+      {
+        "title": "Difference Word Problems — Within 100 or 1,000",
+        "url": "/en/difference-word-problems-within-100.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "fraction-addition",
+    "title": "Add & subtract fractions with like denominators",
+    "types": [
+      "fraction-addition-like-denominators",
+      "fraction-subtraction-like-denominators",
+      "word-problems-like-fractions"
+    ],
+    "worksheets": [
+      {
+        "title": "Adding Fractions With Like Denominators",
+        "url": "/en/fraction-add-same.html"
+      },
+      {
+        "title": "Subtracting Fractions With Like Denominators",
+        "url": "/en/fraction-sub-same.html"
+      },
+      {
+        "title": "Adding and Subtracting Fractions Word Problems With Like Denominators",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-likefractions-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "place-value-million",
+    "title": "Multi-digit addition & subtraction",
+    "types": [
+      "word-problems-add-sub-million"
+    ],
+    "worksheets": [
+      {
+        "title": "Multi-Digit Addition and Subtraction Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-largeadd-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "multiplication-area",
+    "title": "Multiplication & rectangle area",
+    "types": [
+      "word-problems-two-digit-area",
+      "word-problems-four-digit-area",
+      "word-problems-multiplication-division"
+    ],
+    "description": "Use equal groups and rectangle models to explain place-value multiplication. Choose a two- or three-digit group amounts activity on the shared multiplication and division worksheet before moving to larger products.",
+    "worksheets": [
+      {
+        "title": "2 Digit Multiplication Word Problems: Rectangle Area",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-mul2-word-problems.html"
+      },
+      {
+        "title": "4 Digit by 1 Digit Multiplication Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-mul4-word-problems.html"
+      },
+      {
+        "title": "3rd Grade Multiplication and Division Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-facts-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "division-remainders",
+    "title": "Division & remainders",
+    "types": [
+      "word-problems-division-remainders",
+      "word-problems-equal-groups-division"
+    ],
+    "description": "Use sharing with two-digit answers to explain exact division, then consider the meaning of remainders in division stories. Choose the larger-sharing activity on the shared equal-groups worksheet.",
+    "worksheets": [
+      {
+        "title": "4 Digit Division Word Problems With and Without Remainders",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-div1-word-problems.html"
+      },
+      {
+        "title": "Equal Groups Division Word Problems",
+        "url": "/en/equal-groups-division-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-addition-subtraction",
+    "title": "Add & subtract decimals to hundredths",
+    "types": [
+      "decimal-addition-hundredths",
+      "decimal-subtraction-hundredths",
+      "word-problems-add-sub-decimals"
+    ],
+    "worksheets": [
+      {
+        "title": "Adding Decimals to Hundredths Worksheets",
+        "url": "/en/decimal-add-2.html"
+      },
+      {
+        "title": "Subtracting Decimals to Hundredths Worksheets",
+        "url": "/en/decimal-sub-2.html"
+      },
+      {
+        "title": "Adding and Subtracting Decimals Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-decimals-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-multiplication",
+    "title": "Multiply decimals: tenths by tenths",
+    "types": [
+      "decimal-multiplication-tenths",
+      "word-problems-decimal-scaling"
+    ],
+    "worksheets": [
+      {
+        "title": "Multiplying Decimals Worksheets – Tenths by Tenths",
+        "url": "/en/decimal-mul-1.html"
+      },
+      {
+        "title": "Decimal Scaling Word Problems",
+        "url": "/en/decimal-scaling-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-division",
+    "title": "Divide decimals: tenths by tenths",
+    "types": [
+      "decimal-division-tenths"
+    ],
+    "worksheets": [
+      {
+        "title": "Dividing Decimals Worksheets – Tenths by Tenths",
+        "url": "/en/decimal-div-1.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "fraction-multiplication",
+    "title": "Multiply fractions by whole numbers",
+    "types": [
+      "fraction-multiplication-whole"
+    ],
+    "worksheets": [
+      {
+        "title": "Multiplying Fractions by Whole Numbers Worksheets",
+        "url": "/en/fraction-mul-proper-whole.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "fraction-area",
+    "title": "Rectangle area with fractional sides",
+    "types": [
+      "word-problems-fraction-whole-area",
+      "word-problems-fraction-fraction-area"
+    ],
+    "worksheets": [
+      {
+        "title": "Fraction Multiplication Word Problems: Rectangle Area",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-fractionwhole-word-problems.html"
+      },
+      {
+        "title": "Multiplying Two Fractions Word Problems: Area",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-fractionmul-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "unlike-fraction-stories",
+    "title": "Add & subtract fractions with unlike denominators",
+    "types": [
+      "word-problems-unlike-fractions"
+    ],
+    "worksheets": [
+      {
+        "title": "Adding and Subtracting Fractions Word Problems With Unlike Denominators",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-unlike-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "unit-fraction-division",
+    "title": "Divide whole numbers by unit fractions",
+    "types": [
+      "word-problems-whole-divided-unit-fraction"
+    ],
+    "worksheets": [
+      {
+        "title": "Dividing Whole Numbers by Unit Fractions Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-unitdivide-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "two-digit-divisors",
+    "title": "Divide with two-digit divisors",
+    "types": [
+      "word-problems-two-digit-division"
+    ],
+    "worksheets": [
+      {
+        "title": "4 Digit by 2 Digit Division Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-div-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "multi-digit-multiplication",
+    "title": "Multiply three-digit by two-digit numbers",
+    "types": [
+      "word-problems-three-by-two-digit-area"
+    ],
+    "worksheets": [
+      {
+        "title": "3 Digit by 2 Digit Multiplication Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-mul-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "four-addends",
+    "title": "Add four two-digit numbers",
+    "types": [
+      "word-problems-four-addends"
+    ],
+    "worksheets": [
+      {
+        "title": "Adding Four 2 Digit Numbers Word Problems",
+        "url": "/en/print/common-core-arithmetic/grade-2-fouradd-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "multiples-of-ten",
+    "title": "Multiply by multiples of 10",
+    "types": [
+      "word-problems-multiples-of-ten"
+    ],
+    "worksheets": [
+      {
+        "title": "Multiplying by Multiples of 10 Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-3-tensmul-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "adding-subtracting-tens",
+    "title": "Add & subtract whole tens",
+    "types": [
+      "word-problems-add-sub-tens"
+    ],
+    "worksheets": [
+      {
+        "title": "Adding and Subtracting Tens Word Problems",
+        "url": "/en/print/common-core-arithmetic/grade-1-tens-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "numerical-expressions",
+    "title": "Write & interpret expressions with parentheses",
+    "types": [
+      "word-problems-parentheses"
+    ],
+    "worksheets": [
+      {
+        "title": "Order of Operations Word Problems with Parentheses",
+        "url": "/en/print/common-core-arithmetic-upper/grade-5-expressions-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "factors-and-arrays",
+    "title": "Find factors through equal arrays",
+    "types": [
+      "word-problems-factor-pairs"
+    ],
+    "worksheets": [
+      {
+        "title": "Factors and Factor Pairs Word Problems",
+        "url": "/en/print/common-core-arithmetic-upper/grade-4-factors-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "add-ones-to-two-digit",
+    "title": "Add ones to a two-digit number",
+    "types": [
+      "word-problems-two-plus-one-digit"
+    ],
+    "worksheets": [
+      {
+        "title": "2 Digit Plus 1 Digit Addition Word Problems",
+        "url": "/en/print/common-core-arithmetic/grade-1-add100-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "two-step-add-subtract",
+    "title": "Two-step addition & subtraction stories",
+    "description": "Follow a small collection through two changes: find more, then give some away. Explain the intermediate total before finding the final amount.",
+    "types": [
+      "word-problems-two-step-add-subtract"
+    ],
+    "worksheets": [
+      {
+        "title": "Two-Step Addition and Subtraction Word Problems",
+        "url": "/en/print/grade-2-two-step-word-problems-worksheet.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "two-step-multiply-subtract",
+    "title": "Two-step multiplication & subtraction stories",
+    "description": "Combine equal groups, then remove an amount from the total. Connect each step to its meaning and check the remaining number.",
+    "types": [
+      "word-problems-two-step-multiply-subtract"
+    ],
+    "worksheets": [
+      {
+        "title": "Two-Step Multiplication and Subtraction Word Problems",
+        "url": "/en/print/grade-skills/grade-3-two-step-word-problems-worksheet.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "length-word-problems",
+    "title": "Length addition & subtraction stories",
+    "description": "Use lengths in the same unit to model joining ribbons and cutting off a section. Find the remaining length in centimeters.",
+    "types": [
+      "word-problems-two-step-length"
+    ],
+    "worksheets": [
+      {
+        "title": "Length Word Problems in Centimeters",
+        "url": "/en/print/grade-2-length-word-problems-worksheet.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "liters-grams-word-problems",
+    "title": "Liquid volume & mass word problems",
+    "description": "Multiply equal amounts or subtract an amount used. Each story stays in liters or grams; no conversion is needed.",
+    "types": [
+      "word-problems-liters-grams"
+    ],
+    "worksheets": [
+      {
+        "title": "Liters and Grams Word Problems",
+        "url": "/en/print/grade-skills/grade-4-measurement-word-problems-worksheet.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "division-remainder-round-up",
+    "title": "Interpret remainders: enough vans for everyone",
+    "description": "Use the quotient and remainder to find the minimum number of whole vehicles. Check that there are enough seats and one fewer van would not be enough.",
+    "types": [
+      "word-problems-division-round-up"
+    ],
+    "worksheets": [
+      {
+        "title": "Division Word Problems: Round Up the Remainder",
+        "url": "/en/print/grade-skills/grade-4-multi-step-word-problems-worksheet.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "fraction-recipe-scaling",
+    "title": "Fraction multiplication: scale amounts",
+    "description": "Compare smaller and larger amounts using fractional multipliers. Use equal-sized measuring parts to explain how the scale factor changes the original amount.",
+    "types": [
+      "word-problems-fraction-recipes",
+      "word-problems-fraction-scaling-up"
+    ],
+    "worksheets": [
+      {
+        "title": "Fraction Multiplication Word Problems: Recipes",
+        "url": "/en/print/grade-skills/grade-5-fraction-and-mixed-number-word-problems-worksheet.html"
+      },
+      {
+        "title": "Fraction Scaling Word Problems: Making Amounts Larger",
+        "url": "/en/fraction-scaling-up-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "missing-parts-within-100",
+    "title": "Find missing amounts and differences within 100",
+    "description": "Identify a missing part, an amount needed, or the difference between two known amounts. Use bar models and an addition check to explain the answer.",
+    "types": [
+      "word-problems-missing-part-within-100",
+      "word-problems-difference-within-100"
+    ],
+    "worksheets": [
+      {
+        "title": "Missing Part Word Problems — Within 100 or 1,000",
+        "url": "/en/missing-part-word-problems-within-100.html"
+      },
+      {
+        "title": "Difference Word Problems — Within 100 or 1,000",
+        "url": "/en/difference-word-problems-within-100.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "missing-fraction-parts",
+    "title": "Find a missing fraction amount",
+    "description": "Keep the same unit whole while finding the other part or the amount needed. Use equivalent fractions and an addition check.",
+    "types": [
+      "word-problems-missing-fraction-part"
+    ],
+    "worksheets": [
+      {
+        "title": "Missing Fraction Part Word Problems",
+        "url": "/en/missing-fraction-part-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "missing-unlike-fraction-parts",
+    "title": "Find a missing fraction part with unlike denominators",
+    "description": "Rename amounts using equal-sized fractional pieces. Find the other part and rebuild the total to check.",
+    "types": [
+      "word-problems-missing-fraction-part-unlike"
+    ],
+    "worksheets": [
+      {
+        "title": "Missing Fraction Part Word Problems With Unlike Denominators",
+        "url": "/en/missing-fraction-part-unlike-denominators-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "missing-decimal-parts",
+    "title": "Find a missing decimal amount",
+    "description": "Find the other part or the increase needed to reach a total. Use place-value exchanges and an addition check.",
+    "types": [
+      "word-problems-missing-decimal-part"
+    ],
+    "worksheets": [
+      {
+        "title": "Missing Decimal Part Word Problems",
+        "url": "/en/missing-decimal-part-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-group-measure",
+    "title": "Measure full and partial groups",
+    "description": "Divide a decimal amount by a whole-number group size. Include the fractional part of a group and check the total.",
+    "types": [
+      "word-problems-decimal-group-measure"
+    ],
+    "worksheets": [
+      {
+        "title": "Dividing Decimals by Whole Numbers Word Problems",
+        "url": "/en/dividing-decimals-by-whole-numbers-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-divisor-groups",
+    "title": "Measure groups with decimal sizes",
+    "description": "Use the same smaller unit for both quantities. Explain why a group size below one gives a larger numerical quotient.",
+    "types": [
+      "word-problems-decimal-divisor-groups"
+    ],
+    "worksheets": [
+      {
+        "title": "Dividing by Decimals Word Problems",
+        "url": "/en/dividing-by-decimals-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "multiplicative-comparison",
+    "title": "Compare amounts with multiplication",
+    "description": "Distinguish times as much from more than. Find the compared amount from a reference amount and a whole-number multiplier.",
+    "types": [
+      "word-problems-multiplicative-comparison"
+    ],
+    "worksheets": [
+      {
+        "title": "Multiplicative Comparison Word Problems",
+        "url": "/en/multiplicative-comparison-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "fraction-comparison",
+    "title": "Understand and compare fractions",
+    "description": "Name shaded parts of a whole, read fractions on number lines from zero to one, and compare fractions with matching denominators. Use equal-sized parts and explain the meaning of the denominator.",
+    "types": [
+      "fraction-shaded-models",
+      "fraction-number-line",
+      "fraction-compare-like-denominators"
+    ],
+    "worksheets": [
+      {
+        "title": "Write Fractions From Shaded Parts",
+        "url": "/en/shaded-fraction-worksheets.html"
+      },
+      {
+        "title": "Fractions on a Number Line",
+        "url": "/en/fractions-on-a-number-line.html"
+      },
+      {
+        "title": "Comparing Fractions With the Same Denominator",
+        "url": "/en/comparing-fractions-same-denominator.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "decimal-place-value",
+    "title": "Decimal place value",
+    "description": "Identify digits through thousandths, explain their values, and compare decimals by place value. These selected activities do not assess every part of decimal notation.",
+    "types": [
+      "decimal-place-value-digits",
+      "decimal-compare-thousandths"
+    ],
+    "worksheets": [
+      {
+        "title": "Decimal Place Value: Find the Digit",
+        "url": "/en/decimal-place-value-digits.html"
+      },
+      {
+        "title": "Comparing Decimals Through Thousandths",
+        "url": "/en/comparing-decimals-thousandths.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "equivalent-fractions",
+    "title": "Equivalent fractions for fraction operations",
+    "description": "Preserve a fraction’s value by changing numerator and denominator together. Simplifying is supporting practice before operations, not a full assessment of unlike-denominator addition and subtraction.",
+    "types": [
+      "fraction-simplify",
+      "fraction-common-denominators"
+    ],
+    "worksheets": [
+      {
+        "title": "Simplifying Fractions",
+        "url": "/en/simplifying-fractions.html"
+      },
+      {
+        "title": "Finding Common Denominators",
+        "url": "/en/common-denominator-fractions.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "compare-three-digit-numbers",
+    "title": "Compare three-digit numbers",
+    "description": "Compare the meanings of hundreds, tens, and ones. Reading number names and writing expanded form are not included in this activity.",
+    "types": [
+      "compare-three-digit-numbers"
+    ],
+    "worksheets": [
+      {
+        "title": "Comparing Three-Digit Numbers",
+        "url": "/en/comparing-three-digit-numbers.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "three-digit-place-value",
+    "title": "Hundreds, tens, and ones",
+    "types": [
+      "three-digit-expanded-form"
+    ],
+    "worksheets": [
+      {
+        "title": "Three-Digit Expanded Form",
+        "url": "/en/three-digit-expanded-form.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "tens-and-ones",
+    "title": "Understand tens and ones",
+    "types": [
+      "two-digit-expanded-form"
+    ],
+    "worksheets": [
+      {
+        "title": "Tens and Ones Expanded Form",
+        "url": "/en/tens-and-ones-expanded-form.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "time-hours-half-hours",
+    "title": "Tell time to the hour and half hour",
+    "types": [
+      "clock-hours-half-hours"
+    ],
+    "worksheets": [
+      {
+        "title": "Telling Time: Hours and Half Hours",
+        "url": "/en/telling-time-hours-half-hours.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "time-five-minutes",
+    "title": "Tell time to five minutes",
+    "types": [
+      "clock-five-minutes"
+    ],
+    "worksheets": [
+      {
+        "title": "Telling Time to Five Minutes",
+        "url": "/en/telling-time-five-minutes.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "rectangle-perimeter",
+    "title": "Understand rectangle perimeter",
+    "types": [
+      "rectangle-perimeter"
+    ],
+    "worksheets": [
+      {
+        "title": "Rectangle Perimeter Worksheets",
+        "url": "/en/rectangle-perimeter-worksheets.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "area-square-units",
+    "title": "Understand area in square units",
+    "types": [
+      "area-count-square-units"
+    ],
+    "worksheets": [
+      {
+        "title": "Counting Square Units: Area",
+        "url": "/en/counting-square-units-area.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "volume-unit-cubes",
+    "title": "Understand volume with unit cubes",
+    "types": [
+      "volume-unit-cube-layers"
+    ],
+    "worksheets": [
+      {
+        "title": "Volume with Layers of Unit Cubes",
+        "url": "/en/volume-unit-cube-layers.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "coordinate-plane",
+    "title": "Read points on the coordinate plane",
+    "types": [
+      "coordinate-ordered-pairs"
+    ],
+    "worksheets": [
+      {
+        "title": "Reading Ordered Pairs",
+        "url": "/en/reading-ordered-pairs.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "rounding",
+    "title": "Round to tens and hundreds",
+    "types": [
+      "rounding-tens-hundreds"
+    ],
+    "worksheets": [
+      {
+        "title": "Rounding to Tens and Hundreds",
+        "url": "/en/rounding-tens-hundreds.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "compare-large-numbers",
+    "title": "Compare large whole numbers",
+    "types": [
+      "compare-large-whole-numbers"
+    ],
+    "worksheets": [
+      {
+        "title": "Comparing Large Whole Numbers",
+        "url": "/en/comparing-large-whole-numbers.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "rounding-decimals",
+    "title": "Round decimals to whole numbers and tenths",
+    "types": [
+      "rounding-decimals"
+    ],
+    "worksheets": [
+      {
+        "title": "Rounding Decimals",
+        "url": "/en/rounding-decimals.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "compare-two-digit-numbers",
+    "title": "Compare two-digit numbers",
+    "types": [
+      "compare-two-digit-numbers"
+    ],
+    "worksheets": [
+      {
+        "title": "Comparing Two-Digit Numbers",
+        "url": "/en/comparing-two-digit-numbers.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "ten-more-less",
+    "title": "Ten more and ten less",
+    "types": [
+      "ten-more-less"
+    ],
+    "worksheets": [
+      {
+        "title": "Ten More and Ten Less",
+        "url": "/en/ten-more-ten-less.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "equal-parts",
+    "title": "Halves, thirds, and fourths",
+    "types": [
+      "rectangle-equal-parts"
+    ],
+    "worksheets": [
+      {
+        "title": "Halves, Thirds, and Fourths",
+        "url": "/en/halves-thirds-fourths-rectangles.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "odd-even",
+    "title": "Odd and even groups",
+    "types": [
+      "odd-even-within-20"
+    ],
+    "worksheets": [
+      {
+        "title": "Odd and Even Numbers Within 20",
+        "url": "/en/odd-even-numbers-within-20.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "order-lengths",
+    "title": "Order three lengths",
+    "types": [
+      "order-three-lengths"
+    ],
+    "worksheets": [
+      {
+        "title": "Ordering Three Lengths",
+        "url": "/en/ordering-three-lengths.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "read-graphs",
+    "title": "Read and compare graph data",
+    "types": [
+      "read-vote-graphs"
+    ],
+    "worksheets": [
+      {
+        "title": "Reading Vote Graphs",
+        "url": "/en/reading-vote-graphs.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "read-measurement-plots",
+    "title": "Read measurement line plots",
+    "types": [
+      "read-whole-number-lineplots"
+    ],
+    "worksheets": [
+      {
+        "title": "Reading Whole-Number Line Plots",
+        "url": "/en/reading-whole-number-line-plots.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "understand-equality",
+    "title": "Understand the equal sign",
+    "types": [
+      "addition-equations-true-false"
+    ],
+    "worksheets": [
+      {
+        "title": "True or False Addition Equations",
+        "url": "/en/true-false-addition-equations.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "missing-factors-dividends",
+    "title": "Missing factors and dividends",
+    "types": [
+      "missing-factor-dividend"
+    ],
+    "worksheets": [
+      {
+        "title": "Missing Factors and Dividends",
+        "url": "/en/missing-factors-and-dividends.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "compare-unlike-fractions",
+    "title": "Compare fractions with unlike denominators",
+    "types": [
+      "fraction-compare-unlike-denominators"
+    ],
+    "worksheets": [
+      {
+        "title": "Comparing Fractions with Unlike Denominators",
+        "url": "/en/comparing-fractions-unlike-denominators.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "tenths-hundredths-decimals",
+    "title": "Tenths, hundredths, and decimals",
+    "types": [
+      "tenths-hundredths-decimals"
+    ],
+    "worksheets": [
+      {
+        "title": "Tenths, Hundredths, and Decimals",
+        "url": "/en/tenths-hundredths-and-decimals.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "powers-of-ten",
+    "title": "Multiply and divide by powers of ten",
+    "types": [
+      "multiply-divide-powers-ten"
+    ],
+    "worksheets": [
+      {
+        "title": "Multiply and Divide by 10, 100, and 1,000",
+        "url": "/en/multiply-divide-by-10-100-1000.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "prime-composite-multiples",
+    "title": "Prime, composite, and multiples",
+    "types": [
+      "prime-composite-multiples"
+    ],
+    "worksheets": [
+      {
+        "title": "Prime, Composite, and Multiples",
+        "url": "/en/prime-composite-numbers-and-multiples.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "quadrilateral-families",
+    "title": "Quadrilateral families",
+    "types": [
+      "quadrilateral-families"
+    ],
+    "worksheets": [
+      {
+        "title": "Quadrilateral Families",
+        "url": "/en/quadrilateral-rectangle-square-families.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "ten-hundred-more-less",
+    "title": "10 or 100 more or less",
+    "types": [
+      "ten-hundred-more-less"
+    ],
+    "worksheets": [
+      {
+        "title": "10 or 100 More or Less",
+        "url": "/en/ten-hundred-more-less.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "skip-count-five-ten-hundred",
+    "title": "Count forward by 5, 10, and 100",
+    "types": [
+      "skip-count-five-ten-hundred"
+    ],
+    "worksheets": [
+      {
+        "title": "Count Forward by 5, 10, and 100",
+        "url": "/en/skip-counting-by-5-10-100.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "elapsed-time-word-problems",
+    "title": "Elapsed time word problems",
+    "types": [
+      "elapsed-time-word-problems"
+    ],
+    "worksheets": [
+      {
+        "title": "Elapsed Time Word Problems",
+        "url": "/en/elapsed-time-word-problems.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "three-digit-number-names",
+    "title": "Three-digit number names",
+    "types": [
+      "three-digit-number-names"
+    ],
+    "worksheets": [
+      {
+        "title": "Three-Digit Number Names",
+        "url": "/en/three-digit-number-names.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "rectangle-square-symmetry",
+    "title": "Lines of symmetry",
+    "types": [
+      "rectangle-square-symmetry"
+    ],
+    "worksheets": [
+      {
+        "title": "Square and Rectangle Symmetry",
+        "url": "/en/square-rectangle-lines-of-symmetry.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "lines-rays-segments",
+    "title": "Lines, rays, and segments",
+    "types": [
+      "lines-rays-segments"
+    ],
+    "worksheets": [
+      {
+        "title": "Lines, Rays, and Segments",
+        "url": "/en/lines-rays-line-segments.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "shape-composition",
+    "title": "Build and draw shapes",
+    "types": [
+      "shape-composition"
+    ],
+    "worksheets": [
+      {
+        "title": "Build and Draw Shapes",
+        "url": "/en/build-and-draw-shapes.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "measurement-unit-conversions",
+    "title": "Measurement unit conversions",
+    "types": [
+      "measurement-unit-conversions"
+    ],
+    "worksheets": [
+      {
+        "title": "Measurement Unit Conversions",
+        "url": "/en/measurement-unit-conversions.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "measure-draw-angles",
+    "title": "Measure and draw angles",
+    "types": [
+      "measure-draw-angles"
+    ],
+    "worksheets": [
+      {
+        "title": "Measure and Draw Angles",
+        "url": "/en/measuring-drawing-angles.html"
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "read-quarter-unit-lineplots",
+    "title": "Read fraction measurement plots",
+    "types": [
+      "read-quarter-unit-lineplots"
+    ],
+    "worksheets": [
+      {
+        "title": "Read Fraction Measurement Plots",
+        "url": "/en/reading-fraction-line-plots.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "estimate-measure-book",
+    "title": "Estimate and measure length",
+    "types": [
+      "estimate-measure-book"
+    ],
+    "worksheets": [
+      {
+        "title": "Estimate and Measure a Book",
+        "url": "/en/estimate-measure-book-length.html"
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "id": "shape-attributes",
+    "title": "Sides, corners, and faces",
+    "types": [
+      "shape-attributes"
+    ],
+    "worksheets": [
+      {
+        "title": "Sides, Corners, and Faces",
+        "url": "/en/shape-sides-corners-faces.html"
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "decimal-compare-hundredths",
+    "title": "Compare decimals through hundredths",
+    "types": [
+      "decimal-compare-hundredths"
+    ],
+    "worksheets": [
+      {
+        "title": "Compare Decimals Through Hundredths",
+        "url": "/en/compare-decimals-hundredths.html"
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "measurement-units-larger",
+    "title": "Convert to larger units",
+    "types": [
+      "measurement-units-larger"
+    ],
+    "worksheets": [
+      {
+        "title": "Convert to Larger Units",
+        "url": "/en/measurement-units-larger.html"
+      }
+    ]
+  },
+  {
+    "grade": 1,
+    "id": "legacy-shape",
+    "title": "Shape detectives",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "legacy-data",
+    "title": "Picture data",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "legacy-three",
+    "title": "Three numbers together",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "legacy-count120",
+    "title": "Number paths to 120",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "legacy-unit-length",
+    "title": "Measure with equal units",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "legacy-halves",
+    "title": "Halves and fourths",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-money",
+    "title": "Count the coins",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-length",
+    "title": "Measure and compare",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-arrays",
+    "title": "Rows and columns",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-measure-tools",
+    "title": "Choose a measuring tool",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-measure-units",
+    "title": "Measure in two units",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-numberline",
+    "title": "Numbers on a line",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 2,
+    "id": "legacy-tile",
+    "title": "Tile a rectangle",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 3,
+    "id": "legacy-data",
+    "title": "Scaled bar graphs",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 3,
+    "id": "legacy-properties",
+    "title": "Multiplication strategies",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 3,
+    "id": "legacy-stories",
+    "title": "Two-step operation stories",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 3,
+    "id": "legacy-patterns",
+    "title": "Arithmetic patterns",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 3,
+    "id": "legacy-equal-area",
+    "title": "Equal-area parts",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-mul",
+    "title": "Multi-digit multiplication",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-equivalent",
+    "title": "Equivalent fractions",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-angle",
+    "title": "Angles and turns",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-place",
+    "title": "Place-value patterns",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-stories",
+    "title": "Multi-step stories and remainders",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-patterns",
+    "title": "Rules and number patterns",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-ten-times",
+    "title": "Ten times the place value",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-round",
+    "title": "Round to any whole-number place",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-large-mul",
+    "title": "Four-digit and two-digit products",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-measure-stories",
+    "title": "Measurement word problems",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-area-perimeter",
+    "title": "Area and perimeter formulas",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-lineplot",
+    "title": "Fraction measurement line plots",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "legacy-shape-class",
+    "title": "Classify triangles and quadrilaterals",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-decimal",
+    "title": "Decimal operations",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-fractionMul",
+    "title": "Multiply fractions",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-unitDiv",
+    "title": "Divide with unit fractions",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-volume",
+    "title": "Volume lab",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-paired-patterns",
+    "title": "Patterns and ordered pairs",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-decimal-mul",
+    "title": "Multiply decimals",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-decimal-div",
+    "title": "Divide decimals exactly",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-fraction-division",
+    "title": "Fractions as division",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-scaling",
+    "title": "Multiplication as scaling",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-unit-sharing",
+    "title": "Unit-fraction sharing stories",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-convert",
+    "title": "Convert measurement units",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-lineplot",
+    "title": "Fraction data and line plots",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-volume-parts",
+    "title": "Add volumes of joined prisms",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-shape-properties",
+    "title": "Shape properties and families",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 5,
+    "id": "legacy-shape-hierarchy",
+    "title": "Shape classification hierarchy",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "multi-digit-products",
+    "title": "Multi-Digit Multiplication",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 4,
+    "id": "multi-digit-addition",
+    "title": "Multi-Digit Addition",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "counting-comparing",
+    "title": "Count & compare picture groups",
+    "types": [
+      "kindergarten-count-write",
+      "kindergarten-compare-groups",
+      "kindergarten-circle-pictures",
+      "kindergarten-number-words",
+      "kindergarten-order-numbers",
+      "kindergarten-before-after",
+      "kindergarten-number-line",
+      "kindergarten-ordinal-pictures"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "addition-subtraction-within-5",
+    "title": "Add & subtract within 5",
+    "types": [
+      "kindergarten-picture-add-sub",
+      "word-problems-kindergarten-within-5"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "addition-subtraction-within-10",
+    "title": "Act out stories within 10",
+    "description": "After small-group stories within 5, use objects or drawings for joining and taking away within 10. An adult can read and record the equation while the child moves or draws counters.",
+    "types": [
+      "word-problems-kindergarten-within-10"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "make-ten",
+    "title": "Make 10 with pictures",
+    "types": [
+      "kindergarten-ten-frame",
+      "kindergarten-make-ten-missing"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "compare-lengths",
+    "title": "Compare lengths",
+    "types": [
+      "kindergarten-compare-lengths"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "sort-count-shapes",
+    "title": "Sort & count shapes",
+    "types": [
+      "kindergarten-count-by-shape"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "name-flat-shapes",
+    "title": "Name & describe flat shapes",
+    "types": [
+      "kindergarten-name-flat-shapes",
+      "kindergarten-count-shape-sides"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "repeating-patterns",
+    "title": "Repeating patterns · enrichment",
+    "types": [
+      "kindergarten-repeating-patterns"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "number-bonds",
+    "title": "Break apart numbers within 9",
+    "types": [
+      "kindergarten-missing-part-bonds"
+    ],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "hands-on-numbers",
+    "title": "Count, Trace, Match & Connect",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 0,
+    "id": "hands-on-shapes",
+    "title": "Sort & Compose Shapes",
+    "types": [],
+    "worksheets": []
+  },
+  {
+    "grade": 1,
+    "id": "printable-whole",
+    "title": "Number practice & printable charts",
+    "types": []
+  },
+  {
+    "grade": 0,
+    "id": "printable-whole",
+    "title": "Number practice & printable charts",
+    "types": []
+  },
+  {
+    "grade": 4,
+    "id": "printable-whole",
+    "title": "Number practice & printable charts",
+    "types": []
+  },
+  {
+    "grade": 3,
+    "id": "printable-fractions",
+    "title": "Fraction models",
+    "types": []
+  },
+  {
+    "grade": 3,
+    "id": "printable-whole",
+    "title": "Number practice & printable charts",
+    "types": []
+  },
+  {
+    "grade": 0,
+    "id": "printable-geometry",
+    "title": "Shapes & position",
+    "types": []
+  },
+  {
+    "grade": 0,
+    "id": "printable-measurement",
+    "title": "Comparing sizes",
+    "types": []
+  },
+  {
+    "grade": 2,
+    "id": "printable-data",
+    "title": "Sorting & tally marks",
+    "types": []
+  },
+  {
+    "grade": 1,
+    "id": "printable-data",
+    "title": "Sorting & tally marks",
+    "types": []
+  },
+  {
+    "grade": 5,
+    "id": "printable-whole",
+    "title": "Number practice",
+    "types": []
+  },
+  {
+    "grade": 2,
+    "id": "printable-measurement",
+    "title": "Measurement practice",
+    "types": []
+  },
+  {
+    "grade": 6,
+    "id": "six-decimals",
+    "title": "Decimal operations",
+    "types": []
+  },
+  {
+    "grade": 6,
+    "id": "six-fraction-division",
+    "title": "Fraction division",
+    "types": []
+  },
+  {
+    "grade": 6,
+    "id": "six-factors-multiples",
+    "title": "Factors and multiples",
+    "types": []
+  }
+]

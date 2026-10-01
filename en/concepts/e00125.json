@@ -1,0 +1,7 @@
+{
+  "id": "e00125",
+  "title": "Volume of Composite Rectangular Prisms",
+  "intro": "Split the solid into non-overlapping rectangular prisms. Find each volume using length × width × height, then add the volumes.",
+  "html": "<h2>Volume of Composite Rectangular Prisms</h2><p>Split the solid into non-overlapping rectangular prisms. Find each volume using length × width × height, then add the volumes.</p><h3>Worked example</h3><div class=\"model\"><p>One part measures 4 × 3 × 2 units, so its volume is 24 cubic units. Another measures 2 × 3 × 1, so its volume is 6. Together they have volume 30 cubic units.</p></div><h3>Watch out</h3><p>Do not count an overlapping region twice. Use cubic units for volume.</p>",
+  "origin": "new"
+}

@@ -1,0 +1,1721 @@
+[
+  {
+    "title": "Addition Within 20 Worksheets",
+    "summary": "Count on or make ten to add two numbers.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/add-small.html",
+    "conceptId": "e00001",
+    "worksheetId": "w00001-1"
+  },
+  {
+    "title": "Picture Addition Worksheets",
+    "summary": "Count two groups of pictures and write the matching addition equation.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/picture-addition.html",
+    "conceptId": "e00001",
+    "worksheetId": "w00001-2"
+  },
+  {
+    "title": "2-Digit Addition Without Regrouping Worksheets",
+    "summary": "Add tens to tens and ones to ones without exchanging ten ones.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/add-two.html",
+    "conceptId": "e00002",
+    "worksheetId": "w00002-1"
+  },
+  {
+    "title": "Single Digit Multiplication Worksheets",
+    "summary": "Use equal groups and arrays to practise multiplication facts with factors from 2 to 9.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/multiply-one.html",
+    "conceptId": "e00003",
+    "worksheetId": "w00003-1"
+  },
+  {
+    "title": "Adding Fractions With Like Denominators Worksheets",
+    "summary": "Add equal-sized parts; simplify sums that may be greater than one.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/fraction-add-same.html",
+    "conceptId": "e00004",
+    "worksheetId": "w00004-1"
+  },
+  {
+    "title": "Adding Decimals to Hundredths Worksheets",
+    "summary": "Align decimal points and exchange ten hundredths for one tenth.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/decimal-add-2.html",
+    "conceptId": "e00005",
+    "worksheetId": "w00005-1"
+  },
+  {
+    "title": "Quadrilateral Families Worksheets",
+    "summary": "Explain rectangle and square families, then draw a different quadrilateral.",
+    "grade": 3,
+    "topic": "Shapes",
+    "url": "/en/quadrilateral-rectangle-square-families.html",
+    "conceptId": "e00006",
+    "worksheetId": "w00006-1"
+  },
+  {
+    "title": "Telling Time to Five Minutes Worksheets",
+    "summary": "Count minutes in fives and check the hour hand.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/telling-time-five-minutes.html",
+    "conceptId": "e00007",
+    "worksheetId": "w00007-1"
+  },
+  {
+    "title": "Count Forward by 5, 10, and 100 Worksheets",
+    "summary": "Complete two missing numbers in each equal-jump sequence.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/skip-counting-by-5-10-100.html",
+    "conceptId": "e00008",
+    "worksheetId": "w00008-1"
+  },
+  {
+    "title": "Reading Vote Graphs Worksheets",
+    "summary": "Count votes, find totals, and compare groups in unit-block graphs.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/reading-vote-graphs.html",
+    "conceptId": "e00009",
+    "worksheetId": "w00009-1"
+  },
+  {
+    "title": "Subtraction Within 10 Worksheets",
+    "summary": "Take away or count back, including subtracting zero and subtracting a number from itself.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/subtract-small.html",
+    "conceptId": "e00010",
+    "worksheetId": "w00010-1"
+  },
+  {
+    "title": "2-Digit Subtraction Without Regrouping Worksheets",
+    "summary": "Keep the place values aligned and subtract without exchanging a ten.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/subtract-two.html",
+    "conceptId": "e00011",
+    "worksheetId": "w00011-1"
+  },
+  {
+    "title": "2-Digit Subtraction With Regrouping Worksheets",
+    "summary": "Exchange one ten for ten ones and subtract within 100.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/subtract-borrow.html",
+    "conceptId": "e00012",
+    "worksheetId": "w00012-1"
+  },
+  {
+    "title": "Missing Addend Worksheets Within 20",
+    "summary": "Find the missing part of an addition equation; use counting on or subtraction.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/missing.html",
+    "conceptId": "e00013",
+    "worksheetId": "w00013-1"
+  },
+  {
+    "title": "2-Digit Addition With Regrouping Worksheets",
+    "summary": "Exchange ten ones for a ten and keep the total within 100.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/add-carry.html",
+    "conceptId": "e00014",
+    "worksheetId": "w00014-1"
+  },
+  {
+    "title": "Subtracting Fractions With Like Denominators Worksheets",
+    "summary": "Take away equal-sized parts of the same whole and simplify the difference.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/fraction-sub-same.html",
+    "conceptId": "e00015",
+    "worksheetId": "w00015-1"
+  },
+  {
+    "title": "Division Without Remainders Worksheets",
+    "summary": "Share equally or make equal groups, then check each quotient with multiplication.",
+    "grade": 3,
+    "topic": "Division",
+    "url": "/en/divide.html",
+    "conceptId": "e00016",
+    "worksheetId": "w00016-1"
+  },
+  {
+    "title": "Addition and Subtraction Word Problems Within 20",
+    "summary": "Read joining and taking-away stories, choose an equation, and answer in context.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-within20-word-problems.html",
+    "conceptId": "e00017",
+    "worksheetId": "w00017-1"
+  },
+  {
+    "title": "3rd Grade Multiplication and Division Word Problems",
+    "summary": "Choose mixed facts, zero-and-one groups, or two- and three-digit group amounts. Explain what the answer counts.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-facts-word-problems.html",
+    "conceptId": "e00018",
+    "worksheetId": "w00018-1"
+  },
+  {
+    "title": "Find the Starting Amount Word Problems",
+    "summary": "Work backward from a final total to find how many there were before.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/find-the-unknown-word-problems.html",
+    "conceptId": "e00019",
+    "worksheetId": "w00019-1"
+  },
+  {
+    "title": "More and Fewer Comparison Word Problems",
+    "summary": "Identify the known amount and compare two people’s collections.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/compare-word-problems-more-fewer.html",
+    "conceptId": "e00020",
+    "worksheetId": "w00020-1"
+  },
+  {
+    "title": "Word Problems With Extra Information",
+    "summary": "Choose the useful quantities instead of calculating with every number.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/word-problems-with-extra-information.html",
+    "conceptId": "e00021",
+    "worksheetId": "w00021-1"
+  },
+  {
+    "title": "Find the Missing Change Word Problems",
+    "summary": "Use the starting amount and what remains to find how many cents were spent.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/change-unknown-word-problems.html",
+    "conceptId": "e00022",
+    "worksheetId": "w00022-1"
+  },
+  {
+    "title": "Addition & Subtraction Word Problems Within 100",
+    "summary": "Choose an operation for a joining or taking-away story, then solve within 100.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-2-within100-word-problems.html",
+    "conceptId": "e00023",
+    "worksheetId": "w00023-1"
+  },
+  {
+    "title": "Addition & Subtraction Within 1,000 Worksheets",
+    "summary": "Use hundreds, tens, and ones to add or subtract, with room to show your strategy.",
+    "grade": 3,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-horizontal-practice.html",
+    "conceptId": "e00024",
+    "worksheetId": "w00024-1"
+  },
+  {
+    "title": "Addition and Subtraction Word Problems Within 1,000",
+    "summary": "Explain a joining or taking-away situation and check the calculation with place value.",
+    "grade": 3,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-within1000-word-problems.html",
+    "conceptId": "e00025",
+    "worksheetId": "w00025-1"
+  },
+  {
+    "title": "Choose an Equation Word Problems",
+    "summary": "Decide whether addition or subtraction finds the missing quantity in the story.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/choose-operation-word-problems.html",
+    "conceptId": "e00026",
+    "worksheetId": "w00026-1"
+  },
+  {
+    "title": "Bar Model Word Problems",
+    "summary": "Use a whole-and-parts diagram to find the total, the starting amount, or the amount used.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/bar-model-word-problems.html",
+    "conceptId": "e00027",
+    "worksheetId": "w00027-1"
+  },
+  {
+    "title": "Same Numbers, Different Questions Word Problems",
+    "summary": "Compare two stories with the same numbers: find the new total in one and the starting amount in the other.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/same-numbers-different-questions-word-problems.html",
+    "conceptId": "e00028",
+    "worksheetId": "w00028-1"
+  },
+  {
+    "title": "Explain Your Thinking Word Problems",
+    "summary": "Explain why the equation fits a taking-away story.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/explain-your-thinking-word-problems.html",
+    "conceptId": "e00029",
+    "worksheetId": "w00029-1"
+  },
+  {
+    "title": "Error Analysis Word Problems: Find and Fix the Mistake",
+    "summary": "Correct a friend who chooses addition just because more items arrive.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/error-analysis-word-problems.html",
+    "conceptId": "e00030",
+    "worksheetId": "w00030-1"
+  },
+  {
+    "title": "Write Your Own Question Word Problems",
+    "summary": "Write a question about the total, then answer it with an addition equation using whole dollars.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/write-your-own-question-word-problems.html",
+    "conceptId": "e00031",
+    "worksheetId": "w00031-1"
+  },
+  {
+    "title": "Multi-Digit Addition and Subtraction Word Problems",
+    "summary": "Add and subtract cable lengths within 1,000,000 and label the answer in feet.",
+    "grade": 4,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-largeadd-word-problems.html",
+    "conceptId": "e00032",
+    "worksheetId": "w00032-1"
+  },
+  {
+    "title": "2-Digit Multiplication Word Problems: Rectangle Area",
+    "summary": "Multiply two two-digit side lengths to find a rectangular field’s area in square feet.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-mul2-word-problems.html",
+    "conceptId": "e00033",
+    "worksheetId": "w00033-1"
+  },
+  {
+    "title": "4-Digit Division Word Problems With and Without Remainders",
+    "summary": "Find complete groups or cable pieces, and record what is left separately from the quotient.",
+    "grade": 4,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-div1-word-problems.html",
+    "conceptId": "e00034",
+    "worksheetId": "w00034-1"
+  },
+  {
+    "title": "4-Digit by 1-Digit Multiplication Word Problems",
+    "summary": "Use place-value partial products to find rectangle area from a four-digit length and a one-digit width.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-mul4-word-problems.html",
+    "conceptId": "e00035",
+    "worksheetId": "w00035-1"
+  },
+  {
+    "title": "Adding and Subtracting Fractions Word Problems With Like Denominators",
+    "summary": "Combine or remove fractional cable lengths measured using the same one-foot whole.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-likefractions-word-problems.html",
+    "conceptId": "e00036",
+    "worksheetId": "w00036-1"
+  },
+  {
+    "title": "Adding and Subtracting Decimals Word Problems",
+    "summary": "Combine cable lengths or find what remains, using place value through hundredths.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-decimals-word-problems.html",
+    "conceptId": "e00037",
+    "worksheetId": "w00037-1"
+  },
+  {
+    "title": "Subtracting Decimals to Hundredths Worksheets",
+    "summary": "Align decimal points and rename tenths and hundredths before subtracting.",
+    "grade": 5,
+    "topic": "Subtraction",
+    "url": "/en/decimal-sub-2.html",
+    "conceptId": "e00038",
+    "worksheetId": "w00038-1"
+  },
+  {
+    "title": "Multiplying Decimals Worksheets – Tenths by Tenths",
+    "summary": "Use tenths and hundredths to explain the product, then show your work.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/decimal-mul-1.html",
+    "conceptId": "e00039",
+    "worksheetId": "w00039-1"
+  },
+  {
+    "title": "Dividing Decimals Worksheets – Tenths by Tenths",
+    "summary": "Scale both numbers together, divide exactly, and check with multiplication.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/decimal-div-1.html",
+    "conceptId": "e00040",
+    "worksheetId": "w00040-1"
+  },
+  {
+    "title": "Multiplying Fractions by Whole Numbers Worksheets",
+    "summary": "Count repeated groups of equal fraction parts and simplify the product.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/fraction-mul-proper-whole.html",
+    "conceptId": "e00041",
+    "worksheetId": "w00041-1"
+  },
+  {
+    "title": "Fraction Multiplication Word Problems: Rectangle Area",
+    "summary": "Multiply a fractional side length by a whole-number side to find area in square feet.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-fractionwhole-word-problems.html",
+    "conceptId": "e00042",
+    "worksheetId": "w00042-1"
+  },
+  {
+    "title": "Multiplying Two Fractions Word Problems: Area",
+    "summary": "Find rectangle area when both side lengths are written as fractions; include lengths greater than one foot.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-fractionmul-word-problems.html",
+    "conceptId": "e00043",
+    "worksheetId": "w00043-1"
+  },
+  {
+    "title": "Adding and Subtracting Fractions Word Problems With Unlike Denominators",
+    "summary": "Use equivalent fractions to combine or remove cable lengths measured against the same one-foot whole.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-unlike-word-problems.html",
+    "conceptId": "e00044",
+    "worksheetId": "w00044-1"
+  },
+  {
+    "title": "Dividing Whole Numbers by Unit Fractions Word Problems",
+    "summary": "Count fractional-foot cable pieces in a whole-number length, using equal groups and multiplication to check.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-unitdivide-word-problems.html",
+    "conceptId": "e00045",
+    "worksheetId": "w00045-1"
+  },
+  {
+    "title": "4-Digit by 2-Digit Division Word Problems",
+    "summary": "Use estimates and partial quotients to find complete groups with two-digit divisors, then interpret any remainder. Choose a smaller exact-group activity before four-digit totals.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-div-word-problems.html",
+    "conceptId": "e00046",
+    "worksheetId": "w00046-1"
+  },
+  {
+    "title": "3-Digit by 2-Digit Multiplication Word Problems",
+    "summary": "Find rectangle area using a three-digit length and two-digit width; connect partial products to the written multiplication method.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-mul-word-problems.html",
+    "conceptId": "e00047",
+    "worksheetId": "w00047-1"
+  },
+  {
+    "title": "Adding Four 2-Digit Numbers Word Problems",
+    "summary": "Combine four boxes of counters. Pair friendly sums or add tens and ones, keeping every box in the total.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-2-fouradd-word-problems.html",
+    "conceptId": "e00048",
+    "worksheetId": "w00048-1"
+  },
+  {
+    "title": "Multiplying by Multiples of 10 Word Problems",
+    "summary": "Count equal boxes of 10–90 counters. Use a known multiplication fact to find the number of tens, then express the total in ones.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-3-tensmul-word-problems.html",
+    "conceptId": "e00049",
+    "worksheetId": "w00049-1"
+  },
+  {
+    "title": "Adding and Subtracting Tens Word Problems",
+    "summary": "Combine or remove whole tens of counters. Explain the place value, including stories where zero counters change or remain.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-tens-word-problems.html",
+    "conceptId": "e00050",
+    "worksheetId": "w00050-1"
+  },
+  {
+    "title": "Order of Operations Word Problems with Parentheses",
+    "summary": "Add two colors of counters in each box, then multiply by the number of boxes. Explain what the parentheses group together.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-5-expressions-word-problems.html",
+    "conceptId": "e00051",
+    "worksheetId": "w00051-1"
+  },
+  {
+    "title": "Factors and Factor Pairs Word Problems",
+    "summary": "Arrange counters into equal rows with none left. Find every possible count per row and check that the factor list is complete.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/print/common-core-arithmetic-upper/grade-4-factors-word-problems.html",
+    "conceptId": "e00052",
+    "worksheetId": "w00052-1"
+  },
+  {
+    "title": "2-Digit Plus 1-Digit Addition Word Problems",
+    "summary": "Add 0–9 more counters to a two-digit collection. Count on, add the ones, or make the next ten; sums stay below 100.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/print/common-core-arithmetic/grade-1-add100-word-problems.html",
+    "conceptId": "e00053",
+    "worksheetId": "w00053-1"
+  },
+  {
+    "title": "Two-Step Addition and Subtraction Word Problems",
+    "summary": "Find a new total, then subtract what is given away. Follow both changes with small numbers.",
+    "grade": 2,
+    "topic": "Addition",
+    "url": "/en/print/grade-2-two-step-word-problems-worksheet.html",
+    "conceptId": "e00054",
+    "worksheetId": "w00054-1"
+  },
+  {
+    "title": "Two-Step Multiplication and Subtraction Word Problems",
+    "summary": "Find the number of pencils in equal boxes, then subtract the pencils used. Explain both steps.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/print/grade-skills/grade-3-two-step-word-problems-worksheet.html",
+    "conceptId": "e00055",
+    "worksheetId": "w00055-1"
+  },
+  {
+    "title": "Length Word Problems in Centimeters",
+    "summary": "Join two ribbon lengths, then cut some off. Model both steps and label the remaining length in centimeters.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/print/grade-2-length-word-problems-worksheet.html",
+    "conceptId": "e00056",
+    "worksheetId": "w00056-1"
+  },
+  {
+    "title": "Liters and Grams Word Problems",
+    "summary": "Find the total in equal containers or the amount left after use. Keep liters and grams in separate problems.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/print/grade-skills/grade-4-measurement-word-problems-worksheet.html",
+    "conceptId": "e00057",
+    "worksheetId": "w00057-1"
+  },
+  {
+    "title": "Division Word Problems: Round Up the Remainder",
+    "summary": "Find the fewest vans that seat every student. Compare exact division with a remainder that needs one more van.",
+    "grade": 4,
+    "topic": "Division",
+    "url": "/en/print/grade-skills/grade-4-multi-step-word-problems-worksheet.html",
+    "conceptId": "e00058",
+    "worksheetId": "w00058-1"
+  },
+  {
+    "title": "Fraction Multiplication Word Problems: Recipes",
+    "summary": "Make a fraction of a recipe. Scale amounts below and above one cup while keeping the cup unit.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/print/grade-skills/grade-5-fraction-and-mixed-number-word-problems-worksheet.html",
+    "conceptId": "e00059",
+    "worksheetId": "w00059-1"
+  },
+  {
+    "title": "Missing Part Word Problems — Within 100 or 1,000",
+    "summary": "Find a missing part or an amount needed to reach a target. Choose practice within 100 or extend to 1,000.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/missing-part-word-problems-within-100.html",
+    "conceptId": "e00060",
+    "worksheetId": "w00060-1"
+  },
+  {
+    "title": "Missing Fraction Part Word Problems",
+    "summary": "Find a missing fraction amount, including mixed numbers, and check by adding the parts.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/missing-fraction-part-word-problems.html",
+    "conceptId": "e00061",
+    "worksheetId": "w00061-1"
+  },
+  {
+    "title": "Missing Fraction Part Word Problems With Unlike Denominators",
+    "summary": "Use a common denominator to find the missing part, then add the parts to check the total.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/missing-fraction-part-unlike-denominators-word-problems.html",
+    "conceptId": "e00062",
+    "worksheetId": "w00062-1"
+  },
+  {
+    "title": "Missing Decimal Part Word Problems",
+    "summary": "Find a missing decimal amount through hundredths. Align place values and check by adding the parts.",
+    "grade": 5,
+    "topic": "Addition",
+    "url": "/en/missing-decimal-part-word-problems.html",
+    "conceptId": "e00063",
+    "worksheetId": "w00063-1"
+  },
+  {
+    "title": "Dividing Decimals by Whole Numbers Word Problems",
+    "summary": "Measure how many full and partial groups fit in a decimal amount. Use exact decimal quotients and a multiplication check.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/dividing-decimals-by-whole-numbers-word-problems.html",
+    "conceptId": "e00064",
+    "worksheetId": "w00064-1"
+  },
+  {
+    "title": "Dividing by Decimals Word Problems",
+    "summary": "Compare decimal group sizes below and above one. Rename both quantities to divide and include partial groups.",
+    "grade": 5,
+    "topic": "Division",
+    "url": "/en/dividing-by-decimals-word-problems.html",
+    "conceptId": "e00065",
+    "worksheetId": "w00065-1"
+  },
+  {
+    "title": "Equal Groups Division Word Problems",
+    "summary": "Find group count or group size with division facts, or share larger totals to find two-digit amounts.",
+    "grade": 3,
+    "topic": "Division",
+    "url": "/en/equal-groups-division-word-problems.html",
+    "conceptId": "e00066",
+    "worksheetId": "w00066-1"
+  },
+  {
+    "title": "Fraction Scaling Word Problems: Making Amounts Larger",
+    "summary": "Multiply by a fraction greater than one. Separate the original amount, extra amount, and new total.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/fraction-scaling-up-word-problems.html",
+    "conceptId": "e00067",
+    "worksheetId": "w00067-1"
+  },
+  {
+    "title": "Difference Word Problems Within 20",
+    "summary": "Match two rows of counters to find how much less one amount is than another.",
+    "grade": 1,
+    "topic": "Subtraction",
+    "url": "/en/difference-word-problems-within-20.html",
+    "conceptId": "e00068",
+    "worksheetId": "w00068-1"
+  },
+  {
+    "title": "How Many More? Word Problems Within 20",
+    "summary": "Find the amount to add to reach a target. Fill the empty spaces and check the missing part.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/how-many-more-word-problems-within-20.html",
+    "conceptId": "e00069",
+    "worksheetId": "w00069-1"
+  },
+  {
+    "title": "Difference Word Problems — Within 100 or 1,000",
+    "summary": "Compare aligned bars and find the difference. Choose the default range within 100 or compare three-digit amounts within 1,000.",
+    "grade": 2,
+    "topic": "Subtraction",
+    "url": "/en/difference-word-problems-within-100.html",
+    "conceptId": "e00070",
+    "worksheetId": "w00070-1"
+  },
+  {
+    "title": "Multiplicative Comparison Word Problems",
+    "summary": "Compare one- or two-digit reference amounts using equal bar units and whole-number multipliers.",
+    "grade": 4,
+    "topic": "Multiplication",
+    "url": "/en/multiplicative-comparison-word-problems.html",
+    "conceptId": "e00071",
+    "worksheetId": "w00071-1"
+  },
+  {
+    "title": "Decimal Scaling Word Problems",
+    "summary": "Compare ribbon lengths using decimal multipliers below and above one. Explain the scale and keep exact answers.",
+    "grade": 5,
+    "topic": "Multiplication",
+    "url": "/en/decimal-scaling-word-problems.html",
+    "conceptId": "e00072",
+    "worksheetId": "w00072-1"
+  },
+  {
+    "title": "Comparing Fractions With the Same Denominator Worksheets",
+    "summary": "Compare equal-sized parts using >, <, or = and explain your choice.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/comparing-fractions-same-denominator.html",
+    "conceptId": "e00073",
+    "worksheetId": "w00073-1"
+  },
+  {
+    "title": "Decimal Place Value: Find the Digit Worksheets",
+    "summary": "Identify the tenths, hundredths, or thousandths digit, including zero.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/decimal-place-value-digits.html",
+    "conceptId": "e00074",
+    "worksheetId": "w00074-1"
+  },
+  {
+    "title": "Comparing Decimals Through Thousandths Worksheets",
+    "summary": "Align decimal places and compare using >, <, or =.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/comparing-decimals-thousandths.html",
+    "conceptId": "e00075",
+    "worksheetId": "w00075-1"
+  },
+  {
+    "title": "Simplifying Fractions Worksheets",
+    "summary": "Divide both numbers by a common factor while keeping the fraction value unchanged.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/simplifying-fractions.html",
+    "conceptId": "e00076",
+    "worksheetId": "w00076-1"
+  },
+  {
+    "title": "Finding Common Denominators Worksheets",
+    "summary": "Rewrite both fractions with the least common denominator without changing their values.",
+    "grade": 5,
+    "topic": "Fractions",
+    "url": "/en/common-denominator-fractions.html",
+    "conceptId": "e00077",
+    "worksheetId": "w00077-1"
+  },
+  {
+    "title": "Write Fractions From Shaded Parts Worksheets",
+    "summary": "Count all equal parts, then the shaded parts, to name the fraction shown.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/shaded-fraction-worksheets.html",
+    "conceptId": "e00078",
+    "worksheetId": "w00078-1"
+  },
+  {
+    "title": "Comparing Three-Digit Numbers Worksheets",
+    "summary": "Compare hundreds, tens, and ones using >, <, or =.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/comparing-three-digit-numbers.html",
+    "conceptId": "e00079",
+    "worksheetId": "w00079-1"
+  },
+  {
+    "title": "Fractions on a Number Line Worksheets",
+    "summary": "Count equal intervals from zero to name the fraction at a marked point.",
+    "grade": 3,
+    "topic": "Fractions",
+    "url": "/en/fractions-on-a-number-line.html",
+    "conceptId": "e00080",
+    "worksheetId": "w00080-1"
+  },
+  {
+    "title": "Place Value Worksheets: 3-Digit Expanded Form",
+    "summary": "Write hundreds, tens, and ones as a sum.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/three-digit-expanded-form.html",
+    "conceptId": "e00081",
+    "worksheetId": "w00081-1"
+  },
+  {
+    "title": "Tens and Ones Expanded Form Worksheets",
+    "summary": "Show the tens and ones in a two-digit number.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/tens-and-ones-expanded-form.html",
+    "conceptId": "e00082",
+    "worksheetId": "w00082-1"
+  },
+  {
+    "title": "Telling Time: Hours and Half Hours Worksheets",
+    "summary": "Read analog clocks and write the time to the hour or half hour.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/en/telling-time-hours-half-hours.html",
+    "conceptId": "e00083",
+    "worksheetId": "w00083-1"
+  },
+  {
+    "title": "Rectangle Perimeter Worksheets",
+    "summary": "Use labeled side lengths to find the distance around a rectangle.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/rectangle-perimeter-worksheets.html",
+    "conceptId": "e00084",
+    "worksheetId": "w00084-1"
+  },
+  {
+    "title": "Counting Square Units: Area Worksheets",
+    "summary": "Count equal square tiles and use rows to find area.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/counting-square-units-area.html",
+    "conceptId": "e00085",
+    "worksheetId": "w00085-1"
+  },
+  {
+    "title": "Volume with Layers of Unit Cubes Worksheets",
+    "summary": "Count cubes in one layer and multiply by the number of layers.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/en/volume-unit-cube-layers.html",
+    "conceptId": "e00086",
+    "worksheetId": "w00086-1"
+  },
+  {
+    "title": "Reading Ordered Pairs Worksheets",
+    "summary": "Read the horizontal and vertical position of a marked point.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/reading-ordered-pairs.html",
+    "conceptId": "e00087",
+    "worksheetId": "w00087-1"
+  },
+  {
+    "title": "Rounding to Tens and Hundreds Worksheets",
+    "summary": "Compare nearby multiples and round to the requested place.",
+    "grade": 3,
+    "topic": "Numbers",
+    "url": "/en/rounding-tens-hundreds.html",
+    "conceptId": "e00088",
+    "worksheetId": "w00088-1"
+  },
+  {
+    "title": "Comparing Large Whole Numbers Worksheets",
+    "summary": "Compare numbers below one million using place value.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/comparing-large-whole-numbers.html",
+    "conceptId": "e00089",
+    "worksheetId": "w00089-1"
+  },
+  {
+    "title": "Rounding Decimals Worksheets",
+    "summary": "Round to a whole number or tenth using nearby values.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/rounding-decimals.html",
+    "conceptId": "e00090",
+    "worksheetId": "w00090-1"
+  },
+  {
+    "title": "Comparing Two-Digit Numbers Worksheets",
+    "summary": "Compare tens first, then ones, using numbers from 10 to 99.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/comparing-two-digit-numbers.html",
+    "conceptId": "e00091",
+    "worksheetId": "w00091-1"
+  },
+  {
+    "title": "10 More and 10 Less Worksheets",
+    "summary": "Change one ten and keep the ones the same.",
+    "grade": 1,
+    "topic": "Numbers",
+    "url": "/en/ten-more-ten-less.html",
+    "conceptId": "e00092",
+    "worksheetId": "w00092-1"
+  },
+  {
+    "title": "Fractions Worksheets: Halves, Thirds, and Fourths",
+    "summary": "Divide rectangles into equal parts and shade one part.",
+    "grade": 2,
+    "topic": "Shapes",
+    "url": "/en/halves-thirds-fourths-rectangles.html",
+    "conceptId": "e00093",
+    "worksheetId": "w00093-1"
+  },
+  {
+    "title": "Odd and Even Numbers Worksheets Within 20",
+    "summary": "Classify numbers, draw pairs, and write equal addends.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/odd-even-numbers-within-20.html",
+    "conceptId": "e00094",
+    "worksheetId": "w00094-1"
+  },
+  {
+    "title": "Ordering Three Lengths Worksheets",
+    "summary": "Order three aligned strips and find the longest.",
+    "grade": 1,
+    "topic": "Measurement",
+    "url": "/en/ordering-three-lengths.html",
+    "conceptId": "e00095",
+    "worksheetId": "w00095-1"
+  },
+  {
+    "title": "Reading Whole-Number Line Plots Worksheets",
+    "summary": "Count measurements and read the frequency of a length.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/reading-whole-number-line-plots.html",
+    "conceptId": "e00096",
+    "worksheetId": "w00096-1"
+  },
+  {
+    "title": "Addition Equations Worksheets: True or False",
+    "summary": "Compare both sides of an addition equation and explain whether they match.",
+    "grade": 1,
+    "topic": "Addition",
+    "url": "/en/true-false-addition-equations.html",
+    "conceptId": "e00097",
+    "worksheetId": "w00097-1"
+  },
+  {
+    "title": "Missing Number Worksheets: Factors and Dividends",
+    "summary": "Use related multiplication and division facts to find the missing number.",
+    "grade": 3,
+    "topic": "Multiplication",
+    "url": "/en/missing-factors-and-dividends.html",
+    "conceptId": "e00098",
+    "worksheetId": "w00098-1"
+  },
+  {
+    "title": "Comparing Fractions with Unlike Denominators Worksheets",
+    "summary": "Compare fractions using equivalent fractions or a common benchmark.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/comparing-fractions-unlike-denominators.html",
+    "conceptId": "e00099",
+    "worksheetId": "w00099-1"
+  },
+  {
+    "title": "Fractions and Decimals Worksheets: Tenths and Hundredths",
+    "summary": "Connect hundredths to decimals and rename tenths as hundredths.",
+    "grade": 4,
+    "topic": "Fractions",
+    "url": "/en/tenths-hundredths-and-decimals.html",
+    "conceptId": "e00100",
+    "worksheetId": "w00100-1"
+  },
+  {
+    "title": "Multiply and Divide by 10, 100, and 1,000 Worksheets",
+    "summary": "Explain place-value changes when multiplying and dividing by powers of ten.",
+    "grade": 5,
+    "topic": "Numbers",
+    "url": "/en/multiply-divide-by-10-100-1000.html",
+    "conceptId": "e00101",
+    "worksheetId": "w00101-1"
+  },
+  {
+    "title": "Factors and Multiples Worksheets: Prime and Composite Numbers",
+    "summary": "Classify numbers and test multiples using factor facts.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/prime-composite-numbers-and-multiples.html",
+    "conceptId": "e00102",
+    "worksheetId": "w00102-1"
+  },
+  {
+    "title": "10 or 100 More and Less Worksheets",
+    "summary": "Add or remove one ten or one hundred using place value.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/ten-hundred-more-less.html",
+    "conceptId": "e00103",
+    "worksheetId": "w00103-1"
+  },
+  {
+    "title": "Elapsed Time Word Problems",
+    "summary": "Find elapsed minutes, starting times, and finishing times.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/elapsed-time-word-problems.html",
+    "conceptId": "e00104",
+    "worksheetId": "w00104-1"
+  },
+  {
+    "title": "Number Names Worksheets: 3-Digit Numbers",
+    "summary": "Read and write three-digit numbers in digits and words.",
+    "grade": 2,
+    "topic": "Numbers",
+    "url": "/en/three-digit-number-names.html",
+    "conceptId": "e00105",
+    "worksheetId": "w00105-1"
+  },
+  {
+    "title": "Square and Rectangle Symmetry Worksheets",
+    "summary": "Draw all symmetry lines on two original shapes.",
+    "grade": 4,
+    "topic": "Shapes",
+    "url": "/en/square-rectangle-lines-of-symmetry.html",
+    "conceptId": "e00106",
+    "worksheetId": "w00106-1"
+  },
+  {
+    "title": "Geometry Worksheets: Lines, Rays, and Line Segments",
+    "summary": "Identify parallel and perpendicular lines, then draw three types of figures.",
+    "grade": 4,
+    "topic": "Shapes",
+    "url": "/en/lines-rays-line-segments.html",
+    "conceptId": "e00107",
+    "worksheetId": "w00107-1"
+  },
+  {
+    "title": "Shape Worksheets: Building and Drawing Shapes",
+    "summary": "Join triangles, squares, and cubes, then sketch your models.",
+    "grade": 1,
+    "topic": "Shapes",
+    "url": "/en/build-and-draw-shapes.html",
+    "conceptId": "e00108",
+    "worksheetId": "w00108-1"
+  },
+  {
+    "title": "Measurement Conversion Worksheets",
+    "summary": "Convert four larger units to smaller units within the same system.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/en/measurement-unit-conversions.html",
+    "conceptId": "e00109",
+    "worksheetId": "w00109-1"
+  },
+  {
+    "title": "Angles Worksheets: Measuring and Drawing Angles",
+    "summary": "Use a protractor to measure two angles and draw two more.",
+    "grade": 4,
+    "topic": "Measurement",
+    "url": "/en/measuring-drawing-angles.html",
+    "conceptId": "e00110",
+    "worksheetId": "w00110-1"
+  },
+  {
+    "title": "Line Plot Worksheets: Fraction Measurements",
+    "summary": "Count measurements and read quarter-unit labels on original plots.",
+    "grade": 3,
+    "topic": "Measurement",
+    "url": "/en/reading-fraction-line-plots.html",
+    "conceptId": "e00111",
+    "worksheetId": "w00111-1"
+  },
+  {
+    "title": "Measurement Worksheets: Estimating and Measuring a Book",
+    "summary": "Estimate, measure, and compare one book edge in centimeters.",
+    "grade": 2,
+    "topic": "Measurement",
+    "url": "/en/estimate-measure-book-length.html",
+    "conceptId": "e00112",
+    "worksheetId": "w00112-1"
+  },
+  {
+    "title": "Shape Attributes Worksheets: Sides, Corners, and Faces",
+    "summary": "Review pentagon sides, hexagon corners, and cube faces.",
+    "grade": 2,
+    "topic": "Shapes",
+    "url": "/en/shape-sides-corners-faces.html",
+    "conceptId": "e00113",
+    "worksheetId": "w00113-1"
+  },
+  {
+    "title": "Comparing Decimals Worksheets Through Hundredths",
+    "summary": "Compare matching places and explain your reasoning.",
+    "grade": 4,
+    "topic": "Numbers",
+    "url": "/en/compare-decimals-hundredths.html",
+    "conceptId": "e00114",
+    "worksheetId": "w00114-1"
+  },
+  {
+    "title": "Measurement Conversion Worksheets: Larger Units",
+    "summary": "Convert cm to m, g to kg, mL to L, and inches to feet.",
+    "grade": 5,
+    "topic": "Measurement",
+    "url": "/en/measurement-units-larger.html",
+    "conceptId": "e00115",
+    "worksheetId": "w00115-1"
+  },
+  {
+    "title": "Kindergarten Addition and Subtraction Within 5",
+    "summary": "Count and combine pictures, or cross out the amount taken away.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-within-5.html",
+    "conceptId": "e00126",
+    "worksheetId": "w00126-1"
+  },
+  {
+    "title": "Kindergarten Word Problems Within 5",
+    "summary": "Listen to a short story, act it out, and draw or write an answer within 5.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-word-problems.html",
+    "conceptId": "e00127",
+    "worksheetId": "w00127-1"
+  },
+  {
+    "title": "Count and Write Worksheets for Kindergarten",
+    "summary": "Count picture groups from 1 to 9 and write 0 for an empty group. Touch each object once and record the total.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/kindergarten-count-and-write.html",
+    "conceptId": "e00128",
+    "worksheetId": "w00128-1"
+  },
+  {
+    "title": "Compare Picture Groups Worksheets for Kindergarten",
+    "summary": "Match or count two groups and circle the group with more objects.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/compare-picture-groups-kindergarten.html",
+    "conceptId": "e00129",
+    "worksheetId": "w00129-1"
+  },
+  {
+    "title": "Count and Circle Worksheets for Kindergarten",
+    "summary": "Circle a requested number of pictures. Any selection with the right count is correct.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/circle-the-correct-number-of-pictures.html",
+    "conceptId": "e00130",
+    "worksheetId": "w00130-1"
+  },
+  {
+    "title": "Number Word Matching Worksheets for Kindergarten",
+    "summary": "Draw lines from numerals 1–9 to their English number words. An adult can read the words aloud.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/number-word-matching-kindergarten.html",
+    "conceptId": "e00131",
+    "worksheetId": "w00131-1"
+  },
+  {
+    "title": "Ordering Numbers Worksheets for Kindergarten",
+    "summary": "Put three different numbers from 1–9 in order from smallest to largest. Use counters or number cards for support.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/ordering-number-cards-kindergarten.html",
+    "conceptId": "e00132",
+    "worksheetId": "w00132-1"
+  },
+  {
+    "title": "Before and After Numbers Worksheets for Kindergarten",
+    "summary": "Find the number just before and just after a given number. Count one step back and one step forward within 1–9.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/before-and-after-numbers.html",
+    "conceptId": "e00133",
+    "worksheetId": "w00133-1"
+  },
+  {
+    "title": "Missing Numbers on a Number Line Worksheets for Kindergarten",
+    "summary": "Count by ones along five evenly spaced marks and fill one missing number. These short number lines stay within 1–9.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/missing-numbers-on-a-number-line.html",
+    "conceptId": "e00134",
+    "worksheetId": "w00134-1"
+  },
+  {
+    "title": "Making 10 with Ten Frames Worksheets",
+    "summary": "Draw a dot in each empty box, then write how many more make 10. Start with 5–9 pictures in a two-row frame.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/activity/complete-the-ten-frame.html",
+    "conceptId": "e00135",
+    "worksheetId": "w00135-1"
+  },
+  {
+    "title": "Make 10 Missing Addend Worksheets",
+    "summary": "Find the missing part in an addition equation that totals 10. Use the drawing space or counters to explain your answer.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/activity/make-10-missing-number.html",
+    "conceptId": "e00136",
+    "worksheetId": "w00136-1"
+  },
+  {
+    "title": "Longer and Shorter Worksheets for Kindergarten",
+    "summary": "Compare two bars that start at the same point. Circle the longer one and write A or B without using a ruler.",
+    "grade": 0,
+    "topic": "Measurement",
+    "url": "/en/print/k-longer-and-shorter.html",
+    "conceptId": "e00137",
+    "worksheetId": "w00137-1"
+  },
+  {
+    "title": "Sort and Count Shapes Worksheets for Kindergarten",
+    "summary": "Circle every shape of the requested kind, then count the circles, triangles, or squares you selected.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/k-sort-by-shape.html",
+    "conceptId": "e00138",
+    "worksheetId": "w00138-1"
+  },
+  {
+    "title": "2D Shape Recognition Worksheets for Kindergarten",
+    "summary": "Trace and name a triangle, square, or circle. Notice that a square is still a square when it rests on a corner.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/k-meet-flat-shapes.html",
+    "conceptId": "e00139",
+    "worksheetId": "w00139-1"
+  },
+  {
+    "title": "Counting Sides Worksheets for Kindergarten",
+    "summary": "Trace and count the straight sides of triangles, squares, and circles. A circle has a curved boundary and zero straight sides.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/k-shape-detectives.html",
+    "conceptId": "e00140",
+    "worksheetId": "w00140-1"
+  },
+  {
+    "title": "Repeating Shape Patterns Worksheets for Kindergarten",
+    "summary": "Find the repeating group of three shapes, then draw the next shape. Practice ABC and AAB patterns with a matching answer key.",
+    "grade": 0,
+    "topic": "Shapes",
+    "url": "/en/print/hands-on/complete-repeating-patterns.html",
+    "conceptId": "e00141",
+    "worksheetId": "w00141-1"
+  },
+  {
+    "title": "Missing Part Number Bonds Worksheets Within 9",
+    "summary": "Circle part of a group and complete the number bond. Choose two nonempty parts or one empty part (0). Empty-part practice also includes wholes of 1 or 10.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/print/hands-on/missing-part-number-bonds.html",
+    "conceptId": "e00142",
+    "worksheetId": "w00142-1"
+  },
+  {
+    "title": "Ordinal Number Worksheets for Kindergarten",
+    "summary": "Count from the left and circle one picture in the requested position. An adult can read the directions aloud.",
+    "grade": 0,
+    "topic": "Numbers",
+    "url": "/en/print/activity/ordinal-numbers-kindergarten.html",
+    "conceptId": "e00143",
+    "worksheetId": "w00143-1"
+  },
+  {
+    "title": "Kindergarten Word Problems Within 10",
+    "summary": "Listen, move counters, and draw joining or taking-away stories with amounts up to 10.",
+    "grade": 0,
+    "topic": "Addition",
+    "url": "/en/kindergarten-addition-subtraction-word-problems-within-10.html",
+    "conceptId": "e00144",
+    "worksheetId": "w00144-1"
+  },
+  {
+    "route": "legacy/supplemental-addition-flashcards",
+    "title": "Addition Flashcards Within 10",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 1
+  },
+  {
+    "route": "legacy/supplemental-counting-to-100",
+    "title": "Counting to 100: Missing Numbers",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-divisibility-rules",
+    "title": "Divisibility Rules Chart: 2 to 10",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 4
+  },
+  {
+    "route": "legacy/supplemental-domino-addition",
+    "title": "Domino Addition Worksheets",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 1
+  },
+  {
+    "route": "legacy/supplemental-exit-ticket",
+    "title": "Addition and Subtraction Exit Tickets",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 1
+  },
+  {
+    "route": "legacy/supplemental-fraction-strips",
+    "title": "Fraction Strips Printable",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "fractions",
+    "grade": 3
+  },
+  {
+    "route": "legacy/supplemental-multiplication-chart",
+    "title": "Multiplication Table Chart 0–12",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 3
+  },
+  {
+    "route": "legacy/supplemental-numbers-1-20",
+    "title": "Numbers 1 to 20: Counting Cards",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-positional-words",
+    "title": "Position Words: Above, Below, Left and Right",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "geometry",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-roman-chart",
+    "title": "Roman Numerals Chart: 1 to 100",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "whole",
+    "grade": 4
+  },
+  {
+    "route": "legacy/supplemental-shape-matching",
+    "title": "Matching 2D Shapes Worksheets",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "geometry",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-shape-tracing",
+    "title": "2D Shape Tracing Worksheets",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "geometry",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-size-comparison",
+    "title": "Comparing Sizes: Larger and Smaller",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "measurement",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-venn-sorting",
+    "title": "Venn Diagram Number Sorting",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "data",
+    "grade": 2
+  },
+  {
+    "route": "legacy/supplemental-tally-mark-activities",
+    "title": "Tally Marks Worksheets for Kids",
+    "summary": "Printable worksheet or reference sheet.",
+    "topic": "data",
+    "grade": 1
+  },
+  {
+    "route": "legacy/supplemental-factor-trees",
+    "title": "Prime Factorization and Factor Trees Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 5
+  },
+  {
+    "route": "legacy/supplemental-thermometer-reading",
+    "title": "Reading Thermometers Worksheets: Celsius",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "measurement",
+    "grade": 2
+  },
+  {
+    "route": "legacy/supplemental-heavy-light",
+    "title": "Heavier and Lighter Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "measurement",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-capacity-comparison",
+    "title": "Comparing Capacity Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "measurement",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-cut-paste-counting",
+    "title": "Counting Cut and Paste Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-color-addition",
+    "title": "Addition Color by Number Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 1
+  },
+  {
+    "route": "legacy/supplemental-color-multiplication",
+    "title": "Multiplication Color by Number Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 3
+  },
+  {
+    "route": "legacy/supplemental-color-division",
+    "title": "Division Color by Code Worksheets",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 3
+  },
+  {
+    "route": "legacy/supplemental-kindergarten-skill-check",
+    "title": "Kindergarten Math Skill Check",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 0
+  },
+  {
+    "route": "legacy/supplemental-grade-one-skill-check",
+    "title": "1st Grade Math Skill Check",
+    "summary": "Printable practice worksheet with answer key.",
+    "topic": "whole",
+    "grade": 1
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimals-horizontal-practice",
+    "title": "Multi-Digit Decimal Operations Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimals-missing-number-practice",
+    "title": "Missing Number Multidigit Decimal Operations Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimals-prerequisite-review",
+    "title": "Multi-Digit Decimal Operations Review Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimals-vertical-practice",
+    "title": "Vertical Multidigit Decimal Operations Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimals-word-problems",
+    "title": "Multidigit Decimal Operations Word Problem Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fractiondiv-horizontal-practice",
+    "title": "Dividing Fractions by Fractions Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fractiondiv-missing-number-practice",
+    "title": "Missing Number Dividing Fractions by Fractions Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fractiondiv-prerequisite-review",
+    "title": "Dividing Fractions by Fractions Review Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fractiondiv-word-problems",
+    "title": "Dividing Fractions by Fractions Word Problem Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-gcf-horizontal-practice",
+    "title": "Greatest Common Factor Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-gcf-missing-part-challenge",
+    "title": "Greatest Common Factor: Missing Parts Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-gcf-prerequisite-review",
+    "title": "Greatest Common Factor Review Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-gcf-word-problems",
+    "title": "Greatest Common Factor Word Problem Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-lcm-horizontal-practice",
+    "title": "Least Common Multiple Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-lcm-missing-part-challenge",
+    "title": "Least Common Multiple: Missing Parts Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-lcm-prerequisite-review",
+    "title": "Least Common Multiple Review Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-lcm-word-problems",
+    "title": "Least Common Multiple Word Problem Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-longdiv-horizontal-practice",
+    "title": "Multi-Digit Long Division Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-longdiv-missing-number-practice",
+    "title": "Missing Number Multidigit Long Division Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-longdiv-prerequisite-review",
+    "title": "Multi-Digit Long Division Review Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-longdiv-vertical-practice",
+    "title": "Vertical Multi-Digit Long Division Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-longdiv-word-problems",
+    "title": "Multidigit Long Division Word Problem Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "whole",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "title": "Horizontal Addition: Hundredths and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "title": "Horizontal Decimal Addition: Tenths and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-thousandths-worksheets",
+    "title": "Horizontal Decimal Addition: Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "title": "Horizontal Addition: Whole Numbers and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "title": "Horizontal Subtraction: Hundredths Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "title": "Horizontal Subtraction: Tenths Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-thousandths-worksheets",
+    "title": "Horizontal Decimal Subtraction: Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-horizontal-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "title": "Horizontal Subtraction: Whole Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-hundredths-and-thousandths-worksheets",
+    "title": "Vertical Addition: Hundredths and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-tenths-and-thousandths-worksheets",
+    "title": "Vertical Decimal Addition: Tenths and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-thousandths-worksheets",
+    "title": "Vertical Decimal Addition: Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-addition-with-whole-numbers-and-thousandths-worksheets",
+    "title": "Vertical Addition: Whole Numbers and Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-hundredths-and-thousandths-worksheets",
+    "title": "Vertical Subtraction: Hundredths Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-tenths-and-thousandths-worksheets",
+    "title": "Vertical Subtraction: Tenths Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-thousandths-worksheets",
+    "title": "Vertical Decimal Subtraction: Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-add-vertical-decimal-subtraction-with-whole-numbers-and-thousandths-worksheets",
+    "title": "Vertical Subtraction: Whole Minus Thousandths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-missing-number-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "title": "Missing Number Division: Whole Numbers by Tenths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-hundredths-worksheets",
+    "title": "Vertical Decimal Division: Hundredths by Hundredths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-hundredths-divided-by-tenths-worksheets",
+    "title": "Vertical Decimal Division: Hundredths by Tenths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-hundredths-worksheets",
+    "title": "Vertical Decimal Division: Tenths by Hundredths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-tenths-divided-by-tenths-worksheets",
+    "title": "Vertical Decimal Division: Tenths by Tenths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-hundredths-worksheets",
+    "title": "Vertical Division: Whole Numbers by Hundredths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-decimal-div-vertical-decimal-division-whole-numbers-divided-by-tenths-worksheets",
+    "title": "Vertical Decimal Division: Whole Numbers by Tenths Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "decimals",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fraction-div-missing-number-fraction-division-worksheets",
+    "title": "Missing Number Fraction Division Worksheets – Grade 6",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  },
+  {
+    "route": "legacy/old-six-grade-6-fraction-div-whole-missing-number-dividing-proper-fractions-and-whole-numbers-worksheets",
+    "title": "Missing Number: Proper Fraction by Whole Number Worksheets",
+    "summary": "Existing Grade 6 worksheet and answer key.",
+    "topic": "fractions",
+    "grade": 6
+  }
+]

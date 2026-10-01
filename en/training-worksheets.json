@@ -1,0 +1,4910 @@
+{
+  "legacy-natural-add-1-1": {
+    "id": "legacy-natural-add-1-1",
+    "title": "Single-Digit Addition",
+    "seoTitle": "Single-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-1-1.html",
+    "sourceType": "natural-add-1-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 + 3",
+    "commonCore": {
+      "codes": [
+        "1.OA.C.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 1, 1; conservative maximum result 18.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-1-2": {
+    "id": "legacy-natural-add-1-2",
+    "title": "1-Digit by 2-Digit Addition",
+    "seoTitle": "1-Digit by 2-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-1-2.html",
+    "sourceType": "natural-add-1-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 1,
+      "db": 2
+    },
+    "example": "6 + 12",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 1, 2; conservative maximum result 108.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-2-1": {
+    "id": "legacy-natural-add-2-1",
+    "title": "2-Digit by 1-Digit Addition",
+    "seoTitle": "2-Digit by 1-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-2-1.html",
+    "sourceType": "natural-add-2-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 + 3",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 1; conservative maximum result 108.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-2-2": {
+    "id": "legacy-natural-add-2-2",
+    "title": "2-Digit Addition",
+    "seoTitle": "2-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-2-2.html",
+    "sourceType": "natural-add-2-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 + 12",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 198.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-3-1": {
+    "id": "legacy-natural-add-3-1",
+    "title": "3-Digit by 1-Digit Addition",
+    "seoTitle": "3-Digit by 1-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-3-1.html",
+    "sourceType": "natural-add-3-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 + 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 1; conservative maximum result 1008.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-3-2": {
+    "id": "legacy-natural-add-3-2",
+    "title": "3-Digit by 2-Digit Addition",
+    "seoTitle": "3-Digit by 2-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-3-2.html",
+    "sourceType": "natural-add-3-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 + 12",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 2; conservative maximum result 1098.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-3-3": {
+    "id": "legacy-natural-add-3-3",
+    "title": "3-Digit Addition",
+    "seoTitle": "3-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-3-3.html",
+    "sourceType": "natural-add-3-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 + 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 1998.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-1-3": {
+    "id": "legacy-natural-add-1-3",
+    "title": "1-Digit by 3-Digit Addition",
+    "seoTitle": "1-Digit by 3-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-1-3.html",
+    "sourceType": "natural-add-1-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 1,
+      "db": 3
+    },
+    "example": "6 + 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 1, 3; conservative maximum result 1008.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-2-3": {
+    "id": "legacy-natural-add-2-3",
+    "title": "2-Digit by 3-Digit Addition",
+    "seoTitle": "2-Digit by 3-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-2-3.html",
+    "sourceType": "natural-add-2-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 3
+    },
+    "example": "24 + 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 3; conservative maximum result 1098.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-4-1": {
+    "id": "legacy-natural-add-4-1",
+    "title": "4-Digit by 1-Digit Addition",
+    "seoTitle": "4-Digit by 1-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-4-1.html",
+    "sourceType": "natural-add-4-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 + 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 1; conservative maximum result 10008.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-4-2": {
+    "id": "legacy-natural-add-4-2",
+    "title": "4-Digit by 2-Digit Addition",
+    "seoTitle": "4-Digit by 2-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-4-2.html",
+    "sourceType": "natural-add-4-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 + 12",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 2; conservative maximum result 10098.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-4-3": {
+    "id": "legacy-natural-add-4-3",
+    "title": "4-Digit by 3-Digit Addition",
+    "seoTitle": "4-Digit by 3-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-4-3.html",
+    "sourceType": "natural-add-4-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 + 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 3; conservative maximum result 10998.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-add-4-4": {
+    "id": "legacy-natural-add-4-4",
+    "title": "4-Digit Addition",
+    "seoTitle": "4-Digit Addition Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-4-4.html",
+    "sourceType": "natural-add-4-4",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 + 1124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 4; conservative maximum result 19998.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-1": {
+    "id": "legacy-decimal-add-1",
+    "title": "Decimal Addition to Tenths",
+    "seoTitle": "Decimal Addition to Tenths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-1.html",
+    "sourceType": "decimal-add-1",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "add",
+      "op": "+",
+      "dp": 1
+    },
+    "example": "2.4 + 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-2": {
+    "id": "legacy-decimal-add-2",
+    "title": "Decimal Addition to Hundredths",
+    "seoTitle": "Decimal Addition to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-2.html",
+    "sourceType": "decimal-add-2",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "add",
+      "op": "+",
+      "dp": 2
+    },
+    "example": "2.45 + 1.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-same": {
+    "id": "legacy-fraction-add-same",
+    "title": "Adding Fractions with Like Denominators",
+    "seoTitle": "Adding Fractions with Like Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-same.html",
+    "sourceType": "fraction-add-same",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "add",
+      "op": "+",
+      "same": true
+    },
+    "example": "1/3 + 2/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "prerequisite",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Like-denominator computation is prerequisite practice for unlike-denominator addition/subtraction. Generator denominators may include 7, 9, 11, outside Grade 4 NF scope.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-different": {
+    "id": "legacy-fraction-add-different",
+    "title": "Adding Fractions with Unlike Denominators",
+    "seoTitle": "Adding Fractions with Unlike Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-different.html",
+    "sourceType": "fraction-add-different",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "add",
+      "op": "+",
+      "same": false
+    },
+    "example": "1/3 + 1/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-1-1": {
+    "id": "legacy-natural-sub-1-1",
+    "title": "Single-Digit Subtraction",
+    "seoTitle": "Single-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-1-1.html",
+    "sourceType": "natural-sub-1-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 − 3",
+    "commonCore": {
+      "codes": [
+        "1.OA.C.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 1, 1; conservative maximum result 9.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/1/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-2-1": {
+    "id": "legacy-natural-sub-2-1",
+    "title": "2-Digit by 1-Digit Subtraction",
+    "seoTitle": "2-Digit by 1-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-2-1.html",
+    "sourceType": "natural-sub-2-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 − 3",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 1; conservative maximum result 99.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-2-2": {
+    "id": "legacy-natural-sub-2-2",
+    "title": "2-Digit Subtraction",
+    "seoTitle": "2-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-2-2.html",
+    "sourceType": "natural-sub-2-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 − 12",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 99.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-3-1": {
+    "id": "legacy-natural-sub-3-1",
+    "title": "3-Digit by 1-Digit Subtraction",
+    "seoTitle": "3-Digit by 1-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-1.html",
+    "sourceType": "natural-sub-3-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 − 3",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 1; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-3-2": {
+    "id": "legacy-natural-sub-3-2",
+    "title": "3-Digit by 2-Digit Subtraction",
+    "seoTitle": "3-Digit by 2-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-2.html",
+    "sourceType": "natural-sub-3-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 − 12",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 2; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-3-3": {
+    "id": "legacy-natural-sub-3-3",
+    "title": "3-Digit Subtraction",
+    "seoTitle": "3-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-3.html",
+    "sourceType": "natural-sub-3-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 − 124",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-4-1": {
+    "id": "legacy-natural-sub-4-1",
+    "title": "4-Digit by 1-Digit Subtraction",
+    "seoTitle": "4-Digit by 1-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-4-1.html",
+    "sourceType": "natural-sub-4-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 − 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 1; conservative maximum result 9999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-4-2": {
+    "id": "legacy-natural-sub-4-2",
+    "title": "4-Digit by 2-Digit Subtraction",
+    "seoTitle": "4-Digit by 2-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-4-2.html",
+    "sourceType": "natural-sub-4-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 − 12",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 2; conservative maximum result 9999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-4-3": {
+    "id": "legacy-natural-sub-4-3",
+    "title": "4-Digit by 3-Digit Subtraction",
+    "seoTitle": "4-Digit by 3-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-4-3.html",
+    "sourceType": "natural-sub-4-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 − 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 3; conservative maximum result 9999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-sub-4-4": {
+    "id": "legacy-natural-sub-4-4",
+    "title": "4-Digit Subtraction",
+    "seoTitle": "4-Digit Subtraction Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-4-4.html",
+    "sourceType": "natural-sub-4-4",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 − 1124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 4, 4; conservative maximum result 9999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-1": {
+    "id": "legacy-decimal-sub-1",
+    "title": "Decimal Subtraction to Tenths",
+    "seoTitle": "Decimal Subtraction to Tenths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-1.html",
+    "sourceType": "decimal-sub-1",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "sub",
+      "op": "−",
+      "dp": 1
+    },
+    "example": "2.4 − 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-2": {
+    "id": "legacy-decimal-sub-2",
+    "title": "Decimal Subtraction to Hundredths",
+    "seoTitle": "Decimal Subtraction to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-2.html",
+    "sourceType": "decimal-sub-2",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "sub",
+      "op": "−",
+      "dp": 2
+    },
+    "example": "2.45 − 1.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-same": {
+    "id": "legacy-fraction-sub-same",
+    "title": "Subtracting Fractions with Like Denominators",
+    "seoTitle": "Subtracting Fractions with Like Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-same.html",
+    "sourceType": "fraction-sub-same",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "sub",
+      "op": "−",
+      "same": true
+    },
+    "example": "1/3 − 2/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "prerequisite",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Like-denominator computation is prerequisite practice for unlike-denominator addition/subtraction. Generator denominators may include 7, 9, 11, outside Grade 4 NF scope.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-different": {
+    "id": "legacy-fraction-sub-different",
+    "title": "Subtracting Fractions with Unlike Denominators",
+    "seoTitle": "Subtracting Fractions with Unlike Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-different.html",
+    "sourceType": "fraction-sub-different",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "sub",
+      "op": "−",
+      "same": false
+    },
+    "example": "1/3 − 1/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-1-1": {
+    "id": "legacy-natural-mul-1-1",
+    "title": "Single-Digit Multiplication",
+    "seoTitle": "Single-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-1-1.html",
+    "sourceType": "natural-mul-1-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 × 3",
+    "commonCore": {
+      "codes": [
+        "3.OA.C.7"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 1, 1.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-1-2": {
+    "id": "legacy-natural-mul-1-2",
+    "title": "1-Digit by 2-Digit Multiplication",
+    "seoTitle": "1-Digit by 2-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-1-2.html",
+    "sourceType": "natural-mul-1-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 1,
+      "db": 2
+    },
+    "example": "6 × 12",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 1, 2.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-2-1": {
+    "id": "legacy-natural-mul-2-1",
+    "title": "2-Digit by 1-Digit Multiplication",
+    "seoTitle": "2-Digit by 1-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-2-1.html",
+    "sourceType": "natural-mul-2-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 × 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 2, 1.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-2-2": {
+    "id": "legacy-natural-mul-2-2",
+    "title": "2-Digit by 2-Digit Multiplication",
+    "seoTitle": "2-Digit by 2-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-2-2.html",
+    "sourceType": "natural-mul-2-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 × 12",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 2, 2.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-3-1": {
+    "id": "legacy-natural-mul-3-1",
+    "title": "3-Digit by 1-Digit Multiplication",
+    "seoTitle": "3-Digit by 1-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-3-1.html",
+    "sourceType": "natural-mul-3-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 × 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 3, 1.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-3-2": {
+    "id": "legacy-natural-mul-3-2",
+    "title": "3-Digit by 2-Digit Multiplication",
+    "seoTitle": "3-Digit by 2-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-3-2.html",
+    "sourceType": "natural-mul-3-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 × 12",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 3, 2.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-3-3": {
+    "id": "legacy-natural-mul-3-3",
+    "title": "3-Digit by 3-Digit Multiplication",
+    "seoTitle": "3-Digit by 3-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-3-3.html",
+    "sourceType": "natural-mul-3-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 × 124",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 3, 3.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-1-3": {
+    "id": "legacy-natural-mul-1-3",
+    "title": "1-Digit by 3-Digit Multiplication",
+    "seoTitle": "1-Digit by 3-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-1-3.html",
+    "sourceType": "natural-mul-1-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 1,
+      "db": 3
+    },
+    "example": "6 × 124",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 1, 3.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-2-3": {
+    "id": "legacy-natural-mul-2-3",
+    "title": "2-Digit by 3-Digit Multiplication",
+    "seoTitle": "2-Digit by 3-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-2-3.html",
+    "sourceType": "natural-mul-2-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 2,
+      "db": 3
+    },
+    "example": "24 × 124",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 2, 3.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-4-1": {
+    "id": "legacy-natural-mul-4-1",
+    "title": "4-Digit by 1-Digit Multiplication",
+    "seoTitle": "4-Digit by 1-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-4-1.html",
+    "sourceType": "natural-mul-4-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 × 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 4, 1.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-4-2": {
+    "id": "legacy-natural-mul-4-2",
+    "title": "4-Digit by 2-Digit Multiplication",
+    "seoTitle": "4-Digit by 2-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-4-2.html",
+    "sourceType": "natural-mul-4-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 × 12",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 4, 2.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-4-3": {
+    "id": "legacy-natural-mul-4-3",
+    "title": "4-Digit by 3-Digit Multiplication",
+    "seoTitle": "4-Digit by 3-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-4-3.html",
+    "sourceType": "natural-mul-4-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 × 124",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 4, 3.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-mul-4-4": {
+    "id": "legacy-natural-mul-4-4",
+    "title": "4-Digit by 4-Digit Multiplication",
+    "seoTitle": "4-Digit by 4-Digit Multiplication Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-mul-4-4.html",
+    "sourceType": "natural-mul-4-4",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "mul",
+      "op": "×",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 × 1124",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Factor digit counts: 4, 4.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-1": {
+    "id": "legacy-decimal-mul-1",
+    "title": "Decimal Multiplication (1 and 1 Decimal Places)",
+    "seoTitle": "Decimal Multiplication (1 and 1 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-1.html",
+    "sourceType": "decimal-mul-1",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "mul",
+      "op": "×",
+      "dp": 1
+    },
+    "example": "2.4 × 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-2": {
+    "id": "legacy-decimal-mul-2",
+    "title": "Decimal Multiplication (2 and 2 Decimal Places)",
+    "seoTitle": "Decimal Multiplication (2 and 2 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-2.html",
+    "sourceType": "decimal-mul-2",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "mul",
+      "op": "×",
+      "dp": 2
+    },
+    "example": "2.45 × 1.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-same": {
+    "id": "legacy-fraction-mul-same",
+    "title": "Multiplying Fractions with Like Denominators",
+    "seoTitle": "Multiplying Fractions with Like Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-same.html",
+    "sourceType": "fraction-mul-same",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "mul",
+      "op": "×",
+      "same": true
+    },
+    "example": "1/3 × 2/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-different": {
+    "id": "legacy-fraction-mul-different",
+    "title": "Multiplying Fractions with Unlike Denominators",
+    "seoTitle": "Multiplying Fractions with Unlike Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-different.html",
+    "sourceType": "fraction-mul-different",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "mul",
+      "op": "×",
+      "same": false
+    },
+    "example": "1/3 × 1/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-1-1": {
+    "id": "legacy-natural-div-1-1",
+    "title": "Single-Digit Division — With and Without Remainders",
+    "seoTitle": "Single-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-1-1.html",
+    "sourceType": "natural-div-1-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-2-1": {
+    "id": "legacy-natural-div-2-1",
+    "title": "2-Digit by 1-Digit Division — With and Without Remainders",
+    "seoTitle": "2-Digit by 1-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-1.html",
+    "sourceType": "natural-div-2-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-2-2": {
+    "id": "legacy-natural-div-2-2",
+    "title": "2-Digit by 2-Digit Division — With and Without Remainders",
+    "seoTitle": "2-Digit by 2-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-2.html",
+    "sourceType": "natural-div-2-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 ÷ 12",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-3-1": {
+    "id": "legacy-natural-div-3-1",
+    "title": "3-Digit by 1-Digit Division — With and Without Remainders",
+    "seoTitle": "3-Digit by 1-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-1.html",
+    "sourceType": "natural-div-3-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-3-2": {
+    "id": "legacy-natural-div-3-2",
+    "title": "3-Digit by 2-Digit Division — With and Without Remainders",
+    "seoTitle": "3-Digit by 2-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-2.html",
+    "sourceType": "natural-div-3-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 ÷ 12",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-3-3": {
+    "id": "legacy-natural-div-3-3",
+    "title": "3-Digit by 3-Digit Division — With and Without Remainders",
+    "seoTitle": "3-Digit by 3-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-3.html",
+    "sourceType": "natural-div-3-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 ÷ 124",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-4-1": {
+    "id": "legacy-natural-div-4-1",
+    "title": "4-Digit by 1-Digit Division — With and Without Remainders",
+    "seoTitle": "4-Digit by 1-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-1.html",
+    "sourceType": "natural-div-4-1",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-4-2": {
+    "id": "legacy-natural-div-4-2",
+    "title": "4-Digit by 2-Digit Division — With and Without Remainders",
+    "seoTitle": "4-Digit by 2-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-2.html",
+    "sourceType": "natural-div-4-2",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 ÷ 12",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-4-3": {
+    "id": "legacy-natural-div-4-3",
+    "title": "4-Digit by 3-Digit Division — With and Without Remainders",
+    "seoTitle": "4-Digit by 3-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-3.html",
+    "sourceType": "natural-div-4-3",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 ÷ 124",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-natural-div-4-4": {
+    "id": "legacy-natural-div-4-4",
+    "title": "4-Digit by 4-Digit Division — With and Without Remainders",
+    "seoTitle": "4-Digit by 4-Digit Division Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-4.html",
+    "sourceType": "natural-div-4-4",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 ÷ 1124",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-1": {
+    "id": "legacy-decimal-div-1",
+    "title": "Decimal Division (1 and 1 Decimal Places)",
+    "seoTitle": "Decimal Division (1 and 1 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-1.html",
+    "sourceType": "decimal-div-1",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "div",
+      "op": "÷",
+      "dp": 1
+    },
+    "example": "2.4 ÷ 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-2": {
+    "id": "legacy-decimal-div-2",
+    "title": "Decimal Division (2 and 2 Decimal Places)",
+    "seoTitle": "Decimal Division (2 and 2 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-2.html",
+    "sourceType": "decimal-div-2",
+    "originalConfig": {
+      "kind": "decimal",
+      "code": "div",
+      "op": "÷",
+      "dp": 2
+    },
+    "example": "2.45 ÷ 1.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-same": {
+    "id": "legacy-fraction-div-same",
+    "title": "Dividing Fractions with Like Denominators",
+    "seoTitle": "Dividing Fractions with Like Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-same.html",
+    "sourceType": "fraction-div-same",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "div",
+      "op": "÷",
+      "same": true
+    },
+    "example": "1/3 ÷ 2/3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-different": {
+    "id": "legacy-fraction-div-different",
+    "title": "Dividing Fractions with Unlike Denominators",
+    "seoTitle": "Dividing Fractions with Unlike Denominators Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-different.html",
+    "sourceType": "fraction-div-different",
+    "originalConfig": {
+      "kind": "fraction",
+      "code": "div",
+      "op": "÷",
+      "same": false
+    },
+    "example": "1/3 ÷ 1/4",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-0dp-1dp": {
+    "id": "legacy-decimal-add-0dp-1dp",
+    "title": "Decimal Addition with Whole Numbers",
+    "seoTitle": "Decimal Addition with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-0dp-1dp.html",
+    "sourceType": "decimal-add-0dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 0,
+      "db": 1
+    },
+    "example": "3 + 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-0dp-2dp": {
+    "id": "legacy-decimal-add-0dp-2dp",
+    "title": "Decimal Addition with Whole Numbers",
+    "seoTitle": "Decimal Addition with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-0dp-2dp.html",
+    "sourceType": "decimal-add-0dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 0,
+      "db": 2
+    },
+    "example": "3 + 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-1dp-0dp": {
+    "id": "legacy-decimal-add-1dp-0dp",
+    "title": "Decimal Addition with Whole Numbers",
+    "seoTitle": "Decimal Addition with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-1dp-0dp.html",
+    "sourceType": "decimal-add-1dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 1,
+      "db": 0
+    },
+    "example": "3.6 + 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-1dp-2dp": {
+    "id": "legacy-decimal-add-1dp-2dp",
+    "title": "Decimal Addition to Hundredths",
+    "seoTitle": "Decimal Addition to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-1dp-2dp.html",
+    "sourceType": "decimal-add-1dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 1,
+      "db": 2
+    },
+    "example": "3.6 + 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-2dp-0dp": {
+    "id": "legacy-decimal-add-2dp-0dp",
+    "title": "Decimal Addition with Whole Numbers",
+    "seoTitle": "Decimal Addition with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-2dp-0dp.html",
+    "sourceType": "decimal-add-2dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 0
+    },
+    "example": "3.75 + 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-add-2dp-1dp": {
+    "id": "legacy-decimal-add-2dp-1dp",
+    "title": "Decimal Addition to Hundredths",
+    "seoTitle": "Decimal Addition to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-add-2dp-1dp.html",
+    "sourceType": "decimal-add-2dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 1
+    },
+    "example": "3.75 + 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-whole-proper": {
+    "id": "legacy-fraction-add-whole-proper",
+    "title": "Adding Whole Numbers and Proper Fractions",
+    "seoTitle": "Adding Whole Numbers and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-whole-proper.html",
+    "sourceType": "fraction-add-whole-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "whole",
+      "fb": "proper"
+    },
+    "example": "3 + 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-whole-improper": {
+    "id": "legacy-fraction-add-whole-improper",
+    "title": "Adding Whole Numbers and Improper Fractions",
+    "seoTitle": "Adding Whole Numbers and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-whole-improper.html",
+    "sourceType": "fraction-add-whole-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "whole",
+      "fb": "improper"
+    },
+    "example": "3 + 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-whole-mixed": {
+    "id": "legacy-fraction-add-whole-mixed",
+    "title": "Adding Whole Numbers and Mixed Numbers",
+    "seoTitle": "Adding Whole Numbers and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-whole-mixed.html",
+    "sourceType": "fraction-add-whole-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "whole",
+      "fb": "mixed"
+    },
+    "example": "3 + 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-proper-whole": {
+    "id": "legacy-fraction-add-proper-whole",
+    "title": "Adding Proper Fractions and Whole Numbers",
+    "seoTitle": "Adding Proper Fractions and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-proper-whole.html",
+    "sourceType": "fraction-add-proper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "proper",
+      "fb": "whole"
+    },
+    "example": "2/5 + 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-proper-improper": {
+    "id": "legacy-fraction-add-proper-improper",
+    "title": "Adding Proper Fractions and Improper Fractions",
+    "seoTitle": "Adding Proper Fractions and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-proper-improper.html",
+    "sourceType": "fraction-add-proper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "proper",
+      "fb": "improper"
+    },
+    "example": "2/5 + 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-proper-mixed": {
+    "id": "legacy-fraction-add-proper-mixed",
+    "title": "Adding Proper Fractions and Mixed Numbers",
+    "seoTitle": "Adding Proper Fractions and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-proper-mixed.html",
+    "sourceType": "fraction-add-proper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "proper",
+      "fb": "mixed"
+    },
+    "example": "2/5 + 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-improper-whole": {
+    "id": "legacy-fraction-add-improper-whole",
+    "title": "Adding Improper Fractions and Whole Numbers",
+    "seoTitle": "Adding Improper Fractions and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-improper-whole.html",
+    "sourceType": "fraction-add-improper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "improper",
+      "fb": "whole"
+    },
+    "example": "7/4 + 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-improper-proper": {
+    "id": "legacy-fraction-add-improper-proper",
+    "title": "Adding Improper Fractions and Proper Fractions",
+    "seoTitle": "Adding Improper Fractions and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-improper-proper.html",
+    "sourceType": "fraction-add-improper-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "improper",
+      "fb": "proper"
+    },
+    "example": "7/4 + 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-improper-improper": {
+    "id": "legacy-fraction-add-improper-improper",
+    "title": "Adding Improper Fractions",
+    "seoTitle": "Adding Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-improper-improper.html",
+    "sourceType": "fraction-add-improper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "improper",
+      "fb": "improper"
+    },
+    "example": "7/4 + 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-improper-mixed": {
+    "id": "legacy-fraction-add-improper-mixed",
+    "title": "Adding Improper Fractions and Mixed Numbers",
+    "seoTitle": "Adding Improper Fractions and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-improper-mixed.html",
+    "sourceType": "fraction-add-improper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "improper",
+      "fb": "mixed"
+    },
+    "example": "7/4 + 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-mixed-whole": {
+    "id": "legacy-fraction-add-mixed-whole",
+    "title": "Adding Mixed Numbers and Whole Numbers",
+    "seoTitle": "Adding Mixed Numbers and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-mixed-whole.html",
+    "sourceType": "fraction-add-mixed-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "mixed",
+      "fb": "whole"
+    },
+    "example": "2 1/3 + 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-mixed-proper": {
+    "id": "legacy-fraction-add-mixed-proper",
+    "title": "Adding Mixed Numbers and Proper Fractions",
+    "seoTitle": "Adding Mixed Numbers and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-mixed-proper.html",
+    "sourceType": "fraction-add-mixed-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "mixed",
+      "fb": "proper"
+    },
+    "example": "2 1/3 + 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-mixed-improper": {
+    "id": "legacy-fraction-add-mixed-improper",
+    "title": "Adding Mixed Numbers and Improper Fractions",
+    "seoTitle": "Adding Mixed Numbers and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-mixed-improper.html",
+    "sourceType": "fraction-add-mixed-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "mixed",
+      "fb": "improper"
+    },
+    "example": "2 1/3 + 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-add-mixed-mixed": {
+    "id": "legacy-fraction-add-mixed-mixed",
+    "title": "Adding Mixed Numbers",
+    "seoTitle": "Adding Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-add-mixed-mixed.html",
+    "sourceType": "fraction-add-mixed-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "add",
+      "op": "+",
+      "fa": "mixed",
+      "fb": "mixed"
+    },
+    "example": "2 1/3 + 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-0dp-1dp": {
+    "id": "legacy-decimal-sub-0dp-1dp",
+    "title": "Decimal Subtraction with Whole Numbers",
+    "seoTitle": "Decimal Subtraction with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-0dp-1dp.html",
+    "sourceType": "decimal-sub-0dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 0,
+      "db": 1
+    },
+    "example": "3 − 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-0dp-2dp": {
+    "id": "legacy-decimal-sub-0dp-2dp",
+    "title": "Decimal Subtraction with Whole Numbers",
+    "seoTitle": "Decimal Subtraction with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-0dp-2dp.html",
+    "sourceType": "decimal-sub-0dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 0,
+      "db": 2
+    },
+    "example": "3 − 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-1dp-0dp": {
+    "id": "legacy-decimal-sub-1dp-0dp",
+    "title": "Decimal Subtraction with Whole Numbers",
+    "seoTitle": "Decimal Subtraction with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-1dp-0dp.html",
+    "sourceType": "decimal-sub-1dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 1,
+      "db": 0
+    },
+    "example": "3.6 − 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-1dp-2dp": {
+    "id": "legacy-decimal-sub-1dp-2dp",
+    "title": "Decimal Subtraction to Hundredths",
+    "seoTitle": "Decimal Subtraction to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-1dp-2dp.html",
+    "sourceType": "decimal-sub-1dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 1,
+      "db": 2
+    },
+    "example": "3.6 − 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-2dp-0dp": {
+    "id": "legacy-decimal-sub-2dp-0dp",
+    "title": "Decimal Subtraction with Whole Numbers",
+    "seoTitle": "Decimal Subtraction with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-2dp-0dp.html",
+    "sourceType": "decimal-sub-2dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 0
+    },
+    "example": "3.75 − 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-sub-2dp-1dp": {
+    "id": "legacy-decimal-sub-2dp-1dp",
+    "title": "Decimal Subtraction to Hundredths",
+    "seoTitle": "Decimal Subtraction to Hundredths Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-sub-2dp-1dp.html",
+    "sourceType": "decimal-sub-2dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 1
+    },
+    "example": "3.75 − 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-whole-proper": {
+    "id": "legacy-fraction-sub-whole-proper",
+    "title": "Subtracting Proper Fractions from Whole Numbers",
+    "seoTitle": "Subtracting Proper Fractions from Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-whole-proper.html",
+    "sourceType": "fraction-sub-whole-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "whole",
+      "fb": "proper"
+    },
+    "example": "3 − 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-whole-improper": {
+    "id": "legacy-fraction-sub-whole-improper",
+    "title": "Subtracting Improper Fractions from Whole Numbers",
+    "seoTitle": "Subtracting Improper Fractions from Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-whole-improper.html",
+    "sourceType": "fraction-sub-whole-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "whole",
+      "fb": "improper"
+    },
+    "example": "3 − 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-whole-mixed": {
+    "id": "legacy-fraction-sub-whole-mixed",
+    "title": "Subtracting Mixed Numbers from Whole Numbers",
+    "seoTitle": "Subtracting Mixed Numbers from Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-whole-mixed.html",
+    "sourceType": "fraction-sub-whole-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "whole",
+      "fb": "mixed"
+    },
+    "example": "3 − 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-improper-whole": {
+    "id": "legacy-fraction-sub-improper-whole",
+    "title": "Subtracting Whole Numbers from Improper Fractions",
+    "seoTitle": "Subtracting Whole Numbers from Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-improper-whole.html",
+    "sourceType": "fraction-sub-improper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "improper",
+      "fb": "whole"
+    },
+    "example": "7/4 − 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-improper-proper": {
+    "id": "legacy-fraction-sub-improper-proper",
+    "title": "Subtracting Proper Fractions from Improper Fractions",
+    "seoTitle": "Subtracting Proper Fractions from Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-improper-proper.html",
+    "sourceType": "fraction-sub-improper-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "improper",
+      "fb": "proper"
+    },
+    "example": "7/4 − 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-improper-improper": {
+    "id": "legacy-fraction-sub-improper-improper",
+    "title": "Subtracting Improper Fractions",
+    "seoTitle": "Subtracting Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-improper-improper.html",
+    "sourceType": "fraction-sub-improper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "improper",
+      "fb": "improper"
+    },
+    "example": "7/4 − 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-improper-mixed": {
+    "id": "legacy-fraction-sub-improper-mixed",
+    "title": "Subtracting Mixed Numbers from Improper Fractions",
+    "seoTitle": "Subtracting Mixed Numbers from Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-improper-mixed.html",
+    "sourceType": "fraction-sub-improper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "improper",
+      "fb": "mixed"
+    },
+    "example": "7/4 − 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-mixed-whole": {
+    "id": "legacy-fraction-sub-mixed-whole",
+    "title": "Subtracting Whole Numbers from Mixed Numbers",
+    "seoTitle": "Subtracting Whole Numbers from Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-mixed-whole.html",
+    "sourceType": "fraction-sub-mixed-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "mixed",
+      "fb": "whole"
+    },
+    "example": "2 1/3 − 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-mixed-proper": {
+    "id": "legacy-fraction-sub-mixed-proper",
+    "title": "Subtracting Proper Fractions from Mixed Numbers",
+    "seoTitle": "Subtracting Proper Fractions from Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-mixed-proper.html",
+    "sourceType": "fraction-sub-mixed-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "mixed",
+      "fb": "proper"
+    },
+    "example": "2 1/3 − 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-mixed-improper": {
+    "id": "legacy-fraction-sub-mixed-improper",
+    "title": "Subtracting Improper Fractions from Mixed Numbers",
+    "seoTitle": "Subtracting Improper Fractions from Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-mixed-improper.html",
+    "sourceType": "fraction-sub-mixed-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "mixed",
+      "fb": "improper"
+    },
+    "example": "2 1/3 − 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-sub-mixed-mixed": {
+    "id": "legacy-fraction-sub-mixed-mixed",
+    "title": "Subtracting Mixed Numbers",
+    "seoTitle": "Subtracting Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-sub-mixed-mixed.html",
+    "sourceType": "fraction-sub-mixed-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "sub",
+      "op": "−",
+      "fa": "mixed",
+      "fb": "mixed"
+    },
+    "example": "2 1/3 − 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction addition/subtraction computation; mixed numbers and unlike denominators depend on the selected operand forms.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-0dp-1dp": {
+    "id": "legacy-decimal-mul-0dp-1dp",
+    "title": "Decimal Multiplication with Whole Numbers",
+    "seoTitle": "Decimal Multiplication with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-0dp-1dp.html",
+    "sourceType": "decimal-mul-0dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 0,
+      "db": 1
+    },
+    "example": "3 × 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-0dp-2dp": {
+    "id": "legacy-decimal-mul-0dp-2dp",
+    "title": "Decimal Multiplication with Whole Numbers",
+    "seoTitle": "Decimal Multiplication with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-0dp-2dp.html",
+    "sourceType": "decimal-mul-0dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 0,
+      "db": 2
+    },
+    "example": "3 × 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-1dp-0dp": {
+    "id": "legacy-decimal-mul-1dp-0dp",
+    "title": "Decimal Multiplication with Whole Numbers",
+    "seoTitle": "Decimal Multiplication with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-1dp-0dp.html",
+    "sourceType": "decimal-mul-1dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 1,
+      "db": 0
+    },
+    "example": "3.6 × 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-1dp-2dp": {
+    "id": "legacy-decimal-mul-1dp-2dp",
+    "title": "Decimal Multiplication (1 and 2 Decimal Places)",
+    "seoTitle": "Decimal Multiplication (1 and 2 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-1dp-2dp.html",
+    "sourceType": "decimal-mul-1dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 1,
+      "db": 2
+    },
+    "example": "3.6 × 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-2dp-0dp": {
+    "id": "legacy-decimal-mul-2dp-0dp",
+    "title": "Decimal Multiplication with Whole Numbers",
+    "seoTitle": "Decimal Multiplication with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-2dp-0dp.html",
+    "sourceType": "decimal-mul-2dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 2,
+      "db": 0
+    },
+    "example": "3.75 × 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-mul-2dp-1dp": {
+    "id": "legacy-decimal-mul-2dp-1dp",
+    "title": "Decimal Multiplication (2 and 1 Decimal Places)",
+    "seoTitle": "Decimal Multiplication (2 and 1 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-mul-2dp-1dp.html",
+    "sourceType": "decimal-mul-2dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "mul",
+      "op": "×",
+      "da": 2,
+      "db": 1
+    },
+    "example": "3.75 × 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-whole-proper": {
+    "id": "legacy-fraction-mul-whole-proper",
+    "title": "Multiplying Whole Numbers and Proper Fractions",
+    "seoTitle": "Multiplying Whole Numbers and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-whole-proper.html",
+    "sourceType": "fraction-mul-whole-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "whole",
+      "fb": "proper"
+    },
+    "example": "3 × 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-whole-improper": {
+    "id": "legacy-fraction-mul-whole-improper",
+    "title": "Multiplying Whole Numbers and Improper Fractions",
+    "seoTitle": "Multiplying Whole Numbers and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-whole-improper.html",
+    "sourceType": "fraction-mul-whole-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "whole",
+      "fb": "improper"
+    },
+    "example": "3 × 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-whole-mixed": {
+    "id": "legacy-fraction-mul-whole-mixed",
+    "title": "Multiplying Whole Numbers and Mixed Numbers",
+    "seoTitle": "Multiplying Whole Numbers and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-whole-mixed.html",
+    "sourceType": "fraction-mul-whole-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "whole",
+      "fb": "mixed"
+    },
+    "example": "3 × 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-proper-whole": {
+    "id": "legacy-fraction-mul-proper-whole",
+    "title": "Multiplying Proper Fractions and Whole Numbers",
+    "seoTitle": "Multiplying Proper Fractions and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-proper-whole.html",
+    "sourceType": "fraction-mul-proper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "proper",
+      "fb": "whole"
+    },
+    "example": "2/5 × 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-proper-improper": {
+    "id": "legacy-fraction-mul-proper-improper",
+    "title": "Multiplying Proper Fractions and Improper Fractions",
+    "seoTitle": "Multiplying Proper Fractions and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-proper-improper.html",
+    "sourceType": "fraction-mul-proper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "proper",
+      "fb": "improper"
+    },
+    "example": "2/5 × 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-proper-mixed": {
+    "id": "legacy-fraction-mul-proper-mixed",
+    "title": "Multiplying Proper Fractions and Mixed Numbers",
+    "seoTitle": "Multiplying Proper Fractions and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-proper-mixed.html",
+    "sourceType": "fraction-mul-proper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "proper",
+      "fb": "mixed"
+    },
+    "example": "2/5 × 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-improper-whole": {
+    "id": "legacy-fraction-mul-improper-whole",
+    "title": "Multiplying Improper Fractions and Whole Numbers",
+    "seoTitle": "Multiplying Improper Fractions and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-improper-whole.html",
+    "sourceType": "fraction-mul-improper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "improper",
+      "fb": "whole"
+    },
+    "example": "7/4 × 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-improper-proper": {
+    "id": "legacy-fraction-mul-improper-proper",
+    "title": "Multiplying Improper Fractions and Proper Fractions",
+    "seoTitle": "Multiplying Improper Fractions and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-improper-proper.html",
+    "sourceType": "fraction-mul-improper-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "improper",
+      "fb": "proper"
+    },
+    "example": "7/4 × 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-improper-improper": {
+    "id": "legacy-fraction-mul-improper-improper",
+    "title": "Multiplying Improper Fractions",
+    "seoTitle": "Multiplying Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-improper-improper.html",
+    "sourceType": "fraction-mul-improper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "improper",
+      "fb": "improper"
+    },
+    "example": "7/4 × 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-improper-mixed": {
+    "id": "legacy-fraction-mul-improper-mixed",
+    "title": "Multiplying Improper Fractions and Mixed Numbers",
+    "seoTitle": "Multiplying Improper Fractions and Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-improper-mixed.html",
+    "sourceType": "fraction-mul-improper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "improper",
+      "fb": "mixed"
+    },
+    "example": "7/4 × 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-mixed-whole": {
+    "id": "legacy-fraction-mul-mixed-whole",
+    "title": "Multiplying Mixed Numbers and Whole Numbers",
+    "seoTitle": "Multiplying Mixed Numbers and Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-mixed-whole.html",
+    "sourceType": "fraction-mul-mixed-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "mixed",
+      "fb": "whole"
+    },
+    "example": "2 1/3 × 3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-mixed-proper": {
+    "id": "legacy-fraction-mul-mixed-proper",
+    "title": "Multiplying Mixed Numbers and Proper Fractions",
+    "seoTitle": "Multiplying Mixed Numbers and Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-mixed-proper.html",
+    "sourceType": "fraction-mul-mixed-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "mixed",
+      "fb": "proper"
+    },
+    "example": "2 1/3 × 2/5",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-mixed-improper": {
+    "id": "legacy-fraction-mul-mixed-improper",
+    "title": "Multiplying Mixed Numbers and Improper Fractions",
+    "seoTitle": "Multiplying Mixed Numbers and Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-mixed-improper.html",
+    "sourceType": "fraction-mul-mixed-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "mixed",
+      "fb": "improper"
+    },
+    "example": "2 1/3 × 7/4",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-mul-mixed-mixed": {
+    "id": "legacy-fraction-mul-mixed-mixed",
+    "title": "Multiplying Mixed Numbers",
+    "seoTitle": "Multiplying Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-mul-mixed-mixed.html",
+    "sourceType": "fraction-mul-mixed-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "mul",
+      "op": "×",
+      "fa": "mixed",
+      "fb": "mixed"
+    },
+    "example": "2 1/3 × 2 1/3",
+    "commonCore": {
+      "codes": [
+        "5.NF.B.4.a"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Fraction-product computation subset. Whole-number factors may be Grade 4 support, but generator denominators can exceed the Grade 4 allowed set.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NF/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-0dp-1dp": {
+    "id": "legacy-decimal-div-0dp-1dp",
+    "title": "Decimal Division with Whole Numbers",
+    "seoTitle": "Decimal Division with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-0dp-1dp.html",
+    "sourceType": "decimal-div-0dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 0,
+      "db": 1
+    },
+    "example": "3 ÷ 1.2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-0dp-2dp": {
+    "id": "legacy-decimal-div-0dp-2dp",
+    "title": "Decimal Division with Whole Numbers",
+    "seoTitle": "Decimal Division with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-0dp-2dp.html",
+    "sourceType": "decimal-div-0dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 0,
+      "db": 2
+    },
+    "example": "3 ÷ 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-1dp-0dp": {
+    "id": "legacy-decimal-div-1dp-0dp",
+    "title": "Decimal Division with Whole Numbers",
+    "seoTitle": "Decimal Division with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-1dp-0dp.html",
+    "sourceType": "decimal-div-1dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 1,
+      "db": 0
+    },
+    "example": "3.6 ÷ 2",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-1dp-2dp": {
+    "id": "legacy-decimal-div-1dp-2dp",
+    "title": "Decimal Division (1 and 2 Decimal Places)",
+    "seoTitle": "Decimal Division (1 and 2 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-1dp-2dp.html",
+    "sourceType": "decimal-div-1dp-2dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 1,
+      "db": 2
+    },
+    "example": "3.6 ÷ 0.25",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-2dp-0dp": {
+    "id": "legacy-decimal-div-2dp-0dp",
+    "title": "Decimal Division with Whole Numbers",
+    "seoTitle": "Decimal Division with Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-2dp-0dp.html",
+    "sourceType": "decimal-div-2dp-0dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 0
+    },
+    "example": "3.75 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-decimal-div-2dp-1dp": {
+    "id": "legacy-decimal-div-2dp-1dp",
+    "title": "Decimal Division (2 and 1 Decimal Places)",
+    "seoTitle": "Decimal Division (2 and 1 Decimal Places) Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/decimal-div-2dp-1dp.html",
+    "sourceType": "decimal-div-2dp-1dp",
+    "originalConfig": {
+      "kind": "decimal-pair",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 1
+    },
+    "example": "3.75 ÷ 1.5",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.3"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Algorithmic decimal computation practice. Grade 5 5.NBT.B.7 requires place-value/model reasoning; multiplication can produce thousandths or ten-thousandths. Do not label all variants Grade 5.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-whole-proper": {
+    "id": "legacy-fraction-div-whole-proper",
+    "title": "Dividing Whole Numbers by Proper Fractions",
+    "seoTitle": "Dividing Whole Numbers by Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-whole-proper.html",
+    "sourceType": "fraction-div-whole-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "whole",
+      "fb": "proper"
+    },
+    "example": "3 ÷ 2/5",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-whole-improper": {
+    "id": "legacy-fraction-div-whole-improper",
+    "title": "Dividing Whole Numbers by Improper Fractions",
+    "seoTitle": "Dividing Whole Numbers by Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-whole-improper.html",
+    "sourceType": "fraction-div-whole-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "whole",
+      "fb": "improper"
+    },
+    "example": "3 ÷ 7/4",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-whole-mixed": {
+    "id": "legacy-fraction-div-whole-mixed",
+    "title": "Dividing Whole Numbers by Mixed Numbers",
+    "seoTitle": "Dividing Whole Numbers by Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-whole-mixed.html",
+    "sourceType": "fraction-div-whole-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "whole",
+      "fb": "mixed"
+    },
+    "example": "3 ÷ 2 1/3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-proper-whole": {
+    "id": "legacy-fraction-div-proper-whole",
+    "title": "Dividing Proper Fractions by Whole Numbers",
+    "seoTitle": "Dividing Proper Fractions by Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-proper-whole.html",
+    "sourceType": "fraction-div-proper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "proper",
+      "fb": "whole"
+    },
+    "example": "2/5 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-proper-improper": {
+    "id": "legacy-fraction-div-proper-improper",
+    "title": "Dividing Proper Fractions by Improper Fractions",
+    "seoTitle": "Dividing Proper Fractions by Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-proper-improper.html",
+    "sourceType": "fraction-div-proper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "proper",
+      "fb": "improper"
+    },
+    "example": "2/5 ÷ 7/4",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-proper-mixed": {
+    "id": "legacy-fraction-div-proper-mixed",
+    "title": "Dividing Proper Fractions by Mixed Numbers",
+    "seoTitle": "Dividing Proper Fractions by Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-proper-mixed.html",
+    "sourceType": "fraction-div-proper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "proper",
+      "fb": "mixed"
+    },
+    "example": "2/5 ÷ 2 1/3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-improper-whole": {
+    "id": "legacy-fraction-div-improper-whole",
+    "title": "Dividing Improper Fractions by Whole Numbers",
+    "seoTitle": "Dividing Improper Fractions by Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-improper-whole.html",
+    "sourceType": "fraction-div-improper-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "improper",
+      "fb": "whole"
+    },
+    "example": "7/4 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-improper-proper": {
+    "id": "legacy-fraction-div-improper-proper",
+    "title": "Dividing Improper Fractions by Proper Fractions",
+    "seoTitle": "Dividing Improper Fractions by Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-improper-proper.html",
+    "sourceType": "fraction-div-improper-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "improper",
+      "fb": "proper"
+    },
+    "example": "7/4 ÷ 2/5",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-improper-improper": {
+    "id": "legacy-fraction-div-improper-improper",
+    "title": "Dividing Improper Fractions",
+    "seoTitle": "Dividing Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-improper-improper.html",
+    "sourceType": "fraction-div-improper-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "improper",
+      "fb": "improper"
+    },
+    "example": "7/4 ÷ 7/4",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-improper-mixed": {
+    "id": "legacy-fraction-div-improper-mixed",
+    "title": "Dividing Improper Fractions by Mixed Numbers",
+    "seoTitle": "Dividing Improper Fractions by Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-improper-mixed.html",
+    "sourceType": "fraction-div-improper-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "improper",
+      "fb": "mixed"
+    },
+    "example": "7/4 ÷ 2 1/3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-mixed-whole": {
+    "id": "legacy-fraction-div-mixed-whole",
+    "title": "Dividing Mixed Numbers by Whole Numbers",
+    "seoTitle": "Dividing Mixed Numbers by Whole Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-mixed-whole.html",
+    "sourceType": "fraction-div-mixed-whole",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "mixed",
+      "fb": "whole"
+    },
+    "example": "2 1/3 ÷ 3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-mixed-proper": {
+    "id": "legacy-fraction-div-mixed-proper",
+    "title": "Dividing Mixed Numbers by Proper Fractions",
+    "seoTitle": "Dividing Mixed Numbers by Proper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-mixed-proper.html",
+    "sourceType": "fraction-div-mixed-proper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "mixed",
+      "fb": "proper"
+    },
+    "example": "2 1/3 ÷ 2/5",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-mixed-improper": {
+    "id": "legacy-fraction-div-mixed-improper",
+    "title": "Dividing Mixed Numbers by Improper Fractions",
+    "seoTitle": "Dividing Mixed Numbers by Improper Fractions Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-mixed-improper.html",
+    "sourceType": "fraction-div-mixed-improper",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "mixed",
+      "fb": "improper"
+    },
+    "example": "2 1/3 ÷ 7/4",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "legacy-fraction-div-mixed-mixed": {
+    "id": "legacy-fraction-div-mixed-mixed",
+    "title": "Dividing Mixed Numbers",
+    "seoTitle": "Dividing Mixed Numbers Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/fraction-div-mixed-mixed.html",
+    "sourceType": "fraction-div-mixed-mixed",
+    "originalConfig": {
+      "kind": "fraction-pair",
+      "code": "div",
+      "op": "÷",
+      "fa": "mixed",
+      "fb": "mixed"
+    },
+    "example": "2 1/3 ÷ 2 1/3",
+    "commonCore": {
+      "codes": [
+        "6.NS.A.1"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "General fractions are not restricted to unit fractions; do not use Grade 5 unit-fraction division code. Models and word problems are additional requirements.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-add-2-2-regroup": {
+    "id": "detail-natural-add-2-2-regroup",
+    "title": "2-Digit Addition With Regrouping",
+    "seoTitle": "2-Digit Addition With Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-2-2-regroup.html",
+    "sourceType": "natural-add-2-2-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 + 12",
+    "selection": "regroup",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 198.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-add-2-2-no-regroup": {
+    "id": "detail-natural-add-2-2-no-regroup",
+    "title": "2-Digit Addition Without Regrouping",
+    "seoTitle": "2-Digit Addition Without Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-2-2-no-regroup.html",
+    "sourceType": "natural-add-2-2-no-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 + 12",
+    "selection": "no-regroup",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 99.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-add-3-3-regroup": {
+    "id": "detail-natural-add-3-3-regroup",
+    "title": "3-Digit Addition With Regrouping",
+    "seoTitle": "3-Digit Addition With Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-3-3-regroup.html",
+    "sourceType": "natural-add-3-3-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 + 124",
+    "selection": "regroup",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 1998.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-add-3-3-no-regroup": {
+    "id": "detail-natural-add-3-3-no-regroup",
+    "title": "3-Digit Addition Without Regrouping",
+    "seoTitle": "3-Digit Addition Without Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-add-3-3-no-regroup.html",
+    "sourceType": "natural-add-3-3-no-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "add",
+      "op": "+",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 + 124",
+    "selection": "no-regroup",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-sub-2-2-regroup": {
+    "id": "detail-natural-sub-2-2-regroup",
+    "title": "2-Digit Subtraction With Regrouping",
+    "seoTitle": "2-Digit Subtraction With Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-2-2-regroup.html",
+    "sourceType": "natural-sub-2-2-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 − 12",
+    "selection": "regroup",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 99.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-sub-2-2-no-regroup": {
+    "id": "detail-natural-sub-2-2-no-regroup",
+    "title": "2-Digit Subtraction Without Regrouping",
+    "seoTitle": "2-Digit Subtraction Without Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-2-2-no-regroup.html",
+    "sourceType": "natural-sub-2-2-no-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 − 12",
+    "selection": "no-regroup",
+    "commonCore": {
+      "codes": [
+        "2.NBT.B.5"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 2, 2; conservative maximum result 99.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/2/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-sub-3-3-regroup": {
+    "id": "detail-natural-sub-3-3-regroup",
+    "title": "3-Digit Subtraction With Regrouping",
+    "seoTitle": "3-Digit Subtraction With Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-3-regroup.html",
+    "sourceType": "natural-sub-3-3-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 − 124",
+    "selection": "regroup",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-sub-3-3-no-regroup": {
+    "id": "detail-natural-sub-3-3-no-regroup",
+    "title": "3-Digit Subtraction Without Regrouping",
+    "seoTitle": "3-Digit Subtraction Without Regrouping Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-3-no-regroup.html",
+    "sourceType": "natural-sub-3-3-no-regroup",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 − 124",
+    "selection": "no-regroup",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 3; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-sub-3-2-across-zero": {
+    "id": "detail-natural-sub-3-2-across-zero",
+    "title": "3-Digit Subtraction Across Zeros",
+    "seoTitle": "3-Digit Subtraction Across Zeros Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-sub-3-2-across-zero.html",
+    "sourceType": "natural-sub-3-2-across-zero",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "sub",
+      "op": "−",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 − 12",
+    "selection": "across-zero",
+    "commonCore": {
+      "codes": [
+        "3.NBT.A.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. Generator operand digits: 3, 2; conservative maximum result 999.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-2-1-remainder": {
+    "id": "detail-natural-div-2-1-remainder",
+    "title": "2-Digit by 1-Digit Division — With Remainders",
+    "seoTitle": "2-Digit by 1-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-1-remainder.html",
+    "sourceType": "natural-div-2-1-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 ÷ 3",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-2-1-exact": {
+    "id": "detail-natural-div-2-1-exact",
+    "title": "2-Digit by 1-Digit Division — Without Remainders",
+    "seoTitle": "2-Digit by 1-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-1-exact.html",
+    "sourceType": "natural-div-2-1-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 1
+    },
+    "example": "24 ÷ 3",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-1-remainder": {
+    "id": "detail-natural-div-3-1-remainder",
+    "title": "3-Digit by 1-Digit Division — With Remainders",
+    "seoTitle": "3-Digit by 1-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-1-remainder.html",
+    "sourceType": "natural-div-3-1-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 ÷ 3",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-1-exact": {
+    "id": "detail-natural-div-3-1-exact",
+    "title": "3-Digit by 1-Digit Division — Without Remainders",
+    "seoTitle": "3-Digit by 1-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-1-exact.html",
+    "sourceType": "natural-div-3-1-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 1
+    },
+    "example": "248 ÷ 3",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-1-remainder": {
+    "id": "detail-natural-div-4-1-remainder",
+    "title": "4-Digit by 1-Digit Division — With Remainders",
+    "seoTitle": "4-Digit by 1-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-1-remainder.html",
+    "sourceType": "natural-div-4-1-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 ÷ 3",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-1-exact": {
+    "id": "detail-natural-div-4-1-exact",
+    "title": "4-Digit by 1-Digit Division — Without Remainders",
+    "seoTitle": "4-Digit by 1-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-1-exact.html",
+    "sourceType": "natural-div-4-1-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 1
+    },
+    "example": "1248 ÷ 3",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-rounding-decimals": {
+    "id": "detail-rounding-decimals",
+    "title": "Rounding Decimals to Whole Numbers and Tenths",
+    "url": "/en/training/rounding-decimals.html",
+    "sourceType": "rounding-decimals",
+    "formats": [
+      "horizontal"
+    ],
+    "kind": "Calculation practice",
+    "commonCore": {
+      "codes": [
+        "5.NBT.A.4"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Rounding whole numbers and tenths is a subset of rounding decimals to any place.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-1-1-remainder": {
+    "id": "detail-natural-div-1-1-remainder",
+    "title": "Single-Digit Division — With Remainders",
+    "seoTitle": "Single-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-1-1-remainder.html",
+    "sourceType": "natural-div-1-1-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 ÷ 3",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "4.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/4/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-1-1-exact": {
+    "id": "detail-natural-div-1-1-exact",
+    "title": "Single-Digit Division — Without Remainders",
+    "seoTitle": "Single-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-1-1-exact.html",
+    "sourceType": "natural-div-1-1-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 1,
+      "db": 1
+    },
+    "example": "6 ÷ 3",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "3.OA.C.7"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/3/OA/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-2-2-remainder": {
+    "id": "detail-natural-div-2-2-remainder",
+    "title": "2-Digit by 2-Digit Division — With Remainders",
+    "seoTitle": "2-Digit by 2-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-2-remainder.html",
+    "sourceType": "natural-div-2-2-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 ÷ 12",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-2-2-exact": {
+    "id": "detail-natural-div-2-2-exact",
+    "title": "2-Digit by 2-Digit Division — Without Remainders",
+    "seoTitle": "2-Digit by 2-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-2-2-exact.html",
+    "sourceType": "natural-div-2-2-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 2,
+      "db": 2
+    },
+    "example": "24 ÷ 12",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-2-remainder": {
+    "id": "detail-natural-div-3-2-remainder",
+    "title": "3-Digit by 2-Digit Division — With Remainders",
+    "seoTitle": "3-Digit by 2-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-2-remainder.html",
+    "sourceType": "natural-div-3-2-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 ÷ 12",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-2-exact": {
+    "id": "detail-natural-div-3-2-exact",
+    "title": "3-Digit by 2-Digit Division — Without Remainders",
+    "seoTitle": "3-Digit by 2-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-2-exact.html",
+    "sourceType": "natural-div-3-2-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 2
+    },
+    "example": "248 ÷ 12",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-3-remainder": {
+    "id": "detail-natural-div-3-3-remainder",
+    "title": "3-Digit by 3-Digit Division — With Remainders",
+    "seoTitle": "3-Digit by 3-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-3-remainder.html",
+    "sourceType": "natural-div-3-3-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 ÷ 124",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-3-3-exact": {
+    "id": "detail-natural-div-3-3-exact",
+    "title": "3-Digit by 3-Digit Division — Without Remainders",
+    "seoTitle": "3-Digit by 3-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-3-3-exact.html",
+    "sourceType": "natural-div-3-3-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 3,
+      "db": 3
+    },
+    "example": "248 ÷ 124",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-2-remainder": {
+    "id": "detail-natural-div-4-2-remainder",
+    "title": "4-Digit by 2-Digit Division — With Remainders",
+    "seoTitle": "4-Digit by 2-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-2-remainder.html",
+    "sourceType": "natural-div-4-2-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 ÷ 12",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-2-exact": {
+    "id": "detail-natural-div-4-2-exact",
+    "title": "4-Digit by 2-Digit Division — Without Remainders",
+    "seoTitle": "4-Digit by 2-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-2-exact.html",
+    "sourceType": "natural-div-4-2-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 2
+    },
+    "example": "1248 ÷ 12",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "5.NBT.B.6"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/5/NBT/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-3-remainder": {
+    "id": "detail-natural-div-4-3-remainder",
+    "title": "4-Digit by 3-Digit Division — With Remainders",
+    "seoTitle": "4-Digit by 3-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-3-remainder.html",
+    "sourceType": "natural-div-4-3-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 ÷ 124",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-3-exact": {
+    "id": "detail-natural-div-4-3-exact",
+    "title": "4-Digit by 3-Digit Division — Without Remainders",
+    "seoTitle": "4-Digit by 3-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-3-exact.html",
+    "sourceType": "natural-div-4-3-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 3
+    },
+    "example": "1248 ÷ 124",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-4-remainder": {
+    "id": "detail-natural-div-4-4-remainder",
+    "title": "4-Digit by 4-Digit Division — With Remainders",
+    "seoTitle": "4-Digit by 4-Digit Division — With Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-4-remainder.html",
+    "sourceType": "natural-div-4-4-remainder",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 ÷ 1124",
+    "selection": "remainder",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  },
+  "detail-natural-div-4-4-exact": {
+    "id": "detail-natural-div-4-4-exact",
+    "title": "4-Digit by 4-Digit Division — Without Remainders",
+    "seoTitle": "4-Digit by 4-Digit Division — Without Remainders Worksheets",
+    "kind": "Calculation practice",
+    "url": "/en/training/natural-div-4-4-exact.html",
+    "sourceType": "natural-div-4-4-exact",
+    "originalConfig": {
+      "kind": "natural",
+      "code": "div",
+      "op": "÷",
+      "da": 4,
+      "db": 4
+    },
+    "example": "1248 ÷ 1124",
+    "selection": "exact",
+    "commonCore": {
+      "codes": [
+        "6.NS.B.2"
+      ],
+      "scope": "partial",
+      "basis": "generator-config-and-source",
+      "needsItemReview": false,
+      "note": "Calculation practice only; a worksheet does not establish fluency or satisfy all explanation/model requirements. General division may include remainders; it is not automatically a Grade 3 fact worksheet.",
+      "sources": [
+        "https://www.thecorestandards.org/Math/Content/6/NS/"
+      ],
+      "version": "2026-09-29-draft-2-three-agent-audit"
+    }
+  }
+}
