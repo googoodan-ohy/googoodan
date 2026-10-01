@@ -64,8 +64,8 @@
     try {const set=new URL(previousFrame?.contentWindow.location.href).searchParams.get('set');if(previousFrame?.dataset.trainingId&&/^\d{1,10}$/.test(set)&&Number(set)<=4294967295)trainingSeeds.set(previousFrame.dataset.trainingId,set);} catch {}
     playerObserver?.disconnect();
     let parts;
-    try {parts=decodeURIComponent(location.hash.slice(1)||'grades').split('/');} catch {parts=['invalid'];}
-    const [mode='grades',arg='',formatArg=''] = parts;
+    try {parts=decodeURIComponent(location.hash.slice(1)||(document.body.dataset.route==='search'?'search/'+encodeURIComponent(new URLSearchParams(location.search).get('q')||''):document.body.dataset.route)||'grades').split('/');} catch {parts=['invalid'];}
+    const [mode='grades',arg='',routeFormat=''] = parts; const formatArg=routeFormat||new URLSearchParams(location.search).get('layout')||'';
     const activity=mode==='activity'?selections.get(arg):null;
     const worksheet=mode==='worksheet'||activity?data.worksheets[activity?activity.parentId:arg]:null;
     const trainingWorksheet=mode==='trainingsheet'?data.trainingWorksheets[arg]:null;
@@ -101,10 +101,10 @@
         content.innerHTML=hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`${grade}학년 학습`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.')+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
       }
     } else {content.innerHTML=hero('자료를 찾을 수 없습니다.')+link('학년별 학습으로','grades');}
-    document.title=(content.querySelector('h1')?.textContent||'초등 수학 문제지')+' | googoodan.com';
+    if(!document.body.dataset.route)document.title=(content.querySelector('h1')?.textContent||'초등 수학 문제지')+' | googoodan.com';
     main.scrollTop=0;if(innerWidth<=760)browse.open=false;
     document.querySelector('.lesson-jump')?.addEventListener('click',()=>document.querySelector('#worksheet-player').scrollIntoView({behavior:'smooth',block:'start'}));
-    fitPlayer();
+    fitPlayer(); document.body.dataset.ready="true";
   }
   $('.worksheet-search').addEventListener('submit',event=>{event.preventDefault();location.hash='search/'+encodeURIComponent($('#worksheet-query').value.trim());});
   addEventListener('hashchange',render);render();
