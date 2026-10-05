@@ -6,3 +6,4 @@
  main{margin-top:0!important}
 }
 .sheet .activity>h3{display:none!important}
+@media screen{.paper.drill-sheet .problems{grid-template-columns:repeat(var(--cols),minmax(0,1fr))!important}.paper.drill-sheet .problem{min-height:0!important}}
