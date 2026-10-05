@@ -2,6 +2,7 @@
   'use strict';
   const read = async name => { const response = await fetch(name, {cache:'no-store'}); if (!response.ok) throw Error(name); return response.json(); };
   const [data, activities, trainingConcepts, ...gradeBooks] = await Promise.all(['catalog.json','activity-splits.json','concepts/training.json', ...[1,2,3,4,5,6].map(g=>'concepts/grade-'+g+'.json')].map(read));
+  const newTrainingGuides=await read('/assets/training-types-catalog.json');
   const gradeConcepts=new Map(gradeBooks.map(book=>[book.grade,book]));
   const $ = selector => document.querySelector(selector);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -94,8 +95,8 @@
       if(mode==='search') {
         const tokens=arg.toLocaleLowerCase('ko').trim().split(/\s+/).filter(Boolean);
         const found=Object.values(data.worksheets).filter(w=>tokens.every(t=>(w.title+' '+w.grade+'학년 '+units.get(w.unit).title+' '+(units.get(w.unit).topics||[units.get(w.unit).topic]).join(' ')).toLocaleLowerCase('ko').includes(t)));
-        const foundTraining=Object.values(data.trainingWorksheets).filter(w=>tokens.every(t=>w.title.toLocaleLowerCase('ko').includes(t)));
-        content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>link(w.title,'trainingsheet/'+w.id)).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):'');
+        const foundTraining=newTrainingGuides.filter(w=>tokens.every(t=>(w.domain+' '+w.concept+' '+w.title+' '+w.group).toLocaleLowerCase('ko').includes(t)));
+        content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>`<a class="menu-link" href="${esc(w.url)}">${esc(w.concept+' · '+w.title)}</a>`).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):'');
       } else {
         const list=data.units.filter(u=>mode==='unit'?u.id===arg:mode==='topics'?(arg?(u.topics||[u.topic]).includes(arg):true):u.grade===grade);
         content.innerHTML=hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`${grade}학년 학습`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.')+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
