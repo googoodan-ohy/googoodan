@@ -5,3 +5,5 @@
 @media(max-width:760px){.concept-intro{padding:18px}.concept-intro h2{font-size:23px}.concept-example{padding:15px}.concept-example .example-problem{font-size:17px}.concept-mistakes{padding-left:14px;padding-right:12px}}
 
 .concept-review{margin:22px 0;padding:16px 20px;border:1px solid #c9ddd6;border-radius:10px;background:#f6faf7}.concept-review>summary{font-weight:700;cursor:pointer;color:#245955}.concept-review>p{line-height:1.8}.concept-review[open]>summary{margin-bottom:12px}
+
+.unit-training-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.unit-training-list .menu-link{border:1px solid #c9dfdc;border-radius:8px;padding:14px;background:#fff}.unit-training-entry{margin:14px 0;padding:8px 12px;background:#eef7f4;border-radius:8px}.unit-training-submenu{font-size:.92em;border-left:2px solid #c9dfdc;margin-bottom:8px}

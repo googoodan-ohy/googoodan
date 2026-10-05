@@ -3,6 +3,7 @@
   const read = async name => { const response = await fetch(name, {cache:'no-store'}); if (!response.ok) throw Error(name); return response.json(); };
   const [data, activities, trainingConcepts, ...gradeBooks] = await Promise.all(['catalog.json','activity-splits.json','concepts/training.json', ...[1,2,3,4,5,6].map(g=>'concepts/grade-'+g+'.json')].map(read));
   const newTrainingGuides=await read('/assets/training-types-catalog.json');
+  const unitTraining=await read('/assets/unit-training-catalog.json');
   const gradeConcepts=new Map(gradeBooks.map(book=>[book.grade,book]));
   const $ = selector => document.querySelector(selector);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -24,7 +25,7 @@
     return `<div class="training-gallery separate-gallery grade-gallery">${worksheets.map(w => `<a class="training-card" href="#worksheet/${esc(w.id)}"><img src="thumbnails/${esc(w.id)}.png" alt="${esc(w.title)} 문제지 미리보기" loading="lazy" width="420" height="594"><span title="${esc(w.title)}">${esc(w.title)}</span></a>`).join('')}</div>`;
   }
   function gradeMenu(grade,unitId) {
-    return '<p class="menu-heading">학년과 단원</p>'+[1,2,3,4,5,6].map(g => `<details class="grade-group"${g===grade?' open':''}><summary>${g}학년</summary>${link(`${g}학년 전체`,'grades/'+g,g===grade&&!unitId)}<div class="nested">${data.units.filter(u=>u.grade===g).map(u=>link(u.title,'unit/'+u.id,u.id===unitId)).join('')}</div></details>`).join('');
+    return '<p class="menu-heading">학년과 단원</p>'+[1,2,3,4,5,6].map(g => `<details class="grade-group"${g===grade?' open':''}><summary>${g}학년</summary>${link(`${g}학년 전체`,'grades/'+g,g===grade&&!unitId)}<div class="nested">${data.units.filter(u=>u.grade===g).map(u=>link(u.title,'unit/'+u.id,u.id===unitId)+(unitTraining.units[u.id]?.length?'<div class="nested unit-training-submenu">'+link('연산 트레이닝','unittraining/'+u.id,location.pathname.includes('/unit/'+u.id+'/training/'))+'</div>':'')).join('')}</div></details>`).join('');
   }
   function trainingMenu(domain,index) {
     return Object.entries(domains).map(([key,name]) => `<section class="training-domain domain-${key}"><h2 class="domain-heading">${name}</h2>${data.training[key].map((g,i)=>link(g.name,`training/${key}/${i}`,domain===key&&index===i)).join('')}</section>`).join('');
@@ -77,7 +78,7 @@
     const validOrigin=/^(grades\/[1-6]|unit\/[1-6]-[12]-\d+|topics(?:\/[^<>]*)?|search\/[^<>]*)$/.test(origin)?origin:'grades/1';
     const navMode=trainingWorksheet||mode==='training'?'training':worksheet?(validOrigin.startsWith('topics')?'topics':'grades'):mode==='topics'?'topics':'grades';
     let grade=worksheet?.grade || units.get(arg)?.grade || (/^[1-6]$/.test(arg)?Number(arg):1);
-    menu.innerHTML=navMode==='training'?trainingMenu(groupInfo?.domain||domain,groupInfo?.index??op):navMode==='topics'?'<p class="menu-heading">학습 주제</p>'+link('모든 주제','topics',mode==='topics'&&!arg)+topicNames.map(t=>link(t,'topics/'+t,mode==='topics'&&arg===t)).join(''):gradeMenu(grade,worksheet?.unit||(mode==='unit'?arg:null));
+    menu.innerHTML=navMode==='training'?trainingMenu(groupInfo?.domain||domain,groupInfo?.index??op):navMode==='topics'?'<p class="menu-heading">학습 주제</p>'+link('모든 주제','topics',mode==='topics'&&!arg)+topicNames.map(t=>link(t,'topics/'+t,mode==='topics'&&arg===t)).join(''):gradeMenu(grade,worksheet?.unit||(['unit','unittraining'].includes(mode)?arg:null));
     document.querySelectorAll('[data-mode]').forEach(a=>{if(a.dataset.mode===navMode)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     if(mode==='training') {
       const group=data.training[domain][op];
@@ -88,6 +89,11 @@
     } else if(worksheet) {
       const choices=activities.filter(a=>a.parentId===worksheet.id),title=activity?.title||worksheet.title,url=activity?.url||worksheet.url;
       content.innerHTML=`<a class="back-link" href="#${esc(validOrigin)}">← 문제지 목록</a>`+hero(title,units.get(worksheet.unit).title)+(choices.length?`<details class="activity-picker"${activity?' open':''}><summary>전체 문제지와 활동별 선택</summary><nav class="controls" aria-label="문제지 활동 선택">${link('전체 문제지','worksheet/'+worksheet.id,!activity)}${choices.map(a=>link(a.title,'activity/'+a.id,a.id===activity?.id)).join('')}</nav></details>`:'')+conceptExplanation(worksheet,activity)+player(title,url)+`<p class="direct-link"><a href="${esc(url)}" target="_blank" rel="noopener">문제지만 새 탭에서 열기 ↗</a></p>`;
+    } else if(mode==='unittraining') {
+      const u=units.get(arg),rows=unitTraining.units[arg]||[];
+      if(!u||!rows.length){content.innerHTML=hero('연결된 자료가 없습니다.')+link('학년별 학습으로','grades');return;}
+      const by=new Map();for(const r of rows){if(!by.has(r.concept))by.set(r.concept,[]);by.get(r.concept).push(r);}
+      content.innerHTML=link('← '+u.title,'unit/'+u.id)+hero(u.title+' · 연산 트레이닝','이 단원의 본학습에 맞는 '+rows.length+'개 유형입니다. 계산 개념을 고른 뒤 문제 유형을 선택하세요. 각 안내에서 풀이 예와 지도 방법을 확인하고 문제지와 정답을 인쇄할 수 있습니다.')+[...by].map(([c,list])=>'<section class="section"><h2>'+esc(c)+'</h2><div class="unit-training-list">'+list.map(r=>'<a class="menu-link" href="'+esc(r.url)+'">'+esc(r.title)+'</a>').join('')+'</div></section>').join('');
     } else if(['grades','unit','topics','search'].includes(mode)) {
       const chosen=mode==='unit'?units.get(arg):null;
       if(mode==='unit'&&!chosen){content.innerHTML=hero('단원을 찾을 수 없습니다.')+link('학년별 학습으로','grades');return;}
@@ -99,7 +105,7 @@
         content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>`<a class="menu-link" href="${esc(w.url)}">${esc(w.concept+' · '+w.title)}</a>`).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):'');
       } else {
         const list=data.units.filter(u=>mode==='unit'?u.id===arg:mode==='topics'?(arg?(u.topics||[u.topic]).includes(arg):true):u.grade===grade);
-        content.innerHTML=hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`${grade}학년 학습`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.')+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
+        content.innerHTML=hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`${grade}학년 학습`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.')+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
       }
     } else {content.innerHTML=hero('자료를 찾을 수 없습니다.')+link('학년별 학습으로','grades');}
     if(!document.body.dataset.route)document.title=(content.querySelector('h1')?.textContent||'초등 수학 문제지')+' | googoodan.com';
