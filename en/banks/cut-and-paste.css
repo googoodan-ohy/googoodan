@@ -1,0 +1,27 @@
+.cut-paste-sheet .problems{grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:4mm!important}
+.cut-paste-sheet .bank-question{border:1px solid #c7dce2;border-radius:10px;padding:3mm;overflow:visible}
+.cut-paste-sheet .bank-question>p{margin:5px 0 7px}
+.cut-match-targets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}
+.cut-match-targets>div{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;font-size:20px}
+.paste-sequence{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0}
+.paste-zone,.inline-paste{display:inline-grid;place-items:center;min-width:68px;min-height:34px;padding:2px 6px;border:2px dashed #69a89e;border-radius:7px;background:#fbfffd;box-sizing:border-box}
+.paste-sequence.four .paste-zone{min-width:55px}
+.single-paste{display:flex;justify-content:center;margin:8px 0}
+.inline-paste{min-width:42px;min-height:31px;margin:0 3px;vertical-align:middle}
+.fixed-card{display:inline-grid;place-items:center;min-width:55px;min-height:34px;border:1px solid #aac5cb;border-radius:7px;background:#eef8f4;font-size:18px}
+.cut-answer{visibility:hidden;color:#b52121;font-weight:800}
+.bank-answers .cut-answer{visibility:visible}
+.cut-card-bank{margin-top:9px;padding-top:7px;border-top:1.5px dashed #788f96;text-align:center}
+.cut-card-bank small{display:block;margin-bottom:5px;color:#526771}
+.cut-card-bank>div{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}
+.cut-card{display:inline-grid;place-items:center;min-width:48px;min-height:30px;padding:2px 10px;border:1.5px dashed #526771;border-radius:4px;background:#fff8e8;font-weight:700}
+.bank-answers .cut-card{opacity:.48}
+.cut-paste-sheet .concept-art{height:48px;margin:0 auto;display:block}
+@media print{
+  .cut-paste-sheet .problems{gap:3mm!important}
+  .cut-paste-sheet .bank-question{padding:2.5mm}
+  .cut-paste-sheet .paste-zone,.cut-paste-sheet .inline-paste{min-height:30px}
+  .cut-paste-sheet .cut-card-bank{margin-top:6px;padding-top:5px}
+  .cut-paste-sheet .cut-card{min-height:27px}
+}
+@media(max-width:700px){.cut-paste-sheet .cut-match-targets{grid-template-columns:1fr}.cut-paste-sheet .paste-sequence{gap:3px;flex-wrap:wrap}.cut-paste-sheet .paste-zone{min-width:52px}.cut-paste-sheet .cut-card{min-width:40px;padding:2px 7px}}

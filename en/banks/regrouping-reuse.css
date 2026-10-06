@@ -1,0 +1,35 @@
+.bank-question .regrouping-equation {
+  display: flex;
+  min-height: 9mm;
+  align-items: center;
+  justify-content: center;
+  gap: 2mm;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: .02em;
+}
+
+.bank-question .regrouping-workspace {
+  min-height: 6mm;
+  margin: 1mm 8mm 0;
+  border-bottom: 1px dotted #9bb4ba;
+}
+
+.bank-question .kblank {
+  display: inline-block;
+  min-width: 16mm;
+  height: 7mm;
+  vertical-align: middle;
+  border-bottom: 1px solid #859ca5;
+}
+
+.bank-answers .regrouping-workspace { display: none; }
+
+@media (max-width: 700px) {
+  .bank-question .regrouping-equation { font-size: 16px; }
+}
+
+@media print {
+  .bank-question .regrouping-equation { font-size: 17px; }
+  .bank-question .regrouping-workspace { min-height: 5mm; }
+}

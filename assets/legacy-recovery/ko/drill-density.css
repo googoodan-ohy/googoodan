@@ -1,0 +1,22 @@
+/* Korean written drills only: identical writing space on screen and in PDF. */
+html[lang="ko"] .paper.drill-sheet.dense-written .problems {
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--rows), minmax(0, 1fr));
+}
+html[lang="ko"] .drill-sheet.dense-written .problem {
+  min-height: 0;
+  padding: 4mm 2mm 1mm;
+  text-align: center;
+}
+html[lang="ko"] .drill-sheet.dense-written .long-division {
+  /* Center in the cell, not with SVG margins copied into the PDF image. */
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+html[lang="ko"] .drill-sheet.dense-written[data-family="Decimals"] .worked.multiplication {
+  font-size: 18px;
+  line-height: 1.15;
+}

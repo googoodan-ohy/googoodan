@@ -1,0 +1,1 @@
+globalThis.KoCatalog={units:[{id:'1-1-3',grade:1},{id:'1-2-6',grade:1},{id:'2-1-3',grade:2},{id:'3-1-1',grade:3}]};

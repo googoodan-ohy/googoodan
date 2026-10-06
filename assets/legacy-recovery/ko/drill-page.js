@@ -1,0 +1,95 @@
+(function(){
+function mascot(kind){
+ const face='<circle cx="45" cy="37" r="2" fill="#294552"/><circle cx="59" cy="37" r="2" fill="#294552"/><path d="M48 44Q52 48 56 44" stroke="#294552" fill="none" stroke-width="1.5"/>';
+ const forms={
+ rabbit:'<path d="M36 30Q24 2 35 4Q43 5 45 27M54 26Q64 0 71 7Q74 14 65 32" fill="#fff" stroke="currentColor" stroke-width="2"/><ellipse cx="52" cy="40" rx="24" ry="19" fill="#fff" stroke="currentColor" stroke-width="2"/>'+face,
+ squirrel:'<path d="M70 60Q104 51 89 21Q75 12 74 28Q94 36 68 47" fill="#e7b17c" stroke="currentColor" stroke-width="2"/><path d="M32 31L32 15L44 24L60 24L70 15V37" fill="#d39b65" stroke="currentColor" stroke-width="2"/><ellipse cx="52" cy="41" rx="23" ry="19" fill="#f9d2a2"/>'+face,
+ whale:'<path d="M17 45Q14 19 44 21Q74 20 77 46L95 33L93 54Q58 81 29 60Z" fill="#8ac9df" stroke="currentColor" stroke-width="2"/><path d="M37 16Q31 0 23 7M37 16Q39 0 49 7" stroke="currentColor" fill="none" stroke-width="3"/>'+face,
+ bear:'<circle cx="32" cy="23" r="11" fill="#dbb079"/><circle cx="72" cy="23" r="11" fill="#dbb079"/><ellipse cx="52" cy="40" rx="27" ry="23" fill="#efd3a4"/>'+face+'<path d="M13 63L21 45L29 63Z" fill="#75a89c"/>',
+ rocket:'<path d="M36 51L28 68L45 61M62 51L75 68L57 61" fill="#9b8cc8"/><path d="M40 60L50 78L59 60" fill="#efbb56"/><path d="M35 59Q31 25 50 7Q73 28 64 59Z" fill="#d9d3f1" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="33" r="10" fill="#c7e7ee" stroke="currentColor"/>',
+ dinosaur:'<path d="M24 63Q11 51 12 41L30 52Q29 25 48 24L48 14Q70 7 81 29L78 39L61 39V64L53 70L42 64L35 70Z" fill="#9ace91" stroke="currentColor" stroke-width="2"/><circle cx="69" cy="24" r="2" fill="#294552"/><path d="M29 43L20 37L30 32L25 24L38 26" fill="#e9bc69"/><path d="M64 33h10" stroke="#294552"/>',
+ robot:'<rect x="29" y="18" width="47" height="36" rx="8" fill="#d2e5f2" stroke="currentColor" stroke-width="2"/><path d="M52 18V8" stroke="currentColor" stroke-width="2"/><circle cx="52" cy="7" r="4" fill="#edbb63"/><rect x="34" y="55" width="38" height="16" rx="4" fill="#a6c8dc"/>'+face+'<path d="M22 35V47M82 35V47M43 72V78M63 72V78" stroke="currentColor" stroke-width="5"/>',
+ submarine:'<rect x="13" y="29" width="73" height="31" rx="16" fill="#edcd7f" stroke="currentColor" stroke-width="2"/><path d="M48 29V16H63" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="36" cy="44" r="9" fill="#b8e0e3" stroke="currentColor"/><circle cx="64" cy="44" r="9" fill="#b8e0e3" stroke="currentColor"/><path d="M87 44L98 30V58Z" fill="#9bc9c9"/>',
+ compass:'<path d="M9 20L34 13L62 22L94 12V64L65 72L36 64L9 73Z" fill="#f4dfb5" stroke="currentColor"/><circle cx="52" cy="43" r="24" fill="#fffaf0" stroke="currentColor" stroke-width="2"/><path d="M52 20L43 46L52 42L60 46Z" fill="#d57b65"/><path d="M52 65L43 46L52 42L60 46Z" fill="#79a3ae"/>',
+ city:'<path d="M12 72V37H34V72M39 72V15H66V72M72 72V28H92V72" fill="#ccd6ec" stroke="currentColor" stroke-width="2"/><path d="M46 25h6m5 0h3m-14 11h6m5 0h3m-14 11h6m5 0h3M18 47h9M18 58h9M78 39h8M78 51h8" stroke="#edb850" stroke-width="4"/>',
+ telescope:'<path d="M45 47L29 76M45 47L64 76M45 47V78" stroke="currentColor" stroke-width="3"/><path d="M19 34L72 12L82 33L30 54Z" fill="#aed9cc" stroke="currentColor" stroke-width="2"/><path d="M71 10L81 6L93 32L83 37Z" fill="#79b6a6"/>',
+ satellite:'<path d="M39 29L62 43L53 61L31 47Z" fill="#d7d0e8" stroke="currentColor"/><path d="M11 13L35 27L24 45L1 31ZM67 46L93 61L81 79L57 65Z" fill="#8daccd" stroke="currentColor"/><path d="M37 24Q61 11 69 37Z" fill="#ece6f5" stroke="currentColor"/><path d="M57 27L72 12" stroke="currentColor" stroke-width="2"/><circle cx="73" cy="11" r="3" fill="#efbc5a"/>'
+ };
+ return '<svg class="mascot" viewBox="0 0 105 82" aria-hidden="true" style="color:var(--accent)">'+forms[kind]+'</svg>';
+}
+
+const DC=DrillCatalog,params=new URLSearchParams(window.WORKSHEET_ENTRY?.query||location.search),esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+// One visible semester review, while the original catalogue IDs remain usable.
+const semesterReviewPattern=/^5-1-(?:1|2|4)--review-natural-(?:mul|div)-3-2-(?:horizontal|vertical)$/;
+const isSemesterReview=id=>semesterReviewPattern.test(id||'');
+const canonicalDrillId=id=>isSemesterReview(id)?id.replace(/^5-1-[124]--/,'5-1-1--'):id;
+const reviewUnit={...DC.units.find(u=>u.id==='5-1-1'),id:'5-1-review',number:0,name:'학기 시작 복습 · 4학년 계산',semesterReview:true};
+reviewUnit.drills=DC.units.find(u=>u.id==='5-1-1').drills.filter(p=>isSemesterReview(p.id));
+const menuUnits=DC.units.flatMap(u=>u.id==='5-1-1'?[reviewUnit,{...u,drills:u.drills.filter(p=>!isSemesterReview(p.id))}]:['5-1-2','5-1-4'].includes(u.id)?[{...u,drills:u.drills.filter(p=>!isSemesterReview(p.id))}]:[u]);
+function resolveSelection(unitId,drillId){
+ const id=canonicalDrillId(drillId),requested=(unitId||'').split('-');
+ const unit=isSemesterReview(id)||unitId===reviewUnit.id?reviewUnit:menuUnits.find(u=>u.id===unitId)||menuUnits.find(u=>u.grade===+requested[0]&&u.semester===+requested[1])||menuUnits.find(u=>u.id==='3-1-1');
+ return {unit,profile:unit.drills.find(p=>p.id===id)||unit.drills[0]};
+}
+let {unit:selectedUnit,profile:selected}=resolveSelection(params.get('unit'),params.get('drill'));
+seed=Number(new URLSearchParams(location.search).get('set'))||Number(params.get('set'))||seed;let browseUnit=selectedUnit;
+function navigateProfile(id){if(browseUnit.id===selectedUnit.id&&id===selected.id)return;WorksheetNavigation.go('/ko/print/drill-'+encodeURIComponent(id)+'.html');}
+const groupNames=['기본 연산','기초 보충','빈칸 응용','문장 연습'];
+function nav(){return '<nav class="edition-tabs"><a href="/"><span class="arithmetic-menu-icons" aria-hidden="true"><span>＋</span><span>−</span><span>×</span><span>÷</span></span><span>사칙연산</span></a><a href="drills.html" aria-current="page">단원별연산</a><a href="units.html">단원별유형</a></nav>';}
+function setProfile(id){selected=DC.profiles.get(id);current=types.find(t=>t.id===id);menu();render();}
+menu=function(){groups.innerHTML=nav()+'<div class="drill-grades">'+[1,2,3,4,5,6].map(g=>'<button data-grade="'+g+'" aria-pressed="'+(g===browseUnit.grade)+'">'+g+'학년</button>').join('')+'</div><div class="drill-terms">'+[1,2].map(t=>'<button data-term="'+t+'" aria-pressed="'+(t===browseUnit.semester)+'">'+t+'학기</button>').join('')+'</div><label for="drill-unit">단원</label><select id="drill-unit">'+menuUnits.filter(u=>u.grade===browseUnit.grade&&u.semester===browseUnit.semester).map(u=>'<option value="'+u.id+'" '+(u.id===browseUnit.id?'selected':'')+'>'+(u.semesterReview?'':u.number+'. ')+u.name+'</option>').join('')+'</select><p class="drill-help">'+browseUnit.drills.length+'종 · '+(browseUnit.semesterReview?'5학년 1학기를 시작하기 전 4학년 계산을 복습하세요.':'현재 단원에서 필요한 연습을 골라보세요.')+'</p>'+groupNames.map(g=>'<details '+(g===selected.group?'open':'')+'><summary>'+g+' <small>'+browseUnit.drills.filter(p=>p.group===g).length+'</small></summary>'+browseUnit.drills.filter(p=>p.group===g).map(p=>'<button class="drill-choice" data-drill="'+p.id+'" aria-pressed="'+(p.id===selected.id)+'"><strong class="drill-example">'+esc(sampleText(p))+'</strong><small class="drill-description">'+esc(p.title)+'</small></button>').join('')+'</details>').join('');
+groups.querySelectorAll('[data-grade]').forEach(b=>b.onclick=()=>{browseUnit=menuUnits.find(u=>u.grade===+b.dataset.grade&&u.semester===browseUnit.semester)||menuUnits.find(u=>u.grade===+b.dataset.grade);menu()});groups.querySelectorAll('[data-term]').forEach(b=>b.onclick=()=>{browseUnit=menuUnits.find(u=>u.grade===browseUnit.grade&&u.semester===+b.dataset.term);menu()});groups.querySelector('#drill-unit').onchange=e=>{browseUnit=menuUnits.find(u=>u.id===e.target.value);menu()};groups.querySelectorAll('[data-drill]').forEach(b=>b.onclick=()=>navigateProfile(b.dataset.drill));};
+function sampleText(p){const q=DrillEngine.rows(p,713,1)[0];if(q.prompt)return q.prompt;if(p.mode==='blank')return [q.mask===0?'□':q.a,q.op,q.mask===1?'□':q.b,'=',q.mask===2?'□':q.answer].join(' ');if(p.mode==='digit')return '숫자 한두 자리를 □로 가려요';return q.a+' '+q.op+' '+q.b+' = '+String(q.answer).replace(' R ',' 나머지 ');}
+function scalar(x){return mathHTML(x);}
+function fractionText(s){return esc(s).replace(/(\d+)과 (\d+\/\d+)/g,(_,w,f)=>scalar(w+' '+f)).replace(/(?<![\d>])(\d+)\/(\d+)(?![\d<])/g,(_,n,d)=>scalar(n+'/'+d));}
+function hide(s,show){return '<span class="drill-solution '+(show?'':'concealed')+'">'+s+'</span>';}
+function decimalMultiply(q,show){const a=Number(String(q.a).replace('.','')),b=String(q.b).replace('.',''),parts=[...b].reverse().map((n,i)=>a*Number(n)*10**i);return '<div class="worked multiplication"><div>'+q.a+'</div><div class="work-rule">× '+q.b+'</div><div class="working '+(show?'':'concealed')+'">'+(b.length>1?parts.map(v=>'<div>'+v+'</div>').join(''):'')+'<div class="work-total">'+q.answer+'</div></div></div>';}
+function qhtml(q,i,show){let html='';
+if(selected.mode==='skill'||selected.mode==='story'){let art='';if(q.groups){const[a,b]=q.groups;art='<div class="dot-groups">'+Array.from({length:b},()=>'<span>'+Array(a).fill('●').join(' ')+'</span>').join('')+'</div>';}html='<div class="drill-prompt">'+fractionText(q.prompt)+'</div>'+art+'<div class="drill-response">'+hide(fractionText(q.answer),show)+'</div>'+hide('<small>'+fractionText(q.work||'')+'</small>',show);}
+else if(selected.mode==='blank'){const list=[q.a,q.b,q.answer];const answer=scalar(list[q.mask]);const terms=list.map((x,j)=>j===q.mask?'<span class="drill-box">'+hide(answer,show)+'</span>':scalar(x));html='<div class="drill-equation">'+terms[0]+' '+q.op+' '+terms[1]+' = '+terms[2]+'</div>';}
+else if(selected.mode==='digit'){const digit=(v,which)=>String(v).split('').map((c,j)=>q.digits.which===which&&q.digits.positions.includes(j)?'<span class="digit-box">'+hide(c,show)+'</span>':'<span class="digit-cell">'+c+'</span>').join('');if(q.op==='÷'){html='<div class="digit-division"><div class="digit-quotient">'+esc(String(q.answer).replace(' R ',' 나머지 '))+'</div><div>'+digit(q.b,1)+' <span class="dividend-digits">'+digit(q.a,0)+'</span></div></div>';}else html='<div class="digit-vertical"><div>'+digit(q.a,0)+'</div><div class="digit-rule">'+q.op+' '+digit(q.b,1)+'</div><div>'+digit(q.answer,2)+'</div></div>';}
+else{const work=selected.layout==='vertical'?(current.family==='Decimals'&&q.op==='×'?decimalMultiply(q,show):writtenWork(q,show)):null;if(work)html=work;else if(selected.layout==='vertical')html='<div class="vertical"><div>'+esc(q.a)+'</div><div class="bottom"><span>'+q.op+'</span><span>'+esc(q.b)+'</span></div><div class="result">'+hide(scalar(q.answer),show)+'</div></div>';else html='<span class="expression">'+scalar(q.a)+' '+q.op+' '+scalar(q.b)+' =</span><span class="answer '+(q.op==='÷'&&current.family==='Natural numbers'?'division-answer-line ':'')+(show?'':'concealed')+'">'+(q.fraction?fractionAnswer(q):scalar(q.answer))+'</span>';
+}
+return '<div class="problem"><span class="number">'+(i+1)+'.</span>'+html+'</div>';}
+function layout(){const q=generate(current.id,seed,1)[0],vert=selected.layout==='vertical',op=q.op;let cols=4,count=48,fixed=false;
+if(selected.mode==='story'){cols=2;count=selectedUnit.grade<=2?12:16;}
+else if(selected.mode==='skill'){cols=2;count=selected.skill==='groups'?6:20;}
+else if(selected.mode==='digit'){cols=3;count=18;}
+else if(current.family==='Fractions'){cols=2;count=20;}
+else if(selected.mode==='blank'){cols=2;count=24;}
+else if(vert&&op==='÷'){cols=current.family==='Decimals'?4:3;count=current.family==='Decimals'?8:selected.source==='natural-div-3-1'?9:12;fixed=true;}
+else if(vert&&op==='×'){cols=3;const d=String(q.b).replace('.','').length;count=current.family==='Decimals'?12:d>=4?6:d>=3?9:12;fixed=current.family==='Decimals';}
+else if(vert){cols=4;count=24;}
+else if(selectedUnit.grade<=2){cols=3;count=24;}
+return {cols,count,fixed};}
+render=function(){const theme=KoCatalog.themes[(selectedUnit.grade-1)*2+selectedUnit.semester-1],paper=document.querySelector('.paper');current=types.find(t=>t.id===selected.id);paper.classList.add('drill-sheet');paper.classList.toggle('written-sheet',selected.layout==='vertical');paper.dataset.family=current.family;paper.style.setProperty('--tone',theme[2]);paper.style.setProperty('--wash',theme[3]);
+const remedial=selected.group==='기초 보충';document.querySelector('#sheet-title').textContent=(remedial?'[기초 보충] ':'')+selected.title;document.querySelector('.adventure-label').textContent=selectedUnit.grade+'학년 '+selectedUnit.semester+'학기 · '+(selectedUnit.semesterReview?'학기 시작 복습':selectedUnit.number+'. '+selectedUnit.name);document.querySelector('#instructions').textContent=selectedUnit.semesterReview?'새 학기를 시작하기 전 4학년 곱셈과 나눗셈을 복습하세요.':remedial?'현재 단원을 위한 이전 학습 복습':selected.mode==='story'?'상황을 읽고 필요한 계산을 스스로 골라 풀어 보세요.':selected.mode==='digit'||selected.mode==='blank'?'□에 알맞은 수를 쓰세요.':'차근차근 계산하세요.';
+let art=paper.querySelector('.drill-theme');if(!art){paper.querySelector('.math-buddy')?.remove();art=document.createElement('div');art.className='drill-theme';paper.querySelector('.sheet-hero').append(art)}art.innerHTML=KoThemeScene(theme[4],mascot);
+const grid=paper.querySelector('.problems'),plan=layout();paper.classList.toggle('dense-written',plan.fixed);grid.classList.toggle('fraction-sheet',current.family==='Fractions');grid.classList.toggle('drill-word-grid',['skill','story'].includes(selected.mode));paper.style.setProperty('--cols',plan.cols);let count=plan.count;const all=generate(current.id,seed,count);let rows;
+// Fit using the answer layout; hidden answers reserve identical space on worksheets.
+// These written layouts use the same fixed A4 grid in every output mode.
+// Do not let viewport zoom or print-only SVG sizing change the question set.
+if(plan.fixed){rows=all;paper.style.setProperty('--rows',Math.ceil(count/plan.cols));}
+else do{rows=all.slice(0,count);paper.style.setProperty('--rows',Math.ceil(count/plan.cols));grid.innerHTML=rows.map((q,i)=>qhtml(q,i,true)).join('');const bad=[...grid.children].some(el=>el.scrollHeight>el.clientHeight+1||el.scrollWidth>el.clientWidth+1);if(!bad)break;count-=plan.cols;}while(count>=plan.cols);
+if(count<plan.cols)throw Error('문제지 공간 부족: '+selected.id);
+grid.innerHTML=rows.map((q,i)=>qhtml(q,i,answers)).join('');
+// Explicit intrinsic dimensions also keep the PDF canvas SVG image uncropped.
+if(plan.fixed)grid.querySelectorAll('svg.long-division').forEach(svg=>{svg.setAttribute('width',svg.viewBox.baseVal.width);svg.setAttribute('height',svg.viewBox.baseVal.height);});
+document.querySelector('#mode').textContent=answers?'정답지':'문제지';document.querySelector('#questions').setAttribute('aria-pressed',!answers);document.querySelector('#answers').setAttribute('aria-pressed',answers);document.querySelector('#set').textContent=selectedUnit.id+' · '+count+'문제 · '+seed;document.querySelector('#status').textContent=selected.title+' · '+count+'문제';document.title=window.WORKSHEET_ENTRY?.title||(selectedUnit.grade+'학년 '+selectedUnit.name+' '+selected.title+' | 구구단닷컴');const canonical=document.querySelector('link[rel=canonical]');if(canonical)canonical.href='https://googoodan.com'+'/ko/print/drill-'+selected.id+'.html';scalePage();history.replaceState(null,'',window.WORKSHEET_ENTRY?location.pathname+(selectedUnit.semesterReview?'?set='+seed:''):('?unit='+selectedUnit.id+'&drill='+selected.id+'&set='+seed));};
+function scalePage(){const paper=document.querySelector('.paper'),w=document.querySelector('.layout>section').clientWidth-12;paper.style.zoom=String(Math.min(1,w/(186*96/25.4)));}window.addEventListener('resize',scalePage);
+rootInit();scalePage();function rootInit(){document.querySelector('aside h1').textContent='학년·단원별 연산';document.querySelector('aside>p').textContent='기본 연산부터 기초 보충까지 한곳에서';setProfile(selected.id);}
+window.GDWorksheetContext=()=>({unit:selectedUnit.id,drill:selected.id,set:seed});
+window.DrillPage={set(unit,id,number=713){const resolved=resolveSelection(unit,id);selectedUnit=resolved.unit;browseUnit=selectedUnit;seed=number;setProfile(resolved.profile.id)},inspect(){return {unit:selectedUnit.id,profile:selected.id,count:document.querySelectorAll('.paper>.problems>.problem').length}},render};
+// Drill-only controls: preview answers whenever answers are selected for output.
+// Keep render() independent so print bundles can render each requested mode.
+const printQuestions=document.querySelector('#print-worksheet'),printAnswers=document.querySelector('#print-answer');
+function syncOutputPreview(){
+ clearPrintBundle();
+ if(printQuestions.checked||printAnswers.checked)answers=printAnswers.checked;
+ updatePrintSelection();render();
+}
+document.querySelector('#questions').onclick=()=>{printQuestions.checked=true;printAnswers.checked=false;syncOutputPreview();};
+document.querySelector('#answers').onclick=()=>{printQuestions.checked=false;printAnswers.checked=true;syncOutputPreview();};
+printQuestions.onchange=syncOutputPreview;printAnswers.onchange=syncOutputPreview;
+syncOutputPreview();
+})();
