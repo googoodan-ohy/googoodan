@@ -11,3 +11,5 @@ pdf.save('googoodan-'+Date.now()+'.pdf');if(status)status.textContent=ko?`PDF ${
 }
 const seen=new WeakSet,observed=new WeakSet;function scan(win){try{const doc=win.document;install(win);if(!observed.has(doc)){observed.add(doc);new win.MutationObserver(()=>scan(win)).observe(doc.documentElement,{childList:true,subtree:true})}doc.querySelectorAll('iframe').forEach(frame=>{if(seen.has(frame))return;seen.add(frame);const run=()=>{try{scan(frame.contentWindow)}catch{}};frame.addEventListener('load',run);run()})}catch{}}scan(window);
 })();
+
+;(()=>{if(!document.querySelector('script[data-gd-metrics-loader]')){const s=document.createElement('script');s.dataset.gdMetricsLoader='1';s.src='/assets/site-metrics.js?v=2-20261007';document.head.append(s)}})();
