@@ -86,3 +86,6 @@ body:is([data-route="traininglibrary"],[data-route^="trainingdetail/"],[data-rou
 body[data-browse-mode="grades"] .sidebar-mode-tabs a[data-mode="grades"]{background:#176e5c!important;color:#fff!important;box-shadow:0 1px 3px #143d3220!important}body[data-browse-mode="grades"] .sidebar-mode-tabs a[data-mode="training"]{background:transparent!important;color:#42675e!important;box-shadow:none!important}
 
 .sheet-zoom-space{width:100%;height:calc(100vh - 125px)}
+
+/* Search result context remains readable without opening each worksheet. */
+.worksheet-context{display:block;padding:4px 10px 10px;color:#465f58;font-size:13px;line-height:1.5}.grade-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.grade-shortcuts .menu-link{padding:8px 14px;border:1px solid #c8dcd5;border-radius:6px}

@@ -22,7 +22,7 @@
   let playerObserver;
   const trainingSeeds=new Map();
   function cards(worksheets) {
-    return '<div class="training-gallery separate-gallery grade-gallery">'+worksheets.map(w=>'<a class="training-card" href="#worksheet/'+esc(w.id)+'"><iframe class="type-sheet-static" loading="lazy" tabindex="-1" aria-hidden="true" src="/lab/ko-concept-layout/prebuilt-types/'+encodeURIComponent(w.id)+'.html"></iframe><span title="'+esc(w.title)+'">'+esc(w.title)+'</span></a>').join('')+'</div>';
+    return '<div class="training-gallery separate-gallery grade-gallery">'+worksheets.map(w=>'<a class="training-card" href="#worksheet/'+esc(w.id)+'"><iframe class="type-sheet-static" loading="lazy" tabindex="-1" aria-hidden="true" src="/lab/ko-concept-layout/prebuilt-types/'+encodeURIComponent(w.id)+'.html"></iframe><span title="'+esc(w.title)+'">'+esc(w.title)+'</span><small class="worksheet-context">'+esc(units.get(w.unit)?.title||w.grade+'학년')+'</small></a>').join('')+'</div>';
   }
   function fitTypeSheets(){
     document.querySelectorAll('.type-sheet-static').forEach(frame=>{
@@ -114,10 +114,10 @@
     menu.innerHTML=navMode==='training'?trainingMenu(groupInfo?.domain||domain,groupInfo?.index??op):navMode==='topics'?'<p class="menu-heading">학습 주제</p>'+link('모든 주제','topics',mode==='topics'&&!arg)+topicNames.map(t=>link(t,'topics/'+t,mode==='topics'&&arg===t)).join(''):gradeMenu(grade,worksheet?.unit||(['unit','unittraining'].includes(mode)?arg:null));
     document.querySelectorAll('[data-mode]').forEach(a=>{if(a.dataset.mode===navMode)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     if(document.body.dataset.home==='true'&&worksheet) {
-      content.innerHTML=player(worksheet.title,worksheet.url)+conceptExplanation(worksheet,activity);
+      content.innerHTML=hero('초등 1~6학년 수학 문제지','부모님과 선생님이 학년·단원에 맞는 문제지와 정답지를 골라 인쇄할 수 있습니다.')+'<nav class="grade-shortcuts" aria-label="학년 바로가기">'+[1,2,3,4,5,6].map(g=>link(g+'학년','grades/'+g)).join('')+'</nav>'+player(worksheet.title,worksheet.url)+conceptExplanation(worksheet,activity);
     } else if(mode==='times') {
       menu.innerHTML='<p>단 선택 메뉴를 불러오는 중입니다.</p>';document.querySelector('.browse').open=true;
-      content.innerHTML=player('구구단연습','/ko/times-tables/player.html?type=times-tables&tables=2');
+      content.innerHTML=hero('구구단연습 · 구구단표')+player('구구단연습','/ko/times-tables/player.html?type=times-tables&tables=2');
       document.querySelectorAll('[data-mode]').forEach(el=>el.removeAttribute('aria-current'));
     } else if(mode==='training') {
       const group=data.training[domain][op];
@@ -127,7 +127,7 @@
       content.innerHTML=`<a class="back-link" href="#training/${groupInfo.domain}/${groupInfo.index}">← ${domains[groupInfo.domain]} ${groupInfo.group.name} 목록</a>`+hero(w.title)+`<nav class="controls" aria-label="계산 배치">${allowed.map(f=>`<a class="format-link" href="#trainingsheet/${esc(arg)}/${f}"${f===format?' aria-current="page"':''}>${f==='vertical'?'세로셈':'가로셈'}</a>`).join('')}</nav>`+player(w.title,w.url+'?layout='+format+(trainingSeeds.has(arg)?'&set='+trainingSeeds.get(arg):''),arg)+conceptExplanation(w,null,true);
     } else if(worksheet) {
       const title=activity?.title||worksheet.title,url=activity?.url||worksheet.url;
-      content.innerHTML=player(title,url)+conceptExplanation(worksheet,activity);
+      content.innerHTML=hero(title,units.get(worksheet.unit)?.title||'')+player(title,url)+conceptExplanation(worksheet,activity);
     } else if(mode==='unittraining'||mode==='traininglibrary'||mode==='trainingdetail') {
       let u=units.get(arg),rows=unitTraining.units[arg]||[];
       if(mode==='traininglibrary'||mode==='trainingdetail'){
@@ -157,7 +157,7 @@
           document.querySelectorAll('[data-mode]').forEach(a=>{if(a.dataset.mode==='grades')a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
         }
         const detail=newTrainingGuides.find(r=>r.typeId===arg);
-        if(detail)content.innerHTML=player(detail.title,'/ko/training-player/type.html?type='+encodeURIComponent(detail.typeId)+'&view=problem')+'<div class="training-guide-copy">'+(document.getElementById('training-guide-content')?.innerHTML||'')+'</div>';
+        if(detail)content.innerHTML=hero(detail.concept+' · '+detail.title)+player(detail.title,'/ko/training-player/type.html?type='+encodeURIComponent(detail.typeId)+'&view=problem')+'<div class="training-guide-copy">'+(document.getElementById('training-guide-content')?.innerHTML||'')+'</div>';
       }
       const pendingSheets=[];let activeSheets=0;
       const loadNext=()=>{while(activeSheets<2&&pendingSheets.length){const frame=pendingSheets.shift();if(!frame.isConnected)continue;activeSheets++;frame.addEventListener('load',()=>{activeSheets--;loadNext();},{once:true});frame.src=frame.dataset.sheetSrc;}};
@@ -193,7 +193,7 @@
         if(/구구단|19단|십구단|곱셈구구/.test(arg.replace(/\s/g,'')))content.insertAdjacentHTML('afterbegin','<a class="menu-link" href="/ko/times-tables/">구구단연습 · 구구단표 · 19단</a>');
       } else {
         const list=data.units.filter(u=>mode==='unit'?u.id===arg:mode==='topics'?(arg?(u.topics||[u.topic]).includes(arg):true):u.grade===grade);
-        content.innerHTML=(mode==='unit'?'':hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`초등 ${grade}학년 수학 학습지`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.'))+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
+        content.innerHTML=hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`초등 ${grade}학년 수학 학습지`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.')+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
       }
     } else {content.innerHTML=hero('자료를 찾을 수 없습니다.')+link('학년별 학습으로','grades');}
     if(!document.body.dataset.route)document.title=(content.querySelector('h1')?.textContent||'초등 수학 문제지')+' | googoodan.com';
