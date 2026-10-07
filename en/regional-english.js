@@ -10,24 +10,7 @@ function validCountry(value){
  return supported.has(normalized)?normalized:'';
 }
 
-function country(){
- const requested=validCountry(new URLSearchParams(location.search).get('country'));
- if(requested)return requested;
- const path=location.pathname.toLowerCase();
- if(path.includes('england-'))return 'GB';
- if(path.includes('australia-'))return 'AU';
- if(path.includes('canada-'))return 'CA';
- if(path.includes('us-arithmetic'))return 'US';
- try{
-  const saved=validCountry(JSON.parse(localStorage.getItem('gd-learning-region')||'{}').country);
-  if(saved)return saved;
- }catch{}
- for(const language of navigator.languages||[navigator.language]){
-  const match=String(language||'').match(/^en[-_](US|GB|CA|AU)\b/i);
-  if(match)return match[1].toUpperCase();
- }
- return 'US';
-}
+function country(){return 'US';}
 
 const words={
  centimeter:{US:'centimeter',regional:'centimetre'},centimeters:{US:'centimeters',regional:'centimetres'},

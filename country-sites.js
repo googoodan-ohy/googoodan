@@ -11,18 +11,7 @@
     es:{summary:'Idiomas',label:'Elegir idioma y país'}
   };
 
-  var sites=[
-    {key:'ko',href:'/ko/',name:'한국어',nameLang:'ko',place:'Korea'},
-    {key:'US',href:'/en/?country=US',name:'United States',nameLang:'en',place:'English'},
-    {key:'GB',href:'/en/?country=GB',name:'England',nameLang:'en',place:'English'},
-    {key:'CA',href:'/en/?country=CA',name:'Canada',nameLang:'en',place:'English'},
-    {key:'AU',href:'/en/?country=AU',name:'Australia',nameLang:'en',place:'English'},
-    {key:'ja',href:'/ja/',name:'日本語',nameLang:'ja',place:'Japan'},
-    {key:'fr',href:'/fr/',name:'Français',nameLang:'fr',place:'France'},
-    {key:'de',href:'/de/',name:'Deutsch',nameLang:'de',place:'Germany'},
-    {key:'it',href:'/it/',name:'Italiano',nameLang:'it',place:'Italy'},
-    {key:'es',href:'/es/',name:'Español',nameLang:'es',place:'Spain'}
-  ];
+  var sites=[{key:'ko',href:'/',name:'한국어',nameLang:'ko',place:'Korea'},{key:'US',href:'/en/',name:'United States',nameLang:'en',place:'English'}];
 
   function edition(){
     var path=(location.pathname||'/').split('/').filter(Boolean)[0];
@@ -35,7 +24,7 @@
     if(lang!=='en')return lang;
     var country=(new URLSearchParams(location.search)).get('country');
     country=(country||'US').toUpperCase();
-    return /^(US|GB|CA|AU)$/.test(country)?country:'US';
+    return /^(US)$/.test(country)?country:'US';
   }
 
   function isLanguageLink(link){
