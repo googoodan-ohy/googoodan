@@ -178,13 +178,16 @@
       if(mode==='unit'&&!chosen){content.innerHTML=hero('단원을 찾을 수 없습니다.')+link('학년별 학습으로','grades');return;}
       safeSet('ko-browse-origin',mode+(arg?'/'+arg:''));
       if(mode==='search') {
-        const tokens=arg.toLocaleLowerCase('ko').trim().split(/\s+/).filter(Boolean);
-        const found=Object.values(data.worksheets).filter(w=>tokens.every(t=>(w.title+' '+w.grade+'학년 '+units.get(w.unit).title+' '+(units.get(w.unit).topics||[units.get(w.unit).topic]).join(' ')).toLocaleLowerCase('ko').includes(t)));
-        const foundTraining=newTrainingGuides.filter(w=>tokens.every(t=>(w.domain+' '+w.concept+' '+w.title+' '+w.group).toLocaleLowerCase('ko').includes(t)));
-        content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>`<a class="menu-link" href="${esc(w.url)}">${esc(w.concept+' · '+w.title)}</a>`).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):'');
+        const normalizeSearch=value=>String(value||'').toLocaleLowerCase('ko').replace(/시계\s*(보기|읽기)/g,'시각').replace(/시계/g,'시각').replace(/곱셈\s*구구/g,'구구단').replace(/의/g,'').replace(/\s+/g,'');
+        const tokens=arg.toLocaleLowerCase('ko').replace(/시계\s*(보기|읽기)/g,'시각').replace(/곱셈\s*구구/g,'구구단').replace(/초등학교|초등|수학|학습지|문제지|프린트|인쇄|다운로드|무료|pdf|문제/gi,' ').replace(/(\d+학년|\d+학기|분수|소수|덧셈|뺄셈|곱셈|나눗셈)/g,' $1 ').trim().split(/\s+/).map(normalizeSearch).filter(Boolean);
+        const found=Object.values(data.worksheets).filter(w=>tokens.every(t=>normalizeSearch(w.title+' '+w.grade+'학년 '+units.get(w.unit).title+' '+(units.get(w.unit).topics||[units.get(w.unit).topic]).join(' ')).includes(t)));
+        const trainingContext=new Map();
+        for(const [unitId,rows] of Object.entries(unitTraining.units))for(const row of rows)trainingContext.set(row.typeId,(trainingContext.get(row.typeId)||'')+' '+units.get(unitId)?.title);
+        const foundTraining=newTrainingGuides.filter(w=>tokens.every(t=>normalizeSearch(w.domain+' '+w.concept+' '+w.title+' '+w.group+' '+(trainingContext.get(w.typeId)||'')).includes(t)));
+        content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>`<a class="menu-link" href="${esc(w.url)}">${esc(w.concept+' · '+w.title)}</a>`).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):(arg.trim()?'<p role="status">학년이나 연산 종류를 선택해 문제지와 PDF 인쇄 자료를 찾아보세요.</p>'+[1,2,3,4,5,6].map(g=>link('초등 '+g+'학년 수학 학습지','grades/'+g)).join('')+'<a class="menu-link" href="/ko/training/">연산 트레이닝 문제지</a>':''));
       } else {
         const list=data.units.filter(u=>mode==='unit'?u.id===arg:mode==='topics'?(arg?(u.topics||[u.topic]).includes(arg):true):u.grade===grade);
-        content.innerHTML=(mode==='unit'?'':hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`${grade}학년 학습`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.'))+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
+        content.innerHTML=(mode==='unit'?'':hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`초등 ${grade}학년 수학 학습지`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.'))+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
       }
     } else {content.innerHTML=hero('자료를 찾을 수 없습니다.')+link('학년별 학습으로','grades');}
     if(!document.body.dataset.route)document.title=(content.querySelector('h1')?.textContent||'초등 수학 문제지')+' | googoodan.com';
