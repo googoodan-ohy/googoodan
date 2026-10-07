@@ -71,9 +71,10 @@
     frame.addEventListener('load',()=>{
       try {
         const doc=frame.contentDocument;
+        if(document.body.dataset.route==='times'){const controls=doc.querySelector('.times-menu');if(controls){menu.replaceChildren(controls);doc.querySelector('.layout>aside')?.style.setProperty('display','none','important');}}
         const style=doc.createElement('style');
         style.textContent='@media screen{html{height:auto!important;min-height:0!important;overflow-x:auto!important;overflow-y:hidden!important}body{position:static!important;inset:auto!important;height:auto!important;min-height:0!important;display:block!important;overflow:visible!important}.site-header,body>footer,.layout>aside{display:none!important}.layout{display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;padding:0!important}.layout>main{height:auto!important;min-height:0!important;overflow:visible!important;padding:0!important}main{min-width:0!important}#practice{margin:0!important;border:0!important;padding:8px!important}}';
-        doc.head.append(style);
+        if(document.body.dataset.route!=='times')doc.head.append(style);
         const paper=doc.querySelector('#sheet-view')||doc.querySelector('#worksheet')||doc.querySelector('article.paper')||doc.querySelector('#sheet-root');
         if(paper){
           const dock=doc.createElement('div');dock.className='worksheet-bottom-controls';
@@ -114,6 +115,10 @@
     document.querySelectorAll('[data-mode]').forEach(a=>{if(a.dataset.mode===navMode)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     if(document.body.dataset.home==='true'&&worksheet) {
       content.innerHTML=player(worksheet.title,worksheet.url)+conceptExplanation(worksheet,activity);
+    } else if(mode==='times') {
+      menu.innerHTML='<p>단 선택 메뉴를 불러오는 중입니다.</p>';document.querySelector('.browse').open=true;
+      content.innerHTML=player('구구단연습','/ko/times-tables/player.html?type=times-tables&tables=2');
+      document.querySelectorAll('[data-mode]').forEach(el=>el.removeAttribute('aria-current'));
     } else if(mode==='training') {
       const group=data.training[domain][op];
       content.innerHTML=hero(`${domains[domain]} · ${group.name}`,'문제지 미리보기를 골라 연습하세요. 가로셈과 세로셈은 같은 유형의 계산을 다른 배치로 보여 줍니다.')+`<div class="training-gallery separate-gallery">${group.worksheets.map(id=>{const w=data.trainingWorksheets[id];return formats(w).map(f=>`<a class="training-card" href="#trainingsheet/${esc(id)}/${f}"><img src="training-thumbnails/${esc(w.sourceType)}${f==='vertical'?'-vertical':''}.png" alt="${esc(w.title)} ${f==='vertical'?'세로셈':'가로셈'} 미리보기" loading="lazy" width="420" height="594"><span title="${esc(w.title)} · ${f==='vertical'?'세로셈':'가로셈'}">${esc(w.title)} · ${f==='vertical'?'세로셈':'가로셈'}</span></a>`).join('');}).join('')}</div><section class="section"><h2>연습 전에</h2><p>${esc(group.tip)}</p></section>`;
@@ -185,6 +190,7 @@
         for(const [unitId,rows] of Object.entries(unitTraining.units))for(const row of rows)trainingContext.set(row.typeId,(trainingContext.get(row.typeId)||'')+' '+units.get(unitId)?.title);
         const foundTraining=newTrainingGuides.filter(w=>tokens.every(t=>normalizeSearch(w.domain+' '+w.concept+' '+w.title+' '+w.group+' '+(trainingContext.get(w.typeId)||'')).includes(t)));
         content.innerHTML=hero('검색 결과',arg?`“${arg}”에 맞는 자료를 찾았습니다.`:'학년, 단원 또는 문제지 이름을 입력하세요.')+(tokens.length?`<p role="status">학습 자료 ${found.length}개 · 연산 트레이닝 ${foundTraining.length}개</p>`+cards(found)+foundTraining.map(w=>`<a class="menu-link" href="${esc(w.url)}">${esc(w.concept+' · '+w.title)}</a>`).join('')+(!found.length&&!foundTraining.length?'<p class="empty">검색 결과가 없습니다. ‘분수’, ‘2학년’처럼 짧은 말로 다시 찾아보세요.</p>':''):(arg.trim()?'<p role="status">학년이나 연산 종류를 선택해 문제지와 PDF 인쇄 자료를 찾아보세요.</p>'+[1,2,3,4,5,6].map(g=>link('초등 '+g+'학년 수학 학습지','grades/'+g)).join('')+'<a class="menu-link" href="/ko/training/">연산 트레이닝 문제지</a>':''));
+        if(/구구단|19단|십구단|곱셈구구/.test(arg.replace(/\s/g,'')))content.insertAdjacentHTML('afterbegin','<a class="menu-link" href="/ko/times-tables/">구구단연습 · 구구단표 · 19단</a>');
       } else {
         const list=data.units.filter(u=>mode==='unit'?u.id===arg:mode==='topics'?(arg?(u.topics||[u.topic]).includes(arg):true):u.grade===grade);
         content.innerHTML=(mode==='unit'?'':hero(chosen?.title||(mode==='topics'?(arg||'주제별 학습'):`초등 ${grade}학년 수학 학습지`),'필요한 문제지를 고르고 새 문제와 정답을 만들어 인쇄하세요.'))+list.map(u=>`<section class="section"><h2>${esc(u.title)} <span class="count">${u.worksheets.length}개</span></h2>${unitTraining.units[u.id]?.length?'<nav class="unit-training-entry">'+link('연산 트레이닝 · '+unitTraining.units[u.id].length+'개 유형','unittraining/'+u.id)+'</nav>':''}${cards(u.worksheets.map(id=>data.worksheets[id]))}</section>`).join('');
