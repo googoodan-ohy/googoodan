@@ -55,3 +55,5 @@ const seen=new WeakSet,observed=new WeakSet;function scan(win){try{const doc=win
 })();
 
 
+
+;(()=>{if(!document.querySelector('script[data-gd-metrics-loader]')){const s=document.createElement('script');s.dataset.gdMetricsLoader='1';s.src='/assets/site-metrics.js?v=2-20261007';document.head.append(s)}})();
