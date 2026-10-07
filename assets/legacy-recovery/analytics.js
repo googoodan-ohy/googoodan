@@ -41,7 +41,7 @@
   box.style.cssText='position:fixed;bottom:18px;left:18px;right:18px;max-width:600px;background:white;border:1px solid #bbb;box-shadow:0 3px 20px #0002;padding:18px;z-index:99999;font:14px/1.6 Arial,sans-serif;color:#222';
   const p=document.createElement('p');p.textContent=en?'Allow Google Analytics to measure visits and worksheet use? Optional. Printing works either way.':'방문과 문제지 이용을 Google Analytics로 집계하도록 허용할까요? 선택 사항이며, 거절해도 인쇄할 수 있습니다.';box.append(p);
   for(const [value,label] of [['granted',en?'Allow':'허용'],['denied',en?'Decline':'거절']]){const b=document.createElement('button');b.textContent=label;b.style.cssText='padding:8px 20px;margin-right:10px;cursor:pointer';b.onclick=()=>setConsent(value);box.append(b);}
-  const a=document.createElement('a');a.href='/analytics-privacy.html';a.textContent=en?'Privacy':'개인정보 안내';box.append(a);document.body.append(box);
+  const a=document.createElement('a');a.href=en?'/en/privacy.html':'/ko/privacy.html';a.textContent=en?'Privacy':'개인정보 안내';box.append(a);document.body.append(box);
  }
  window.GDAnalytics={track:record,events,preferences,status:()=>({configured:/^G-[A-Z0-9]+$/.test(id),enabled,consent,started})};
  // Embedded Korean worksheets reuse the top page tracker, avoiding extra page views.
