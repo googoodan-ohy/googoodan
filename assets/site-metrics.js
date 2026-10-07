@@ -9,10 +9,21 @@ try{queue=JSON.parse(sessionStorage.getItem(queueKey)||'[]').filter(x=>x.day===d
 function persist(){try{sessionStorage.setItem(queueKey,JSON.stringify(queue))}catch{}}
 function visitor(){const date=day();try{const old=JSON.parse(localStorage.getItem(key)||'null');if(old?.day===date&&old.id)return old}catch{}if(memory?.day!==date)memory={day:date,id:crypto.randomUUID()};try{localStorage.setItem(key,JSON.stringify(memory))}catch{}return memory}
 async function flush(){if(busy||excluded()||!navigator.onLine)return;busy=true;try{while(queue.length){const e=queue[0];if(e.day!==day()){queue.shift();persist();continue}let response;try{response=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site:e.site,kind:e.kind,id:e.id,path:e.path||'/'}),credentials:'omit',keepalive:true,signal:AbortSignal.timeout(10000)})}catch{break}if(!response.ok){console.warn('이용 통계 전송 실패:',response.status);break}queue.shift();persist()}}finally{busy=false}}
-function send(kind,id){if(excluded())return;queue.push({site,kind,id,day:day(),path:location.pathname});queue=queue.slice(-100);persist();flush()}
+function send(kind,id){if(!excluded()){queue.push({site,kind,id,day:day(),path:location.pathname});queue=queue.slice(-100);persist();flush()}if(window.__gdModernGALoaded&&window.GDAnalytics&&['print','pdf','print_pdf'].includes(kind)){const event=kind==='pdf'?'worksheet_pdf_click':'worksheet_print_click';window.GDAnalytics.track(event,{edition:site==='us'?'en':'ko'})}}
 function visit(){if(excluded())return;const v=visitor();if(sentDay!==v.day){sentDay=v.day;send('visit',v.id)}}
 const docs=new WeakSet,frames=new WeakSet;
 function attach(doc){if(!doc||!doc.documentElement||docs.has(doc))return;docs.add(doc);doc.addEventListener('click',e=>{const b=e.target.closest?.('button,a,input[type="button"],input[type="submit"]');if(!b||b.disabled||b.getAttribute('aria-disabled')==='true')return;const id=(b.id||'').toLowerCase(),text=(b.textContent||b.value||'').trim(),action=b.getAttribute('onclick')||'';let kind=b.dataset.metric;if(!['print','pdf','print_pdf'].includes(kind)){if(id==='print'||/\b(?:window\.)?print\s*\(/.test(action)||/^(?:인쇄(?:\s*↗)?|구구단표 인쇄|Print(?: worksheet)?)$/i.test(text))kind=/pdf/i.test(text)?'print_pdf':'print';else if(['pdf','save-pdf','download-pdf','export-pdf'].includes(id)||/^(?:PDF 다운로드|Download PDF)$/i.test(text))kind='pdf';else return}visit();send(kind,crypto.randomUUID())},true);
 const scan=()=>doc.querySelectorAll('iframe').forEach(f=>{if(frames.has(f))return;frames.add(f);const init=()=>{try{attach(f.contentDocument)}catch{}};f.addEventListener('load',init);init()});scan();new MutationObserver(scan).observe(doc.documentElement,{childList:true,subtree:true})}
 visit();send('pageview',crypto.randomUUID());attach(document);addEventListener('pageshow',e=>{if(e.persisted){visit();send('pageview',crypto.randomUUID())}});addEventListener('online',flush);document.addEventListener('visibilitychange',()=>{if(!document.hidden){visit();flush()}});setInterval(()=>{if(!document.hidden)flush()},30000);
+})();
+/* Use the existing consent-based GA4 module on modern pages. Legacy pages already load it. */
+(()=>{'use strict';
+if(window.top!==window||navigator.webdriver||!['googoodan.com','www.googoodan.com'].includes(location.hostname))return;
+if(!(location.pathname==='/'||location.pathname==='/index.html'||/^\/(ko|en)\//.test(location.pathname)))return;
+const legacy=()=>window.GDAnalytics||[...document.scripts].some(s=>/\/analytics\.js(?:[?#]|$)/.test(s.src));
+const load=()=>{if(legacy()||window.__gdModernGALoaded)return;window.__gdModernGALoaded=true;
+ const config=document.createElement('script');config.src='/assets/legacy-recovery/analytics-config.js';
+ config.onload=()=>{const analytics=document.createElement('script');analytics.src='/assets/legacy-recovery/analytics.js';document.body.append(analytics)};
+ document.head.append(config)};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
 })();
