@@ -22,7 +22,7 @@
   let playerObserver;
   const trainingSeeds=new Map();
   function cards(worksheets) {
-    return '<div class="training-gallery separate-gallery grade-gallery">'+worksheets.map(w=>'<a class="training-card" href="#worksheet/'+esc(w.id)+'"><iframe class="type-sheet-static" loading="lazy" tabindex="-1" aria-hidden="true" src="/lab/ko-concept-layout/prebuilt-types/'+encodeURIComponent(w.id)+'.html"></iframe><span title="'+esc(w.title)+'">'+esc(w.title)+'</span><small class="worksheet-context">'+esc(units.get(w.unit)?.title||w.grade+'학년')+'</small></a>').join('')+'</div>';
+    return '<div class="training-gallery separate-gallery grade-gallery">'+worksheets.map(w=>'<a class="training-card" href="#worksheet/'+esc(w.id)+'"><img class="type-sheet-thumbnail" loading="lazy" decoding="async" alt="'+esc(w.title)+' 문제지" src="/assets/ko-sheet-thumbnails/grade-'+encodeURIComponent(w.id)+'.webp"><span title="'+esc(w.title)+'">'+esc(w.title)+'</span><small class="worksheet-context">'+esc(units.get(w.unit)?.title||w.grade+'학년')+'</small></a>').join('')+'</div>';
   }
   function fitTypeSheets(){
     document.querySelectorAll('.type-sheet-static').forEach(frame=>{
@@ -147,7 +147,7 @@
         document.querySelectorAll('[data-mode]').forEach(a=>{if(a.dataset.mode==='training')a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
       }
       if(!u||!rows.length){content.innerHTML=hero('연결된 자료가 없습니다.');return;}
-      content.innerHTML='<div class="unit-training-workspace"><h1>'+esc(u.title)+' · 연산 트레이닝</h1></div><div class="training-sheet-grid">'+rows.map((r,i)=>'<a class="training-sheet-card" href="'+esc(r.url+(mode==='unittraining'?'?unit='+encodeURIComponent(arg):''))+'" aria-label="'+esc(r.title)+' 상세 보기"><h2>'+(i+1)+'. '+esc(r.title)+'</h2><iframe scrolling="no" loading="lazy" title="'+esc(r.concept+' · '+r.title)+'" data-sheet-src="/ko/training-player/prebuilt/'+encodeURIComponent(r.typeId)+'.html"></iframe></a>').join('')+'</div>';
+      content.innerHTML='<div class="unit-training-workspace"><h1>'+esc(u.title)+' · 연산 트레이닝</h1></div><div class="training-sheet-grid">'+rows.map((r,i)=>'<a class="training-sheet-card" href="'+esc(r.url+(mode==='unittraining'?'?unit='+encodeURIComponent(arg):''))+'" aria-label="'+esc(r.title)+' 상세 보기"><h2>'+(i+1)+'. '+esc(r.title)+'</h2><img class="type-sheet-thumbnail" loading="lazy" decoding="async" alt="'+esc(r.title)+' 문제지" src="/assets/ko-sheet-thumbnails/training-'+encodeURIComponent(r.typeId)+'.webp"></a>').join('')+'</div>';
       if(mode==='trainingdetail'){
         const sourceUnit=new URLSearchParams(location.search).get('unit');
         if(units.has(sourceUnit)&&(unitTraining.units[sourceUnit]||[]).some(r=>r.typeId===arg)){
@@ -159,25 +159,6 @@
         const detail=newTrainingGuides.find(r=>r.typeId===arg);
         if(detail)content.innerHTML=hero(detail.concept+' · '+detail.title)+player(detail.title,'/ko/training-player/type.html?type='+encodeURIComponent(detail.typeId)+'&view=problem')+'<div class="training-guide-copy">'+(document.getElementById('training-guide-content')?.innerHTML||'')+'</div>';
       }
-      const pendingSheets=[];let activeSheets=0;
-      const loadNext=()=>{while(activeSheets<2&&pendingSheets.length){const frame=pendingSheets.shift();if(!frame.isConnected)continue;activeSheets++;frame.addEventListener('load',()=>{activeSheets--;loadNext();},{once:true});frame.src=frame.dataset.sheetSrc;}};
-      const visibleSheets=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){visibleSheets.unobserve(entry.target);pendingSheets.push(entry.target);}}loadNext();},{rootMargin:'120px 0px'});
-      content.querySelectorAll('.training-sheet-card').forEach(card=>{
-        const frame=card.querySelector('iframe');visibleSheets.observe(frame);
-        const fit=()=>{
-          const doc=frame.contentDocument;if(!doc||!doc.querySelector('.sheet-page'))return;
-          let style=doc.getElementById('gallery-style');
-          if(!style){style=doc.createElement('style');style.id='gallery-style';style.textContent='@media screen{html,body{margin:0!important;padding:0!important;overflow:hidden!important;background:white!important}.toolbar{display:none!important}.sheet-page{margin:0!important;box-shadow:none!important}}';doc.head.append(style);}
-          const scale=frame.clientWidth/(210*96/25.4);
-          doc.body.style.zoom=scale;
-          const pages=[...doc.querySelectorAll('.sheet-page')].filter(x=>getComputedStyle(x).display!=='none');
-          frame.style.height=Math.ceil(pages.reduce((n,x)=>n+x.offsetHeight,0)*scale+2)+'px';
-        };
-        frame.addEventListener('load',()=>{
-          fit();
-        });
-        new ResizeObserver(fit).observe(card);
-      });
     } else if(['grades','unit','topics','search'].includes(mode)) {
       const chosen=mode==='unit'?units.get(arg):null;
       if(mode==='unit'&&!chosen){content.innerHTML=hero('단원을 찾을 수 없습니다.')+link('학년별 학습으로','grades');return;}

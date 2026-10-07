@@ -4,47 +4,9 @@ window.GGD_ROUTES={"ko":{"grades/1":"/ko/grades/1/","grades/2":"/ko/grades/2/","
 (()=>{const h=document.querySelector("body > header");if(h&&!h.querySelector(".site-help-link")){h.classList.add("has-site-help");const a=document.createElement("a");a.className="site-help-link";a.href="/ko/help.html";a.textContent="사이트 사용법";h.append(a);}})();
 (()=>{if(!document.documentElement.lang.startsWith('ko'))return;const sidebar=document.querySelector('.layout>aside'),nav=document.querySelector('header .top-nav');if(sidebar&&nav){nav.classList.add('sidebar-mode-tabs');nav.setAttribute('aria-label','학습 방식 선택');sidebar.prepend(nav);}})();
 
-/* One shared enlarged worksheet preview for both galleries. */
-(()=>{
- const selector='a.training-card,a.training-sheet-card';
- let panel,frame,current,timer,savedStyle,savedZoom,savedOverflow,savedCardHeight;
- function hide(){clearTimeout(timer);if(panel)panel.hidden=true;if(frame){frame.style.cssText=savedStyle;try{frame.contentDocument.body.style.zoom=savedZoom;frame.contentDocument.documentElement.style.overflowY=savedOverflow;}catch{}frame.classList.remove('sheet-zoom-active');frame=null;}if(current)current.style.minHeight=savedCardHeight;current=null;}
- function show(card){
-  const source=card.querySelector('iframe');if(!source)return;
-  const url=source.getAttribute('data-sheet-src')||source.getAttribute('src');if(!url)return;
-  if(!panel){
-   panel=document.createElement('section');panel.className='sheet-zoom-panel';panel.setAttribute('aria-label','문제지 확대 보기');
-   panel.innerHTML='<div class="sheet-zoom-heading"><span>확대 보기</span><button type="button" aria-label="확대 닫기">×</button></div><div class="sheet-zoom-space"></div><a class="sheet-zoom-detail">문제지 상세 보기 →</a>';
-   document.body.append(panel);
-   panel.querySelector('button').onclick=hide;
-   panel.onpointerenter=()=>clearTimeout(timer);
-   panel.onpointerleave=()=>{timer=setTimeout(hide,200)};
-
-  }
-  clearTimeout(timer);if(current===card&&!panel.hidden)return;hide();current=card;panel.hidden=false;
-  const rect=card.getBoundingClientRect(),width=Math.min(620,innerWidth-24);
-  panel.style.width=width+'px';
-  panel.style.left=(rect.right+width+12<innerWidth?rect.right+8:Math.max(12,rect.left-width-8))+'px';
-  panel.style.top='16px';panel.querySelector('.sheet-zoom-detail').href=card.href;
-  frame=source;savedStyle=frame.style.cssText;savedCardHeight=card.style.minHeight;card.style.minHeight=card.getBoundingClientRect().height+'px';
-  try{savedZoom=frame.contentDocument.body.style.zoom;savedOverflow=frame.contentDocument.documentElement.style.overflowY;}catch{savedZoom='';}
-  const space=panel.querySelector('.sheet-zoom-space').getBoundingClientRect();
-  frame.classList.add('sheet-zoom-active');
-  frame.style.cssText+=';position:fixed!important;left:'+space.left+'px!important;top:'+space.top+'px!important;width:'+space.width+'px!important;height:'+space.height+'px!important;min-height:0!important;z-index:10001!important;pointer-events:auto!important;background:white!important;';
-  const enlarge=()=>{if(frame!==source)return;try{source.contentDocument.body.style.zoom=space.width/794;source.contentDocument.documentElement.style.overflowY='auto';}catch{}};
-  enlarge();source.addEventListener('load',enlarge,{once:true});
-  source.onpointerenter=()=>clearTimeout(timer);
-  source.onpointerleave=()=>{timer=setTimeout(hide,220)};
-
- }
- document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const trigger=e.target.closest('.sheet-zoom-trigger');if(trigger&&!trigger.contains(e.relatedTarget)){clearTimeout(timer);timer=setTimeout(()=>show(trigger.closest(selector)),220);}});
- document.addEventListener('pointerout',e=>{const trigger=e.target.closest('.sheet-zoom-trigger');if(trigger&&!trigger.contains(e.relatedTarget)){clearTimeout(timer);timer=setTimeout(hide,220);}});
- document.addEventListener('keydown',e=>{if(e.key==='Escape')hide()});
- addEventListener('resize',hide);addEventListener('hashchange',hide);
- function buttons(){document.querySelectorAll(selector).forEach(c=>{if(c.querySelector('.sheet-zoom-trigger'))return;const b=document.createElement('button');b.type='button';b.className='sheet-zoom-trigger';b.innerHTML='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6M10 7v6"/></svg>';b.title='확대해서 보기';b.setAttribute('aria-label','문제지 확대 보기');b.onclick=e=>{e.preventDefault();e.stopPropagation();show(c)};c.append(b);});}
- const content=document.querySelector('#content');if(content)new MutationObserver(buttons).observe(content,{childList:true,subtree:true});buttons();
-})();
-
+/* Static thumbnails: one shared enlargement, no worksheet iframe in galleries. */
+(()=>{const selector='a.training-card,a.training-sheet-card';let panel,timer;function hide(){clearTimeout(timer);if(panel)panel.hidden=true}function show(card){const source=card.querySelector('img.type-sheet-thumbnail');if(!source)return;if(!panel){panel=document.createElement('section');panel.className='sheet-zoom-panel';panel.innerHTML='<div class="sheet-zoom-heading"><span>확대 보기</span><button type="button" aria-label="확대 닫기">×</button></div><div class="sheet-zoom-space" style="overflow:auto"><img style="width:100%;height:auto;display:block"></div><a class="sheet-zoom-detail">문제지 상세 보기 →</a>';document.body.append(panel);panel.querySelector('button').onclick=hide;panel.onpointerenter=()=>clearTimeout(timer);panel.onpointerleave=()=>{timer=setTimeout(hide,200)}}clearTimeout(timer);panel.hidden=false;const rect=card.getBoundingClientRect(),width=Math.min(620,innerWidth-24);panel.style.width=width+'px';panel.style.left=(rect.right+width+12<innerWidth?rect.right+8:Math.max(12,rect.left-width-8))+'px';panel.style.top='16px';panel.querySelector('img').src=source.src;panel.querySelector('img').alt=source.alt;panel.querySelector('.sheet-zoom-detail').href=card.href}
+document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const t=e.target.closest('.sheet-zoom-trigger');if(t&&!t.contains(e.relatedTarget)){clearTimeout(timer);timer=setTimeout(()=>show(t.closest(selector)),220)}});document.addEventListener('pointerout',e=>{const t=e.target.closest('.sheet-zoom-trigger');if(t&&!t.contains(e.relatedTarget)){clearTimeout(timer);timer=setTimeout(hide,220)}});document.addEventListener('keydown',e=>{if(e.key==='Escape')hide()});addEventListener('resize',hide);addEventListener('hashchange',hide);function buttons(){document.querySelectorAll(selector).forEach(c=>{if(c.querySelector('.sheet-zoom-trigger'))return;const btn=document.createElement('button');btn.type='button';btn.className='sheet-zoom-trigger';btn.innerHTML='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6M10 7v6"/></svg>';btn.title='확대해서 보기';btn.setAttribute('aria-label','문제지 확대 보기');btn.onclick=e=>{e.preventDefault();e.stopPropagation();show(c)};c.append(btn)})}const content=document.querySelector('#content');if(content)new MutationObserver(buttons).observe(content,{childList:true,subtree:true});buttons();const style=document.createElement('style');style.textContent='.training-card .type-sheet-thumbnail,.training-sheet-card .type-sheet-thumbnail{display:block;width:100%;height:auto;object-fit:contain;pointer-events:none;background:white}.training-card .type-sheet-thumbnail{aspect-ratio:210/297}.sheet-zoom-panel[hidden]{display:none!important}';document.head.append(style)})();
 
 (()=>{if(!document.documentElement.lang.startsWith('ko'))return;const sidebar=document.querySelector('.layout>aside'),tabs=sidebar?.querySelector('.sidebar-mode-tabs');if(!tabs||sidebar.querySelector('.times-practice-entry'))return;const a=document.createElement('a');a.className='times-practice-entry';a.href='/ko/times-tables/';a.textContent='구구단연습';a.style.cssText='display:block;margin:8px 0 12px;padding:12px;text-align:center;border:1px solid #176f5e;border-radius:10px;font-weight:700;color:#176f5e;background:#e2f1e9;text-decoration:none';if(document.body.dataset.route==='times'){a.setAttribute('aria-current','page');a.style.background='#176f5e';a.style.color='white'}tabs.append(a)})();
 
