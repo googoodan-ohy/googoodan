@@ -14,3 +14,7 @@ document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;co
 
 (()=>{const s=document.createElement('style');s.textContent='.fixed-charts{border-top:1px solid #c5dcd5;margin-top:16px;padding-top:12px}.fixed-charts strong{font-size:13px}.fixed-charts a{display:block;margin-top:8px;padding:10px 6px;border:1px solid #bad6cd;border-radius:7px;background:#e8f2ee;color:#176f5e;font-size:12px;font-weight:bold;text-align:center;text-decoration:none}';document.head.append(s)})();
 ;(()=>{if(!document.querySelector('script[data-gd-metrics-loader]')){const s=document.createElement('script');s.dataset.gdMetricsLoader='1';s.src='/assets/site-metrics.js?v=2-20261007';document.head.append(s)}})();
+
+/* Private feedback intake */
+
+(()=>{if(!["/","/index.html"].includes(location.pathname)&&!location.pathname.startsWith("/ko/"))return;const add=()=>{if(document.querySelector("script[data-feedback-intake]"))return;const s=document.createElement("script");s.src="/assets/feedback-widget.js?v=20261008";s.dataset.locale="ko";s.dataset.feedbackIntake="1";document.body.append(s)};if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",add,{once:true});else add()})();
