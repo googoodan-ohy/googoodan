@@ -1,0 +1,18 @@
+(()=>{'use strict';
+if(window.top!==window||window.__gdMetrics||!['googoodan.com','www.googoodan.com'].includes(location.hostname)||navigator.webdriver)return;
+if(!(location.pathname==='/'||location.pathname==='/en/app/index.html'||/^\/(ko|en)\//.test(location.pathname)))return;
+window.__gdMetrics=true;const API='https://googoodan-community.googoodan-community.workers.dev/metrics/event',site=location.pathname.startsWith('/en/')?'us':'ko';
+const day=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const excluded=()=>{try{return localStorage.getItem('gd_analytics_optout')==='1'||localStorage.getItem('gd_operator_excluded')==='1'}catch{return false}};
+const key='gd_daily_visitor_v1',queueKey='gd_metrics_pending_v2';let memory=null,sentDay='',busy=false,queue=[];
+try{queue=JSON.parse(sessionStorage.getItem(queueKey)||'[]').filter(x=>x.day===day()&&['ko','us'].includes(x.site)&&['visit','pageview','print','pdf','print_pdf'].includes(x.kind)).slice(-100)}catch{}
+function persist(){try{sessionStorage.setItem(queueKey,JSON.stringify(queue))}catch{}}
+function visitor(){const date=day();try{const old=JSON.parse(localStorage.getItem(key)||'null');if(old?.day===date&&old.id)return old}catch{}if(memory?.day!==date)memory={day:date,id:crypto.randomUUID()};try{localStorage.setItem(key,JSON.stringify(memory))}catch{}return memory}
+async function flush(){if(busy||excluded()||!navigator.onLine)return;busy=true;try{while(queue.length){const e=queue[0];if(e.day!==day()){queue.shift();persist();continue}let response;try{response=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site:e.site,kind:e.kind,id:e.id,path:e.path||'/'}),credentials:'omit',keepalive:true,signal:AbortSignal.timeout(10000)})}catch{break}if(!response.ok){console.warn('이용 통계 전송 실패:',response.status);break}queue.shift();persist()}}finally{busy=false}}
+function send(kind,id){if(excluded())return;queue.push({site,kind,id,day:day(),path:location.pathname});queue=queue.slice(-100);persist();flush()}
+function visit(){if(excluded())return;const v=visitor();if(sentDay!==v.day){sentDay=v.day;send('visit',v.id)}}
+const docs=new WeakSet,frames=new WeakSet;
+function attach(doc){if(!doc||!doc.documentElement||docs.has(doc))return;docs.add(doc);doc.addEventListener('click',e=>{const b=e.target.closest?.('button,a,input[type="button"],input[type="submit"]');if(!b||b.disabled||b.getAttribute('aria-disabled')==='true')return;const id=(b.id||'').toLowerCase(),text=(b.textContent||b.value||'').trim(),action=b.getAttribute('onclick')||'';let kind=b.dataset.metric;if(!['print','pdf','print_pdf'].includes(kind)){if(id==='print'||/\b(?:window\.)?print\s*\(/.test(action)||/^(?:인쇄(?:\s*↗)?|구구단표 인쇄|Print(?: worksheet)?)$/i.test(text))kind=/pdf/i.test(text)?'print_pdf':'print';else if(['pdf','save-pdf','download-pdf','export-pdf'].includes(id)||/^(?:PDF 다운로드|Download PDF)$/i.test(text))kind='pdf';else return}visit();send(kind,crypto.randomUUID())},true);
+const scan=()=>doc.querySelectorAll('iframe').forEach(f=>{if(frames.has(f))return;frames.add(f);const init=()=>{try{attach(f.contentDocument)}catch{}};f.addEventListener('load',init);init()});scan();new MutationObserver(scan).observe(doc.documentElement,{childList:true,subtree:true})}
+visit();send('pageview',crypto.randomUUID());attach(document);addEventListener('pageshow',e=>{if(e.persisted){visit();send('pageview',crypto.randomUUID())}});addEventListener('online',flush);document.addEventListener('visibilitychange',()=>{if(!document.hidden){visit();flush()}});setInterval(()=>{if(!document.hidden)flush()},30000);
+})();

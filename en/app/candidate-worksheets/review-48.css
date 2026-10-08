@@ -1,0 +1,21 @@
+#standards button{font-size:13px;padding:10px 12px}
+#standards button small{font-size:11px}
+.sheet-cell{justify-content:center}
+.sheet-cell .legacy-visual svg{max-height:37mm}
+.sheet-cell .legacy-prompt{overflow-wrap:anywhere;padding-left:11px;margin-top:2mm}
+.sheet-cell .legacy-task{min-height:6mm}
+.sheet-grid.dense .sheet-cell{padding:3mm 1.5mm 1mm;gap:1mm}
+.sheet-grid.dense .legacy-visual svg{max-height:18mm}
+.sheet-grid.dense .legacy-prompt{font-size:8pt}
+.sheet-grid.dense .legacy-task{font-size:8pt}
+.sheet-grid.dense .legacy-task .drawing-space{height:9mm}
+.original-link{color:#146d58;text-decoration:underline}
+.embedded .review-head,.embedded .review-sidebar,.embedded .review-intro,.embedded .review-source{display:none}
+.embedded .review-layout{display:block;max-width:none;margin:0;padding:8px}
+.embedded .review-controls{position:sticky;top:0;z-index:5;background:#e8f3ef}
+.embedded .review-main{overflow:auto}
+.embedded .sheet-page{margin:8px auto}
+@media print{.embedded .review-controls{display:none}.embedded .review-layout{padding:0}.embedded .sheet-page{margin:0}}
+.thumb .review-controls,.thumb .answer-page{display:none!important}
+.thumb .review-layout{padding:0}
+.thumb .sheet-page{margin:0;box-shadow:none}

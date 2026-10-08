@@ -1,0 +1,152 @@
+@page { size: A4 portrait; margin: 0; }
+* { box-sizing: border-box; }
+:root {
+  --gd-green: #176e5c;
+  --gd-green-dark: #124f48;
+  --gd-mint: #eaf6ef;
+  --gd-coral: #ed764b;
+  --gd-line: #bfd9d1;
+  --gd-text: #173f43;
+  --gd-answer: #b32b2b;
+}
+body { margin: 0; color: var(--gd-text); font-family: Arial, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #edf1ef; }
+.toolbar { max-width: 210mm; margin: 12px auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; }
+button { padding: 7px 13px; color: var(--gd-green-dark); background: white; border: 1px solid #9cc8bd; border-radius: 7px; font-weight: 700; cursor: pointer; }
+button:hover { background: var(--gd-mint); }
+.toolbar a { color: var(--gd-green); font-weight: 700; }
+.sheet-page {
+  position: relative; width: 210mm; height: 297mm; padding: 12mm 12mm 19mm; margin: 10px auto;
+  background: white; display: flex; flex-direction: column; break-after: page; overflow: hidden;
+  box-shadow: 0 2px 14px rgba(32, 77, 68, .12);
+}
+.sheet-page::after {
+  content: 'googoodan.com  ·  Build skills step by step';
+  position: absolute; left: 12mm; right: 12mm; bottom: 12mm; height: 3.8mm;
+  border-top: .35mm solid var(--gd-green); padding-top: 1.2mm;
+  color: var(--gd-green); font-size: 6.6pt; font-weight: 700; letter-spacing: .02em;
+}
+.sheet-head {
+  min-height: 21mm; flex: none; display: grid;
+  grid-template-columns: 42mm minmax(0, 1fr) auto; grid-template-rows: 11mm 8mm;
+  column-gap: 4mm; align-items: center; padding: 0 1.8mm 1.2mm;
+  border: .38mm solid var(--gd-green); border-radius: 3.2mm 3.2mm 1.8mm 1.8mm;
+  background: linear-gradient(180deg, #ffffff 0 52%, var(--gd-mint) 52% 100%);
+  white-space: nowrap;
+}
+.sheet-head .sheet-brand { align-self: center; min-width: 0; overflow: hidden; display: inline-flex; align-items: center; gap: 1.8mm; color: var(--gd-green); font-size: 0 !important; font-weight: 900; }
+.sheet-brand::before { content: ''; width: 8mm; height: 8mm; flex: none; background: url('assets/brand-logo.svg') center / contain no-repeat; }
+.sheet-brand::after { content: 'googoodan.com'; font-size: 9.5pt; letter-spacing: -.35px; }
+.sheet-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; color: var(--gd-green-dark); font-size: 13pt; font-weight: 900; letter-spacing: -.25px; }
+.sheet-kind { justify-self: end; min-width: 18mm; padding: 1.4mm 2.2mm; border-radius: 99px; color: var(--gd-green); background: #fff; border: .3mm solid #9bcabd; font-size: 7pt; font-weight: 800; text-align: center; }
+.answer-page .sheet-kind { color: #9d2626; border-color: #dfaaaa; background: #fff8f7; }
+.sheet-fields { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 7mm; align-items: center; font-size: 8.5pt; color: #304f50; }
+.sheet-field { min-width: 0; display: flex; align-items: flex-end; gap: 2mm; }
+.sheet-field::after { content: ''; flex: 1; min-width: 14mm; border-bottom: .25mm solid #6e8e89; transform: translateY(-.7mm); }
+.sheet-instruction { min-height: 8.5mm; flex: none; display: flex; align-items: center; margin: 2mm 0 1.8mm; padding: 1.3mm 3mm; border-left: 1.2mm solid var(--gd-coral); border-radius: 1.5mm; background: #fff8f1; color: #294c4d; font-size: 9pt; font-weight: 700; white-space: normal; }
+.sheet-grid { flex: 1; min-height: 0; display: grid; width: 100%; border: .3mm solid var(--gd-line); border-radius: 2mm; overflow: hidden; background: white; }
+.sheet-cell { min-width: 0; min-height: 0; position: relative; border-right: .25mm solid #d6e5e1; border-bottom: .25mm solid #d6e5e1; padding: 2mm 1mm 1mm 6mm; overflow: hidden; }
+.sheet-number { position: absolute; top: 1.5mm; left: 1.5mm; display: inline-flex; align-items: center; justify-content: center; width: 4.5mm; height: 4.5mm; border-radius: 50%; color: var(--gd-green); background: var(--gd-mint); font-size: 7pt; font-weight: 800; }
+.horizontal { display: flex; align-items: flex-start; gap: 1mm; white-space: nowrap; line-height: 1.4; }
+.answer-space { display: inline-block; min-width: 11mm; height: 1.3em; border-bottom: 1px solid #557b75; text-align: center; }
+.blank-space { display: inline-flex; align-items: center; justify-content: center; line-height: 1; min-width: 10mm; border: 1px solid #759a94; border-radius: 1.2mm; height: 1.2em; text-align: center; vertical-align: middle; background: #fff; }
+.vertical { width: fit-content; margin: 0 auto; font-variant-numeric: tabular-nums; }
+.vertical-row { display: flex; justify-content: flex-end; height: 1.3em; align-items: center; }
+.vertical-digit, .vertical-sign { display: inline-flex; align-items: center; justify-content: center; width: 1.12em; height: 1.25em; }
+.vertical-sign { width: .9em; }
+.carry-row { height: .95em; color: #78938f; }
+.carry-row .vertical-digit { font-size: .65em; border: 1px solid #afc9c3; height: 1.1em; }
+.vertical-rule { border-top: 1px solid #315d57; }
+.vertical-result { min-height: 1.3em; }
+.partial-row { min-height: 1.3em; color: #556f6c; }
+.sheet-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; flex: 1; min-height: 0; }
+.pair-half { display: flex; flex-direction: column; min-height: 0; }
+.pair-heading { height: 6mm; color: var(--gd-green); font-size: 9pt; font-weight: bold; }
+.pair-half .sheet-grid { flex: 1; }
+.sheet-error { color: #900; margin: 20px; }
+.format-list { max-width: 210mm; margin: 12px auto; padding: 10mm; background: white; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.format-card { color: #274d4c; font-size: 9pt; display: flex; flex-direction: column; gap: 1mm; }
+.format-card img { width: 100%; border: 1px solid var(--gd-line); border-radius: 2mm; }
+.answer-page .sheet-grid, .answer-page .sheet-cell { border-color: #e4cdca; }
+.answer-page .sheet-number { color: #9d2626; background: #fff0ed; }
+@media screen { body.view-problem .sheet-page.answer-page, body.view-answer .sheet-page.problem-page { display: none; } }
+@media print { body { background: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; } .toolbar, .sheet-error { display: none !important; } .sheet-page { margin: 0; box-shadow: none; } .sheet-page:last-child { break-after: auto; } }
+
+/* 정답은 종이와 화면에서 같은 빨간색으로 표시한다. 굵기·크기는 한 단계 낮춰(700 · 0.9배) 문제 글씨와 겹쳐도 깔끔하다. */
+.answer-page .answer-space, .answer-page .blank-space,
+.answer-page .vertical-result, .answer-page .partial-row,
+.answer-page .decimal-answer, .answer-page [class*="ink"],
+.answer-page [class*="result"], .answer-page [class*="borrow-value"], .answer-page [class*="-answer"], .answer-page [class*="answer-"], .answer-page .mt-write,
+.answer-page .mt-inline-blank, .answer-page .mt-sign-box, .answer-page .mt-circle,
+.answer-page .sf-work, .answer-page .g013-box, .answer-page .g013-blank { color: #d71f10 !important; font-weight: 700 !important; }
+.answer-page [class*="ink"] *, .answer-page .answer-space *, .answer-page .blank-space * { color: #d71f10 !important; }
+.answer-page svg .answer-ink text,
+.answer-page svg text[fill="#b32b2b"], .answer-page svg text[fill="#c62828"], .answer-page svg text[fill="#d71f10"],
+.answer-page svg text[fill="#b32b2b"] tspan { fill: #d71f10 !important; font-weight: 700 !important; }
+/* '잘못된 계산 과정 고치기' 의 틀린 풀이(문제지에 있던 내용)는 정답지에서도 빨갛게 바꾸지 않고 검은색 그대로 둔다. */
+.answer-page [class*="wrong"], .answer-page [class*="wrong"] *,
+.answer-page [class*="fix-left"], .answer-page [class*="fix-left"] *,
+.answer-page [class$="-error"], .answer-page [class$="-error"] * { color: #111 !important; font-weight: 400 !important; font-size: 1em !important; }
+.answer-page [class*="wrong"] svg text, .answer-page [class*="fix-left"] svg text, .answer-page [class$="-error"] svg text { fill: #111 !important; font-weight: 400 !important; }
+/* sheet.js 가 정답지에서만 채워지는 글자에 붙이는 표시 — 클래스 이름과 상관없이 모두 같은 빨강으로 칠한다. */
+.answer-page .ans-fill { color: #d71f10 !important; font-weight: 700 !important; }
+.answer-page svg .ans-fill { fill: #d71f10 !important; }
+
+.answer-page .g031-tcell.ans-fill { font-size: 1em !important; }
+
+/* 글자를 150% 로 키우고 칸 안에서 가로·세로 가운데에 놓는 칸(곱셈구구 빈칸 식 등). */
+.sheet-cell.cell-center-big { display: flex; align-items: center; justify-content: center; padding: 1mm; }
+.sheet-cell.cell-center-big .horizontal { font-size: 1.5em; align-items: center; justify-content: center; }
+.sheet-cell.cell-center-big .blank-space { min-width: 12mm; height: 1.3em; }
+
+/* 정답 글자 크기는 0.8배 한 번만 적용한다. 정답 칸이 겹쳐 있어도(칸 안의 글자 요소) 두 번 줄지 않게 가장 안쪽 글자에만 건다. */
+.answer-page .ans-fill:not(text):not(tspan) { font-size: .8em; }   /* SVG 글자는 그림 안 좌표 크기(font-size 속성)를 그대로 쓴다 */
+.answer-page .ans-fill:not(text):not(tspan) .ans-fill:not(text):not(tspan) { font-size: 1em; }
+
+/* 문항 네모칸 안의 내용은 항상 가로·세로 가운데에 놓는다(한쪽으로 치우치지 않게). 번호 배지는 절대 위치라 영향 없음. */
+.sheet-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.sheet-cell > .horizontal, .sheet-cell > .vertical { justify-content: center; }
+
+/* 정답이 들어가는 칸 전체에 정답용 클래스 이름(예: g102-answer-tight)이 붙어 있어도, 문제로 인쇄된 값까지 빨갛게 되지 않게 한다.
+   '문제는 검은색, 새로 채운 답만 빨간색'. 답은 ink 칸(.g102-ink) 안의 글자만 빨강. */
+.answer-page .g102-answer-tight { color: inherit !important; font-size: inherit !important; font-weight: inherit !important; }
+.answer-page .g102-ink, .answer-page .g102-ink * { color: #d71f10 !important; font-weight: 700 !important; }
+.answer-page .g102-ink .g102-ink { font-size: 1em !important; }
+
+/* 분수 막대와 분자·분모 사이 간격(사용자 요청 2026-10-02): 모든 분수 서식에 공통 적용 */
+[class$="-frac"] > span:first-child, [class$="-fraction"] > span:first-child, [class$="-divfrac"] > span:first-child { padding-bottom: .16em !important; }
+[class$="-frac"] > span:last-child, [class$="-fraction"] > span:last-child, [class$="-divfrac"] > span:last-child { padding-top: .16em !important; }
+
+/* 기본 시스템 글꼴만 사용: 외부 및 로컬 웹폰트 다운로드 없음. SVG 숫자도 동일하게 적용. */
+button, input, select, textarea { font-family: inherit; }
+.sheet-page, .sheet-page *, .sheet-page svg text, .sheet-page svg tspan { font-family: Arial, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important; }
+
+/* 문장형 공통 규칙: 칸 안에서 문장과 답칸이 함께 보이도록 작은 본문 적용. */
+.sheet-cell .g010-text,.sheet-cell .g020-sentence,.sheet-cell .ko040-say{font-size:10pt!important;line-height:1.25!important;word-break:keep-all;overflow-wrap:break-word;}
+.sheet-cell:has(.g010-text) .g010-write,.sheet-cell:has(.g020-sentence) .g020-tag{font-size:10pt!important;line-height:1.2!important;}
+
+/* 흑백 출력에도 구별되는 명도 단계 유지. 브라우저 인쇄 색상 생략 방지. */
+.sheet-page svg,.sheet-page svg *,.sheet-page [class*="strip"],.sheet-page [class*="strip"] span{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+
+/* 답을 적는 칸은 네 변이 닫힌 직사각형. 분수 가로선/계산선은 별도 유지. */
+.sheet-cell .answer-space,.sheet-cell .blank-space,.sheet-cell .mt-write,.sheet-cell .mt-inline-blank,.sheet-cell .g020-write,.sheet-cell .g031-write,.sheet-cell .g031-product,.sheet-cell .g032-answer,.sheet-cell .ko040-write,.sheet-cell .ko42-blank,.sheet-cell .ko051-write,.sheet-cell .ko050-ans,.sheet-cell .g111-blank,.sheet-cell .g112-blank,.sheet-cell .g101-blank,.sheet-cell .fx-blank,.sheet-cell .g130-blank,.sheet-cell .fd-answer-space,.sheet-cell .f142-answer,.sheet-cell .g201-answer,.sheet-cell .g202 .write,.sheet-cell .g202 .answer{border:1px solid #57736a!important;border-radius:0!important;box-sizing:border-box;min-height:1.25em;vertical-align:middle;text-align:center;}
+
+/* 세로 곱셈 고치기: 일의 자리와 답칸 내부 오른쪽 여백을 동일하게 맞춘다. */
+.sheet-cell .g031-error-pair .g031-vertical>div:not(.g031-product){padding-right:calc(.45em + 1px);box-sizing:border-box;}
+.sheet-cell .g031-error-pair .g031-vertical>.g031-product{justify-content:flex-end!important;text-align:right!important;padding-right:.45em;padding-left:.15em;}
+
+/* 모든 공통 세로셈: 피연산자·받아올림·결과행에 동일 여백으로 자릿수 정렬 보존 */
+.sheet-cell .vertical-row,.sheet-cell .g022-row,.sheet-cell .decimal-stack .decimal-row{padding-left:.2em;padding-right:.3em;box-sizing:border-box;}
+.sheet-cell .g031-vertical>div:not(.g031-product){padding-right:calc(.45em + 1px);box-sizing:border-box;}
+.sheet-cell .g031-vertical>.g031-product{display:flex;align-items:center;justify-content:flex-end!important;text-align:right!important;padding-right:.45em;padding-left:.15em;}
+
+/* 세로 나눗셈: 숫자 없는 보조 가로선 숨김, 실제 계산선은 보존. */
+.ko241-figure .ko241-guide{display:none!important}
+
+/* Fraction results need room for numerator and denominator, including mixed numbers. */
+.sheet-cell .fx-blank{display:inline-flex!important;align-items:center;justify-content:center;min-width:15mm!important;height:14mm!important;box-sizing:border-box;flex:none}
+
+.sheet-cell .sf-empty{display:inline-flex!important;width:16mm;height:14mm!important;border:1px solid #57736a!important;box-sizing:border-box;vertical-align:middle}
+
+.sheet-cell .fd-answer-space{min-width:15mm!important;min-height:14mm!important;height:14mm!important;box-sizing:border-box;align-items:center}
+
+.sheet-cell .f142-answer,.sheet-cell .f142-blank.wide{min-width:15mm!important;min-height:14mm!important;height:14mm!important;box-sizing:border-box;border:1px solid #57736a;vertical-align:middle}
