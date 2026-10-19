@@ -308,3 +308,12 @@
 /* Korean printable number lines keep the two-column worksheet layout inside embedded views. */
 html[lang|="ko"] .sheet[data-layout="number-line"] .questions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 
+
+/* Phones: the whole page scrolls normally so the menu moves away and the worksheet gets the full screen. */
+@media screen and (max-width:760px){
+ html{height:auto;overflow:visible}
+ body{position:static;inset:auto;height:auto;overflow:visible;display:block}
+ .layout{display:block;height:auto;min-height:0;overflow:visible}
+ .layout>main,.layout>aside{overflow:visible;max-height:none;min-height:0}
+ body>footer{max-height:none;overflow:visible}
+}
