@@ -47,7 +47,7 @@
  // Embedded Korean worksheets reuse the top page tracker, avoiding extra page views.
  let tracker=window.GDAnalytics;
  try{if(window.parent!==window&&window.parent.GDAnalytics)tracker=window.parent.GDAnalytics;}catch{}
- if(tracker===window.GDAnalytics){start();if(enabled){
+ if(tracker===window.GDAnalytics){start();if(enabled&&location.pathname.startsWith('/en/')){
   const style=document.createElement('style');style.textContent='@media print{#gd-consent,#gd-privacy-settings{display:none!important}}';document.head.append(style);
   const b=document.createElement('button');b.id='gd-privacy-settings';b.textContent=location.pathname.startsWith('/en/')?'Analytics preferences':'통계 수집 설정';b.onclick=preferences;b.style.cssText='display:block;margin:16px auto;padding:7px 12px;font-size:12px';document.body.append(b);
   if(consent==='unknown'&&location.pathname.startsWith('/en/'))preferences();
