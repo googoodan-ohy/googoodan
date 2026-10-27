@@ -1,0 +1,291 @@
+/* Japanese tabs and their expandable training menu stay in normal document flow. */
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header,
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header.site-head,
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header.site-header {
+  box-sizing: border-box;
+  height: 84px !important;
+  min-height: 84px !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand { flex: 0 1 auto; min-width: 0; white-space: nowrap; }
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .country-dropdown { flex: 0 0 auto; }
+main.layout {
+  display: grid !important;
+  grid-template-columns: 220px minmax(0, 1fr) !important;
+  align-items: start;
+  gap: clamp(39px, calc(6.25vw - 29px), 61px) !important;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  margin: 16px auto 36px !important;
+  padding: 0 max(55px, calc(6.25vw - 25px)) 0 28px !important;
+}
+main.layout > aside, .page-layout > .sidebar { min-width: 0; width: 100%; }
+.edition-tabs, .unit-edition-tabs, .primary-nav {
+  position: static !important;
+  inset: auto !important;
+  z-index: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+.edition-tabs > a, .unit-edition-tabs > a, .primary-nav > a {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+  border: 1px solid #c5ddd4 !important;
+  border-radius: 9px !important;
+  font: 700 14px/1.2 Arial, "Noto Sans JP", Meiryo, sans-serif !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+}
+.edition-tabs > a[aria-current="page"], .unit-edition-tabs > a[aria-current="page"], .primary-nav > a[aria-current="page"] {
+  background: #176e5c !important; border-color: #176e5c !important; color: #fff !important;
+}
+.training-domain-box {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 0 !important;
+}
+.training-domain-box[hidden] { display: none !important; }
+.training-domain-box .domain-group summary { cursor: pointer; }
+body:has(.edition-tabs) .layout aside, body:has(.unit-edition-tabs) .layout aside { padding-top: 0 !important; }
+body:has(.edition-tabs) main, body:has(.unit-edition-tabs) main { padding-top: 0 !important; }
+@media (max-width: 700px) {
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header { height: 109px !important; min-height: 109px !important; padding-left: 12px !important; padding-right: 12px !important; }
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand img { flex: 0 0 auto; }
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand-copy small { display: none; }
+  main.layout { display: block !important; width: 100% !important; margin: 10px auto 24px !important; padding: 0 29px 0 14px !important; }
+  main.layout > main { margin-left: 4px !important; margin-right: 4px !important; }
+  main.layout > aside, .page-layout > .sidebar { width: 100% !important; min-width: 0 !important; margin: 0 0 18px !important; }
+  .page-layout { display: block !important; width: 100% !important; margin: 10px auto 24px !important; padding: 0 29px 0 14px !important; }
+  .page-layout > .content { margin-left: 4px !important; margin-right: 4px !important; }
+  .edition-tabs, .unit-edition-tabs, .primary-nav { width: 100% !important; }
+  .edition-tabs > a, .unit-edition-tabs > a, .primary-nav > a { width: 100% !important; }
+}
+
+/* Pages with a standalone tab nav place it in the same left column rhythm. */
+  body > .edition-tabs, body > .unit-edition-tabs {
+  width: 220px !important;
+  margin: 16px 0 16px 28px !important;
+}
+body > header #site-language-menu { margin-left: auto !important; flex: 0 0 auto; }
+@media (max-width: 700px) {
+  body > .edition-tabs, body > .unit-edition-tabs {
+    width: calc(100% - 28px) !important;
+    margin: 10px 14px !important;
+  }
+}
+
+/* Keep the fixed language list out of the page until its disclosure is opened. */
+#site-language-menu:not([open]) > .slm-list { display: none !important; }
+#site-language-menu[open] > .slm-list { display: block !important; }
+@media (max-width: 700px) {
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header > .top-nav { display: none !important; }
+}
+
+/* Reuse the training gallery's menu appearance on every Japanese page. */
+.training-domain-box {
+  box-sizing: border-box;
+  padding: 14px 10px 12px !important;
+  border: 1px solid #c5ddd4 !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+}
+.training-domain-box .domain-group { margin: 3px 0 !important; border-radius: 9px !important; overflow: hidden; }
+.training-domain-box .domain-group > summary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 37px !important;
+  padding: 10px 9px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  list-style: none !important;
+  cursor: pointer;
+}
+.training-domain-box .domain-group > summary::-webkit-details-marker { display: none; }
+.training-domain-box .domain-group > summary::after { content: "\203A"; font-size: 20px; line-height: 12px; transform: rotate(90deg); }
+.training-domain-box .domain-group:not([open]) > summary::after { transform: none; }
+.training-domain-box .domain-group.natural > summary { background: #e3f0e8; color: #176e5c; }
+.training-domain-box .domain-group.fraction > summary { background: #eee6f7; color: #67478b; }
+.training-domain-box .domain-group.decimal > summary { background: #e3eef8; color: #386b9a; }
+.training-domain-box .stage-list { display: grid !important; grid-template-columns: 1fr !important; gap: 2px !important; padding: 3px 0 5px !important; }
+.training-domain-box .stage-link { display: block !important; min-height: 31px !important; padding: 7px 9px !important; border: 1px solid #c5ddd4 !important; border-radius: 7px !important; background: #f4f8f6 !important; color: #286b5b !important; font-size: 13px !important; line-height: 1.2 !important; text-decoration: none !important; white-space: normal !important; }
+.training-domain-box .domain-group.fraction .stage-link { color: #67478b !important; }
+.training-domain-box .domain-group.decimal .stage-link { color: #386b9a !important; }
+.training-domain-box .stage-link[aria-current="page"] { background: #176e5c !important; color: #fff !important; font-weight: 700 !important; }
+.training-domain-box .domain-group.fraction .stage-link[aria-current="page"] { background: #725397 !important; }
+.training-domain-box .domain-group.decimal .stage-link[aria-current="page"] { background: #3976a7 !important; }
+@media (max-width: 650px) {
+  .training-domain-box { padding: 9px 10px !important; }
+  .training-domain-box .domain-group { margin: 2px 0 !important; }
+  .training-domain-box .domain-group > summary { min-height: 34px !important; }
+  .training-domain-box .stage-list { grid-template-columns: repeat(3,minmax(0,1fr)) !important; gap: 4px !important; }
+  .training-domain-box .stage-link { text-align: center; padding: 8px 3px !important; font-size: 12px !important; }
+}
+
+@media print {
+  .edition-tabs, .unit-edition-tabs, .primary-nav, .training-domain-box { display: none !important; }
+}
+
+/* Match the Korean navigation and header rhythm across every Japanese page. */
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header {
+  flex-wrap: nowrap !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand {
+  flex: 0 1 auto !important;
+  margin-right: 0 !important;
+  white-space: nowrap !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .country-dropdown,
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header #site-language-menu {
+  flex: 0 0 auto !important;
+  margin-left: 12px !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .top-nav {
+  margin-left: auto !important;
+}
+.arithmetic-menu-icons { display: none !important; }
+.training-domain-box .domain-group {
+  display: block !important;
+  width: 100% !important;
+}
+.training-domain-box .domain-group > summary {
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+.training-domain-box .stage-list {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 0 !important;
+  padding: 0 !important;
+}
+.training-domain-box .stage-link {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 31px !important;
+  height: 31px !important;
+  padding: 0 9px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #286b5b !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  text-align: left !important;
+}
+.training-domain-box .domain-group.fraction .stage-link { color: #67478b !important; }
+.training-domain-box .domain-group.decimal .stage-link { color: #386b9a !important; }
+.training-domain-box .stage-link[aria-current="page"] {
+  border-radius: 7px !important;
+  background: #176e5c !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+.training-domain-box .domain-group.fraction .stage-link[aria-current="page"] { background: #725397 !important; }
+.training-domain-box .domain-group.decimal .stage-link[aria-current="page"] { background: #3976a7 !important; }
+@media (max-width: 700px) {
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header {
+    height: 84px !important;
+    min-height: 84px !important;
+    flex-wrap: nowrap !important;
+  }
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand-copy small { display: none !important; }
+  .training-domain-box .stage-link { text-align: left !important; padding: 0 9px !important; font-size: 13px !important; }
+}
+
+/* Task 6: normalize Japanese logo, language control, training stages, and mobile tabs. */
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand img {
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .country-dropdown,
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header #site-language-menu {
+  flex: 0 0 auto !important;
+  margin: 0 0 0 12px !important;
+  order: 0 !important;
+}
+body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .top-nav { margin-left: auto !important; }
+.training-domain-box .stage-link {
+  justify-content: flex-start !important;
+  padding-left: 10px !important;
+  text-align: left !important;
+}
+body > .edition-tabs,
+body > .unit-edition-tabs,
+body > .primary-nav {
+  box-sizing: border-box !important;
+  width: 220px !important;
+  max-width: calc(100% - 56px) !important;
+  margin: 16px 0 16px 28px !important;
+}
+@media (max-width: 700px) {
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  body:has(.edition-tabs, .unit-edition-tabs, .primary-nav) > header .gd-brand img {
+    flex-basis: 52px !important;
+    width: 52px !important;
+    height: 52px !important;
+  }
+  body > .edition-tabs,
+  body > .unit-edition-tabs,
+  body > .primary-nav {
+    width: calc(100% - 43px) !important;
+    max-width: none !important;
+    margin: 10px 0 10px 14px !important;
+  }
+  .training-domain-box .stage-link {
+    justify-content: flex-start !important;
+    padding-left: 10px !important;
+    text-align: left !important;
+  }
+}
+/* 학년 버튼: 글자는 한 줄, 버튼이 모자라면 다음 줄로 (한 줄에 3개) */
+.layout aside #grades.row { display: flex !important; flex-wrap: wrap !important; gap: 6px !important; }
+.layout aside #grades.row button { flex: 0 0 calc((100% - 12px) / 3) !important; white-space: nowrap !important; padding: 9px 4px !important; font-size: 13px !important; }
+.drill-grades { display: flex !important; flex-wrap: wrap !important; gap: 6px !important; }
+.drill-grades button { flex: 0 0 calc((100% - 12px) / 3) !important; white-space: nowrap !important; padding: 9px 4px !important; font-size: 13px !important; min-width: 0 !important; }
+
+/* 한국 화면처럼: 위 머리(로고)와 왼쪽 메뉴는 고정, 오른쪽 문제지 목록만 스크롤 */
+@media (min-width: 768px) {
+  body > header.site-header, body > header.country-menu-injected-header { position: sticky !important; top: 0 !important; z-index: 30 !important; }
+  .page-layout > .sidebar, .layout > aside {
+    position: sticky !important; top: 100px !important; align-self: start !important;
+    max-height: calc(100vh - 112px) !important; overflow-y: auto !important; overscroll-behavior: contain;
+  }
+}
+.sheet-preview { z-index: 40 !important; }

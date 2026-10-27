@@ -1,0 +1,36 @@
+
+    body:is([data-format="g130-picture"],[data-format="g130-fraction-steps"],[data-format="g130-matching-lines"]) .sheet-head{gap:1mm}
+    body:is([data-format="g130-picture"],[data-format="g130-fraction-steps"],[data-format="g130-matching-lines"]) .sheet-brand{font-size:7pt}
+    body:is([data-format="g130-picture"],[data-format="g130-fraction-steps"],[data-format="g130-matching-lines"]) .sheet-title{font-size:7.5pt;min-width:0}
+    body:is([data-format="g130-picture"],[data-format="g130-fraction-steps"],[data-format="g130-matching-lines"]) .sheet-field{font-size:7.5pt;min-width:0}
+    .g130-frac{display:inline-flex;flex-direction:column;vertical-align:-.4em;line-height:1;text-align:center;min-width:1.2em}
+    .g130-frac>span:first-child{border-bottom:1px solid #111;padding:0 .1em}
+    .g130-frac>span:last-child{padding:0 .1em}
+    .g130-prompt{white-space:nowrap;line-height:1.3;font-size:1.25em}
+    .g130-diagram{height:21mm;display:flex;align-items:center;justify-content:center}
+    .g130-bars{display:flex;flex-direction:column;gap:1.4mm;width:88%;height:23mm}
+    .g130-bar,.g130-dots,.g130-area{display:grid;gap:0;border-left:1px solid #888;border-top:1px solid #888}
+    .g130-bar{flex:1;min-height:0}
+    .g130-dots{width:60%;height:23mm}
+    .g130-area{width:80%;height:23mm}
+    .g130-unit{border-right:1px solid #888;border-bottom:1px solid #888;background:white}
+    .g130-guide{background:#edf6fc}
+    .g130-mark{background:#ee8b82!important}
+    .g130-sum{font-size:9pt;white-space:nowrap}
+    .g130-blank{display:inline-block;min-width:9mm;height:1em;border-bottom:1px solid #888;vertical-align:baseline}
+    .g130-fraction-answer{min-width:14mm;height:12mm!important;border:1px solid #57736a;box-sizing:border-box;vertical-align:middle}
+    .g130-steps{font-size:10pt;line-height:1.5;white-space:nowrap}
+    .g130-steps>div{min-height:5mm}
+    .g130-match-visual .g130-bars{width:34mm;height:auto}
+    .g130-match-visual .g130-bar{flex:none;height:3mm}
+    .g130-match-visual .g130-dots{width:22mm;height:13mm}
+    .g130-match-visual .g130-area{width:28mm;height:13mm}
+    .g130-match-visual .g130-mark{background:#819fba!important}
+    .mt-text.g130-match-visual{display:flex;justify-content:flex-end;align-items:center}
+    .g130-frac{vertical-align:middle;line-height:1.05}.g130-frac>span:first-child{padding:0 .1em .04em}.g130-frac>span:last-child{padding:.04em .1em 0}
+    .g130-op{margin:0 .3em}.g130-line{display:flex;align-items:center;justify-content:center;white-space:nowrap}
+    .g130-ans{color:#d71f10}
+    .g130-diagram{width:100%;height:auto;flex:1;min-height:20mm}
+    .g130-sum{font-size:1em}
+    .g130-steps{font-size:1em}
+  

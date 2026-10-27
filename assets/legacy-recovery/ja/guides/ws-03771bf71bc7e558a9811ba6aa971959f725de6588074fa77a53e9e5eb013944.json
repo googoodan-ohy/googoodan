@@ -1,0 +1,50 @@
+{
+  "title": "小学2年生 cmとmm・長さの単位｜算数の考え方",
+  "concept": "小学2年生 cmとmm・長さの単位",
+  "overview": "1cm=10mmをもとに長さをまとめ、分けて比べます。",
+  "prerequisites": [
+    "1cmは10mm",
+    "10のまとまりと残り",
+    "同じ単位で比較する"
+  ],
+  "teachingSteps": [
+    "cmで表した数を10倍して、mmで表した数に直します。二つの単位で表された長さは、残りのmmを加えます。",
+    "mmを10ずつに分ける",
+    "比較では両方をmmに直す"
+  ],
+  "workedExamples": [
+    {
+      "question": "7cm3mmをmmで表しましょう。",
+      "steps": [
+        "7cm=70mm。70+3です。"
+      ],
+      "answer": "73mm"
+    },
+    {
+      "question": "46mmをcmとmmで表しましょう。",
+      "steps": [
+        "10mmのまとまり4つと残り6mmです。"
+      ],
+      "answer": "4cm6mm"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "1cmを100mmだと思ってしまう",
+      "guidance": "1cm=10mmを確かめ、cmをmmに直してから考えます。"
+    },
+    {
+      "mistake": "比較で単位をそろえない",
+      "guidance": "同じ単位に直してから比べます。"
+    }
+  ],
+  "parentPrompts": [
+    "6cmは何mm？ あと4mmあると、合わせて何mm？",
+    "72mmには10mmがいくつある？ 残りは何mmかな？"
+  ],
+  "practiceAdvice": "6cm4mmは60mmと4mmに分けて64mmです。72mmは10mmのまとまりが七つできて、2mm残るので7cm2mmになります。",
+  "nextSteps": [
+    "5cm4mmと54mmが同じ長さになることを、ものさしの目盛りでも確かめてみましょう。",
+    "72mmと64mmを比べると、どちらが何mm長いかな？ どちらもmmで考えてみよう。"
+  ]
+}

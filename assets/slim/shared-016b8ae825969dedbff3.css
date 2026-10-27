@@ -1,0 +1,12 @@
+
+      .division-format {width:100%;height:100%;font-variant-numeric:tabular-nums;}
+      .division-format svg {display:block;width:100%;height:100%;max-width:100%;}
+      .division-format.with-note svg {height:calc(100% - 4mm);}
+      .division-format text {font-family:Arial,'NanumSquareRound','Malgun Gothic',sans-serif;fill:#111;font-size:18px;}
+      .division-format .answer-ink text {fill:#d71f10;}
+      .division-format .answer-ink path {stroke:#d71f10;}
+      .division-horizontal {display:flex;align-items:flex-start;gap:1.5mm;white-space:nowrap;font-size:13.5pt;}
+      .division-horizontal .division-box {display:inline-block;min-width:10mm;text-align:center;border-bottom:1px solid #111;height:1.3em;}
+      .division-horizontal .remainder-box {min-width:7mm;}
+      .division-shift-note {font-size:8pt;height:4mm;white-space:nowrap;}
+    

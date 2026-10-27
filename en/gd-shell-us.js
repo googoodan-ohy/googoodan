@@ -1,0 +1,6 @@
+(()=>{const mark=()=>{const h=[...document.querySelectorAll('body>header')].find(x=>x.querySelector('.brand,.gd-brand,.logo,.site-brand,[data-site-brand],img[src*="brand"],img[src*="logo"]'));if(h){h.classList.add('gd-sticky-site-header');if(!document.querySelector('.gd-shell-frame')){const f=document.createElement('div');f.className='gd-shell-frame';let n=h.nextElementSibling;while(n){const next=n.nextElementSibling;f.append(n);n=next}document.body.classList.add('gd-shell-framed');document.body.append(f)}}
+// Content after the layout (resource guides, footers) would share the frame height and squeeze the
+// worksheet column to a sliver; move it into the layout's own scroll column instead.
+const lay=document.querySelector('.gd-shell-frame>.layout,.gd-shell-frame>main.layout');const col=lay&&lay.querySelector(':scope>main,:scope>section,:scope>article');
+if(col)[...lay.parentNode.children].filter(el=>el!==lay&&(lay.compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING)&&!/^(SCRIPT|STYLE|NOSCRIPT)$/.test(el.tagName)&&!el.matches('.sr,[id$=tooltip]')&&getComputedStyle(el).display!=='none').forEach(el=>col.append(el))};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mark,{once:true});else mark()})();

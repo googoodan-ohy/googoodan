@@ -34,7 +34,7 @@ button:hover { background: var(--gd-mint); }
   white-space: nowrap;
 }
 .sheet-head .sheet-brand { align-self: center; min-width: 0; overflow: hidden; display: inline-flex; align-items: center; gap: 1.8mm; color: var(--gd-green); font-size: 0 !important; font-weight: 900; }
-.sheet-brand::before { content: ''; width: 8mm; height: 8mm; flex: none; background: url('assets/brand-logo.svg') center / contain no-repeat; }
+.sheet-brand::before { content: ''; width: 8mm; height: 8mm; flex: none; background: url('/en/app/brand-logo.svg') center / contain no-repeat; }
 .sheet-brand::after { content: 'googoodan.com'; font-size: 9.5pt; letter-spacing: -.35px; }
 .sheet-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; color: var(--gd-green-dark); font-size: 13pt; font-weight: 900; letter-spacing: -.25px; }
 .sheet-kind { justify-self: end; min-width: 18mm; padding: 1.4mm 2.2mm; border-radius: 99px; color: var(--gd-green); background: #fff; border: .3mm solid #9bcabd; font-size: 7pt; font-weight: 800; text-align: center; }

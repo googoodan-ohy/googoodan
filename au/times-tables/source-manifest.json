@@ -1,0 +1,147 @@
+[
+  {
+    "source": "assets/legacy-recovery/en/style.css",
+    "sha256": "709b4db00c24ead0028ee3d0e78be4e601dee23bae93bca3d2f12aea2b21ee34",
+    "copied": "assets\\source\\assets\\legacy-recovery\\en\\style.css"
+  },
+  {
+    "source": "assets/legacy-recovery/en/types.js",
+    "sha256": "bf2a92d19df66267c3ca9de20159ed9ca2f5ede69fde686a0d65dcca74c127d8",
+    "copied": "assets\\source\\assets\\legacy-recovery\\en\\types.js"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/catalog.js",
+    "sha256": "6eb5305ad81fb659f2d56c96b9cdce7b1e5a76929b884bf9885cee4c854f0af9",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\catalog.js"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/theme-scenes.js",
+    "sha256": "8faa921ce093c652cf391f59a0852c039289d94fd3f4b704e32ae18d3e6625fa",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\theme-scenes.js"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/times-tables.css",
+    "sha256": "51b442e83170ca90f38e22aa17a65494f590492fb67797f9d345fc75ac9e0423",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\times-tables.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/times-tables.js",
+    "sha256": "14f5cd8c5d601f794cb6c1845f61efe8d0ab22781718a29cedf3e86d82d2ecaf",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\times-tables.js"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/app.js",
+    "sha256": "1148b1cb6c972090ae8d820f723804a2a7b84f25b77a349088c96b2eb61e056f",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\app.js"
+  },
+  {
+    "source": "assets/legacy-recovery/en/legal.css",
+    "sha256": "aa6ed27fa93cb873fc55331b43b64e6c94006d8484bc8bf1300d9a193879d009",
+    "copied": "assets\\source\\assets\\legacy-recovery\\en\\legal.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/preview.css",
+    "sha256": "d7c5d9933fb6f3adcbd1e0b9d691e81614b10bc0b448aedeb4d3e2e39ff56a21",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\preview.css"
+  },
+  {
+    "source": "assets/legacy-recovery/brand.css",
+    "sha256": "a9072ca92d86b1aea37c61238166f9f0c89cf433bbee48e338bc30e5d4d033df",
+    "copied": "assets\\source\\assets\\legacy-recovery\\brand.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/drills.css",
+    "sha256": "b5a2fafcf13fd4dcb50d05b4e1f5c254355c487f5cb12f5bd09c3c60d379910b",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\drills.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/navigation.css",
+    "sha256": "5945ade8bcbecfd7291f7e0b6e2083d78ae81d84a8799bbe5131459682b4527a",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\navigation.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/worksheet-ads.css",
+    "sha256": "c4a17d830249b478b28375e96f48cf9f14d7f8db56089dfa482daa7d1439ab32",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\worksheet-ads.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/worksheet-shell.css",
+    "sha256": "c12496940de97d9bbbdd7cbf3738b52837e25ead72c355f16b2bc6c4a977b0e9",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\worksheet-shell.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/static-directory.css",
+    "sha256": "008ad20334ba8adeb578c9dee008887b38d2b36f430b30114295bf23c4bc2aa0",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\static-directory.css"
+  },
+  {
+    "source": "assets/legacy-recovery/ad-visibility.css",
+    "sha256": "226e90fc2ccd6878ec3e628566e6eeac88e80f93db6972663d8b7941dd062d80",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ad-visibility.css"
+  },
+  {
+    "source": "assets/legacy-recovery/answer-boxes.css",
+    "sha256": "bbcf5d6e7e40c33c5f72b66dd94d706386d7bd10c80f7c608229d9e7cbf1f889",
+    "copied": "assets\\source\\assets\\legacy-recovery\\answer-boxes.css"
+  },
+  {
+    "source": "assets/legacy-recovery/answer-boxes.js",
+    "sha256": "533437087c033921349e179275900d06d5fb929335cd314f228bf8afeb9de271",
+    "copied": "assets\\source\\assets\\legacy-recovery\\answer-boxes.js"
+  },
+  {
+    "source": "assets/legacy-recovery/ko/drill-density.css",
+    "sha256": "f7f17800edea760a4aa910bc489ea67c469333107a4291f010089b3a943895ac",
+    "copied": "assets\\source\\assets\\legacy-recovery\\ko\\drill-density.css"
+  },
+  {
+    "source": "assets/legacy-recovery/country-sites.css",
+    "sha256": "11a735ee74fc803a37f9e8b46e1a7cee12221b06a3519a22ee78340c2a30d9d4",
+    "copied": "assets\\source\\assets\\legacy-recovery\\country-sites.css"
+  },
+  {
+    "source": "assets/ko-workspace-site.css",
+    "sha256": "c58d73eabcfee159e35ca01159891c84ff2ee2ad20f66234993cac3726f5e556",
+    "copied": "assets\\source\\assets\\ko-workspace-site.css"
+  },
+  {
+    "source": "lab/concept-layout/layout.css",
+    "sha256": "a402e5dc82268c83e0e98415b483f5df0cc9359d6e9aeacaefb4b748f0165008",
+    "copied": "assets\\source\\lab\\concept-layout\\layout.css"
+  },
+  {
+    "source": "lab/ko-concept-layout/ko-layout.css",
+    "sha256": "589a1b3138bc6331ef57dba99aefb518d5ef362998c4558d73d034edd6e9687c",
+    "copied": "assets\\source\\lab\\ko-concept-layout\\ko-layout.css"
+  },
+  {
+    "source": "assets/ko-workspace-search-ready.css",
+    "sha256": "6a21ca4206f33dc36308bc0bd0227f209a0207f3a879b6d776883a07fc6c9dc8",
+    "copied": "assets\\source\\assets\\ko-workspace-search-ready.css"
+  },
+  {
+    "source": "assets/brand-logo.svg",
+    "sha256": "7fdab16d7544a9aead2320a5453cb516477963e5a421abb2fafce9a00899ef70",
+    "copied": "assets\\source\\assets\\brand-logo.svg"
+  },
+  {
+    "source": "vendor/html2canvas.min.js",
+    "sha256": "4917b15ac829f7546ab1c053b06499786b45a053169f31f436c16c8eb821414e",
+    "copied": "/vendor/html2canvas-source.min.js"
+  },
+  {
+    "source": "vendor/jspdf.umd.min.js",
+    "sha256": "822d41ab6f0924bd26b76abd6d77fb99df6dd9cec24859773a6926063f8eb330",
+    "copied": "/vendor/jspdf.umd.min.js"
+  },
+  {
+    "source": "assets/site-metrics.js",
+    "sha256": "a32760d72f818bca38ad83e1d1ef1aa63b514741cdce2b967d375b8487c08ab2",
+    "copied": "assets\\source\\assets\\site-metrics.js"
+  },
+  {
+    "source": "assets/ko-workspace-pdf-controls.js",
+    "sha256": "5c2b3bd4f79058a613ebd13fbe08ef74992784d6a8adfdddd1678c18b0681fa4",
+    "copied": "assets\\source\\assets\\ko-workspace-pdf-controls.js"
+  }
+]

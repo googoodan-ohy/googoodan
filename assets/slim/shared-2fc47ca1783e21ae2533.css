@@ -1,0 +1,21 @@
+
+      .g202{width:100%;height:100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2mm;
+        font-size:1em;line-height:1.3;white-space:nowrap;text-align:center}
+      .g202-rounding-compact{font-size:10pt!important}
+      .g202-rounding-compact .g202-row{gap:1mm}
+      .g202-estimate-compact{font-size:10pt!important;gap:2mm;white-space:normal}
+      .g202-estimate-compact .g202-row{gap:1mm}
+      .g202-estimate-compact .estimate-write{min-width:11mm}
+      .g202-estimate-compact .compare-write{min-width:6mm}
+      .g202-row{display:flex;align-items:center;justify-content:center;gap:1.6mm;white-space:nowrap}
+      .g202 .write{display:inline-block;min-width:16mm;border-bottom:1px solid #555;text-align:center}
+      .g202 .answer{display:inline-block;min-width:16mm;border-bottom:1px solid #555;text-align:center;font-weight:700}
+      .g202 .small{font-size:.75em;color:#444;white-space:normal;max-width:90%}
+      .g202 .hide{visibility:hidden}
+      .g202-table{border-collapse:collapse;font-size:.95em;table-layout:fixed;width:92%}
+      .g202-table td,.g202-table th{border:1px solid #888;text-align:center;padding:.4mm}
+      .g202-table th{font-weight:400;background:#f3f3f3;font-size:.8em;padding:.4mm 0}
+      .g202-choices{display:flex;gap:4mm;justify-content:center;white-space:nowrap}
+      .g202 .mark-answer{display:inline-block;border:1.5px solid #d71f10;border-radius:50%;color:#111 !important;font-weight:400 !important;min-width:1.15em;text-align:center;line-height:1.15}
+      .g202 .mark-plain{display:inline;line-height:1.15}
+      .g202 .estimate-write{min-width:14mm}.g202 .compare-write{min-width:8mm}

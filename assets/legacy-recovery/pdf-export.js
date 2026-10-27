@@ -10,7 +10,7 @@
    button.disabled=true;button.textContent=(en?"Preparing PDF…":"PDF 준비 중…");
    if(typeof window.GDPreparePDF!=='function')throw Error((en?"PDF saving is not available on this page yet.":"이 화면은 아직 PDF 저장 준비 중입니다."));
    window.GDPreparePDF();const bundle=document.querySelector('#print-bundle');if(!bundle?.children.length)throw Error((en?"Select worksheets or answer sheets to save.":"저장할 문제지 또는 정답지를 선택해 주세요."));
-   await Promise.all([load('/assets/legacy-recovery/vendor/html2canvas.min.js'),load('/assets/legacy-recovery/vendor/jspdf.umd.min.js')]);
+   await Promise.all([load('/vendor/html2canvas.min.js'),load('/vendor/jspdf.umd.min.js')]);
    const css=await Promise.all([...document.querySelectorAll('link[rel=stylesheet]')].map(async link=>{const r=await fetch(link.href);if(!r.ok)throw Error((en?"Could not load the worksheet styles.":"문제지 스타일을 불러오지 못했습니다."));return (await r.text()).replace(/url\((?!["']?(?:data:|https?:|\/|#))(["']?)([^)'" ]+)\1\)/g,(_,q,url)=>'url("'+new URL(url,link.href).href+'")');}));
    const styles=[...css,...[...document.querySelectorAll('style')].map(s=>s.textContent)].join('\n').replace(/@media\s+screen/gi,'@media not all').replace(/@media\s+print/gi,'@media all');
    frame=document.createElement('iframe');frame.setAttribute('aria-hidden','true');frame.style.cssText='position:fixed;left:-20000px;top:0;width:1280px;height:1200px;border:0;pointer-events:none';document.body.append(frame);

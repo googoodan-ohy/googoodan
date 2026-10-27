@@ -1,0 +1,191 @@
+/* Shared fixed shell for the Japanese and European editions. */
+@media screen {
+  .layout > aside > .sidebar-mode-tabs,
+  .layout > aside > .edition-tabs,
+  .layout > aside > .unit-edition-tabs,
+  .layout > aside > .gd-global-learning-nav,
+  .page-layout > .sidebar > .primary-nav,
+  .gd-fixed-shell > aside > .primary-nav,
+  .gd-fixed-shell > aside > .gd-global-learning-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 60;
+    background-color: #f5f9f6 !important;
+  }
+}
+body > header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  background-color: #fff !important;
+  overflow: visible !important;
+}
+html[lang^="ja"] body > header .gd-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #176e5c;
+  text-decoration: none;
+}
+html[lang^="ja"] body > header .gd-brand img { display: block; width: 52px; height: 52px; }
+html[lang^="ja"] body > header .gd-brand-copy { display: flex; flex-direction: column; gap: 4px; }
+html[lang^="ja"] body > header .gd-brand-name {
+  font: 900 26px/1.1 "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: -1.5px;
+}
+html[lang^="ja"] body > header .gd-brand-name > span { color: #ed764b; font-size: 29px; margin-left: 1px; }
+html[lang^="ja"] body > header .gd-brand-copy small { color: #61786f; font-size: 10px; font-weight: 600; letter-spacing: .5px; }
+.gd-global-learning-nav {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+}
+.gd-global-learning-nav > a {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 46px !important;
+  margin: 0 !important;
+  padding: 8px 10px !important;
+  border: 1px solid #c5ddd4 !important;
+  border-radius: 9px !important;
+  background: #fff !important;
+  color: #286b5b !important;
+  font: 700 14px/1.25 Arial, "Noto Sans JP", Meiryo, sans-serif !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+}
+.gd-global-learning-nav > a[aria-current="page"] {
+  border-color: #176e5c !important;
+  background: #176e5c !important;
+  color: #fff !important;
+}
+.gd-global-learning-nav-inline {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  gap: 8px !important;
+  width: auto !important;
+  margin: 10px 14px !important;
+}
+.gd-global-learning-nav-inline > a { width: auto !important; flex: 1 1 150px !important; }
+@media screen {
+  html { height: 100%; overflow: clip; }
+  body {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: clip !important;
+  }
+  body > header { position: relative !important; top: auto !important; flex: 0 0 auto !important; }
+  body > .layout, body > main.layout, body > .page-layout, body > .gd-fixed-shell {
+    flex: 1 1 0% !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    grid-template-rows: minmax(0,1fr) !important;
+    overflow: clip !important;
+  }
+  .layout > aside, .page-layout > .sidebar {
+    position: static !important;
+    top: auto !important;
+    align-self: stretch !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+  .layout > :not(aside):not(.sidebar), .page-layout > :not(aside):not(.sidebar) {
+    min-height: 0 !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+  .gd-fixed-shell {
+    display: grid !important;
+    grid-template-columns: 220px minmax(0,1fr) !important;
+    gap: 24px !important;
+    padding: 16px 28px !important;
+  }
+  .gd-fixed-shell > aside { min-height: 0 !important; overflow-y: auto !important; overscroll-behavior: contain; }
+  .gd-fixed-shell > main, .gd-fixed-shell > article, .gd-fixed-shell > .page-content {
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+  }
+  body > main:not(.layout):not(.page-layout), body > article {
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+  }
+  body > footer { flex: 0 0 auto !important; }
+}
+@media screen and (max-width: 767px) {
+  /* Unit tools live beside the worksheet; keep the compact header above its menus. */
+  body:has(> main#learning) > header > .top-nav,
+  body:has(> main#learning) > header > .preview-tag { display: none !important; }
+  body:has(> main#learning) > header { flex-wrap: nowrap !important; }
+  .gd-global-learning-nav { gap: 6px !important; margin-bottom: 10px !important; }
+  .gd-global-learning-nav > a { min-height: 40px !important; }
+  /* Page styles often switch these fixed shells to block on phones while
+     leaving the two-row grid tracks in place. Restore the intended shell. */
+  body > .layout, body > main.layout, body > .page-layout, body > .gd-fixed-shell {
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) !important;
+    grid-template-rows: minmax(0,28dvh) minmax(0,1fr) !important;
+    gap: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  body > .layout > .preview, body > main.layout > .preview,
+  body > .layout > .content, body > main.layout > .content,
+  body > .page-layout > .content, body > .gd-fixed-shell > main {
+    margin-top: 0 !important;
+  }
+  .layout > aside, .page-layout > .sidebar { max-height: 28dvh !important; }
+  .gd-fixed-shell { grid-template-columns: minmax(0,1fr) !important; grid-template-rows: minmax(0,28dvh) minmax(0,1fr) !important; gap: 10px !important; padding: 10px 14px !important; }
+  .gd-fixed-shell > aside { max-height: 28dvh !important; }
+  body > header { max-height: 92px !important; padding-top: 8px !important; padding-bottom: 8px !important; }
+  html[lang^="ja"] body > header .gd-brand img { width: 44px; height: 44px; }
+  html[lang^="ja"] body > header .gd-brand-name { font-size: 24px; }
+  html[lang^="ja"] body > header .gd-brand-copy small { font-size: 9px; }
+}
+@media screen {
+  body > main.layout#learning > .preview { scroll-padding-block-end: 2px !important; }
+}
+@media print {
+  html, body { height: auto !important; overflow: visible !important; }
+  body { position: static !important; inset: auto !important; display: block !important; }
+  body > header { position: static !important; }
+  body > .layout, body > main.layout, body > .page-layout, body > .gd-fixed-shell { overflow: visible !important; }
+  .layout > aside, .layout > :not(aside):not(.sidebar), .page-layout > .sidebar, .page-layout > :not(aside):not(.sidebar) { overflow: visible !important; height: auto !important; max-height: none !important; }
+  .gd-global-learning-nav { display: none !important; }
+  .gd-fixed-shell { display: block !important; }
+}
+@page { size: A4; }
+@media print {
+  body > header, body > footer, .sidebar-mode-tabs, .edition-tabs,
+  .unit-edition-tabs, .gd-landing-links, .layout > aside,
+  .page-layout > .sidebar, .gd-fixed-shell > aside { display: none !important; }
+  body.printing-bundle > .gd-fixed-shell { display: none !important; }
+  .gd-fixed-shell, .gd-fixed-shell > main, .gd-fixed-shell > section {
+    height: auto !important; min-height: 0 !important; overflow: visible !important;
+    margin: 0 !important; padding: 0 !important;
+  }
+}

@@ -1,0 +1,165 @@
+/* Japanese worksheet guide sizing and print layout. */
+.page-guide {
+  box-sizing: border-box;
+  width: min(100%, 186mm);
+  max-width: 100%;
+  min-width: 0;
+  margin: 16px auto 2rem;
+  padding: 1.25rem clamp(.9rem, 3vw, 1.5rem);
+  border: 1px solid #d9e3df;
+  border-radius: 6px;
+  background: #fff;
+  color: #173f43;
+  font-family: Arial, "Yu Gothic", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.page-guide *, .page-guide *::before, .page-guide *::after { box-sizing: border-box; }
+.page-guide h2 {
+  margin: 1.5em 0 .55em;
+  color: #176e5c;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+.page-guide > h2:first-child { margin-top: 0; }
+.page-guide h3 {
+  margin: 1.1em 0 .35em;
+  color: #124f48;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.page-guide .page-guide-title { margin-top: .5em; font-size: 1.3rem; }
+.page-guide p { margin: .55em 0 1em; }
+.page-guide .page-guide-concept { color: #176e5c; font-weight: 700; }
+.page-guide ul, .page-guide ol { margin: .45em 0 1.1em; padding-inline-start: 1.5em; }
+.page-guide li { min-width: 0; margin: .3em 0; padding-inline-start: .1em; }
+.page-guide .problem-copy {
+  max-width: 100%;
+  padding: .8em 1em;
+  border-left: 3px solid #ed764b;
+  border-radius: 4px;
+  background: #fff8f1;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.page-guide-example { min-width: 0; margin: .7em 0 1.3em; }
+.page-guide details {
+  max-width: 100%;
+  margin: .8em 0;
+  padding: .65em .9em;
+  border: 1px solid #bfd9d1;
+  border-radius: 8px;
+  background: #eaf6ef;
+  overflow-wrap: anywhere;
+}
+.page-guide summary { color: #124f48; font-weight: 700; cursor: pointer; }
+.page-guide-answer { margin-top: .5em; font-weight: 700; }
+.page-guide-mistake { min-width: 0; margin: .8em 0 1.1em; }
+
+/* Keep the live worksheet status available to assistive technology without
+   inserting its changing question count between the worksheet and the guide. */
+.layout > section > #status[role="status"] {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .page-guide { margin-block: 16px 1.5rem; padding: 1rem .9rem; font-size: 15px; }
+  .page-guide h2 { font-size: 1.08rem; }
+  .page-guide .page-guide-title { font-size: 1.2rem; }
+}
+
+@media print {
+  @page { size: auto; margin: 0; }
+  html, body {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    overflow: visible !important;
+  }
+  .page-guide, #page-guide, .hint, .note, .type-directory-access,
+  .toolbar, .print-controls, .tabs, .actions, .print-selection,
+  .training-domain-box, .legal-footer, #status[role="status"] {
+    display: none !important;
+  }
+
+  /* units.html builds the selected sheets in this print-only container. */
+  body:has(#print-bundle) > :not(#print-bundle) { display: none !important; }
+  body:has(#print-bundle) > #print-bundle {
+    display: block !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  #print-bundle :is(.paper, .sheet) {
+    box-sizing: border-box !important;
+    width: 186mm !important;
+    min-width: 0 !important;
+    max-width: 186mm !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    zoom: 1 !important;
+    break-after: page;
+    page-break-after: always;
+  }
+  #print-bundle :is(.paper, .sheet):last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  /* Generator pages print only the worksheet selected in the preview. */
+  body:has(.paper):not(:has(#print-bundle)) > :not(main):not(#status) {
+    display: none !important;
+  }
+  body:has(.paper):not(:has(#print-bundle)) > main {
+    display: block !important;
+    box-sizing: border-box !important;
+    width: 186mm !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  body:has(.paper):not(:has(#print-bundle)) main.layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0 !important;
+  }
+  body:has(.paper):not(:has(#print-bundle)) main.layout > aside,
+  body:has(.paper):not(:has(#print-bundle)) main.layout > .right-ad {
+    display: none !important;
+  }
+  body:has(.paper):not(:has(#print-bundle)) main:has(.paper) > section:has(.paper) {
+    display: block !important;
+    box-sizing: border-box !important;
+    width: 186mm !important;
+    min-width: 0 !important;
+    max-width: 186mm !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  body:has(.paper):not(:has(#print-bundle)) .paper {
+    box-sizing: border-box !important;
+    width: 186mm !important;
+    min-width: 0 !important;
+    max-width: 186mm !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    zoom: 1 !important;
+  }
+}

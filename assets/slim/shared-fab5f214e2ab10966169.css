@@ -1,0 +1,18 @@
+
+      .ko41 { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; gap:.4mm; white-space:nowrap; font-variant-numeric:tabular-nums; }
+      .ko41-line { line-height:1.35; }
+      .ko41-line.is-answer { color:#d71f10; }
+      .ko41-blank { display:inline-block; min-width:9mm; height:1.25em; border:1px solid #555; text-align:center; vertical-align:-.28em; line-height:1.2; }
+      .ko41-blank.is-answer { color:#d71f10; border-color:#d71f10; }
+      .ko41-svg { width:100%; height:100%; min-height:0; }
+      .ko41-svg svg { display:block; width:100%; height:100%; }
+      .ko41-fix { display:flex; gap:1.5mm; flex:1; min-height:0; align-self:stretch; width:100%; }
+      .ko41-fix > .ko41-half { flex:1; min-width:0; display:flex; flex-direction:column; }
+      .ko41-half .ko41-svg { flex:1; min-height:0; }
+      .ko41-note { flex:none; align-self:stretch; text-align:center; font-size:8pt; color:#444; white-space:normal; line-height:1.2; }
+      .ko41-opts { display:flex; gap:3mm; align-items:center; justify-content:center; }
+      .ko41-opt { display:inline-block; min-width:8mm; text-align:center; padding:0 1mm; }
+      .ko41-opt.is-answer { color:#d71f10; font-weight:bold; }
+      .ko41-opt.is-answer .ko41-ring { display:inline-block; min-width:8mm; border:1px solid #d71f10; border-radius:50%; }
+      .ko41-prompt { font-weight:bold; }
+    

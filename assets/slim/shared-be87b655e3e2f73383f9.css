@@ -1,0 +1,20 @@
+
+    .g232-work{width:max-content;max-width:100%;margin:auto;font-family:ui-monospace,Consolas,monospace;font-size:1.15em;line-height:1.25;font-variant-numeric:tabular-nums;text-align:right}
+    .g232-work .g232-row{min-height:1.35em;white-space:pre;border-bottom:1px solid transparent}
+    .g232-work .g232-rule{border-top:1px solid #333}
+    .g232-digit-box{display:inline-block;width:.9em;height:1.1em;box-sizing:border-box;border:1px solid #688c85;vertical-align:middle;}
+    .g232-compare-circle{display:inline-flex;align-items:center;justify-content:center;width:7mm;height:7mm;border:1px solid #688c85;border-radius:50%;box-sizing:border-box;vertical-align:middle;}
+    .g232-answer{color:#d71f10;font-weight:700}
+    .g232-fix{display:flex;width:100%;box-sizing:border-box;gap:2mm;align-items:center;justify-content:space-around;height:100%}
+    .g232-fix .g232-work{font-size:.95em;margin:0}
+    .g232-write{border:1px solid #bbb;flex:1 1 45%;min-width:18mm;box-sizing:border-box;height:85%}
+    .g232-text{font-size:1em;line-height:1.5;margin:0;white-space:nowrap;text-align:center;align-self:center}
+    .g232-text .g232-answer{font-weight:700}
+    .g232-text .g232-box{display:inline-block;min-width:2.4em;border-bottom:1.5px solid #555;text-align:center}
+    .g232-text .g232-circle{display:inline-block;border:1.5px solid #d71f10;border-radius:50%;padding:0 .35em;color:#d71f10;font-weight:700}
+    .g232-text .g232-choice{display:inline-block;padding:0 .35em;border:1.5px solid transparent;border-radius:50%}
+    .g232-table{font-size:1em;line-height:1.5;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}
+    .g232-table table{border-collapse:collapse;width:96%;height:46%;text-align:center;margin-top:2mm}
+    .g232-table td{border:1px solid #888;padding:.5mm;font-size:1.1em}
+    .g232-table tr:first-child td{background:#f2f2f2;font-weight:700;font-size:.9em}
+  

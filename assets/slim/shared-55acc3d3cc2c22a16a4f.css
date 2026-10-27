@@ -1,0 +1,16 @@
+
+      .g200-line{display:flex;align-items:center;justify-content:center;gap:1.5mm;width:100%;height:100%;line-height:1.25;white-space:nowrap}
+      .g200-box{display:inline-flex;align-items:center;justify-content:center;min-width:12mm;height:1.5em;border:1px solid #777;padding:0 .5mm}
+      .g200-fraction{display:inline-flex;flex-direction:column;text-align:center;line-height:1.05;min-width:8mm;vertical-align:middle}
+      .g200-fraction>span:first-child{border-bottom:1px solid #111;padding:0 .5mm}
+      .g200-fraction>.g200-numerator{min-width:8mm;width:8mm;height:7mm;border:1px solid #57736a;padding:0;margin-bottom:1mm;box-sizing:border-box}
+      .g200-model{display:flex;align-items:center;justify-content:center;height:60%;width:100%;padding-top:5mm;box-sizing:border-box}
+      .g200-model svg{width:90%;height:100%;display:block}
+      .g200-model+.g200-line{height:40%;gap:.7mm}
+      .g200-model+.g200-line .g200-box{min-width:10mm;padding:0}
+      .g200-read{letter-spacing:-.03em}
+      .g200-place-long{white-space:normal;flex-wrap:wrap;align-content:center;gap:.5mm 1mm}
+      .g200-table{width:100%;height:60%;border-collapse:collapse;text-align:center}
+      .g200-table td,.g200-table th{border:1px solid #888;padding:.5mm}
+      .g200-table th{font-weight:normal;font-size:.7em}
+    

@@ -1,0 +1,28 @@
+﻿body.gd-training-layout .layout{box-sizing:border-box;width:100%;max-width:1400px;margin:0 auto;grid-template-columns:220px minmax(0,1fr)!important;gap:51px!important;padding:0 55px 24px 28px!important;height:auto!important;max-height:none!important;min-height:0!important;overflow:visible!important}
+body.gd-training-layout .layout>aside{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;padding-right:0;height:auto!important;max-height:none!important;overflow:visible!important}
+body.gd-training-layout .layout>main{min-width:0;padding:0!important;height:auto!important;max-height:none!important;overflow:visible!important}
+body.gd-training-layout main h1{margin:4px 0 12px!important;font-size:18.4px!important;font-weight:700!important;line-height:1.3!important;letter-spacing:0!important;color:#285256!important;white-space:normal}
+body.gd-training-layout main .preview{border:0!important;border-radius:0!important;background:transparent!important;overflow:visible!important}
+body.gd-training-layout main .rows.sheet-gallery{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important;margin:0!important;padding:0!important}
+body.gd-training-layout main .rows.sheet-gallery>.row{position:relative;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;box-sizing:border-box;width:auto!important;height:335px!important;min-width:0;padding:8px 8px 40px!important;border:1px solid #bfd9d1!important;border-radius:8px!important;background:#fff!important;text-align:left!important;overflow:hidden}
+body.gd-training-layout main .rows.sheet-gallery>.row>.number{display:none!important}
+body.gd-training-layout main .rows.sheet-gallery>.row>span:nth-of-type(2){display:block;flex:none;min-width:0;height:72px;overflow:hidden}
+body.gd-training-layout main .rows.sheet-gallery>.row>span:nth-of-type(2)>b{display:block;color:#214c50;font-size:14px!important;font-weight:600!important;line-height:1.3!important}
+body.gd-training-layout main .rows.sheet-gallery>.row>span:nth-of-type(2)>small,body.gd-training-layout main .rows.sheet-gallery>.row>.arrow,body.gd-training-layout main .public-detail-link{display:none!important}
+body.gd-training-layout main .rows.sheet-gallery>.row>.sheet-thumb{display:block;flex:1 1 auto;min-width:0;min-height:0;width:100%!important;height:auto!important;margin:5px 0 0!important;border:1px solid #d1e1dc!important;background:#fff!important;overflow:hidden}
+body.gd-training-layout main .rows.sheet-gallery>.row>.sheet-thumb img{display:block;width:100%!important;height:100%!important;object-fit:contain!important}
+body.gd-training-layout main .rows.sheet-gallery>.row>.sheet-zoom-trigger{position:absolute!important;right:8px!important;bottom:8px!important;z-index:2;display:flex;align-items:center;justify-content:center;width:36px;height:32px;margin:0!important;border-radius:7px!important;background:#176e5c!important;color:#fff!important}
+@media(max-width:900px){body.gd-training-layout .layout{grid-template-columns:200px minmax(0,1fr)!important;gap:22px!important;padding-right:24px!important}body.gd-training-layout main .rows.sheet-gallery{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:760px){body.gd-training-layout .layout{grid-template-columns:minmax(0,1fr)!important;gap:18px!important;padding:12px 16px 24px!important}body.gd-training-layout .layout>aside{position:static;max-height:none;overflow:visible}body.gd-training-layout .layout>main{width:100%}body.gd-training-layout main .rows.sheet-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}body.gd-training-layout main .rows.sheet-gallery>.row{height:320px!important;padding:8px 7px 38px!important}body.gd-training-layout main .rows.sheet-gallery>.row>span:nth-of-type(2){height:72px}body.gd-training-layout main .rows.sheet-gallery>.row>.sheet-thumb{margin-top:5px!important}}
+/* Hide the legacy top tab row (the four-button menu replaces it). */
+body.gd-training-layout .country-training-tabs{display:none!important}
+/* Phones: stack menu and cards; drop the shell's fixed 30vh menu row so they cannot overlap. */
+@media(max-width:760px){body.gd-training-layout .layout{display:block!important;height:auto!important;grid-template-rows:none!important}body.gd-training-layout .layout>aside{height:auto!important;max-height:none!important;overflow:visible!important;margin-bottom:16px}body.gd-training-layout .layout>main{height:auto!important;overflow:visible!important}}
+
+@media(min-width:761px){body.gd-training-layout>header.gd-sticky-site-header{box-sizing:border-box;min-height:84px;padding-top:12px!important;padding-bottom:12px!important}}
+
+@media(max-width:760px){body.gd-training-layout .layout>aside .panel.gd-mobile-menu-collapsed #sidebar{display:none!important}body.gd-training-layout .layout>aside .panel #panel-title{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer}body.gd-training-layout .layout>aside .panel #panel-title:after{content:"+";color:#176e5c;font-size:18px}body.gd-training-layout .layout>aside .panel:not(.gd-mobile-menu-collapsed) #panel-title:after{content:"\2212"}}
+
+@media(max-width:760px){body.gd-training-layout .layout>aside>.smallnote{display:none!important}body.gd-training-layout .layout>aside .panel.gd-mobile-menu-collapsed{padding:8px 12px!important}body.gd-training-layout .layout>aside .panel.gd-mobile-menu-collapsed #panel-title{margin:0!important}}
+
+@media screen{body.gd-training-layout .gd-shell-frame{overflow-y:auto!important;overflow-x:hidden!important}}

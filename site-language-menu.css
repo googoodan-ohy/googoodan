@@ -1,0 +1,24 @@
+.gd-language-anchor{box-sizing:border-box!important}.gd-language-switch{position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:10020;font:inherit;color:#273a35}.gd-language-switch *{box-sizing:border-box}.gd-language-trigger{display:flex;align-items:center;gap:8px;min-height:40px;padding:7px 11px;border:1px solid #d2ddd8;border-radius:8px;background:#fff;color:inherit;font:inherit;font-size:14px;font-weight:600;line-height:1.2;cursor:pointer}.gd-language-trigger svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7}.gd-language-chevron{width:8px;height:8px;border-right:1.7px solid currentColor;border-bottom:1.7px solid currentColor;transform:rotate(45deg);transition:transform .18s ease;margin:0 2px 4px}.gd-language-switch.is-open .gd-language-chevron{transform:rotate(225deg);margin-bottom:0}.gd-language-options{position:absolute;right:0;top:calc(100% + 6px);display:flex;flex-direction:column;min-width:250px;max-width:calc(100vw - 20px);max-height:0;overflow:hidden;padding:0 6px;border:0 solid #d8e2dd;border-radius:10px;background:#fff;box-shadow:0 8px 24px #1c352522;opacity:0;visibility:hidden;transform:translateY(-7px);transition:max-height .22s ease,padding .22s ease,opacity .18s ease,transform .18s ease,visibility .18s}.gd-language-switch.is-open .gd-language-options{max-height:min(70vh,500px);overflow:auto;padding:6px;border-width:1px;opacity:1;visibility:visible;transform:translateY(0)}.gd-language-options a{display:flex;align-items:center;min-height:42px;padding:8px 10px;border-radius:7px;color:#273a35;text-decoration:none;font:inherit;font-size:14px;font-weight:500;line-height:1.25}.gd-language-options a:hover,.gd-language-options a:focus-visible{background:#edf5f1;outline:2px solid #176e5c;outline-offset:-2px}.gd-language-options a.is-current:after{content:'✓';margin-left:auto;color:#176e5c;font-weight:700}header.gd-language-anchor, .gd-language-anchor{padding-right:180px!important}@media(max-width:600px){.gd-language-switch{right:8px}.gd-language-trigger{min-height:44px;padding:7px 8px;font-size:12px;gap:5px}.gd-language-options{min-width:min(250px,calc(100vw - 16px))}.gd-language-anchor{padding-right:150px!important}}@media print{.gd-language-switch{display:none!important}}
+.country-sites,.country-dropdown.country-menu-injected{display:none!important}
+/* Phones: keep the Language button inside the screen even when the header row is wider than the viewport. */
+@media screen and (max-width:600px){.gd-language-switch{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:8px;transform:none}}
+/* Footer topic links (collection pages): readable spacing instead of run-together words. */
+.topic-footer-links{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;max-width:1180px;margin:18px auto 10px;padding:0 16px;font-size:14px;line-height:1.5}
+.topic-footer-links>span{font-weight:700;color:#41564f}
+.topic-footer-links a{color:#176e5c}
+@media print{.topic-footer-links{display:none!important}}
+
+
+/* Pages that color all buttons white must not hide the Language button text. */
+#gd-language-switch .gd-language-trigger{color:#273a35!important;background:#fff!important}
+#gd-language-switch .gd-language-current{display:inline!important;color:#273a35!important}
+/* Phones: the fixed Language button sits top-right, so put the help link just below it instead of underneath. */
+@media screen and (max-width:600px){.site-help-link{top:58px!important;right:14px!important}}
+/* Error report button (non-Korean sites): same look as the Korean 오류 신고 button, left of Language. */
+.gd-language-switch.gd-has-report{display:flex;align-items:center;gap:8px}
+.gd-report-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;border:1px solid #176e5c;border-radius:8px;background:#176e5c;color:#fff!important;font:700 14px/1.2 Arial,sans-serif;text-decoration:none!important;white-space:nowrap}
+.gd-report-link:hover{background:#125a4b}
+.gd-report-link:focus-visible{outline:3px solid #f2b84b;outline-offset:2px}
+header.gd-report-anchor,.gd-report-anchor{padding-right:min(380px,45vw)!important}
+@media screen and (max-width:600px){.gd-report-anchor{padding-right:150px!important}.gd-report-link{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:10030;min-height:44px;padding:10px 14px;font-size:13px;box-shadow:0 4px 14px #1c352544}}
+@media print{.gd-report-link{display:none!important}}

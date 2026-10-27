@@ -1,0 +1,1 @@
+window.CountryProfile={"symbols":{"multiply":"×","divide":":","decimal":",","thousands":"."},"remainder":"resto","layouts":{"longDivision":"right-divisor","multiplication":"korean","additionCarry":"top","subtraction":"equal-addition"},"evidence":{"symbols":"일반적","remainder":"일반적","longDivision":"일반적","subtraction":"일반적"},"scope":{},"country":"es"};

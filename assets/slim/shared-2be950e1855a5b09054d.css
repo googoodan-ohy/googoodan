@@ -1,0 +1,21 @@
+
+      .g230{height:100%;width:100%;min-width:0;padding:1mm;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;line-height:1.3;white-space:nowrap;font-variant-numeric:tabular-nums;}
+      .g230 .g230-line{flex:none;display:flex;align-items:center;justify-content:center;gap:.3em;min-height:1.5em;margin:.6mm 0;}
+      .g230 .g230-frac .g230-box{min-width:2.6em;border-bottom:1.5px solid #555;}
+      .g230 .g230-head{font-weight:700;}
+      .g230 .g230-box{display:inline-block;min-width:2.2em;padding:0 .2em;border-bottom:1.5px solid #555;text-align:center;line-height:1.25;}
+      .g230 .g230-ans{color:#d71f10;font-weight:700;}
+      .g230 .g230-frac{display:inline-flex;flex-direction:column;align-items:center;line-height:1.2;vertical-align:middle;}
+      .g230 .g230-frac>span:first-child{border-bottom:1.2px solid #111;padding:0 .2em .08em;}
+      .g230 .g230-frac>span:last-child{padding-top:.08em;}
+      .g230 .g230-work{align-self:stretch;flex:1;min-height:9mm;margin:1.5mm 2mm 0;border:1px dashed #bbb;border-radius:1.5mm;}
+      .g230 .g230-table{border-collapse:collapse;width:100%;height:46mm;text-align:center;table-layout:fixed;}
+      .g230 .g230-table td,.g230 .g230-table th{border:1px solid #888;padding:1mm .5mm;}
+      .g230 .g230-table th{font-weight:700;background:#f2f2f2;font-size:.9em;}
+      .g230 .g230-table td{font-size:1.15em;}
+      .g230.g230-fraction-process{font-size:11pt!important;box-sizing:border-box;}
+      .g230-fraction-process .g230-line{gap:.7mm;}
+      .g230.g230-fraction-process .g230-box{box-sizing:border-box;min-width:15mm;height:14mm;border:1px solid #688c85;border-radius:0;display:inline-flex;align-items:center;justify-content:center;padding:0 .5mm;}
+      .g230.g230-fraction-process .g230-frac .g230-box{min-width:9mm;height:7mm;border:1px solid #688c85;}
+      .g230 .g230-note{font-size:.85em;color:#555;}
+    

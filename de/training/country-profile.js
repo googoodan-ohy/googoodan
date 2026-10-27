@@ -1,0 +1,1 @@
+window.CountryProfile={"symbols": {"multiply": "·", "divide": ":"}, "remainder": "Rest", "layouts": {"longDivision": "german-horizontal", "multiplication": "inline-factors", "additionCarry": "bottom", "subtraction": "entbuendeln"}, "evidence": {"symbols": "필수", "remainder": "일반적", "longDivision": "필수"}, "scope": {}};

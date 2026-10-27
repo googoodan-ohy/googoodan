@@ -547,7 +547,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-0-3-t1": {
-    "title": "Compare with Inequality Signs",
+    "title": "Compare with Inequality Signs — Comparing Numbers",
     "prerequisites": [
       "Read each number by place value."
     ],
@@ -589,7 +589,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-0-3-t2": {
-    "title": "Order from Least to Greatest",
+    "title": "Order from Least to Greatest — Comparing Numbers",
     "prerequisites": [
       "Read each number by place value."
     ],
@@ -631,7 +631,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-0-3-t3": {
-    "title": "Find the Greatest and Least",
+    "title": "Find the Greatest and Least — Comparing Numbers",
     "prerequisites": [
       "Read each number by place value."
     ],
@@ -800,7 +800,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-0-t1": {
-    "title": "Combine Two Groups and Count",
+    "title": "Combine Two Groups and Count — Composing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -842,7 +842,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-0-t2": {
-    "title": "Complete the Number Model",
+    "title": "Complete the Number Model — Composing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -885,7 +885,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-0-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Composing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -928,7 +928,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-0-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond — Composing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -970,7 +970,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-1-t1": {
-    "title": "Split the Pictures into Two Groups",
+    "title": "Split the Pictures into Two Groups — Decomposing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1012,7 +1012,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-1-t2": {
-    "title": "Complete the Parts of a Number Bond",
+    "title": "Complete the Parts of a Number Bond — Decomposing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1055,7 +1055,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-1-t3": {
-    "title": "Break Apart a Number in Different Ways",
+    "title": "Break Apart a Number in Different Ways — Decomposing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1097,7 +1097,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-1-t4": {
-    "title": "Match the Whole and Its Parts",
+    "title": "Match the Whole and Its Parts — Decomposing Numbers Within 5",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1140,7 +1140,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-2-t1": {
-    "title": "Combine Two Groups and Count",
+    "title": "Combine Two Groups and Count — Composing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1182,7 +1182,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-2-t2": {
-    "title": "Complete the Number Model",
+    "title": "Complete the Number Model — Composing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1225,7 +1225,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-2-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Composing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1268,7 +1268,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-2-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond — Composing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1310,7 +1310,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-3-t1": {
-    "title": "Split the Pictures into Two Groups",
+    "title": "Split the Pictures into Two Groups — Decomposing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1352,7 +1352,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-3-t2": {
-    "title": "Complete the Parts of a Number Bond",
+    "title": "Complete the Parts of a Number Bond — Decomposing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1395,7 +1395,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-3-t3": {
-    "title": "Break Apart a Number in Different Ways",
+    "title": "Break Apart a Number in Different Ways — Decomposing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1437,7 +1437,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-3-t4": {
-    "title": "Match the Whole and Its Parts",
+    "title": "Match the Whole and Its Parts — Decomposing Numbers Within 9",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1480,7 +1480,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-4-t1": {
-    "title": "Combine Two Groups and Count",
+    "title": "Combine Two Groups and Count — Make 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1522,7 +1522,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-4-t2": {
-    "title": "Complete the Number Model",
+    "title": "Complete the Number Model — Make 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1565,7 +1565,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-4-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Make 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1608,7 +1608,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-4-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond — Make 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1650,7 +1650,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-5-t1": {
-    "title": "Split the Pictures into Two Groups",
+    "title": "Split the Pictures into Two Groups — Break Apart 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1692,7 +1692,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-5-t2": {
-    "title": "Complete the Parts of a Number Bond",
+    "title": "Complete the Parts of a Number Bond — Break Apart 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1735,7 +1735,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-5-t3": {
-    "title": "Break Apart a Number in Different Ways",
+    "title": "Break Apart a Number in Different Ways — Break Apart 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -1777,7 +1777,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-1-5-t4": {
-    "title": "Match the Whole and Its Parts",
+    "title": "Match the Whole and Its Parts — Break Apart 10",
     "prerequisites": [
       "Count a whole set and its parts."
     ],
@@ -2369,7 +2369,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-2-t4": {
-    "title": "Complete the Expanded Form",
+    "title": "Complete the Expanded Form — Three-Digit Place Value",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2412,7 +2412,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-3-t1": {
-    "title": "Complete the Place Value Chart",
+    "title": "Complete the Place Value Chart — Four-Digit Place Value",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2454,7 +2454,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-3-t2": {
-    "title": "Write the Value of a Digit",
+    "title": "Write the Value of a Digit — Four-Digit Place Value",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2496,7 +2496,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-3-t3": {
-    "title": "Write Expanded Form in Standard Form",
+    "title": "Write Expanded Form in Standard Form — Four-Digit Place Value",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2538,7 +2538,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-3-t4": {
-    "title": "Complete the Expanded Form",
+    "title": "Complete the Expanded Form — Four-Digit Place Value",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2581,7 +2581,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-4-t1": {
-    "title": "Complete the Place Value Chart",
+    "title": "Complete the Place Value Chart — Place Value in Larger Numbers",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2623,7 +2623,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-4-t2": {
-    "title": "Write the Value of a Digit",
+    "title": "Write the Value of a Digit — Place Value in Larger Numbers",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2665,7 +2665,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-4-t3": {
-    "title": "Write Expanded Form in Standard Form",
+    "title": "Write Expanded Form in Standard Form — Place Value in Larger Numbers",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2707,7 +2707,7 @@
     "reviewStatus": "pending"
   },
   "type:0-0-2-4-t4": {
-    "title": "Complete the Expanded Form",
+    "title": "Complete the Expanded Form — Place Value in Larger Numbers",
     "prerequisites": [
       "Read ones, tens, hundreds, and larger places."
     ],
@@ -2836,7 +2836,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-0-0-t3": {
-    "title": "Write an Equation for the Story",
+    "title": "Write an Equation for the Story — Joining Groups and Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3355,7 +3355,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-1-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Addition with Sums of 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3399,7 +3399,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Addition with Sums of 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3444,7 +3444,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Addition with Sums of 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3489,7 +3489,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Adding a One-Digit Number to 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3533,7 +3533,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Adding a One-Digit Number to 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3577,7 +3577,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Adding a One-Digit Number to 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3622,7 +3622,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Adding a One-Digit Number to 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -3667,7 +3667,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Make 10 to Add",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3710,7 +3710,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Make 10 to Add",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3753,7 +3753,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Make 10 to Add",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3797,7 +3797,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Make 10 to Add",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3841,7 +3841,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Adding Three Numbers: Make 10 First",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3884,7 +3884,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-4-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Adding Three Numbers: Make 10 First",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3927,7 +3927,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-4-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Adding Three Numbers: Make 10 First",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -3971,7 +3971,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-1-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Adding Three Numbers: Make 10 First",
     "prerequisites": [
       "Know pairs that make 10."
     ],
@@ -4101,7 +4101,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Two Digits + One Digit: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -4145,7 +4145,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Two Digits + One Digit: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -4277,7 +4277,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-2-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Two Digits + One Digit: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -4322,7 +4322,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Two Digits + One Digit: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5489,7 +5489,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-3-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Four-Digit Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5535,7 +5535,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-3-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Four-Digit Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5582,7 +5582,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-3-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Four-Digit Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5674,7 +5674,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-3-4-t2": {
-    "title": "Complete Two Related Equations",
+    "title": "Complete Two Related Equations — Missing Numbers in Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5720,7 +5720,7 @@
     "reviewStatus": "pending"
   },
   "type:0-1-3-4-t3": {
-    "title": "Use the Inverse Operation to Find and Check",
+    "title": "Use the Inverse Operation to Find and Check — Missing Numbers in Addition",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5807,7 +5807,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-0-0-t2": {
-    "title": "Complete an Equation for the Picture",
+    "title": "Complete an Equation for the Picture — Taking Away and Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5849,7 +5849,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-0-0-t3": {
-    "title": "Write an Equation for the Story",
+    "title": "Write an Equation for the Story — Taking Away and Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5933,7 +5933,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-0-1-t2": {
-    "title": "Complete an Equation for the Picture",
+    "title": "Complete an Equation for the Picture — Comparing Quantities and Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -5975,7 +5975,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-0-1-t3": {
-    "title": "Write an Equation for the Story",
+    "title": "Write an Equation for the Story — Comparing Quantities and Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6449,7 +6449,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Subtracting a One-Digit Number from 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6493,7 +6493,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-1-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Subtracting a One-Digit Number from 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6537,7 +6537,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Subtracting a One-Digit Number from 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6582,7 +6582,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Subtracting a One-Digit Number from 10",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6627,7 +6627,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Subtracting from Teen Numbers: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6670,7 +6670,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Subtracting from Teen Numbers: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6713,7 +6713,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Subtracting from Teen Numbers: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6757,7 +6757,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Subtracting from Teen Numbers: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6801,7 +6801,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Use 10 to Subtract with Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6845,7 +6845,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Use 10 to Subtract with Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6889,7 +6889,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Use 10 to Subtract with Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -6934,7 +6934,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Use 10 to Subtract with Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7022,7 +7022,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-0-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Two Digits − One Digit: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7065,7 +7065,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Two Digits − One Digit: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7109,7 +7109,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Two Digits − One Digit: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7286,7 +7286,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Two Digits − One Digit: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7683,7 +7683,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Subtracting from Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7727,7 +7727,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-4-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Subtracting from Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7771,7 +7771,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-4-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Subtracting from Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -7816,7 +7816,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Subtracting from Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8637,7 +8637,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-4-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Four-Digit Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8685,7 +8685,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-4-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Four-Digit Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8734,7 +8734,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Four-Digit Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8783,7 +8783,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-5-t1": {
-    "title": "Find the Missing Number",
+    "title": "Find the Missing Number — Missing Numbers in Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8827,7 +8827,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-5-t2": {
-    "title": "Complete Two Related Equations",
+    "title": "Complete Two Related Equations — Missing Numbers in Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -8872,7 +8872,7 @@
     "reviewStatus": "pending"
   },
   "type:0-2-3-5-t3": {
-    "title": "Use the Inverse Operation to Find and Check",
+    "title": "Use the Inverse Operation to Find and Check — Missing Numbers in Subtraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -9211,7 +9211,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-0-2-t2": {
-    "title": "Match Addition and Multiplication",
+    "title": "Match Addition and Multiplication — Repeated Addition as Multiplication",
     "prerequisites": [
       "Count equal-sized groups."
     ],
@@ -9254,7 +9254,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-0-2-t3": {
-    "title": "Complete the Array for an Equation",
+    "title": "Complete the Array for an Equation — Repeated Addition as Multiplication",
     "prerequisites": [
       "Count equal-sized groups."
     ],
@@ -9338,7 +9338,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-0-3-t2": {
-    "title": "Match Addition and Multiplication",
+    "title": "Match Addition and Multiplication — Arrays and Multiplication",
     "prerequisites": [
       "Count equal-sized groups."
     ],
@@ -9381,7 +9381,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-0-3-t3": {
-    "title": "Complete the Array for an Equation",
+    "title": "Complete the Array for an Equation — Arrays and Multiplication",
     "prerequisites": [
       "Count equal-sized groups."
     ],
@@ -9897,7 +9897,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-2-t3": {
-    "title": "Match Equal Products",
+    "title": "Match Equal Products — The 6 and 7 Times Tables",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -9941,7 +9941,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-3-t1": {
-    "title": "Multiplication Facts",
+    "title": "Multiplication Facts — The 8 and 9 Times Tables",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10027,7 +10027,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-3-t3": {
-    "title": "Match Equal Products",
+    "title": "Match Equal Products — The 8 and 9 Times Tables",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10071,7 +10071,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-4-t1": {
-    "title": "Multiplication Facts",
+    "title": "Multiplication Facts — Multiplying by 1 and 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10114,7 +10114,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-4-t2": {
-    "title": "Complete the Multiplication Table",
+    "title": "Complete the Multiplication Table — Multiplying by 1 and 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10157,7 +10157,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-4-t3": {
-    "title": "Match Equal Products",
+    "title": "Match Equal Products — Multiplying by 1 and 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10289,7 +10289,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-5-t3": {
-    "title": "Find and Correct Calculation Errors",
+    "title": "Find and Correct Calculation Errors — Mixed Multiplication Facts",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10333,7 +10333,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-6-t1": {
-    "title": "Find the Missing Number",
+    "title": "Find the Missing Number — Missing Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10379,7 +10379,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-6-t2": {
-    "title": "Complete Two Related Equations",
+    "title": "Complete Two Related Equations — Missing Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10426,7 +10426,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-1-6-t3": {
-    "title": "Use the Inverse Operation to Find and Check",
+    "title": "Use the Inverse Operation to Find and Check — Missing Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10472,7 +10472,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-0-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Multiples of Ten × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10515,7 +10515,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-0-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Multiples of Ten × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10558,7 +10558,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Multiples of Ten × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -10602,7 +10602,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Multiples of Ten × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11033,7 +11033,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Three Digits × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11076,7 +11076,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Three Digits × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11120,7 +11120,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Three Digits × One Digit",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11164,7 +11164,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Two Digits × Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11207,7 +11207,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-4-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Two Digits × Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11250,7 +11250,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-4-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Two Digits × Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11294,7 +11294,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Two Digits × Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11520,7 +11520,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-6-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Three Digits × Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11565,7 +11565,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-6-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Three Digits × Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11610,7 +11610,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-6-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Three Digits × Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11656,7 +11656,7 @@
     "reviewStatus": "pending"
   },
   "type:0-3-2-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Three Digits × Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -11702,7 +11702,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-0-t1": {
-    "title": "Divide Pictures into Groups",
+    "title": "Divide Pictures into Groups — Sharing Equally",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -11745,7 +11745,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-0-t2": {
-    "title": "Match Grouping Pictures and Division",
+    "title": "Match Grouping Pictures and Division — Sharing Equally",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -11789,7 +11789,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-0-t3": {
-    "title": "Write a Division Equation for the Story",
+    "title": "Write a Division Equation for the Story — Sharing Equally",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -11832,7 +11832,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-1-t1": {
-    "title": "Divide Pictures into Groups",
+    "title": "Divide Pictures into Groups — Finding the Number of Equal Groups",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -11875,7 +11875,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-1-t2": {
-    "title": "Match Grouping Pictures and Division",
+    "title": "Match Grouping Pictures and Division — Finding the Number of Equal Groups",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -11918,7 +11918,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-0-1-t3": {
-    "title": "Write a Division Equation for the Story",
+    "title": "Write a Division Equation for the Story — Finding the Number of Equal Groups",
     "prerequisites": [
       "Understand equal groups."
     ],
@@ -12451,7 +12451,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-1-2-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Division with Remainders",
     "prerequisites": [
       "Use multiplication facts."
     ],
@@ -12494,7 +12494,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-1-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Division with Remainders",
     "prerequisites": [
       "Use multiplication facts."
     ],
@@ -12538,7 +12538,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-1-2-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Division with Remainders",
     "prerequisites": [
       "Use multiplication facts."
     ],
@@ -13258,7 +13258,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-3-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13304,7 +13304,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-3-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13350,7 +13350,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13397,7 +13397,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-3-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13444,7 +13444,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-4-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Dividing by Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13488,7 +13488,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-4-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Dividing by Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13532,7 +13532,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-4-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Dividing by Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13576,7 +13576,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-4-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Dividing by Multiples of Ten",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13666,7 +13666,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-5-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Two Digits ÷ Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13712,7 +13712,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-5-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Two Digits ÷ Two Digits",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13759,7 +13759,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-5-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error - Division Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13852,7 +13852,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-6-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Three Digits ÷ Two Digits: Estimate the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13898,7 +13898,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-6-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Three Digits ÷ Two Digits: Estimate the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13945,7 +13945,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-6-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Three Digits ÷ Two Digits: Estimate the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -13992,7 +13992,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-7-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Three Digits ÷ Two Digits: Adjust the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -14038,7 +14038,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-7-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Three Digits ÷ Two Digits: Adjust the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -14084,7 +14084,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-7-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Three Digits ÷ Two Digits: Adjust the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -14131,7 +14131,7 @@
     "reviewStatus": "pending"
   },
   "type:0-4-2-7-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Three Digits ÷ Two Digits: Adjust the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -15713,7 +15713,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-0-4-t1": {
-    "title": "Label the Number Line",
+    "title": "Label the Number Line — Fractions on a Number Line",
     "prerequisites": [
       "Recognize one whole on a number line."
     ],
@@ -15755,7 +15755,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-0-4-t2": {
-    "title": "Mark a Number on the Number Line",
+    "title": "Mark a Number on the Number Line — Fractions on a Number Line",
     "prerequisites": [
       "Recognize one whole on a number line."
     ],
@@ -15797,7 +15797,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-0-4-t3": {
-    "title": "Fill in the Missing Tick Labels",
+    "title": "Fill in the Missing Tick Labels — Fractions on a Number Line",
     "prerequisites": [
       "Recognize one whole on a number line."
     ],
@@ -16221,7 +16221,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-1-2-t3": {
-    "title": "Match Mixed and Improper Forms",
+    "title": "Match Mixed and Improper Forms — Mixed Numbers to Improper Fractions",
     "prerequisites": [
       "Know numerator and denominator."
     ],
@@ -16264,7 +16264,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-1-2-t4": {
-    "title": "Complete the Conversion Steps",
+    "title": "Complete the Conversion Steps — Mixed Numbers to Improper Fractions",
     "prerequisites": [
       "Know numerator and denominator."
     ],
@@ -16519,7 +16519,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-0-t3": {
-    "title": "Find the Greatest and Least",
+    "title": "Find the Greatest and Least - Fractions Worksheets",
     "prerequisites": [
       "Understand equal parts of the same whole."
     ],
@@ -16561,7 +16561,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-1-t1": {
-    "title": "Compare with Inequality Signs",
+    "title": "Compare with Inequality Signs — Comparing Unit Fractions",
     "prerequisites": [
       "Understand equal parts of the same whole."
     ],
@@ -16603,7 +16603,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-1-t2": {
-    "title": "Order from Least to Greatest",
+    "title": "Order from Least to Greatest — Comparing Unit Fractions",
     "prerequisites": [
       "Understand equal parts of the same whole."
     ],
@@ -16645,7 +16645,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-1-t3": {
-    "title": "Find the Greatest and Least",
+    "title": "Find the Greatest and Least — Comparing Unit Fractions",
     "prerequisites": [
       "Understand equal parts of the same whole."
     ],
@@ -16944,7 +16944,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-4-t1": {
-    "title": "Divide by a Common Factor",
+    "title": "Divide by a Common Factor — Simplifying with Common Factors",
     "prerequisites": [
       "Find common factors."
     ],
@@ -16986,7 +16986,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-4-t2": {
-    "title": "Write in Simplest Form",
+    "title": "Write in Simplest Form — Simplifying with Common Factors",
     "prerequisites": [
       "Find common factors."
     ],
@@ -17028,7 +17028,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-4-t3": {
-    "title": "Match Fractions Before and After Simplifying",
+    "title": "Match Fractions Before and After Simplifying — Simplifying with Common Factors",
     "prerequisites": [
       "Find common factors."
     ],
@@ -17071,7 +17071,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-5-t1": {
-    "title": "Divide by a Common Factor",
+    "title": "Divide by a Common Factor — Simplest Form",
     "prerequisites": [
       "Find common factors."
     ],
@@ -17113,7 +17113,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-5-t2": {
-    "title": "Write in Simplest Form",
+    "title": "Write in Simplest Form — Simplest Form",
     "prerequisites": [
       "Find common factors."
     ],
@@ -17155,7 +17155,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-5-t3": {
-    "title": "Match Fractions Before and After Simplifying",
+    "title": "Match Fractions Before and After Simplifying — Simplest Form",
     "prerequisites": [
       "Find common factors."
     ],
@@ -17198,7 +17198,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-6-t1": {
-    "title": "Use the Given Common Denominator",
+    "title": "Use the Given Common Denominator — Common Denominators Using Common Multiples",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17240,7 +17240,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-6-t2": {
-    "title": "Find a Common Denominator",
+    "title": "Find a Common Denominator — Common Denominators Using Common Multiples",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17282,7 +17282,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-6-t3": {
-    "title": "Complete the Common Denominator Steps",
+    "title": "Complete the Common Denominator Steps — Common Denominators Using Common Multiples",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17325,7 +17325,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-6-t4": {
-    "title": "Correct the Common Denominators",
+    "title": "Correct the Common Denominators — Common Denominators Using Common Multiples",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17368,7 +17368,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-7-t1": {
-    "title": "Use the Given Common Denominator",
+    "title": "Use the Given Common Denominator — Using the Least Common Denominator",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17410,7 +17410,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-7-t2": {
-    "title": "Find a Common Denominator",
+    "title": "Find a Common Denominator — Using the Least Common Denominator",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17452,7 +17452,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-7-t3": {
-    "title": "Complete the Common Denominator Steps",
+    "title": "Complete the Common Denominator Steps — Using the Least Common Denominator",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17495,7 +17495,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-7-t4": {
-    "title": "Correct the Common Denominators",
+    "title": "Correct the Common Denominators - Fractions Worksheets",
     "prerequisites": [
       "Find multiples and equivalent fractions."
     ],
@@ -17622,7 +17622,7 @@
     "reviewStatus": "pending"
   },
   "type:1-0-2-8-t3": {
-    "title": "Find the Greatest and Least",
+    "title": "Find the Greatest and Least — Comparing Fractions with Unlike Denominators",
     "prerequisites": [
       "Understand equal parts of the same whole."
     ],
@@ -17753,7 +17753,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-0-0-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Combining Like Unit Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -17798,7 +17798,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-0-0-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond — Combining Like Unit Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -17978,7 +17978,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-0-2-t1": {
-    "title": "Divide by a Common Factor",
+    "title": "Divide by a Common Factor - Fractions Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18020,7 +18020,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-0-2-t2": {
-    "title": "Write in Simplest Form",
+    "title": "Write in Simplest Form — Simplify and Write as a Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18062,7 +18062,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-0-2-t3": {
-    "title": "Match Fractions Before and After Simplifying",
+    "title": "Match Fractions Before and After Simplifying — Simplify and Write as a Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18470,7 +18470,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18515,7 +18515,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18561,7 +18561,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction + Proper Fraction (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18607,7 +18607,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18653,7 +18653,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction + Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18698,7 +18698,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction + Improper Fraction (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18744,7 +18744,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction + Improper Fraction (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18790,7 +18790,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction + Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18836,7 +18836,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number + Proper Fraction: No Regrouping (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18883,7 +18883,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Proper Fraction: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18931,7 +18931,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Proper Fraction: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -18979,7 +18979,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Proper Fraction: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19027,7 +19027,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-5-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number + Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19074,7 +19074,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-5-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19122,7 +19122,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-5-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19170,7 +19170,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-5-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19218,7 +19218,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-6-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number + Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19265,7 +19265,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-6-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19313,7 +19313,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-6-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19361,7 +19361,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19409,7 +19409,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-7-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number + Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19456,7 +19456,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-7-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19504,7 +19504,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-7-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19552,7 +19552,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-7-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19600,7 +19600,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-8-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction + Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19647,7 +19647,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-8-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction + Mixed Number (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19695,7 +19695,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-8-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction + Mixed Number (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -19743,7 +19743,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-1-8-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction + Mixed Number (Addition with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20065,7 +20065,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Adding Proper Fractions: Multiply the Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20111,7 +20111,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Adding Proper Fractions: Multiply the Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20157,7 +20157,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Adding Proper Fractions: Denominators with Common Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20202,7 +20202,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Adding Proper Fractions: Denominators with Common Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20248,7 +20248,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Adding Proper Fractions: Denominators with Common Factors (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20294,7 +20294,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Adding Proper Fractions: Denominators with Common Factors",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20340,7 +20340,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Addition with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20385,7 +20385,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Addition with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20431,7 +20431,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Addition with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20477,7 +20477,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Addition with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20523,7 +20523,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20570,7 +20570,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Proper Fraction (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20618,7 +20618,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20666,7 +20666,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20761,7 +20761,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-5-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number + Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20809,7 +20809,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-5-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number + Mixed Number (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20857,7 +20857,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-5-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number + Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20905,7 +20905,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-6-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction + Mixed Number (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -20952,7 +20952,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-6-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction + Mixed Number (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21000,7 +21000,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-6-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction + Mixed Number (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21048,7 +21048,7 @@
     "reviewStatus": "pending"
   },
   "type:1-1-2-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction + Mixed Number (Addition with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21182,7 +21182,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-0-t3": {
-    "title": "Match Models and Equations",
+    "title": "Match Models and Equations — Subtracting Like Unit Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21226,7 +21226,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-1-t1": {
-    "title": "Rename Units Using Pictures",
+    "title": "Rename Units Using Pictures — Renaming 1 as a Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21267,7 +21267,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-1-t2": {
-    "title": "Complete Equivalent Amounts",
+    "title": "Complete Equivalent Amounts - Fractions Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21308,7 +21308,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-1-t3": {
-    "title": "Complete the Regrouping Step",
+    "title": "Complete the Regrouping Step — Rename One Whole as a Fraction (Subtraction Preparation)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21349,7 +21349,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-2-t1": {
-    "title": "Rename Units Using Pictures",
+    "title": "Rename Units Using Pictures — Regrouping 1 in a Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21393,7 +21393,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-2-t2": {
-    "title": "Complete Equivalent Amounts",
+    "title": "Complete Equivalent Amounts — Regrouping 1 in a Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21437,7 +21437,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-0-2-t3": {
-    "title": "Complete the Regrouping Step",
+    "title": "Complete the Regrouping Step — Regroup One Whole from a Mixed Number (Subtraction Preparation)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21570,7 +21570,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-0-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21615,7 +21615,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21660,7 +21660,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21704,7 +21704,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-1-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21749,7 +21749,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21794,7 +21794,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21839,7 +21839,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction − Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21883,7 +21883,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction − Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21928,7 +21928,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction − Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -21973,7 +21973,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction − Improper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22018,7 +22018,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22062,7 +22062,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Whole Number − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22107,7 +22107,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Whole Number − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22152,7 +22152,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number − Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22197,7 +22197,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Proper Fraction: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22243,7 +22243,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22290,7 +22290,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22337,7 +22337,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22384,7 +22384,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-5-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Proper Fraction: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22430,7 +22430,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-5-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Proper Fraction: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22477,7 +22477,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-5-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Proper Fraction: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22524,7 +22524,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-5-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22571,7 +22571,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-6-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Mixed Number: No Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22617,7 +22617,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-6-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Mixed Number: No Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22664,7 +22664,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-6-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22711,7 +22711,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22758,7 +22758,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-7-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Mixed Number: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22804,7 +22804,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-7-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22851,7 +22851,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-7-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Mixed Number: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -22898,7 +22898,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-1-7-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Mixed Number: Regrouping (Subtraction with Like Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23124,7 +23124,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Subtracting Proper Fractions: Common Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23168,7 +23168,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-1-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Subtracting Proper Fractions: Common Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23213,7 +23213,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Subtracting Proper Fractions: Common Denominators (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23258,7 +23258,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Subtracting Proper Fractions: Common Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23303,7 +23303,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Subtraction with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23347,7 +23347,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Subtraction with Improper Fractions (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23392,7 +23392,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Subtraction with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23437,7 +23437,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Subtraction with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23482,7 +23482,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23528,7 +23528,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23575,7 +23575,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Proper Fraction: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23622,7 +23622,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Proper Fraction: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23669,7 +23669,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Proper Fraction: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23715,7 +23715,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Proper Fraction: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23762,7 +23762,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Proper Fraction: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23809,7 +23809,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Proper Fraction: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23856,7 +23856,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-5-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Mixed Number: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23902,7 +23902,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-5-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Mixed Number: No Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23949,7 +23949,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-5-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Mixed Number: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -23996,7 +23996,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-5-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Mixed Number: No Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24043,7 +24043,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-6-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number − Mixed Number: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24089,7 +24089,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-6-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number − Mixed Number: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24136,7 +24136,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-6-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number − Mixed Number: Regrouping (Subtraction with Unlike Denominators)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24183,7 +24183,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number − Mixed Number: Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24230,7 +24230,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-7-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number − Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24276,7 +24276,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-7-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Whole Number − Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24323,7 +24323,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-7-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Whole Number − Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24370,7 +24370,7 @@
     "reviewStatus": "pending"
   },
   "type:1-2-2-7-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number − Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24417,7 +24417,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-0-t1": {
-    "title": "Show the Fraction in a Picture",
+    "title": "Show the Fraction in a Picture — Repeated Addition of Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24461,7 +24461,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-0-t2": {
-    "title": "Match Models and Multiplication",
+    "title": "Match Models and Multiplication - Fractions Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24506,7 +24506,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-0-t3": {
-    "title": "Complete the Steps Using Unit Fractions",
+    "title": "Complete the Steps Using Unit Fractions - Fractions Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24550,7 +24550,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-1-t1": {
-    "title": "Show the Fraction in a Picture",
+    "title": "Show the Fraction in a Picture — Finding a Fraction of a Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24594,7 +24594,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-1-t2": {
-    "title": "Match Models and Multiplication",
+    "title": "Match Models and Multiplication — Finding a Fraction of a Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24639,7 +24639,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-1-t3": {
-    "title": "Complete the Steps Using Unit Fractions",
+    "title": "Complete the Steps Using Unit Fractions — Finding a Fraction of a Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24683,7 +24683,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-2-t1": {
-    "title": "Show the Fraction in a Picture",
+    "title": "Show the Fraction in a Picture — Finding a Fraction of a Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24727,7 +24727,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-2-t2": {
-    "title": "Match Models and Multiplication",
+    "title": "Match Models and Multiplication — Finding a Fraction of a Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24772,7 +24772,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-0-2-t3": {
-    "title": "Complete the Steps Using Unit Fractions",
+    "title": "Complete the Steps Using Unit Fractions — Finding a Fraction of a Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24949,7 +24949,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-0-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Proper Fraction × Whole Number (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -24994,7 +24994,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-0-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25039,7 +25039,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction × Whole Number (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25084,7 +25084,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25128,7 +25128,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-1-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction × Whole Number (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25173,7 +25173,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction × Whole Number (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25218,7 +25218,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25263,7 +25263,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25308,7 +25308,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25354,7 +25354,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number × Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25400,7 +25400,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number × Whole Number (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25446,7 +25446,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25490,7 +25490,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Whole Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25535,7 +25535,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Whole Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25580,7 +25580,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number × Proper Fraction (Multiplying Fractions and Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25625,7 +25625,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25671,7 +25671,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Whole Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25718,7 +25718,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Whole Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25765,7 +25765,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-1-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25812,7 +25812,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-0-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Proper Fraction × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25856,7 +25856,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-0-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Proper Fraction × Proper Fraction (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25901,7 +25901,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-0-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction × Proper Fraction (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25946,7 +25946,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -25991,7 +25991,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Multiplication with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26035,7 +26035,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-1-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Multiplication with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26080,7 +26080,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Multiplication with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26125,7 +26125,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Multiplication with Improper Fractions (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26170,7 +26170,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number × Proper Fraction (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26215,7 +26215,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26261,7 +26261,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26307,7 +26307,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number × Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26353,7 +26353,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26399,7 +26399,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26446,7 +26446,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26493,7 +26493,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number × Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26540,7 +26540,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-4-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Multiplying Three Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26584,7 +26584,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Multiplying Three Fractions (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26629,7 +26629,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Multiplying Three Fractions (Multiplying Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -26674,7 +26674,7 @@
     "reviewStatus": "pending"
   },
   "type:1-3-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Multiplying Three Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27200,7 +27200,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-0-3-t3": {
-    "title": "Match Mixed and Improper Forms",
+    "title": "Match Mixed and Improper Forms — Rewrite Whole and Mixed Numbers as Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27244,7 +27244,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-0-3-t4": {
-    "title": "Complete the Conversion Steps",
+    "title": "Complete the Conversion Steps — Rewrite Whole and Mixed Numbers as Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27332,7 +27332,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-0-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Proper Fraction ÷ Whole Number: Numerator Divides Evenly (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27377,7 +27377,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-0-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction ÷ Whole Number: Numerator Divides Evenly",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27422,7 +27422,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction ÷ Whole Number: Numerator Divides Evenly",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27467,7 +27467,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Proper Fraction ÷ Whole Number: Numerator Does Not Divide Evenly (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27511,7 +27511,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-1-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Proper Fraction ÷ Whole Number: Numerator Does Not Divide Evenly",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27556,7 +27556,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-1-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction ÷ Whole Number: Numerator Does Not Divide Evenly (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27601,7 +27601,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction ÷ Whole Number: Numerator Does Not Divide Evenly (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27646,7 +27646,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Improper Fraction ÷ Whole Number (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27690,7 +27690,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Improper Fraction ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27735,7 +27735,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Improper Fraction ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27780,7 +27780,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Improper Fraction ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27825,7 +27825,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Mixed Number ÷ Whole Number (Dividing Whole Numbers)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27870,7 +27870,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27916,7 +27916,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -27962,7 +27962,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number ÷ Whole Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28008,7 +28008,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-0-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Dividing Fractions with Like Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28052,7 +28052,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-0-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Dividing Fractions with Like Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28097,7 +28097,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-0-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Dividing Fractions with Like Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28142,7 +28142,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Dividing Fractions with Like Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28321,7 +28321,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Dividing Proper Fractions with Unlike Denominators",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28366,7 +28366,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number ÷ Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28410,7 +28410,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-2-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Whole Number ÷ Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28455,7 +28455,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-2-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Whole Number ÷ Proper Fraction (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28500,7 +28500,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number ÷ Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28545,7 +28545,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Division with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28589,7 +28589,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-3-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Division with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28634,7 +28634,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-3-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Division with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28679,7 +28679,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Division with Improper Fractions",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28770,7 +28770,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-4-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number ÷ Proper Fraction (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28817,7 +28817,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-4-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number ÷ Proper Fraction",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28864,7 +28864,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-4-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number ÷ Proper Fraction (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28911,7 +28911,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-5-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Proper Fraction ÷ Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -28956,7 +28956,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-5-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Proper Fraction ÷ Mixed Number (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29002,7 +29002,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-5-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Proper Fraction ÷ Mixed Number (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29048,7 +29048,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-5-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Proper Fraction ÷ Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29139,7 +29139,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-6-t2": {
-    "title": "Complete the Calculation Steps",
+    "title": "Complete the Calculation Steps — Mixed Number ÷ Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29185,7 +29185,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-6-t3": {
-    "title": "Match Equivalent Results",
+    "title": "Match Equivalent Results — Mixed Number ÷ Mixed Number",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29231,7 +29231,7 @@
     "reviewStatus": "pending"
   },
   "type:1-4-2-6-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Mixed Number ÷ Mixed Number (Dividing Fractions)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -29451,7 +29451,7 @@
     "reviewStatus": "pending"
   },
   "type:1-5-0-1-t2": {
-    "title": "Mixed Missing-Number Equations",
+    "title": "Mixed Missing-Number Equations — Mixed Fraction Multiplication and Division",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -29495,7 +29495,7 @@
     "reviewStatus": "pending"
   },
   "type:1-5-0-1-t3": {
-    "title": "Find and Correct Calculation Errors",
+    "title": "Find and Correct Calculation Errors — Mixed Fraction Multiplication and Division",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -29665,7 +29665,7 @@
     "reviewStatus": "pending"
   },
   "type:1-5-0-3-t1": {
-    "title": "Find the Missing Number",
+    "title": "Find the Missing Number — Missing Numbers: Fraction Operations",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -29709,7 +29709,7 @@
     "reviewStatus": "pending"
   },
   "type:1-5-0-3-t2": {
-    "title": "Complete Two Related Equations",
+    "title": "Complete Two Related Equations — Missing Numbers: Fraction Operations",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -29754,7 +29754,7 @@
     "reviewStatus": "pending"
   },
   "type:1-5-0-3-t3": {
-    "title": "Use the Inverse Operation to Find and Check",
+    "title": "Use the Inverse Operation to Find and Check — Missing Numbers: Fraction Operations",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -30047,7 +30047,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-2-t1": {
-    "title": "Use Denominators 10, 100, 1000",
+    "title": "Use Denominators 10, 100, 1000 — Fractions with Denominator 100 as Decimals",
     "prerequisites": [
       "Recognize tenths and hundredths."
     ],
@@ -30088,7 +30088,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-2-t2": {
-    "title": "Match Equivalent Fractions and Decimals",
+    "title": "Match Equivalent Fractions and Decimals — Fractions with Denominator 100 as Decimals",
     "prerequisites": [
       "Recognize tenths and hundredths."
     ],
@@ -30129,7 +30129,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-2-t3": {
-    "title": "Complete the Fraction-to-Decimal Steps",
+    "title": "Complete the Fraction-to-Decimal Steps — Fractions with Denominator 100 as Decimals",
     "prerequisites": [
       "Recognize tenths and hundredths."
     ],
@@ -30170,7 +30170,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-3-t1": {
-    "title": "Write the Number in Words",
+    "title": "Write the Number in Words — Reading and Writing Hundredths",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30212,7 +30212,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-3-t2": {
-    "title": "Write the Number in Standard Form",
+    "title": "Write the Number in Standard Form — Reading and Writing Hundredths",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30254,7 +30254,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-3-t3": {
-    "title": "Match Standard Form and Word Form",
+    "title": "Match Standard Form and Word Form — Reading and Writing Hundredths",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30296,7 +30296,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-4-t1": {
-    "title": "Write the Number in Words",
+    "title": "Write the Number in Words — Reading and Writing Thousandths",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30338,7 +30338,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-4-t2": {
-    "title": "Write the Number in Standard Form",
+    "title": "Write the Number in Standard Form — Reading and Writing Thousandths",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30380,7 +30380,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-4-t3": {
-    "title": "Match Standard Form and Word Form",
+    "title": "Match Standard Form and Word Form - Decimals Worksheets",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30548,7 +30548,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-0-5-t4": {
-    "title": "Complete the Expanded Form",
+    "title": "Complete the Expanded Form — Decimal Place Value",
     "prerequisites": [
       "Know tenths, hundredths, and thousandths."
     ],
@@ -30676,7 +30676,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-1-t1": {
-    "title": "Compare with Inequality Signs",
+    "title": "Compare with Inequality Signs — Comparing Decimals",
     "prerequisites": [
       "Read corresponding place values."
     ],
@@ -30718,7 +30718,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-1-t2": {
-    "title": "Order from Least to Greatest",
+    "title": "Order from Least to Greatest — Comparing Decimals",
     "prerequisites": [
       "Read corresponding place values."
     ],
@@ -30760,7 +30760,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-1-t3": {
-    "title": "Find the Greatest and Least",
+    "title": "Find the Greatest and Least — Comparing Decimals",
     "prerequisites": [
       "Read corresponding place values."
     ],
@@ -30802,7 +30802,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-2-t1": {
-    "title": "Label the Number Line",
+    "title": "Label the Number Line — Decimals on a Number Line",
     "prerequisites": [
       "Count equal intervals."
     ],
@@ -30845,7 +30845,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-2-t2": {
-    "title": "Mark a Number on the Number Line",
+    "title": "Mark a Number on the Number Line — Decimals on a Number Line",
     "prerequisites": [
       "Count equal intervals."
     ],
@@ -30888,7 +30888,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-2-t3": {
-    "title": "Fill in the Missing Tick Labels",
+    "title": "Fill in the Missing Tick Labels - Decimals Worksheets",
     "prerequisites": [
       "Count equal intervals."
     ],
@@ -31059,7 +31059,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-4-t1": {
-    "title": "Use Denominators 10, 100, 1000",
+    "title": "Use Denominators 10, 100, 1000 — Fractions as Decimals: Denominators of 10, 100, or 1000",
     "prerequisites": [
       "Know powers of 10."
     ],
@@ -31100,7 +31100,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-4-t2": {
-    "title": "Match Equivalent Fractions and Decimals",
+    "title": "Match Equivalent Fractions and Decimals — Fractions as Decimals: Denominators of 10, 100, or 1000",
     "prerequisites": [
       "Know powers of 10."
     ],
@@ -31141,7 +31141,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-4-t3": {
-    "title": "Complete the Fraction-to-Decimal Steps",
+    "title": "Complete the Fraction-to-Decimal Steps — Fractions as Decimals: Denominators of 10, 100, or 1000",
     "prerequisites": [
       "Know powers of 10."
     ],
@@ -31266,7 +31266,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-5-t3": {
-    "title": "Correct the Decimal Point",
+    "title": "Correct the Decimal Point — Multiplying Decimals by 10, 100, and 1000",
     "prerequisites": [
       "Understand decimal place value."
     ],
@@ -31351,7 +31351,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-6-t2": {
-    "title": "Complete the Multiplication Table",
+    "title": "Complete the Multiplication Table — Multiplying Decimals by 1/10, 1/100, and 1/1000",
     "prerequisites": [
       "Understand decimal place value."
     ],
@@ -31393,7 +31393,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-1-6-t3": {
-    "title": "Correct the Decimal Point",
+    "title": "Correct the Decimal Point — Multiplying Decimals by 1/10, 1/100, and 1/1000",
     "prerequisites": [
       "Understand decimal place value."
     ],
@@ -31435,7 +31435,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-0-t1": {
-    "title": "Set Up with Place Value",
+    "title": "Set Up with Place Value — Aligning Decimal Points and Places",
     "prerequisites": [
       "Read decimal place values."
     ],
@@ -31477,7 +31477,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-0-t2": {
-    "title": "Fill in Decimal Points and Missing Places",
+    "title": "Fill in Decimal Points and Missing Places - Decimals Worksheets",
     "prerequisites": [
       "Read decimal place values."
     ],
@@ -31519,7 +31519,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-0-t3": {
-    "title": "Correct the Place Value Alignment",
+    "title": "Correct the Place Value Alignment — Aligning Decimal Points and Places",
     "prerequisites": [
       "Read decimal place values."
     ],
@@ -31694,7 +31694,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-2-t1": {
-    "title": "Choose a Range for the Result",
+    "title": "Choose a Range for the Result — Estimating Decimal Results",
     "prerequisites": [
       "Identify the requested place."
     ],
@@ -31736,7 +31736,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-2-t2": {
-    "title": "Compare Estimates and Exact Results",
+    "title": "Compare Estimates and Exact Results — Estimating Decimal Results",
     "prerequisites": [
       "Identify the requested place."
     ],
@@ -31778,7 +31778,7 @@
     "reviewStatus": "pending"
   },
   "type:2-0-2-2-t3": {
-    "title": "Correct the Place Value in the Result",
+    "title": "Correct the Place Value in the Result — Estimating Decimal Results",
     "prerequisites": [
       "Identify the requested place."
     ],
@@ -31821,7 +31821,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-0-t1": {
-    "title": "Combine Two Groups and Count",
+    "title": "Combine Two Groups and Count — Combining 0.1 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -31865,7 +31865,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-0-t2": {
-    "title": "Complete the Number Model",
+    "title": "Complete the Number Model — Combining 0.1 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -31910,7 +31910,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-0-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Combining 0.1 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -31955,7 +31955,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-0-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond — Combining 0.1 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -31999,7 +31999,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-1-t1": {
-    "title": "Combine Two Groups and Count",
+    "title": "Combine Two Groups and Count - Decimals Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -32043,7 +32043,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-1-t2": {
-    "title": "Complete the Number Model",
+    "title": "Complete the Number Model — Combining 0.01 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -32088,7 +32088,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-1-t3": {
-    "title": "Match Pairs with Equal Sums",
+    "title": "Match Pairs with Equal Sums — Combining 0.01 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -32133,7 +32133,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-1-t4": {
-    "title": "Complete the Number Bond",
+    "title": "Complete the Number Bond - Decimals Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33067,7 +33067,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-0-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number + Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33111,7 +33111,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-0-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Whole Number + Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33155,7 +33155,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Whole Number + Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33200,7 +33200,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number + Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33245,7 +33245,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Tenths + Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33289,7 +33289,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-1-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Tenths + Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33333,7 +33333,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Tenths + Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33378,7 +33378,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Tenths + Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33423,7 +33423,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Hundredths + Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33467,7 +33467,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Hundredths + Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33511,7 +33511,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Hundredths + Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33556,7 +33556,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Hundredths + Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33601,7 +33601,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Adding Three Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33646,7 +33646,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Adding Three Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33691,7 +33691,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Adding Three Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33737,7 +33737,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Adding Three Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33871,7 +33871,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-0-0-t3": {
-    "title": "Match Models and Equations",
+    "title": "Match Models and Equations — Subtracting 0.1 Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33916,7 +33916,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-0-1-t1": {
-    "title": "Rename Units Using Pictures",
+    "title": "Rename Units Using Pictures — Renaming 1 and 0.1 in Smaller Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -33960,7 +33960,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-0-1-t2": {
-    "title": "Complete Equivalent Amounts",
+    "title": "Complete Equivalent Amounts — Renaming 1 and 0.1 in Smaller Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -34005,7 +34005,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-0-1-t3": {
-    "title": "Complete the Regrouping Step",
+    "title": "Complete the Regrouping Step — Renaming 1 and 0.1 in Smaller Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -34939,7 +34939,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-0-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Whole Number − Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -34983,7 +34983,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-0-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Whole Number − Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35027,7 +35027,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Whole Number − Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35072,7 +35072,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number − Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35117,7 +35117,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Tenths − Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35161,7 +35161,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-1-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Tenths − Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35205,7 +35205,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Tenths − Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35250,7 +35250,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Tenths − Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35295,7 +35295,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Hundredths − Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35339,7 +35339,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Hundredths − Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35383,7 +35383,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Hundredths − Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35428,7 +35428,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Hundredths − Thousandths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35473,7 +35473,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Regrouping Across 0 in Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35517,7 +35517,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Regrouping Across 0 in Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35561,7 +35561,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Regrouping Across 0 in Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35606,7 +35606,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-2-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Regrouping Across 0 in Decimals",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35651,7 +35651,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-0-t1": {
-    "title": "Complete the Equivalent Product",
+    "title": "Complete the Equivalent Product — Relate Decimal and Whole-Number Products",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35695,7 +35695,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-0-t2": {
-    "title": "Match Equivalent Calculations",
+    "title": "Match Equivalent Calculations — Relate Decimal and Whole-Number Products",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35740,7 +35740,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-0-t3": {
-    "title": "Complete the Conversion Steps",
+    "title": "Complete the Conversion Steps — Relate Decimal and Whole-Number Products",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35785,7 +35785,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-1-t1": {
-    "title": "Complete the Equivalent Product",
+    "title": "Complete the Equivalent Product — Use Fractions to Understand Decimal Multiplication",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35829,7 +35829,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-1-t2": {
-    "title": "Match Equivalent Calculations",
+    "title": "Match Equivalent Calculations — Use Fractions to Understand Decimal Multiplication",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35874,7 +35874,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-1-t3": {
-    "title": "Complete the Conversion Steps",
+    "title": "Complete the Conversion Steps — Use Fractions to Understand Decimal Multiplication",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35919,7 +35919,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-2-t2": {
-    "title": "Fill in Decimal Points and Missing Places",
+    "title": "Fill in Decimal Points and Missing Places — Placing the Decimal Point in the Product",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -35963,7 +35963,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-0-2-t3": {
-    "title": "Correct the Place Value Alignment",
+    "title": "Correct the Place Value Alignment — Placing the Decimal Point in the Product",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36408,7 +36408,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Whole Number × Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36452,7 +36452,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Whole Number × Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36497,7 +36497,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Whole Number × Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36542,7 +36542,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-3-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Products with Trailing 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36586,7 +36586,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-3-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Products with Trailing 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36630,7 +36630,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Products with Trailing 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36675,7 +36675,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-1-3-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Products with Trailing 0",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36764,7 +36764,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-0-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Tenths × Tenths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36808,7 +36808,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-0-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Tenths × Tenths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36853,7 +36853,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-0-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Tenths × Tenths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36898,7 +36898,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-1-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Tenths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36942,7 +36942,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-1-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Tenths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -36986,7 +36986,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Tenths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37031,7 +37031,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-1-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Tenths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37076,7 +37076,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-2-t1": {
-    "title": "Horizontal Practice",
+    "title": "Horizontal Practice — Hundredths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37120,7 +37120,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-2-t2": {
-    "title": "Vertical Practice",
+    "title": "Vertical Practice — Hundredths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37164,7 +37164,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Hundredths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37209,7 +37209,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-2-t4": {
-    "title": "Find and Fix the Error",
+    "title": "Find and Fix the Error — Hundredths × Hundredths",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37254,7 +37254,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-3-t1": {
-    "title": "Set Up with Place Value",
+    "title": "Set Up with Place Value — Use 0 as a Placeholder in the Product",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37298,7 +37298,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-3-t2": {
-    "title": "Fill in Decimal Points and Missing Places",
+    "title": "Fill in Decimal Points and Missing Places — Use 0 as a Placeholder in the Product",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37342,7 +37342,7 @@
     "reviewStatus": "pending"
   },
   "type:2-3-2-3-t3": {
-    "title": "Correct the Place Value Alignment",
+    "title": "Correct the Place Value Alignment — Use 0 as a Placeholder in the Product",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37519,7 +37519,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-0-t1": {
-    "title": "Complete Division with Like Units",
+    "title": "Complete Division with Like Units — Expressing Decimal Division in Like Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37563,7 +37563,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-0-t2": {
-    "title": "Match Equal Quotients",
+    "title": "Match Equal Quotients — Expressing Decimal Division in Like Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37608,7 +37608,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-0-t3": {
-    "title": "Correct Errors in Moving Decimal Points",
+    "title": "Correct Errors in Moving Decimal Points — Expressing Decimal Division in Like Units",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37653,7 +37653,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-1-t1": {
-    "title": "Complete Division with Like Units",
+    "title": "Complete Division with Like Units — Scaling Dividend and Divisor by the Same Factor",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37697,7 +37697,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-1-t2": {
-    "title": "Match Equal Quotients",
+    "title": "Match Equal Quotients — Scaling Dividend and Divisor by the Same Factor",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37742,7 +37742,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-1-t3": {
-    "title": "Correct Errors in Moving Decimal Points",
+    "title": "Correct Errors in Moving Decimal Points — Scaling Dividend and Divisor by the Same Factor",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37787,7 +37787,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-2-t1": {
-    "title": "Set Up with Place Value",
+    "title": "Set Up with Place Value — Placing the Decimal Point in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37831,7 +37831,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-2-t2": {
-    "title": "Fill in Decimal Points and Missing Places",
+    "title": "Fill in Decimal Points and Missing Places — Placing the Decimal Point in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -37875,7 +37875,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-0-2-t3": {
-    "title": "Correct the Place Value Alignment",
+    "title": "Correct the Place Value Alignment — Placing the Decimal Point in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38098,7 +38098,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-1-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Hundredths ÷ Whole Number: No Extra Places Needed",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38142,7 +38142,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-1-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Hundredths ÷ Whole Number: No Extra Places Needed",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38186,7 +38186,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-1-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Hundredths ÷ Whole Number: No Extra Places Needed",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38231,7 +38231,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-1-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Hundredths ÷ Whole Number: No Extra Places Needed",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38276,7 +38276,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-2-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Bring Down a Trailing 0 to Continue Dividing",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38320,7 +38320,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-2-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Bring Down a Trailing 0 to Continue Dividing",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38364,7 +38364,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Bring Down a Trailing 0 to Continue Dividing",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38409,7 +38409,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-2-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Bring Down a Trailing 0 to Continue Dividing",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38454,7 +38454,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-3-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Whole Number ÷ Whole Number: Decimal Quotients",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38498,7 +38498,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-3-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Whole Number ÷ Whole Number: Decimal Quotients",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38542,7 +38542,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Whole Number ÷ Whole Number: Decimal Quotients",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38587,7 +38587,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-1-3-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Whole Number ÷ Whole Number: Decimal Quotients",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -38988,7 +38988,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-2-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient — Whole Number ÷ Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39032,7 +39032,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-2-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Whole Number ÷ Decimal (Dividing Decimals)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39076,7 +39076,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-2-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation - Decimals Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39121,7 +39121,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-2-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Whole Number ÷ Decimal",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39166,7 +39166,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-3-t1": {
-    "title": "Find the Quotient",
+    "title": "Find the Quotient - Decimals Worksheets",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39210,7 +39210,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-3-t2": {
-    "title": "Long Division",
+    "title": "Long Division — Decimal Division with a Zero in the Quotient (Dividing Decimals)",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39254,7 +39254,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-3-t3": {
-    "title": "Complete the Vertical Calculation",
+    "title": "Complete the Vertical Calculation — Decimal Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39299,7 +39299,7 @@
     "reviewStatus": "pending"
   },
   "type:2-4-2-3-t4": {
-    "title": "Find and Fix the Division Error",
+    "title": "Find and Fix the Division Error — Decimal Division with 0 in the Quotient",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -39769,7 +39769,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-1-t2": {
-    "title": "Mixed Missing-Number Equations",
+    "title": "Mixed Missing-Number Equations — Mixed Decimal Multiplication and Division",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -39811,7 +39811,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-1-t3": {
-    "title": "Find and Correct Calculation Errors",
+    "title": "Find and Correct Calculation Errors - Decimals Worksheets",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -39853,7 +39853,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-2-t1": {
-    "title": "Choose a Range for the Result",
+    "title": "Choose a Range for the Result — Check the Result's Size and Decimal Point",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -39894,7 +39894,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-2-t2": {
-    "title": "Compare Estimates and Exact Results",
+    "title": "Compare Estimates and Exact Results - Decimals Worksheets",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -39935,7 +39935,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-2-t3": {
-    "title": "Correct the Place Value in the Result",
+    "title": "Correct the Place Value in the Result - Decimals Worksheets",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -39977,7 +39977,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-3-t1": {
-    "title": "Find the Missing Number",
+    "title": "Find the Missing Number - Decimals Worksheets",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -40019,7 +40019,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-3-t2": {
-    "title": "Complete Two Related Equations",
+    "title": "Complete Two Related Equations — Missing Numbers: Decimal Operations",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -40062,7 +40062,7 @@
     "reviewStatus": "pending"
   },
   "type:2-5-0-3-t3": {
-    "title": "Use the Inverse Operation to Find and Check",
+    "title": "Use the Inverse Operation to Find and Check — Missing Numbers: Decimal Operations",
     "prerequisites": [
       "Identify addition, subtraction, multiplication, and division."
     ],
@@ -40104,7 +40104,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-2-t1": {
-    "title": "Set Up with Place Value",
+    "title": "Set Up with Place Value — Add Trailing 0 to Align Decimal Places",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -40148,7 +40148,7 @@
     "reviewStatus": "pending"
   },
   "type:2-1-0-2-t2": {
-    "title": "Fill in Decimal Points and Missing Places",
+    "title": "Fill in Decimal Points and Missing Places — Add Trailing 0 to Align Decimal Places",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],
@@ -40192,7 +40192,7 @@
     "reviewStatus": "pending"
   },
   "type:2-2-0-2-t3": {
-    "title": "Correct the Place Value Alignment",
+    "title": "Correct the Place Value Alignment — Add Trailing 0 to Prepare for Regrouping",
     "prerequisites": [
       "Read the numbers and identify the operation."
     ],

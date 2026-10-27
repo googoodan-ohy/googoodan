@@ -1,0 +1,12 @@
+
+      .g212-stack{width:max-content;max-width:100%;margin:auto;font-variant-numeric:tabular-nums}
+      .g212-row{display:grid;grid-template-columns:.8em repeat(var(--whole),.82em) .4em repeat(var(--fraction),.82em);min-height:1.18em;text-align:center;align-items:center}
+      .g212-row>span{min-width:0}.g212-carry{height:.7em;min-height:.7em}
+      .g212-carry span:not(:first-child){border:1px solid #ddd;height:.65em}
+      .g212-rule{border-top:1px solid #222}.g212-answer{color:#d71f10;font-weight:700}.g212-blank{background:#eee;border:1px dashed #777}
+      .g212-fix{display:flex;gap:1.5mm;height:100%;align-items:flex-start}.g212-fix .g212-stack{margin:0}
+      .g212-write{flex:1;border-left:1px dashed #bbb;min-height:85%;padding-left:1mm}
+      .g212-note{position:absolute;left:5mm;bottom:.5mm;font-size:.7em;color:#333}
+      .sheet-page:has(.g212-mark) .sheet-head{gap:2mm}.sheet-page:has(.g212-mark) .sheet-field{font-size:9pt}
+      .sheet-page:has(.g212-mark) .answer-space{min-width:14mm}
+    

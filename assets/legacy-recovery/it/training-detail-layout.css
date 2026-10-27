@@ -1,0 +1,285 @@
+/* Training worksheet detail layout: shared Japanese site shell. */
+body { background: #f5f7f2 !important; }
+body > header.training-detail-header .gd-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  min-width: 0 !important;
+  color: #176e5c !important;
+  text-decoration: none !important;
+}
+body > header.training-detail-header .gd-brand-copy { display: block; min-width: 0; color: #176e5c; }
+body > header.training-detail-header .gd-brand-name { display: block; font-size: 20px; line-height: 1.15; font-weight: 900; white-space: nowrap; }
+body > header.training-detail-header .gd-brand-copy small { display: block; margin-top: 2px; color: #58756b; font-size: 12px; line-height: 1.25; }
+body > header.training-detail-header {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 28px !important;
+  border-bottom: 1px solid #dce5dd !important;
+  background: #f5f7f2 !important;
+}
+.training-detail-layout {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: 220px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: clamp(39px, calc(6.25vw - 29px), 61px) !important;
+  width: 100% !important;
+  max-width: 1400px !important;
+  min-width: 0 !important;
+  margin: 16px auto 36px !important;
+  padding: 0 max(55px, calc(6.25vw - 25px)) 0 28px !important;
+}
+.training-detail-layout > .sidebar { box-sizing: border-box; min-width: 0; width: 100%; }
+.training-detail-layout > .content { box-sizing: border-box; min-width: 0; width: 100%; margin: 0; padding: 0; }
+.training-detail-layout .detail-title {
+  position: relative;
+  box-sizing: border-box;
+  width: min(780px, calc(100% - 4px));
+  min-width: 0;
+  margin: 26px 0 59px 4px;
+  padding: 0;
+  border: 0;
+  color: #244d51;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+.training-detail-layout .detail-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -33px;
+  left: 0;
+  border-bottom: 1px solid #cbded6;
+}
+.training-detail-layout .worksheet-stage {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 21px 13px 13px;
+  border-radius: 8px;
+  background: #edf2f0;
+}
+.training-detail-layout .toolbar {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 auto 4px !important;
+  padding: 13.5px 14px 13.5px 52px !important;
+  border: 1px solid #d5e2dc !important;
+  border-radius: 6px !important;
+  background: #f6f9f7 !important;
+  font-family: Arial, Arial, sans-serif !important;
+  font-size: 13px !important;
+}
+.training-detail-layout .toolbar > * { max-width: 100%; min-width: 0; }
+.training-detail-layout .toolbar-actions,
+.training-detail-layout .toolbar-output {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  min-width: 0;
+}
+.training-detail-layout .toolbar button,
+.training-detail-layout .toolbar a {
+  box-sizing: border-box;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #b8d7ce;
+  border-radius: 6px;
+  background: #fff;
+  color: #176e5c;
+  font: 700 13px/1.2 Arial, Arial, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.training-detail-layout .toolbar #new {
+  border-color: #1255a4;
+  background: #1765c1;
+  color: #fff;
+}
+.training-detail-layout .toolbar #problem-button {
+  border-color: #187865;
+  background: #187865;
+  color: #fff;
+}
+.training-detail-layout .toolbar #answer-button {
+  border-color: #9bcab9;
+  background: #fff;
+  color: #176e5c;
+}
+.training-detail-layout .toolbar-output {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #218477;
+  color: #fff;
+}
+.training-detail-layout .toolbar-output label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.training-detail-layout .toolbar-output input { accent-color: #fff; }
+.training-detail-layout .toolbar-output button,
+.training-detail-layout .toolbar-output a {
+  min-height: 34px;
+  border-color: #51a596;
+  background: #176e5c;
+  color: #fff;
+}
+.training-detail-layout #sheet-error { max-width: 100%; margin: 0 auto; overflow-wrap: anywhere; }
+.training-detail-layout #sheet-root {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible !important;
+}
+.training-detail-layout #sheet-root > .sheet-page {
+  box-sizing: border-box;
+  width: 210mm;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.training-detail-layout .training-menu-disclosure { margin-top: 10px; }
+.training-detail-layout .training-menu-disclosure > summary { display: none; }
+.training-detail-layout .training-menu-disclosure > #it-training-submenu { display: block; }
+.training-detail-layout .country-guide {
+  box-sizing: border-box;
+  width: min(210mm, 100%);
+  max-width: 100%;
+  min-width: 0;
+  margin: 16px auto 32px;
+  padding: 20px 24px;
+  border: 1px solid #bfd9d1;
+  border-radius: 6px;
+  background: #fff;
+  color: #173f43;
+  font-family: Arial, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.training-detail-layout .country-guide h2 { margin: 1.25em 0 .5em; color: #176e5c; font-size: 1.15rem; line-height: 1.45; }
+.training-detail-layout .country-guide > h2:first-child { margin-top: 0; }
+.training-detail-layout .country-guide h3 { color: #124f48; font-size: 1rem; line-height: 1.5; }
+.training-detail-layout .country-guide p { margin: .55em 0 1em; }
+.training-detail-layout .country-guide ul,
+.training-detail-layout .country-guide ol { padding-inline-start: 1.5em; }
+.training-detail-layout .country-guide li { min-width: 0; overflow-wrap: anywhere; }
+.training-detail-layout .country-guide details { max-width: 100%; overflow-wrap: anywhere; }
+
+@media (max-width: 767px) {
+  body > header.training-detail-header { padding-left: 14px !important; padding-right: 14px !important; }
+  .training-detail-layout {
+    display: block !important;
+    width: 100% !important;
+    margin: 10px auto 24px !important;
+    padding: 0 29px 0 14px !important;
+  }
+  .training-detail-layout > .sidebar { width: 100% !important; min-width: 0 !important; margin: 0 0 18px !important; }
+  .training-detail-layout > .content { width: auto !important; min-width: 0 !important; margin: 0 4px !important; }
+  .training-detail-layout .detail-title {
+    width: calc(100% - 8px);
+    margin: 8px 4px 28px;
+    font-size: 23px;
+    line-height: 1.25;
+  }
+  .training-detail-layout .detail-title::after { bottom: -15px; }
+  .training-detail-layout .training-menu-disclosure {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0 0;
+    border: 1px solid #c7ddd5;
+    border-radius: 9px;
+    background: #fff;
+  }
+  .training-detail-layout .training-menu-disclosure > summary {
+    display: block;
+    padding: 12px 14px;
+    color: #244d51;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
+  }
+  .training-detail-layout .training-menu-disclosure > summary::before { content: "\25b6  "; }
+  .training-detail-layout .training-menu-disclosure[open] > summary::before { content: "\25bc  "; }
+  .training-detail-layout .training-menu-disclosure > #it-training-submenu {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e1ebe6;
+    border-radius: 0 0 8px 8px;
+    box-shadow: none;
+  }
+  .training-detail-layout .worksheet-stage { padding: 0; }
+  .training-detail-layout .toolbar { gap: 6px !important; margin-bottom: 12px !important; padding: 8px 8px 8px 12px !important; }
+  .training-detail-layout .toolbar-actions,
+  .training-detail-layout .toolbar-output { gap: 5px; }
+  .training-detail-layout .toolbar button,
+  .training-detail-layout .toolbar a { min-height: 38px; padding: 8px 10px; font-size: 12px; }
+  .training-detail-layout .toolbar-output { padding: 6px; }
+  .training-detail-layout .toolbar-output label { font-size: 11px; }
+  .training-detail-layout #sheet-root { width: calc(100% - 12px); margin: 0 6px; overflow: visible !important; }
+  .training-detail-layout #sheet-root > .sheet-page { max-width: none; }
+  .training-detail-layout .country-guide { padding: 16px 14px; font-size: 15px; }
+}
+
+@media print {
+  @page { size: A4 portrait; margin: 0; }
+  html, body { width: auto !important; height: auto !important; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  body > :not(.training-detail-layout) { display: none !important; }
+  body > header.training-detail-header,
+  .training-detail-layout > .sidebar,
+  .training-detail-layout .detail-title,
+  .training-detail-layout .toolbar,
+  .training-detail-layout #sheet-error,
+  .training-detail-layout .country-guide { display: none !important; }
+  .training-detail-layout {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .training-detail-layout > .content { display: block !important; width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .training-detail-layout .worksheet-stage { display: block !important; width: 100% !important; margin: 0 !important; padding: 0 !important; border: 0 !important; border-radius: 0 !important; background: #fff !important; }
+  .training-detail-layout #sheet-root { position: static !important; display: block !important; width: 100% !important; max-width: none !important; height: auto !important; margin: 0 !important; padding: 0 !important; overflow: visible !important; }
+  .training-detail-layout #sheet-root > .sheet-page { position: static !important; display: flex !important; width: 210mm !important; max-width: none !important; height: 297mm !important; margin: 0 !important; padding: 12mm !important; transform: none !important; transform-origin: top left !important; box-shadow: none !important; break-after: page; page-break-after: always; }
+  .training-detail-layout #sheet-root > .sheet-page:last-child { break-after: auto; page-break-after: auto; }
+}
+
+@media screen and (max-width: 767px) { .training-detail-layout .sheet-page { zoom: 1 !important; } }
+
+/* 탭 글자 파란 링크색 없애기 */
+.edition-tabs a,.edition-tabs a:visited{color:#176e5c;text-decoration:none}
+.edition-tabs a[aria-current="page"]{color:#fff}
+
+.edition-tabs a { color: #176e5c !important; }

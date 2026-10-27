@@ -1,0 +1,461 @@
+/* Spanish worksheet fit overrides. */
+.sheet-cell > :not(.sheet-number) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Number-in-words answers need to wrap inside their own exercise cell. */
+body[data-format="g200-read"] .g200-line {
+  width: 100% !important;
+  height: auto !important;
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  line-height: 1.12 !important;
+  gap: .5mm !important;
+  font-size: .68em;
+}
+body[data-format="g200-read"] .g200-line > * {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+body[data-format="g200-read"] .g200-line .g200-box {
+  min-width: 0;
+  height: auto;
+  max-width: 100%;
+  padding: .2mm .5mm;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+body[data-format="g000-extremes"] .mt-order-write {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+body[data-format="g001-picture-split"] .g001-foot {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 8pt;
+  line-height: 1.2;
+  text-align: center;
+}
+
+body[data-format="g013-inverse"] .horizontal {
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.2;
+  justify-content: center;
+}
+
+body[data-format="g020-picture"] .g020-label {
+  display: block;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  font-size: .62em !important;
+  line-height: 1.1;
+  text-align: center;
+  vertical-align: top;
+}
+
+body[data-format^="g030-"] .g030-line {
+  height: auto !important;
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .68em;
+  line-height: 1.2;
+  justify-content: center;
+}
+body[data-format^="g030-"] .g030-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: .58em;
+  line-height: 1.2;
+}
+body[data-format^="g030-"] .g030-foot .g030-blank {
+  min-width: 3em;
+  max-width: 100%;
+  flex: 0 1 auto;
+}
+
+body[data-format^="ko-division-check-"] .ko41 {
+  max-width: 100%;
+  white-space: normal !important;
+  font-size: .72em;
+  line-height: 1.15;
+}
+body[data-format^="ko-division-check-"] .ko41-line {
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  line-height: 1.15;
+}
+
+body[data-format="long-division"] .division-format text,
+body[data-format^="ko42-division-"] .division-format text {
+  font-size: 12px !important;
+}
+body[data-format="long-division"] .ko42-estimate,
+body[data-format^="ko42-division-"] .ko42-estimate {
+  position: static !important;
+  transform: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal !important;
+  text-align: center;
+  font-size: .72em;
+  line-height: 1.15;
+}
+body[data-format="long-division"] .ko42-estimate > span,
+body[data-format^="ko42-division-"] .ko42-estimate > span {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+body[data-format^="ko051-"] .ko051-tlabel {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .68em;
+  line-height: 1.1;
+  padding: 0 .3mm;
+  text-align: center;
+}
+
+body[data-format^="ko100-"] .sheet-cell > :not(.sheet-number) {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .78em;
+  line-height: 1.2;
+}
+body[data-format^="ko100-"] .sheet-cell .k100-sentence {
+  position: static !important;
+  transform: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: .52em;
+  line-height: 1.15;
+}
+body[data-format^="ko100-"] .sheet-cell .k100-twoline,
+body[data-format^="ko100-"] .sheet-cell .k100-twoline > span {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+body[data-format^="ko100-"] .sheet-cell .k100-tallbox {
+  position: static !important;
+  display: flex;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+body[data-format^="ko100-"] .sheet-cell .k100-foot {
+  position: static !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .4mm;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: .58em;
+  line-height: 1.15;
+}
+
+body[data-format="g101-fraction-select"] .g101-opt {
+  display: inline-block;
+  max-width: 32%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.15;
+  text-align: center;
+  vertical-align: top;
+}
+body[data-format="g101-fraction-select"] .g101-opt + .g101-opt {
+  margin-left: .5mm;
+}
+
+body[data-format="g102-fraction-compare"] .g102-label,
+body[data-format="g102-fraction-compare"] .g102-soft,
+body[data-format="g102-fraction-short-answer"] .g102-label,
+body[data-format="g102-fraction-short-answer"] .g102-soft {
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  line-height: 1.15;
+  font-size: .68em;
+}
+
+body[data-format^="g140-"] .g140-line {
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.15;
+}
+
+body[data-format^="g150-"] .g150-line {
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.15;
+}
+
+body[data-format="g201-line"] .g201-line-prompt,
+body[data-format="g201-line"] .g201-line {
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  font-size: .72em;
+  line-height: 1.15;
+}
+
+body[data-format="g230-error-correction"] .g230-line {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: .62em;
+  line-height: 1.15;
+}
+body[data-format="ko242-short"] .ko242 {
+  position: static !important;
+  transform: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  white-space: normal !important;
+  text-align: center;
+  font-size: .68em;
+  line-height: 1.15;
+}
+body[data-format="ko242-short"] .ko242 > div {
+  width: 100%;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+body[data-format^="g250-"] .g250-line {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: .62em;
+  line-height: 1.2;
+}
+body[data-format^="g250-"] .g250-choice {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 420px) {
+  .sheet-page {
+    width: 210mm !important;
+    max-width: none !important;
+    height: 297mm !important;
+    zoom: .49;
+  }
+}
+
+/* ---- round 2 (D-sonnet): remaining overflow fixes ---- */
+.sheet-title {
+  display: flex;
+  align-items: center;
+  max-height: 11mm;
+  white-space: normal;
+  font-size: 11.5pt;
+  line-height: 1.08;
+  letter-spacing: -.2px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+.mt-text {
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  line-height: 1.15;
+  font-size: .72em;
+}
+.g002-head, .g031-head {
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: normal;
+  line-height: 1.1;
+  font-size: .78em;
+  padding-left: .3mm !important;
+  padding-right: .3mm !important;
+  text-align: center;
+}
+.ko040-foot, .ko051-line, .g102-line, .g130-line, .fd-line, .g232-text, .division-shift-note {
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  line-height: 1.15;
+}
+.ko040-foot, .g102-line, .g130-line, .g232-text { font-size: .8em; }
+.ko051-line { font-size: .88em; }
+.fd-line { font-size: .85em; }
+.division-shift-note { font-size: .8em; }
+.g240-fix .ans-fill { max-width: 100%; white-space: normal !important; overflow-wrap: anywhere; }
+.sheet-page table th {
+  font-size: .74em !important;
+  line-height: 1.1;
+  white-space: normal !important;
+  overflow-wrap: normal;
+  hyphens: manual;
+  padding-left: .4mm !important;
+  padding-right: .4mm !important;
+}
+.g002-head { font-size: .62em !important; }
+.g202-table th { font-size: .6em !important; letter-spacing: -.02em; }
+.g201-table th { font-size: .66em !important; }
+.g240-fix { overflow: visible; }
+.g240-fix .ans-fill, .g240-fix { font-size: .9em; }
+.sheet-page .g202-table th { font-size: .58em !important; letter-spacing: -.02em; padding-left: .2mm !important; padding-right: .2mm !important; }
+.sheet-page .g201-table th { font-size: .62em !important; }
+.g240-fix.ans-fill { font-size: .82em; }
+.g202-table { width: 100%; }
+.g202-table tr:first-child th:nth-child(4) { width: 6%; }
+.sheet-page .g202-table th { letter-spacing: -.05em; padding-left: 0 !important; padding-right: 0 !important; }
+.g240-fixwrap .g240-fix { margin-left: .5mm; margin-right: .5mm; }
+body[data-format="g002-bundle-match"] .mt-compact .mt-right .mt-text {
+  font-size: 9.5pt;
+  line-height: 1.15;
+  white-space: normal;
+  overflow-wrap: normal;
+}
+body[data-format="g200-match"] .mt-compact .mt-right .mt-text {
+  width: 31mm;
+  font-size: 9.5pt;
+  line-height: 1.15;
+  white-space: normal;
+  overflow-wrap: normal;
+  text-align: left;
+}
+body[data-format^="ko100-"] .sheet-cell .k100-sentence.k100-equation {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6mm;
+  font-size: .92em;
+  height: 100%;
+}
+.g240-place { grid-template-columns: repeat(3, 2.2em) .7em repeat(2, 3.8em); }
+.g240-place-head { white-space: nowrap; font-size: .55em; }
+body[data-format^="ko100-"] .k100-equation .k100-box { margin: 0 1.2mm; }
+body[data-format="g232-direction"] .g232-text { white-space: nowrap !important; font-size: .74em; line-height: 1.35; }
+body[data-format="g232-short"] .g232-text { font-size: .76em; line-height: 1.3; }
+
+/* round3: readable French place-value headers */
+.g240-place { grid-template-columns: repeat(3, 2.9em) .7em repeat(2, 3.8em); }
+.sheet-page .g202-table th, .g202-table th { font-size: .7em !important; letter-spacing: -.02em !important; padding: 0 !important; overflow: hidden; white-space: nowrap; }
+.g202-table tr:first-child th:nth-child(1) { width: 9%; }
+.g202-table tr:first-child th:nth-child(2) { width: 12%; }
+.g202-table tr:first-child th:nth-child(3) { width: 16%; }
+.g202-table tr:first-child th:nth-child(4) { width: 4%; }
+.g202-table tr:first-child th:nth-child(5) { width: 29%; }
+.g202-table tr:first-child th:nth-child(6) { width: 30%; }
+
+
+/* Short, format-specific repairs for the remaining long Spanish rows. */
+body[data-format="g031-two-line"] .g031-two {
+  max-width: 100%;
+  font-size: .9em;
+  line-height: 1.16;
+}
+body[data-format="g031-two-line"] .g031-two .horizontal {
+  max-width: 100%;
+  flex-wrap: wrap;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  gap: .4mm;
+}
+body[data-format="g111-fraction-horizontal"] .g111-line,
+body[data-format="g112-fraction-steps"] .g112-block {
+  font-size: .94em;
+}
+
+body[data-format="g031-two-line"] .g031-two .g031-check {
+  display: block !important;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+body[data-format="g240-table"] .g240-place-head {
+  font-size: .85em !important;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}

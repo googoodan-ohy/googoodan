@@ -1,0 +1,38 @@
+/* Match the Japanese legacy page header to /ja/training/. */
+body > header.site-header {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 84px !important;
+  min-height: 84px !important;
+  margin: 0 !important;
+  padding: 0 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  background: #fff !important;
+  border-bottom: 1px solid #d1e2da !important;
+}
+
+body > header.site-header .gd-brand {
+  box-sizing: border-box !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+body > header.site-header .gd-brand img {
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+}
+
+@media (max-width: 650px) {
+  body > header.site-header {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+}
