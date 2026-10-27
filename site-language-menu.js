@@ -5,3 +5,6 @@
 document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.feedback-open');if(!b)return;e.preventDefault();e.stopImmediatePropagation();window.open(url(),'_blank','noopener')},true);
 if(lang==='ko')return;function add(){if(document.querySelector('.gd-report-link'))return;var a=document.createElement('a');a.className='gd-report-link';a.target='_blank';a.rel='noopener';a.textContent=labels[lang];a.href=url();a.addEventListener('click',function(){a.href=url()});var sw=document.getElementById('gd-language-switch'),mq=window.matchMedia('(max-width:600px)');if(sw){sw.classList.add('gd-has-report');var anc=sw.closest('.gd-language-anchor');if(anc)anc.classList.add('gd-report-anchor')}function place(){if(sw&&!mq.matches)sw.insertBefore(a,sw.firstChild);else document.body.appendChild(a)}place();if(mq.addEventListener)mq.addEventListener('change',place)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',add,{once:true});else add()})();
+
+/* gd-metrics-loader: make sure every country page sends visit and print counts. */
+(function(){if(window.top!==window.self||window.__gdMetrics||document.querySelector('script[src*="site-metrics.js"]'))return;var s=document.createElement('script');s.src='/assets/site-metrics.js';s.defer=true;document.head.appendChild(s)})();
