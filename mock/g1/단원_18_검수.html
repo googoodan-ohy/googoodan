@@ -1,0 +1,61 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>\uD604\uC7AC \uB2E8\uC6D0 \uBAA9\uB85D\uC5D0 \uC5C6\uC74C</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+.os{margin-top:6px;padding:6px 10px;background:#fffdf5;border:1px dashed #d6b46a;border-radius:6px;font-size:14px;line-height:1.5;white-space:pre-line}
+.katex-display{margin:2px 0!important}
+body{max-width:none!important;padding:8px 14px}
+.card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 190px;gap:12px;border:1px solid #bbb;border-radius:8px;padding:10px;margin:0 0 14px;content-visibility:auto;contain-intrinsic-size:auto 520px}
+.card.ok{border-color:#15803d;background:#f3fbf5}.card.bad{border-color:#b91c1c;background:#fdf3f3}
+.col{min-width:0}.hd{grid-column:1/-1;font-weight:bold}.hd small{font-weight:normal;color:#666}
+.box{padding:8px 10px;border-radius:6px;font-size:15px;line-height:1.8}.org{background:#fff7e6}.tw{background:#eef4ff}
+.lb{font-size:12px;color:#555;font-weight:bold;display:block;margin-bottom:2px}
+.chs{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:2px 14px;margin-top:8px}
+.oa{margin-top:6px;padding:6px 10px;background:#fdecc8;border-radius:6px}.oa b{color:#b45309}
+.nc{font-size:12px;color:#444;margin-top:4px}.same{color:#b00;font-weight:bold}
+.s{margin-top:6px}
+.ctl{display:flex;flex-direction:column;gap:8px}
+.ctl button{padding:9px;border-radius:6px;border:1px solid #999;background:#fff;cursor:pointer;font-size:14px}
+.ctl textarea{min-height:90px;padding:6px;font-size:13px;resize:vertical}
+.pickbar{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px}.pickbar button{padding:4px 8px;border:1px solid #789;background:#fff;border-radius:5px;cursor:pointer;font-size:12px}.pickbar button.on{background:#166534;color:#fff;border-color:#166534}
+#top{position:sticky;top:0;background:#fff;padding:6px 0;border-bottom:1px solid #ccc;margin-bottom:10px;z-index:2}
+@media (max-width:900px){.card{grid-template-columns:1fr}}
+</style></head><body>
+<h1>\uD604\uC7AC \uB2E8\uC6D0 \uBAA9\uB85D\uC5D0 \uC5C6\uC74C</h1><div id="top"> <small>원본은 내부 확인용 — 밖으로 내보내지 마세요.</small></div><script>
+let S={};try{S=JSON.parse(localStorage.getItem('itemrev')||'{}')}catch(e){}
+function st(){try{localStorage.setItem('itemrev',JSON.stringify(S))}catch(e){}}
+function paint(){let o=0,b=0,n=0;document.querySelectorAll('.card').forEach(c=>{const k=c.dataset.k,s=S[k]||{};n++;
+c.classList.toggle('ok',s.m=='ok');c.classList.toggle('bad',s.m=='bad');if(s.m=='ok')o++;if(s.m=='bad')b++;
+const i=c.querySelector('textarea');if(i&&document.activeElement!==i)i.value=s.t||''});
+(document.getElementById('cnt')||{}).textContent=`합격 ${o} · 불합격 ${b} · 남음 ${n-o-b} / ${n}`}
+function rm(el){if(!el||el.dataset.m)return;el.dataset.m=1;renderMathInElement(el,window.KO)}function lazyMath(o){window.KO=o;const io=new IntersectionObserver(es=>{for(const e of es){if(!e.isIntersecting)continue;const c=e.target;io.unobserve(c);c.querySelectorAll('.box.org,.oa,.os').forEach(rm);const a=[...c.querySelectorAll('.alt')].find(x=>x.style.display!='none');rm(a||c)}},{rootMargin:'800px 0px'});document.querySelectorAll('.card').forEach(c=>io.observe(c));document.querySelectorAll('body>*:not(.card)').forEach(rm)}
+function nx(b){const A=[...b.closest('.card').querySelectorAll('.alt')];if(A.length<2)return;const i=A.findIndex(a=>a.style.display!='none');A[i].style.display='none';A[(i+1)%A.length].style.display='';rm(A[(i+1)%A.length])}
+const PK='pick_sheet_v1';let PICKS=[];try{PICKS=JSON.parse(localStorage.getItem(PK)||'[]');if(!Array.isArray(PICKS))PICKS=[]}catch(e){PICKS=[]}
+function savePicks(){try{localStorage.setItem(PK,JSON.stringify(PICKS))}catch(e){};window.parent.postMessage({type:'pick-sheet-change',count:PICKS.length},'*');paintPicks()}
+function readPick(b){try{return JSON.parse(decodeURIComponent(escape(atob(b.dataset.pick))))}catch(e){return null}}
+function togglePick(b){const p=readPick(b);if(!p)return;const i=PICKS.findIndex(x=>x.id===p.id);if(i>=0)PICKS.splice(i,1);else PICKS.push(p);savePicks()}
+function pickOriginal(b){togglePick(b)}
+function pickAlt(b){const c=b.closest('.card'),i=Number(b.dataset.i),alts=[...c.querySelectorAll('.alt')];alts.forEach((a,j)=>a.style.display=j===i?'':'none');rm(alts[i]);togglePick(b)}
+function paintPicks(){const ix=new Map(PICKS.map((p,i)=>[p.id,i+1]));document.querySelectorAll('.pickbar button').forEach(b=>{const p=readPick(b),n=p&&ix.get(p.id);b.classList.toggle('on',!!n);b.textContent=n?'선택 '+n:b.dataset.label})}
+window.addEventListener('message',e=>{if(e.data&&e.data.type==='pick-sheet-clear'){PICKS=[];paintPicks()}else if(e.data&&e.data.type==='pick-sheet-change'){try{PICKS=JSON.parse(localStorage.getItem(PK)||'[]')}catch(x){PICKS=[]}paintPicks()}})
+function mk(k,m){S[k]=Object.assign(S[k]||{},{m});st();paint()}
+function why(k,v){S[k]=Object.assign(S[k]||{},{t:v});if(v&&!S[k].m)S[k].m='bad';st();paint()}
+document.addEventListener('DOMContentLoaded',()=>{paint();paintPicks();lazyMath({delimiters:[{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m})});
+</script></body></html>

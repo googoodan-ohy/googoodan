@@ -1,0 +1,34 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>고1 범위 · 경우의 수 답지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+</style></head><body>
+<h1>답지 — 고1 범위 · 경우의 수</h1><div class="sub">번호별 정답·풀이</div><div class="ans">
+<div class="q"><b>1.</b> <span class="pt">(2019년 3월 가형 10번 꼴)</span> 정답 <span class="a">③ $576$</span><div class="s">$\mathrm{A}$, $\mathrm{B}$가 앉을 줄을 고르는 경우의 수는 $2$<br>그 줄의 $4$개의 좌석 중 두 자리에 $\mathrm{A}$, $\mathrm{B}$가 앉는 경우의 수는 ${}_{4}\mathrm{P}_{2}=12$<br>맞은편 줄의 $4$개의 좌석에 나머지 $3$명이 앉는 경우의 수는 ${}_{4}\mathrm{P}_{3}=24$<br>따라서 구하는 경우의 수는 $2\times 12\times 24=576$</div></div>
+<div class="q"><b>2.</b> <span class="pt">(2019년 3월 가형 14번 꼴)</span> 정답 <span class="a">③ $30$</span><div class="s">전체 선택은 $\binom{12}{2}=66$가지입니다.<br>같은 가로줄 쌍은 $2\binom62=30$가지이고 같은 세로줄 쌍은 $6\binom22=6$가지입니다.<br>따라서 서로 다른 행과 열을 쓰는 쌍은 $66-30-6=30$가지입니다.</div></div>
+<div class="q"><b>3.</b> <span class="pt">(2019년 3월 가형 24번 꼴)</span> 정답 <span class="a">$2500$</span><div class="s">$f\left(8\right)\ge 9$이므로 $f\left(8\right)$이 될 수 있는 값은 $4$가지<br>$f\left(9\right)\ge 8$이므로 $f\left(9\right)$가 될 수 있는 값은 $5$가지<br>$f\left(10\right)\ge 7$이므로 $f\left(10\right)$이 될 수 있는 값은 $5$가지<br>$f\left(11\right)\ge 6$이므로 $f\left(11\right)$이 될 수 있는 값은 $5$가지<br>$f\left(12\right)\ge 5$이므로 $f\left(12\right)$가 될 수 있는 값은 $5$가지<br>따라서 함수의 개수는 $4\times 5\times 5\times 5\times 5=2500$</div></div>
+<div class="q"><b>4.</b> <span class="pt">(2019년 3월 나형 28번 꼴)</span> 정답 <span class="a">$34560$</span><div class="s">$A,B$가 함께 앉을 의자는 마부가 있는 의자를 제외한 $4$개이고, 좌우 순서는 $2$가지이다. 나머지 $7$명은 $(7)!$가지로 앉는다.<br>이 중 $C,D$가 같은 다른 의자에 앉는 경우는 각 배치마다 $3$개 의자 중 하나를 고르고 좌우 순서 $2$가지를 정한 뒤 나머지 $5$명을 배열하므로 $2(3)(5)!$가지이다.<br>따라서 경우의 수는 $2(4)\left[(7)!-2(3)(5)!\right]=34560$이다.</div></div>
+<div class="q"><b>5.</b> <span class="pt">(2020년 3월 17번 꼴)</span> 정답 <span class="a">① $96$</span><div class="s">$3$, $4$가 적힌 정사각형에 같은 색을 칠하고, 변을 공유하는 정사각형끼리 다른 색이 되도록 이웃한 칸부터 차례로 칠합니다.<br>칸마다 이미 칠한 이웃 칸의 색을 빼고 칠할 수 있는 색의 수를 곱하면(이웃 칸끼리 같은 색인 경우를 나누어 세면) 경우의 수는 $96$</div></div>
+<div class="q"><b>6.</b> <span class="pt">(2020년 3월 29번 꼴)</span> 정답 <span class="a">$388$</span><div class="s">꽃 $3$송이를 나누는 방법은 $4^{3}$가지, 초콜릿 $3$개를 $4$명에게 나누는 방법은 ${}_{4}\mathrm{H}_{3}=20$가지입니다.<br>특정한 $j$명이 아무것도 받지 못하는 경우는 나머지 $4-j$명에게만 나누는 경우이므로 $(4-j)^{3}\times{}_{4-j}\mathrm{H}_{3}$가지입니다.<br>포함과 배제의 원리로 아무것도 받지 못하는 학생이 있는 경우를 빼면 $1\times4^{3}\times20$ $-4\times3^{3}\times10$ $+6\times2^{3}\times4$ $-4\times1^{3}\times1$<br>$=388$</div></div>
+<div class="q"><b>7.</b> <span class="pt">(2021년 3월 18번 꼴)</span> 정답 <span class="a">③ $600$</span><div class="s">공통 수학 과목을 정한 뒤 나머지 선택은 C(8,2)C(6,2)이므로 p=420이다.<br>공통 과학 과목을 고정하면 q=2·C(5,2)·3·3=180이다.<br>p+q=600이다.</div></div>
+<div class="q"><b>8.</b> <span class="pt">(2021년 3월 21번 꼴)</span> 정답 <span class="a">④ $114$</span><div class="s">규칙 (나), (다)에 의해 어느 두 학생도 양옆 또는 앞뒤로 이웃하여 앉지 않습니다.<br>$A$가 앉을 수 있는 의자(좌석 번호 $23$ 이상)마다, 이웃하지 않게 고를 수 있는 나머지 의자 $4$개를 찾고 그중 $B$가 앉을 수 있는 의자(좌석 번호 $15$ 이하)를 정한 뒤 남은 $3$명을 $3!$가지로 앉힙니다.<br>경우를 모두 더하면 $114$</div></div>
+<div class="q"><b>9.</b> <span class="pt">(2021년 3월 24번 꼴)</span> 정답 <span class="a">$5040$</span><div class="s">이웃하는 $2$개의 $\mathrm{n}$를 한 문자로 생각하면 $7$개의 서로 다른 문자를 나열하는 경우의 수와 같습니다.<br>$7!=5040$</div></div>
+</div><script>function paginate(){const cols=document.querySelector('.cols');if(!cols||document.querySelector('.page'))return;const qs=[...cols.children];const head=[...document.body.children].filter(e=>e!==cols&&e.tagName!=='SCRIPT');document.body.classList.add('a4');let page,colsEl=[],ci=0,n=0;function newPage(){n++;page=document.createElement('div');page.className='page';if(n===1)head.forEach(h=>page.appendChild(h));const b=document.createElement('div');b.className='body';colsEl=[0,1].map(()=>{const c=document.createElement('div');c.className='col';b.appendChild(c);return c});page.appendChild(b);const f=document.createElement('div');f.className='pno';f.textContent=n;page.appendChild(f);document.body.insertBefore(page,cols);ci=0}newPage();for(const q of qs){let c=colsEl[ci];c.appendChild(q);if(c.scrollHeight>c.clientHeight+1&&c.children.length>1){c.removeChild(q);ci++;if(ci>1)newPage();colsEl[ci].appendChild(q)}}cols.remove();const bt=document.createElement('button');bt.id='prt';bt.textContent='🖨 A4 인쇄';bt.onclick=()=>window.print();document.body.appendChild(bt)}window.addEventListener('load',()=>setTimeout(paginate,50));</script>
+<script>document.addEventListener('DOMContentLoaded',()=>renderMathInElement(document.body,{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m}));</script></body></html>

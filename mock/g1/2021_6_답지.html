@@ -1,0 +1,87 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>2021_6 쌍둥이 답지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+</style></head><body>
+<h1>답지와 풀이 — 2021_6 쌍둥이</h1><div class="sub">번호별 정답·풀이</div><div class="ans">
+<div class="q"><b>1.</b> 정답 <span class="a">③ $-12$</span><div class="s">$\left(-3-5i\right)+\left(-9+5i\right)=-12$</div></div>
+<div class="q"><b>2.</b> 정답 <span class="a">③ $-8x^{2}+4x-1$</span><div class="s">$A-B=\left(-4x^{2}-5x+4\right)-\left(4x^{2}-9x+5\right)$<br>$=-4x^{2}-5x+4-4x^{2}+9x-5$<br>$=-8x^{2}+4x-1$</div></div>
+<div class="q"><b>3.</b> 정답 <span class="a">③ $100$</span><div class="s">$x$축에 접하려면 이차방정식 $x^{2}-20x+a=0$이 중근을 가져야 하므로<br>$\frac{D}{4}=\left(-10\right)^{2}-a=0$<br>따라서 $a=100$</div></div>
+<div class="q"><b>4.</b> 정답 <span class="a">② $7$</span><div class="s">$\left|x+2\right|&lt;4$에서 $-4&lt;x+2&lt;4$<br>$-6&lt;x&lt;2$<br>이를 만족시키는 정수 $x$는 $-5, -4, -3, -2, -1, 0, 1$이므로 개수는 $7$</div></div>
+<div class="q"><b>5.</b> 정답 <span class="a">① $-29$</span><div class="s">우변을 전개하면 $bx^{2}+\left(c+3b\right)x+3c$<br>계수를 비교하면 $b=3$, $c+3b=1$, $a=3c$<br>$b=3$, $c=-8$, $a=-24$<br>따라서 $a+b+c=-29$</div></div>
+<div class="q"><b>6.</b> 정답 <span class="a">① $\frac{14}{25}$</span><div class="s">$x=\frac{\left(4-3i\right)^{2}}{\left(4+3i\right)\left(4-3i\right)}=\frac{7-24i}{25}$, $y=\frac{7+24i}{25}$<br>$x+y=\frac{14}{25}$</div></div>
+<div class="q"><b>7.</b> 정답 <span class="a">$82$</span><div class="s">$26$을 세 자연수의 곱으로 나타내면 $1\times 1\times 26$, $1\times 2\times 13$입니다.<br>세 수의 합은 각각 $28$, $16$이고, 이 중 $8$의 배수는 $16$입니다.<br>따라서 직육면체의 세 모서리의 길이는 $1$, $2$, $13$이므로 겉넓이는 $2\times \left(2+26+13\right)=82$</div></div>
+<div class="q"><b>8.</b> 정답 <span class="a">④ $-7$</span><div class="s">나머지정리에 의하여 $f\left(1\right)=1+a+b-18=-16$이므로 $a+b=1$<br>$f\left(x+1\right)$이 $x-1$로 나누어떨어지므로 $f\left(2\right)=8+4a+2b-18=0$, $4a+2b=10$<br>두 식을 연립하면 $a=4$, $b=-3$<br>따라서 $b-a=-7$</div></div>
+<div class="q"><b>9.</b> 정답 <span class="a">③ $-336$</span><div class="s">$x+y=6$, $xy=25$이므로 $x^{2}+y^{2}=\left(x+y\right)^{2}-2xy=36-50=-14$<br>$x^{3}y+xy^{3}-x^{2}-y^{2}=xy\left(x^{2}+y^{2}\right)-\left(x^{2}+y^{2}\right)=\left(x^{2}+y^{2}\right)\left(xy-1\right)$<br>$=\left(-14\right)\times 24=-336$</div></div>
+<div class="q"><b>10.</b> 정답 <span class="a">① $8$</span><div class="s">두 식을 연립하면 $x^{2}+\left(3-k\right)x+9=0$<br>만나지 않으려면 $D=\left(3-k\right)^{2}-36&lt;0$<br>$3-6&lt;k&lt;3+6$<br>자연수 $k$는 $1, 2, 3, 4, 5, 6, 7, 8$이므로 개수는 $8$</div></div>
+<div class="q"><b>11.</b> 정답 <span class="a">② $192$</span><div class="s">판별식을 $D$라 하면 $\frac{D}{4}=\left(m+a\right)^{2}-\left(m^{2}-8m+b\right)=\left(2a+8\right)m+a^{2}-b=0$<br>$m$의 값에 관계없이 성립하므로 $2a+8=0$, $a^{2}-b=0$<br>$a=-4$, $b=16$이므로 $16\left(a+b\right)=192$</div></div>
+<div class="q"><b>12.</b> 정답 <span class="a">③ $18$</span><div class="s">$x=3$을 대입하면 성립하므로 조립제법으로 인수분해하면 $x^{3}-4x-15=\left(x-3\right)\left(x^{2}+3x+5\right)$<br>$\alpha$, $\beta$는 이차방정식 $x^{2}+3x+5=0$의 두 근이므로 $\alpha+\beta=-3$, $\alpha\beta=5$<br>$\alpha^{3}+\beta^{3}=\left(\alpha+\beta\right)^{3}-3\alpha\beta\left(\alpha+\beta\right)$<br>$=\left(-3\right)^{3}-3\times 5\times \left(-3\right)$<br>$=18$</div></div>
+<div class="q"><b>13.</b> 정답 <span class="a">⑤ $-5$</span><div class="s">$x-y=3$에서 $y=x-3$<br>이것을 $4x^{2}-y^{2}=-12$에 대입하여 정리하면 $x^{2}+2x+1=0$<br>$\left(x+1\right)^{2}=0$이므로 $x=-1$, $y=-4$<br>따라서 $\alpha+\beta=-5$</div></div>
+<div class="q"><b>14.</b> 정답 <span class="a">③ $\frac{4}{9}$</span><div class="s">$m_{A}=4m_{B}$, $v_{A}=\frac{1}{3}v_{B}$<br>구심력의 크기가 같으므로 $\frac{m_{A}\left(v_{A}\right)^{2}}{r_{A}}=\frac{m_{B}\left(v_{B}\right)^{2}}{r_{B}}$<br>$\frac{4m_{B}\left(\frac{1}{3}v_{B}\right)^{2}}{r_{A}}=\frac{m_{B}\left(v_{B}\right)^{2}}{r_{B}}$이므로 $\frac{4\times \frac{1}{9}}{r_{A}}=\frac{1}{r_{B}}$<br>따라서 $\frac{r_{A}}{r_{B}}=\frac{4}{9}$</div></div>
+<div class="q"><b>15.</b> 정답 <span class="a">① $64$</span><div class="s">$b^{2}=4a\left(8-a\right)=-4a^{2}+32a$<br>$=-4\left(a-4\right)^{2}+64$<br>$0&lt;4&lt;8$이므로 $a=4$일 때 $b^{2}$의 최댓값은 $64$입니다.</div></div>
+<div class="q"><b>16.</b> 정답 <span class="a">⑤ $4$</span><div class="s">(나)에서 $f\left(x\right)=\left(x-3\right)^{2}\left(x+c\right)+6\left(x-3\right)$<br>(가)에서 $f\left(0\right)=9c-18=0$이므로 $c=2$<br>$f\left(x\right)=x^{3}-4x^{2}+3x$를 $x-1$로 나누면 $Q\left(x\right)=x^{2}-3x$<br>$Q\left(4\right)=4$</div></div>
+<div class="q"><b>17.</b> 정답 <span class="a">④ $\frac{343}{8}$</span><div class="s">$y=x^{2}-\left(a+10\right)x+7a+21=\left(x-7\right)\left\{x-\left(a+3\right)\right\}$이므로 $x$절편은 $7$, $a+3$이고 $0&lt;a&lt;4$에서 $a+3&lt;7$<br>$\overline{\mathrm{AB}}=7-\left(a+3\right)=-a+4$, $\mathrm{C}\left(0,\ 7a+21\right)$<br>넓이 $=\dfrac{1}{2}\left(-a+4\right)\left(7a+21\right)=-\frac{7a^{2}}{2}+\frac{7a}{2}+42$<br>$=-\frac{7}{2}\left(a-\frac{1}{2}\right)^{2}+\frac{343}{8}$<br>$0&lt;\frac{1}{2}&lt;4$이므로 $a=\frac{1}{2}$일 때 최댓값은 $\frac{343}{8}$</div></div>
+<div class="q"><b>18.</b> 정답 <span class="a">② $1375$</span><div class="s">$x=0$을 대입하면 $R=2^{10}=1024$이므로 $a=1024$<br>$1024=674\times 1+350$이므로 $b=1$, $c=350$<br>$a+b+c=1375$</div></div>
+<div class="q"><b>19.</b> 정답 <span class="a">① $-5$</span><div class="s">$\overline{z}z=1$에서 $\overline{z}=\frac{1}{z}$이므로 각 항은 $\frac{\left(\overline{z}\right)^{j}}{z^{6-j}}=\frac{1}{z^{j}}\times \frac{1}{z^{6-j}}=\frac{1}{z^{6}}$<br>$z$, $\overline{z}$는 $x^{2}- \sqrt{3}x+1=0$의 두 근이므로 $z=\dfrac{\sqrt{3}}{2} + \dfrac{i}{2}$ 또는 그 켤레복소수입니다.<br>$z^{2}=\dfrac{1}{2} + \dfrac{\sqrt{3} i}{2}$, $z^{3}=z^{2}\times z=i$이므로 $z^{6}=\left(z^{3}\right)^{2}=i^{2}=-1$입니다. (켤레복소수일 때도 같음)<br>주어진 식 $=5\times \frac{1}{z^{6}}=5\times \frac{1}{\left(-1\right)}=-5$</div></div>
+<div class="q"><b>20.</b> 정답 <span class="a">② $62$</span><div class="s">삼각형 $\mathrm{APE}$는 이등변삼각형이므로 $\overline{\mathrm{PE}}=2$이고 $x:2=2:\left(x-2\right)$에서 $x^{2}-2x-4=0$, $x=1+\sqrt{5}$<br>$x^{2}=2x+4$를 이용하면 $x^{2}=2x+4, x^{3}=8x+8, x^{4}=24x+32$<br>$-x+x^{2}-x^{3}+x^{4}=\left(-x+x^{2}\right)+\left(-x^{3}+x^{4}\right)$<br>$=17x+28=17\sqrt{5}+45$<br>$p=45,\ q=17$이므로 $p+q=62$</div></div>
+<div class="q"><b>21.</b> 정답 <span class="a">② ㄱ, ㄴ</span><div class="s">(가)에서 $f\left(x\right)g\left(x\right)=\left(x+3\right)\left(x-3\right)\left(x+4\right)\left(x-4\right)$이고 (나)에서 $f\left(x\right)=0$의 두 실근의 차가 $7$이므로 $f\left(x\right)=a\left(x-3\right)\left(x+4\right),\ g\left(x\right)=\frac{1}{a}\left(x+3\right)\left(x-4\right)$ 또는 $f\left(x\right)=a\left(x+3\right)\left(x-4\right),\ g\left(x\right)=\frac{1}{a}\left(x-3\right)\left(x+4\right)$ (단, $a\ne 0$)<br>ㄱ. $f\left(3\right)=0$이면 $g\left(x\right)=\frac{1}{a}\left(x+3\right)\left(x-4\right)$이므로 $g\left(4\right)=0$입니다. (참)<br>ㄴ. $g\left(3\right)&gt;0$이면 $f\left(x\right)=a\left(x-3\right)\left(x+4\right)$, $g\left(x\right)=\frac{1}{a}\left(x+3\right)\left(x-4\right)$이고 $a&lt;0$이므로 $f\left(\frac{7}{2}\right)=\frac{15}{4}a&lt;0$, $g\left(\frac{7}{2}\right)=-\frac{13}{4}\times \frac{1}{a}&gt;0$입니다. (참)<br>ㄷ. $f\left(x\right)-g\left(x\right)=0$의 두 근의 곱은 $-12$이고, 두 근의 합의 절댓값은 $1$보다 큽니다. 곱이 $-12$인 서로 다른 두 정수의 합의 절댓값 중 가능한 것은 $4$, $11$이므로 $\left|m+n\right|=11$이라 할 수 없어 거짓<br>따라서 옳은 것은 ㄱ, ㄴ</div></div>
+<div class="q"><b>22.</b> 정답 <span class="a">$24$</span><div class="s">$\left(x^{2}+x+12\right)^{2}=\left(x^{2}\right)^{2}+x^{2}+12^{2}+2\times \left(x^{2}\right)\times x+2\times x\times 12+2\times 12\times \left(x^{2}\right)$<br>$=x^{4}+2x^{3}+25x^{2}+24x+144$<br>따라서 $x$의 계수는 $24$입니다.</div></div>
+<div class="q"><b>23.</b> 정답 <span class="a">$3$</span><div class="s">근과 계수의 관계에서 $-3\times b=21$이므로 $b=-7$<br>$-3+\left(-7\right)=-a$이므로 $a=10$<br>따라서 $a+b=3$</div></div>
+<div class="q"><b>24.</b> 정답 <span class="a">① $9$</span><div class="s">이차방정식의 판별식을 $D$라 할 때 $D&lt;0$이어야 하므로<br>$D=\left(m+1\right)^{2}-4\left(m+6\right)=m^{2}-2m-23&lt;0$<br>이를 만족시키는 정수 $m$은 $-3, -2, -1, 0, 1, 2, 3, 4, 5$이므로 합은 $9$</div></div>
+<div class="q"><b>25.</b> 정답 <span class="a">$6$</span><div class="s">$x$에 대하여 정리하면 $x^{2}+\left(ky+2\right)x+8y^{2}+10y-3$<br>$8y^{2}+10y-3=\left(2y+3\right)\left(4y-1\right)$<br>따라서 주어진 식은 $\left(x+2y+3\right)\left(x+4y-1\right)$로 인수분해되고, $xy$의 계수를 비교하면 $k=2+4=6$</div></div>
+<div class="q"><b>26.</b> 정답 <span class="a">$4$</span><div class="s">$a&lt;0$, $b&lt;0$이므로 축 $x=-\dfrac{b}{2a}&lt;0$이고, $2\le x\le 3$에서 $f\left(x\right)$는 $x$의 값이 커질수록 작아집니다.<br>최댓값은 $f\left(2\right)=4a+2b+4=-2$에서 $4a+2b=-6$<br>$a\le -1$, $b\le -1$이면 $4a+2b\le -6$이므로 $a=-1$, $b=-1$<br>$f\left(-1\right)=-\left(-1\right)^{2}-\left(-1\right)+4=4$</div></div>
+<div class="q"><b>27.</b> 정답 <span class="a">$6$</span><div class="s">$\dfrac{1-i}{1+i}=-i$이고, $\left(\dfrac{1-i}{1+i}\right)^{n}$의 값은 $-i,\ -1,\ i,\ 1$이 차례로 반복됩니다.<br>$\dfrac{2}{\sqrt{3}-i}=\dfrac{\sqrt{3}}{2}+\dfrac{1}{2}i$이고, $\left(\dfrac{2}{\sqrt{3}-i}\right)^{2}=\dfrac{1}{2}+\dfrac{\sqrt{3}}{2}i$, $\left(\dfrac{2}{\sqrt{3}-i}\right)^{3}=i$, $\left(\dfrac{2}{\sqrt{3}-i}\right)^{6}=-1$, $\left(\dfrac{2}{\sqrt{3}-i}\right)^{9}=-i$, $\left(\dfrac{2}{\sqrt{3}-i}\right)^{12}=1$이므로 $\left(\dfrac{2}{\sqrt{3}-i}\right)^{n}$의 값은 $12$개씩 반복됩니다.<br>두 값의 합이 $-2$가 되려면 두 값이 모두 $-1$이어야 하므로 $n$을 $4$로 나눈 나머지는 $2$, $12$로 나눈 나머지는 $6$입니다.<br>이를 만족시키는 가장 작은 자연수는 $n=6$</div></div>
+<div class="q"><b>28.</b> 정답 <span class="a">$301$</span><div class="s">$\left(\alpha-\beta\right)^{2}=\left(\alpha+\beta\right)^{2}-4\alpha\beta=4a^{2}+4b$<br>$4a^{2}+4b&lt;256$, 즉 $a^{2}+b&lt;64$<br>$a=1,\ 2,\ \cdots$일 때 자연수 $b$의 개수를 차례로 더하면 $62+59+54+47+38+27+14=301$</div></div>
+<div class="q"><b>29.</b> 정답 <span class="a">$32$</span><div class="s">두 그래프 $y=f\left(x\right),\ y=g\left(x\right)$는 $x=-3,\ x=1$에서 만나므로 $h\left(x\right)$의 그래프는 끊어지지 않고, 꺾이는 점은 $\left(-3,\ 1\right),\ \left(1,\ 9\right)$<br>$y$절편이 $11$인 직선의 기울기를 바꾸어 보면 서로 다른 세 점에서 만나는 경우는 두 가지뿐입니다<br>(ⅰ) 직선이 점 $\left(-3,\ 1\right)$을 지날 때 $1=-3m+11$, $m=\frac{10}{3}$<br>(ⅱ) 직선이 $y=g\left(x\right)$에 접할 때 $x^{2}+mx+1=0$의 판별식 $m^{2}-4=0$, $m=\pm 2$이고 세 점에서 만나는 것은 $m=2$<br>$S=\frac{10}{3}+2=\frac{16}{3}$이므로 $6S=32$</div></div>
+<div class="q"><b>30.</b> 정답 <span class="a">$20$</span><div class="s">$x^{2}+x+1=0$의 한 허근을 $\omega$라 하면 $\omega^{2}+\omega+1=0$, $\omega^{3}=1$이고, $P_{n}\left(x\right)$가 $x^{2}+x+1$로 나누어떨어지려면 $P_{n}\left(\omega\right)=0$이어야 한다.<br>$\left(1+\omega\right)\left(1+\omega^{2}\right)=1+\omega+\omega^{2}+\omega^{3}=1$, $1+\omega^{3}=2$이므로 연속한 세 인수 $\left(1+\omega^{3k-2}\right)\left(1+\omega^{3k-1}\right)\left(1+\omega^{3k}\right)$의 곱은 $2$이다.<br>(i) $n=3m$이면 곱은 $2^{m}$, (ii) $n=3m+1$이면 곱은 $2^{m}\left(1+\omega\right)=-2^{m}\omega^{2}$, (iii) $n=3m+2$이면 곱은 $2^{m}\left(1+\omega\right)\left(1+\omega^{2}\right)=2^{m}$<br>(ii)는 허수이므로 $8$이 될 수 없고, (i), (iii)에서 $2^{m}=8$, $m=3$<br>따라서 $n=9$ 또는 $n=11$이고 둘 다 $2$ 이상이므로 합은 $9+11=20$</div></div>
+<h2>닮음 검사(원본 대비)</h2><table><tr><th>번호</th><th>출처</th><th>숫자 겹침</th><th>수 차례 일치</th><th>글자 유사도</th><th>판정</th></tr>
+<tr><td>1</td><td>M1-212-A#1</td><td>25%</td><td>0.29</td><td>0.50</td><td class="">통과</td></tr>
+<tr><td>2</td><td>M1y-111#0</td><td>17%</td><td>0.18</td><td>0.41</td><td class="">통과</td></tr>
+<tr><td>3</td><td>M1-222-A#0</td><td>0%</td><td>0.00</td><td>0.58</td><td class="">통과</td></tr>
+<tr><td>4</td><td>M1-234-A#0</td><td>50%</td><td>0.50</td><td>0.47</td><td class="">통과</td></tr>
+<tr><td>5</td><td>M1y-122#1</td><td>50%</td><td>0.29</td><td>0.53</td><td class="">통과</td></tr>
+<tr><td>6</td><td>M1z-07#1</td><td>0%</td><td>0.00</td><td>0.71</td><td class="">통과</td></tr>
+<tr><td>7</td><td>M1z-22#0</td><td>0%</td><td>0.00</td><td>0.13</td><td class="">통과</td></tr>
+<tr><td>8</td><td>M1y-127#2</td><td>40%</td><td>0.40</td><td>0.60</td><td class="">통과</td></tr>
+<tr><td>9</td><td>M1y-137#1</td><td>50%</td><td>0.50</td><td>0.56</td><td class="">통과</td></tr>
+<tr><td>10</td><td>M1-222-C#0</td><td>67%</td><td>0.67</td><td>0.62</td><td class="">통과</td></tr>
+<tr><td>11</td><td>M1z-08#0</td><td>50%</td><td>0.57</td><td>0.64</td><td class="">통과</td></tr>
+<tr><td>12</td><td>M1-232-A#0</td><td>33%</td><td>0.40</td><td>0.55</td><td class="">통과</td></tr>
+<tr><td>13</td><td>M1-215-A#0</td><td>33%</td><td>0.25</td><td>0.63</td><td class="">통과</td></tr>
+<tr><td>14</td><td>4점 쌍둥이</td><td>33%</td><td>0.40</td><td>0.45</td><td class="">통과</td></tr>
+<tr><td>15</td><td>4점 쌍둥이</td><td>67%</td><td>0.67</td><td>0.48</td><td class="">통과</td></tr>
+<tr><td>16</td><td>4점 쌍둥이</td><td>50%</td><td>0.50</td><td>0.56</td><td class="">통과</td></tr>
+<tr><td>17</td><td>4점 쌍둥이</td><td>40%</td><td>0.15</td><td>0.31</td><td class="">통과</td></tr>
+<tr><td>18</td><td>4점 쌍둥이</td><td>17%</td><td>0.14</td><td>0.31</td><td class="">통과</td></tr>
+<tr><td>19</td><td>4점 쌍둥이</td><td>50%</td><td>0.50</td><td>0.46</td><td class="">통과</td></tr>
+<tr><td>20</td><td>4점 쌍둥이</td><td>50%</td><td>0.33</td><td>0.42</td><td class="">통과</td></tr>
+<tr><td>21</td><td>4점 쌍둥이</td><td>62%</td><td>0.40</td><td>0.39</td><td class="">통과</td></tr>
+<tr><td>22</td><td>M1y-112#1</td><td>0%</td><td>0.00</td><td>0.55</td><td class="">통과</td></tr>
+<tr><td>23</td><td>M1-211-A#1</td><td>33%</td><td>0.22</td><td>0.55</td><td class="">통과</td></tr>
+<tr><td>24</td><td>M1-233-B#2</td><td>67%</td><td>0.67</td><td>0.37</td><td class="">통과</td></tr>
+<tr><td>25</td><td>M1y-136#0</td><td>25%</td><td>0.29</td><td>0.71</td><td class="">통과</td></tr>
+<tr><td>26</td><td>4점 쌍둥이</td><td>80%</td><td>0.55</td><td>0.62</td><td class="">통과</td></tr>
+<tr><td>27</td><td>4점 쌍둥이</td><td>80%</td><td>0.60</td><td>0.78</td><td class="">통과</td></tr>
+<tr><td>28</td><td>4점 쌍둥이</td><td>67%</td><td>0.57</td><td>0.66</td><td class="">통과</td></tr>
+<tr><td>29</td><td>4점 쌍둥이</td><td>44%</td><td>0.11</td><td>0.51</td><td class="">통과</td></tr>
+<tr><td>30</td><td>4점 쌍둥이</td><td>78%</td><td>0.70</td><td>0.54</td><td class="">통과</td></tr>
+</table><h2>덮인 번호 요약</h2><table><tr><th>2·3점 생성기</th><th>4점 쌍둥이</th><th>없음</th><th>없는 번호</th></tr><tr><td>17</td><td>13</td><td>0</td><td></td></tr></table>
+</div><script>function paginate(){const cols=document.querySelector('.cols');if(!cols||document.querySelector('.page'))return;const qs=[...cols.children];const head=[...document.body.children].filter(e=>e!==cols&&e.tagName!=='SCRIPT');document.body.classList.add('a4');let page,colsEl=[],ci=0,n=0;function newPage(){n++;page=document.createElement('div');page.className='page';if(n===1)head.forEach(h=>page.appendChild(h));const b=document.createElement('div');b.className='body';colsEl=[0,1].map(()=>{const c=document.createElement('div');c.className='col';b.appendChild(c);return c});page.appendChild(b);const f=document.createElement('div');f.className='pno';f.textContent=n;page.appendChild(f);document.body.insertBefore(page,cols);ci=0}newPage();for(const q of qs){let c=colsEl[ci];c.appendChild(q);if(c.scrollHeight>c.clientHeight+1&&c.children.length>1){c.removeChild(q);ci++;if(ci>1)newPage();colsEl[ci].appendChild(q)}}cols.remove();const bt=document.createElement('button');bt.id='prt';bt.textContent='🖨 A4 인쇄';bt.onclick=()=>window.print();document.body.appendChild(bt)}window.addEventListener('load',()=>setTimeout(paginate,50));</script>
+<script>document.addEventListener('DOMContentLoaded',()=>renderMathInElement(document.body,{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m}));</script></body></html>

@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>고1 범위 · 행렬 쌍둥이</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+</style></head><body>
+<h1>고1 범위 · 행렬 — 고2 모의고사 쌍둥이 모음</h1><div class="sub">2문항 중 2문항 · 회차·번호는 원본 위치</div><div class="cols">
+<div class="q"><span class="no">1.</span>이차정사각행렬 $A$의 $\left(i,\ j\right)$ 성분 $a_{ij}$가 $a_{ij}=4i+10j\ \left(i=1,\ 2,\ j=1,\ 2\right)$일 때, 행렬 $A$의 모든 성분의 합으로 옳은 것을 고르세요. <span class="pt">[3점]</span> <span class="pt">(2026년 3월 6번 꼴)</span><div class="ch"><span>① $82$</span><span>② $83$</span><span>③ $84$</span><span>④ $85$</span><span>⑤ $86$</span></div></div>
+<div class="q"><span class="no">2.</span>양수 $k$에 대하여 두 행렬 $A$, $B$를 각각 $A=\begin{pmatrix}3&amp;3\\k&amp;3\end{pmatrix}$, $B=\begin{pmatrix}k&amp;3\\3&amp;6\end{pmatrix}$라 합시다. $AB=\begin{pmatrix}a&amp;27\\58&amp;b\end{pmatrix}$일 때, 두 상수 $a$, $b$에 대하여 $a+b$의 값으로 옳은 것을 고르세요. <span class="pt">[3점]</span> <span class="pt">(2026년 3월 10번 꼴)</span><div class="ch"><span>① $67$</span><span>② $68$</span><span>③ $69$</span><span>④ $70$</span><span>⑤ $71$</span></div></div>
+</div><script>function paginate(){const cols=document.querySelector('.cols');if(!cols||document.querySelector('.page'))return;const qs=[...cols.children];const head=[...document.body.children].filter(e=>e!==cols&&e.tagName!=='SCRIPT');document.body.classList.add('a4');let page,colsEl=[],ci=0,n=0;function newPage(){n++;page=document.createElement('div');page.className='page';if(n===1)head.forEach(h=>page.appendChild(h));const b=document.createElement('div');b.className='body';colsEl=[0,1].map(()=>{const c=document.createElement('div');c.className='col';b.appendChild(c);return c});page.appendChild(b);const f=document.createElement('div');f.className='pno';f.textContent=n;page.appendChild(f);document.body.insertBefore(page,cols);ci=0}newPage();for(const q of qs){let c=colsEl[ci];c.appendChild(q);if(c.scrollHeight>c.clientHeight+1&&c.children.length>1){c.removeChild(q);ci++;if(ci>1)newPage();colsEl[ci].appendChild(q)}}cols.remove();const bt=document.createElement('button');bt.id='prt';bt.textContent='🖨 A4 인쇄';bt.onclick=()=>window.print();document.body.appendChild(bt)}window.addEventListener('load',()=>setTimeout(paginate,50));</script>
+<script>document.addEventListener('DOMContentLoaded',()=>renderMathInElement(document.body,{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m}));</script></body></html>

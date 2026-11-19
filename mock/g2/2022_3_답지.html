@@ -1,0 +1,87 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>2022_3 쌍둥이 답지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+</style></head><body>
+<h1>답지와 풀이 — 2022년 3월 쌍둥이</h1><div class="sub">번호별 정답·풀이</div><div class="ans">
+<div class="q"><b>1.</b> 정답 <span class="a">① $-2x^{2}-4xy-y$</span><div class="s">$A-B=\left(-x^{2}-3xy-2y\right)-\left(x^{2}+xy-y\right)$<br>$=-2x^{2}-4xy-y$</div></div>
+<div class="q"><b>2.</b> 정답 <span class="a">⑤ $x&lt;6$</span><div class="s">「$x$는 $6$ 이상이다」의 부정은 「$x$는 $6$보다 작다」<br>따라서 $x&lt;6$</div></div>
+<div class="q"><b>3.</b> 정답 <span class="a">③ $56$</span><div class="s">${}_{8}\mathrm{C}_{2}=28$, $2!=2$이므로 ${}_{8}\mathrm{C}_{2}\times 2!=56$</div></div>
+<div class="q"><b>4.</b> 정답 <span class="a">① $8$</span><div class="s">그림에서 $f\left(15\right)=9$<br>$\left(g\circ f\right)\left(15\right)=g\left(f\left(15\right)\right)=g\left(9\right)=8$</div></div>
+<div class="q"><b>5.</b> 정답 <span class="a">④ $1$</span><div class="s">직선 $3x+2y+1=0$의 기울기는 $-\frac{3}{2}$<br>구하는 직선은 $y-4=-\frac{3}{2}\left(x-\left(-2\right)\right)$<br>$x=0$을 대입하면 $y=1$이므로 $y$절편은 $1$</div></div>
+<div class="q"><b>6.</b> 정답 <span class="a">④ $6$</span><div class="s">$\frac{a+3i}{3-i}=\frac{\left(a+3i\right)\left(3+i\right)}{\left(3-i\right)\left(3+i\right)}=\frac{\left(3a-3\right)+\left(a+9\right)i}{10}$<br>실수부분과 허수부분의 합은 $\frac{4a+6}{10}=3$<br>따라서 $a=6$</div></div>
+<div class="q"><b>7.</b> 정답 <span class="a">① $12$</span><div class="s">홀수가 적힌 카드 $2$장을 일렬로 나열하는 경우의 수는 $2!=2$<br>홀수 카드 사이사이와 양 끝의 $3$개의 자리 중 $2$개를 골라 짝수 카드 $2$장을 나열하는 경우의 수는 ${}_{3}\mathrm{P}_{2}=6$<br>따라서 구하는 경우의 수는 $2\times 6=12$</div></div>
+<div class="q"><b>8.</b> 정답 <span class="a">③ $113$</span><div class="s">내분점의 $x$좌표가 $\frac{5\times 10+10a}{15}=0$이므로 $a=-5$입니다.<br>$\overline{AB}=\sqrt{(10-(-5))^2+(112)^2}=\sqrt{225+12544}=113$입니다.</div></div>
+<div class="q"><b>9.</b> 정답 <span class="a">② $-4\sqrt{2}$</span><div class="s">$\frac{x^{2}}{y}+\frac{y^{2}}{x}=\frac{x^{3}+y^{3}}{xy}$<br>$x^{3}+y^{3}=\left(x+y\right)^{3}-3xy\left(x+y\right)=\left(\sqrt{2}\right)^{3}-3\times \left(-2\right)\times \sqrt{2}=8\sqrt{2}$<br>따라서 구하는 값은 $\frac{8\sqrt{2}}{-2}=-4\sqrt{2}$</div></div>
+<div class="q"><b>10.</b> 정답 <span class="a">④ $3$</span><div class="s">직선의 방정식은 $y=m\left(x+1\right)$<br>$x^{2}+x+4=m\left(x+1\right)$에서 $x^{2}+\left(-m+1\right)x+\left(-m+4\right)=0$<br>접하므로 판별식 $D=\left(-m+1\right)^{2}-4\left(-m+4\right)=0$, $m^{2}+2m-15=0$<br>$\left(m-3\right)\left(m+5\right)=0$이고 $m&gt;0$이므로 $m=3$</div></div>
+<div class="q"><b>11.</b> 정답 <span class="a">⑤ $\left\{y\mid y\ge 4\right\}$</span><div class="s">$x=a$일 때 $y=a+8$이므로 $a+8=-a$, $a=-4$<br>함수는 $y=\sqrt{x+4}+4$이므로 치역은 $\left\{y\mid y\ge 4\right\}$</div></div>
+<div class="q"><b>12.</b> 정답 <span class="a">③ $144$</span><div class="s">실계수 이차방정식의 한 근이 $\frac{b}{16}+8i$이면 그 켤레복소수도 근입니다.<br>두 근의 합은 $\frac{2b}{16}=-a$, 즉 $a=-16$입니다.<br>두 근의 곱은 $\frac{b^2}{256}+64=b$, 정리하면 $\left(b-128\right)^2=0$에서 $b=128$입니다.<br>$b-a=128-(-16)=144$입니다.</div></div>
+<div class="q"><b>13.</b> 정답 <span class="a">⑤ $512$</span><div class="s">$A\cup X=A$이므로 $X\subset A$이고, $B\cap X=\varnothing$이므로 $X$는 $A\cap B$의 원소를 갖지 않습니다.<br>$n\left(A\right)=12$이고 $A\cap B$는 $20$의 배수의 집합이므로 $n\left(A\cap B\right)=3$<br>$X$는 $A-B$의 부분집합이므로 개수는 $2^{12-3}=512$</div></div>
+<div class="q"><b>14.</b> 정답 <span class="a">③ $10$</span><div class="s">$f(1)+3f(3)=5$와 서로 다른 함숫값 조건에서 $(f(1),f(3))=(2, 1)$.<br>역함수 조건은 값 4을 갖는 위치와 값 3를 갖는 위치의 차를 정합니다. 나머지 값의 순열을 대입하면 유일하게 $(f(1),f(2),f(3),f(4),f(5))=(2, 3, 1, 5, 4)$입니다.<br>따라서 $f(4)=5$, $f^{-1}(4)=5$이므로 $f(4)+f^{-1}(4)=10$입니다.</div></div>
+<div class="q"><b>15.</b> 정답 <span class="a">② $1$</span><div class="s">$|x-1|\le3$에서 $-2\le x\le4$<br>$x^2-4x-5=(x+1)(x-5)&gt;0$에서 $x&lt;-1$ 또는 $x&gt;5$<br>두 조건을 만족하는 정수는 $x=-2$뿐이므로 개수는 $1$</div></div>
+<div class="q"><b>16.</b> 정답 <span class="a">③ $48$</span><div class="s">방정식은 $(x-6)(x^{2}-k)=0$으로 인수분해된다. $k&gt;0$이면 세 근이 모두 실수이므로 조건에 맞지 않아 $k&lt;0$이다.<br>따라서 유일한 실근은 $6$이고, $\alpha$는 $\pm i\sqrt{-k}$, $\beta=6$이다. $\alpha^{2}=k=-8\beta=-48$이므로 $k=-48$이다.<br>세 근의 두 근씩 곱한 합은 삼차방정식의 계수에 따라 $-k$이므로 $\alpha\beta+\beta\gamma+\gamma\alpha=48$이다.</div></div>
+<div class="q"><b>17.</b> 정답 <span class="a">③ $35$</span><div class="s">$p$가 모든 실수에서 참이려면 판별식이 $0$ 이하이어야 하므로 $25a^2-4\cdot25\le0$, 즉 $-2\le a\le2$입니다. 가능한 $a$는 5개입니다.<br>$q$가 모든 실수에서 거짓이려면 판별식이 음수여야 하므로 $25b^2-4\cdot64&lt;0$, 즉 $|b|&lt;\frac{2\sqrt{64}}{5}=\frac{16}{5}$입니다.<br>가능한 정수 $b$는 $-3,-4,\ldots,3$이 아니라 정확히 $-3,\ldots,3$으로 7개입니다. 따라서 순서쌍은 $5\times7=35$개입니다.</div></div>
+<div class="q"><b>18.</b> 정답 <span class="a">② $-2$</span><div class="s">$|f(x)|=4$에서 $f(x)=4$ 또는 $f(x)=-4$이고, 각각 $b$와 다르면 해가 하나씩이므로 한 점에서만 만나려면 $b=4$ 또는 $b=-4$<br>$b=4$이면 $f(x)=4$인 $x$가 없어 $f^{-1}(4)$가 정의되지 않으므로 $b=-4$<br>$\frac{a}{x}-4=4$에서 $f^{-1}(4)=\frac{a}{8}$이고 $f(4)-4=\frac{a}{4}-8$<br>$\frac{a}{8}=\frac{a}{4}-8$에서 $a=64$<br>$f(32)=\frac{64}{32}-4=-2$</div></div>
+<div class="q"><b>19.</b> 정답 <span class="a">③ $30$</span><div class="s">$A\cup B^C=(B-A)^C$이므로 k−2=8, 즉 k=10이다.<br>A의 원소 합과 B의 원소 합이 같으므로 A−B의 원소 합은 3+7=10이다. m=8이면 A={1,2,4,8}이고 A−B={2,8}, A∩B={1,4}로 둘 수 있어 조건을 만족한다.<br>따라서 A∪B={1,2,3,4,7,8}이고 그 여집합은 {5,6,9,10}이다. 합은 30이다.</div></div>
+<div class="q"><b>20.</b> 정답 <span class="a">① ㄱ</span><div class="s">$A(-\frac{3}{5},\ -\frac{6}{5})$, $B(-1,\ 0)$, $C(3,\ 0)$입니다.<br>ㄱ. 두 직선의 법선벡터의 내적은 $3\times1+1\times\left(-3\right)=0$이므로 수직이고 옳습니다.<br>외접원은 중심 $\left(1,\ 0\right)$, 반지름의 제곱 $4$입니다.<br>(나)에서 밑변 $BC$가 같으므로 $P$의 $y$좌표는 $3\times\frac{6}{5}=\frac{18}{5}$이고, 무게중심 $Q$의 $y$좌표는 $\frac{6}{5}$입니다. 따라서 ㄴ은 거짓입니다.<br>$Q$가 외접원 위에 있고 $P$가 제$1$사분면에 있으려면 $Q$의 $x$좌표는 $\frac{13}{5}$, $P\left(\frac{29}{5},\ \frac{18}{5}\right)$이므로 합은 $\frac{47}{5}$, ㄷ은 거짓입니다.<br>따라서 옳은 것은 ㄱ</div></div>
+<div class="q"><b>21.</b> 정답 <span class="a">④ $\frac{88}{9}$</span><div class="s">점 $P$가 변 $CD$ 위에 있을 때 직선 $FA$까지의 거리가 $\sqrt{3}$으로 가장 크므로 (가)$=\frac{1}{2}\times1\times\sqrt{3}=\frac{\sqrt{3}}{2}$<br>$0&lt;x\le2$에서 점 $P$와 직선 $FA$ 사이의 거리는 $\frac{\sqrt{3}}{2}x$이므로 $\frac{\sqrt{3}}{2}b=\frac{1}{2}$에서 (나)$=\frac{\sqrt{3}}{3}$ (나머지 해 $5-\frac{\sqrt{3}}{3}$은 (가)보다 큼)<br>$f(a)=\frac{\sqrt{3}}{3}$이면 거리가 $\frac{2\times\frac{\sqrt{3}}{3}}{1}=\frac{2\sqrt{3}}{3}$이므로 $\frac{\sqrt{3}}{2}a=\frac{2\sqrt{3}}{3}$ 또는 $\frac{\sqrt{3}}{2}(5-a)=\frac{2\sqrt{3}}{3}$, 즉 $a=\frac{4}{3}$ 또는 $a=\frac{11}{3}$<br>(다)$=\frac{4}{3}\times\frac{11}{3}=\frac{44}{9}$<br>$\frac{r}{p\times q}=\frac{\frac{44}{9}}{\frac{\sqrt{3}}{2}\times\frac{\sqrt{3}}{3}}=\frac{88}{9}$</div></div>
+<div class="q"><b>22.</b> 정답 <span class="a">$7$</span><div class="s">$A\cup B=\left\{7,\ 8,\ 9\right\}$에서 $7\in B$<br>$a=7$이면 $B=\left\{7,\ 8\right\}$<br>따라서 $a=7$</div></div>
+<div class="q"><b>23.</b> 정답 <span class="a">$15$</span><div class="s">점 $\left(6,\ 5\right)$를 직선 $y=x$에 대하여 대칭이동하면 $\left(5,\ 6\right)$<br>$y$축의 방향으로 $-3$만큼 평행이동하면 $\left(5,\ 3\right)$<br>따라서 $pq=15$</div></div>
+<div class="q"><b>24.</b> 정답 <span class="a">$0$</span><div class="s">양변에 $x=-2$를 대입하면 $-4=-2c$이므로 $c=2$<br>양변에 $x=0$을 대입하면 $-6=2b$이므로 $b=-3$<br>양변의 $x^{2}$의 계수를 비교하면 $a=1$<br>따라서 $a+b+c=1-3+2=0$</div></div>
+<div class="q"><b>25.</b> 정답 <span class="a">$4$</span><div class="s">원의 중심이 제$2$사분면에 있고 두 축에 동시에 접하므로 중심을 $\left(-r,\ r\right)$ $\left(r&gt;0\right)$이라 하면 반지름의 길이는 $r$<br>중심이 곡선 위에 있으므로 $r=r^{2}+2r-6$, $r=2$<br>원의 방정식은 $\left(x+2\right)^{2}+\left(y-2\right)^{2}=4$, 즉 $x^{2}+y^{2}+4x-4y+4=0$<br>따라서 $a+b+c=4-4+4=4$</div></div>
+<div class="q"><b>26.</b> 정답 <span class="a">② $\frac{137}{4}$</span><div class="s">포물선 $f(x)=x^{2}-12x+8=(x-6)^{2}-28$의 꼭짓점의 $x$좌표는 $6$이므로, $[a,\infty)$에서 일대일대응이 되려면 $a\ge6$이고 이때 치역은 $[f(a),\infty)$이므로 $b=f(a)$이다.<br>$a-b=a-f(a)=-a^{2}+13a-8=-\left(a-\frac{13}{2}\right)^{2}+\frac{137}{4}$이다.<br>$\frac{13}{2}\ge6$이므로 최댓값은 $a=\frac{13}{2}$일 때 $\frac{137}{4}$이다.</div></div>
+<div class="q"><b>27.</b> 정답 <span class="a">③ $17$</span><div class="s">두 원의 중심 사이 거리는 $r$이므로 $a^2+b^2=r^2$이다. 같은 반지름인 두 원에 공통 접하는 직선에서 두 중심의 부호 있는 거리는 같다. 부호가 다르면 중심 간 거리의 직선 법선 방향 성분이 $2r$이어야 하지만 실제 중심 거리는 $r$이므로 불가능하다.<br>따라서 중심 이동 벡터 $(a,b)$는 직선의 법선 벡터 $(8,-15)$와 수직이어서 $8a-15b=0$이다. 그러므로 $(a,b,r)=(15t,8t,17t)$이다.<br>중심 $(4,0)$에서 직선까지의 거리는 $\frac{|32+257|}{17}=17$이므로 $r=17$이다.</div></div>
+<div class="q"><b>28.</b> 정답 <span class="a">③ $14$</span><div class="s">삼각형 수가 k+1일 때 세 정사각형에는 1,…,k를 쓴다.<br>조건을 만족하는 배열은 k(k−1)^2개이다.<br>k=1,2,3에 대해 0+2+12=14이다.</div></div>
+<div class="q"><b>29.</b> 정답 <span class="a">$168$</span><div class="s">나머지의 차수 조건과 이차항 소거에서 g(x)=x+c이다. 나눗셈 식을 g로 나눈 나머지는 x²(x+7)−x²=x²(x+6)이다.<br>g=x 또는 g=x+6이어야 한다. f(0)≠0이므로 g=x+6이다.<br>f(2)=(4+8)·9+(64−4)=108+60=168이다.</div></div>
+<div class="q"><b>30.</b> 정답 <span class="a">$55$</span><div class="s">u=x−α, d=β−α라 두면 f−5=3u(u−d), g−5=u²이거나 그 반대 배치이다. 반대 배치의 다른 교점은 u=−d/2이므로 β+2일 수 없다. 첫 배치에서 다른 교점은 u=3d/2이고 3d/2=d+2이므로 d=4이다.<br>그러므로 f=5+3u(u−4), g=5+u²이며 f=g의 근은 u=0,6이다. 공통근 u=6에서 k=5+36=41이고, u=0은 k=5에서만 중복되어 근이 세 개가 되지 않는다.<br>k=41일 때 f=k의 근은 u=6,−2이고 g=k의 근은 u=±6이므로 세 근의 u합은 −2이다. 3α−2=13에서 α=5, β=9이다. 따라서 α+β+k=55이다.</div></div>
+<h2>닮음 검사(원본 대비)</h2><table><tr><th>번호</th><th>출처</th><th>숫자 겹침</th><th>수 차례 일치</th><th>글자 유사도</th><th>연산·부등호</th><th>판정</th></tr>
+<tr><td>1</td><td>G2H-01#0</td><td>100%</td><td>1.00</td><td>0.55</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>2</td><td>G2H-03b#6</td><td>0%</td><td>0.00</td><td>0.43</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>3</td><td>G2H-05#7</td><td>0%</td><td>0.00</td><td>0.43</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>4</td><td>G2f-10#0</td><td>0%</td><td>0.00</td><td>0.34</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>5</td><td>G2H-05#2</td><td>67%</td><td>0.67</td><td>0.55</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>6</td><td>G2H-02b#0</td><td>67%</td><td>0.67</td><td>0.75</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>7</td><td>G2M10-02#0</td><td>67%</td><td>0.55</td><td>0.79</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>8</td><td>G2H-05b#5</td><td>20%</td><td>0.00</td><td>0.46</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>9</td><td>G2M8-06#0</td><td>100%</td><td>1.00</td><td>0.75</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>10</td><td>G2H-02b#7</td><td>100%</td><td>1.00</td><td>0.63</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>11</td><td>G2H-04b#8</td><td>0%</td><td>0.00</td><td>0.69</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>12</td><td>G2H-02b#1</td><td>33%</td><td>0.00</td><td>0.66</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>13</td><td>G2H-03b#15</td><td>33%</td><td>0.33</td><td>0.64</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>14</td><td>4점 쌍둥이</td><td>76%</td><td>0.70</td><td>0.62</td><td></td><td class="">통과</td></tr>
+<tr><td>15</td><td>4점 쌍둥이</td><td>40%</td><td>0.33</td><td>0.68</td><td></td><td class="">통과</td></tr>
+<tr><td>16</td><td>4점 쌍둥이</td><td>40%</td><td>0.00</td><td>0.67</td><td></td><td class="">통과</td></tr>
+<tr><td>17</td><td>4점 쌍둥이</td><td>33%</td><td>0.00</td><td>0.66</td><td></td><td class="">통과</td></tr>
+<tr><td>18</td><td>4점 쌍둥이</td><td>29%</td><td>0.00</td><td>0.71</td><td></td><td class="">통과</td></tr>
+<tr><td>19</td><td>4점 쌍둥이</td><td>20%</td><td>0.29</td><td>0.37</td><td></td><td class="">통과</td></tr>
+<tr><td>20</td><td>4점 쌍둥이</td><td>62%</td><td>0.15</td><td>0.58</td><td></td><td class="">통과</td></tr>
+<tr><td>21</td><td>4점 쌍둥이</td><td>50%</td><td>0.18</td><td>0.47</td><td></td><td class="">통과</td></tr>
+<tr><td>22</td><td>G2H-03b#13</td><td>33%</td><td>0.36</td><td>0.57</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>23</td><td>G2H-05#4</td><td>33%</td><td>0.33</td><td>0.55</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>24</td><td>G2M10-01#1</td><td>60%</td><td>0.60</td><td>0.54</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>25</td><td>G2M10-01#8</td><td>75%</td><td>0.80</td><td>0.43</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>26</td><td>4점 쌍둥이</td><td>0%</td><td>0.00</td><td>0.60</td><td></td><td class="">통과</td></tr>
+<tr><td>27</td><td>4점 쌍둥이</td><td>40%</td><td>0.29</td><td>0.36</td><td></td><td class="">통과</td></tr>
+<tr><td>28</td><td>4점 쌍둥이</td><td>100%</td><td>0.67</td><td>0.14</td><td></td><td class="">통과</td></tr>
+<tr><td>29</td><td>4점 쌍둥이</td><td>75%</td><td>0.50</td><td>0.33</td><td></td><td class="">통과</td></tr>
+<tr><td>30</td><td>4점 쌍둥이</td><td>67%</td><td>0.40</td><td>0.46</td><td></td><td class="">통과</td></tr>
+</table><h2>덮인 번호 요약</h2><table><tr><th>2·3점 생성기</th><th>4점 쌍둥이</th><th>없음</th><th>없는 번호</th></tr><tr><td>17</td><td>13</td><td>0</td><td></td></tr></table>
+</div><script>function paginate(){const cols=document.querySelector('.cols');if(!cols||document.querySelector('.page'))return;const qs=[...cols.children];const head=[...document.body.children].filter(e=>e!==cols&&e.tagName!=='SCRIPT');document.body.classList.add('a4');let page,colsEl=[],ci=0,n=0;function newPage(){n++;page=document.createElement('div');page.className='page';if(n===1)head.forEach(h=>page.appendChild(h));const b=document.createElement('div');b.className='body';colsEl=[0,1].map(()=>{const c=document.createElement('div');c.className='col';b.appendChild(c);return c});page.appendChild(b);const f=document.createElement('div');f.className='pno';f.textContent=n;page.appendChild(f);document.body.insertBefore(page,cols);ci=0}newPage();for(const q of qs){let c=colsEl[ci];c.appendChild(q);if(c.scrollHeight>c.clientHeight+1&&c.children.length>1){c.removeChild(q);ci++;if(ci>1)newPage();colsEl[ci].appendChild(q)}}cols.remove();const bt=document.createElement('button');bt.id='prt';bt.textContent='🖨 A4 인쇄';bt.onclick=()=>window.print();document.body.appendChild(bt)}window.addEventListener('load',()=>setTimeout(paginate,50));</script>
+<script>document.addEventListener('DOMContentLoaded',()=>renderMathInElement(document.body,{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m}));</script></body></html>

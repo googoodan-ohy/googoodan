@@ -1,0 +1,87 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>2026_9 쌍둥이 답지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<style>
+body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fff;color:#111;margin:0 auto;max-width:210mm;padding:16px;font-size:15px;line-height:1.95}
+h1{text-align:center;font-size:20px;margin:6px 0 2px} .sub{text-align:center;color:#555;margin-bottom:10px;border-bottom:2px solid #222;padding-bottom:6px}
+.cols{column-count:2;column-gap:40px;column-rule:1px solid #bbb}
+.q{break-inside:avoid;margin:0 0 96px} .chs>span{margin-right:14px} .no{font-weight:bold;margin-right:4px} .pt{color:#444;font-size:12px}
+.fig{margin:4px 0 6px;text-align:center} .fig svg{max-width:100%;height:auto}
+.ch{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 18px} .none{color:#b00;border:1px dashed #b00;padding:6px}
+.ans .q{margin-bottom:14px} .s{background:#f5f6f8;padding:6px 8px;margin-top:4px;font-size:13px} .a{color:#b22;font-weight:bold}
+table{border-collapse:collapse;margin:10px 0;font-size:13px} td,th{border:1px solid #999;padding:3px 8px} .flag{color:#b00;font-weight:bold}
+@media (max-width:700px){.cols{column-count:1}}
+/* A4 한 장씩: paginate() 가 문항을 장·단으로 나눈다 */
+body.a4{max-width:none;padding:12px 0;background:#8a8f98}
+.page{width:210mm;height:297mm;box-sizing:border-box;padding:14mm 12mm;margin:0 auto 14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;flex-direction:column;overflow:hidden}
+.page .body{flex:1;display:flex;gap:10mm;min-height:0} .page .col{flex:1;min-width:0;overflow:hidden} .page .col+.col{border-left:1px solid #bbb;padding-left:10mm}
+.page .pno{text-align:center;font-size:11px;color:#666;margin-top:4mm}
+#prt{position:fixed;top:12px;right:16px;z-index:50;padding:8px 18px;font:700 15px sans-serif;background:#1565c0;color:#fff;border:0;border-radius:6px;cursor:pointer}
+@media print{@page{size:A4;margin:0} body.a4{background:#fff;padding:0} .page{margin:0;box-shadow:none;break-after:page} #prt{display:none}}
+</style></head><body>
+<h1>답지와 풀이 — 2026년 9월 쌍둥이</h1><div class="sub">번호별 정답·풀이</div><div class="ans">
+<div class="q"><b>1.</b> 정답 <span class="a">④ $4$</span><div class="s">$\left(2^{\frac{1}{4}}\right)^{8}=2^{\frac{1}{4}\times 8}$<br>$=2^{2}=4$</div></div>
+<div class="q"><b>2.</b> 정답 <span class="a">② $2$</span><div class="s">$\left(2^{\frac{1}{2}}\right)^{2}=2^{\frac{1}{2}\times 2}$<br>$=2^{1}=2$</div></div>
+<div class="q"><b>3.</b> 정답 <span class="a">② $3$</span><div class="s">공비를 $r$라 하면 $a_{2}a_{3}=3r\times 3r^{2}=9r^{3}=27$이므로 $r^{3}=3$<br>$\frac{a_{5}}{a_{2}}=\frac{3r^{4}}{3r}=r^{3}=3$</div></div>
+<div class="q"><b>4.</b> 정답 <span class="a">① $-\frac{112}{113}$</span><div class="s">$0&lt;\theta&lt;\frac{\pi}{2}$ 인 $\cos\theta=\sqrt{1-\left(\frac{15}{113}\right)^2}=\frac{112}{113}$<br>$\cos\left(\pi+\theta\right)=-\cos\theta=-\frac{112}{113}$</div></div>
+<div class="q"><b>5.</b> 정답 <span class="a">③ $2$</span><div class="s">$x\to -4^{+}$일 때 $f\left(x\right)\to 6$<br>$x\to 4^{+}$일 때 $f\left(x\right)\to 4$<br>따라서 구하는 값은 $6-4=2$</div></div>
+<div class="q"><b>6.</b> 정답 <span class="a">③ $3$</span><div class="s">$8^{x}=2^{3x}$, $32\times 2^{x}=2^{x+5}$이므로 $2^{3x}&lt;2^{x+5}$<br>밑 $2$가 $1$보다 크므로 $3x&lt;x+5$, $x&lt;\frac{5}{2}$<br>따라서 자연수 $x$의 값의 합은 $1+2=3$</div></div>
+<div class="q"><b>7.</b> 정답 <span class="a">② $\frac{1}{15}$</span><div class="s">두 점을 지나는 직선의 기울기는 $\frac{\log_{2}\left(a+1\right)-\log_{2}a}{1}=4$<br>$\log_{2}\frac{a+1}{a}=4$이므로 $\frac{a+1}{a}=2^{4}=16$<br>$16a=a+1$이므로 $a=\frac{1}{15}$</div></div>
+<div class="q"><b>8.</b> 정답 <span class="a">① $9$</span><div class="s">$S_{4}=S_{6}$에서 $S_{6}-S_{4}=a_{5}+a_{6}=0$<br>공차를 $d$라 하면 $2a_{1}+9d=0$, $a_{1}+d=7$<br>두 식을 연립하면 $d=-2$, $a_{1}=9$</div></div>
+<div class="q"><b>9.</b> 정답 <span class="a">① $1190$</span><div class="s">$\log_{5}a\times\log_{b}5=\log_{b}a=2$이므로 $a=b^{2}$, $\log_{a}b=\frac{1}{2}$<br>$\log_{4}b^2=\log_{4}\left(b+544\right)+\frac{1}{2}$에서 $\log_{4}\frac{b^2}{b+544}=\frac{1}{2}$, $\frac{b^2}{b+544}=2$<br>$b^2-2b-1088=0$이고 $b&gt;1$이고이로 $b=34$, $a=1156$<br>따라서 $a+b=1190$</div></div>
+<div class="q"><b>10.</b> 정답 <span class="a">② $24$</span><div class="s">사인법칙에 의하여 $a:b:c=\sin A:\sin B:\sin C$이므로 $\sin^{2}A+\sin^{2}B=\sin^{2}C$에서 $a^{2}+b^{2}=c^{2}$, 곧 $C=\frac{\pi}{2}$<br>$c=2R=10$이고 $a:b=4:3$이므로 $a=8$, $b=6$<br>따라서 삼각형 $\mathrm{ABC}$의 넓이는 $\frac{1}{2}\times 8\times 6=24$</div></div>
+<div class="q"><b>11.</b> 정답 <span class="a">② $1$</span><div class="s">$\frac12\cdot 3\cdot\left(2^{3}-a\right)=\frac{45}{4}$, so $a=\frac{1}{2}$<br>$A=(-1,0)$, $B=(0,1-a)$, $D=(3,0)$; $[BAD]=\frac12(3+1)(1-a)=1$</div></div>
+<div class="q"><b>12.</b> 정답 <span class="a">③ $125$</span><div class="s">$\frac{1}{\log_n 125}=\log_{125}n=\frac{1}{3}\log_{5}n,\quad \log_{5}n+\frac{1}{\log_n 125}=\frac{4}{3}\log_{5}n$<br>$\frac{4}{3}\log_{5}n$이 자연수일 때 이를 $k$라 두면 $\log_{5}n=\frac{3k}{3+1}$. $5$가 소수이고 $n$이 자연수이므로 이 지수는 정수이며, $3$과 $3+1$은 서로소이므로 $\log_{5}n$은 $3$의 배수이다. 따라서 $n=5^{3}$.<br>따라서 모든 $n$의 값의 합은 $125$.</div></div>
+<div class="q"><b>13.</b> 정답 <span class="a">③ $\frac{\sqrt{6}}{6}$</span><div class="s">$\overline{\mathrm{BD}}=x$, $\overline{\mathrm{DC}}=2x$라 하고 $\cos\left(\angle\mathrm{ADB}\right)=-\cos\left(\angle\mathrm{ADC}\right)$를 이용하면<br>$\frac{21+x^{2}-25}{2\times \sqrt{21}\times x}=-\frac{21+4x^{2}-49}{2\times \sqrt{21}\times 2x}$, $x^{2}=6$<br>$\overline{\mathrm{BC}}=3\sqrt{6}$이므로 $\cos\left(\angle\mathrm{ABC}\right)=\frac{5^{2}+\left(3\sqrt{6}\right)^{2}-7^{2}}{2\times 5\times 3\sqrt{6}}=\frac{\sqrt{6}}{6}$</div></div>
+<div class="q"><b>14.</b> 정답 <span class="a">⑤ $11$</span><div class="s">$n&lt;7$이면 $\log_{2}\frac{n}{7}&lt;0$, $n=7$이면 $0$, $n&gt;7$이면 $\log_{2}\frac{n}{7}&gt;0$<br>$n$이 홀수이면 실수인 $n$제곱근은 항상 $1$개입니다. $n$이 짝수이면 양수의 실수인 $n$제곱근은 $2$개, 음수의 실수인 $n$제곱근은 $0$개이고, $0$의 $n$제곱근은 $0$ 하나뿐입니다.<br>따라서 $f(2)=0$, $f(3)=1$, $f(4)=0$, $f(5)=1$, $f(6)=0$, $f(7)=1$, $f(8)=2$, $f(9)=1$, $f(10)=2$, $f(11)=1$, $f(12)=2$<br>$\sum_{n=2}^{12}f(n)=0+1+0+1+0+1+2+1+2+1+2=11$</div></div>
+<div class="q"><b>15.</b> 정답 <span class="a">② $2-\frac{\sqrt{2}}2$</span><div class="s">교점의 좌표는 $(\sqrt{n}/4,n/4)$이므로 $S_n=n^{3/2}/32$입니다.<br>합은 망원합으로 $S_{16}-S_8$입니다.<br>$S_{16}=2$, $S_8=\sqrt{2}/2$이므로 답은 $2-\sqrt{2}/2$입니다.</div></div>
+<div class="q"><b>16.</b> 정답 <span class="a">③ $\frac{4}{3}$</span><div class="s">점 $B$의 $x$좌표를 $p$라 하면 $0\le b\pi x\le2\pi$에서 그래프는 직선 $x=\frac{1}{b}$에 대하여 대칭이므로 점 $C$의 $x$좌표는 $\frac{2}{b}-p$<br>$\overline{OB}=\overline{BC}$에서 $p=\frac{2}{b}-2p$, $p=\frac{2}{3b}$이므로 $b\pi p=\frac{2\pi}{3}$<br>$f(p)=a\cos\frac{2\pi}{3}+\frac{1}{3}=-\frac{a}{2}+\frac{1}{3}=0$이므로 $a=\frac{2}{3}$<br>$A(0,\ 1)$, $\overline{BC}=\frac{2}{3b}$이므로 넓이는 $\frac{1}{2}\times\frac{2}{3b}\times1=\frac{1}{3}\times\frac{1}{b}=\frac{1}{2}$, $b=\frac{2}{3}$<br>$a+b=\frac{2}{3}+\frac{2}{3}=\frac{4}{3}$</div></div>
+<div class="q"><b>17.</b> 정답 <span class="a">③ $9/2$</span><div class="s">교점에서 $x^2=2(t+8)(t-1)$이고 $g=x/[2(t-1)]$입니다.<br>$ (t-1)(f+g)^2=(t+8)(2t-1)^2/2$로 정리됩니다.<br>따라서 극한은 $9/2$입니다.</div></div>
+<div class="q"><b>18.</b> 정답 <span class="a">③ $86$</span><div class="s">합의 차를 취하면 $a_{n+1}+2a_n=3\cdot2\cdot3^n=6\cdot3^n$입니다.<br>$n=2$를 대입하면 $4+a_2=2a_2/3+12$, 따라서 $a_2=24$입니다.<br>$a_2+2a_1=32$이고 두 번째 항은 $6\cdot9=54$이므로 합은 $86$입니다.</div></div>
+<div class="q"><b>19.</b> 정답 <span class="a">② $\frac72\log_3 6$</span><div class="s">$f(x)=5$의 두 해는 $3^x=12$ 또는 $3^x=2$에서 얻고, 두 해의 차는 $d=\log_3 6$입니다.<br>두 해를 $u,u+d$라 하면 전체 해 집합은 $\{u,u+d,u+k,u+d+k\}$입니다. 등차수열이 되는 $k$는 $d/2,d,2d$입니다.<br>따라서 합은 $7d/2=(7/2)\log_3 6$입니다.</div></div>
+<div class="q"><b>20.</b> 정답 <span class="a">③ $16\sqrt3$</span><div class="s">기존 구성을 길이 2배로 확대했으므로 각과 변의 비는 유지됩니다.<br>넓이는 길이 배율의 제곱인 4배가 되고, 원래 대응 넓이 $4\sqrt3$의 4배는 $16\sqrt3$입니다.</div></div>
+<div class="q"><b>21.</b> 정답 <span class="a">② $42$</span><div class="s">공차가 음수이므로 $b_{2}=0$이면 $a_{1}$, $a_{2}$의 부호가 모두 같아 $a_{2}&gt;0$이고, $b_{3}\ne0$이면 $a_{3}&lt;0$입니다.<br>$S=a_{1}+a_{2}$, $N_{j}=|a_{3}|+\cdots+|a_{2+j}|$라 하면 $b_{2+j}=(S+N_{j})-|S-N_{j}|$이므로 $N_{j}\le S$이면 $b_{2+j}=2N_{j}$, $N_{j}&gt;S$이면 $b_{2+j}=2S$입니다.<br>$|a_{3}|&lt;|a_{4}|&lt;\cdots$이므로 $N_{j}$의 증가량이 점점 커집니다. $N_{j}&lt;S$인 $j$의 개수로 나누면, $1$개이면 $2N_{1}$, $2S$, $2S$가 되어 $N_{1}=S$이어야 하므로 모순이고, $3$개이면 $N_{2}-N_{1}&lt;N_{3}-N_{2}$라 등차가 될 수 없습니다. 따라서 $N_{1}\ge S$ 또는 $N_{1}&lt;N_{2}&lt;S\le N_{3}$ ($2N_{2}=N_{1}+S$)입니다. $n$이 충분히 크면 $b_{n}=2S$이므로 $b_{8}=78$에서 $S=39$<br>$S=2a_{1}+d=39$ ($d&lt;0$, $a_{2}&gt;0&gt;a_{3}$)를 만족시키는 정수 $(a_{1},\ d)$를 위 두 경우에 넣어 보면, 조건을 모두 만족시키는 것은 $a_{1}=27$, $d=-15$뿐입니다. 이때 $a_{3}=-3$, $N_{1}=3$, $N_{2}=21$, $N_{3}=54$이고 $N_{1}&lt;N_{2}&lt;S\le N_{3}$이면 $b_{3}=2N_{1}$, $b_{4}=2N_{2}$, $b_{5}=2S$이고 등차 조건은 $2N_{2}=N_{1}+S$가 $42=3+39$로 성립합니다<br>수열은 $27, 12, -3, -18, -33, -48, -63, -78$, …이고 $b_{n}$을 차례로 구하면 $b_{3}=6$, $b_{4}=42$, $b_{5}=78$, $b_{6}=78$, $b_{7}=78$, $b_{8}=78$<br>따라서 $b_{4}=42$</div></div>
+<div class="q"><b>22.</b> 정답 <span class="a">③ $3$</span><div class="s">우변을 밑이 $3$인 거듭제곱으로 나타내면 지수는 $-2x$입니다.<br>지수를 비교하여 $x-9=-2x$를 풀면 $x=3$입니다.</div></div>
+<div class="q"><b>23.</b> 정답 <span class="a">$6$</span><div class="s">$S=\frac{1}{2}rl=\frac{1}{2}\times 4\times 3\pi$<br>$=6\pi$이므로 $a=6$</div></div>
+<div class="q"><b>24.</b> 정답 <span class="a">$12$</span><div class="s">#$\sum_{k=1}^{12}\left(4a_k+4\right)=4\sum_{k=1}^{12}a_k+4\times 12=96$<br>#$4\sum_{k=1}^{12}a_k=48$이므로 $\sum_{k=1}^{12}a_k=12$</div></div>
+<div class="q"><b>25.</b> 정답 <span class="a">$4$</span><div class="s">$\frac{\pi}{3}\le x\le\frac{4}{3}\pi$에서 $-1\le\cos x\le\frac{1}{2}$<br>$a&gt;0$이므로 최댓값은 $2a\times\frac{1}{2}+a=2a$, 최솟값은 $2a\times\left(-1\right)+a=-a$<br>$2a\times\left(-a\right)=-2a^{2}=-32$이므로 $a^{2}=16$, $a=4$</div></div>
+<div class="q"><b>26.</b> 정답 <span class="a">$-64$</span><div class="s">공통 첫째항을 $A$, 공비를 각각 $r,s&gt;0$라 하면 $s/r=t$이고 $1+t+t^2=91$이므로 $t=9$. 또 $Ar^6=As^2$에서 $r^4=t^2$, 따라서 $r=3$, $s=27$이다.<br>$\sum_{k=1}^{3}\frac{a_{k+1}}{b_k}=r\left(1+\frac1t+\frac1{t^2}\right)=3\left(1+\frac19+\frac1{81}\right)=\frac{91}{27}$. 따라서 $q-p=27-91=-64$이다.</div></div>
+<div class="q"><b>27.</b> 정답 <span class="a">$6$</span><div class="s">$\sin ax=\frac12$의 첫 위상은 $\pi/6$, 마지막 위상은 $5a\pi-\pi/6$이다.<br>두 극단 $x$좌표의 차는 $5\pi-\frac{\pi}{3a}=\frac{14\pi}{3}$이므로 $a=1$.<br>$4a+2=6$이다.</div></div>
+<div class="q"><b>28.</b> 정답 <span class="a">③ $21$</span><div class="s">$z=2^{x_A-7}&gt;0$, $t=x_B-x_A$라 두면 두 곡선의 기울기 $-1$인 평행한 변 조건에서 $t=z(2^t-1)$이다. 또한 $AC$의 가로 길이는 $s=(12-7)+z-\log_2z$이다.<br>중점 $(X,Y)$가 역함수 그래프 위에 있으므로 $X=2^{{Y-{m}}}+{c}$. 상수들에서 $({n}-{m})={c}-{d}$이고 이를 대입하면 $2^r=r+1$, $r=(z+\log_2z-1)/2$를 얻는다. 따라서 $r=0$ 또는 $1$, 즉 $z=1$ 또는 $2$.<br>$t=z(2^t-1)$에서 $z=1$이면 양의 해 $t=1$, $z=2$이면 해 $t=-1$이다. 조건 $x_A&lt;x_B$는 $t&gt;0$이므로 $z=t=1$. 직사각형 넓이는 $2st=2(({n}-{m})+1)$로 {area}와 일치한다. 따라서 $y_A+y_B=(1+{c})+(1+{c}+1)= {ans}$.</div></div>
+<div class="q"><b>29.</b> 정답 <span class="a">$61$</span><div class="s">$k&gt;3(40-1)$이면 $a_1$ 이후 39번의 전이 동안 $k$를 더한 뒤 4씩 빼도 0으로 돌아오지 않는다. 따라서 $1\le k\le156$만 확인하면 된다.<br>점화식을 차례로 적용하면 조건을 만족하는 $k$는 $11,13,15,26,30,34,52,56,60,64,68,72$이다. 각 경우의 0 출현 횟수는 초기항을 포함해 정확히 3이며, 나머지 $1\le k\le156$에서는 3이 아니다.<br>최댓값은 72, 최솟값은 11이므로 차는 61이다.</div></div>
+<div class="q"><b>30.</b> 정답 <span class="a">$28$</span><div class="s">$f(1)=-9(1-b)&gt;0$이므로 $b&gt;1$이고, $f(k)=0$인 $0$이 아닌 $k$는 $-4$, $b$와 ($a&lt;0$일 때) $a$입니다. 집합의 원소는 이 값들과 그 부호를 바꾼 값이므로 원소가 $4$개인 경우는 $a\ge0$, $b\ne4$인 경우와 $a&lt;0$이고 $|a|$, $4$, $b$ 중 두 값만 서로 같은 경우($b=4$ 또는 $b=-a$ 또는 $a=-4$)입니다.<br>(나)를 만족시키는 $\alpha$는 $t=\alpha$에서 $g(t)$의 값이 바뀌는 값(꼭짓점의 $y$좌표 또는 $x\to0-$일 때 $f(x)$의 극한값 $-4a$)이어야 합니다. 경우마다 $g(\alpha)$, $g(-\alpha)$와 오른쪽 극한값을 비교하면 $\alpha$가 $x\ge0$ 부분의 꼭짓점의 $y$좌표이고 $-\alpha$가 $x&lt;0$ 부분의 꼭짓점의 $y$좌표일 때만 성립합니다. 이때 $b=-a$이면 $\frac{(b-4)^{2}}{4}=9\times\frac{b^{2}}{4}$에서 $b=1\le1$이 되어 $b&gt;1$에 맞지 않고, $a\ge0$이거나 $a=-4$인 경우도 성립하지 않으므로 $b=4$입니다.<br>$b=4$이면 $x\ge0$ 부분의 꼭짓점의 $y$좌표는 $f\left(2\right)=9\times4=36$이고, $x&lt;0$ 부분의 꼭짓점의 $y$좌표는 $-\frac{(a+4)^{2}}{4}$입니다.<br>$\frac{(a+4)^{2}}{4}=36$이고 $a&lt;-4$이므로 $a+4=-12$, $a=-16$입니다.<br>$f(-18)=(-18+4)(-18-(-16))=(-14)\times(-2)=28$입니다.</div></div>
+<h2>닮음 검사(원본 대비)</h2><table><tr><th>번호</th><th>출처</th><th>숫자 겹침</th><th>수 차례 일치</th><th>글자 유사도</th><th>연산·부등호</th><th>판정</th></tr>
+<tr><td>1</td><td>G2M9-17#4</td><td>33%</td><td>0.50</td><td>0.64</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>2</td><td>G2M9-17#4</td><td>0%</td><td>0.00</td><td>0.33</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>3</td><td>G2M9-17#6</td><td>71%</td><td>0.00</td><td>0.56</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>4</td><td>G2M9-17#7</td><td>50%</td><td>0.33</td><td>0.74</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>5</td><td>G2f-08#0</td><td>0%</td><td>0.00</td><td>0.18</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>6</td><td>G2M9-17#8</td><td>67%</td><td>0.67</td><td>0.66</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>7</td><td>G2M9-18#0</td><td>50%</td><td>0.00</td><td>0.62</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>8</td><td>G2M9-18#1</td><td>60%</td><td>0.00</td><td>0.59</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>9</td><td>G2M9-18#2</td><td>86%</td><td>0.67</td><td>0.68</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>10</td><td>G2M9-18#3</td><td>33%</td><td>0.40</td><td>0.68</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>11</td><td>G2M9-18#4</td><td>57%</td><td>0.44</td><td>0.58</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>12</td><td>G2M9-18#5</td><td>40%</td><td>0.33</td><td>0.71</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>13</td><td>G2M9-18#6</td><td>60%</td><td>0.44</td><td>0.58</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>14</td><td>4점 쌍둥이</td><td>75%</td><td>0.67</td><td>0.69</td><td></td><td class="">통과</td></tr>
+<tr><td>15</td><td>4점 쌍둥이</td><td>50%</td><td>0.00</td><td>0.70</td><td></td><td class="">통과</td></tr>
+<tr><td>16</td><td>4점 쌍둥이</td><td>38%</td><td>0.29</td><td>0.69</td><td></td><td class="">통과</td></tr>
+<tr><td>17</td><td>4점 쌍둥이</td><td>86%</td><td>0.67</td><td>0.63</td><td></td><td class="">통과</td></tr>
+<tr><td>18</td><td>4점 쌍둥이</td><td>90%</td><td>0.29</td><td>0.03</td><td></td><td class="">통과</td></tr>
+<tr><td>19</td><td>4점 쌍둥이</td><td>20%</td><td>0.00</td><td>0.50</td><td></td><td class="">통과</td></tr>
+<tr><td>20</td><td>4점 쌍둥이</td><td>50%</td><td>0.55</td><td>0.35</td><td></td><td class="">통과</td></tr>
+<tr><td>21</td><td>4점 쌍둥이</td><td>69%</td><td>0.00</td><td>0.50</td><td></td><td class="">통과</td></tr>
+<tr><td>22</td><td>G2M8-08#8</td><td>0%</td><td>0.00</td><td>0.77</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>23</td><td>G2M9-05#1</td><td>0%</td><td>0.00</td><td>0.60</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>24</td><td>G2M9-18#7</td><td>40%</td><td>0.00</td><td>0.67</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>25</td><td>G2M9-18#8</td><td>80%</td><td>0.80</td><td>0.75</td><td>같음</td><td class="">통과</td></tr>
+<tr><td>26</td><td>4점 쌍둥이</td><td>100%</td><td>0.40</td><td>0.73</td><td></td><td class="">통과</td></tr>
+<tr><td>27</td><td>4점 쌍둥이</td><td>38%</td><td>0.33</td><td>0.55</td><td></td><td class="">통과</td></tr>
+<tr><td>28</td><td>4점 쌍둥이</td><td>90%</td><td>0.47</td><td>0.16</td><td></td><td class="">통과</td></tr>
+<tr><td>29</td><td>4점 쌍둥이</td><td>70%</td><td>0.33</td><td>0.40</td><td></td><td class="">통과</td></tr>
+<tr><td>30</td><td>4점 쌍둥이</td><td>67%</td><td>0.17</td><td>0.67</td><td></td><td class="">통과</td></tr>
+</table><h2>덮인 번호 요약</h2><table><tr><th>2·3점 생성기</th><th>4점 쌍둥이</th><th>없음</th><th>없는 번호</th></tr><tr><td>17</td><td>13</td><td>0</td><td></td></tr></table>
+</div><script>function paginate(){const cols=document.querySelector('.cols');if(!cols||document.querySelector('.page'))return;const qs=[...cols.children];const head=[...document.body.children].filter(e=>e!==cols&&e.tagName!=='SCRIPT');document.body.classList.add('a4');let page,colsEl=[],ci=0,n=0;function newPage(){n++;page=document.createElement('div');page.className='page';if(n===1)head.forEach(h=>page.appendChild(h));const b=document.createElement('div');b.className='body';colsEl=[0,1].map(()=>{const c=document.createElement('div');c.className='col';b.appendChild(c);return c});page.appendChild(b);const f=document.createElement('div');f.className='pno';f.textContent=n;page.appendChild(f);document.body.insertBefore(page,cols);ci=0}newPage();for(const q of qs){let c=colsEl[ci];c.appendChild(q);if(c.scrollHeight>c.clientHeight+1&&c.children.length>1){c.removeChild(q);ci++;if(ci>1)newPage();colsEl[ci].appendChild(q)}}cols.remove();const bt=document.createElement('button');bt.id='prt';bt.textContent='🖨 A4 인쇄';bt.onclick=()=>window.print();document.body.appendChild(bt)}window.addEventListener('load',()=>setTimeout(paginate,50));</script>
+<script>document.addEventListener('DOMContentLoaded',()=>renderMathInElement(document.body,{delimiters:[{left:'$',right:'$',display:false}],throwOnError:false,preProcess:m=>'\\displaystyle '+m}));</script></body></html>
